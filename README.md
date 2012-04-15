@@ -4,6 +4,11 @@ exdict.vim
 Description
 -----------
 exdict.vim is a plugin on vim for syntax highlight and vim's dictionary and inline api reference by special dictionary.
+Support dictionary is as follows.
+    * c runtime library
+    * Windows Api
+    * Windows Kernel Api
+    * Windows WDF (Windows Driver Foundation)
 
 Requirements
 ------------
