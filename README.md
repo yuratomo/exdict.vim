@@ -10,6 +10,7 @@ Support dictionary is as follows.
     - Windows Api
     - Windows Kernel Api
     - Windows WDF (Windows Driver Foundation)
+    - java (j2se6.0)
 
 Requirements
 ------------
@@ -53,7 +54,7 @@ ScreenShots
 
 ###Dictionary###
 
-ex) Input "Create" + &lt;c-x&gt;&lt;&gt;c-k&lt;.
+ex) Input "Create" + &lt;c-x&gt;&lt;c-k&gt;
 
 ![sample1](http://yuratomo.up.seesaa.net/image/exdictvim_v0.1.0.001.png "sample1")
 
@@ -72,6 +73,9 @@ ex) Inline help of CreateEventA.
 
 HISTORY
 -------
+
+### v0.2.0 by yuratomo ###
+* support java
 
 ### v0.1.0 by yuratomo ###
 * first version

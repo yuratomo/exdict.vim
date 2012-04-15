@@ -14,7 +14,7 @@ function! s:UpdateRef(last_feed_keys)
 
   let line = getline('.')
   if stridx(line, '(') != -1
-    let keyword = substitute(line, '(.*$', '', '') . '('
+    let keyword = substitute(substitute(line, '(.*$', '', ''), ".*\\W", '','') . '('
   else
     let keyword = '\<'.expand('<cword>')
   endif
