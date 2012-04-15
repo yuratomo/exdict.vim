@@ -5,10 +5,11 @@ Description
 -----------
 exdict.vim is a plugin on vim for syntax highlight and vim's dictionary and inline api reference by special dictionary.
 Support dictionary is as follows.
-    * c runtime library
-    * Windows Api
-    * Windows Kernel Api
-    * Windows WDF (Windows Driver Foundation)
+
+    - c runtime library
+    - Windows Api
+    - Windows Kernel Api
+    - Windows WDF (Windows Driver Foundation)
 
 Requirements
 ------------
@@ -51,12 +52,21 @@ ScreenShots
 -----------
 
 ###Dictionary###
+
+ex) Input "Create" + <c-x><c-k>.
+
 ![sample1](http://yuratomo.up.seesaa.net/image/exdictvim_v0.1.0.001.png "sample1")
 
 ###Syntax Highlight###
+
+ex) Highlighting CreateEvent (it'a win32api)
+
 ![sample2](http://yuratomo.up.seesaa.net/image/exdictvim_v0.1.0.002.png "sample2")
 
 ###Inline Api Reference###
+
+ex) Inline help of CreateEventA.
+
 ![sample3](http://yuratomo.up.seesaa.net/image/exdictvim_v0.1.0.003.png "sample3")
 
 
