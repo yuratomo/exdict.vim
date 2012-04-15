@@ -53,7 +53,7 @@ ScreenShots
 
 ###Dictionary###
 
-ex) Input "Create" + <c-x><c-k>.
+ex) Input "Create" + &lt;c-x&gt;&lt;&gt;c-k&lt;.
 
 ![sample1](http://yuratomo.up.seesaa.net/image/exdictvim_v0.1.0.001.png "sample1")
 
