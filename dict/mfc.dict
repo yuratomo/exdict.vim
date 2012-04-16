@@ -1,0 +1,1975 @@
+CObject() // class CObject
+Serialize(CArchive&) -> void  // class CObject
+operator new(size_t, void* p) throw() -> void*  // class CObject
+operator delete(void* p) -> void  // class CObject
+operator delete(void* p, void*) -> void  // class CObject
+operator new(size_t nSize) throw(...) -> void*  // class CObject
+AssertValid() const -> void  // class CObject
+Dump(CDumpContext&) const -> void  // class CObject
+CSimpleException() // class CSimpleException
+CSimpleException(BOOL bAutoDelete) // class CSimpleException
+CMemoryException() // class CMemoryException
+CMemoryException(BOOL bAutoDelete, UINT nResourceID) // class CMemoryException
+CNotSupportedException() // class CNotSupportedException
+CNotSupportedException(BOOL bAutoDelete, UINT nResourceID) // class CNotSupportedException
+CInvalidArgException() // class CInvalidArgException
+CInvalidArgException(BOOL bAutoDelete, UINT nResourceID) // class CInvalidArgException
+CArchiveException(int cause, // class CArchiveException
+CFileException(int cause, LONG lOsError, // class CFileException
+operator HFILE() const // class CFile
+ReadHuge(void* lpBuffer, DWORD dwCount) -> DWORD  // class CFile
+WriteHuge(const void* lpBuffer, DWORD dwCount) -> void  // class CFile
+SeekToEnd() -> DWORD  // class CFile
+SeekToBegin() -> void  // class CFile
+SetFilePath(LPCTSTR lpszNewName) -> void  // class CFile
+IsReadOnly() const -> BOOL  // class CFileFind
+IsDirectory() const -> BOOL  // class CFileFind
+IsCompressed() const -> BOOL  // class CFileFind
+IsSystem() const -> BOOL  // class CFileFind
+IsHidden() const -> BOOL  // class CFileFind
+IsTemporary() const -> BOOL  // class CFileFind
+IsNormal() const -> BOOL  // class CFileFind
+IsArchived() const -> BOOL  // class CFileFind
+GetData() const -> CStringData*  // class CString
+Init() -> void  // class CString
+CString() // class CString
+CString(const unsigned char* lpsz) // class CString
+operator=(const unsigned char* lpsz) -> const  // class CString& CString
+operator+=(char ch) -> const  // class CString& CString
+operator=(char ch) -> const  // class CString& CString
+GetLength() const -> int  // class CString
+GetAllocLength() const -> int  // class CString
+IsEmpty() const -> BOOL  // class CString
+operator LPCTSTR() const // class CString
+SafeStrlen(LPCTSTR lpsz) -> int  // class CString
+Compare(LPCTSTR lpsz) const -> int  // class CString
+CompareNoCase(LPCTSTR lpsz) const -> int  // class CString
+Collate(LPCTSTR lpsz) const -> int  // class CString
+CollateNoCase(LPCTSTR lpsz) const -> int  // class CString
+GetAt(int nIndex) const -> TCHAR  // class CString
+operator[](int nIndex) const -> TCHAR  // class CString
+CTimeSpan() // class CTimeSpan
+CTimeSpan(time_t time) // class CTimeSpan
+CTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) // class CTimeSpan
+CTimeSpan(const CTimeSpan& timeSpanSrc) // class CTimeSpan
+operator=(const CTimeSpan& timeSpanSrc) -> const  // class CTimeSpan& CTimeSpan
+GetDays() const // class LONG_PTR CTimeSpan
+GetTotalHours() const // class LONG_PTR CTimeSpan
+GetHours() const -> int  // class CTimeSpan
+GetTotalMinutes() const // class LONG_PTR CTimeSpan
+GetMinutes() const -> int  // class CTimeSpan
+GetTotalSeconds() const // class LONG_PTR CTimeSpan
+GetSeconds() const -> int  // class CTimeSpan
+operator-(CTimeSpan timeSpan) const -> CTimeSpan  // class CTimeSpan
+operator+(CTimeSpan timeSpan) const -> CTimeSpan  // class CTimeSpan
+operator+=(CTimeSpan timeSpan) -> const  // class CTimeSpan& CTimeSpan
+operator-=(CTimeSpan timeSpan) -> const  // class CTimeSpan& CTimeSpan
+operator==(CTimeSpan timeSpan) const -> BOOL  // class CTimeSpan
+operator!=(CTimeSpan timeSpan) const -> BOOL  // class CTimeSpan
+operator<(CTimeSpan timeSpan) const -> BOOL  // class CTimeSpan
+operator>(CTimeSpan timeSpan) const -> BOOL  // class CTimeSpan
+operator<=(CTimeSpan timeSpan) const -> BOOL  // class CTimeSpan
+operator>=(CTimeSpan timeSpan) const -> BOOL  // class CTimeSpan
+CTime() // class CTime
+CTime(time_t time) // class CTime
+CTime(const CTime& timeSrc) // class CTime
+operator=(const CTime& timeSrc) -> const  // class CTime& CTime
+operator=(time_t t) -> const  // class CTime& CTime
+GetTime() const // class time_t CTime
+GetYear() const -> int  // class CTime
+GetMonth() const -> int  // class CTime
+GetDay() const -> int  // class CTime
+GetHour() const -> int  // class CTime
+GetMinute() const -> int  // class CTime
+GetSecond() const -> int  // class CTime
+GetDayOfWeek() const -> int  // class CTime
+operator-(CTime time) const -> CTimeSpan  // class CTime
+operator-(CTimeSpan timeSpan) const -> CTime  // class CTime
+operator+(CTimeSpan timeSpan) const -> CTime  // class CTime
+operator+=(CTimeSpan timeSpan) -> const  // class CTime& CTime
+operator-=(CTimeSpan timeSpan) -> const  // class CTime& CTime
+operator==(CTime time) const -> BOOL  // class CTime
+operator!=(CTime time) const -> BOOL  // class CTime
+operator<(CTime time) const -> BOOL  // class CTime
+operator>(CTime time) const -> BOOL  // class CTime
+operator<=(CTime time) const -> BOOL  // class CTime
+operator>=(CTime time) const -> BOOL  // class CTime
+IsLoading() const -> BOOL  // class CArchive
+IsStoring() const -> BOOL  // class CArchive
+IsByteSwapping() const -> BOOL  // class CArchive
+IsBufferEmpty() const -> BOOL  // class CArchive
+GetFile() const -> CFile*  // class CArchive
+SetObjectSchema(UINT nSchema) -> void  // class CArchive
+SetStoreParams(UINT nHashSize, UINT nBlockSize) -> void  // class CArchive
+SetLoadParams(UINT nGrowBy) -> void  // class CArchive
+operator<<(int i) // class CArchive& CArchive
+operator<<(unsigned u) // class CArchive& CArchive
+operator<<(short w) // class CArchive& CArchive
+operator<<(char ch) // class CArchive& CArchive
+operator<<(BYTE by) // class CArchive& CArchive
+operator<<(WORD w) // class CArchive& CArchive
+operator<<(LONG l) // class CArchive& CArchive
+operator<<(DWORD dw) // class CArchive& CArchive
+operator<<(ULONGLONG qw) // class CArchive& CArchive
+operator<<(float f) // class CArchive& CArchive
+operator<<(double d) // class CArchive& CArchive
+operator>>(int& i) // class CArchive& CArchive
+operator>>(unsigned& u) // class CArchive& CArchive
+operator>>(short& w) // class CArchive& CArchive
+operator>>(char& ch) // class CArchive& CArchive
+operator>>(BYTE& by) // class CArchive& CArchive
+operator>>(WORD& w) // class CArchive& CArchive
+operator>>(DWORD& dw) // class CArchive& CArchive
+operator>>(ULONGLONG& qw) // class CArchive& CArchive
+operator>>(float& f) // class CArchive& CArchive
+operator>>(double& d) // class CArchive& CArchive
+operator>>(LONG& l) // class CArchive& CArchive
+CArchive(const CArchive& /* arSrc */) // class CArchive
+operator=(const CArchive& /* arSrc */) -> void  // class CArchive
+GetDepth() const -> int  // class CDumpContext
+SetDepth(int nNewDepth) -> void  // class CDumpContext
+CDumpContext(const CDumpContext& /* dcSrc */) // class CDumpContext
+operator=(const CDumpContext& /* dcSrc */) -> void  // class CDumpContext
+CDragListBox() // class CDragListBox
+ItemFromPt(CPoint pt, BOOL bAutoScroll) const -> int  // class CDragListBox
+CToolBarCtrl() // class CToolBarCtrl
+EnableButton(int nID, BOOL bEnable) -> BOOL  // class CToolBarCtrl
+CheckButton(int nID, BOOL bCheck) -> BOOL  // class CToolBarCtrl
+PressButton(int nID, BOOL bPress) -> BOOL  // class CToolBarCtrl
+HideButton(int nID, BOOL bHide) -> BOOL  // class CToolBarCtrl
+Indeterminate(int nID, BOOL bIndeterminate) -> BOOL  // class CToolBarCtrl
+IsButtonEnabled(int nID) const -> BOOL  // class CToolBarCtrl
+IsButtonChecked(int nID) const -> BOOL  // class CToolBarCtrl
+IsButtonPressed(int nID) const -> BOOL  // class CToolBarCtrl
+IsButtonHidden(int nID) const -> BOOL  // class CToolBarCtrl
+IsButtonIndeterminate(int nID) const -> BOOL  // class CToolBarCtrl
+SetState(int nID, UINT nState) -> BOOL  // class CToolBarCtrl
+GetState(int nID) const -> int  // class CToolBarCtrl
+AddButtons(int nNumButtons, LPTBBUTTON lpButtons) -> BOOL  // class CToolBarCtrl
+InsertButton(int nIndex, LPTBBUTTON lpButton) -> BOOL  // class CToolBarCtrl
+DeleteButton(int nIndex) -> BOOL  // class CToolBarCtrl
+GetButton(int nIndex, LPTBBUTTON lpButton) const -> BOOL  // class CToolBarCtrl
+GetButtonCount() const -> int  // class CToolBarCtrl
+CommandToIndex(UINT nID) const -> UINT  // class CToolBarCtrl
+Customize() -> void  // class CToolBarCtrl
+AddStrings(LPCTSTR lpszStrings) -> int  // class CToolBarCtrl
+GetItemRect(int nIndex, LPRECT lpRect) const -> BOOL  // class CToolBarCtrl
+SetButtonStructSize(int nSize) -> void  // class CToolBarCtrl
+SetButtonSize(CSize size) -> BOOL  // class CToolBarCtrl
+SetBitmapSize(CSize size) -> BOOL  // class CToolBarCtrl
+AutoSize() -> void  // class CToolBarCtrl
+GetToolTips() const -> CToolTipCtrl*  // class CToolBarCtrl
+SetToolTips(CToolTipCtrl* pTip) -> void  // class CToolBarCtrl
+SetOwner(CWnd* pWnd) -> void  // class CToolBarCtrl
+SetToolTips(CToolTipCtrl* pTip) -> void  // class CToolBarCtrl
+SetOwner(CWnd* pWnd) -> void  // class CToolBarCtrl
+SetRows(int nRows, BOOL bLarger, LPRECT lpRect) -> void  // class CToolBarCtrl
+GetRows() const -> int  // class CToolBarCtrl
+SetCmdID(int nIndex, UINT nID) -> BOOL  // class CToolBarCtrl
+GetBitmapFlags() const -> UINT  // class CToolBarCtrl
+HitTest(LPPOINT ppt) const -> int  // class CToolBarCtrl
+GetExtendedStyle() const -> DWORD  // class CToolBarCtrl
+SetExtendedStyle(DWORD dwExStyle) -> DWORD  // class CToolBarCtrl
+GetInsertMarkColor() const -> COLORREF  // class CToolBarCtrl
+SetInsertMarkColor(COLORREF clrNew) -> COLORREF  // class CToolBarCtrl
+CStatusBarCtrl() // class CStatusBarCtrl
+SetText(LPCTSTR lpszText, int nPane, int nType) -> BOOL  // class CStatusBarCtrl
+SetParts(int nParts, int* pWidths) -> BOOL  // class CStatusBarCtrl
+GetParts(int nParts, int* pParts) const -> int  // class CStatusBarCtrl
+GetBorders(int* pBorders) const -> BOOL  // class CStatusBarCtrl
+SetMinHeight(int nMin) -> void  // class CStatusBarCtrl
+SetSimple(BOOL bSimple) -> BOOL  // class CStatusBarCtrl
+GetRect(int nPane, LPRECT lpRect) const -> BOOL  // class CStatusBarCtrl
+CListCtrl() // class CListCtrl
+GetBkColor() const -> COLORREF  // class CListCtrl
+SetBkColor(COLORREF cr) -> BOOL  // class CListCtrl
+GetImageList(int nImageListType) const -> CImageList*  // class CListCtrl
+SetImageList(CImageList* pImageList, int nImageList) -> CImageList*  // class CListCtrl
+GetItemCount() const -> int  // class CListCtrl
+GetItem(LVITEM* pItem) const -> BOOL  // class CListCtrl
+SetItem(const LVITEM* pItem) -> BOOL  // class CListCtrl
+SetItemState(int nItem, UINT nState, UINT nStateMask) -> BOOL  // class CListCtrl
+SetItemText(int nItem, int nSubItem, LPCTSTR lpszText) -> BOOL  // class CListCtrl
+SetItemData(int nItem, DWORD_PTR dwData) -> BOOL  // class CListCtrl
+InsertItem(const LVITEM* pItem) -> int  // class CListCtrl
+InsertItem(int nItem, LPCTSTR lpszItem) -> int  // class CListCtrl
+InsertItem(int nItem, LPCTSTR lpszItem, int nImage) -> int  // class CListCtrl
+DeleteItem(int nItem) -> BOOL  // class CListCtrl
+DeleteAllItems() -> BOOL  // class CListCtrl
+GetCallbackMask() const -> UINT  // class CListCtrl
+SetCallbackMask(UINT nMask) -> BOOL  // class CListCtrl
+GetNextItem(int nItem, int nFlags) const -> int  // class CListCtrl
+GetFirstSelectedItemPosition() const -> POSITION  // class CListCtrl
+GetNextSelectedItem(POSITION& pos) const -> int  // class CListCtrl
+FindItem(LVFINDINFO* pFindInfo, int nStart) const -> int  // class CListCtrl
+HitTest(LVHITTESTINFO* pHitTestInfo) const -> int  // class CListCtrl
+SetItemPosition(int nItem, POINT pt) -> BOOL  // class CListCtrl
+GetItemPosition(int nItem, LPPOINT lpPoint) const -> BOOL  // class CListCtrl
+GetStringWidth(LPCTSTR lpsz) const -> int  // class CListCtrl
+EnsureVisible(int nItem, BOOL bPartialOK) -> BOOL  // class CListCtrl
+Scroll(CSize size) -> BOOL  // class CListCtrl
+RedrawItems(int nFirst, int nLast) -> BOOL  // class CListCtrl
+Arrange(UINT nCode) -> BOOL  // class CListCtrl
+EditLabel(int nItem) -> CEdit*  // class CListCtrl
+GetEditControl() const -> CEdit*  // class CListCtrl
+GetColumn(int nCol, LVCOLUMN* pColumn) const -> BOOL  // class CListCtrl
+SetColumn(int nCol, const LVCOLUMN* pColumn) -> BOOL  // class CListCtrl
+InsertColumn(int nCol, const LVCOLUMN* pColumn) -> int  // class CListCtrl
+DeleteColumn(int nCol) -> BOOL  // class CListCtrl
+GetColumnWidth(int nCol) const -> int  // class CListCtrl
+SetColumnWidth(int nCol, int cx) -> BOOL  // class CListCtrl
+GetViewRect(LPRECT lpRect) const -> BOOL  // class CListCtrl
+GetTextColor() const -> COLORREF  // class CListCtrl
+SetTextColor(COLORREF cr) -> BOOL  // class CListCtrl
+GetTextBkColor() const -> COLORREF  // class CListCtrl
+SetTextBkColor(COLORREF cr) -> BOOL  // class CListCtrl
+GetTopIndex() const -> int  // class CListCtrl
+GetCountPerPage() const -> int  // class CListCtrl
+GetOrigin(LPPOINT lpPoint) const -> BOOL  // class CListCtrl
+Update(int nItem) -> BOOL  // class CListCtrl
+SetItemState(int nItem, LVITEM* pItem) -> BOOL  // class CListCtrl
+GetItemState(int nItem, UINT nMask) const -> UINT  // class CListCtrl
+SetItemCount(int nItems) -> void  // class CListCtrl
+SortItems(PFNLVCOMPARE pfnCompare, DWORD_PTR dwData) -> BOOL  // class CListCtrl
+GetSelectedCount() const -> UINT  // class CListCtrl
+CTreeCtrl() // class CTreeCtrl
+InsertItem(LPTVINSERTSTRUCT lpInsertStruct) -> HTREEITEM  // class CTreeCtrl
+InsertItem(LPCTSTR lpszItem, int nImage, -> HTREEITEM  // class CTreeCtrl
+InsertItem(LPCTSTR lpszItem, HTREEITEM hParent, HTREEITEM hInsertAfter) -> HTREEITEM  // class CTreeCtrl
+DeleteItem(HTREEITEM hItem) -> BOOL  // class CTreeCtrl
+DeleteAllItems() -> BOOL  // class CTreeCtrl
+Expand(HTREEITEM hItem, UINT nCode) -> BOOL  // class CTreeCtrl
+GetCount() const -> UINT  // class CTreeCtrl
+GetIndent() const -> UINT  // class CTreeCtrl
+SetIndent(UINT nIndent) -> void  // class CTreeCtrl
+GetImageList(UINT nImageList) const -> CImageList*  // class CTreeCtrl
+SetImageList(CImageList* pImageList, int nImageListType) -> CImageList*  // class CTreeCtrl
+GetNextItem(HTREEITEM hItem, UINT nCode) const -> HTREEITEM  // class CTreeCtrl
+GetChildItem(HTREEITEM hItem) const -> HTREEITEM  // class CTreeCtrl
+GetNextSiblingItem(HTREEITEM hItem) const -> HTREEITEM  // class CTreeCtrl
+GetPrevSiblingItem(HTREEITEM hItem) const -> HTREEITEM  // class CTreeCtrl
+GetParentItem(HTREEITEM hItem) const -> HTREEITEM  // class CTreeCtrl
+GetFirstVisibleItem() const -> HTREEITEM  // class CTreeCtrl
+GetNextVisibleItem(HTREEITEM hItem) const -> HTREEITEM  // class CTreeCtrl
+GetPrevVisibleItem(HTREEITEM hItem) const -> HTREEITEM  // class CTreeCtrl
+GetSelectedItem() const -> HTREEITEM  // class CTreeCtrl
+GetDropHilightItem() const -> HTREEITEM  // class CTreeCtrl
+GetRootItem() const -> HTREEITEM  // class CTreeCtrl
+Select(HTREEITEM hItem, UINT nCode) -> BOOL  // class CTreeCtrl
+SelectItem(HTREEITEM hItem) -> BOOL  // class CTreeCtrl
+SelectDropTarget(HTREEITEM hItem) -> BOOL  // class CTreeCtrl
+SelectSetFirstVisible(HTREEITEM hItem) -> BOOL  // class CTreeCtrl
+GetItem(TVITEM* pItem) const -> BOOL  // class CTreeCtrl
+SetItem(TVITEM* pItem) -> BOOL  // class CTreeCtrl
+SetItemText(HTREEITEM hItem, LPCTSTR lpszItem) -> BOOL  // class CTreeCtrl
+SetItemImage(HTREEITEM hItem, int nImage, int nSelectedImage) -> BOOL  // class CTreeCtrl
+SetItemState(HTREEITEM hItem, UINT nState, UINT nStateMask) -> BOOL  // class CTreeCtrl
+SetItemData(HTREEITEM hItem, DWORD_PTR dwData) -> BOOL  // class CTreeCtrl
+EditLabel(HTREEITEM hItem) -> CEdit*  // class CTreeCtrl
+HitTest(TVHITTESTINFO* pHitTestInfo) const -> HTREEITEM  // class CTreeCtrl
+GetEditControl() const -> CEdit*  // class CTreeCtrl
+GetVisibleCount() const -> UINT  // class CTreeCtrl
+SortChildren(HTREEITEM hItem) -> BOOL  // class CTreeCtrl
+EnsureVisible(HTREEITEM hItem) -> BOOL  // class CTreeCtrl
+SortChildrenCB(LPTVSORTCB pSort) -> BOOL  // class CTreeCtrl
+GetToolTips() const -> CToolTipCtrl*  // class CTreeCtrl
+SetToolTips(CToolTipCtrl* pWndTip) -> CToolTipCtrl*  // class CTreeCtrl
+GetBkColor() const -> COLORREF  // class CTreeCtrl
+SetBkColor(COLORREF clr) -> COLORREF  // class CTreeCtrl
+GetItemHeight() const -> SHORT  // class CTreeCtrl
+SetItemHeight(SHORT cyHeight) -> SHORT  // class CTreeCtrl
+GetTextColor() const -> COLORREF  // class CTreeCtrl
+SetTextColor(COLORREF clr) -> COLORREF  // class CTreeCtrl
+SetInsertMark(HTREEITEM hItem, BOOL fAfter) -> BOOL  // class CTreeCtrl
+GetInsertMarkColor() const -> COLORREF  // class CTreeCtrl
+SetInsertMarkColor(COLORREF clrNew) -> COLORREF  // class CTreeCtrl
+CHotKeyCtrl() // class CHotKeyCtrl
+SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) -> void  // class CHotKeyCtrl
+GetHotKey() const -> DWORD  // class CHotKeyCtrl
+SetRules(WORD wInvalidComb, WORD wModifiers) -> void  // class CHotKeyCtrl
+Activate(BOOL bActivate) -> void  // class CToolTipCtrl
+SetToolInfo(LPTOOLINFO lpToolInfo) -> void  // class CToolTipCtrl
+RelayEvent(LPMSG lpMsg) -> void  // class CToolTipCtrl
+SetDelayTime(UINT nDelay) -> void  // class CToolTipCtrl
+GetToolCount() const -> int  // class CToolTipCtrl
+CSpinButtonCtrl() // class CSpinButtonCtrl
+GetAccel(int nAccel, UDACCEL* pAccel) const -> UINT  // class CSpinButtonCtrl
+GetBase() const -> UINT  // class CSpinButtonCtrl
+GetBuddy() const -> CWnd*  // class CSpinButtonCtrl
+GetPos() const -> int  // class CSpinButtonCtrl
+GetRange() const -> DWORD  // class CSpinButtonCtrl
+SetAccel(int nAccel, UDACCEL* pAccel) -> BOOL  // class CSpinButtonCtrl
+SetBase(int nBase) -> int  // class CSpinButtonCtrl
+SetBuddy(CWnd* pWndBuddy) -> CWnd*  // class CSpinButtonCtrl
+SetPos(int nPos) -> int  // class CSpinButtonCtrl
+SetRange(int nLower, int nUpper) -> void  // class CSpinButtonCtrl
+CSliderCtrl() // class CSliderCtrl
+GetLineSize() const -> int  // class CSliderCtrl
+SetLineSize(int nSize) -> int  // class CSliderCtrl
+GetPageSize() const -> int  // class CSliderCtrl
+SetPageSize(int nSize) -> int  // class CSliderCtrl
+GetRangeMax() const -> int  // class CSliderCtrl
+GetRangeMin() const -> int  // class CSliderCtrl
+SetRangeMin(int nMin, BOOL bRedraw) -> void  // class CSliderCtrl
+SetRangeMax(int nMax, BOOL bRedraw) -> void  // class CSliderCtrl
+ClearSel(BOOL bRedraw) -> void  // class CSliderCtrl
+GetChannelRect(LPRECT lprc) const -> void  // class CSliderCtrl
+GetThumbRect(LPRECT lprc) const -> void  // class CSliderCtrl
+GetPos() const -> int  // class CSliderCtrl
+SetPos(int nPos) -> void  // class CSliderCtrl
+VerifyPos() -> void  // class CSliderCtrl
+ClearTics(BOOL bRedraw) -> void  // class CSliderCtrl
+GetNumTics() const -> UINT  // class CSliderCtrl
+GetTicArray() const -> DWORD*  // class CSliderCtrl
+GetTic(int nTic) const -> int  // class CSliderCtrl
+GetTicPos(int nTic) const -> int  // class CSliderCtrl
+SetTic(int nTic) -> BOOL  // class CSliderCtrl
+SetTicFreq(int nFreq) -> void  // class CSliderCtrl
+GetBuddy(BOOL fLocation) const -> CWnd*  // class CSliderCtrl
+SetBuddy(CWnd* pWndBuddy, BOOL fLocation) -> CWnd*  // class CSliderCtrl
+GetToolTips() const -> CToolTipCtrl*  // class CSliderCtrl
+SetToolTips(CToolTipCtrl* pTip) -> void  // class CSliderCtrl
+SetTipSide(int nLocation) -> int  // class CSliderCtrl
+CProgressCtrl() // class CProgressCtrl
+SetRange(short nLower, short nUpper) -> void  // class CProgressCtrl
+SetRange32(int nLower, int nUpper) -> void  // class CProgressCtrl
+GetPos() -> int  // class CProgressCtrl
+SetRange(int nLower, int nUpper) -> void  // class CProgressCtrl
+SetPos(int nPos) -> int  // class CProgressCtrl
+OffsetPos(int nPos) -> int  // class CProgressCtrl
+SetStep(int nStep) -> int  // class CProgressCtrl
+StepIt() -> int  // class CProgressCtrl
+CHeaderCtrl() // class CHeaderCtrl
+GetItemCount() const -> int  // class CHeaderCtrl
+InsertItem(int nPos, HDITEM* phdi) -> int  // class CHeaderCtrl
+DeleteItem(int nPos) -> BOOL  // class CHeaderCtrl
+GetItem(int nPos, HDITEM* pHeaderItem) const -> BOOL  // class CHeaderCtrl
+SetItem(int nPos, HDITEM* pHeaderItem) -> BOOL  // class CHeaderCtrl
+Layout(HDLAYOUT* pHeaderLayout) -> BOOL  // class CHeaderCtrl
+operator HIMAGELIST() const // class CImageList
+GetSafeHandle() const -> HIMAGELIST  // class CImageList
+GetImageCount() const -> int  // class CImageList
+Add(CBitmap* pbmImage, CBitmap* pbmMask) -> int  // class CImageList
+Add(CBitmap* pbmImage, COLORREF crMask) -> int  // class CImageList
+Remove(int nImage) -> BOOL  // class CImageList
+Replace(int nImage, CBitmap* pbmImage, CBitmap* pbmMask) -> BOOL  // class CImageList
+Add(HICON hIcon) -> int  // class CImageList
+Replace(int nImage, HICON hIcon) -> int  // class CImageList
+ExtractIcon(int nImage) -> HICON  // class CImageList
+Draw(CDC* pDC, int nImage, POINT pt, UINT nStyle) -> BOOL  // class CImageList
+SetBkColor(COLORREF cr) -> COLORREF  // class CImageList
+GetBkColor() const -> COLORREF  // class CImageList
+SetOverlayImage(int nImage, int nOverlay) -> BOOL  // class CImageList
+GetImageInfo(int nImage, IMAGEINFO* pImageInfo) const -> BOOL  // class CImageList
+BeginDrag(int nImage, CPoint ptHotSpot) -> BOOL  // class CImageList
+EndDrag() -> void  // class CImageList
+DragMove(CPoint pt) -> BOOL  // class CImageList
+SetDragCursorImage(int nDrag, CPoint ptHotSpot) -> BOOL  // class CImageList
+DragShowNolock(BOOL bShow) -> BOOL  // class CImageList
+GetDragImage(LPPOINT lpPoint, LPPOINT lpPointHotSpot) -> CImageList*  // class CImageList
+DragEnter(CWnd* pWndLock, CPoint point) -> BOOL  // class CImageList
+DragLeave(CWnd* pWndLock) -> BOOL  // class CImageList
+CTabCtrl() // class CTabCtrl
+GetImageList() const -> CImageList*  // class CTabCtrl
+SetImageList(CImageList* pImageList) -> CImageList*  // class CTabCtrl
+GetItemCount() const -> int  // class CTabCtrl
+GetItem(int nItem, TCITEM* pTabCtrlItem) const -> BOOL  // class CTabCtrl
+SetItem(int nItem, TCITEM* pTabCtrlItem) -> BOOL  // class CTabCtrl
+SetItemExtra(int nBytes) -> BOOL  // class CTabCtrl
+SetCurFocus(int nItem) -> void  // class CTabCtrl
+InsertItem(int nItem, LPCTSTR lpszItem) -> BOOL  // class CTabCtrl
+InsertItem(int nItem, LPCTSTR lpszItem, int nImage) -> BOOL  // class CTabCtrl
+InsertItem(int nItem, TCITEM* pTabCtrlItem) -> BOOL  // class CTabCtrl
+DeleteItem(int nItem) -> BOOL  // class CTabCtrl
+DeleteAllItems() -> BOOL  // class CTabCtrl
+GetItemRect(int nItem, LPRECT lpRect) const -> BOOL  // class CTabCtrl
+GetCurSel() const -> int  // class CTabCtrl
+SetCurSel(int nItem) -> int  // class CTabCtrl
+HitTest(TCHITTESTINFO* pHitTestInfo) const -> int  // class CTabCtrl
+AdjustRect(BOOL bLarger, LPRECT lpRect) -> void  // class CTabCtrl
+SetItemSize(CSize size) -> CSize  // class CTabCtrl
+RemoveImage(int nImage) -> void  // class CTabCtrl
+SetPadding(CSize size) -> void  // class CTabCtrl
+GetRowCount() const -> int  // class CTabCtrl
+GetToolTips() const -> CToolTipCtrl*  // class CTabCtrl
+SetToolTips(CToolTipCtrl* pWndTip) -> void  // class CTabCtrl
+GetCurFocus() const -> int  // class CTabCtrl
+SetMinTabWidth(int cx) -> int  // class CTabCtrl
+DeselectAll(BOOL fExcludeFocus) -> void  // class CTabCtrl
+HighlightItem(int idItem, BOOL fHighlight /*= TRUE*/) -> BOOL  // class CTabCtrl
+GetExtendedStyle() -> DWORD  // class CTabCtrl
+SetExtendedStyle(DWORD dwNewStyle, DWORD dwExMask /*= 0*/) -> DWORD  // class CTabCtrl
+GetTooltips() const -> CToolTipCtrl*  // class CTabCtrl
+SetTooltips(CToolTipCtrl* pWndTip) -> void  // class CTabCtrl
+GetCurFocus() const -> int  // class CTabCtrl
+CAnimateCtrl() // class CAnimateCtrl
+Open(LPCTSTR lpszName) -> BOOL  // class CAnimateCtrl
+Open(UINT nID) -> BOOL  // class CAnimateCtrl
+Play(UINT nFrom, UINT nTo, UINT nRep) -> BOOL  // class CAnimateCtrl
+Stop() -> BOOL  // class CAnimateCtrl
+Close() -> BOOL  // class CAnimateCtrl
+Seek(UINT nTo) -> BOOL  // class CAnimateCtrl
+CRichEditCtrl() // class CRichEditCtrl
+CanUndo() const -> BOOL  // class CRichEditCtrl
+GetLineCount() const -> int  // class CRichEditCtrl
+GetModify() const -> BOOL  // class CRichEditCtrl
+SetModify(BOOL bModified /* = TRUE */) -> void  // class CRichEditCtrl
+GetRect(LPRECT lpRect) const -> void  // class CRichEditCtrl
+GetCharPos(long lChar) const -> CPoint  // class CRichEditCtrl
+SetOptions(WORD wOp, DWORD dwFlags) -> void  // class CRichEditCtrl
+EmptyUndoBuffer() -> void  // class CRichEditCtrl
+ReplaceSel(LPCTSTR lpszNewText, BOOL bCanUndo) -> void  // class CRichEditCtrl
+SetRect(LPCRECT lpRect) -> void  // class CRichEditCtrl
+Undo() -> BOOL  // class CRichEditCtrl
+Clear() -> void  // class CRichEditCtrl
+Copy() -> void  // class CRichEditCtrl
+Cut() -> void  // class CRichEditCtrl
+Paste() -> void  // class CRichEditCtrl
+SetReadOnly(BOOL bReadOnly /* = TRUE */ ) -> BOOL  // class CRichEditCtrl
+GetFirstVisibleLine() const -> int  // class CRichEditCtrl
+DisplayBand(LPRECT pDisplayRect) -> BOOL  // class CRichEditCtrl
+GetSel(CHARRANGE &cr) const -> void  // class CRichEditCtrl
+LimitText(long nChars) -> void  // class CRichEditCtrl
+LineFromChar(long nIndex) const -> long  // class CRichEditCtrl
+SetSel(CHARRANGE &cr) -> void  // class CRichEditCtrl
+FindText(DWORD dwFlags, FINDTEXTEX* pFindText) const -> long  // class CRichEditCtrl
+FormatRange(FORMATRANGE* pfr, BOOL bDisplay) -> long  // class CRichEditCtrl
+GetEventMask() const -> long  // class CRichEditCtrl
+GetLimitText() const -> long  // class CRichEditCtrl
+GetSelText(LPSTR lpBuf) const -> long  // class CRichEditCtrl
+HideSelection(BOOL bHide, BOOL bPerm) -> void  // class CRichEditCtrl
+RequestResize() -> void  // class CRichEditCtrl
+GetSelectionType() const -> WORD  // class CRichEditCtrl
+SetBackgroundColor(BOOL bSysColor, COLORREF cr) -> COLORREF  // class CRichEditCtrl
+SetEventMask(DWORD dwEventMask) -> DWORD  // class CRichEditCtrl
+SetOLECallback(IRichEditOleCallback* pCallback) -> BOOL  // class CRichEditCtrl
+SetTargetDevice(HDC hDC, long lLineWidth) -> BOOL  // class CRichEditCtrl
+SetTargetDevice(CDC &dc, long lLineWidth) -> BOOL  // class CRichEditCtrl
+StreamIn(int nFormat, EDITSTREAM &es) -> long  // class CRichEditCtrl
+StreamOut(int nFormat, EDITSTREAM &es) -> long  // class CRichEditCtrl
+GetTextLength() const -> long  // class CRichEditCtrl
+IsSimple() const -> BOOL  // class CStatusBarCtrl
+SetTipText(int nPane, LPCTSTR pszTipText) -> void  // class CStatusBarCtrl
+SetBkColor(COLORREF cr) -> COLORREF  // class CStatusBarCtrl
+SetIcon(int nPane, HICON hIcon) -> BOOL  // class CStatusBarCtrl
+SetRange32(int nLower, int nUpper) -> void  // class CSpinButtonCtrl
+GetRange32(int& nLower, int& nUpper) const -> void  // class CSpinButtonCtrl
+GetButtonSize() const -> DWORD  // class CToolBarCtrl
+GetDisabledImageList() const -> CImageList*  // class CToolBarCtrl
+GetHotImageList() const -> CImageList*  // class CToolBarCtrl
+GetImageList() const -> CImageList*  // class CToolBarCtrl
+GetStyle() const -> DWORD  // class CToolBarCtrl
+GetMaxTextRows() const -> INT  // class CToolBarCtrl
+GetRect(int nID, LPRECT lpRect) const -> BOOL  // class CToolBarCtrl
+IsButtonHighlighted(int nID) const -> BOOL  // class CToolBarCtrl
+LoadImages(int iBitmapID, HINSTANCE hinst) -> void  // class CToolBarCtrl
+SetButtonWidth(int cxMin, int cxMax) -> BOOL  // class CToolBarCtrl
+SetDisabledImageList(CImageList* pImageList) -> CImageList*  // class CToolBarCtrl
+SetHotImageList(CImageList* pImageList) -> CImageList*  // class CToolBarCtrl
+SetImageList(CImageList* pImageList) -> CImageList*  // class CToolBarCtrl
+SetIndent(int iIndent) -> BOOL  // class CToolBarCtrl
+SetMaxTextRows(int iMaxRows) -> BOOL  // class CToolBarCtrl
+SetStyle(DWORD dwStyle) -> void  // class CToolBarCtrl
+GetButtonInfo(int nID, TBBUTTONINFO* ptbbi) const -> BOOL  // class CToolBarCtrl
+SetButtonInfo(int nID, TBBUTTONINFO* ptbbi) -> BOOL  // class CToolBarCtrl
+SetDrawTextFlags(DWORD dwMask, DWORD dwDTFlags) -> DWORD  // class CToolBarCtrl
+GetAnchorHighlight() const -> BOOL  // class CToolBarCtrl
+SetAnchorHighlight(BOOL fAnchor) -> BOOL  // class CToolBarCtrl
+GetHotItem() const -> int  // class CToolBarCtrl
+SetHotItem(int nHot) -> int  // class CToolBarCtrl
+GetInsertMark(TBINSERTMARK* ptbim) const -> void  // class CToolBarCtrl
+SetInsertMark(TBINSERTMARK* ptbim) -> void  // class CToolBarCtrl
+GetMaxSize(LPSIZE pSize) const -> BOOL  // class CToolBarCtrl
+InsertMarkHitTest(LPPOINT ppt, LPTBINSERTMARK ptbim) const -> BOOL  // class CToolBarCtrl
+MapAccelerator(TCHAR chAccel, UINT* pIDBtn) -> BOOL  // class CToolBarCtrl
+MarkButton(int nID, BOOL bHighlight) -> BOOL  // class CToolBarCtrl
+MoveButton(UINT nOldPos, UINT nNewPos) -> BOOL  // class CToolBarCtrl
+SetExtendedStyle(DWORD dwNewStyle) -> DWORD  // class CListCtrl
+SetHotCursor(HCURSOR hc) -> HCURSOR  // class CListCtrl
+SetHotItem(int iIndex) -> int  // class CListCtrl
+SetWorkAreas(int nWorkAreas, LPRECT lpRect) -> void  // class CListCtrl
+SubItemHitTest(LPLVHITTESTINFO pInfo) -> int  // class CListCtrl
+GetHotCursor() -> HCURSOR  // class CListCtrl
+GetHotItem() -> int  // class CListCtrl
+GetExtendedStyle() -> DWORD  // class CListCtrl
+ApproximateViewRect(CSize sz, int iCount) const -> CSize  // class CListCtrl
+GetBkImage(LVBKIMAGE* plvbkImage) const -> BOOL  // class CListCtrl
+GetHoverTime() const -> DWORD  // class CListCtrl
+GetWorkAreas(int nWorkAreas, LPRECT prc) const -> void  // class CListCtrl
+SetBkImage(LVBKIMAGE* plvbkImage) -> BOOL  // class CListCtrl
+SetHoverTime(DWORD dwHoverTime) -> DWORD  // class CListCtrl
+GetNumberOfWorkAreas() const -> UINT  // class CListCtrl
+SetSelectionMark(int iIndex) -> int  // class CListCtrl
+GetSelectionMark() -> int  // class CListCtrl
+GetItemRect(int nIndex, LPRECT lpRect) const -> BOOL  // class CHeaderCtrl
+OrderToIndex(int nOrder) const -> int  // class CHeaderCtrl
+SetHotDivider(CPoint pt) -> int  // class CHeaderCtrl
+SetHotDivider(int nIndex) -> int  // class CHeaderCtrl
+GetImageList() const -> CImageList*  // class CHeaderCtrl
+SetImageList(CImageList* pImageList) -> CImageList*  // class CHeaderCtrl
+CreateDragImage(int nIndex) -> CImageList*  // class CHeaderCtrl
+CReBarCtrl() // class CReBarCtrl
+GetBandCount() const -> UINT  // class CReBarCtrl
+GetBandInfo(UINT uBand, REBARBANDINFO* prbbi) const -> BOOL  // class CReBarCtrl
+GetBarHeight() const -> UINT  // class CReBarCtrl
+GetBarInfo(REBARINFO* prbi) const -> BOOL  // class CReBarCtrl
+GetBkColor() const -> COLORREF  // class CReBarCtrl
+GetDropTarget() const -> IDropTarget*  // class CReBarCtrl
+GetRect(UINT uBand, LPRECT prc) const -> BOOL  // class CReBarCtrl
+GetRowCount() const -> UINT  // class CReBarCtrl
+GetRowHeight(UINT uRow) const -> UINT  // class CReBarCtrl
+GetTextColor() const -> COLORREF  // class CReBarCtrl
+GetToolTips() const -> CToolTipCtrl*  // class CReBarCtrl
+IDToIndex(UINT uBandID) const -> int  // class CReBarCtrl
+SetBandInfo(UINT uBand, REBARBANDINFO* prbbi) -> BOOL  // class CReBarCtrl
+SetBarInfo(REBARINFO* prbi) -> BOOL  // class CReBarCtrl
+SetBkColor(COLORREF clr) -> COLORREF  // class CReBarCtrl
+SetOwner(CWnd* pWnd) -> CWnd*  // class CReBarCtrl
+SetTextColor(COLORREF clr) -> COLORREF  // class CReBarCtrl
+SetToolTips(CToolTipCtrl* pTip) -> void  // class CReBarCtrl
+BeginDrag(UINT uBand, DWORD dwPos) -> void  // class CReBarCtrl
+DeleteBand(UINT uBand) -> BOOL  // class CReBarCtrl
+DragMove(DWORD dwPos) -> void  // class CReBarCtrl
+EndDrag() -> void  // class CReBarCtrl
+HitTest(RBHITTESTINFO* prbht) -> int  // class CReBarCtrl
+InsertBand(UINT uIndex, REBARBANDINFO* prbbi) -> BOOL  // class CReBarCtrl
+MaximizeBand(UINT uBand) -> void  // class CReBarCtrl
+MinimizeBand(UINT uBand) -> void  // class CReBarCtrl
+SizeToRect(CRect& rect) -> BOOL  // class CReBarCtrl
+ShowBand(UINT uBand, BOOL fShow /*= TRUE*/) -> BOOL  // class CReBarCtrl
+GetBandBorders(UINT uBand, LPRECT prc) const -> void  // class CReBarCtrl
+GetPalette() const -> CPalette*  // class CReBarCtrl
+SetPalette(HPALETTE hPal) -> CPalette*  // class CReBarCtrl
+MoveBand(UINT uFrom, UINT uTo) -> BOOL  // class CReBarCtrl
+SetDelayTime(UINT nDelay) -> void  // class CToolTipCtrl
+GetDelayTime(DWORD dwDuration) const -> int  // class CToolTipCtrl
+GetMargin(LPRECT lprc) const -> void  // class CToolTipCtrl
+GetMaxTipWidth() const -> int  // class CToolTipCtrl
+GetTipBkColor() const -> COLORREF  // class CToolTipCtrl
+GetTipTextColor() const -> COLORREF  // class CToolTipCtrl
+Pop() -> void  // class CToolTipCtrl
+SetDelayTime(DWORD dwDuration, int iTime) -> void  // class CToolTipCtrl
+SetMargin(LPRECT lprc) -> void  // class CToolTipCtrl
+SetMaxTipWidth(int iWidth) -> int  // class CToolTipCtrl
+SetTipBkColor(COLORREF clr) -> void  // class CToolTipCtrl
+SetTipTextColor(COLORREF clr) -> void  // class CToolTipCtrl
+Update() -> void  // class CToolTipCtrl
+CComboBoxEx() // class CComboBoxEx
+GetExtendedStyle() const -> DWORD  // class CComboBoxEx
+SetExtendedStyle(DWORD dwExMask, DWORD dwExStyles) -> DWORD  // class CComboBoxEx
+HasEditChanged() -> BOOL  // class CComboBoxEx
+GetEditCtrl() -> CEdit*  // class CComboBoxEx
+GetComboBoxCtrl() -> CComboBox*  // class CComboBoxEx
+SetImageList(CImageList* pImageList) -> CImageList*  // class CComboBoxEx
+GetImageList() const -> CImageList*  // class CComboBoxEx
+Dir(UINT attr, LPCTSTR lpszWildCard) -> int  // class CComboBoxEx
+FindString(int nIndexStart, LPCTSTR lpszFind) const -> int  // class CComboBoxEx
+AddString(LPCTSTR lpszString) -> int  // class CComboBoxEx
+SetEditSel(int nStartChar, int nEndChar) -> BOOL  // class CComboBoxEx
+InsertString(int nIndex, LPCTSTR lpszString) -> int  // class CComboBoxEx
+SetPos(int nPos) -> int  // class CProgressCtrl
+CIPAddressCtrl() // class CIPAddressCtrl
+ClearAddress() -> void  // class CIPAddressCtrl
+IsBlank() const -> BOOL  // class CIPAddressCtrl
+GetAddress(DWORD& dwAddress) -> int  // class CIPAddressCtrl
+SetAddress(DWORD dwAddress) -> void  // class CIPAddressCtrl
+SetAddress(BYTE nField0, BYTE nField1, BYTE nField2, BYTE nField3) -> void  // class CIPAddressCtrl
+SetFieldFocus(WORD nField) -> void  // class CIPAddressCtrl
+SetFieldRange(int nField, BYTE nLower, BYTE nUpper) -> void  // class CIPAddressCtrl
+SetImageCount(UINT uNewCount) -> BOOL  // class CImageList
+Copy(int iDst, int iSrc, UINT uFlags /* = ILCF_MOVE */) -> BOOL  // class CImageList
+Copy(int iDst, CImageList* pSrc, int iSrc, UINT uFlags /* = ILCF_MOVE */) -> BOOL  // class CImageList
+GetSize() const // class INT_PTR CByteArray
+GetUpperBound() const // class INT_PTR CByteArray
+RemoveAll() -> void  // class CByteArray
+GetAt(INT_PTR nIndex) const -> BYTE  // class CByteArray
+SetAt(INT_PTR nIndex, BYTE newElement) -> void  // class CByteArray
+ElementAt(INT_PTR nIndex) // class BYTE& CByteArray
+GetData() const -> const  -> BYTE*  // class CByteArray
+GetData() -> BYTE*  // class CByteArray
+Add(BYTE newElement) // class INT_PTR CByteArray
+operator[](INT_PTR nIndex) const -> BYTE  // class CByteArray
+operator[](INT_PTR nIndex) // class BYTE& CByteArray
+GetSize() const // class INT_PTR CWordArray
+GetUpperBound() const // class INT_PTR CWordArray
+RemoveAll() -> void  // class CWordArray
+GetAt(INT_PTR nIndex) const -> WORD  // class CWordArray
+SetAt(INT_PTR nIndex, WORD newElement) -> void  // class CWordArray
+ElementAt(INT_PTR nIndex) // class WORD& CWordArray
+GetData() const -> const  -> WORD*  // class CWordArray
+GetData() -> WORD*  // class CWordArray
+Add(WORD newElement) // class INT_PTR CWordArray
+operator[](INT_PTR nIndex) const -> WORD  // class CWordArray
+operator[](INT_PTR nIndex) // class WORD& CWordArray
+GetSize() const // class INT_PTR CDWordArray
+GetUpperBound() const // class INT_PTR CDWordArray
+RemoveAll() -> void  // class CDWordArray
+GetAt(INT_PTR nIndex) const -> DWORD  // class CDWordArray
+SetAt(INT_PTR nIndex, DWORD newElement) -> void  // class CDWordArray
+ElementAt(INT_PTR nIndex) // class DWORD& CDWordArray
+GetData() const -> const  -> DWORD*  // class CDWordArray
+GetData() -> DWORD*  // class CDWordArray
+Add(DWORD newElement) // class INT_PTR CDWordArray
+operator[](INT_PTR nIndex) const -> DWORD  // class CDWordArray
+operator[](INT_PTR nIndex) // class DWORD& CDWordArray
+GetSize() const // class INT_PTR CUIntArray
+GetUpperBound() const // class INT_PTR CUIntArray
+RemoveAll() -> void  // class CUIntArray
+GetAt(INT_PTR nIndex) const -> UINT  // class CUIntArray
+SetAt(INT_PTR nIndex, UINT newElement) -> void  // class CUIntArray
+ElementAt(INT_PTR nIndex) // class UINT& CUIntArray
+GetData() const -> const  -> UINT*  // class CUIntArray
+GetData() -> UINT*  // class CUIntArray
+Add(UINT newElement) // class INT_PTR CUIntArray
+operator[](INT_PTR nIndex) const -> UINT  // class CUIntArray
+operator[](INT_PTR nIndex) // class UINT& CUIntArray
+GetSize() const // class INT_PTR CPtrArray
+GetUpperBound() const // class INT_PTR CPtrArray
+RemoveAll() -> void  // class CPtrArray
+GetAt(INT_PTR nIndex) const -> void*  // class CPtrArray
+SetAt(INT_PTR nIndex, void* newElement) -> void  // class CPtrArray
+ElementAt(INT_PTR nIndex) // class void*& CPtrArray
+GetData() const -> const  // class void** CPtrArray
+GetData() // class void** CPtrArray
+Add(void* newElement) // class INT_PTR CPtrArray
+operator[](INT_PTR nIndex) const -> void*  // class CPtrArray
+operator[](INT_PTR nIndex) // class void*& CPtrArray
+GetSize() const // class INT_PTR CObArray
+GetUpperBound() const // class INT_PTR CObArray
+RemoveAll() -> void  // class CObArray
+GetAt(INT_PTR nIndex) const -> CObject*  // class CObArray
+SetAt(INT_PTR nIndex, CObject* newElement) -> void  // class CObArray
+ElementAt(INT_PTR nIndex) // class CObject*& CObArray
+GetData() const -> const  // class CObject** CObArray
+GetData() // class CObject** CObArray
+Add(CObject* newElement) // class INT_PTR CObArray
+operator[](INT_PTR nIndex) const -> CObject*  // class CObArray
+operator[](INT_PTR nIndex) // class CObject*& CObArray
+GetSize() const // class INT_PTR CStringArray
+GetUpperBound() const // class INT_PTR CStringArray
+RemoveAll() -> void  // class CStringArray
+GetAt(INT_PTR nIndex) const -> CString  // class CStringArray
+SetAt(INT_PTR nIndex, LPCTSTR newElement) -> void  // class CStringArray
+SetAt(INT_PTR nIndex, const CString& newElement) -> void  // class CStringArray
+ElementAt(INT_PTR nIndex) // class CString& CStringArray
+GetData() const -> const  -> CString*  // class CStringArray
+GetData() -> CString*  // class CStringArray
+Add(LPCTSTR newElement) // class INT_PTR CStringArray
+Add(const CString& newElement) // class INT_PTR CStringArray
+operator[](INT_PTR nIndex) const -> CString  // class CStringArray
+operator[](INT_PTR nIndex) // class CString& CStringArray
+GetCount() const // class INT_PTR CPtrList
+IsEmpty() const -> BOOL  // class CPtrList
+GetHead() // class void*& CPtrList
+GetHead() const -> void*  // class CPtrList
+GetTail() // class void*& CPtrList
+GetTail() const -> void*  // class CPtrList
+GetHeadPosition() const -> POSITION  // class CPtrList
+GetTailPosition() const -> POSITION  // class CPtrList
+GetNext(POSITION& rPosition) // return *Position++ // class void*& CPtrList
+GetNext(POSITION& rPosition) const // return *Position++ -> void*  // class CPtrList
+GetPrev(POSITION& rPosition) // return *Position-- // class void*& CPtrList
+GetPrev(POSITION& rPosition) const // return *Position-- -> void*  // class CPtrList
+GetAt(POSITION position) // class void*& CPtrList
+GetAt(POSITION position) const -> void*  // class CPtrList
+SetAt(POSITION pos, void* newElement) -> void  // class CPtrList
+GetCount() const // class INT_PTR CObList
+IsEmpty() const -> BOOL  // class CObList
+GetHead() // class CObject*& CObList
+GetHead() const -> CObject*  // class CObList
+GetTail() // class CObject*& CObList
+GetTail() const -> CObject*  // class CObList
+GetHeadPosition() const -> POSITION  // class CObList
+GetTailPosition() const -> POSITION  // class CObList
+GetNext(POSITION& rPosition) // return *Position++ // class CObject*& CObList
+GetNext(POSITION& rPosition) const // return *Position++ -> CObject*  // class CObList
+GetPrev(POSITION& rPosition) // return *Position-- // class CObject*& CObList
+GetPrev(POSITION& rPosition) const // return *Position-- -> CObject*  // class CObList
+GetAt(POSITION position) // class CObject*& CObList
+GetAt(POSITION position) const -> CObject*  // class CObList
+SetAt(POSITION pos, CObject* newElement) -> void  // class CObList
+GetCount() const // class INT_PTR CStringList
+IsEmpty() const -> BOOL  // class CStringList
+GetHead() // class CString& CStringList
+GetHead() const -> CString  // class CStringList
+GetTail() // class CString& CStringList
+GetTail() const -> CString  // class CStringList
+GetHeadPosition() const -> POSITION  // class CStringList
+GetTailPosition() const -> POSITION  // class CStringList
+GetNext(POSITION& rPosition) // return *Position++ // class CString& CStringList
+GetNext(POSITION& rPosition) const // return *Position++ -> CString  // class CStringList
+GetPrev(POSITION& rPosition) // return *Position-- // class CString& CStringList
+GetPrev(POSITION& rPosition) const // return *Position-- -> CString  // class CStringList
+GetAt(POSITION position) // class CString& CStringList
+GetAt(POSITION position) const -> CString  // class CStringList
+SetAt(POSITION pos, LPCTSTR newElement) -> void  // class CStringList
+SetAt(POSITION pos, const CString& newElement) -> void  // class CStringList
+GetCount() const // class INT_PTR CMapWordToPtr
+IsEmpty() const -> BOOL  // class CMapWordToPtr
+SetAt(WORD key, void* newValue) -> void  // class CMapWordToPtr
+GetStartPosition() const -> POSITION  // class CMapWordToPtr
+GetHashTableSize() const -> UINT  // class CMapWordToPtr
+GetCount() const // class INT_PTR CMapPtrToWord
+IsEmpty() const -> BOOL  // class CMapPtrToWord
+SetAt(void* key, WORD newValue) -> void  // class CMapPtrToWord
+GetStartPosition() const -> POSITION  // class CMapPtrToWord
+GetHashTableSize() const -> UINT  // class CMapPtrToWord
+GetCount() const // class INT_PTR CMapPtrToPtr
+IsEmpty() const -> BOOL  // class CMapPtrToPtr
+SetAt(void* key, void* newValue) -> void  // class CMapPtrToPtr
+GetStartPosition() const -> POSITION  // class CMapPtrToPtr
+GetHashTableSize() const -> UINT  // class CMapPtrToPtr
+GetCount() const // class INT_PTR CMapWordToOb
+IsEmpty() const -> BOOL  // class CMapWordToOb
+SetAt(WORD key, CObject* newValue) -> void  // class CMapWordToOb
+GetStartPosition() const -> POSITION  // class CMapWordToOb
+GetHashTableSize() const -> UINT  // class CMapWordToOb
+GetCount() const // class INT_PTR CMapStringToPtr
+IsEmpty() const -> BOOL  // class CMapStringToPtr
+SetAt(LPCTSTR key, void* newValue) -> void  // class CMapStringToPtr
+GetStartPosition() const -> POSITION  // class CMapStringToPtr
+GetHashTableSize() const -> UINT  // class CMapStringToPtr
+GetCount() const // class INT_PTR CMapStringToOb
+IsEmpty() const -> BOOL  // class CMapStringToOb
+SetAt(LPCTSTR key, CObject* newValue) -> void  // class CMapStringToOb
+GetStartPosition() const -> POSITION  // class CMapStringToOb
+GetHashTableSize() const -> UINT  // class CMapStringToOb
+GetCount() const // class INT_PTR CMapStringToString
+IsEmpty() const -> BOOL  // class CMapStringToString
+SetAt(LPCTSTR key, LPCTSTR newValue) -> void  // class CMapStringToString
+GetStartPosition() const -> POSITION  // class CMapStringToString
+GetHashTableSize() const -> UINT  // class CMapStringToString
+IsOptimizedDraw() -> BOOL  // class COleControl
+IsConvertingVBX() -> BOOL  // class COleControl
+FireKeyDown(USHORT* pnChar, short nShiftState) -> void  // class COleControl
+FireKeyUp(USHORT* pnChar, short nShiftState) -> void  // class COleControl
+FireKeyPress(USHORT* pnChar) -> void  // class COleControl
+FireMouseDown(short nButton, -> void  // class COleControl
+FireMouseUp(short nButton, -> void  // class COleControl
+FireMouseMove(short nButton, -> void  // class COleControl
+FireClick() -> void  // class COleControl
+FireDblClick() -> void  // class COleControl
+FireReadyStateChange() -> void  // class COleControl
+InternalSetReadyState(long lNewReadyState) -> void  // class COleControl
+ExchangeVersion( -> BOOL  // class COleControl
+GetStockEventMask() const -> DWORD  // class COleControl
+GetStockPropMask() const -> DWORD  // class COleControl
+RequestAsynchronousExchange(DWORD dwVersion) -> void  // class COleControl
+CPropExchange() : m_dwVersion(0), m_bAsync(FALSE) // class CPropExchange
+IsLoading() -> BOOL  // class CPropExchange
+GetVersion() -> DWORD  // class CPropExchange
+IsAsynchronous() -> BOOL  // class CPropExchange
+CDataPathProperty(COleControl* pControl) // class CDataPathProperty
+CDataPathProperty(LPCTSTR lpszPath, COleControl* pControl) // class CDataPathProperty
+SetPath(LPCTSTR lpszPath) -> void  // class CDataPathProperty
+GetPath() const -> CString  // class CDataPathProperty
+GetControl() -> COleControl*  // class CDataPathProperty
+SetControl(COleControl* pControl) -> void  // class CDataPathProperty
+CCachedDataPathProperty(COleControl* pControl) // class CCachedDataPathProperty
+CCachedDataPathProperty(LPCTSTR lpszPath, COleControl* pControl) // class CCachedDataPathProperty
+CListView() : CCtrlView(WC_LISTVIEW, // class CListView
+GetListCtrl() const // class CListCtrl& CListView
+CTreeView() : CCtrlView(WC_TREEVIEW, // class CTreeView
+GetTreeCtrl() const // class CTreeCtrl& CTreeView
+IsOpen() const -> BOOL  // class CDaoWorkspace
+IsNew() const -> BOOL  // class CDaoWorkspace
+IsOpen() const -> BOOL  // class CDaoDatabase
+IsOpen() const -> BOOL  // class CDaoTableDef
+IsOpen() const -> BOOL  // class CDaoQueryDef
+IsOpen() const -> BOOL  // class CDaoRecordset
+SetFieldType(UINT nFieldType) -> void  // class CDaoFieldExchange
+OnUpdateRecordFirst(CCmdUI* pCmdUI) -> void  // class CDaoRecordView
+OnUpdateRecordNext(CCmdUI* pCmdUI) -> void  // class CDaoRecordView
+OnUpdateRecordPrev(CCmdUI* pCmdUI) -> void  // class CDaoRecordView
+OnUpdateRecordLast(CCmdUI* pCmdUI) -> void  // class CDaoRecordView
+OnMove(int cx, int cy) -> void  // class CDaoRecordView
+IsOpen() const -> BOOL  // class CDatabase
+CanUpdate() const -> BOOL  // class CDatabase
+CanTransact() const -> BOOL  // class CDatabase
+SetLoginTimeout(DWORD dwSeconds) -> void  // class CDatabase
+SetQueryTimeout(DWORD dwSeconds) -> void  // class CDatabase
+GetConnect() const -> const  // class CString& CDatabase
+GetBookmarkPersistence() const -> DWORD  // class CDatabase
+GetCursorCommitBehavior() const -> int  // class CDatabase
+GetCursorRollbackBehavior() const -> int  // class CDatabase
+ThrowDBException(RETCODE nRetCode) -> void  // class CDatabase
+SetSynchronousMode(BOOL /* bSynchronous */ ) -> void  // class CDatabase
+GetSQL() const -> const  // class CString& CRecordset
+GetTableName() const -> const  // class CString& CRecordset
+IsBOF() const -> BOOL  // class CRecordset
+IsEOF() const -> BOOL  // class CRecordset
+IsDeleted() const -> BOOL  // class CRecordset
+CanUpdate() const -> BOOL  // class CRecordset
+CanScroll() const -> BOOL  // class CRecordset
+CanAppend() const -> BOOL  // class CRecordset
+CanRestart() const -> BOOL  // class CRecordset
+CanTransact() const -> BOOL  // class CRecordset
+GetODBCFieldCount() const -> short  // class CRecordset
+GetRowsetSize() const -> DWORD  // class CRecordset
+GetRowsFetched() const -> SQLULEN  // class CRecordset
+GetRowStatus(WORD wRow) const -> WORD  // class CRecordset
+GetRecordCount() const -> long  // class CRecordset
+GetStatus(CRecordsetStatus& rStatus) const -> void  // class CRecordset
+ThrowDBException(RETCODE nRetCode, HSTMT hstmt) -> void  // class CRecordset
+MoveNext() -> void  // class CRecordset
+MovePrev() -> void  // class CRecordset
+MoveFirst() -> void  // class CRecordset
+MoveLast() -> void  // class CRecordset
+SetAbsolutePosition(long nRows) -> void  // class CRecordset
+SetFieldType(UINT nFieldType) -> void  // class CFieldExchange
+OnMove(int cx, int cy) -> void  // class CRecordView
+CCommonDialog(CWnd* pParentWnd) // class CCommonDialog
+GetReadOnlyPref() const -> BOOL  // class CFileDialog
+SetTemplate(UINT nWin3ID, UINT nWin4ID) -> void  // class CFileDialog
+GetStartPosition() const -> POSITION  // class CFileDialog
+GetFaceName() const -> CString  // class CFontDialog
+GetStyleName() const -> CString  // class CFontDialog
+GetSize() const -> int  // class CFontDialog
+GetWeight() const -> int  // class CFontDialog
+IsItalic() const -> BOOL  // class CFontDialog
+IsStrikeOut() const -> BOOL  // class CFontDialog
+IsBold() const -> BOOL  // class CFontDialog
+IsUnderline() const -> BOOL  // class CFontDialog
+GetColor() const -> COLORREF  // class CFontDialog
+GetColor() const -> COLORREF  // class CColorDialog
+PrintSelection() const -> BOOL  // class CPrintDialog
+PrintRange() const -> BOOL  // class CPrintDialog
+PrintAll() const -> BOOL  // class CPrintDialog
+PrintCollate() const -> BOOL  // class CPrintDialog
+GetFromPage() const -> int  // class CPrintDialog
+GetToPage() const -> int  // class CPrintDialog
+GetPrinterDC() const -> HDC  // class CPrintDialog
+IsTerminating() const -> BOOL  // class CFindReplaceDialog
+GetReplaceString() const -> CString  // class CFindReplaceDialog
+GetFindString() const -> CString  // class CFindReplaceDialog
+SearchDown() const -> BOOL  // class CFindReplaceDialog
+FindNext() const -> BOOL  // class CFindReplaceDialog
+MatchCase() const -> BOOL  // class CFindReplaceDialog
+MatchWholeWord() const -> BOOL  // class CFindReplaceDialog
+ReplaceCurrent() const -> BOOL  // class CFindReplaceDialog
+ReplaceAll() const -> BOOL  // class CFindReplaceDialog
+GetPage(int nPage) const -> CPropertyPage*  // class CPropertySheet
+SetWizardMode() -> void  // class CPropertySheet
+SetFinishText(LPCTSTR lpszText) -> void  // class CPropertySheet
+SetWizardButtons(DWORD dwFlags) -> void  // class CPropertySheet
+GetTabControl() const -> CTabCtrl*  // class CPropertySheet
+PressButton(int nButton) -> BOOL  // class CPropertySheet
+IsWizard() const -> BOOL  // class CPropertySheet
+SetWizardMode() -> void  // class CPropertySheetEx
+GetPaperSize() const -> CSize  // class CPageSetupDialog
+CDateTimeCtrl() // class CDateTimeCtrl
+GetMonthCalFont() const -> CFont*  // class CDateTimeCtrl
+GetMonthCalCtrl() const -> CMonthCalCtrl*  // class CDateTimeCtrl
+SetMonthCalFont(HFONT hFont, BOOL bRedraw /* = TRUE */) -> void  // class CDateTimeCtrl
+SetMonthCalColor(int iColor, COLORREF ref) -> COLORREF  // class CDateTimeCtrl
+GetTime(LPSYSTEMTIME pTimeDest) const -> DWORD  // class CDateTimeCtrl
+GetMonthCalColor(int iColor) const -> COLORREF  // class CDateTimeCtrl
+SetFormat(LPCTSTR pstrFormat) -> BOOL  // class CDateTimeCtrl
+CMonthCalCtrl() // class CMonthCalCtrl
+HitTest(PMCHITTESTINFO pMCHitTest) -> DWORD  // class CMonthCalCtrl
+GetMinReqRect(RECT* pRect) const -> BOOL  // class CMonthCalCtrl
+SetMonthDelta(int iDelta) -> int  // class CMonthCalCtrl
+GetMonthDelta() const -> int  // class CMonthCalCtrl
+GetColor(int nRegion) const -> COLORREF  // class CMonthCalCtrl
+SetColor(int nRegion, COLORREF ref) -> COLORREF  // class CMonthCalCtrl
+SetMaxSelCount(int nMax) -> BOOL  // class CMonthCalCtrl
+GetMaxSelCount() const -> int  // class CMonthCalCtrl
+SetToday(const LPSYSTEMTIME pDateTime) -> void  // class CMonthCalCtrl
+GetToday(LPSYSTEMTIME pDateTime) const -> BOOL  // class CMonthCalCtrl
+SetCurSel(const LPSYSTEMTIME pDateTime) -> BOOL  // class CMonthCalCtrl
+GetCurSel(LPSYSTEMTIME pDateTime) const -> BOOL  // class CMonthCalCtrl
+CCreateContext() // class CCreateContext
+Create(LPCTSTR lpszFilename) -> BOOL  // class CMetaFileDC
+Close() -> HMETAFILE  // class CMetaFileDC
+CreateEnhanced(CDC* pDCRef, -> BOOL  // class CMetaFileDC
+CloseEnhanced() -> HENHMETAFILE  // class CMetaFileDC
+SetViewportOrg(POINT point) -> CPoint  // class CMetaFileDC
+SetViewportExt(SIZE size) -> CSize  // class CMetaFileDC
+TextOut(int x, int y, const CString& str) -> BOOL  // class CMetaFileDC
+ExtTextOut(int x, int y, UINT nOptions, LPCRECT lpRect, -> BOOL  // class CMetaFileDC
+TabbedTextOut(int x, int y, const CString& str, -> CSize  // class CMetaFileDC
+DrawText(const CString& str, LPRECT lpRect, UINT nFormat) -> int  // class CMetaFileDC
+PtVisible(POINT point) const -> BOOL  // class CMetaFileDC
+GetRowCount() const -> int  // class CSplitterWnd
+GetColumnCount() const -> int  // class CSplitterWnd
+IsChildPane(CWnd* pWnd, int& row, int& col) -> BOOL  // class CSplitterWnd
+GetActivePane(int& row, int& col) -> CWnd*  // class CSplitterWnd
+IsTracking() -> BOOL  // class CSplitterWnd
+GetCount() const -> int  // class CControlBar
+GetBarStyle() -> DWORD  // class CControlBar
+SetBorders(LPCRECT lpRect) -> void  // class CControlBar
+GetBorders() const -> CRect  // class CControlBar
+LoadToolBar(UINT nIDResource) -> BOOL  // class CToolBar
+LoadBitmap(UINT nIDResource) -> BOOL  // class CToolBar
+GetToolBarCtrl() const // class CToolBarCtrl& CToolBar
+Create(CWnd* pParentWnd, UINT nIDTemplate, -> BOOL  // class CDialogBar
+GetStatusBarCtrl() const // class CStatusBarCtrl& CStatusBar
+SetBorders(LPCRECT lpRect) -> void  // class CStatusBar
+SetBorders(int cxLeft, int cyTop, int cxRight, int cyBottom) -> void  // class CStatusBar
+EnableDocking(DWORD) -> void  // class CStatusBar
+GetReBarCtrl() const // class CReBarCtrl& CReBar
+EnableDocking(DWORD) -> void  // class CReBar
+CRectTracker() // class CRectTracker
+CBitmapButton() // class CBitmapButton
+LoadBitmaps(UINT nIDBitmapResource, -> BOOL  // class CBitmapButton
+SetMinPage(UINT nMinPage) -> void  // class CPrintInfo
+SetMaxPage(UINT nMaxPage) -> void  // class CPrintInfo
+GetMinPage() const -> UINT  // class CPrintInfo
+GetMaxPage() const -> UINT  // class CPrintInfo
+GetFromPage() const -> UINT  // class CPrintInfo
+GetToPage() const -> UINT  // class CPrintInfo
+GetEditCtrl() const // class CEdit& CEditView
+SetRegisterAsBrowser(BOOL bNewValue) -> void  // class CHtmlView
+SetRegisterAsDropTarget(BOOL bNewValue) -> void  // class CHtmlView
+SetTheaterMode(BOOL bNewValue) -> void  // class CHtmlView
+SetVisible(BOOL bNewValue) -> void  // class CHtmlView
+SetMenuBar(BOOL bNewValue) -> void  // class CHtmlView
+SetToolBar(int nNewValue) -> void  // class CHtmlView
+SetOffline(BOOL bNewValue) -> void  // class CHtmlView
+SetSilent(BOOL bNewValue) -> void  // class CHtmlView
+GoBack() -> void  // class CHtmlView
+GoForward() -> void  // class CHtmlView
+GoHome() -> void  // class CHtmlView
+GoSearch() -> void  // class CHtmlView
+Refresh() -> void  // class CHtmlView
+Refresh2(int nLevel) -> void  // class CHtmlView
+Stop() -> void  // class CHtmlView
+SetFullScreen(BOOL bNewValue) -> void  // class CHtmlView
+SetAddressBar(BOOL bNewValue) -> void  // class CHtmlView
+SetHeight(long nNewValue) -> void  // class CHtmlView
+PutProperty(LPCTSTR lpszPropertyName, long lValue) -> void  // class CHtmlView
+PutProperty(LPCTSTR lpszPropertyName, short nValue) -> void  // class CHtmlView
+PutProperty(LPCTSTR lpszPropertyName, LPCTSTR lpszValue) -> void  // class CHtmlView
+PutProperty(LPCTSTR lpszPropertyName, double dValue) -> void  // class CHtmlView
+SetTop(long nNewValue) -> void  // class CHtmlView
+SetLeft(long nNewValue) -> void  // class CHtmlView
+SetStatusBar(BOOL bNewValue) -> void  // class CHtmlView
+GetContext() const // class DWORD_PTR CInternetSession
+GetServerName() const -> CString  // class CInternetConnection
+GetSession() const -> CInternetSession*  // class CInternetConnection
+operator HINTERNET() const // class CInternetSession
+SetOption(DWORD dwOption, DWORD dwValue, -> BOOL  // class CInternetSession
+operator LPCTSTR() const // class CGopherLocator
+GetLocatorType(DWORD& dwRef) const -> BOOL  // class CGopherLocator
+CGopherLocator(const CGopherLocator& ref) // class CGopherLocator
+operator HINTERNET() const // class CInternetConnection
+GetContext() const // class DWORD_PTR CInternetConnection
+SetOption(DWORD dwOption, -> BOOL  // class CInternetConnection
+GetContext() const // class DWORD_PTR CInternetFile
+operator HINTERNET() const // class CInternetFile
+SetOption(DWORD dwOption, DWORD dwValue, -> BOOL  // class CInternetFile
+CHttpServerContext(EXTENSION_CONTROL_BLOCK* pECB) // class CHttpServerContext
+operator<<(double d) // class CHttpServerContext& CHttpServerContext
+operator<<(float f) // class CHttpServerContext& CHttpServerContext
+operator<<(long int dw) // class CHttpServerContext& CHttpServerContext
+operator<<(short int w) // class CHttpServerContext& CHttpServerContext
+operator<<(const CHtmlStream& stream) // class CHttpServerContext& CHttpServerContext
+operator<<(LPCTSTR psz) // class CHttpServerContext& CHttpServerContext
+GetServerVariable(LPTSTR lpszVariableName, -> BOOL  // class CHttpServerContext
+WriteClient(LPVOID pBuffer, LPDWORD lpdwBytes, -> BOOL  // class CHttpServerContext
+ReadClient(LPVOID lpvBuffer, LPDWORD lpdwSize) -> BOOL  // class CHttpServerContext
+ServerSupportFunction(DWORD dwHSERRequest, -> BOOL  // class CHttpServerContext
+GetStreamSize() const -> DWORD  // class CHtmlStream
+CHttpFilterContext(PHTTP_FILTER_CONTEXT pCtx) // class CHttpFilterContext
+GetServerVariable(LPTSTR lpszVariableName, -> BOOL  // class CHttpFilterContext
+AddResponseHeaders(LPTSTR lpszHeaders, -> BOOL  // class CHttpFilterContext
+WriteClient(LPVOID lpvBuffer, -> BOOL  // class CHttpFilterContext
+AllocMem(DWORD cbSize, -> LPVOID  // class CHttpFilterContext
+ServerSupportFunction(enum SF_REQ_TYPE sfReq, -> BOOL  // class CHttpFilterContext
+operator HANDLE() const // class CSyncObject
+Unlock() -> BOOL  // class CSemaphore
+SetEvent() -> BOOL  // class CEvent
+PulseEvent() -> BOOL  // class CEvent
+ResetEvent() -> BOOL  // class CEvent
+IsLocked() -> BOOL  // class CSingleLock
+IsLocked(DWORD dwObject) -> BOOL  // class CMultiLock
+CCriticalSection() : CSyncObject(NULL) // class CCriticalSection
+operator CRITICAL_SECTION*() // class CCriticalSection
+Lock() -> BOOL  // class CCriticalSection
+Lock(DWORD /* dwTimeout */) -> BOOL  // class CCriticalSection
+Unlock() -> BOOL  // class CCriticalSection
+GetDocument() const -> CDocument*  // class CDocItem
+EnableCompoundFile(BOOL bEnable) -> void  // class COleDocument
+SetBusyReply(SERVERCALL nBusyReply) -> void  // class COleMessageFilter
+SetRetryReply(DWORD nRetryReply) -> void  // class COleMessageFilter
+SetMessagePendingDelay(DWORD nTimeout) -> void  // class COleMessageFilter
+EnableBusyDialog(BOOL bEnable) -> void  // class COleMessageFilter
+EnableNotRespondingDialog(BOOL bEnable) -> void  // class COleMessageFilter
+CMonikerFile() { } // class CMonikerFile
+GetMoniker() const -> IMoniker*  // class CMonikerFile
+GetBinding() const -> IBinding*  // class CAsyncMonikerFile
+SetBinding(IBinding* pBinding) -> void  // class CAsyncMonikerFile
+SetFormatEtc(FORMATETC* pFormatEtc) -> void  // class CAsyncMonikerFile
+GetFormatEtc() const -> FORMATETC*  // class CAsyncMonikerFile
+COleException() // class COleException
+InternalAddRef() -> DWORD  // class CCmdTarget
+IsRegistered() const -> BOOL  // class COleObjectFactory
+GetClassID() const -> REFCLSID  // class COleObjectFactory
+operator LPDISPATCH() // class COleDispatchDriver
+COleVariant() // class COleVariant
+Clear() -> void  // class COleVariant
+COleVariant(LPCTSTR lpszSrc) // class COleVariant
+COleVariant(CString& strSrc) // class COleVariant
+COleVariant(BYTE nSrc) // class COleVariant
+COleVariant(const COleCurrency& curSrc) // class COleVariant
+COleVariant(float fltSrc) // class COleVariant
+COleVariant(double dblSrc) // class COleVariant
+COleVariant(const COleDateTime& dateSrc) // class COleVariant
+COleVariant(const CByteArray& arrSrc) // class COleVariant
+COleVariant(const CLongBinary& lbSrc) // class COleVariant
+operator==(LPCVARIANT pSrc) const -> BOOL  // class COleVariant
+operator LPVARIANT() // class COleVariant
+operator LPCVARIANT() const // class COleVariant
+COleCurrency() // class COleCurrency
+COleCurrency(CURRENCY cySrc) // class COleCurrency
+COleCurrency(const COleCurrency& curSrc) // class COleCurrency
+COleCurrency(const VARIANT& varSrc) // class COleCurrency
+CurrencyStatus COleCurrency::GetStatus() const // class COleCurrency
+SetStatus(CurrencyStatus status) -> void  // class COleCurrency
+operator+=(const COleCurrency& cur) -> const  // class COleCurrency& COleCurrency
+operator-=(const COleCurrency& cur) -> const  // class COleCurrency& COleCurrency
+operator*=(long nOperand) -> const  // class COleCurrency& COleCurrency
+operator/=(long nOperand) -> const  // class COleCurrency& COleCurrency
+operator==(const COleCurrency& cur) const -> BOOL  // class COleCurrency
+operator!=(const COleCurrency& cur) const -> BOOL  // class COleCurrency
+operator CURRENCY() const // class COleCurrency
+COleDateTime() // class COleDateTime
+COleDateTime(const COleDateTime& dateSrc) // class COleDateTime
+COleDateTime(const VARIANT& varSrc) // class COleDateTime
+COleDateTime(DATE dtSrc) // class COleDateTime
+COleDateTime(time_t timeSrc) // class COleDateTime
+COleDateTime(const SYSTEMTIME& systimeSrc) // class COleDateTime
+COleDateTime(const FILETIME& filetimeSrc) // class COleDateTime
+COleDateTime(int nYear, int nMonth, int nDay, // class COleDateTime
+COleDateTime(WORD wDosDate, WORD wDosTime) // class COleDateTime
+operator=(const COleDateTime& dateSrc) -> const  // class COleDateTime& COleDateTime
+DateTimeStatus COleDateTime::GetStatus() const // class COleDateTime
+SetStatus(DateTimeStatus status) -> void  // class COleDateTime
+operator==(const COleDateTime& date) const -> BOOL  // class COleDateTime
+operator!=(const COleDateTime& date) const -> BOOL  // class COleDateTime
+operator+=( -> const  // class COleDateTime& COleDateTime
+operator-=( -> const  // class COleDateTime& COleDateTime
+operator DATE() const // class COleDateTime
+SetDate(int nYear, int nMonth, int nDay) -> int  // class COleDateTime
+SetTime(int nHour, int nMin, int nSec) -> int  // class COleDateTime
+COleDateTimeSpan() // class COleDateTimeSpan
+COleDateTimeSpan(double dblSpanSrc) // class COleDateTimeSpan
+COleDateTimeSpan( // class COleDateTimeSpan
+COleDateTimeSpan( // class COleDateTimeSpan
+DateTimeSpanStatus COleDateTimeSpan::GetStatus() const // class COleDateTimeSpan
+SetStatus(DateTimeSpanStatus status) -> void  // class COleDateTimeSpan
+GetTotalDays() const -> double  // class COleDateTimeSpan
+GetTotalHours() const -> double  // class COleDateTimeSpan
+GetTotalMinutes() const -> double  // class COleDateTimeSpan
+GetTotalSeconds() const -> double  // class COleDateTimeSpan
+GetTotalHours() const -> double  // class COleDateTimeSpan
+GetTotalMinutes() const -> double  // class COleDateTimeSpan
+GetTotalSeconds() const -> double  // class COleDateTimeSpan
+GetDays() const -> long  // class COleDateTimeSpan
+operator==( -> BOOL  // class COleDateTimeSpan
+operator!=( -> BOOL  // class COleDateTimeSpan
+operator<( -> BOOL  // class COleDateTimeSpan
+operator>( -> BOOL  // class COleDateTimeSpan
+operator<=( -> BOOL  // class COleDateTimeSpan
+operator>=( -> BOOL  // class COleDateTimeSpan
+operator+=( -> const  // class COleDateTimeSpan& COleDateTimeSpan
+operator-=( -> const  // class COleDateTimeSpan& COleDateTimeSpan
+operator-() const -> COleDateTimeSpan  // class COleDateTimeSpan
+operator double() const // class COleDateTimeSpan
+COleSafeArray() // class COleSafeArray
+Clear() -> void  // class COleSafeArray
+operator LPVARIANT() // class COleSafeArray
+operator LPCVARIANT() const // class COleSafeArray
+GetDim() -> DWORD  // class COleSafeArray
+GetElemSize() -> DWORD  // class COleSafeArray
+GetLastStatus() const -> SCODE  // class COleClientItem
+GetDocument() const -> COleDocument*  // class COleClientItem
+GetType() const // class OLE_OBJTYPE COleClientItem
+GetDrawAspect() const -> DVASPECT  // class COleClientItem
+IsRunning() const -> BOOL  // class COleClientItem
+GetItemState() const -> UINT  // class COleClientItem
+IsInPlaceActive() const -> BOOL  // class COleClientItem
+IsOpen() const -> BOOL  // class COleClientItem
+IsLinkUpToDate() const -> BOOL  // class COleClientItem
+GetActiveView() const -> CView*  // class COleClientItem
+BeginDeferErrors() -> void  // class COleLinkingDoc
+GetLastError() const -> UINT  // class COleDialog
+GetPathName() const -> CString  // class COleInsertDialog
+GetClassID() const -> REFCLSID  // class COleInsertDialog
+GetIconicMetafile() const -> HGLOBAL  // class COleInsertDialog
+GetDrawAspect() const -> DVASPECT  // class COleInsertDialog
+GetIconicMetafile() const -> HGLOBAL  // class COleConvertDialog
+GetDrawAspect() const -> DVASPECT  // class COleConvertDialog
+GetClassID() const -> REFCLSID  // class COleConvertDialog
+GetIconicMetafile() const -> HGLOBAL  // class COleChangeIconDialog
+GetPasteIndex() const -> int  // class COlePasteSpecialDialog
+GetDrawAspect() const -> DVASPECT  // class COlePasteSpecialDialog
+GetIconicMetafile() const -> HGLOBAL  // class COlePasteSpecialDialog
+GetSelectionType() const -> UINT  // class COleBusyDialog
+IsValidSource() -> BOOL  // class COleChangeSourceDialog
+GetDisplayName() -> CString  // class COleChangeSourceDialog
+GetFileName() -> CString  // class COleChangeSourceDialog
+GetItemName() -> CString  // class COleChangeSourceDialog
+GetFromPrefix() -> CString  // class COleChangeSourceDialog
+GetToPrefix() -> CString  // class COleChangeSourceDialog
+GetDocument() const -> COleServerDoc*  // class COleServerItem
+NotifyChanged(DVASPECT nDrawAspect) -> void  // class COleServerItem
+GetItemName() const -> const  // class CString& COleServerItem
+SetItemName(LPCTSTR lpszItemName) -> void  // class COleServerItem
+IsLinkedItem() const -> BOOL  // class COleServerItem
+GetDataSource() -> COleDataSource*  // class COleServerItem
+NotifyChanged() -> void  // class COleServerDoc
+NotifyClosed() -> void  // class COleServerDoc
+NotifySaved() -> void  // class COleServerDoc
+IsEmbedded() const -> BOOL  // class COleServerDoc
+IsDocObject() const -> BOOL  // class COleServerDoc
+IsInPlaceActive() const -> BOOL  // class COleServerDoc
+GetRichEditCtrl() const // class CRichEditCtrl& CRichEditView
+GetPrintWidth() const // class CRichEditView
+GetPrintRect() const // class CRichEditView
+GetPageRect() const // class CRichEditView
+SetPaperSize(CSize sizePaper) // class CRichEditView
+GetPaperSize() const // class CRichEditView
+SetMargins(const CRect& rectMargin) // class CRichEditView
+GetMargins() const // class CRichEditView
+GetTextLength() const -> long  // class CRichEditView
+GetDocument() const -> CRichEditDoc*  // class CRichEditView
+GetStreamFormat() const -> int  // class CRichEditDoc
+InvalidateObjectCache() -> void  // class CRichEditDoc
+Mark(BOOL b) -> void  // class CRichEditCntrItem
+IsMarked() -> BOOL  // class CRichEditCntrItem
+GetDocument() -> CRichEditDoc*  // class CRichEditCntrItem
+GetActiveView() -> CRichEditView*  // class CRichEditCntrItem
+operator SOCKET() const // class CAsyncSocket
+GetPeerName(SOCKADDR* lpSockAddr, int* lpSockAddrLen) -> BOOL  // class CAsyncSocket
+GetSockName(SOCKADDR* lpSockAddr, int* lpSockAddrLen) -> BOOL  // class CAsyncSocket
+SetSockOpt(int nOptionName, const void* lpOptionValue, int nOptionLen, int nLevel) -> BOOL  // class CAsyncSocket
+GetSockOpt(int nOptionName, void* lpOptionValue, int* lpOptionLen, int nLevel) -> BOOL  // class CAsyncSocket
+FromHandle(SOCKET hSocket) -> CAsyncSocket*  // class CAsyncSocket
+GetLastError() -> int  // class CAsyncSocket
+Bind(const SOCKADDR* lpSockAddr, int nSockAddrLen) -> BOOL  // class CAsyncSocket
+Connect(const SOCKADDR* lpSockAddr, int nSockAddrLen) -> BOOL  // class CAsyncSocket
+Listen(int nConnectionBacklog) -> BOOL  // class CAsyncSocket
+ReceiveFrom(void* lpBuf, int nBufLen, SOCKADDR* lpSockAddr, int* lpSockAddrLen, int nFlags) -> int  // class CAsyncSocket
+ShutDown(int nHow) -> BOOL  // class CAsyncSocket
+SendTo(const void* lpBuf, int nBufLen, const SOCKADDR* lpSockAddr, int nSockAddrLen, int nFlags) -> int  // class CAsyncSocket
+Create(UINT nSocketPort, int nSocketType, __in_z_opt LPCTSTR lpszSocketAddress) -> BOOL  // class CSocket
+IsBlocking() -> BOOL  // class CSocket
+FromHandle(SOCKET hSocket) -> CSocket*  // class CSocket
+Attach(SOCKET hSocket) -> BOOL  // class CSocket
+AFX_MAINTAIN_STATE(AFX_MODULE_STATE* pNewState) // class AFX_MAINTAIN_STATE
+CSize() // class CSize
+CSize(int initCX, int initCY) // class CSize
+CSize(SIZE initSize) // class CSize
+CSize(POINT initPt) // class CSize
+CSize(DWORD dwSize) // class CSize
+operator==(SIZE size) const -> BOOL  // class CSize
+operator!=(SIZE size) const -> BOOL  // class CSize
+operator+=(SIZE size) -> void  // class CSize
+operator-=(SIZE size) -> void  // class CSize
+operator+(SIZE size) const -> CSize  // class CSize
+operator-(SIZE size) const -> CSize  // class CSize
+operator-() const -> CSize  // class CSize
+operator+(POINT point) const -> CPoint  // class CSize
+operator-(POINT point) const -> CPoint  // class CSize
+operator+(const RECT* lpRect) const -> CRect  // class CSize
+operator-(const RECT* lpRect) const -> CRect  // class CSize
+CPoint() // class CPoint
+CPoint(int initX, int initY) // class CPoint
+CPoint(POINT initPt) // class CPoint
+CPoint(SIZE initSize) // class CPoint
+CPoint(DWORD dwPoint) // class CPoint
+Offset(int xOffset, int yOffset) -> void  // class CPoint
+Offset(POINT point) -> void  // class CPoint
+Offset(SIZE size) -> void  // class CPoint
+operator==(POINT point) const -> BOOL  // class CPoint
+operator!=(POINT point) const -> BOOL  // class CPoint
+operator+=(SIZE size) -> void  // class CPoint
+operator-=(SIZE size) -> void  // class CPoint
+operator+=(POINT point) -> void  // class CPoint
+operator-=(POINT point) -> void  // class CPoint
+operator+(SIZE size) const -> CPoint  // class CPoint
+operator-(SIZE size) const -> CPoint  // class CPoint
+operator-() const -> CPoint  // class CPoint
+operator+(POINT point) const -> CPoint  // class CPoint
+operator-(POINT point) const -> CSize  // class CPoint
+operator+(const RECT* lpRect) const -> CRect  // class CPoint
+operator-(const RECT* lpRect) const -> CRect  // class CPoint
+CRect() // class CRect
+CRect(int l, int t, int r, int b) // class CRect
+CRect(const RECT& srcRect) // class CRect
+CRect(LPCRECT lpSrcRect) // class CRect
+CRect(POINT point, SIZE size) // class CRect
+CRect(POINT topLeft, POINT bottomRight) // class CRect
+Width() const -> int  // class CRect
+Height() const -> int  // class CRect
+Size() const -> CSize  // class CRect
+TopLeft() // class CPoint& CRect
+BottomRight() // class CPoint& CRect
+TopLeft() const -> const  // class CPoint& CRect
+BottomRight() const -> const  // class CPoint& CRect
+CenterPoint() const -> CPoint  // class CRect
+SwapLeftRight() -> void  // class CRect
+SwapLeftRight(LPRECT lpRect) -> void  // class CRect
+operator LPRECT() // class CRect
+operator LPCRECT() const // class CRect
+IsRectEmpty() const -> BOOL  // class CRect
+IsRectNull() const -> BOOL  // class CRect
+PtInRect(POINT point) const -> BOOL  // class CRect
+SetRect(int x1, int y1, int x2, int y2) -> void  // class CRect
+SetRect(POINT topLeft, POINT bottomRight) -> void  // class CRect
+SetRectEmpty() -> void  // class CRect
+CopyRect(LPCRECT lpSrcRect) -> void  // class CRect
+EqualRect(LPCRECT lpRect) const -> BOOL  // class CRect
+InflateRect(int x, int y) -> void  // class CRect
+InflateRect(SIZE size) -> void  // class CRect
+DeflateRect(int x, int y) -> void  // class CRect
+DeflateRect(SIZE size) -> void  // class CRect
+OffsetRect(int x, int y) -> void  // class CRect
+OffsetRect(POINT point) -> void  // class CRect
+OffsetRect(SIZE size) -> void  // class CRect
+IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) -> BOOL  // class CRect
+UnionRect(LPCRECT lpRect1, LPCRECT lpRect2) -> BOOL  // class CRect
+operator=(const RECT& srcRect) -> void  // class CRect
+operator==(const RECT& rect) const -> BOOL  // class CRect
+operator!=(const RECT& rect) const -> BOOL  // class CRect
+operator+=(POINT point) -> void  // class CRect
+operator+=(SIZE size) -> void  // class CRect
+operator+=(LPCRECT lpRect) -> void  // class CRect
+operator-=(POINT point) -> void  // class CRect
+operator-=(SIZE size) -> void  // class CRect
+operator-=(LPCRECT lpRect) -> void  // class CRect
+operator&=(const RECT& rect) -> void  // class CRect
+operator|=(const RECT& rect) -> void  // class CRect
+operator+(POINT pt) const -> CRect  // class CRect
+operator-(POINT pt) const -> CRect  // class CRect
+operator+(SIZE size) const -> CRect  // class CRect
+operator-(SIZE size) const -> CRect  // class CRect
+operator+(LPCRECT lpRect) const -> CRect  // class CRect
+operator-(LPCRECT lpRect) const -> CRect  // class CRect
+operator&(const RECT& rect2) const -> CRect  // class CRect
+operator|(const RECT& rect2) const -> CRect  // class CRect
+SubtractRect(LPCRECT lpRectSrc1, LPCRECT lpRectSrc2) -> BOOL  // class CRect
+CResourceException() // class CResourceException
+CResourceException(BOOL bAutoDelete, UINT nResourceID) // class CResourceException
+CUserException() // class CUserException
+CUserException(BOOL bAutoDelete, UINT nResourceID) // class CUserException
+operator HGDIOBJ() const // class CGdiObject
+GetSafeHandle() const -> HGDIOBJ  // class CGdiObject
+CGdiObject() // class CGdiObject
+GetObject(int nCount, LPVOID lpObject) const -> int  // class CGdiObject
+CreateStockObject(int nIndex) -> BOOL  // class CGdiObject
+UnrealizeObject() -> BOOL  // class CGdiObject
+GetObjectType() const -> UINT  // class CGdiObject
+operator==(const CGdiObject& obj) const -> BOOL  // class CGdiObject
+operator!=(const CGdiObject& obj) const -> BOOL  // class CGdiObject
+operator HPEN() const // class CPen
+FromHandle(HPEN hPen) -> CPen*  // class CPen
+CPen() // class CPen
+CreatePen(int nPenStyle, int nWidth, COLORREF crColor) -> BOOL  // class CPen
+CreatePenIndirect(LPLOGPEN lpLogPen) -> BOOL  // class CPen
+CreatePen(int nPenStyle, int nWidth, const LOGBRUSH* pLogBrush, -> BOOL  // class CPen
+GetExtLogPen(EXTLOGPEN* pLogPen) -> int  // class CPen
+GetLogPen(LOGPEN* pLogPen) -> int  // class CPen
+operator HBRUSH() const // class CBrush
+FromHandle(HBRUSH hBrush) -> CBrush*  // class CBrush
+CBrush() // class CBrush
+CreateSolidBrush(COLORREF crColor) -> BOOL  // class CBrush
+CreateHatchBrush(int nIndex, COLORREF crColor) -> BOOL  // class CBrush
+CreateBrushIndirect(const LOGBRUSH* lpLogBrush) -> BOOL  // class CBrush
+CreatePatternBrush(CBitmap* pBitmap) -> BOOL  // class CBrush
+CreateDIBPatternBrush(const void* lpPackedDIB, UINT nUsage) -> BOOL  // class CBrush
+CreateSysColorBrush(int nIndex) -> BOOL  // class CBrush
+GetLogBrush(LOGBRUSH* pLogBrush) -> int  // class CBrush
+operator HFONT() const // class CFont
+FromHandle(HFONT hFont) -> CFont*  // class CFont
+CFont() // class CFont
+CreateFontIndirect(const LOGFONT* lpLogFont) -> BOOL  // class CFont
+CreateFont(int nHeight, int nWidth, int nEscapement, -> BOOL  // class CFont
+GetLogFont(LOGFONT* pLogFont) -> int  // class CFont
+operator HBITMAP() const // class CBitmap
+FromHandle(HBITMAP hBitmap) -> CBitmap*  // class CBitmap
+CBitmap() // class CBitmap
+CreateBitmap(int nWidth, int nHeight, UINT nPlanes, -> BOOL  // class CBitmap
+CreateBitmapIndirect(LPBITMAP lpBitmap) -> BOOL  // class CBitmap
+SetBitmapBits(DWORD dwCount, const void* lpBits) -> DWORD  // class CBitmap
+GetBitmapBits(DWORD dwCount, LPVOID lpBits) const -> DWORD  // class CBitmap
+LoadBitmap(LPCTSTR lpszResourceName) -> BOOL  // class CBitmap
+LoadMappedBitmap(UINT nIDBitmap, UINT nFlags, -> BOOL  // class CBitmap
+SetBitmapDimension(int nWidth, int nHeight) -> CSize  // class CBitmap
+GetBitmapDimension() const -> CSize  // class CBitmap
+LoadBitmap(UINT nIDResource) -> BOOL  // class CBitmap
+LoadOEMBitmap(UINT nIDBitmap) -> BOOL  // class CBitmap
+CreateCompatibleBitmap(CDC* pDC, int nWidth, int nHeight) -> BOOL  // class CBitmap
+CreateDiscardableBitmap(CDC* pDC, int nWidth, int nHeight) -> BOOL  // class CBitmap
+GetBitmap(BITMAP* pBitMap) -> int  // class CBitmap
+operator HPALETTE() const // class CPalette
+FromHandle(HPALETTE hPalette) -> CPalette*  // class CPalette
+CPalette() // class CPalette
+CreatePalette(LPLOGPALETTE lpLogPalette) -> BOOL  // class CPalette
+CreateHalftonePalette(CDC* pDC) -> BOOL  // class CPalette
+GetPaletteEntries(UINT nStartIndex, UINT nNumEntries, -> UINT  // class CPalette
+SetPaletteEntries(UINT nStartIndex, UINT nNumEntries, -> UINT  // class CPalette
+AnimatePalette(UINT nStartIndex, UINT nNumEntries, -> void  // class CPalette
+GetNearestPaletteIndex(COLORREF crColor) const -> UINT  // class CPalette
+ResizePalette(UINT nNumEntries) -> BOOL  // class CPalette
+GetEntryCount() -> int  // class CPalette
+operator HRGN() const // class CRgn
+FromHandle(HRGN hRgn) -> CRgn*  // class CRgn
+CRgn() // class CRgn
+CreateRectRgn(int x1, int y1, int x2, int y2) -> BOOL  // class CRgn
+CreateRectRgnIndirect(LPCRECT lpRect) -> BOOL  // class CRgn
+CreateEllipticRgn(int x1, int y1, int x2, int y2) -> BOOL  // class CRgn
+CreateEllipticRgnIndirect(LPCRECT lpRect) -> BOOL  // class CRgn
+CreatePolygonRgn(LPPOINT lpPoints, int nCount, int nMode) -> BOOL  // class CRgn
+CreatePolyPolygonRgn(LPPOINT lpPoints, LPINT lpPolyCounts, int nCount, int nPolyFillMode) -> BOOL  // class CRgn
+CreateRoundRectRgn(int x1, int y1, int x2, int y2, int x3, int y3) -> BOOL  // class CRgn
+CreateFromPath(CDC* pDC) -> BOOL  // class CRgn
+CreateFromData(const XFORM* lpXForm, int nCount, const RGNDATA* pRgnData) -> BOOL  // class CRgn
+GetRegionData(LPRGNDATA lpRgnData, int nDataSize) const -> int  // class CRgn
+SetRectRgn(int x1, int y1, int x2, int y2) -> void  // class CRgn
+SetRectRgn(LPCRECT lpRect) -> void  // class CRgn
+CombineRgn(CRgn* pRgn1, CRgn* pRgn2, int nCombineMode) -> int  // class CRgn
+CopyRgn(CRgn* pRgnSrc) -> int  // class CRgn
+EqualRgn(CRgn* pRgn) const -> BOOL  // class CRgn
+OffsetRgn(int x, int y) -> int  // class CRgn
+OffsetRgn(POINT point) -> int  // class CRgn
+GetRgnBox(LPRECT lpRect) const -> int  // class CRgn
+PtInRegion(int x, int y) const -> BOOL  // class CRgn
+PtInRegion(POINT point) const -> BOOL  // class CRgn
+RectInRegion(LPCRECT lpRect) const -> BOOL  // class CRgn
+operator HDC() const // class CDC
+GetSafeHdc() const -> HDC  // class CDC
+GetWindow() const -> CWnd*  // class CDC
+IsPrinting() const -> BOOL  // class CDC
+CreateDC(LPCTSTR lpszDriverName, -> BOOL  // class CDC
+CreateIC(LPCTSTR lpszDriverName, -> BOOL  // class CDC
+CreateCompatibleDC(CDC* pDC) -> BOOL  // class CDC
+ExcludeUpdateRgn(CWnd* pWnd) -> int  // class CDC
+GetDeviceCaps(int nIndex) const -> int  // class CDC
+GetBrushOrg() const -> CPoint  // class CDC
+SetBrushOrg(int x, int y) -> CPoint  // class CDC
+SetBrushOrg(POINT point) -> CPoint  // class CDC
+EnumObjects(int nObjectType, -> int  // class CDC
+SelectObject(CBitmap* pBitmap) -> CBitmap*  // class CDC
+SelectObject(CGdiObject* pObject) -> CGdiObject*  // class CDC
+SelectObject(HGDIOBJ hObject) // Safe for NULL handles -> HGDIOBJ  // class CDC
+GetNearestColor(COLORREF crColor) const -> COLORREF  // class CDC
+RealizePalette() -> UINT  // class CDC
+UpdateColors() -> void  // class CDC
+GetBkColor() const -> COLORREF  // class CDC
+GetBkMode() const -> int  // class CDC
+GetPolyFillMode() const -> int  // class CDC
+GetROP2() const -> int  // class CDC
+GetStretchBltMode() const -> int  // class CDC
+GetTextColor() const -> COLORREF  // class CDC
+GetMapMode() const -> int  // class CDC
+GetViewportOrg() const -> CPoint  // class CDC
+GetViewportExt() const -> CSize  // class CDC
+GetWindowOrg() const -> CPoint  // class CDC
+GetWindowExt() const -> CSize  // class CDC
+SetViewportOrg(POINT point) -> CPoint  // class CDC
+SetViewportExt(SIZE size) -> CSize  // class CDC
+SetWindowOrg(POINT point) -> CPoint  // class CDC
+SetWindowExt(SIZE size) -> CSize  // class CDC
+DPtoLP(LPPOINT lpPoints, int nCount) const -> void  // class CDC
+DPtoLP(LPRECT lpRect) const -> void  // class CDC
+LPtoDP(LPPOINT lpPoints, int nCount) const -> void  // class CDC
+LPtoDP(LPRECT lpRect) const -> void  // class CDC
+FillRgn(CRgn* pRgn, CBrush* pBrush) -> BOOL  // class CDC
+FrameRgn(CRgn* pRgn, CBrush* pBrush, int nWidth, int nHeight) -> BOOL  // class CDC
+InvertRgn(CRgn* pRgn) -> BOOL  // class CDC
+PaintRgn(CRgn* pRgn) -> BOOL  // class CDC
+PtVisible(int x, int y) const -> BOOL  // class CDC
+PtVisible(POINT point) const -> BOOL  // class CDC
+RectVisible(LPCRECT lpRect) const -> BOOL  // class CDC
+GetCurrentPosition() const -> CPoint  // class CDC
+MoveTo(POINT point) -> CPoint  // class CDC
+LineTo(POINT point) -> BOOL  // class CDC
+Arc(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4) -> BOOL  // class CDC
+Arc(LPCRECT lpRect, POINT ptStart, POINT ptEnd) -> BOOL  // class CDC
+Polyline(LPPOINT lpPoints, int nCount) -> BOOL  // class CDC
+FillRect(LPCRECT lpRect, CBrush* pBrush) -> void  // class CDC
+FrameRect(LPCRECT lpRect, CBrush* pBrush) -> void  // class CDC
+InvertRect(LPCRECT lpRect) -> void  // class CDC
+DrawIcon(int x, int y, HICON hIcon) -> BOOL  // class CDC
+DrawIcon(POINT point, HICON hIcon) -> BOOL  // class CDC
+DrawState(CPoint pt, CSize size, HBITMAP hBitmap, UINT nFlags, HBRUSH hBrush) -> BOOL  // class CDC
+DrawState(CPoint pt, CSize size, CBitmap* pBitmap, UINT nFlags, CBrush* pBrush) -> BOOL  // class CDC
+DrawState(CPoint pt, CSize size, HICON hIcon, UINT nFlags, HBRUSH hBrush) -> BOOL  // class CDC
+DrawState(CPoint pt, CSize size, HICON hIcon, UINT nFlags, CBrush* pBrush) -> BOOL  // class CDC
+DrawState(CPoint pt, CSize size, LPCTSTR lpszText, UINT nFlags, BOOL bPrefixText, int nTextLen, HBRUSH hBrush) -> BOOL  // class CDC
+DrawState(CPoint pt, CSize size, LPCTSTR lpszText, UINT nFlags, BOOL bPrefixText, int nTextLen, CBrush* pBrush) -> BOOL  // class CDC
+DrawState(CPoint pt, CSize size, DRAWSTATEPROC lpDrawProc, LPARAM lData, UINT nFlags, HBRUSH hBrush) -> BOOL  // class CDC
+DrawState(CPoint pt, CSize size, DRAWSTATEPROC lpDrawProc, LPARAM lData, UINT nFlags, CBrush* pBrush) -> BOOL  // class CDC
+DrawEdge(LPRECT lpRect, UINT nEdge, UINT nFlags) -> BOOL  // class CDC
+DrawFrameControl(LPRECT lpRect, UINT nType, UINT nState) -> BOOL  // class CDC
+Chord(int x1, int y1, int x2, int y2, int x3, int y3, -> BOOL  // class CDC
+Chord(LPCRECT lpRect, POINT ptStart, POINT ptEnd) -> BOOL  // class CDC
+DrawFocusRect(LPCRECT lpRect) -> void  // class CDC
+Ellipse(int x1, int y1, int x2, int y2) -> BOOL  // class CDC
+Ellipse(LPCRECT lpRect) -> BOOL  // class CDC
+Pie(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4) -> BOOL  // class CDC
+Pie(LPCRECT lpRect, POINT ptStart, POINT ptEnd) -> BOOL  // class CDC
+Polygon(LPPOINT lpPoints, int nCount) -> BOOL  // class CDC
+PolyPolygon(LPPOINT lpPoints, LPINT lpPolyCounts, int nCount) -> BOOL  // class CDC
+Rectangle(int x1, int y1, int x2, int y2) -> BOOL  // class CDC
+Rectangle(LPCRECT lpRect) -> BOOL  // class CDC
+RoundRect(int x1, int y1, int x2, int y2, int x3, int y3) -> BOOL  // class CDC
+RoundRect(LPCRECT lpRect, POINT point) -> BOOL  // class CDC
+PatBlt(int x, int y, int nWidth, int nHeight, DWORD dwRop) -> BOOL  // class CDC
+BitBlt(int x, int y, int nWidth, int nHeight, CDC* pSrcDC, -> BOOL  // class CDC
+StretchBlt(int x, int y, int nWidth, int nHeight, CDC* pSrcDC, -> BOOL  // class CDC
+GetPixel(int x, int y) const -> COLORREF  // class CDC
+GetPixel(POINT point) const -> COLORREF  // class CDC
+SetPixel(int x, int y, COLORREF crColor) -> COLORREF  // class CDC
+SetPixel(POINT point, COLORREF crColor) -> COLORREF  // class CDC
+FloodFill(int x, int y, COLORREF crColor) -> BOOL  // class CDC
+ExtFloodFill(int x, int y, COLORREF crColor, UINT nFillType) -> BOOL  // class CDC
+TextOut(int x, int y, LPCTSTR lpszString, int nCount) -> BOOL  // class CDC
+TextOut(int x, int y, const CString& str) -> BOOL  // class CDC
+ExtTextOut(int x, int y, UINT nOptions, LPCRECT lpRect, -> BOOL  // class CDC
+ExtTextOut(int x, int y, UINT nOptions, LPCRECT lpRect, -> BOOL  // class CDC
+TabbedTextOut(int x, int y, LPCTSTR lpszString, int nCount, -> CSize  // class CDC
+TabbedTextOut(int x, int y, const CString& str, -> CSize  // class CDC
+DrawText(LPCTSTR lpszString, int nCount, LPRECT lpRect, -> int  // class CDC
+DrawText(const CString& str, LPRECT lpRect, UINT nFormat) -> int  // class CDC
+GetTextExtent(LPCTSTR lpszString, int nCount) const -> CSize  // class CDC
+GetTextExtent(const CString& str) const -> CSize  // class CDC
+GetOutputTextExtent(LPCTSTR lpszString, int nCount) const -> CSize  // class CDC
+GetOutputTextExtent(const CString& str) const -> CSize  // class CDC
+GetTabbedTextExtent(LPCTSTR lpszString, int nCount, -> CSize  // class CDC
+GetTabbedTextExtent(const CString& str, ->  CSize  // class CDC
+GetOutputTabbedTextExtent(LPCTSTR lpszString, int nCount, -> CSize  // class CDC
+GetOutputTabbedTextExtent(const CString& str, ->  CSize  // class CDC
+GrayString(CBrush* pBrush, -> BOOL  // class CDC
+GetTextAlign() const -> UINT  // class CDC
+GetTextFace(int nCount, LPTSTR lpszFacename) const -> int  // class CDC
+GetTextFace(CString& rString) const ->  int  // class CDC
+GetTextMetrics(LPTEXTMETRIC lpMetrics) const -> BOOL  // class CDC
+GetOutputTextMetrics(LPTEXTMETRIC lpMetrics) const -> BOOL  // class CDC
+GetTextCharacterExtra() const -> int  // class CDC
+GetCharWidth(UINT nFirstChar, UINT nLastChar, LPINT lpBuffer) const -> BOOL  // class CDC
+GetOutputCharWidth(UINT nFirstChar, UINT nLastChar, LPINT lpBuffer) const -> BOOL  // class CDC
+GetAspectRatioFilter() const -> CSize  // class CDC
+ScrollDC(int dx, int dy, -> BOOL  // class CDC
+Escape(int nEscape, int nCount, LPCSTR lpszInData, LPVOID lpOutData) -> int  // class CDC
+SetBoundsRect(LPCRECT lpRectBounds, UINT flags) -> UINT  // class CDC
+GetBoundsRect(LPRECT lpRectBounds, UINT flags) -> UINT  // class CDC
+ResetDC(const DEVMODE* lpDevMode) -> BOOL  // class CDC
+GetOutlineTextMetrics(UINT cbData, LPOUTLINETEXTMETRIC lpotm) const -> UINT  // class CDC
+GetCharABCWidths(UINT nFirstChar, UINT nLastChar, LPABC lpabc) const -> BOOL  // class CDC
+GetFontData(DWORD dwTable, DWORD dwOffset, LPVOID lpData, -> DWORD  // class CDC
+GetKerningPairs(int nPairs, LPKERNINGPAIR lpkrnpair) const -> int  // class CDC
+GetGlyphOutline(UINT nChar, UINT nFormat, LPGLYPHMETRICS lpgm, -> DWORD  // class CDC
+StartDoc(LPDOCINFO lpDocInfo) -> int  // class CDC
+StartPage() -> int  // class CDC
+EndPage() -> int  // class CDC
+SetAbortProc(BOOL (CALLBACK* lpfn)(HDC, int)) -> int  // class CDC
+AbortDoc() -> int  // class CDC
+EndDoc() -> int  // class CDC
+MaskBlt(int x, int y, int nWidth, int nHeight, CDC* pSrcDC, -> BOOL  // class CDC
+PlgBlt(LPPOINT lpPoint, CDC* pSrcDC, int xSrc, int ySrc, -> BOOL  // class CDC
+SetPixelV(int x, int y, COLORREF crColor) -> BOOL  // class CDC
+SetPixelV(POINT point, COLORREF crColor) -> BOOL  // class CDC
+AngleArc(int x, int y, int nRadius, -> BOOL  // class CDC
+ArcTo(LPCRECT lpRect, POINT ptStart, POINT ptEnd) -> BOOL  // class CDC
+GetArcDirection() const -> int  // class CDC
+PolyPolyline(const POINT* lpPoints, const DWORD* lpPolyPoints, -> BOOL  // class CDC
+GetColorAdjustment(LPCOLORADJUSTMENT lpColorAdjust) const -> BOOL  // class CDC
+GetCurrentPen() const -> CPen*  // class CDC
+GetCurrentBrush() const -> CBrush*  // class CDC
+GetCurrentPalette() const -> CPalette*  // class CDC
+GetCurrentFont() const -> CFont*  // class CDC
+GetCurrentBitmap() const -> CBitmap*  // class CDC
+PolyBezier(const POINT* lpPoints, int nCount) -> BOOL  // class CDC
+DrawEscape(int nEscape, int nInputSize, LPCSTR lpszInputData) -> int  // class CDC
+Escape(int nEscape, int nInputSize, LPCSTR lpszInputData, -> int  // class CDC
+GetCharABCWidths(UINT nFirstChar, UINT nLastChar, -> BOOL  // class CDC
+GetCharWidth(UINT nFirstChar, UINT nLastChar, -> BOOL  // class CDC
+AbortPath() -> BOOL  // class CDC
+BeginPath() -> BOOL  // class CDC
+CloseFigure() -> BOOL  // class CDC
+EndPath() -> BOOL  // class CDC
+FillPath() -> BOOL  // class CDC
+FlattenPath() -> BOOL  // class CDC
+GetMiterLimit() const -> float  // class CDC
+GetPath(LPPOINT lpPoints, LPBYTE lpTypes, int nCount) const -> int  // class CDC
+SetMiterLimit(float fMiterLimit) -> BOOL  // class CDC
+StrokeAndFillPath() -> BOOL  // class CDC
+StrokePath() -> BOOL  // class CDC
+WidenPath() -> BOOL  // class CDC
+AddMetaFileComment(UINT nDataSize, const BYTE* pCommentData) -> BOOL  // class CDC
+PlayMetaFile(HENHMETAFILE hEnhMF, LPCRECT lpBounds) -> BOOL  // class CDC
+CMenu() // class CMenu
+CreateMenu() -> BOOL  // class CMenu
+CreatePopupMenu() -> BOOL  // class CMenu
+operator HMENU() const // class CMenu
+operator==(const CMenu& menu) const -> BOOL  // class CMenu
+operator!=(const CMenu& menu) const -> BOOL  // class CMenu
+GetSafeHmenu() const -> HMENU  // class CMenu
+DeleteMenu(UINT nPosition, UINT nFlags) -> BOOL  // class CMenu
+AppendMenu(UINT nFlags, UINT_PTR nIDNewItem, LPCTSTR lpszNewItem) -> BOOL  // class CMenu
+AppendMenu(UINT nFlags, UINT_PTR nIDNewItem, const CBitmap* pBmp) -> BOOL  // class CMenu
+CheckMenuItem(UINT nIDCheckItem, UINT nCheck) -> UINT  // class CMenu
+EnableMenuItem(UINT nIDEnableItem, UINT nEnable) -> UINT  // class CMenu
+SetDefaultItem(UINT uItem, BOOL fByPos) -> BOOL  // class CMenu
+GetDefaultItem(UINT gmdiFlags, BOOL fByPos) -> UINT  // class CMenu
+GetMenuItemCount() const -> UINT  // class CMenu
+GetMenuItemID(int nPos) const -> UINT  // class CMenu
+GetMenuState(UINT nID, UINT nFlags) const -> UINT  // class CMenu
+GetMenuString(UINT nIDItem, LPTSTR lpString, int nMaxCount, UINT nFlags) const -> int  // class CMenu
+GetMenuString(UINT nIDItem, CString& rString, UINT nFlags) const -> int  // class CMenu
+GetMenuItemInfo(UINT nIDItem, LPMENUITEMINFO lpMenuItemInfo, BOOL fByPos) -> BOOL  // class CMenu
+GetSubMenu(int nPos) const -> CMenu*  // class CMenu
+InsertMenu(UINT nPosition, UINT nFlags, UINT_PTR nIDNewItem, -> BOOL  // class CMenu
+InsertMenu(UINT nPosition, UINT nFlags, UINT_PTR nIDNewItem, const CBitmap* pBmp) -> BOOL  // class CMenu
+ModifyMenu(UINT nPosition, UINT nFlags, UINT_PTR nIDNewItem, LPCTSTR lpszNewItem) -> BOOL  // class CMenu
+ModifyMenu(UINT nPosition, UINT nFlags, UINT_PTR nIDNewItem, const CBitmap* pBmp) -> BOOL  // class CMenu
+RemoveMenu(UINT nPosition, UINT nFlags) -> BOOL  // class CMenu
+SetMenuItemBitmaps(UINT nPosition, UINT nFlags, -> BOOL  // class CMenu
+LoadMenu(LPCTSTR lpszResourceName) -> BOOL  // class CMenu
+LoadMenu(UINT nIDResource) -> BOOL  // class CMenu
+LoadMenuIndirect(const void* lpMenuTemplate) -> BOOL  // class CMenu
+SetMenuContextHelpId(DWORD dwContextHelpId) -> BOOL  // class CMenu
+GetMenuContextHelpId() const -> DWORD  // class CMenu
+CheckMenuRadioItem(UINT nIDFirst, UINT nIDLast, UINT nIDItem, UINT nFlags) -> BOOL  // class CMenu
+ContinueRouting() -> void  // class CCmdUI
+operator HWND() const // class CWnd
+operator==(const CWnd& wnd) const -> BOOL  // class CWnd
+operator!=(const CWnd& wnd) const -> BOOL  // class CWnd
+GetSafeHwnd() const -> HWND  // class CWnd
+GetStyle() const -> DWORD  // class CWnd
+GetExStyle() const -> DWORD  // class CWnd
+ModifyStyle(DWORD dwRemove, DWORD dwAdd, UINT nFlags) -> BOOL  // class CWnd
+ModifyStyleEx(DWORD dwRemove, DWORD dwAdd, UINT nFlags) -> BOOL  // class CWnd
+GetOwner() const -> CWnd*  // class CWnd
+SetOwner(CWnd* pOwnerWnd) -> void  // class CWnd
+SendMessage(UINT message, WPARAM wParam, LPARAM lParam) -> LRESULT  // class CWnd
+PostMessage(UINT message, WPARAM wParam, LPARAM lParam) -> BOOL  // class CWnd
+SetWindowText(LPCTSTR lpszString) -> void  // class CWnd
+GetWindowText(LPTSTR lpszString, int nMaxCount) const -> int  // class CWnd
+GetWindowTextLength() const -> int  // class CWnd
+SetFont(CFont* pFont, BOOL bRedraw) -> void  // class CWnd
+GetFont() const -> CFont*  // class CWnd
+GetMenu() const -> CMenu*  // class CWnd
+SetMenu(CMenu* pMenu) -> BOOL  // class CWnd
+DrawMenuBar() -> void  // class CWnd
+GetSystemMenu(BOOL bRevert) const -> CMenu*  // class CWnd
+HiliteMenuItem(CMenu* pMenu, UINT nIDHiliteItem, UINT nHilite) -> BOOL  // class CWnd
+GetDlgCtrlID() const -> int  // class CWnd
+SetDlgCtrlID(int nID) -> int  // class CWnd
+IsIconic() const -> BOOL  // class CWnd
+IsZoomed() const -> BOOL  // class CWnd
+MoveWindow(int x, int y, int nWidth, int nHeight, BOOL bRepaint) -> void  // class CWnd
+MoveWindow(LPCRECT lpRect, BOOL bRepaint) -> void  // class CWnd
+SetWindowPos(const CWnd* pWndInsertAfter, int x, int y, int cx, int cy, UINT nFlags) -> BOOL  // class CWnd
+ArrangeIconicWindows() -> UINT  // class CWnd
+SetWindowRgn(HRGN hRgn, BOOL bRedraw) -> int  // class CWnd
+GetWindowRgn(HRGN hRgn) const -> int  // class CWnd
+BringWindowToTop() -> void  // class CWnd
+GetWindowRect(LPRECT lpRect) const -> void  // class CWnd
+GetClientRect(LPRECT lpRect) const -> void  // class CWnd
+MapWindowPoints(CWnd* pwndTo, LPPOINT lpPoint, UINT nCount) const -> void  // class CWnd
+MapWindowPoints(CWnd* pwndTo, LPRECT lpRect) const -> void  // class CWnd
+ClientToScreen(LPPOINT lpPoint) const -> void  // class CWnd
+ClientToScreen(LPRECT lpRect) const -> void  // class CWnd
+ScreenToClient(LPPOINT lpPoint) const -> void  // class CWnd
+ScreenToClient(LPRECT lpRect) const -> void  // class CWnd
+BeginPaint(LPPAINTSTRUCT lpPaint) -> CDC*  // class CWnd
+EndPaint(LPPAINTSTRUCT lpPaint) -> void  // class CWnd
+GetDC() -> CDC*  // class CWnd
+GetWindowDC() -> CDC*  // class CWnd
+ReleaseDC(CDC* pDC) -> int  // class CWnd
+UpdateWindow() -> void  // class CWnd
+SetRedraw(BOOL bRedraw) -> void  // class CWnd
+GetUpdateRect(LPRECT lpRect, BOOL bErase) -> BOOL  // class CWnd
+GetUpdateRgn(CRgn* pRgn, BOOL bErase) -> int  // class CWnd
+Invalidate(BOOL bErase) -> void  // class CWnd
+InvalidateRect(LPCRECT lpRect, BOOL bErase) -> void  // class CWnd
+InvalidateRgn(CRgn* pRgn, BOOL bErase) -> void  // class CWnd
+ValidateRect(LPCRECT lpRect) -> void  // class CWnd
+ValidateRgn(CRgn* pRgn) -> void  // class CWnd
+ShowWindow(int nCmdShow) -> BOOL  // class CWnd
+IsWindowVisible() const -> BOOL  // class CWnd
+ShowOwnedPopups(BOOL bShow) -> void  // class CWnd
+SendMessageToDescendants( -> void  // class CWnd
+GetDescendantWindow(int nID, BOOL bOnlyPerm) const -> CWnd*  // class CWnd
+IsDialogMessage(LPMSG lpMsg) -> BOOL  // class CWnd
+GetDCEx(CRgn* prgnClip, DWORD flags) -> CDC*  // class CWnd
+LockWindowUpdate() -> BOOL  // class CWnd
+UnlockWindowUpdate() -> void  // class CWnd
+RedrawWindow(LPCRECT lpRectUpdate, CRgn* prgnUpdate, -> BOOL  // class CWnd
+EnableScrollBar(int nSBFlags, UINT nArrowFlags) -> BOOL  // class CWnd
+SetTimer(UINT_PTR nIDEvent, UINT nElapse, // class UINT_PTR CWnd
+KillTimer(UINT_PTR nIDEvent) -> BOOL  // class CWnd
+IsWindowEnabled() const -> BOOL  // class CWnd
+EnableWindow(BOOL bEnable) -> BOOL  // class CWnd
+GetActiveWindow() -> CWnd*  // class CWnd
+SetActiveWindow() -> CWnd*  // class CWnd
+GetCapture() -> CWnd*  // class CWnd
+SetCapture() -> CWnd*  // class CWnd
+GetFocus() -> CWnd*  // class CWnd
+SetFocus() -> CWnd*  // class CWnd
+GetDesktopWindow() -> CWnd*  // class CWnd
+CheckDlgButton(int nIDButton, UINT nCheck) -> void  // class CWnd
+CheckRadioButton(int nIDFirstButton, int nIDLastButton, -> void  // class CWnd
+DlgDirList(LPTSTR lpPathSpec, int nIDListBox, -> int  // class CWnd
+DlgDirListComboBox(LPTSTR lpPathSpec, int nIDComboBox, -> int  // class CWnd
+DlgDirSelect(LPTSTR lpString, int nIDListBox) -> BOOL  // class CWnd
+DlgDirSelectComboBox(LPTSTR lpString, int nIDComboBox) -> BOOL  // class CWnd
+GetDlgItem(int nID) const -> CWnd*  // class CWnd
+GetDlgItem(int nID, HWND* phWnd) const -> void  // class CWnd
+GetDlgItemInt(int nID, BOOL* lpTrans, -> UINT  // class CWnd
+GetDlgItemText(int nID, LPTSTR lpStr, int nMaxCount) const -> int  // class CWnd
+GetNextDlgGroupItem(CWnd* pWndCtl, BOOL bPrevious) const -> CWnd*  // class CWnd
+GetNextDlgTabItem(CWnd* pWndCtl, BOOL bPrevious) const -> CWnd*  // class CWnd
+IsDlgButtonChecked(int nIDButton) const -> UINT  // class CWnd
+SendDlgItemMessage(int nID, UINT message, WPARAM wParam, LPARAM lParam) -> LPARAM  // class CWnd
+SetDlgItemInt(int nID, UINT nValue, BOOL bSigned) -> void  // class CWnd
+SetDlgItemText(int nID, LPCTSTR lpszString) -> void  // class CWnd
+ScrollWindowEx(int dx, int dy, -> int  // class CWnd
+ShowScrollBar(UINT nBar, BOOL bShow) -> void  // class CWnd
+ChildWindowFromPoint(POINT point) const -> CWnd*  // class CWnd
+ChildWindowFromPoint(POINT point, UINT nFlags) const -> CWnd*  // class CWnd
+FindWindow(LPCTSTR lpszClassName, LPCTSTR lpszWindowName) -> CWnd*  // class CWnd
+GetNextWindow(UINT nFlag) const -> CWnd*  // class CWnd
+GetTopWindow() const -> CWnd*  // class CWnd
+GetWindow(UINT nCmd) const -> CWnd*  // class CWnd
+GetLastActivePopup() const -> CWnd*  // class CWnd
+IsChild(const CWnd* pWnd) const -> BOOL  // class CWnd
+GetParent() const -> CWnd*  // class CWnd
+SetParent(CWnd* pWndNewParent) -> CWnd*  // class CWnd
+WindowFromPoint(POINT point) -> CWnd*  // class CWnd
+FlashWindow(BOOL bInvert) -> BOOL  // class CWnd
+ChangeClipboardChain(HWND hWndNext) -> BOOL  // class CWnd
+SetClipboardViewer() -> HWND  // class CWnd
+OpenClipboard() -> BOOL  // class CWnd
+GetOpenClipboardWindow() -> CWnd*  // class CWnd
+GetClipboardOwner() -> CWnd*  // class CWnd
+GetClipboardViewer() -> CWnd*  // class CWnd
+CreateCaret(CBitmap* pBitmap) -> void  // class CWnd
+CreateSolidCaret(int nWidth, int nHeight) -> void  // class CWnd
+CreateGrayCaret(int nWidth, int nHeight) -> void  // class CWnd
+GetCaretPos() -> CPoint  // class CWnd
+SetCaretPos(POINT point) -> void  // class CWnd
+HideCaret() -> void  // class CWnd
+ShowCaret() -> void  // class CWnd
+SetForegroundWindow() -> BOOL  // class CWnd
+GetForegroundWindow() -> CWnd*  // class CWnd
+SendNotifyMessage(UINT message, WPARAM wParam, LPARAM lParam) -> BOOL  // class CWnd
+SetIcon(HICON hIcon, BOOL bBigIcon) -> HICON  // class CWnd
+GetIcon(BOOL bBigIcon) const -> HICON  // class CWnd
+Print(CDC* pDC, DWORD dwFlags) const -> void  // class CWnd
+PrintClient(CDC* pDC, DWORD dwFlags) const -> void  // class CWnd
+SetWindowContextHelpId(DWORD dwContextHelpId) -> BOOL  // class CWnd
+GetWindowContextHelpId() const -> DWORD  // class CWnd
+OnActivateApp(BOOL, HTASK) -> void  // class CWnd
+OnActivate(UINT, CWnd*, BOOL) -> void  // class CWnd
+OnCancelMode() -> void  // class CWnd
+OnChildActivate() -> void  // class CWnd
+OnClose() -> void  // class CWnd
+OnContextMenu(CWnd*, CPoint) -> void  // class CWnd
+OnCopyData(CWnd*, COPYDATASTRUCT*) -> int  // class CWnd
+OnCreate(LPCREATESTRUCT) -> int  // class CWnd
+OnEnable(BOOL) -> void  // class CWnd
+OnEndSession(BOOL) -> void  // class CWnd
+OnEraseBkgnd(CDC*) -> BOOL  // class CWnd
+OnGetMinMaxInfo(MINMAXINFO*) -> void  // class CWnd
+OnIconEraseBkgnd(CDC*) -> void  // class CWnd
+OnKillFocus(CWnd*) -> void  // class CWnd
+OnMenuChar(UINT, UINT, CMenu*) -> LRESULT  // class CWnd
+OnMenuSelect(UINT, UINT, HMENU) -> void  // class CWnd
+OnMove(int, int) -> void  // class CWnd
+OnPaint() -> void  // class CWnd
+OnQueryDragIcon() -> HCURSOR  // class CWnd
+OnQueryEndSession() -> BOOL  // class CWnd
+OnQueryNewPalette() -> BOOL  // class CWnd
+OnQueryOpen() -> BOOL  // class CWnd
+OnSetCursor(CWnd*, UINT, UINT) -> BOOL  // class CWnd
+OnSetFocus(CWnd*) -> void  // class CWnd
+OnShowWindow(BOOL, UINT) -> void  // class CWnd
+OnSize(UINT, int, int) -> void  // class CWnd
+OnTCard(UINT, DWORD) -> void  // class CWnd
+OnWindowPosChanging(WINDOWPOS*) -> void  // class CWnd
+OnWindowPosChanged(WINDOWPOS*) -> void  // class CWnd
+OnDropFiles(HDROP) -> void  // class CWnd
+OnPaletteIsChanging(CWnd*) -> void  // class CWnd
+OnNcActivate(BOOL) -> BOOL  // class CWnd
+OnNcCalcSize(BOOL, NCCALCSIZE_PARAMS*) -> void  // class CWnd
+OnNcCreate(LPCREATESTRUCT) -> BOOL  // class CWnd
+OnNcHitTest(CPoint) -> UINT  // class CWnd
+OnNcLButtonDblClk(UINT, CPoint) -> void  // class CWnd
+OnNcLButtonDown(UINT, CPoint) -> void  // class CWnd
+OnNcLButtonUp(UINT, CPoint) -> void  // class CWnd
+OnNcMButtonDblClk(UINT, CPoint) -> void  // class CWnd
+OnNcMButtonDown(UINT, CPoint) -> void  // class CWnd
+OnNcMButtonUp(UINT, CPoint) -> void  // class CWnd
+OnNcMouseMove(UINT, CPoint) -> void  // class CWnd
+OnNcPaint() -> void  // class CWnd
+OnNcRButtonDblClk(UINT, CPoint) -> void  // class CWnd
+OnNcRButtonDown(UINT, CPoint) -> void  // class CWnd
+OnNcRButtonUp(UINT, CPoint) -> void  // class CWnd
+OnSysChar(UINT, UINT, UINT) -> void  // class CWnd
+OnSysCommand(UINT, LPARAM) -> void  // class CWnd
+OnSysDeadChar(UINT, UINT, UINT) -> void  // class CWnd
+OnSysKeyDown(UINT, UINT, UINT) -> void  // class CWnd
+OnSysKeyUp(UINT, UINT, UINT) -> void  // class CWnd
+OnCompacting(UINT) -> void  // class CWnd
+OnFontChange() -> void  // class CWnd
+OnPaletteChanged(CWnd*) -> void  // class CWnd
+OnSpoolerStatus(UINT, UINT) -> void  // class CWnd
+OnTimeChange() -> void  // class CWnd
+OnChar(UINT, UINT, UINT) -> void  // class CWnd
+OnDeadChar(UINT, UINT, UINT) -> void  // class CWnd
+OnKeyDown(UINT, UINT, UINT) -> void  // class CWnd
+OnKeyUp(UINT, UINT, UINT) -> void  // class CWnd
+OnLButtonDblClk(UINT, CPoint) -> void  // class CWnd
+OnLButtonDown(UINT, CPoint) -> void  // class CWnd
+OnLButtonUp(UINT, CPoint) -> void  // class CWnd
+OnMButtonDblClk(UINT, CPoint) -> void  // class CWnd
+OnMButtonDown(UINT, CPoint) -> void  // class CWnd
+OnMButtonUp(UINT, CPoint) -> void  // class CWnd
+OnMouseActivate(CWnd*, UINT, UINT) -> int  // class CWnd
+OnMouseMove(UINT, CPoint) -> void  // class CWnd
+OnMouseWheel(UINT, short, CPoint) -> BOOL  // class CWnd
+OnRegisteredMouseWheel(WPARAM, LPARAM) -> LRESULT  // class CWnd
+OnRButtonDblClk(UINT, CPoint) -> void  // class CWnd
+OnRButtonDown(UINT, CPoint) -> void  // class CWnd
+OnRButtonUp(UINT, CPoint) -> void  // class CWnd
+OnTimer(UINT_PTR) -> void  // class CWnd
+OnInitMenu(CMenu*) -> void  // class CWnd
+OnInitMenuPopup(CMenu*, UINT, BOOL) -> void  // class CWnd
+OnAskCbFormatName(UINT, LPTSTR) -> void  // class CWnd
+OnChangeCbChain(HWND, HWND) -> void  // class CWnd
+OnDestroyClipboard() -> void  // class CWnd
+OnDrawClipboard() -> void  // class CWnd
+OnHScrollClipboard(CWnd*, UINT, UINT) -> void  // class CWnd
+OnPaintClipboard(CWnd*, HGLOBAL) -> void  // class CWnd
+OnRenderAllFormats() -> void  // class CWnd
+OnRenderFormat(UINT) -> void  // class CWnd
+OnSizeClipboard(CWnd*, HGLOBAL) -> void  // class CWnd
+OnVScrollClipboard(CWnd*, UINT, UINT) -> void  // class CWnd
+OnGetDlgCode() -> UINT  // class CWnd
+OnMDIActivate(BOOL, CWnd*, CWnd*) -> void  // class CWnd
+OnEnterMenuLoop(BOOL) -> void  // class CWnd
+OnExitMenuLoop(BOOL) -> void  // class CWnd
+OnStyleChanged(int, LPSTYLESTRUCT) -> void  // class CWnd
+OnStyleChanging(int, LPSTYLESTRUCT) -> void  // class CWnd
+OnSizing(UINT, LPRECT) -> void  // class CWnd
+OnMoving(UINT, LPRECT) -> void  // class CWnd
+OnCaptureChanged(CWnd*) -> void  // class CWnd
+OnDeviceChange(UINT, DWORD_PTR) -> BOOL  // class CWnd
+DoDataExchange(CDataExchange*) -> void  // class CWnd
+BeginModalState() -> void  // class CWnd
+EndModalState() -> void  // class CWnd
+DelayUpdateFrameTitle() -> void  // class CFrameWnd
+DelayRecalcLayout(BOOL bNotify) -> void  // class CFrameWnd
+InModalState() const -> BOOL  // class CFrameWnd
+AddControlBar(CControlBar *pBar) -> void  // class CFrameWnd
+SetTitle(LPCTSTR lpszTitle) -> void  // class CFrameWnd
+GetTitle() const -> CString  // class CFrameWnd
+Create(UINT nIDTemplate, CWnd* pParentWnd) -> BOOL  // class CDialog
+MapDialogRect(LPRECT lpRect) const -> void  // class CDialog
+SetHelpID(UINT nIDR) -> void  // class CDialog
+NextDlgCtrl() const -> void  // class CDialog
+PrevDlgCtrl() const -> void  // class CDialog
+GotoDlgCtrl(CWnd* pWndCtrl) -> void  // class CDialog
+SetDefID(UINT nID) -> void  // class CDialog
+GetDefID() const -> DWORD  // class CDialog
+CStatic() // class CStatic
+SetIcon(HICON hIcon) -> HICON  // class CStatic
+GetIcon() const -> HICON  // class CStatic
+SetEnhMetaFile(HENHMETAFILE hMetaFile) -> HENHMETAFILE  // class CStatic
+GetEnhMetaFile() const -> HENHMETAFILE  // class CStatic
+SetBitmap(HBITMAP hBitmap) -> HBITMAP  // class CStatic
+GetBitmap() const -> HBITMAP  // class CStatic
+SetCursor(HCURSOR hCursor) -> HCURSOR  // class CStatic
+GetCursor() -> HCURSOR  // class CStatic
+CButton() // class CButton
+GetState() const -> UINT  // class CButton
+SetState(BOOL bHighlight) -> void  // class CButton
+GetCheck() const -> int  // class CButton
+SetCheck(int nCheck) -> void  // class CButton
+GetButtonStyle() const -> UINT  // class CButton
+SetButtonStyle(UINT nStyle, BOOL bRedraw) -> void  // class CButton
+SetIcon(HICON hIcon) -> HICON  // class CButton
+GetIcon() const -> HICON  // class CButton
+SetBitmap(HBITMAP hBitmap) -> HBITMAP  // class CButton
+GetBitmap() const -> HBITMAP  // class CButton
+SetCursor(HCURSOR hCursor) -> HCURSOR  // class CButton
+GetCursor() -> HCURSOR  // class CButton
+CListBox() // class CListBox
+GetCount() const -> int  // class CListBox
+GetCurSel() const -> int  // class CListBox
+SetCurSel(int nSelect) -> int  // class CListBox
+GetHorizontalExtent() const -> int  // class CListBox
+SetHorizontalExtent(int cxExtent) -> void  // class CListBox
+GetSelCount() const -> int  // class CListBox
+GetSelItems(int nMaxItems, LPINT rgIndex) const -> int  // class CListBox
+GetTopIndex() const -> int  // class CListBox
+SetTopIndex(int nIndex) -> int  // class CListBox
+GetItemData(int nIndex) const // class DWORD_PTR CListBox
+SetItemData(int nIndex, DWORD_PTR dwItemData) -> int  // class CListBox
+GetItemDataPtr(int nIndex) const -> void*  // class CListBox
+SetItemDataPtr(int nIndex, void* pData) -> int  // class CListBox
+GetItemRect(int nIndex, LPRECT lpRect) const -> int  // class CListBox
+GetSel(int nIndex) const -> int  // class CListBox
+SetSel(int nIndex, BOOL bSelect) -> int  // class CListBox
+GetText(int nIndex, LPTSTR lpszBuffer) const -> int  // class CListBox
+GetTextLen(int nIndex) const -> int  // class CListBox
+SetColumnWidth(int cxWidth) -> void  // class CListBox
+SetTabStops(int nTabStops, LPINT rgTabStops) -> BOOL  // class CListBox
+SetTabStops() -> void  // class CListBox
+SetTabStops(const int& cxEachStop) -> BOOL  // class CListBox
+SetItemHeight(int nIndex, UINT cyItemHeight) -> int  // class CListBox
+GetItemHeight(int nIndex) const -> int  // class CListBox
+FindStringExact(int nIndexStart, LPCTSTR lpszFind) const -> int  // class CListBox
+GetCaretIndex() const -> int  // class CListBox
+SetCaretIndex(int nIndex, BOOL bScroll) -> int  // class CListBox
+AddString(LPCTSTR lpszItem) -> int  // class CListBox
+DeleteString(UINT nIndex) -> int  // class CListBox
+InsertString(int nIndex, LPCTSTR lpszItem) -> int  // class CListBox
+ResetContent() -> void  // class CListBox
+Dir(UINT attr, LPCTSTR lpszWildCard) -> int  // class CListBox
+FindString(int nStartAfter, LPCTSTR lpszItem) const -> int  // class CListBox
+SelectString(int nStartAfter, LPCTSTR lpszItem) -> int  // class CListBox
+SelItemRange(BOOL bSelect, int nFirstItem, int nLastItem) -> int  // class CListBox
+SetAnchorIndex(int nIndex) -> void  // class CListBox
+GetAnchorIndex() const -> int  // class CListBox
+GetLocale() const -> LCID  // class CListBox
+SetLocale(LCID nNewLocale) -> LCID  // class CListBox
+InitStorage(int nItems, UINT nBytes) -> int  // class CListBox
+CCheckListBox() // class CCheckListBox
+GetCheckStyle() -> UINT  // class CCheckListBox
+CComboBox() // class CComboBox
+GetCount() const -> int  // class CComboBox
+GetCurSel() const -> int  // class CComboBox
+SetCurSel(int nSelect) -> int  // class CComboBox
+GetEditSel() const -> DWORD  // class CComboBox
+LimitText(int nMaxChars) -> BOOL  // class CComboBox
+SetEditSel(int nStartChar, int nEndChar) -> BOOL  // class CComboBox
+GetItemData(int nIndex) const // class DWORD_PTR CComboBox
+SetItemData(int nIndex, DWORD_PTR dwItemData) -> int  // class CComboBox
+GetItemDataPtr(int nIndex) const -> void*  // class CComboBox
+SetItemDataPtr(int nIndex, void* pData) -> int  // class CComboBox
+GetLBText(int nIndex, LPTSTR lpszText) const -> int  // class CComboBox
+GetLBTextLen(int nIndex) const -> int  // class CComboBox
+ShowDropDown(BOOL bShowIt) -> void  // class CComboBox
+AddString(LPCTSTR lpszString) -> int  // class CComboBox
+DeleteString(UINT nIndex) -> int  // class CComboBox
+InsertString(int nIndex, LPCTSTR lpszString) -> int  // class CComboBox
+ResetContent() -> void  // class CComboBox
+Dir(UINT attr, LPCTSTR lpszWildCard) -> int  // class CComboBox
+FindString(int nStartAfter, LPCTSTR lpszString) const -> int  // class CComboBox
+SelectString(int nStartAfter, LPCTSTR lpszString) -> int  // class CComboBox
+Clear() -> void  // class CComboBox
+Copy() -> void  // class CComboBox
+Cut() -> void  // class CComboBox
+Paste() -> void  // class CComboBox
+SetItemHeight(int nIndex, UINT cyItemHeight) -> int  // class CComboBox
+GetItemHeight(int nIndex) const -> int  // class CComboBox
+FindStringExact(int nIndexStart, LPCTSTR lpszFind) const -> int  // class CComboBox
+SetExtendedUI(BOOL bExtended ) -> int  // class CComboBox
+GetExtendedUI() const -> BOOL  // class CComboBox
+GetDroppedControlRect(LPRECT lprect) const -> void  // class CComboBox
+GetDroppedState() const -> BOOL  // class CComboBox
+GetLocale() const -> LCID  // class CComboBox
+SetLocale(LCID nNewLocale) -> LCID  // class CComboBox
+GetTopIndex() const -> int  // class CComboBox
+SetTopIndex(int nIndex) -> int  // class CComboBox
+InitStorage(int nItems, UINT nBytes) -> int  // class CComboBox
+SetHorizontalExtent(UINT nExtent) -> void  // class CComboBox
+GetHorizontalExtent() const -> UINT  // class CComboBox
+SetDroppedWidth(UINT nWidth) -> int  // class CComboBox
+GetDroppedWidth() const -> int  // class CComboBox
+CEdit() // class CEdit
+CanUndo() const -> BOOL  // class CEdit
+GetLineCount() const -> int  // class CEdit
+GetModify() const -> BOOL  // class CEdit
+SetModify(BOOL bModified) -> void  // class CEdit
+GetRect(LPRECT lpRect) const -> void  // class CEdit
+GetSel(int& nStartChar, int& nEndChar) const -> void  // class CEdit
+GetSel() const -> DWORD  // class CEdit
+GetHandle() const -> HLOCAL  // class CEdit
+SetHandle(HLOCAL hBuffer) -> void  // class CEdit
+GetLine( -> int  // class CEdit
+GetLine( -> int  // class CEdit
+EmptyUndoBuffer() -> void  // class CEdit
+FmtLines(BOOL bAddEOL) -> BOOL  // class CEdit
+LimitText(int nChars) -> void  // class CEdit
+LineFromChar(int nIndex) const -> int  // class CEdit
+LineIndex(int nLine) const -> int  // class CEdit
+LineLength(int nLine) const -> int  // class CEdit
+LineScroll(int nLines, int nChars) -> void  // class CEdit
+ReplaceSel(LPCTSTR lpszNewText, BOOL bCanUndo) -> void  // class CEdit
+SetPasswordChar(TCHAR ch) -> void  // class CEdit
+SetRect(LPCRECT lpRect) -> void  // class CEdit
+SetRectNP(LPCRECT lpRect) -> void  // class CEdit
+SetSel(DWORD dwSelection, BOOL bNoScroll) -> void  // class CEdit
+SetSel(int nStartChar, int nEndChar, BOOL bNoScroll) -> void  // class CEdit
+SetTabStops(int nTabStops, LPINT rgTabStops) -> BOOL  // class CEdit
+SetTabStops() -> void  // class CEdit
+SetTabStops(const int& cxEachStop) -> BOOL  // class CEdit
+Undo() -> BOOL  // class CEdit
+Clear() -> void  // class CEdit
+Copy() -> void  // class CEdit
+Cut() -> void  // class CEdit
+Paste() -> void  // class CEdit
+SetReadOnly(BOOL bReadOnly ) -> BOOL  // class CEdit
+GetFirstVisibleLine() const -> int  // class CEdit
+GetPasswordChar() const -> TCHAR  // class CEdit
+SetMargins(UINT nLeft, UINT nRight) -> void  // class CEdit
+GetMargins() const -> DWORD  // class CEdit
+SetLimitText(UINT nMax) -> void  // class CEdit
+GetLimitText() const -> UINT  // class CEdit
+PosFromChar(UINT nChar) const -> CPoint  // class CEdit
+CharFromPos(CPoint pt) const -> int  // class CEdit
+CScrollBar() // class CScrollBar
+GetScrollPos() const -> int  // class CScrollBar
+SetScrollPos(int nPos, BOOL bRedraw) -> int  // class CScrollBar
+GetScrollRange(LPINT lpMinPos, LPINT lpMaxPos) const -> void  // class CScrollBar
+SetScrollRange(int nMinPos, int nMaxPos, BOOL bRedraw) -> void  // class CScrollBar
+ShowScrollBar(BOOL bShow) -> void  // class CScrollBar
+EnableScrollBar(UINT nArrowFlags) -> BOOL  // class CScrollBar
+SetScrollInfo(LPSCROLLINFO lpScrollInfo, BOOL bRedraw) -> BOOL  // class CScrollBar
+GetScrollInfo(LPSCROLLINFO lpScrollInfo, UINT nMask) -> BOOL  // class CScrollBar
+GetScrollLimit() -> int  // class CScrollBar
+MDIActivate(CWnd* pWndActivate) -> void  // class CMDIFrameWnd
+MDIIconArrange() -> void  // class CMDIFrameWnd
+MDIMaximize(CWnd* pWnd) -> void  // class CMDIFrameWnd
+MDINext() -> void  // class CMDIFrameWnd
+MDIRestore(CWnd* pWnd) -> void  // class CMDIFrameWnd
+MDISetMenu(CMenu* pFrameMenu, CMenu* pWindowMenu) -> CMenu*  // class CMDIFrameWnd
+MDITile() -> void  // class CMDIFrameWnd
+MDICascade() -> void  // class CMDIFrameWnd
+MDICascade(int nType) -> void  // class CMDIFrameWnd
+MDITile(int nType) -> void  // class CMDIFrameWnd
+MDIDestroy() -> void  // class CMDIChildWnd
+MDIActivate() -> void  // class CMDIChildWnd
+MDIMaximize() -> void  // class CMDIChildWnd
+MDIRestore() -> void  // class CMDIChildWnd
+GetDocument() const -> CDocument*  // class CView
+GetTotalSize() const -> CSize  // class CScrollView
+GetTitle() const -> const  // class CString& CDocument
+GetPathName() const -> const  // class CString& CDocument
+GetDocTemplate() const -> CDocTemplate* // class CDocument
+IsModified() -> BOOL  // class CDocument
+SetModifiedFlag(BOOL bModified) -> void  // class CDocument
+operator HANDLE() const // class CWinThread
+SetThreadPriority(int nPriority) -> BOOL  // class CWinThread
+GetThreadPriority() -> int  // class CWinThread
+ResumeThread() -> DWORD  // class CWinThread
+SuspendThread() -> DWORD  // class CWinThread
+PostThreadMessage(UINT message, WPARAM wParam, LPARAM lParam) -> BOOL  // class CWinThread
+LoadCursor(LPCTSTR lpszResourceName) const -> HCURSOR  // class CWinApp
+LoadCursor(UINT nIDResource) const -> HCURSOR  // class CWinApp
+LoadStandardCursor(LPCTSTR lpszCursorName) const -> HCURSOR  // class CWinApp
+LoadOEMCursor(UINT nIDCursor) const -> HCURSOR  // class CWinApp
+LoadIcon(LPCTSTR lpszResourceName) const -> HICON  // class CWinApp
+LoadIcon(UINT nIDResource) const -> HICON  // class CWinApp
+LoadStandardIcon(LPCTSTR lpszIconName) const -> HICON  // class CWinApp
+LoadOEMIcon(UINT nIDIcon) const -> HICON  // class CWinApp
+CWaitCursor() // class CWaitCursor
+Restore() -> void  // class CWaitCursor
+CloseWindow() -> void  // class CWnd

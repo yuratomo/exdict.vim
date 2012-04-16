@@ -1,465 +1,465 @@
-EVT_WDFDEVICE_WDM_IRP_PREPROCESS( WDFDEVICE inDevice, PIRP ioIrp);  // DISPATCH_LEVEL
-EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP( WDFCHILDLIST inChildList, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER ioAddressDescription);  // DISPATCH_LEVEL
-EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_COPY( WDFCHILDLIST inChildList, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER inSourceAddressDescription, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER outDestinationAddressDescription);  // DISPATCH_LEVEL
-EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE( WDFCHILDLIST inChildList, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER inSourceAddressDescription, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER outDestinationAddressDescription);  // DISPATCH_LEVEL
-EVT_WDF_CHILD_LIST_CREATE_DEVICE( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inIdentificationDescription, PWDFDEVICE_INIT inChildInit);  // PASSIVE_LEVEL
-EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED( WDFCHILDLIST inChildList, WDFDEVICE inOldDevice, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER inOldAddressDescription, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER outNewAddressDescription);  // DISPATCH_LEVEL
-EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_CLEANUP( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER outIdentificationDescription);  // DISPATCH_LEVEL
-EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inFirstIdentificationDescription, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inSecondIdentificationDescription);  // DISPATCH_LEVEL
-EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COPY( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inSourceIdentificationDescription, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER outDestinationIdentificationDescription);  // DISPATCH_LEVEL
-EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_DUPLICATE( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inSourceIdentificationDescription, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER outDestinationIdentificationDescription);  // DISPATCH_LEVEL
-EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN( WDFCHILDLIST inChildList);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_ARM_WAKE_FROM_S0( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_ARM_WAKE_FROM_SX( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON( WDFDEVICE inDevice, BOOLEAN inDeviceWakeEnabled, BOOLEAN inChildrenArmedForWake);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_D0_ENTRY( WDFDEVICE inDevice, WDF_POWER_DEVICE_STATE inPreviousState);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED( WDFDEVICE inDevice, WDF_POWER_DEVICE_STATE inPreviousState);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_D0_EXIT( WDFDEVICE inDevice, WDF_POWER_DEVICE_STATE inTargetState);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_D0_EXIT_PRE_INTERRUPTS_DISABLED( WDFDEVICE inDevice, WDF_POWER_DEVICE_STATE inTargetState);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_DISABLE_WAKE_AT_BUS( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_DISARM_WAKE_FROM_SX( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_EJECT( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS( WDFDEVICE inDevice, SYSTEM_POWER_STATE inPowerState);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_FILE_CREATE( WDFDEVICE inDevice, WDFREQUEST inRequest, WDFFILEOBJECT inFileObject);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_FILTER_RESOURCE_REQUIREMENTS( WDFDEVICE inDevice, WDFIORESREQLIST inIoResourceRequirementsList);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_PNP_STATE_CHANGE_NOTIFICATION( WDFDEVICE inDevice, PCWDF_DEVICE_PNP_NOTIFICATION_DATA inNotificationData);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION( WDFDEVICE inDevice, PCWDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA inNotificationData);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_POWER_STATE_CHANGE_NOTIFICATION( WDFDEVICE inDevice, PCWDF_DEVICE_POWER_NOTIFICATION_DATA inNotificationData);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_PREPARE_HARDWARE( WDFDEVICE inDevice, WDFCMRESLIST inResourcesRaw, WDFCMRESLIST inResourcesTranslated);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST( WDFDEVICE inDevice, LPGUID inInterfaceType, PINTERFACE ioExposedInterface, PVOID ioExposedInterfaceSpecificData);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_QUERY_REMOVE( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_QUERY_STOP( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_RELATIONS_QUERY( WDFDEVICE inDevice, DEVICE_RELATION_TYPE inRelationType);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_RELEASE_HARDWARE( WDFDEVICE inDevice, WDFCMRESLIST inResourcesTranslated);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES( WDFDEVICE inDevice, WDFCMRESLIST inResourcesRaw, WDFCMRESLIST inResourcesTranslated);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_RESOURCES_QUERY( WDFDEVICE inDevice, WDFCMRESLIST inResources);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_RESOURCE_REQUIREMENTS_QUERY( WDFDEVICE inDevice, WDFIORESREQLIST inIoResourceRequirementsList);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_SELF_MANAGED_IO_FLUSH( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_SELF_MANAGED_IO_INIT( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_SET_LOCK( WDFDEVICE inDevice, BOOLEAN inIsLocked);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_SHUTDOWN_NOTIFICATION( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_SURPRISE_REMOVAL( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_USAGE_NOTIFICATION( WDFDEVICE inDevice, WDF_SPECIAL_FILE_TYPE inNotificationType, BOOLEAN inIsInNotificationPath);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_WAKE_FROM_S0_TRIGGERED( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED( WDFDEVICE inDevice);  // PASSIVE_LEVEL
-EVT_WDF_DMA_ENABLER_DISABLE( WDFDMAENABLER inDmaEnabler);  // PASSIVE_LEVEL
-EVT_WDF_DMA_ENABLER_ENABLE( WDFDMAENABLER inDmaEnabler);  // PASSIVE_LEVEL
-EVT_WDF_DMA_ENABLER_FLUSH( WDFDMAENABLER inDmaEnabler);  // PASSIVE_LEVEL
-EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START( WDFDMAENABLER inDmaEnabler);  // PASSIVE_LEVEL
-EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_STOP( WDFDMAENABLER inDmaEnabler);  // PASSIVE_LEVEL
-EVT_WDF_DRIVER_DEVICE_ADD( WDFDRIVER inDriver, PWDFDEVICE_INIT ioDeviceInit);  // PASSIVE_LEVEL
-EVT_WDF_DRIVER_UNLOAD( WDFDRIVER inDriver);  // PASSIVE_LEVEL
-EVT_WDF_FILE_CLEANUP( WDFFILEOBJECT inFileObject);  // PASSIVE_LEVEL
-EVT_WDF_FILE_CLOSE( WDFFILEOBJECT inFileObject);  // PASSIVE_LEVEL
-EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES( WDFQUEUE inQueue, WDFREQUEST inRequest);  // DISPATCH_LEVEL
-EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST( WDFQUEUE inQueue, WDFREQUEST inRequest);  // DISPATCH_LEVEL
-EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE( WDFQUEUE inQueue, WDFREQUEST inRequest);  // DISPATCH_LEVEL
-EVT_WDF_IO_QUEUE_IO_DEFAULT( WDFQUEUE inQueue, WDFREQUEST inRequest);  // DISPATCH_LEVEL
-EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL( WDFQUEUE inQueue, WDFREQUEST inRequest, size_t inOutputBufferLength, size_t inInputBufferLength, ULONG inIoControlCode);  // DISPATCH_LEVEL
-EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL( WDFQUEUE inQueue, WDFREQUEST inRequest, size_t inOutputBufferLength, size_t inInputBufferLength, ULONG inIoControlCode);  // DISPATCH_LEVEL
-EVT_WDF_IO_QUEUE_IO_READ( WDFQUEUE inQueue, WDFREQUEST inRequest, size_t inLength);  // DISPATCH_LEVEL
-EVT_WDF_IO_QUEUE_IO_RESUME( WDFQUEUE inQueue, WDFREQUEST inRequest);  // DISPATCH_LEVEL
-EVT_WDF_IO_QUEUE_IO_STOP( WDFQUEUE inQueue, WDFREQUEST inRequest, ULONG inActionFlags);  // DISPATCH_LEVEL
-EVT_WDF_IO_QUEUE_IO_WRITE( WDFQUEUE inQueue, WDFREQUEST inRequest, size_t inLength);  // DISPATCH_LEVEL
-EVT_WDF_IO_QUEUE_STATE( WDFQUEUE inQueue, WDFCONTEXT inContext);  // DISPATCH_LEVEL
-EVT_WDF_IO_TARGET_QUERY_REMOVE( WDFIOTARGET inIoTarget);  // PASSIVE_LEVEL
-EVT_WDF_IO_TARGET_REMOVE_CANCELED( WDFIOTARGET inIoTarget);  // PASSIVE_LEVEL
-EVT_WDF_IO_TARGET_REMOVE_COMPLETE( WDFIOTARGET inIoTarget);  // PASSIVE_LEVEL
-EVT_WDF_IO_WDM_IRP_FOR_FORWARD_PROGRESS( WDFQUEUE inQueue, PIRP inIrp);  // DISPATCH_LEVEL
-EVT_WDF_OBJECT_CONTEXT_CLEANUP( WDFOBJECT inObject);  // DISPATCH_LEVEL
-EVT_WDF_OBJECT_CONTEXT_DESTROY( WDFOBJECT inObject);  // DISPATCH_LEVEL
-EVT_WDF_USB_READERS_FAILED( WDFUSBPIPE inPipe, NTSTATUS inStatus, USBD_STATUS inUsbdStatus);  // PASSIVE_LEVEL
-EVT_WDF_USB_READER_COMPLETION_ROUTINE( WDFUSBPIPE inPipe, WDFMEMORY inBuffer, size_t inNumBytesTransferred, WDFCONTEXT inContext);  // DISPATCH_LEVEL
-EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD( WDFWMIINSTANCE inWmiInstance, ULONG inMethodId, ULONG inInBufferSize, ULONG inOutBufferSize, PVOID Buffer, PULONG outBufferUsed);  // PASSIVE_LEVEL
-EVT_WDF_WMI_INSTANCE_QUERY_INSTANCE( WDFWMIINSTANCE inWmiInstance, ULONG inOutBufferSize, PVOID OutBuffer, PULONG outBufferUsed);  // PASSIVE_LEVEL
-EVT_WDF_WMI_INSTANCE_SET_INSTANCE( WDFWMIINSTANCE inWmiInstance, ULONG inInBufferSize, PVOID InBuffer);  // PASSIVE_LEVEL
-EVT_WDF_WMI_INSTANCE_SET_ITEM( WDFWMIINSTANCE inWmiInstance, ULONG inDataItemId, ULONG inInBufferSize, PVOID InBuffer);  // PASSIVE_LEVEL
-EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL( WDFWMIPROVIDER inWmiProvider, WDF_WMI_PROVIDER_CONTROL inControl, BOOLEAN inEnable);  // PASSIVE_LEVEL
-WdfChildListAddOrUpdateChildDescriptionAsPresent( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inIdentificationDescription, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER inAddressDescription)
-WdfChildListBeginIteration( WDFCHILDLIST inChildList, PWDF_CHILD_LIST_ITERATOR inIterator)
-WdfChildListBeginScan( WDFCHILDLIST inChildList)
-WdfChildListCreate( WDFDEVICE inDevice, PWDF_CHILD_LIST_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inChildListAttributes, outWDFCHILDLIST* ChildList)
-WdfChildListEndIteration( WDFCHILDLIST inChildList, PWDF_CHILD_LIST_ITERATOR inIterator)
-WdfChildListEndScan( WDFCHILDLIST inChildList)
-WdfChildListGetDevice( WDFCHILDLIST inChildList)
-WdfChildListRequestChildEject( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inIdentificationDescription)
-WdfChildListRetrieveAddressDescription( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inIdentificationDescription, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER ioAddressDescription)
-WdfChildListRetrieveNextDevice( WDFCHILDLIST inChildList, PWDF_CHILD_LIST_ITERATOR inIterator, outWDFDEVICE* Device, PWDF_CHILD_RETRIEVE_INFO ioInfo)
-WdfChildListRetrievePdo( WDFCHILDLIST inChildList, PWDF_CHILD_RETRIEVE_INFO ioRetrieveInfo)
-WdfChildListUpdateAllChildDescriptionsAsPresent( WDFCHILDLIST inChildList)
-WdfChildListUpdateChildDescriptionAsMissing( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inIdentificationDescription)
-WdfCmResourceListAppendDescriptor( WDFCMRESLIST inList, PCM_PARTIAL_RESOURCE_DESCRIPTOR inDescriptor)
-WdfCmResourceListGetCount( WDFCMRESLIST inList)
-WdfCmResourceListGetDescriptor( WDFCMRESLIST inList, ULONG inIndex)
-WdfCmResourceListInsertDescriptor( WDFCMRESLIST inList, PCM_PARTIAL_RESOURCE_DESCRIPTOR inDescriptor, ULONG inIndex)
-WdfCmResourceListRemove( WDFCMRESLIST inList, ULONG inIndex)
-WdfCmResourceListRemoveByDescriptor( WDFCMRESLIST inList, PCM_PARTIAL_RESOURCE_DESCRIPTOR inDescriptor)
-WdfCollectionAdd( WDFCOLLECTION inCollection, WDFOBJECT inObject)
-WdfCollectionCreate( PWDF_OBJECT_ATTRIBUTES inCollectionAttributes, outWDFCOLLECTION* Collection)
-WdfCollectionGetCount( WDFCOLLECTION inCollection)
-WdfCollectionGetFirstItem( WDFCOLLECTION inCollection)
-WdfCollectionGetItem( WDFCOLLECTION inCollection, ULONG inIndex)
-WdfCollectionGetLastItem( WDFCOLLECTION inCollection)
-WdfCollectionRemove( WDFCOLLECTION inCollection, WDFOBJECT inItem)
-WdfCollectionRemoveItem( WDFCOLLECTION inCollection, ULONG inIndex)
-WdfCommonBufferCreate( WDFDMAENABLER inDmaEnabler, size_t inLength, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFCOMMONBUFFER* CommonBuffer)
-WdfCommonBufferCreateWithConfig( WDFDMAENABLER inDmaEnabler, size_t inLength, PWDF_COMMON_BUFFER_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFCOMMONBUFFER* CommonBuffer)
-WdfCommonBufferGetAlignedLogicalAddress( WDFCOMMONBUFFER inCommonBuffer)
-WdfCommonBufferGetAlignedVirtualAddress( WDFCOMMONBUFFER inCommonBuffer)
-WdfCommonBufferGetLength( WDFCOMMONBUFFER inCommonBuffer)
-WdfControlDeviceInitAllocate( WDFDRIVER inDriver, CONST inUNICODE_STRING* SDDLString)
-WdfControlDeviceInitSetShutdownNotification( PWDFDEVICE_INIT inDeviceInit, PFN_WDF_DEVICE_SHUTDOWN_NOTIFICATION inNotification, UCHAR inFlags)
-WdfControlFinishInitializing( WDFDEVICE inDevice)
-WdfDeviceAddDependentUsageDeviceObject( WDFDEVICE inDevice, PDEVICE_OBJECT inDependentDevice)
-WdfDeviceAddQueryInterface( WDFDEVICE inDevice, PWDF_QUERY_INTERFACE_CONFIG inInterfaceConfig)
-WdfDeviceAddRemovalRelationsPhysicalDevice( WDFDEVICE inDevice, PDEVICE_OBJECT inPhysicalDevice)
-WdfDeviceAllocAndQueryProperty( WDFDEVICE inDevice, DEVICE_REGISTRY_PROPERTY inDeviceProperty, POOL_TYPE inPoolType, PWDF_OBJECT_ATTRIBUTES inPropertyMemoryAttributes, outWDFMEMORY* PropertyMemory)
-WdfDeviceAssignMofResourceName( WDFDEVICE inDevice, PCUNICODE_STRING inMofResourceName)
-WdfDeviceAssignS0IdleSettings( WDFDEVICE inDevice, PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS inSettings)
-WdfDeviceAssignSxWakeSettings( WDFDEVICE inDevice, PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS inSettings)
-WdfDeviceClearRemovalRelationsDevices( WDFDEVICE inDevice)
-WdfDeviceConfigureRequestDispatching( WDFDEVICE inDevice, WDFQUEUE inQueue, WDF_REQUEST_TYPE inRequestType)
-WdfDeviceCreate( ioPWDFDEVICE_INIT* DeviceInit, PWDF_OBJECT_ATTRIBUTES inDeviceAttributes, outWDFDEVICE* Device)
-WdfDeviceCreateDeviceInterface( WDFDEVICE inDevice, CONST inGUID* InterfaceClassGUID, PCUNICODE_STRING inReferenceString)
-WdfDeviceCreateSymbolicLink( WDFDEVICE inDevice, PCUNICODE_STRING inSymbolicLinkName)
-WdfDeviceEnqueueRequest( WDFDEVICE inDevice, WDFREQUEST inRequest)
-WdfDeviceGetAlignmentRequirement( WDFDEVICE inDevice)
-WdfDeviceGetCharacteristics( WDFDEVICE inDevice)
-WdfDeviceGetDefaultQueue( WDFDEVICE inDevice)
-WdfDeviceGetDevicePnpState( WDFDEVICE inDevice)
-WdfDeviceGetDevicePowerPolicyState( WDFDEVICE inDevice)
-WdfDeviceGetDevicePowerState( WDFDEVICE inDevice)
-WdfDeviceGetDeviceState( WDFDEVICE inDevice, PWDF_DEVICE_STATE outDeviceState)
-WdfDeviceGetDriver( WDFDEVICE inDevice)
-WdfDeviceGetFileObject( WDFDEVICE inDevice, PFILE_OBJECT inFileObject)
-WdfDeviceGetIoTarget( WDFDEVICE inDevice)
-WdfDeviceGetSystemPowerAction( WDFDEVICE inDevice)
-WdfDeviceIndicateWakeStatus( WDFDEVICE inDevice, NTSTATUS inWaitWakeStatus)
-WdfDeviceInitAssignName( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inDeviceName)
-WdfDeviceInitAssignSDDLString( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inSDDLString)
-WdfDeviceInitAssignWdmIrpPreprocessCallback( PWDFDEVICE_INIT inDeviceInit, PFN_WDFDEVICE_WDM_IRP_PREPROCESS inEvtDeviceWdmIrpPreprocess, UCHAR inMajorFunction, PUCHAR MinorFunctions, ULONG inNumMinorFunctions)
-WdfDeviceInitFree( PWDFDEVICE_INIT inDeviceInit)
-WdfDeviceInitRegisterPnpStateChangeCallback( PWDFDEVICE_INIT inDeviceInit, WDF_DEVICE_PNP_STATE inPnpState, PFN_WDF_DEVICE_PNP_STATE_CHANGE_NOTIFICATION inEvtDevicePnpStateChange, ULONG inCallbackTypes)
-WdfDeviceInitRegisterPowerPolicyStateChangeCallback( PWDFDEVICE_INIT inDeviceInit, WDF_DEVICE_POWER_POLICY_STATE inPowerPolicyState, PFN_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION inEvtDevicePowerPolicyStateChange, ULONG inCallbackTypes)
-WdfDeviceInitRegisterPowerStateChangeCallback( PWDFDEVICE_INIT inDeviceInit, WDF_DEVICE_POWER_STATE inPowerState, PFN_WDF_DEVICE_POWER_STATE_CHANGE_NOTIFICATION inEvtDevicePowerStateChange, ULONG inCallbackTypes)
-WdfDeviceInitSetCharacteristics( PWDFDEVICE_INIT inDeviceInit, ULONG inDeviceCharacteristics, BOOLEAN inOrInValues)
-WdfDeviceInitSetDeviceClass( PWDFDEVICE_INIT inDeviceInit, CONST inGUID* DeviceClassGuid)
-WdfDeviceInitSetDeviceType( PWDFDEVICE_INIT inDeviceInit, DEVICE_TYPE inDeviceType)
-WdfDeviceInitSetExclusive( PWDFDEVICE_INIT inDeviceInit, BOOLEAN inIsExclusive)
-WdfDeviceInitSetFileObjectConfig( PWDFDEVICE_INIT inDeviceInit, PWDF_FILEOBJECT_CONFIG inFileObjectConfig, PWDF_OBJECT_ATTRIBUTES inFileObjectAttributes)
-WdfDeviceInitSetIoInCallerContextCallback( PWDFDEVICE_INIT inDeviceInit, PFN_WDF_IO_IN_CALLER_CONTEXT inEvtIoInCallerContext)
-WdfDeviceInitSetIoType( PWDFDEVICE_INIT inDeviceInit, WDF_DEVICE_IO_TYPE inIoType)
-WdfDeviceInitSetPnpPowerEventCallbacks( PWDFDEVICE_INIT inDeviceInit, PWDF_PNPPOWER_EVENT_CALLBACKS inPnpPowerEventCallbacks)
-WdfDeviceInitSetPowerInrush( PWDFDEVICE_INIT inDeviceInit)
-WdfDeviceInitSetPowerNotPageable( PWDFDEVICE_INIT inDeviceInit)
-WdfDeviceInitSetPowerPageable( PWDFDEVICE_INIT inDeviceInit)
-WdfDeviceInitSetPowerPolicyEventCallbacks( PWDFDEVICE_INIT inDeviceInit, PWDF_POWER_POLICY_EVENT_CALLBACKS inPowerPolicyEventCallbacks)
-WdfDeviceInitSetPowerPolicyOwnership( PWDFDEVICE_INIT inDeviceInit, BOOLEAN inIsPowerPolicyOwner)
-WdfDeviceInitSetRequestAttributes( PWDFDEVICE_INIT inDeviceInit, PWDF_OBJECT_ATTRIBUTES inRequestAttributes)
-WdfDeviceMiniportCreate( WDFDRIVER inDriver, PWDF_OBJECT_ATTRIBUTES inAttributes, PDEVICE_OBJECT inDeviceObject, PDEVICE_OBJECT inAttachedDeviceObject, PDEVICE_OBJECT inPdo, outWDFDEVICE* Device)
-WdfDeviceOpenRegistryKey( WDFDEVICE inDevice, ULONG inDeviceInstanceKeyType, ACCESS_MASK inDesiredAccess, PWDF_OBJECT_ATTRIBUTES inKeyAttributes, outWDFKEY* Key)
-WdfDeviceQueryProperty( WDFDEVICE inDevice, DEVICE_REGISTRY_PROPERTY inDeviceProperty, ULONG inBufferLength, PVOID PropertyBuffer, PULONG outResultLength)
-WdfDeviceRemoveDependentUsageDeviceObject( WDFDEVICE inDevice, PDEVICE_OBJECT inDependentDevice)
-WdfDeviceRemoveRemovalRelationsPhysicalDevice( WDFDEVICE inDevice, PDEVICE_OBJECT inPhysicalDevice)
-WdfDeviceResumeIdle( WDFDEVICE inDevice)
-WdfDeviceRetrieveDeviceInterfaceString( WDFDEVICE inDevice, CONST inGUID* InterfaceClassGUID, PCUNICODE_STRING inReferenceString, WDFSTRING inString)
-WdfDeviceRetrieveDeviceName( WDFDEVICE inDevice, WDFSTRING inString)
-WdfDeviceSetAlignmentRequirement( WDFDEVICE inDevice, ULONG inAlignmentRequirement)
-WdfDeviceSetBusInformationForChildren( WDFDEVICE inDevice, PPNP_BUS_INFORMATION inBusInformation)
-WdfDeviceSetCharacteristics( WDFDEVICE inDevice, ULONG inDeviceCharacteristics)
-WdfDeviceSetDeviceInterfaceState( WDFDEVICE inDevice, CONST inGUID* InterfaceClassGUID, PCUNICODE_STRING inReferenceString, BOOLEAN inIsInterfaceEnabled)
-WdfDeviceSetDeviceState( WDFDEVICE inDevice, PWDF_DEVICE_STATE inDeviceState)
-WdfDeviceSetFailed( WDFDEVICE inDevice, WDF_DEVICE_FAILED_ACTION inFailedAction)
-WdfDeviceSetPnpCapabilities( WDFDEVICE inDevice, PWDF_DEVICE_PNP_CAPABILITIES inPnpCapabilities)
-WdfDeviceSetPowerCapabilities( WDFDEVICE inDevice, PWDF_DEVICE_POWER_CAPABILITIES inPowerCapabilities)
-WdfDeviceSetSpecialFileSupport( WDFDEVICE inDevice, WDF_SPECIAL_FILE_TYPE inFileType, BOOLEAN inFileTypeIsSupported)
-WdfDeviceSetStaticStopRemove( WDFDEVICE inDevice, BOOLEAN inStoppable)
-WdfDeviceWdmDispatchPreprocessedIrp( WDFDEVICE inDevice, PIRP inIrp)
-WdfDeviceWdmGetAttachedDevice( WDFDEVICE inDevice)
-WdfDeviceWdmGetDeviceObject( WDFDEVICE inDevice)
-WdfDeviceWdmGetPhysicalDevice( WDFDEVICE inDevice)
-WdfDmaEnablerCreate( WDFDEVICE inDevice, PWDF_DMA_ENABLER_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFDMAENABLER* DmaEnablerHandle)
-WdfDmaEnablerGetFragmentLength( WDFDMAENABLER inDmaEnabler, WDF_DMA_DIRECTION inDmaDirection)
-WdfDmaEnablerGetMaximumLength( WDFDMAENABLER inDmaEnabler)
-WdfDmaEnablerGetMaximumScatterGatherElements( WDFDMAENABLER inDmaEnabler)
-WdfDmaEnablerSetMaximumScatterGatherElements( WDFDMAENABLER inDmaEnabler, size_t inMaximumFragments)
-WdfDmaEnablerWdmGetDmaAdapter( WDFDMAENABLER inDmaEnabler, WDF_DMA_DIRECTION inDmaDirection)
-WdfDmaTransactionCreate( WDFDMAENABLER inDmaEnabler, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFDMATRANSACTION* DmaTransaction)
-WdfDmaTransactionDmaCompleted( WDFDMATRANSACTION inDmaTransaction, outNTSTATUS* Status)
-WdfDmaTransactionDmaCompletedFinal( WDFDMATRANSACTION inDmaTransaction, size_t inFinalTransferredLength, outNTSTATUS* Status)
-WdfDmaTransactionDmaCompletedWithLength( WDFDMATRANSACTION inDmaTransaction, size_t inTransferredLength, outNTSTATUS* Status)
-WdfDmaTransactionExecute( WDFDMATRANSACTION inDmaTransaction, WDFCONTEXT inContext)
-WdfDmaTransactionGetBytesTransferred( WDFDMATRANSACTION inDmaTransaction)
-WdfDmaTransactionGetCurrentDmaTransferLength( WDFDMATRANSACTION inDmaTransaction)
-WdfDmaTransactionGetDevice( WDFDMATRANSACTION inDmaTransaction)
-WdfDmaTransactionGetRequest( WDFDMATRANSACTION inDmaTransaction)
-WdfDmaTransactionInitialize( WDFDMATRANSACTION inDmaTransaction, PFN_WDF_PROGRAM_DMA inEvtProgramDmaFunction, WDF_DMA_DIRECTION inDmaDirection, PMDL inMdl, PVOID inVirtualAddress, size_t inLength)
-WdfDmaTransactionInitializeUsingRequest( WDFDMATRANSACTION inDmaTransaction, WDFREQUEST inRequest, PFN_WDF_PROGRAM_DMA inEvtProgramDmaFunction, WDF_DMA_DIRECTION inDmaDirection)
-WdfDmaTransactionRelease( WDFDMATRANSACTION inDmaTransaction)
-WdfDmaTransactionSetMaximumLength( WDFDMATRANSACTION inDmaTransaction, size_t inMaximumLength)
-WdfDpcCancel( WDFDPC inDpc, BOOLEAN inWait)
-WdfDpcCreate( PWDF_DPC_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFDPC* Dpc)
-WdfDpcEnqueue( WDFDPC inDpc)
-WdfDpcGetParentObject( WDFDPC inDpc)
-WdfDpcWdmGetDpc( WDFDPC inDpc)
-WdfDriverCreate( PDRIVER_OBJECT inDriverObject, PCUNICODE_STRING inRegistryPath, PWDF_OBJECT_ATTRIBUTES inDriverAttributes, PWDF_DRIVER_CONFIG inDriverConfig, outWDFDRIVER* Driver)
-WdfDriverGetRegistryPath( WDFDRIVER inDriver)
-WdfDriverIsVersionAvailable( WDFDRIVER inDriver, PWDF_DRIVER_VERSION_AVAILABLE_PARAMS inVersionAvailableParams)
-WdfDriverOpenParametersRegistryKey( WDFDRIVER inDriver, ACCESS_MASK inDesiredAccess, PWDF_OBJECT_ATTRIBUTES inKeyAttributes, outWDFKEY* Key)
-WdfDriverRegisterTraceInfo( PDRIVER_OBJECT inDriverObject, PFN_WDF_TRACE_CALLBACK inEvtTraceCallback, PVOID inControlBlock)
-WdfDriverRetrieveVersionString( WDFDRIVER inDriver, WDFSTRING inString)
-WdfDriverWdmGetDriverObject( WDFDRIVER inDriver)
-WdfFdoAddStaticChild( WDFDEVICE inFdo, WDFDEVICE inChild)
-WdfFdoGetDefaultChildList( WDFDEVICE inFdo)
-WdfFdoInitAllocAndQueryProperty( PWDFDEVICE_INIT inDeviceInit, DEVICE_REGISTRY_PROPERTY inDeviceProperty, POOL_TYPE inPoolType, PWDF_OBJECT_ATTRIBUTES inPropertyMemoryAttributes, outWDFMEMORY* PropertyMemory)
-WdfFdoInitOpenRegistryKey( PWDFDEVICE_INIT inDeviceInit, ULONG inDeviceInstanceKeyType, ACCESS_MASK inDesiredAccess, PWDF_OBJECT_ATTRIBUTES inKeyAttributes, outWDFKEY* Key)
-WdfFdoInitQueryProperty( PWDFDEVICE_INIT inDeviceInit, DEVICE_REGISTRY_PROPERTY inDeviceProperty, ULONG inBufferLength, PVOID PropertyBuffer, PULONG outResultLength)
-WdfFdoInitSetDefaultChildListConfig( PWDFDEVICE_INIT ioDeviceInit, PWDF_CHILD_LIST_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inDefaultChildListAttributes)
-WdfFdoInitSetEventCallbacks( PWDFDEVICE_INIT inDeviceInit, PWDF_FDO_EVENT_CALLBACKS inFdoEventCallbacks)
-WdfFdoInitSetFilter( PWDFDEVICE_INIT inDeviceInit)
-WdfFdoInitWdmGetPhysicalDevice( PWDFDEVICE_INIT inDeviceInit)
-WdfFdoLockStaticChildListForIteration( WDFDEVICE inFdo)
-WdfFdoQueryForInterface( WDFDEVICE inFdo, LPCGUID inInterfaceType, PINTERFACE outInterface, USHORT inSize, USHORT inVersion, PVOID inInterfaceSpecificData)
-WdfFdoRetrieveNextStaticChild( WDFDEVICE inFdo, WDFDEVICE inPreviousChild, ULONG inFlags)
-WdfFdoUnlockStaticChildListFromIteration( WDFDEVICE inFdo)
-WdfFileObjectGetDevice( WDFFILEOBJECT inFileObject)
-WdfFileObjectGetFileName( WDFFILEOBJECT inFileObject)
-WdfFileObjectGetFlags( WDFFILEOBJECT inFileObject)
-WdfFileObjectWdmGetFileObject( WDFFILEOBJECT inFileObject)
-WdfInterruptAcquireLock( WDFINTERRUPT inInterrupt)
-WdfInterruptCreate( WDFDEVICE inDevice, PWDF_INTERRUPT_CONFIG inConfiguration, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFINTERRUPT* Interrupt)
-WdfInterruptDisable( WDFINTERRUPT inInterrupt)
-WdfInterruptEnable( WDFINTERRUPT inInterrupt)
-WdfInterruptGetInfo( WDFINTERRUPT inInterrupt, PWDF_INTERRUPT_INFO outInfo)
-WdfInterruptReleaseLock( WDFINTERRUPT inInterrupt)
-WdfInterruptSetExtendedPolicy( WDFINTERRUPT inInterrupt, PWDF_INTERRUPT_EXTENDED_POLICY inPolicyAndGroup)
-WdfInterruptSetPolicy( WDFINTERRUPT inInterrupt, WDF_INTERRUPT_POLICY inPolicy, WDF_INTERRUPT_PRIORITY inPriority, KAFFINITY inTargetProcessorSet)
-WdfInterruptSynchronize( WDFINTERRUPT inInterrupt, PFN_WDF_INTERRUPT_SYNCHRONIZE inCallback, WDFCONTEXT inContext)
-WdfIoQueueAssignForwardProgressPolicy( WDFQUEUE inQueue, PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY inForwardProgressPolicy)
-WdfIoQueueCreate( WDFDEVICE inDevice, PWDF_IO_QUEUE_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inQueueAttributes, outWDFQUEUE* Queue)
-WdfIoQueueDrain( WDFQUEUE inQueue, PFN_WDF_IO_QUEUE_STATE DrainComplete, WDFCONTEXT Context)
-WdfIoQueueDrainSynchronously( WDFQUEUE inQueue)
-WdfIoQueueFindRequest( WDFQUEUE inQueue, WDFREQUEST inFoundRequest, WDFFILEOBJECT inFileObject, PWDF_REQUEST_PARAMETERS ioParameters, outWDFREQUEST* OutRequest)
-WdfIoQueueGetDevice( WDFQUEUE inQueue)
-WdfIoQueueGetState( WDFQUEUE inQueue, PULONG outQueueRequests, PULONG outDriverRequests)
-WdfIoQueuePurge( WDFQUEUE inQueue, PFN_WDF_IO_QUEUE_STATE PurgeComplete, WDFCONTEXT Context)
-WdfIoQueuePurgeSynchronously( WDFQUEUE inQueue)
-WdfIoQueueReadyNotify( WDFQUEUE inQueue, PFN_WDF_IO_QUEUE_STATE inQueueReady, WDFCONTEXT inContext)
-WdfIoQueueRetrieveFoundRequest( WDFQUEUE inQueue, WDFREQUEST inFoundRequest, outWDFREQUEST* OutRequest)
-WdfIoQueueRetrieveNextRequest( WDFQUEUE inQueue, outWDFREQUEST* OutRequest)
-WdfIoQueueRetrieveRequestByFileObject( WDFQUEUE inQueue, WDFFILEOBJECT inFileObject, outWDFREQUEST* OutRequest)
-WdfIoQueueStart( WDFQUEUE inQueue)
-WdfIoQueueStop( WDFQUEUE inQueue, PFN_WDF_IO_QUEUE_STATE StopComplete, WDFCONTEXT Context)
-WdfIoQueueStopSynchronously( WDFQUEUE inQueue)
-WdfIoResourceListAppendDescriptor( WDFIORESLIST inResourceList, PIO_RESOURCE_DESCRIPTOR inDescriptor)
-WdfIoResourceListCreate( WDFIORESREQLIST inRequirementsList, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFIORESLIST* ResourceList)
-WdfIoResourceListGetCount( WDFIORESLIST inResourceList)
-WdfIoResourceListGetDescriptor( WDFIORESLIST inResourceList, ULONG inIndex)
-WdfIoResourceListInsertDescriptor( WDFIORESLIST inResourceList, PIO_RESOURCE_DESCRIPTOR inDescriptor, ULONG inIndex)
-WdfIoResourceListRemove( WDFIORESLIST inResourceList, ULONG inIndex)
-WdfIoResourceListRemoveByDescriptor( WDFIORESLIST inResourceList, PIO_RESOURCE_DESCRIPTOR inDescriptor)
-WdfIoResourceListUpdateDescriptor( WDFIORESLIST inResourceList, PIO_RESOURCE_DESCRIPTOR inDescriptor, ULONG inIndex)
-WdfIoResourceRequirementsListAppendIoResList( WDFIORESREQLIST inRequirementsList, WDFIORESLIST inIoResList)
-WdfIoResourceRequirementsListGetCount( WDFIORESREQLIST inRequirementsList)
-WdfIoResourceRequirementsListGetIoResList( WDFIORESREQLIST inRequirementsList, ULONG inIndex)
-WdfIoResourceRequirementsListInsertIoResList( WDFIORESREQLIST inRequirementsList, WDFIORESLIST inIoResList, ULONG inIndex)
-WdfIoResourceRequirementsListRemove( WDFIORESREQLIST inRequirementsList, ULONG inIndex)
-WdfIoResourceRequirementsListRemoveByIoResList( WDFIORESREQLIST inRequirementsList, WDFIORESLIST inIoResList)
-WdfIoResourceRequirementsListSetInterfaceType( WDFIORESREQLIST inRequirementsList, INTERFACE_TYPE inInterfaceType)
-WdfIoResourceRequirementsListSetSlotNumber( WDFIORESREQLIST inRequirementsList, ULONG inSlotNumber)
-WdfIoTargetAllocAndQueryTargetProperty( WDFIOTARGET inIoTarget, DEVICE_REGISTRY_PROPERTY inDeviceProperty, POOL_TYPE inPoolType, PWDF_OBJECT_ATTRIBUTES inPropertyMemoryAttributes, outWDFMEMORY* PropertyMemory)
-WdfIoTargetClose( WDFIOTARGET inIoTarget)
-WdfIoTargetCloseForQueryRemove( WDFIOTARGET inIoTarget)
-WdfIoTargetCreate( WDFDEVICE inDevice, PWDF_OBJECT_ATTRIBUTES inIoTargetAttributes, outWDFIOTARGET* IoTarget)
-WdfIoTargetFormatRequestForInternalIoctl( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, ULONG IoctlCode, WDFMEMORY inInputBuffer, PWDFMEMORY_OFFSET inInputBufferOffset, WDFMEMORY inOutputBuffer, PWDFMEMORY_OFFSET inOutputBufferOffset)
-WdfIoTargetFormatRequestForInternalIoctlOthers( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, ULONG IoctlCode, WDFMEMORY inOtherArg1, PWDFMEMORY_OFFSET inOtherArg1Offset, WDFMEMORY inOtherArg2, PWDFMEMORY_OFFSET inOtherArg2Offset, WDFMEMORY inOtherArg4, PWDFMEMORY_OFFSET inOtherArg4Offset)
-WdfIoTargetFormatRequestForIoctl( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, ULONG IoctlCode, WDFMEMORY inInputBuffer, PWDFMEMORY_OFFSET inInputBufferOffset, WDFMEMORY inOutputBuffer, PWDFMEMORY_OFFSET inOutputBufferOffset)
-WdfIoTargetFormatRequestForRead( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, WDFMEMORY inOutputBuffer, PWDFMEMORY_OFFSET inOutputBufferOffset, PLONGLONG inDeviceOffset)
-WdfIoTargetFormatRequestForWrite( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, WDFMEMORY inInputBuffer, PWDFMEMORY_OFFSET inInputBufferOffset, PLONGLONG inDeviceOffset)
-WdfIoTargetGetDevice( WDFIOTARGET inIoTarget)
-WdfIoTargetGetState( WDFIOTARGET inIoTarget)
-WdfIoTargetOpen( WDFIOTARGET inIoTarget, PWDF_IO_TARGET_OPEN_PARAMS inOpenParams)
-WdfIoTargetQueryForInterface( WDFIOTARGET inIoTarget, LPCGUID inInterfaceType, PINTERFACE outInterface, USHORT inSize, USHORT inVersion, PVOID inInterfaceSpecificData)
-WdfIoTargetQueryTargetProperty( WDFIOTARGET inIoTarget, DEVICE_REGISTRY_PROPERTY inDeviceProperty, ULONG inBufferLength, PVOID PropertyBuffer, PULONG ResultLength)
-WdfIoTargetSendInternalIoctlOthersSynchronously( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, ULONG IoctlCode, PWDF_MEMORY_DESCRIPTOR inOtherArg1, PWDF_MEMORY_DESCRIPTOR inOtherArg2, PWDF_MEMORY_DESCRIPTOR inOtherArg4, PWDF_REQUEST_SENDIONS inRequestOptions, PULONG_PTR outBytesReturned)
-WdfIoTargetSendInternalIoctlSynchronously( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, ULONG inIoctlCode, PWDF_MEMORY_DESCRIPTOR inInputBuffer, PWDF_MEMORY_DESCRIPTOR inOutputBuffer, PWDF_REQUEST_SENDIONS inRequestOptions, PULONG_PTR outBytesReturned)
-WdfIoTargetSendIoctlSynchronously( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, ULONG inIoctlCode, PWDF_MEMORY_DESCRIPTOR inInputBuffer, PWDF_MEMORY_DESCRIPTOR inOutputBuffer, PWDF_REQUEST_SENDIONS inRequestOptions, PULONG_PTR outBytesReturned)
-WdfIoTargetSendReadSynchronously( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, PWDF_MEMORY_DESCRIPTOR inOutputBuffer, PLONGLONG inDeviceOffset, PWDF_REQUEST_SENDIONS inRequestOptions, PULONG_PTR outBytesRead)
-WdfIoTargetSendWriteSynchronously( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, PWDF_MEMORY_DESCRIPTOR inInputBuffer, PLONGLONG inDeviceOffset, PWDF_REQUEST_SENDIONS inRequestOptions, PULONG_PTR outBytesWritten)
-WdfIoTargetStart( WDFIOTARGET inIoTarget)
-WdfIoTargetStop( WDFIOTARGET inIoTarget, WDF_IO_TARGET_SENT_IO_ACTION inAction)
-WdfIoTargetWdmGetTargetDeviceObject( WDFIOTARGET inIoTarget)
-WdfIoTargetWdmGetTargetFileHandle( WDFIOTARGET inIoTarget)
-WdfIoTargetWdmGetTargetFileObject( WDFIOTARGET inIoTarget)
-WdfIoTargetWdmGetTargetPhysicalDevice( WDFIOTARGET inIoTarget)
-WdfLookasideListCreate( PWDF_OBJECT_ATTRIBUTES inLookasideAttributes, size_t inBufferSize, POOL_TYPE inPoolType, PWDF_OBJECT_ATTRIBUTES inMemoryAttributes, ULONG inPoolTag, outWDFLOOKASIDE* Lookaside)
-WdfMemoryAssignBuffer( WDFMEMORY inMemory, PVOID inBuffer, size_t inBufferSize)
-WdfMemoryCopyFromBuffer( WDFMEMORY inDestinationMemory, size_t inDestinationOffset, PVOID inBuffer, size_t inNumBytesToCopyFrom)
-WdfMemoryCopyToBuffer( WDFMEMORY inSourceMemory, size_t inSourceOffset, PVOID Buffer, size_t inNumBytesToCopyTo)
-WdfMemoryCreate( PWDF_OBJECT_ATTRIBUTES inAttributes, POOL_TYPE inPoolType, ULONG inPoolTag, size_t inBufferSize, outWDFMEMORY* Memory, outPVOID* Buffer)
-WdfMemoryCreateFromLookaside( WDFLOOKASIDE inLookaside, outWDFMEMORY* Memory)
-WdfMemoryCreatePreallocated( PWDF_OBJECT_ATTRIBUTES inAttributes, size_t inBufferSize, outWDFMEMORY* Memory)
-WdfMemoryGetBuffer( WDFMEMORY inMemory, outsize_t* BufferSize)
-WdfObjectAcquireLock( WDFOBJECT inObject)
-WdfObjectCreate( PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFOBJECT* Object)
-WdfObjectDelete( WDFOBJECT inObject)
-WdfObjectQuery( WDFOBJECT inObject, CONST inGUID* Guid, ULONG inQueryBufferLength, PVOID QueryBuffer)
-WdfObjectReleaseLock( WDFOBJECT inObject)
-WdfPdoAddEjectionRelationsPhysicalDevice( WDFDEVICE inDevice, PDEVICE_OBJECT inPhysicalDevice)
-WdfPdoClearEjectionRelationsDevices( WDFDEVICE inDevice)
-WdfPdoGetParent( WDFDEVICE inDevice)
-WdfPdoInitAddCompatibleID( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inCompatibleID)
-WdfPdoInitAddDeviceText( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inDeviceDescription, PCUNICODE_STRING inDeviceLocation, LCID inLocaleId)
-WdfPdoInitAddHardwareID( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inHardwareID)
-WdfPdoInitAllocate( WDFDEVICE inParentDevice)
-WdfPdoInitAllowForwardingRequestToParent( PWDFDEVICE_INIT inDeviceInit)
-WdfPdoInitAssignContainerID( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inContainerID)
-WdfPdoInitAssignDeviceID( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inDeviceID)
-WdfPdoInitAssignInstanceID( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inInstanceID)
-WdfPdoInitAssignRawDevice( PWDFDEVICE_INIT inDeviceInit, CONST inGUID* DeviceClassGuid)
-WdfPdoInitSetDefaultLocale( PWDFDEVICE_INIT inDeviceInit, LCID inLocaleId)
-WdfPdoInitSetEventCallbacks( PWDFDEVICE_INIT inDeviceInit, PWDF_PDO_EVENT_CALLBACKS inDispatchTable)
-WdfPdoMarkMissing( WDFDEVICE inDevice)
-WdfPdoRemoveEjectionRelationsPhysicalDevice( WDFDEVICE inDevice, PDEVICE_OBJECT inPhysicalDevice)
-WdfPdoRequestEject( WDFDEVICE inDevice)
-WdfPdoRetrieveAddressDescription( WDFDEVICE inDevice, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER ioAddressDescription)
-WdfPdoRetrieveIdentificationDescription( WDFDEVICE inDevice, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER ioIdentificationDescription)
-WdfPdoUpdateAddressDescription( WDFDEVICE inDevice, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER ioAddressDescription)
-WdfRegistryAssignMemory( WDFKEY inKey, PCUNICODE_STRING inValueName, ULONG inValueType, WDFMEMORY inMemory, PWDFMEMORY_OFFSET inMemoryOffsets)
-WdfRegistryAssignMultiString( WDFKEY inKey, PCUNICODE_STRING inValueName, WDFCOLLECTION inStringsCollection)
-WdfRegistryAssignString( WDFKEY inKey, PCUNICODE_STRING inValueName, WDFSTRING inString)
-WdfRegistryAssignULong( WDFKEY inKey, PCUNICODE_STRING inValueName, ULONG inValue)
-WdfRegistryAssignUnicodeString( WDFKEY inKey, PCUNICODE_STRING inValueName, PCUNICODE_STRING inValue)
-WdfRegistryAssignValue( WDFKEY inKey, PCUNICODE_STRING inValueName, ULONG inValueType, ULONG inValueLength, PVOID Value)
-WdfRegistryClose( WDFKEY inKey)
-WdfRegistryCreateKey( WDFKEY inParentKey, PCUNICODE_STRING inKeyName, ACCESS_MASK inDesiredAccess, ULONG inCreateOptions, PULONG outCreateDisposition, PWDF_OBJECT_ATTRIBUTES inKeyAttributes, outWDFKEY* Key)
-WdfRegistryOpenKey( WDFKEY inParentKey, PCUNICODE_STRING inKeyName, ACCESS_MASK inDesiredAccess, PWDF_OBJECT_ATTRIBUTES inKeyAttributes, outWDFKEY* Key)
-WdfRegistryQueryMemory( WDFKEY inKey, PCUNICODE_STRING inValueName, POOL_TYPE inPoolType, PWDF_OBJECT_ATTRIBUTES inMemoryAttributes, outWDFMEMORY* Memory, PULONG outValueType)
-WdfRegistryQueryMultiString( WDFKEY inKey, PCUNICODE_STRING inValueName, PWDF_OBJECT_ATTRIBUTES inStringsAttributes, WDFCOLLECTION inCollection)
-WdfRegistryQueryString( WDFKEY inKey, PCUNICODE_STRING inValueName, WDFSTRING inString)
-WdfRegistryQueryULong( WDFKEY inKey, PCUNICODE_STRING inValueName, PULONG outValue)
-WdfRegistryQueryUnicodeString( WDFKEY inKey, PCUNICODE_STRING inValueName, PUSHORT outValueByteLength, PUNICODE_STRING ioValue)
-WdfRegistryQueryValue( WDFKEY inKey, PCUNICODE_STRING inValueName, ULONG inValueLength, PVOID Value, PULONG outValueLengthQueried, PULONG outValueType)
-WdfRegistryRemoveKey( WDFKEY inKey)
-WdfRegistryRemoveValue( WDFKEY inKey, PCUNICODE_STRING inValueName)
-WdfRegistryWdmGetHandle( WDFKEY inKey)
-WdfRequestAllocateTimer( WDFREQUEST inRequest)
-WdfRequestCancelSentRequest( WDFREQUEST inRequest)
-WdfRequestChangeTarget( WDFREQUEST inRequest, WDFIOTARGET inIoTarget)
-WdfRequestComplete( WDFREQUEST inRequest, NTSTATUS inStatus)
-WdfRequestCompleteWithInformation( WDFREQUEST inRequest, NTSTATUS inStatus, ULONG_PTR inInformation)
-WdfRequestCompleteWithPriorityBoost( WDFREQUEST inRequest, NTSTATUS inStatus, CCHAR inPriorityBoost)
-WdfRequestCreate( PWDF_OBJECT_ATTRIBUTES inRequestAttributes, WDFIOTARGET inIoTarget, outWDFREQUEST* Request)
-WdfRequestCreateFromIrp( PWDF_OBJECT_ATTRIBUTES inRequestAttributes, PIRP inIrp, BOOLEAN inRequestFreesIrp, outWDFREQUEST* Request)
-WdfRequestFormatRequestUsingCurrentType( WDFREQUEST inRequest)
-WdfRequestForwardToIoQueue( WDFREQUEST inRequest, WDFQUEUE inDestinationQueue)
-WdfRequestForwardToParentDeviceIoQueue( WDFREQUEST inRequest, WDFQUEUE inParentDeviceQueue, PWDF_REQUEST_FORWARDIONS inForwardOptions)
-WdfRequestGetCompletionParams( WDFREQUEST inRequest, PWDF_REQUEST_COMPLETION_PARAMS outParams)
-WdfRequestGetFileObject( WDFREQUEST inRequest)
-WdfRequestGetInformation( WDFREQUEST inRequest)
-WdfRequestGetIoQueue( WDFREQUEST inRequest)
-WdfRequestGetParameters( WDFREQUEST inRequest, PWDF_REQUEST_PARAMETERS outParameters)
-WdfRequestGetRequestorMode( WDFREQUEST inRequest)
-WdfRequestGetStatus( WDFREQUEST inRequest)
-WdfRequestIsCanceled( WDFREQUEST inRequest)
-WdfRequestIsFrom32BitProcess( WDFREQUEST inRequest)
-WdfRequestIsReserved( WDFREQUEST inRequest)
-WdfRequestMarkCancelable( WDFREQUEST inRequest, PFN_WDF_REQUEST_CANCEL inEvtRequestCancel)
-WdfRequestMarkCancelableEx( WDFREQUEST inRequest, PFN_WDF_REQUEST_CANCEL inEvtRequestCancel)
-WdfRequestProbeAndLockUserBufferForRead( WDFREQUEST inRequest, PVOID Buffer, size_t inLength, outWDFMEMORY* MemoryObject)
-WdfRequestProbeAndLockUserBufferForWrite( WDFREQUEST inRequest, PVOID Buffer, size_t inLength, outWDFMEMORY* MemoryObject)
-WdfRequestRequeue( WDFREQUEST inRequest)
-WdfRequestRetrieveInputBuffer( WDFREQUEST inRequest, size_t inMinimumRequiredLength, PVOID* Buffer, outsize_t* Length)
-WdfRequestRetrieveInputMemory( WDFREQUEST inRequest, outWDFMEMORY* Memory)
-WdfRequestRetrieveInputWdmMdl( WDFREQUEST inRequest, PMDL* Mdl)
-WdfRequestRetrieveOutputBuffer( WDFREQUEST inRequest, size_t inMinimumRequiredSize, PVOID* Buffer, outsize_t* Length)
-WdfRequestRetrieveOutputMemory( WDFREQUEST inRequest, outWDFMEMORY* Memory)
-WdfRequestRetrieveOutputWdmMdl( WDFREQUEST inRequest, PMDL* Mdl)
-WdfRequestRetrieveUnsafeUserInputBuffer( WDFREQUEST inRequest, size_t inMinimumRequiredLength, PVOID* InputBuffer, outsize_t* Length)
-WdfRequestRetrieveUnsafeUserOutputBuffer( WDFREQUEST inRequest, size_t inMinimumRequiredLength, PVOID* OutputBuffer, outsize_t* Length)
-WdfRequestReuse( WDFREQUEST inRequest, PWDF_REQUEST_REUSE_PARAMS inReuseParams)
-WdfRequestSend( WDFREQUEST inRequest, WDFIOTARGET inTarget, PWDF_REQUEST_SENDIONS inOptions)
-WdfRequestSetCompletionRoutine( WDFREQUEST inRequest, PFN_WDF_REQUEST_COMPLETION_ROUTINE inCompletionRoutine, WDFCONTEXT inCompletionContext)
-WdfRequestSetInformation( WDFREQUEST inRequest, ULONG_PTR inInformation)
-WdfRequestStopAcknowledge( WDFREQUEST inRequest, BOOLEAN inRequeue)
-WdfRequestUnmarkCancelable( WDFREQUEST inRequest)
-WdfRequestWdmFormatUsingStackLocation( WDFREQUEST inRequest, PIO_STACK_LOCATION inStack)
-WdfRequestWdmGetIrp( WDFREQUEST inRequest)
-WdfSpinLockAcquire( WDFSPINLOCK inSpinLock)
-WdfSpinLockCreate( PWDF_OBJECT_ATTRIBUTES inSpinLockAttributes, outWDFSPINLOCK* SpinLock)
-WdfSpinLockRelease( WDFSPINLOCK inSpinLock)
-WdfStringCreate( PCUNICODE_STRING inUnicodeString, PWDF_OBJECT_ATTRIBUTES inStringAttributes, outWDFSTRING* String)
-WdfStringGetUnicodeString( WDFSTRING inString, PUNICODE_STRING outUnicodeString)
-WdfTimerCreate( PWDF_TIMER_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFTIMER* Timer)
-WdfTimerGetParentObject( WDFTIMER inTimer)
-WdfTimerStart( WDFTIMER inTimer, LONGLONG inDueTime)
-WdfTimerStop( WDFTIMER inTimer, BOOLEAN inWait)
-WdfUsbInterfaceGetConfiguredPipe( WDFUSBINTERFACE inUsbInterface, UCHAR inPipeIndex, PWDF_USB_PIPE_INFORMATION outPipeInfo)
-WdfUsbInterfaceGetConfiguredSettingIndex( WDFUSBINTERFACE inInterface)
-WdfUsbInterfaceGetDescriptor( WDFUSBINTERFACE inUsbInterface, UCHAR inSettingIndex, PUSB_INTERFACE_DESCRIPTOR outInterfaceDescriptor)
-WdfUsbInterfaceGetEndpointInformation( WDFUSBINTERFACE inUsbInterface, UCHAR inSettingIndex, UCHAR inEndpointIndex, PWDF_USB_PIPE_INFORMATION outEndpointInfo)
-WdfUsbInterfaceGetInterfaceNumber( WDFUSBINTERFACE inUsbInterface)
-WdfUsbInterfaceGetNumConfiguredPipes( WDFUSBINTERFACE inUsbInterface)
-WdfUsbInterfaceGetNumEndpoints( WDFUSBINTERFACE inUsbInterface, UCHAR inSettingIndex)
-WdfUsbInterfaceGetNumSettings( WDFUSBINTERFACE inUsbInterface)
-WdfUsbInterfaceSelectSetting( WDFUSBINTERFACE inUsbInterface, PWDF_OBJECT_ATTRIBUTES inPipesAttributes, PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS inParams)
-WdfUsbTargetDeviceAllocAndQueryString( WDFUSBDEVICE inUsbDevice, PWDF_OBJECT_ATTRIBUTES inStringMemoryAttributes, outWDFMEMORY* StringMemory, PUSHORT outNumCharacters, UCHAR inStringIndex, USHORT inLangID)
-WdfUsbTargetDeviceCreate( WDFDEVICE inDevice, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFUSBDEVICE* UsbDevice)
-WdfUsbTargetDeviceCyclePortSynchronously( WDFUSBDEVICE inUsbDevice)
-WdfUsbTargetDeviceFormatRequestForControlTransfer( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest, PWDF_USB_CONTROL_SETUP_PACKET inSetupPacket, WDFMEMORY inTransferMemory, PWDFMEMORY_OFFSET inTransferOffset)
-WdfUsbTargetDeviceFormatRequestForCyclePort( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest)
-WdfUsbTargetDeviceFormatRequestForString( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest, WDFMEMORY inMemory, PWDFMEMORY_OFFSET inOffset, UCHAR inStringIndex, USHORT inLangID)
-WdfUsbTargetDeviceFormatRequestForUrb( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest, WDFMEMORY inUrbMemory, PWDFMEMORY_OFFSET inUrbMemoryOffset)
-WdfUsbTargetDeviceGetDeviceDescriptor( WDFUSBDEVICE inUsbDevice, PUSB_DEVICE_DESCRIPTOR outUsbDeviceDescriptor)
-WdfUsbTargetDeviceGetInterface( WDFUSBDEVICE inUsbDevice, UCHAR inInterfaceIndex)
-WdfUsbTargetDeviceGetNumInterfaces( WDFUSBDEVICE inUsbDevice)
-WdfUsbTargetDeviceIsConnectedSynchronous( WDFUSBDEVICE inUsbDevice)
-WdfUsbTargetDeviceQueryString( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions, PUSHORT String, PUSHORT ioNumCharacters, UCHAR inStringIndex, USHORT inLangID)
-WdfUsbTargetDeviceResetPortSynchronously( WDFUSBDEVICE inUsbDevice)
-WdfUsbTargetDeviceRetrieveConfigDescriptor( WDFUSBDEVICE inUsbDevice, PVOID ConfigDescriptor, PUSHORT ioConfigDescriptorLength)
-WdfUsbTargetDeviceRetrieveCurrentFrameNumber( WDFUSBDEVICE inUsbDevice, PULONG outCurrentFrameNumber)
-WdfUsbTargetDeviceRetrieveInformation( WDFUSBDEVICE inUsbDevice, PWDF_USB_DEVICE_INFORMATION outInformation)
-WdfUsbTargetDeviceSelectConfig( WDFUSBDEVICE inUsbDevice, PWDF_OBJECT_ATTRIBUTES inPipeAttributes, PWDF_USB_DEVICE_SELECT_CONFIG_PARAMS ioParams)
-WdfUsbTargetDeviceSendControlTransferSynchronously( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions, PWDF_USB_CONTROL_SETUP_PACKET inSetupPacket, PWDF_MEMORY_DESCRIPTOR inMemoryDescriptor, PULONG outBytesTransferred)
-WdfUsbTargetDeviceSendUrbSynchronously( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions, PURB Urb)
-WdfUsbTargetDeviceWdmGetConfigurationHandle( WDFUSBDEVICE inUsbDevice)
-WdfUsbTargetPipeAbortSynchronously( WDFUSBPIPE inPipe, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions)
-WdfUsbTargetPipeConfigContinuousReader( WDFUSBPIPE inPipe, PWDF_USB_CONTINUOUS_READER_CONFIG inConfig)
-WdfUsbTargetPipeFormatRequestForAbort( WDFUSBPIPE inPipe, WDFREQUEST inRequest)
-WdfUsbTargetPipeFormatRequestForRead( WDFUSBPIPE inPipe, WDFREQUEST inRequest, WDFMEMORY inReadMemory, PWDFMEMORY_OFFSET inReadOffset)
-WdfUsbTargetPipeFormatRequestForReset( WDFUSBPIPE inPipe, WDFREQUEST inRequest)
-WdfUsbTargetPipeFormatRequestForUrb( WDFUSBPIPE inPIPE, WDFREQUEST inRequest, WDFMEMORY inUrbMemory, PWDFMEMORY_OFFSET inUrbMemoryOffset)
-WdfUsbTargetPipeFormatRequestForWrite( WDFUSBPIPE inPipe, WDFREQUEST inRequest, WDFMEMORY inWriteMemory, PWDFMEMORY_OFFSET inWriteOffset)
-WdfUsbTargetPipeGetInformation( WDFUSBPIPE inPipe, PWDF_USB_PIPE_INFORMATION outPipeInformation)
-WdfUsbTargetPipeGetType( WDFUSBPIPE inPipe)
-WdfUsbTargetPipeIsInEndpoint( WDFUSBPIPE inPipe)
-WdfUsbTargetPipeIsOutEndpoint( WDFUSBPIPE inPipe)
-WdfUsbTargetPipeReadSynchronously( WDFUSBPIPE inPipe, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions, PWDF_MEMORY_DESCRIPTOR inMemoryDescriptor, PULONG outBytesRead)
-WdfUsbTargetPipeResetSynchronously( WDFUSBPIPE inPipe, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions)
-WdfUsbTargetPipeSendUrbSynchronously( WDFUSBPIPE inPipe, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions, PURB Urb)
-WdfUsbTargetPipeSetNoMaximumPacketSizeCheck( WDFUSBPIPE inPipe)
-WdfUsbTargetPipeWdmGetPipeHandle( WDFUSBPIPE inUsbPipe)
-WdfUsbTargetPipeWriteSynchronously( WDFUSBPIPE inPipe, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions, PWDF_MEMORY_DESCRIPTOR inMemoryDescriptor, PULONG outBytesWritten)
-WdfWaitLockAcquire( WDFWAITLOCK inLock, PLONGLONG inTimeout)
-WdfWaitLockCreate( PWDF_OBJECT_ATTRIBUTES inLockAttributes, outWDFWAITLOCK* Lock)
-WdfWaitLockRelease( WDFWAITLOCK inLock)
-WdfWdmDeviceGetWdfDeviceHandle( PDEVICE_OBJECT inDeviceObject)
-WdfWdmDriverGetWdfDriverHandle( PDRIVER_OBJECT inDriverObject)
-WdfWmiInstanceCreate( WDFDEVICE inDevice, PWDF_WMI_INSTANCE_CONFIG inInstanceConfig, PWDF_OBJECT_ATTRIBUTES inInstanceAttributes, outWDFWMIINSTANCE* Instance)
-WdfWmiInstanceDeregister( WDFWMIINSTANCE inWmiInstance)
-WdfWmiInstanceFireEvent( WDFWMIINSTANCE inWmiInstance, ULONG inEventDataSize, PVOID EventData)
-WdfWmiInstanceGetDevice( WDFWMIINSTANCE inWmiInstance)
-WdfWmiInstanceGetProvider( WDFWMIINSTANCE inWmiInstance)
-WdfWmiInstanceRegister( WDFWMIINSTANCE inWmiInstance)
-WdfWmiProviderCreate( WDFDEVICE inDevice, PWDF_WMI_PROVIDER_CONFIG inWmiProviderConfig, PWDF_OBJECT_ATTRIBUTES inProviderAttributes, outWDFWMIPROVIDER* WmiProvider)
-WdfWmiProviderGetDevice( WDFWMIPROVIDER inWmiProvider)
-WdfWmiProviderGetTracingHandle( WDFWMIPROVIDER inWmiProvider)
-WdfWmiProviderIsEnabled( WDFWMIPROVIDER inWmiProvider, WDF_WMI_PROVIDER_CONTROL inProviderControl)
-WdfWorkItemCreate( PWDF_WORKITEM_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFWORKITEM* WorkItem)
-WdfWorkItemEnqueue( WDFWORKITEM inWorkItem)
-WdfWorkItemFlush( WDFWORKITEM inWorkItem)
-WdfWorkItemGetParentObject( WDFWORKITEM inWorkItem)
+EVT_WDFDEVICE_WDM_IRP_PREPROCESS( WDFDEVICE inDevice, PIRP ioIrp) -> NTSTATUS  // DISPATCH_LEVEL
+EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP( WDFCHILDLIST inChildList, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER ioAddressDescription) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_COPY( WDFCHILDLIST inChildList, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER inSourceAddressDescription, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER outDestinationAddressDescription) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE( WDFCHILDLIST inChildList, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER inSourceAddressDescription, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER outDestinationAddressDescription) -> NTSTATUS  // DISPATCH_LEVEL
+EVT_WDF_CHILD_LIST_CREATE_DEVICE( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inIdentificationDescription, PWDFDEVICE_INIT inChildInit) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED( WDFCHILDLIST inChildList, WDFDEVICE inOldDevice, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER inOldAddressDescription, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER outNewAddressDescription) -> BOOLEAN  // DISPATCH_LEVEL
+EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_CLEANUP( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER outIdentificationDescription) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inFirstIdentificationDescription, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inSecondIdentificationDescription) -> BOOLEAN  // DISPATCH_LEVEL
+EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COPY( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inSourceIdentificationDescription, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER outDestinationIdentificationDescription) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_DUPLICATE( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inSourceIdentificationDescription, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER outDestinationIdentificationDescription) -> NTSTATUS  // DISPATCH_LEVEL
+EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN( WDFCHILDLIST inChildList) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_ARM_WAKE_FROM_S0( WDFDEVICE inDevice) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_ARM_WAKE_FROM_SX( WDFDEVICE inDevice) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON( WDFDEVICE inDevice, BOOLEAN inDeviceWakeEnabled, BOOLEAN inChildrenArmedForWake) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_D0_ENTRY( WDFDEVICE inDevice, WDF_POWER_DEVICE_STATE inPreviousState) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED( WDFDEVICE inDevice, WDF_POWER_DEVICE_STATE inPreviousState) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_D0_EXIT( WDFDEVICE inDevice, WDF_POWER_DEVICE_STATE inTargetState) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_D0_EXIT_PRE_INTERRUPTS_DISABLED( WDFDEVICE inDevice, WDF_POWER_DEVICE_STATE inTargetState) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_DISABLE_WAKE_AT_BUS( WDFDEVICE inDevice) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0( WDFDEVICE inDevice) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_DISARM_WAKE_FROM_SX( WDFDEVICE inDevice) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_EJECT( WDFDEVICE inDevice) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS( WDFDEVICE inDevice, SYSTEM_POWER_STATE inPowerState) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_FILE_CREATE( WDFDEVICE inDevice, WDFREQUEST inRequest, WDFFILEOBJECT inFileObject) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_FILTER_RESOURCE_REQUIREMENTS( WDFDEVICE inDevice, WDFIORESREQLIST inIoResourceRequirementsList) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_PNP_STATE_CHANGE_NOTIFICATION( WDFDEVICE inDevice, PCWDF_DEVICE_PNP_NOTIFICATION_DATA inNotificationData) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION( WDFDEVICE inDevice, PCWDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA inNotificationData) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_POWER_STATE_CHANGE_NOTIFICATION( WDFDEVICE inDevice, PCWDF_DEVICE_POWER_NOTIFICATION_DATA inNotificationData) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_PREPARE_HARDWARE( WDFDEVICE inDevice, WDFCMRESLIST inResourcesRaw, WDFCMRESLIST inResourcesTranslated) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST( WDFDEVICE inDevice, LPGUID inInterfaceType, PINTERFACE ioExposedInterface, PVOID ioExposedInterfaceSpecificData) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_QUERY_REMOVE( WDFDEVICE inDevice) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_QUERY_STOP( WDFDEVICE inDevice) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_RELATIONS_QUERY( WDFDEVICE inDevice, DEVICE_RELATION_TYPE inRelationType) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_RELEASE_HARDWARE( WDFDEVICE inDevice, WDFCMRESLIST inResourcesTranslated) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES( WDFDEVICE inDevice, WDFCMRESLIST inResourcesRaw, WDFCMRESLIST inResourcesTranslated) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_RESOURCES_QUERY( WDFDEVICE inDevice, WDFCMRESLIST inResources) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_RESOURCE_REQUIREMENTS_QUERY( WDFDEVICE inDevice, WDFIORESREQLIST inIoResourceRequirementsList) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP( WDFDEVICE inDevice) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_SELF_MANAGED_IO_FLUSH( WDFDEVICE inDevice) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_SELF_MANAGED_IO_INIT( WDFDEVICE inDevice) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART( WDFDEVICE inDevice) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND( WDFDEVICE inDevice) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_SET_LOCK( WDFDEVICE inDevice, BOOLEAN inIsLocked) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_SHUTDOWN_NOTIFICATION( WDFDEVICE inDevice) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_SURPRISE_REMOVAL( WDFDEVICE inDevice) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_USAGE_NOTIFICATION( WDFDEVICE inDevice, WDF_SPECIAL_FILE_TYPE inNotificationType, BOOLEAN inIsInNotificationPath) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_WAKE_FROM_S0_TRIGGERED( WDFDEVICE inDevice) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED( WDFDEVICE inDevice) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_DMA_ENABLER_DISABLE( WDFDMAENABLER inDmaEnabler) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DMA_ENABLER_ENABLE( WDFDMAENABLER inDmaEnabler) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DMA_ENABLER_FLUSH( WDFDMAENABLER inDmaEnabler) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START( WDFDMAENABLER inDmaEnabler) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_STOP( WDFDMAENABLER inDmaEnabler) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DRIVER_DEVICE_ADD( WDFDRIVER inDriver, PWDFDEVICE_INIT ioDeviceInit) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_DRIVER_UNLOAD( WDFDRIVER inDriver) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_FILE_CLEANUP( WDFFILEOBJECT inFileObject) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_FILE_CLOSE( WDFFILEOBJECT inFileObject) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES( WDFQUEUE inQueue, WDFREQUEST inRequest) -> NTSTATUS  // DISPATCH_LEVEL
+EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST( WDFQUEUE inQueue, WDFREQUEST inRequest) -> NTSTATUS  // DISPATCH_LEVEL
+EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE( WDFQUEUE inQueue, WDFREQUEST inRequest) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_IO_QUEUE_IO_DEFAULT( WDFQUEUE inQueue, WDFREQUEST inRequest) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL( WDFQUEUE inQueue, WDFREQUEST inRequest, size_t inOutputBufferLength, size_t inInputBufferLength, ULONG inIoControlCode) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL( WDFQUEUE inQueue, WDFREQUEST inRequest, size_t inOutputBufferLength, size_t inInputBufferLength, ULONG inIoControlCode) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_IO_QUEUE_IO_READ( WDFQUEUE inQueue, WDFREQUEST inRequest, size_t inLength) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_IO_QUEUE_IO_RESUME( WDFQUEUE inQueue, WDFREQUEST inRequest) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_IO_QUEUE_IO_STOP( WDFQUEUE inQueue, WDFREQUEST inRequest, ULONG inActionFlags) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_IO_QUEUE_IO_WRITE( WDFQUEUE inQueue, WDFREQUEST inRequest, size_t inLength) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_IO_QUEUE_STATE( WDFQUEUE inQueue, WDFCONTEXT inContext) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_IO_TARGET_QUERY_REMOVE( WDFIOTARGET inIoTarget) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_IO_TARGET_REMOVE_CANCELED( WDFIOTARGET inIoTarget) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_IO_TARGET_REMOVE_COMPLETE( WDFIOTARGET inIoTarget) -> VOID  // PASSIVE_LEVEL
+EVT_WDF_IO_WDM_IRP_FOR_FORWARD_PROGRESS( WDFQUEUE inQueue, PIRP inIrp) -> WDF_IO_FORWARD_PROGRESS_ACTION  // DISPATCH_LEVEL
+EVT_WDF_OBJECT_CONTEXT_CLEANUP( WDFOBJECT inObject) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_OBJECT_CONTEXT_DESTROY( WDFOBJECT inObject) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_USB_READERS_FAILED( WDFUSBPIPE inPipe, NTSTATUS inStatus, USBD_STATUS inUsbdStatus) -> BOOLEAN  // PASSIVE_LEVEL
+EVT_WDF_USB_READER_COMPLETION_ROUTINE( WDFUSBPIPE inPipe, WDFMEMORY inBuffer, size_t inNumBytesTransferred, WDFCONTEXT inContext) -> VOID  // DISPATCH_LEVEL
+EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD( WDFWMIINSTANCE inWmiInstance, ULONG inMethodId, ULONG inInBufferSize, ULONG inOutBufferSize, PVOID Buffer, PULONG outBufferUsed) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_WMI_INSTANCE_QUERY_INSTANCE( WDFWMIINSTANCE inWmiInstance, ULONG inOutBufferSize, PVOID OutBuffer, PULONG outBufferUsed) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_WMI_INSTANCE_SET_INSTANCE( WDFWMIINSTANCE inWmiInstance, ULONG inInBufferSize, PVOID InBuffer) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_WMI_INSTANCE_SET_ITEM( WDFWMIINSTANCE inWmiInstance, ULONG inDataItemId, ULONG inInBufferSize, PVOID InBuffer) -> NTSTATUS  // PASSIVE_LEVEL
+EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL( WDFWMIPROVIDER inWmiProvider, WDF_WMI_PROVIDER_CONTROL inControl, BOOLEAN inEnable) -> NTSTATUS  // PASSIVE_LEVEL
+WdfChildListAddOrUpdateChildDescriptionAsPresent( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inIdentificationDescription, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER inAddressDescription) -> NTSTATUS
+WdfChildListBeginIteration( WDFCHILDLIST inChildList, PWDF_CHILD_LIST_ITERATOR inIterator) -> VOID
+WdfChildListBeginScan( WDFCHILDLIST inChildList) -> VOID
+WdfChildListCreate( WDFDEVICE inDevice, PWDF_CHILD_LIST_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inChildListAttributes, outWDFCHILDLIST* ChildList) -> NTSTATUS
+WdfChildListEndIteration( WDFCHILDLIST inChildList, PWDF_CHILD_LIST_ITERATOR inIterator) -> VOID
+WdfChildListEndScan( WDFCHILDLIST inChildList) -> VOID
+WdfChildListGetDevice( WDFCHILDLIST inChildList) -> WDFDEVICE
+WdfChildListRequestChildEject( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inIdentificationDescription) -> BOOLEAN
+WdfChildListRetrieveAddressDescription( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inIdentificationDescription, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER ioAddressDescription) -> NTSTATUS
+WdfChildListRetrieveNextDevice( WDFCHILDLIST inChildList, PWDF_CHILD_LIST_ITERATOR inIterator, outWDFDEVICE* Device, PWDF_CHILD_RETRIEVE_INFO ioInfo) -> NTSTATUS
+WdfChildListRetrievePdo( WDFCHILDLIST inChildList, PWDF_CHILD_RETRIEVE_INFO ioRetrieveInfo) -> WDFDEVICE
+WdfChildListUpdateAllChildDescriptionsAsPresent( WDFCHILDLIST inChildList) -> VOID
+WdfChildListUpdateChildDescriptionAsMissing( WDFCHILDLIST inChildList, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER inIdentificationDescription) -> NTSTATUS
+WdfCmResourceListAppendDescriptor( WDFCMRESLIST inList, PCM_PARTIAL_RESOURCE_DESCRIPTOR inDescriptor) -> NTSTATUS
+WdfCmResourceListGetCount( WDFCMRESLIST inList) -> ULONG
+WdfCmResourceListGetDescriptor( WDFCMRESLIST inList, ULONG inIndex) -> PCM_PARTIAL_RESOURCE_DESCRIPTOR
+WdfCmResourceListInsertDescriptor( WDFCMRESLIST inList, PCM_PARTIAL_RESOURCE_DESCRIPTOR inDescriptor, ULONG inIndex) -> NTSTATUS
+WdfCmResourceListRemove( WDFCMRESLIST inList, ULONG inIndex) -> VOID
+WdfCmResourceListRemoveByDescriptor( WDFCMRESLIST inList, PCM_PARTIAL_RESOURCE_DESCRIPTOR inDescriptor) -> VOID
+WdfCollectionAdd( WDFCOLLECTION inCollection, WDFOBJECT inObject) -> NTSTATUS
+WdfCollectionCreate( PWDF_OBJECT_ATTRIBUTES inCollectionAttributes, outWDFCOLLECTION* Collection) -> NTSTATUS
+WdfCollectionGetCount( WDFCOLLECTION inCollection) -> ULONG
+WdfCollectionGetFirstItem( WDFCOLLECTION inCollection) -> WDFOBJECT
+WdfCollectionGetItem( WDFCOLLECTION inCollection, ULONG inIndex) -> WDFOBJECT
+WdfCollectionGetLastItem( WDFCOLLECTION inCollection) -> WDFOBJECT
+WdfCollectionRemove( WDFCOLLECTION inCollection, WDFOBJECT inItem) -> VOID
+WdfCollectionRemoveItem( WDFCOLLECTION inCollection, ULONG inIndex) -> VOID
+WdfCommonBufferCreate( WDFDMAENABLER inDmaEnabler, size_t inLength, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFCOMMONBUFFER* CommonBuffer) -> NTSTATUS
+WdfCommonBufferCreateWithConfig( WDFDMAENABLER inDmaEnabler, size_t inLength, PWDF_COMMON_BUFFER_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFCOMMONBUFFER* CommonBuffer) -> NTSTATUS
+WdfCommonBufferGetAlignedLogicalAddress( WDFCOMMONBUFFER inCommonBuffer) -> PHYSICAL_ADDRESS
+WdfCommonBufferGetAlignedVirtualAddress( WDFCOMMONBUFFER inCommonBuffer) -> PVOID
+WdfCommonBufferGetLength( WDFCOMMONBUFFER inCommonBuffer) -> size_t
+WdfControlDeviceInitAllocate( WDFDRIVER inDriver, CONST inUNICODE_STRING* SDDLString) -> PWDFDEVICE_INIT
+WdfControlDeviceInitSetShutdownNotification( PWDFDEVICE_INIT inDeviceInit, PFN_WDF_DEVICE_SHUTDOWN_NOTIFICATION inNotification, UCHAR inFlags) -> VOID
+WdfControlFinishInitializing( WDFDEVICE inDevice) -> VOID
+WdfDeviceAddDependentUsageDeviceObject( WDFDEVICE inDevice, PDEVICE_OBJECT inDependentDevice) -> NTSTATUS
+WdfDeviceAddQueryInterface( WDFDEVICE inDevice, PWDF_QUERY_INTERFACE_CONFIG inInterfaceConfig) -> NTSTATUS
+WdfDeviceAddRemovalRelationsPhysicalDevice( WDFDEVICE inDevice, PDEVICE_OBJECT inPhysicalDevice) -> NTSTATUS
+WdfDeviceAllocAndQueryProperty( WDFDEVICE inDevice, DEVICE_REGISTRY_PROPERTY inDeviceProperty, POOL_TYPE inPoolType, PWDF_OBJECT_ATTRIBUTES inPropertyMemoryAttributes, outWDFMEMORY* PropertyMemory) -> NTSTATUS
+WdfDeviceAssignMofResourceName( WDFDEVICE inDevice, PCUNICODE_STRING inMofResourceName) -> NTSTATUS
+WdfDeviceAssignS0IdleSettings( WDFDEVICE inDevice, PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS inSettings) -> NTSTATUS
+WdfDeviceAssignSxWakeSettings( WDFDEVICE inDevice, PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS inSettings) -> NTSTATUS
+WdfDeviceClearRemovalRelationsDevices( WDFDEVICE inDevice) -> VOID
+WdfDeviceConfigureRequestDispatching( WDFDEVICE inDevice, WDFQUEUE inQueue, WDF_REQUEST_TYPE inRequestType) -> NTSTATUS
+WdfDeviceCreate( ioPWDFDEVICE_INIT* DeviceInit, PWDF_OBJECT_ATTRIBUTES inDeviceAttributes, outWDFDEVICE* Device) -> NTSTATUS
+WdfDeviceCreateDeviceInterface( WDFDEVICE inDevice, CONST inGUID* InterfaceClassGUID, PCUNICODE_STRING inReferenceString) -> NTSTATUS
+WdfDeviceCreateSymbolicLink( WDFDEVICE inDevice, PCUNICODE_STRING inSymbolicLinkName) -> NTSTATUS
+WdfDeviceEnqueueRequest( WDFDEVICE inDevice, WDFREQUEST inRequest) -> NTSTATUS
+WdfDeviceGetAlignmentRequirement( WDFDEVICE inDevice) -> ULONG
+WdfDeviceGetCharacteristics( WDFDEVICE inDevice) -> ULONG
+WdfDeviceGetDefaultQueue( WDFDEVICE inDevice) -> WDFQUEUE
+WdfDeviceGetDevicePnpState( WDFDEVICE inDevice) -> WDF_DEVICE_PNP_STATE
+WdfDeviceGetDevicePowerPolicyState( WDFDEVICE inDevice) -> WDF_DEVICE_POWER_POLICY_STATE
+WdfDeviceGetDevicePowerState( WDFDEVICE inDevice) -> WDF_DEVICE_POWER_STATE
+WdfDeviceGetDeviceState( WDFDEVICE inDevice, PWDF_DEVICE_STATE outDeviceState) -> VOID
+WdfDeviceGetDriver( WDFDEVICE inDevice) -> WDFDRIVER
+WdfDeviceGetFileObject( WDFDEVICE inDevice, PFILE_OBJECT inFileObject) -> WDFFILEOBJECT
+WdfDeviceGetIoTarget( WDFDEVICE inDevice) -> WDFIOTARGET
+WdfDeviceGetSystemPowerAction( WDFDEVICE inDevice) -> POWER_ACTION
+WdfDeviceIndicateWakeStatus( WDFDEVICE inDevice, NTSTATUS inWaitWakeStatus) -> NTSTATUS
+WdfDeviceInitAssignName( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inDeviceName) -> NTSTATUS
+WdfDeviceInitAssignSDDLString( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inSDDLString) -> NTSTATUS
+WdfDeviceInitAssignWdmIrpPreprocessCallback( PWDFDEVICE_INIT inDeviceInit, PFN_WDFDEVICE_WDM_IRP_PREPROCESS inEvtDeviceWdmIrpPreprocess, UCHAR inMajorFunction, PUCHAR MinorFunctions, ULONG inNumMinorFunctions) -> NTSTATUS
+WdfDeviceInitFree( PWDFDEVICE_INIT inDeviceInit) -> VOID
+WdfDeviceInitRegisterPnpStateChangeCallback( PWDFDEVICE_INIT inDeviceInit, WDF_DEVICE_PNP_STATE inPnpState, PFN_WDF_DEVICE_PNP_STATE_CHANGE_NOTIFICATION inEvtDevicePnpStateChange, ULONG inCallbackTypes) -> NTSTATUS
+WdfDeviceInitRegisterPowerPolicyStateChangeCallback( PWDFDEVICE_INIT inDeviceInit, WDF_DEVICE_POWER_POLICY_STATE inPowerPolicyState, PFN_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION inEvtDevicePowerPolicyStateChange, ULONG inCallbackTypes) -> NTSTATUS
+WdfDeviceInitRegisterPowerStateChangeCallback( PWDFDEVICE_INIT inDeviceInit, WDF_DEVICE_POWER_STATE inPowerState, PFN_WDF_DEVICE_POWER_STATE_CHANGE_NOTIFICATION inEvtDevicePowerStateChange, ULONG inCallbackTypes) -> NTSTATUS
+WdfDeviceInitSetCharacteristics( PWDFDEVICE_INIT inDeviceInit, ULONG inDeviceCharacteristics, BOOLEAN inOrInValues) -> VOID
+WdfDeviceInitSetDeviceClass( PWDFDEVICE_INIT inDeviceInit, CONST inGUID* DeviceClassGuid) -> VOID
+WdfDeviceInitSetDeviceType( PWDFDEVICE_INIT inDeviceInit, DEVICE_TYPE inDeviceType) -> VOID
+WdfDeviceInitSetExclusive( PWDFDEVICE_INIT inDeviceInit, BOOLEAN inIsExclusive) -> VOID
+WdfDeviceInitSetFileObjectConfig( PWDFDEVICE_INIT inDeviceInit, PWDF_FILEOBJECT_CONFIG inFileObjectConfig, PWDF_OBJECT_ATTRIBUTES inFileObjectAttributes) -> VOID
+WdfDeviceInitSetIoInCallerContextCallback( PWDFDEVICE_INIT inDeviceInit, PFN_WDF_IO_IN_CALLER_CONTEXT inEvtIoInCallerContext) -> VOID
+WdfDeviceInitSetIoType( PWDFDEVICE_INIT inDeviceInit, WDF_DEVICE_IO_TYPE inIoType) -> VOID
+WdfDeviceInitSetPnpPowerEventCallbacks( PWDFDEVICE_INIT inDeviceInit, PWDF_PNPPOWER_EVENT_CALLBACKS inPnpPowerEventCallbacks) -> VOID
+WdfDeviceInitSetPowerInrush( PWDFDEVICE_INIT inDeviceInit) -> VOID
+WdfDeviceInitSetPowerNotPageable( PWDFDEVICE_INIT inDeviceInit) -> VOID
+WdfDeviceInitSetPowerPageable( PWDFDEVICE_INIT inDeviceInit) -> VOID
+WdfDeviceInitSetPowerPolicyEventCallbacks( PWDFDEVICE_INIT inDeviceInit, PWDF_POWER_POLICY_EVENT_CALLBACKS inPowerPolicyEventCallbacks) -> VOID
+WdfDeviceInitSetPowerPolicyOwnership( PWDFDEVICE_INIT inDeviceInit, BOOLEAN inIsPowerPolicyOwner) -> VOID
+WdfDeviceInitSetRequestAttributes( PWDFDEVICE_INIT inDeviceInit, PWDF_OBJECT_ATTRIBUTES inRequestAttributes) -> VOID
+WdfDeviceMiniportCreate( WDFDRIVER inDriver, PWDF_OBJECT_ATTRIBUTES inAttributes, PDEVICE_OBJECT inDeviceObject, PDEVICE_OBJECT inAttachedDeviceObject, PDEVICE_OBJECT inPdo, outWDFDEVICE* Device) -> NTSTATUS
+WdfDeviceOpenRegistryKey( WDFDEVICE inDevice, ULONG inDeviceInstanceKeyType, ACCESS_MASK inDesiredAccess, PWDF_OBJECT_ATTRIBUTES inKeyAttributes, outWDFKEY* Key) -> NTSTATUS
+WdfDeviceQueryProperty( WDFDEVICE inDevice, DEVICE_REGISTRY_PROPERTY inDeviceProperty, ULONG inBufferLength, PVOID PropertyBuffer, PULONG outResultLength) -> NTSTATUS
+WdfDeviceRemoveDependentUsageDeviceObject( WDFDEVICE inDevice, PDEVICE_OBJECT inDependentDevice) -> VOID
+WdfDeviceRemoveRemovalRelationsPhysicalDevice( WDFDEVICE inDevice, PDEVICE_OBJECT inPhysicalDevice) -> VOID
+WdfDeviceResumeIdle( WDFDEVICE inDevice) -> VOID
+WdfDeviceRetrieveDeviceInterfaceString( WDFDEVICE inDevice, CONST inGUID* InterfaceClassGUID, PCUNICODE_STRING inReferenceString, WDFSTRING inString) -> NTSTATUS
+WdfDeviceRetrieveDeviceName( WDFDEVICE inDevice, WDFSTRING inString) -> NTSTATUS
+WdfDeviceSetAlignmentRequirement( WDFDEVICE inDevice, ULONG inAlignmentRequirement) -> VOID
+WdfDeviceSetBusInformationForChildren( WDFDEVICE inDevice, PPNP_BUS_INFORMATION inBusInformation) -> VOID
+WdfDeviceSetCharacteristics( WDFDEVICE inDevice, ULONG inDeviceCharacteristics) -> VOID
+WdfDeviceSetDeviceInterfaceState( WDFDEVICE inDevice, CONST inGUID* InterfaceClassGUID, PCUNICODE_STRING inReferenceString, BOOLEAN inIsInterfaceEnabled) -> VOID
+WdfDeviceSetDeviceState( WDFDEVICE inDevice, PWDF_DEVICE_STATE inDeviceState) -> VOID
+WdfDeviceSetFailed( WDFDEVICE inDevice, WDF_DEVICE_FAILED_ACTION inFailedAction) -> VOID
+WdfDeviceSetPnpCapabilities( WDFDEVICE inDevice, PWDF_DEVICE_PNP_CAPABILITIES inPnpCapabilities) -> VOID
+WdfDeviceSetPowerCapabilities( WDFDEVICE inDevice, PWDF_DEVICE_POWER_CAPABILITIES inPowerCapabilities) -> VOID
+WdfDeviceSetSpecialFileSupport( WDFDEVICE inDevice, WDF_SPECIAL_FILE_TYPE inFileType, BOOLEAN inFileTypeIsSupported) -> VOID
+WdfDeviceSetStaticStopRemove( WDFDEVICE inDevice, BOOLEAN inStoppable) -> VOID
+WdfDeviceWdmDispatchPreprocessedIrp( WDFDEVICE inDevice, PIRP inIrp) -> NTSTATUS
+WdfDeviceWdmGetAttachedDevice( WDFDEVICE inDevice) -> PDEVICE_OBJECT
+WdfDeviceWdmGetDeviceObject( WDFDEVICE inDevice) -> PDEVICE_OBJECT
+WdfDeviceWdmGetPhysicalDevice( WDFDEVICE inDevice) -> PDEVICE_OBJECT
+WdfDmaEnablerCreate( WDFDEVICE inDevice, PWDF_DMA_ENABLER_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFDMAENABLER* DmaEnablerHandle) -> NTSTATUS
+WdfDmaEnablerGetFragmentLength( WDFDMAENABLER inDmaEnabler, WDF_DMA_DIRECTION inDmaDirection) -> size_t
+WdfDmaEnablerGetMaximumLength( WDFDMAENABLER inDmaEnabler) -> size_t
+WdfDmaEnablerGetMaximumScatterGatherElements( WDFDMAENABLER inDmaEnabler) -> size_t
+WdfDmaEnablerSetMaximumScatterGatherElements( WDFDMAENABLER inDmaEnabler, size_t inMaximumFragments) -> VOID
+WdfDmaEnablerWdmGetDmaAdapter( WDFDMAENABLER inDmaEnabler, WDF_DMA_DIRECTION inDmaDirection) -> PDMA_ADAPTER
+WdfDmaTransactionCreate( WDFDMAENABLER inDmaEnabler, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFDMATRANSACTION* DmaTransaction) -> NTSTATUS
+WdfDmaTransactionDmaCompleted( WDFDMATRANSACTION inDmaTransaction, outNTSTATUS* Status) -> BOOLEAN
+WdfDmaTransactionDmaCompletedFinal( WDFDMATRANSACTION inDmaTransaction, size_t inFinalTransferredLength, outNTSTATUS* Status) -> BOOLEAN
+WdfDmaTransactionDmaCompletedWithLength( WDFDMATRANSACTION inDmaTransaction, size_t inTransferredLength, outNTSTATUS* Status) -> BOOLEAN
+WdfDmaTransactionExecute( WDFDMATRANSACTION inDmaTransaction, WDFCONTEXT inContext) -> NTSTATUS
+WdfDmaTransactionGetBytesTransferred( WDFDMATRANSACTION inDmaTransaction) -> size_t
+WdfDmaTransactionGetCurrentDmaTransferLength( WDFDMATRANSACTION inDmaTransaction) -> size_t
+WdfDmaTransactionGetDevice( WDFDMATRANSACTION inDmaTransaction) -> WDFDEVICE
+WdfDmaTransactionGetRequest( WDFDMATRANSACTION inDmaTransaction) -> WDFREQUEST
+WdfDmaTransactionInitialize( WDFDMATRANSACTION inDmaTransaction, PFN_WDF_PROGRAM_DMA inEvtProgramDmaFunction, WDF_DMA_DIRECTION inDmaDirection, PMDL inMdl, PVOID inVirtualAddress, size_t inLength) -> NTSTATUS
+WdfDmaTransactionInitializeUsingRequest( WDFDMATRANSACTION inDmaTransaction, WDFREQUEST inRequest, PFN_WDF_PROGRAM_DMA inEvtProgramDmaFunction, WDF_DMA_DIRECTION inDmaDirection) -> NTSTATUS
+WdfDmaTransactionRelease( WDFDMATRANSACTION inDmaTransaction) -> NTSTATUS
+WdfDmaTransactionSetMaximumLength( WDFDMATRANSACTION inDmaTransaction, size_t inMaximumLength) -> VOID
+WdfDpcCancel( WDFDPC inDpc, BOOLEAN inWait) -> BOOLEAN
+WdfDpcCreate( PWDF_DPC_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFDPC* Dpc) -> NTSTATUS
+WdfDpcEnqueue( WDFDPC inDpc) -> BOOLEAN
+WdfDpcGetParentObject( WDFDPC inDpc) -> WDFOBJECT
+WdfDpcWdmGetDpc( WDFDPC inDpc) -> PKDPC
+WdfDriverCreate( PDRIVER_OBJECT inDriverObject, PCUNICODE_STRING inRegistryPath, PWDF_OBJECT_ATTRIBUTES inDriverAttributes, PWDF_DRIVER_CONFIG inDriverConfig, outWDFDRIVER* Driver) -> NTSTATUS
+WdfDriverGetRegistryPath( WDFDRIVER inDriver) -> PWSTR
+WdfDriverIsVersionAvailable( WDFDRIVER inDriver, PWDF_DRIVER_VERSION_AVAILABLE_PARAMS inVersionAvailableParams) -> BOOLEAN
+WdfDriverOpenParametersRegistryKey( WDFDRIVER inDriver, ACCESS_MASK inDesiredAccess, PWDF_OBJECT_ATTRIBUTES inKeyAttributes, outWDFKEY* Key) -> NTSTATUS
+WdfDriverRegisterTraceInfo( PDRIVER_OBJECT inDriverObject, PFN_WDF_TRACE_CALLBACK inEvtTraceCallback, PVOID inControlBlock) -> NTSTATUS
+WdfDriverRetrieveVersionString( WDFDRIVER inDriver, WDFSTRING inString) -> NTSTATUS
+WdfDriverWdmGetDriverObject( WDFDRIVER inDriver) -> PDRIVER_OBJECT
+WdfFdoAddStaticChild( WDFDEVICE inFdo, WDFDEVICE inChild) -> NTSTATUS
+WdfFdoGetDefaultChildList( WDFDEVICE inFdo) -> WDFCHILDLIST
+WdfFdoInitAllocAndQueryProperty( PWDFDEVICE_INIT inDeviceInit, DEVICE_REGISTRY_PROPERTY inDeviceProperty, POOL_TYPE inPoolType, PWDF_OBJECT_ATTRIBUTES inPropertyMemoryAttributes, outWDFMEMORY* PropertyMemory) -> NTSTATUS
+WdfFdoInitOpenRegistryKey( PWDFDEVICE_INIT inDeviceInit, ULONG inDeviceInstanceKeyType, ACCESS_MASK inDesiredAccess, PWDF_OBJECT_ATTRIBUTES inKeyAttributes, outWDFKEY* Key) -> NTSTATUS
+WdfFdoInitQueryProperty( PWDFDEVICE_INIT inDeviceInit, DEVICE_REGISTRY_PROPERTY inDeviceProperty, ULONG inBufferLength, PVOID PropertyBuffer, PULONG outResultLength) -> NTSTATUS
+WdfFdoInitSetDefaultChildListConfig( PWDFDEVICE_INIT ioDeviceInit, PWDF_CHILD_LIST_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inDefaultChildListAttributes) -> VOID
+WdfFdoInitSetEventCallbacks( PWDFDEVICE_INIT inDeviceInit, PWDF_FDO_EVENT_CALLBACKS inFdoEventCallbacks) -> VOID
+WdfFdoInitSetFilter( PWDFDEVICE_INIT inDeviceInit) -> VOID
+WdfFdoInitWdmGetPhysicalDevice( PWDFDEVICE_INIT inDeviceInit) -> PDEVICE_OBJECT
+WdfFdoLockStaticChildListForIteration( WDFDEVICE inFdo) -> VOID
+WdfFdoQueryForInterface( WDFDEVICE inFdo, LPCGUID inInterfaceType, PINTERFACE outInterface, USHORT inSize, USHORT inVersion, PVOID inInterfaceSpecificData) -> NTSTATUS
+WdfFdoRetrieveNextStaticChild( WDFDEVICE inFdo, WDFDEVICE inPreviousChild, ULONG inFlags) -> WDFDEVICE
+WdfFdoUnlockStaticChildListFromIteration( WDFDEVICE inFdo) -> VOID
+WdfFileObjectGetDevice( WDFFILEOBJECT inFileObject) -> WDFDEVICE
+WdfFileObjectGetFileName( WDFFILEOBJECT inFileObject) -> PUNICODE_STRING
+WdfFileObjectGetFlags( WDFFILEOBJECT inFileObject) -> ULONG
+WdfFileObjectWdmGetFileObject( WDFFILEOBJECT inFileObject) -> PFILE_OBJECT
+WdfInterruptAcquireLock( WDFINTERRUPT inInterrupt) -> VOID
+WdfInterruptCreate( WDFDEVICE inDevice, PWDF_INTERRUPT_CONFIG inConfiguration, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFINTERRUPT* Interrupt) -> NTSTATUS
+WdfInterruptDisable( WDFINTERRUPT inInterrupt) -> VOID
+WdfInterruptEnable( WDFINTERRUPT inInterrupt) -> VOID
+WdfInterruptGetInfo( WDFINTERRUPT inInterrupt, PWDF_INTERRUPT_INFO outInfo) -> VOID
+WdfInterruptReleaseLock( WDFINTERRUPT inInterrupt) -> VOID
+WdfInterruptSetExtendedPolicy( WDFINTERRUPT inInterrupt, PWDF_INTERRUPT_EXTENDED_POLICY inPolicyAndGroup) -> VOID
+WdfInterruptSetPolicy( WDFINTERRUPT inInterrupt, WDF_INTERRUPT_POLICY inPolicy, WDF_INTERRUPT_PRIORITY inPriority, KAFFINITY inTargetProcessorSet) -> VOID
+WdfInterruptSynchronize( WDFINTERRUPT inInterrupt, PFN_WDF_INTERRUPT_SYNCHRONIZE inCallback, WDFCONTEXT inContext) -> BOOLEAN
+WdfIoQueueAssignForwardProgressPolicy( WDFQUEUE inQueue, PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY inForwardProgressPolicy) -> NTSTATUS
+WdfIoQueueCreate( WDFDEVICE inDevice, PWDF_IO_QUEUE_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inQueueAttributes, outWDFQUEUE* Queue) -> NTSTATUS
+WdfIoQueueDrain( WDFQUEUE inQueue, PFN_WDF_IO_QUEUE_STATE DrainComplete, WDFCONTEXT Context) -> VOID
+WdfIoQueueDrainSynchronously( WDFQUEUE inQueue) -> VOID
+WdfIoQueueFindRequest( WDFQUEUE inQueue, WDFREQUEST inFoundRequest, WDFFILEOBJECT inFileObject, PWDF_REQUEST_PARAMETERS ioParameters, outWDFREQUEST* OutRequest) -> NTSTATUS
+WdfIoQueueGetDevice( WDFQUEUE inQueue) -> WDFDEVICE
+WdfIoQueueGetState( WDFQUEUE inQueue, PULONG outQueueRequests, PULONG outDriverRequests) -> WDF_IO_QUEUE_STATE
+WdfIoQueuePurge( WDFQUEUE inQueue, PFN_WDF_IO_QUEUE_STATE PurgeComplete, WDFCONTEXT Context) -> VOID
+WdfIoQueuePurgeSynchronously( WDFQUEUE inQueue) -> VOID
+WdfIoQueueReadyNotify( WDFQUEUE inQueue, PFN_WDF_IO_QUEUE_STATE inQueueReady, WDFCONTEXT inContext) -> NTSTATUS
+WdfIoQueueRetrieveFoundRequest( WDFQUEUE inQueue, WDFREQUEST inFoundRequest, outWDFREQUEST* OutRequest) -> NTSTATUS
+WdfIoQueueRetrieveNextRequest( WDFQUEUE inQueue, outWDFREQUEST* OutRequest) -> NTSTATUS
+WdfIoQueueRetrieveRequestByFileObject( WDFQUEUE inQueue, WDFFILEOBJECT inFileObject, outWDFREQUEST* OutRequest) -> NTSTATUS
+WdfIoQueueStart( WDFQUEUE inQueue) -> VOID
+WdfIoQueueStop( WDFQUEUE inQueue, PFN_WDF_IO_QUEUE_STATE StopComplete, WDFCONTEXT Context) -> VOID
+WdfIoQueueStopSynchronously( WDFQUEUE inQueue) -> VOID
+WdfIoResourceListAppendDescriptor( WDFIORESLIST inResourceList, PIO_RESOURCE_DESCRIPTOR inDescriptor) -> NTSTATUS
+WdfIoResourceListCreate( WDFIORESREQLIST inRequirementsList, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFIORESLIST* ResourceList) -> NTSTATUS
+WdfIoResourceListGetCount( WDFIORESLIST inResourceList) -> ULONG
+WdfIoResourceListGetDescriptor( WDFIORESLIST inResourceList, ULONG inIndex) -> PIO_RESOURCE_DESCRIPTOR
+WdfIoResourceListInsertDescriptor( WDFIORESLIST inResourceList, PIO_RESOURCE_DESCRIPTOR inDescriptor, ULONG inIndex) -> NTSTATUS
+WdfIoResourceListRemove( WDFIORESLIST inResourceList, ULONG inIndex) -> VOID
+WdfIoResourceListRemoveByDescriptor( WDFIORESLIST inResourceList, PIO_RESOURCE_DESCRIPTOR inDescriptor) -> VOID
+WdfIoResourceListUpdateDescriptor( WDFIORESLIST inResourceList, PIO_RESOURCE_DESCRIPTOR inDescriptor, ULONG inIndex) -> VOID
+WdfIoResourceRequirementsListAppendIoResList( WDFIORESREQLIST inRequirementsList, WDFIORESLIST inIoResList) -> NTSTATUS
+WdfIoResourceRequirementsListGetCount( WDFIORESREQLIST inRequirementsList) -> ULONG
+WdfIoResourceRequirementsListGetIoResList( WDFIORESREQLIST inRequirementsList, ULONG inIndex) -> WDFIORESLIST
+WdfIoResourceRequirementsListInsertIoResList( WDFIORESREQLIST inRequirementsList, WDFIORESLIST inIoResList, ULONG inIndex) -> NTSTATUS
+WdfIoResourceRequirementsListRemove( WDFIORESREQLIST inRequirementsList, ULONG inIndex) -> VOID
+WdfIoResourceRequirementsListRemoveByIoResList( WDFIORESREQLIST inRequirementsList, WDFIORESLIST inIoResList) -> VOID
+WdfIoResourceRequirementsListSetInterfaceType( WDFIORESREQLIST inRequirementsList, INTERFACE_TYPE inInterfaceType) -> VOID
+WdfIoResourceRequirementsListSetSlotNumber( WDFIORESREQLIST inRequirementsList, ULONG inSlotNumber) -> VOID
+WdfIoTargetAllocAndQueryTargetProperty( WDFIOTARGET inIoTarget, DEVICE_REGISTRY_PROPERTY inDeviceProperty, POOL_TYPE inPoolType, PWDF_OBJECT_ATTRIBUTES inPropertyMemoryAttributes, outWDFMEMORY* PropertyMemory) -> NTSTATUS
+WdfIoTargetClose( WDFIOTARGET inIoTarget) -> VOID
+WdfIoTargetCloseForQueryRemove( WDFIOTARGET inIoTarget) -> VOID
+WdfIoTargetCreate( WDFDEVICE inDevice, PWDF_OBJECT_ATTRIBUTES inIoTargetAttributes, outWDFIOTARGET* IoTarget) -> NTSTATUS
+WdfIoTargetFormatRequestForInternalIoctl( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, ULONG IoctlCode, WDFMEMORY inInputBuffer, PWDFMEMORY_OFFSET inInputBufferOffset, WDFMEMORY inOutputBuffer, PWDFMEMORY_OFFSET inOutputBufferOffset) -> NTSTATUS
+WdfIoTargetFormatRequestForInternalIoctlOthers( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, ULONG IoctlCode, WDFMEMORY inOtherArg1, PWDFMEMORY_OFFSET inOtherArg1Offset, WDFMEMORY inOtherArg2, PWDFMEMORY_OFFSET inOtherArg2Offset, WDFMEMORY inOtherArg4, PWDFMEMORY_OFFSET inOtherArg4Offset) -> NTSTATUS
+WdfIoTargetFormatRequestForIoctl( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, ULONG IoctlCode, WDFMEMORY inInputBuffer, PWDFMEMORY_OFFSET inInputBufferOffset, WDFMEMORY inOutputBuffer, PWDFMEMORY_OFFSET inOutputBufferOffset) -> NTSTATUS
+WdfIoTargetFormatRequestForRead( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, WDFMEMORY inOutputBuffer, PWDFMEMORY_OFFSET inOutputBufferOffset, PLONGLONG inDeviceOffset) -> NTSTATUS
+WdfIoTargetFormatRequestForWrite( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, WDFMEMORY inInputBuffer, PWDFMEMORY_OFFSET inInputBufferOffset, PLONGLONG inDeviceOffset) -> NTSTATUS
+WdfIoTargetGetDevice( WDFIOTARGET inIoTarget) -> WDFDEVICE
+WdfIoTargetGetState( WDFIOTARGET inIoTarget) -> WDF_IO_TARGET_STATE
+WdfIoTargetOpen( WDFIOTARGET inIoTarget, PWDF_IO_TARGET_OPEN_PARAMS inOpenParams) -> NTSTATUS
+WdfIoTargetQueryForInterface( WDFIOTARGET inIoTarget, LPCGUID inInterfaceType, PINTERFACE outInterface, USHORT inSize, USHORT inVersion, PVOID inInterfaceSpecificData) -> NTSTATUS
+WdfIoTargetQueryTargetProperty( WDFIOTARGET inIoTarget, DEVICE_REGISTRY_PROPERTY inDeviceProperty, ULONG inBufferLength, PVOID PropertyBuffer, PULONG ResultLength) -> NTSTATUS
+WdfIoTargetSendInternalIoctlOthersSynchronously( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, ULONG IoctlCode, PWDF_MEMORY_DESCRIPTOR inOtherArg1, PWDF_MEMORY_DESCRIPTOR inOtherArg2, PWDF_MEMORY_DESCRIPTOR inOtherArg4, PWDF_REQUEST_SENDIONS inRequestOptions, PULONG_PTR outBytesReturned) -> NTSTATUS
+WdfIoTargetSendInternalIoctlSynchronously( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, ULONG inIoctlCode, PWDF_MEMORY_DESCRIPTOR inInputBuffer, PWDF_MEMORY_DESCRIPTOR inOutputBuffer, PWDF_REQUEST_SENDIONS inRequestOptions, PULONG_PTR outBytesReturned) -> NTSTATUS
+WdfIoTargetSendIoctlSynchronously( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, ULONG inIoctlCode, PWDF_MEMORY_DESCRIPTOR inInputBuffer, PWDF_MEMORY_DESCRIPTOR inOutputBuffer, PWDF_REQUEST_SENDIONS inRequestOptions, PULONG_PTR outBytesReturned) -> NTSTATUS
+WdfIoTargetSendReadSynchronously( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, PWDF_MEMORY_DESCRIPTOR inOutputBuffer, PLONGLONG inDeviceOffset, PWDF_REQUEST_SENDIONS inRequestOptions, PULONG_PTR outBytesRead) -> NTSTATUS
+WdfIoTargetSendWriteSynchronously( WDFIOTARGET inIoTarget, WDFREQUEST inRequest, PWDF_MEMORY_DESCRIPTOR inInputBuffer, PLONGLONG inDeviceOffset, PWDF_REQUEST_SENDIONS inRequestOptions, PULONG_PTR outBytesWritten) -> NTSTATUS
+WdfIoTargetStart( WDFIOTARGET inIoTarget) -> NTSTATUS
+WdfIoTargetStop( WDFIOTARGET inIoTarget, WDF_IO_TARGET_SENT_IO_ACTION inAction) -> VOID
+WdfIoTargetWdmGetTargetDeviceObject( WDFIOTARGET inIoTarget) -> PDEVICE_OBJECT
+WdfIoTargetWdmGetTargetFileHandle( WDFIOTARGET inIoTarget) -> HANDLE
+WdfIoTargetWdmGetTargetFileObject( WDFIOTARGET inIoTarget) -> PFILE_OBJECT
+WdfIoTargetWdmGetTargetPhysicalDevice( WDFIOTARGET inIoTarget) -> PDEVICE_OBJECT
+WdfLookasideListCreate( PWDF_OBJECT_ATTRIBUTES inLookasideAttributes, size_t inBufferSize, POOL_TYPE inPoolType, PWDF_OBJECT_ATTRIBUTES inMemoryAttributes, ULONG inPoolTag, outWDFLOOKASIDE* Lookaside) -> NTSTATUS
+WdfMemoryAssignBuffer( WDFMEMORY inMemory, PVOID inBuffer, size_t inBufferSize) -> NTSTATUS
+WdfMemoryCopyFromBuffer( WDFMEMORY inDestinationMemory, size_t inDestinationOffset, PVOID inBuffer, size_t inNumBytesToCopyFrom) -> NTSTATUS
+WdfMemoryCopyToBuffer( WDFMEMORY inSourceMemory, size_t inSourceOffset, PVOID Buffer, size_t inNumBytesToCopyTo) -> NTSTATUS
+WdfMemoryCreate( PWDF_OBJECT_ATTRIBUTES inAttributes, POOL_TYPE inPoolType, ULONG inPoolTag, size_t inBufferSize, outWDFMEMORY* Memory, outPVOID* Buffer) -> NTSTATUS
+WdfMemoryCreateFromLookaside( WDFLOOKASIDE inLookaside, outWDFMEMORY* Memory) -> NTSTATUS
+WdfMemoryCreatePreallocated( PWDF_OBJECT_ATTRIBUTES inAttributes, size_t inBufferSize, outWDFMEMORY* Memory) -> NTSTATUS
+WdfMemoryGetBuffer( WDFMEMORY inMemory, outsize_t* BufferSize) -> PVOID
+WdfObjectAcquireLock( WDFOBJECT inObject) -> VOID
+WdfObjectCreate( PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFOBJECT* Object) -> NTSTATUS
+WdfObjectDelete( WDFOBJECT inObject) -> VOID
+WdfObjectQuery( WDFOBJECT inObject, CONST inGUID* Guid, ULONG inQueryBufferLength, PVOID QueryBuffer) -> NTSTATUS
+WdfObjectReleaseLock( WDFOBJECT inObject) -> VOID
+WdfPdoAddEjectionRelationsPhysicalDevice( WDFDEVICE inDevice, PDEVICE_OBJECT inPhysicalDevice) -> NTSTATUS
+WdfPdoClearEjectionRelationsDevices( WDFDEVICE inDevice) -> VOID
+WdfPdoGetParent( WDFDEVICE inDevice) -> WDFDEVICE
+WdfPdoInitAddCompatibleID( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inCompatibleID) -> NTSTATUS
+WdfPdoInitAddDeviceText( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inDeviceDescription, PCUNICODE_STRING inDeviceLocation, LCID inLocaleId) -> NTSTATUS
+WdfPdoInitAddHardwareID( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inHardwareID) -> NTSTATUS
+WdfPdoInitAllocate( WDFDEVICE inParentDevice) -> PWDFDEVICE_INIT
+WdfPdoInitAllowForwardingRequestToParent( PWDFDEVICE_INIT inDeviceInit) -> VOID
+WdfPdoInitAssignContainerID( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inContainerID) -> NTSTATUS
+WdfPdoInitAssignDeviceID( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inDeviceID) -> NTSTATUS
+WdfPdoInitAssignInstanceID( PWDFDEVICE_INIT inDeviceInit, PCUNICODE_STRING inInstanceID) -> NTSTATUS
+WdfPdoInitAssignRawDevice( PWDFDEVICE_INIT inDeviceInit, CONST inGUID* DeviceClassGuid) -> NTSTATUS
+WdfPdoInitSetDefaultLocale( PWDFDEVICE_INIT inDeviceInit, LCID inLocaleId) -> VOID
+WdfPdoInitSetEventCallbacks( PWDFDEVICE_INIT inDeviceInit, PWDF_PDO_EVENT_CALLBACKS inDispatchTable) -> VOID
+WdfPdoMarkMissing( WDFDEVICE inDevice) -> NTSTATUS
+WdfPdoRemoveEjectionRelationsPhysicalDevice( WDFDEVICE inDevice, PDEVICE_OBJECT inPhysicalDevice) -> VOID
+WdfPdoRequestEject( WDFDEVICE inDevice) -> VOID
+WdfPdoRetrieveAddressDescription( WDFDEVICE inDevice, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER ioAddressDescription) -> NTSTATUS
+WdfPdoRetrieveIdentificationDescription( WDFDEVICE inDevice, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER ioIdentificationDescription) -> NTSTATUS
+WdfPdoUpdateAddressDescription( WDFDEVICE inDevice, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER ioAddressDescription) -> NTSTATUS
+WdfRegistryAssignMemory( WDFKEY inKey, PCUNICODE_STRING inValueName, ULONG inValueType, WDFMEMORY inMemory, PWDFMEMORY_OFFSET inMemoryOffsets) -> NTSTATUS
+WdfRegistryAssignMultiString( WDFKEY inKey, PCUNICODE_STRING inValueName, WDFCOLLECTION inStringsCollection) -> NTSTATUS
+WdfRegistryAssignString( WDFKEY inKey, PCUNICODE_STRING inValueName, WDFSTRING inString) -> NTSTATUS
+WdfRegistryAssignULong( WDFKEY inKey, PCUNICODE_STRING inValueName, ULONG inValue) -> NTSTATUS
+WdfRegistryAssignUnicodeString( WDFKEY inKey, PCUNICODE_STRING inValueName, PCUNICODE_STRING inValue) -> NTSTATUS
+WdfRegistryAssignValue( WDFKEY inKey, PCUNICODE_STRING inValueName, ULONG inValueType, ULONG inValueLength, PVOID Value) -> NTSTATUS
+WdfRegistryClose( WDFKEY inKey) -> VOID
+WdfRegistryCreateKey( WDFKEY inParentKey, PCUNICODE_STRING inKeyName, ACCESS_MASK inDesiredAccess, ULONG inCreateOptions, PULONG outCreateDisposition, PWDF_OBJECT_ATTRIBUTES inKeyAttributes, outWDFKEY* Key) -> NTSTATUS
+WdfRegistryOpenKey( WDFKEY inParentKey, PCUNICODE_STRING inKeyName, ACCESS_MASK inDesiredAccess, PWDF_OBJECT_ATTRIBUTES inKeyAttributes, outWDFKEY* Key) -> NTSTATUS
+WdfRegistryQueryMemory( WDFKEY inKey, PCUNICODE_STRING inValueName, POOL_TYPE inPoolType, PWDF_OBJECT_ATTRIBUTES inMemoryAttributes, outWDFMEMORY* Memory, PULONG outValueType) -> NTSTATUS
+WdfRegistryQueryMultiString( WDFKEY inKey, PCUNICODE_STRING inValueName, PWDF_OBJECT_ATTRIBUTES inStringsAttributes, WDFCOLLECTION inCollection) -> NTSTATUS
+WdfRegistryQueryString( WDFKEY inKey, PCUNICODE_STRING inValueName, WDFSTRING inString) -> NTSTATUS
+WdfRegistryQueryULong( WDFKEY inKey, PCUNICODE_STRING inValueName, PULONG outValue) -> NTSTATUS
+WdfRegistryQueryUnicodeString( WDFKEY inKey, PCUNICODE_STRING inValueName, PUSHORT outValueByteLength, PUNICODE_STRING ioValue) -> NTSTATUS
+WdfRegistryQueryValue( WDFKEY inKey, PCUNICODE_STRING inValueName, ULONG inValueLength, PVOID Value, PULONG outValueLengthQueried, PULONG outValueType) -> NTSTATUS
+WdfRegistryRemoveKey( WDFKEY inKey) -> NTSTATUS
+WdfRegistryRemoveValue( WDFKEY inKey, PCUNICODE_STRING inValueName) -> NTSTATUS
+WdfRegistryWdmGetHandle( WDFKEY inKey) -> HANDLE
+WdfRequestAllocateTimer( WDFREQUEST inRequest) -> NTSTATUS
+WdfRequestCancelSentRequest( WDFREQUEST inRequest) -> BOOLEAN
+WdfRequestChangeTarget( WDFREQUEST inRequest, WDFIOTARGET inIoTarget) -> NTSTATUS
+WdfRequestComplete( WDFREQUEST inRequest, NTSTATUS inStatus) -> VOID
+WdfRequestCompleteWithInformation( WDFREQUEST inRequest, NTSTATUS inStatus, ULONG_PTR inInformation) -> VOID
+WdfRequestCompleteWithPriorityBoost( WDFREQUEST inRequest, NTSTATUS inStatus, CCHAR inPriorityBoost) -> VOID
+WdfRequestCreate( PWDF_OBJECT_ATTRIBUTES inRequestAttributes, WDFIOTARGET inIoTarget, outWDFREQUEST* Request) -> NTSTATUS
+WdfRequestCreateFromIrp( PWDF_OBJECT_ATTRIBUTES inRequestAttributes, PIRP inIrp, BOOLEAN inRequestFreesIrp, outWDFREQUEST* Request) -> NTSTATUS
+WdfRequestFormatRequestUsingCurrentType( WDFREQUEST inRequest) -> VOID
+WdfRequestForwardToIoQueue( WDFREQUEST inRequest, WDFQUEUE inDestinationQueue) -> NTSTATUS
+WdfRequestForwardToParentDeviceIoQueue( WDFREQUEST inRequest, WDFQUEUE inParentDeviceQueue, PWDF_REQUEST_FORWARDIONS inForwardOptions) -> NTSTATUS
+WdfRequestGetCompletionParams( WDFREQUEST inRequest, PWDF_REQUEST_COMPLETION_PARAMS outParams) -> VOID
+WdfRequestGetFileObject( WDFREQUEST inRequest) -> WDFFILEOBJECT
+WdfRequestGetInformation( WDFREQUEST inRequest) -> ULONG_PTR
+WdfRequestGetIoQueue( WDFREQUEST inRequest) -> WDFQUEUE
+WdfRequestGetParameters( WDFREQUEST inRequest, PWDF_REQUEST_PARAMETERS outParameters) -> VOID
+WdfRequestGetRequestorMode( WDFREQUEST inRequest) -> KPROCESSOR_MODE
+WdfRequestGetStatus( WDFREQUEST inRequest) -> NTSTATUS
+WdfRequestIsCanceled( WDFREQUEST inRequest) -> BOOLEAN
+WdfRequestIsFrom32BitProcess( WDFREQUEST inRequest) -> BOOLEAN
+WdfRequestIsReserved( WDFREQUEST inRequest) -> BOOLEAN
+WdfRequestMarkCancelable( WDFREQUEST inRequest, PFN_WDF_REQUEST_CANCEL inEvtRequestCancel) -> VOID
+WdfRequestMarkCancelableEx( WDFREQUEST inRequest, PFN_WDF_REQUEST_CANCEL inEvtRequestCancel) -> NTSTATUS
+WdfRequestProbeAndLockUserBufferForRead( WDFREQUEST inRequest, PVOID Buffer, size_t inLength, outWDFMEMORY* MemoryObject) -> NTSTATUS
+WdfRequestProbeAndLockUserBufferForWrite( WDFREQUEST inRequest, PVOID Buffer, size_t inLength, outWDFMEMORY* MemoryObject) -> NTSTATUS
+WdfRequestRequeue( WDFREQUEST inRequest) -> NTSTATUS
+WdfRequestRetrieveInputBuffer( WDFREQUEST inRequest, size_t inMinimumRequiredLength, PVOID* Buffer, outsize_t* Length) -> NTSTATUS
+WdfRequestRetrieveInputMemory( WDFREQUEST inRequest, outWDFMEMORY* Memory) -> NTSTATUS
+WdfRequestRetrieveInputWdmMdl( WDFREQUEST inRequest, PMDL* Mdl) -> NTSTATUS
+WdfRequestRetrieveOutputBuffer( WDFREQUEST inRequest, size_t inMinimumRequiredSize, PVOID* Buffer, outsize_t* Length) -> NTSTATUS
+WdfRequestRetrieveOutputMemory( WDFREQUEST inRequest, outWDFMEMORY* Memory) -> NTSTATUS
+WdfRequestRetrieveOutputWdmMdl( WDFREQUEST inRequest, PMDL* Mdl) -> NTSTATUS
+WdfRequestRetrieveUnsafeUserInputBuffer( WDFREQUEST inRequest, size_t inMinimumRequiredLength, PVOID* InputBuffer, outsize_t* Length) -> NTSTATUS
+WdfRequestRetrieveUnsafeUserOutputBuffer( WDFREQUEST inRequest, size_t inMinimumRequiredLength, PVOID* OutputBuffer, outsize_t* Length) -> NTSTATUS
+WdfRequestReuse( WDFREQUEST inRequest, PWDF_REQUEST_REUSE_PARAMS inReuseParams) -> NTSTATUS
+WdfRequestSend( WDFREQUEST inRequest, WDFIOTARGET inTarget, PWDF_REQUEST_SENDIONS inOptions) -> BOOLEAN
+WdfRequestSetCompletionRoutine( WDFREQUEST inRequest, PFN_WDF_REQUEST_COMPLETION_ROUTINE inCompletionRoutine, WDFCONTEXT inCompletionContext) -> VOID
+WdfRequestSetInformation( WDFREQUEST inRequest, ULONG_PTR inInformation) -> VOID
+WdfRequestStopAcknowledge( WDFREQUEST inRequest, BOOLEAN inRequeue) -> VOID
+WdfRequestUnmarkCancelable( WDFREQUEST inRequest) -> NTSTATUS
+WdfRequestWdmFormatUsingStackLocation( WDFREQUEST inRequest, PIO_STACK_LOCATION inStack) -> VOID
+WdfRequestWdmGetIrp( WDFREQUEST inRequest) -> PIRP
+WdfSpinLockAcquire( WDFSPINLOCK inSpinLock) -> VOID
+WdfSpinLockCreate( PWDF_OBJECT_ATTRIBUTES inSpinLockAttributes, outWDFSPINLOCK* SpinLock) -> NTSTATUS
+WdfSpinLockRelease( WDFSPINLOCK inSpinLock) -> VOID
+WdfStringCreate( PCUNICODE_STRING inUnicodeString, PWDF_OBJECT_ATTRIBUTES inStringAttributes, outWDFSTRING* String) -> NTSTATUS
+WdfStringGetUnicodeString( WDFSTRING inString, PUNICODE_STRING outUnicodeString) -> VOID
+WdfTimerCreate( PWDF_TIMER_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFTIMER* Timer) -> NTSTATUS
+WdfTimerGetParentObject( WDFTIMER inTimer) -> WDFOBJECT
+WdfTimerStart( WDFTIMER inTimer, LONGLONG inDueTime) -> BOOLEAN
+WdfTimerStop( WDFTIMER inTimer, BOOLEAN inWait) -> BOOLEAN
+WdfUsbInterfaceGetConfiguredPipe( WDFUSBINTERFACE inUsbInterface, UCHAR inPipeIndex, PWDF_USB_PIPE_INFORMATION outPipeInfo) -> WDFUSBPIPE
+WdfUsbInterfaceGetConfiguredSettingIndex( WDFUSBINTERFACE inInterface) -> BYTE
+WdfUsbInterfaceGetDescriptor( WDFUSBINTERFACE inUsbInterface, UCHAR inSettingIndex, PUSB_INTERFACE_DESCRIPTOR outInterfaceDescriptor) -> VOID
+WdfUsbInterfaceGetEndpointInformation( WDFUSBINTERFACE inUsbInterface, UCHAR inSettingIndex, UCHAR inEndpointIndex, PWDF_USB_PIPE_INFORMATION outEndpointInfo) -> VOID
+WdfUsbInterfaceGetInterfaceNumber( WDFUSBINTERFACE inUsbInterface) -> BYTE
+WdfUsbInterfaceGetNumConfiguredPipes( WDFUSBINTERFACE inUsbInterface) -> BYTE
+WdfUsbInterfaceGetNumEndpoints( WDFUSBINTERFACE inUsbInterface, UCHAR inSettingIndex) -> BYTE
+WdfUsbInterfaceGetNumSettings( WDFUSBINTERFACE inUsbInterface) -> BYTE
+WdfUsbInterfaceSelectSetting( WDFUSBINTERFACE inUsbInterface, PWDF_OBJECT_ATTRIBUTES inPipesAttributes, PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS inParams) -> NTSTATUS
+WdfUsbTargetDeviceAllocAndQueryString( WDFUSBDEVICE inUsbDevice, PWDF_OBJECT_ATTRIBUTES inStringMemoryAttributes, outWDFMEMORY* StringMemory, PUSHORT outNumCharacters, UCHAR inStringIndex, USHORT inLangID) -> NTSTATUS
+WdfUsbTargetDeviceCreate( WDFDEVICE inDevice, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFUSBDEVICE* UsbDevice) -> NTSTATUS
+WdfUsbTargetDeviceCyclePortSynchronously( WDFUSBDEVICE inUsbDevice) -> NTSTATUS
+WdfUsbTargetDeviceFormatRequestForControlTransfer( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest, PWDF_USB_CONTROL_SETUP_PACKET inSetupPacket, WDFMEMORY inTransferMemory, PWDFMEMORY_OFFSET inTransferOffset) -> NTSTATUS
+WdfUsbTargetDeviceFormatRequestForCyclePort( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest) -> NTSTATUS
+WdfUsbTargetDeviceFormatRequestForString( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest, WDFMEMORY inMemory, PWDFMEMORY_OFFSET inOffset, UCHAR inStringIndex, USHORT inLangID) -> NTSTATUS
+WdfUsbTargetDeviceFormatRequestForUrb( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest, WDFMEMORY inUrbMemory, PWDFMEMORY_OFFSET inUrbMemoryOffset) -> NTSTATUS
+WdfUsbTargetDeviceGetDeviceDescriptor( WDFUSBDEVICE inUsbDevice, PUSB_DEVICE_DESCRIPTOR outUsbDeviceDescriptor) -> VOID
+WdfUsbTargetDeviceGetInterface( WDFUSBDEVICE inUsbDevice, UCHAR inInterfaceIndex) -> WDFUSBINTERFACE
+WdfUsbTargetDeviceGetNumInterfaces( WDFUSBDEVICE inUsbDevice) -> UCHAR
+WdfUsbTargetDeviceIsConnectedSynchronous( WDFUSBDEVICE inUsbDevice) -> NTSTATUS
+WdfUsbTargetDeviceQueryString( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions, PUSHORT String, PUSHORT ioNumCharacters, UCHAR inStringIndex, USHORT inLangID) -> NTSTATUS
+WdfUsbTargetDeviceResetPortSynchronously( WDFUSBDEVICE inUsbDevice) -> NTSTATUS
+WdfUsbTargetDeviceRetrieveConfigDescriptor( WDFUSBDEVICE inUsbDevice, PVOID ConfigDescriptor, PUSHORT ioConfigDescriptorLength) -> NTSTATUS
+WdfUsbTargetDeviceRetrieveCurrentFrameNumber( WDFUSBDEVICE inUsbDevice, PULONG outCurrentFrameNumber) -> NTSTATUS
+WdfUsbTargetDeviceRetrieveInformation( WDFUSBDEVICE inUsbDevice, PWDF_USB_DEVICE_INFORMATION outInformation) -> NTSTATUS
+WdfUsbTargetDeviceSelectConfig( WDFUSBDEVICE inUsbDevice, PWDF_OBJECT_ATTRIBUTES inPipeAttributes, PWDF_USB_DEVICE_SELECT_CONFIG_PARAMS ioParams) -> NTSTATUS
+WdfUsbTargetDeviceSendControlTransferSynchronously( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions, PWDF_USB_CONTROL_SETUP_PACKET inSetupPacket, PWDF_MEMORY_DESCRIPTOR inMemoryDescriptor, PULONG outBytesTransferred) -> NTSTATUS
+WdfUsbTargetDeviceSendUrbSynchronously( WDFUSBDEVICE inUsbDevice, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions, PURB Urb) -> NTSTATUS
+WdfUsbTargetDeviceWdmGetConfigurationHandle( WDFUSBDEVICE inUsbDevice) -> USBD_CONFIGURATION_HANDLE
+WdfUsbTargetPipeAbortSynchronously( WDFUSBPIPE inPipe, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions) -> NTSTATUS
+WdfUsbTargetPipeConfigContinuousReader( WDFUSBPIPE inPipe, PWDF_USB_CONTINUOUS_READER_CONFIG inConfig) -> NTSTATUS
+WdfUsbTargetPipeFormatRequestForAbort( WDFUSBPIPE inPipe, WDFREQUEST inRequest) -> NTSTATUS
+WdfUsbTargetPipeFormatRequestForRead( WDFUSBPIPE inPipe, WDFREQUEST inRequest, WDFMEMORY inReadMemory, PWDFMEMORY_OFFSET inReadOffset) -> NTSTATUS
+WdfUsbTargetPipeFormatRequestForReset( WDFUSBPIPE inPipe, WDFREQUEST inRequest) -> NTSTATUS
+WdfUsbTargetPipeFormatRequestForUrb( WDFUSBPIPE inPIPE, WDFREQUEST inRequest, WDFMEMORY inUrbMemory, PWDFMEMORY_OFFSET inUrbMemoryOffset) -> NTSTATUS
+WdfUsbTargetPipeFormatRequestForWrite( WDFUSBPIPE inPipe, WDFREQUEST inRequest, WDFMEMORY inWriteMemory, PWDFMEMORY_OFFSET inWriteOffset) -> NTSTATUS
+WdfUsbTargetPipeGetInformation( WDFUSBPIPE inPipe, PWDF_USB_PIPE_INFORMATION outPipeInformation) -> VOID
+WdfUsbTargetPipeGetType( WDFUSBPIPE inPipe) -> WDF_USB_PIPE_TYPE
+WdfUsbTargetPipeIsInEndpoint( WDFUSBPIPE inPipe) -> BOOLEAN
+WdfUsbTargetPipeIsOutEndpoint( WDFUSBPIPE inPipe) -> BOOLEAN
+WdfUsbTargetPipeReadSynchronously( WDFUSBPIPE inPipe, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions, PWDF_MEMORY_DESCRIPTOR inMemoryDescriptor, PULONG outBytesRead) -> NTSTATUS
+WdfUsbTargetPipeResetSynchronously( WDFUSBPIPE inPipe, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions) -> NTSTATUS
+WdfUsbTargetPipeSendUrbSynchronously( WDFUSBPIPE inPipe, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions, PURB Urb) -> NTSTATUS
+WdfUsbTargetPipeSetNoMaximumPacketSizeCheck( WDFUSBPIPE inPipe) -> VOID
+WdfUsbTargetPipeWdmGetPipeHandle( WDFUSBPIPE inUsbPipe) -> USBD_PIPE_HANDLE
+WdfUsbTargetPipeWriteSynchronously( WDFUSBPIPE inPipe, WDFREQUEST inRequest, PWDF_REQUEST_SENDIONS inRequestOptions, PWDF_MEMORY_DESCRIPTOR inMemoryDescriptor, PULONG outBytesWritten) -> NTSTATUS
+WdfWaitLockAcquire( WDFWAITLOCK inLock, PLONGLONG inTimeout) -> NTSTATUS
+WdfWaitLockCreate( PWDF_OBJECT_ATTRIBUTES inLockAttributes, outWDFWAITLOCK* Lock) -> NTSTATUS
+WdfWaitLockRelease( WDFWAITLOCK inLock) -> VOID
+WdfWdmDeviceGetWdfDeviceHandle( PDEVICE_OBJECT inDeviceObject) -> WDFDEVICE
+WdfWdmDriverGetWdfDriverHandle( PDRIVER_OBJECT inDriverObject) -> WDFDRIVER
+WdfWmiInstanceCreate( WDFDEVICE inDevice, PWDF_WMI_INSTANCE_CONFIG inInstanceConfig, PWDF_OBJECT_ATTRIBUTES inInstanceAttributes, outWDFWMIINSTANCE* Instance) -> NTSTATUS
+WdfWmiInstanceDeregister( WDFWMIINSTANCE inWmiInstance) -> VOID
+WdfWmiInstanceFireEvent( WDFWMIINSTANCE inWmiInstance, ULONG inEventDataSize, PVOID EventData) -> NTSTATUS
+WdfWmiInstanceGetDevice( WDFWMIINSTANCE inWmiInstance) -> WDFDEVICE
+WdfWmiInstanceGetProvider( WDFWMIINSTANCE inWmiInstance) -> WDFWMIPROVIDER
+WdfWmiInstanceRegister( WDFWMIINSTANCE inWmiInstance) -> NTSTATUS
+WdfWmiProviderCreate( WDFDEVICE inDevice, PWDF_WMI_PROVIDER_CONFIG inWmiProviderConfig, PWDF_OBJECT_ATTRIBUTES inProviderAttributes, outWDFWMIPROVIDER* WmiProvider) -> NTSTATUS
+WdfWmiProviderGetDevice( WDFWMIPROVIDER inWmiProvider) -> WDFDEVICE
+WdfWmiProviderGetTracingHandle( WDFWMIPROVIDER inWmiProvider) -> ULONGLONG
+WdfWmiProviderIsEnabled( WDFWMIPROVIDER inWmiProvider, WDF_WMI_PROVIDER_CONTROL inProviderControl) -> BOOLEAN
+WdfWorkItemCreate( PWDF_WORKITEM_CONFIG inConfig, PWDF_OBJECT_ATTRIBUTES inAttributes, outWDFWORKITEM* WorkItem) -> NTSTATUS
+WdfWorkItemEnqueue( WDFWORKITEM inWorkItem) -> VOID
+WdfWorkItemFlush( WDFWORKITEM inWorkItem) -> VOID
+WdfWorkItemGetParentObject( WDFWORKITEM inWorkItem) -> WDFOBJECT

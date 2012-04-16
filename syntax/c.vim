@@ -22,11 +22,4 @@ for dict in dict_list
   endfor
 endfor
 
-if !exists('g:exdict#disable_default_keymap') || g:exdict#disable_default_keymap == 0
-  imap <buffer><c-UP>   <ESC><Plug>(exdict-next-i)
-  imap <buffer><c-DOWN> <ESC><Plug>(exdict-prev-i)
-  nmap <buffer><c-UP>   <Plug>(exdict-next-n)
-  nmap <buffer><c-DOWN> <Plug>(exdict-prev-n)
-endif
-
 let b:loaded_exdict_syntax_c = 0

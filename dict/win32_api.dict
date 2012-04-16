@@ -1,456 +1,456 @@
-AcquireSRWLockExclusive(PSRWLOCK ioSRWLock)
-AcquireSRWLockShared(PSRWLOCK ioSRWLock)
-ActivateActCtx(HANDLE iohActCtx, ULONG_PTR out*lpCookie)
-AddAtomA(LPCSTR inlpString)
-AddAtomW(LPCWSTR inlpString)
-AddRefActCtx(HANDLE iohActCtx)
-AddSIDToBoundaryDescriptor(ioHANDLE * BoundaryDescriptor, PSID inRequiredSid)
-AddSecureMemoryCacheCallback(PSECURE_MEMORY_CACHE_CALLBACK inpfnCallBack)
-AddVectoredContinueHandler(ULONG inFirst, PVECTORED_EXCEPTION_HANDLER inHandler)
-AddVectoredExceptionHandler(ULONG inFirst, PVECTORED_EXCEPTION_HANDLER inHandler)
-AllocateUserPhysicalPages(HANDLE inhProcess, PULONG_PTR ioNumberOfPages, PULONG_PTR PageArray)
-AllocateUserPhysicalPagesNuma(HANDLE inhProcess, PULONG_PTR ioNumberOfPages, PULONG_PTR PageArray, DWORD innndPreferred)
-ApplicationRecoveryFinished(BOOL inbSuccess)
-ApplicationRecoveryInProgress(PBOOL outpbCancelled)
-AreFileApisANSI(VOID )
-AssignProcessToJobObject(HANDLE inhJob, HANDLE inhProcess)
-BackupRead(HANDLE inhFile, LPBYTE lpBuffer, DWORD innNumberOfBytesToRead, LPDWORD outlpNumberOfBytesRead, BOOL inbAbort, BOOL inbProcessSecurity, ioLPVOID *lpContext)
-BackupSeek(HANDLE inhFile, DWORD indwLowBytesToSeek, DWORD indwHighBytesToSeek, LPDWORD outlpdwLowByteSeeked, LPDWORD outlpdwHighByteSeeked, ioLPVOID *lpContext)
-BackupWrite(HANDLE inhFile, LPBYTE lpBuffer, DWORD innNumberOfBytesToWrite, LPDWORD outlpNumberOfBytesWritten, BOOL inbAbort, BOOL inbProcessSecurity, ioLPVOID *lpContext)
-Beep(DWORD indwFreq, DWORD indwDuration)
-BeginUpdateResourceA(LPCSTR inpFileName, BOOL inbDeleteExistingResources)
-BeginUpdateResourceW(LPCWSTR inpFileName, BOOL inbDeleteExistingResources)
-BindIoCompletionCallback(HANDLE inFileHandle, LPOVERLAPPED_COMPLETION_ROUTINE inFunction, ULONG inFlags)
-BuildCommDCBA(LPCSTR inlpDef, LPDCB outlpDCB)
-BuildCommDCBAndTimeoutsA(LPCSTR inlpDef, LPDCB outlpDCB, LPCOMMTIMEOUTS outlpCommTimeouts)
-BuildCommDCBAndTimeoutsW(LPCWSTR inlpDef, LPDCB outlpDCB, LPCOMMTIMEOUTS outlpCommTimeouts)
-BuildCommDCBW(LPCWSTR inlpDef, LPDCB outlpDCB)
-CallNamedPipeA(LPCSTR inlpNamedPipeName, LPVOID lpInBuffer, DWORD innInBufferSize, LPVOID lpOutBuffer, DWORD innOutBufferSize, LPDWORD outlpBytesRead, DWORD innTimeOut)
-CallNamedPipeW(LPCWSTR inlpNamedPipeName, LPVOID lpInBuffer, DWORD innInBufferSize, LPVOID lpOutBuffer, DWORD innOutBufferSize, LPDWORD outlpBytesRead, DWORD innTimeOut)
-CallbackMayRunLong(PTP_CALLBACK_INSTANCE iopci)
-CancelDeviceWakeupRequest(HANDLE inhDevice)
-CancelIo(HANDLE inhFile)
-CancelIoEx(HANDLE inhFile, LPOVERLAPPED inlpOverlapped)
-CancelSynchronousIo(HANDLE inhThread)
-CancelThreadpoolIo(PTP_IO iopio)
-CancelTimerQueueTimer(HANDLE inTimerQueue, HANDLE inTimer)
-CancelWaitableTimer(HANDLE inhTimer)
-ChangeTimerQueueTimer(HANDLE inTimerQueue, HANDLE ioTimer, ULONG inDueTime, ULONG inPeriod)
-CheckNameLegalDOS8Dot3A(LPCSTR inlpName, LPSTR lpOemName, DWORD inOemNameSize, PBOOL outpbNameContainsSpaces OPTIONAL, PBOOL outpbNameLegal)
-CheckNameLegalDOS8Dot3W(LPCWSTR inlpName, LPSTR lpOemName, DWORD inOemNameSize, PBOOL outpbNameContainsSpaces OPTIONAL, PBOOL outpbNameLegal)
-CheckRemoteDebuggerPresent(HANDLE inhProcess, PBOOL outpbDebuggerPresent)
-ClearCommBreak(HANDLE inhFile)
-ClearCommError(HANDLE inhFile, LPDWORD outlpErrors, LPCOMSTAT outlpStat)
-CloseHandle(HANDLE inhObject)
-ClosePrivateNamespace(HANDLE inHandle, ULONG inFlags)
-CloseThreadpool(PTP_POOL ioptpp)
-CloseThreadpoolCleanupGroup(PTP_CLEANUP_GROUP ioptpcg)
-CloseThreadpoolCleanupGroupMembers(PTP_CLEANUP_GROUP ioptpcg, BOOL infCancelPendingCallbacks, PVOID iopvCleanupContext)
-CloseThreadpoolIo(PTP_IO iopio)
-CloseThreadpoolTimer(PTP_TIMER iopti)
-CloseThreadpoolWait(PTP_WAIT iopwa)
-CloseThreadpoolWork(PTP_WORK iopwk)
-CommConfigDialogA(LPCSTR inlpszName, HWND inhWnd, LPCOMMCONFIG iolpCC)
-CommConfigDialogW(LPCWSTR inlpszName, HWND inhWnd, LPCOMMCONFIG iolpCC)
-CompareFileTime(CONST inFILETIME *lpFileTime1, CONST inFILETIME *lpFileTime2)
-ConnectNamedPipe(HANDLE inhNamedPipe, LPOVERLAPPED iolpOverlapped)
-ContinueDebugEvent(DWORD indwProcessId, DWORD indwThreadId, DWORD indwContinueStatus)
-ConvertFiberToThread(VOID)
-ConvertThreadToFiber(LPVOID inlpParameter)
-ConvertThreadToFiberEx(LPVOID inlpParameter, DWORD indwFlags)
-CopyFileA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName, BOOL inbFailIfExists)
-CopyFileExA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, LPBOOL inpbCancel, DWORD indwCopyFlags)
-CopyFileExW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, LPBOOL inpbCancel, DWORD indwCopyFlags)
-CopyFileTransactedA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, LPBOOL inpbCancel, DWORD indwCopyFlags, HANDLE inhTransaction)
-CopyFileTransactedW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, LPBOOL inpbCancel, DWORD indwCopyFlags, HANDLE inhTransaction)
-CopyFileW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName, BOOL inbFailIfExists)
-CreateActCtxA(PCACTCTXA inpActCtx)
-CreateActCtxW(PCACTCTXW inpActCtx)
-CreateDirectoryA(LPCSTR inlpPathName, LPSECURITY_ATTRIBUTES inlpSecurityAttributes)
-CreateDirectoryExA(LPCSTR inlpTemplateDirectory, LPCSTR inlpNewDirectory, LPSECURITY_ATTRIBUTES inlpSecurityAttributes)
-CreateDirectoryExW(LPCWSTR inlpTemplateDirectory, LPCWSTR inlpNewDirectory, LPSECURITY_ATTRIBUTES inlpSecurityAttributes)
-CreateDirectoryTransactedA(LPCSTR inlpTemplateDirectory, LPCSTR inlpNewDirectory, LPSECURITY_ATTRIBUTES inlpSecurityAttributes, HANDLE inhTransaction)
-CreateDirectoryTransactedW(LPCWSTR inlpTemplateDirectory, LPCWSTR inlpNewDirectory, LPSECURITY_ATTRIBUTES inlpSecurityAttributes, HANDLE inhTransaction)
-CreateDirectoryW(LPCWSTR inlpPathName, LPSECURITY_ATTRIBUTES inlpSecurityAttributes)
-CreateEventA(LPSECURITY_ATTRIBUTES inlpEventAttributes, BOOL inbManualReset, BOOL inbInitialState, LPCSTR inlpName)
-CreateEventExA(LPSECURITY_ATTRIBUTES inlpEventAttributes, LPCSTR inlpName, DWORD indwFlags, DWORD indwDesiredAccess)
-CreateEventExW(LPSECURITY_ATTRIBUTES inlpEventAttributes, LPCWSTR inlpName, DWORD indwFlags, DWORD indwDesiredAccess)
-CreateEventW(LPSECURITY_ATTRIBUTES inlpEventAttributes, BOOL inbManualReset, BOOL inbInitialState, LPCWSTR inlpName)
-CreateFiber(SIZE_T indwStackSize, LPFIBER_START_ROUTINE inlpStartAddress, LPVOID inlpParameter)
-CreateFiberEx(SIZE_T indwStackCommitSize, SIZE_T indwStackReserveSize, DWORD indwFlags, LPFIBER_START_ROUTINE inlpStartAddress, LPVOID inlpParameter)
-CreateFileA(LPCSTR inlpFileName, DWORD indwDesiredAccess, DWORD indwShareMode, LPSECURITY_ATTRIBUTES inlpSecurityAttributes, DWORD indwCreationDisposition, DWORD indwFlagsAndAttributes, HANDLE inhTemplateFile)
-CreateFileMappingA(HANDLE inhFile, LPSECURITY_ATTRIBUTES inlpFileMappingAttributes, DWORD inflProtect, DWORD indwMaximumSizeHigh, DWORD indwMaximumSizeLow, LPCSTR inlpName)
-CreateFileMappingNumaA(HANDLE inhFile, LPSECURITY_ATTRIBUTES inlpFileMappingAttributes, DWORD inflProtect, DWORD indwMaximumSizeHigh, DWORD indwMaximumSizeLow, LPCSTR inlpName, DWORD innndPreferred)
-CreateFileMappingNumaW(HANDLE inhFile, LPSECURITY_ATTRIBUTES inlpFileMappingAttributes, DWORD inflProtect, DWORD indwMaximumSizeHigh, DWORD indwMaximumSizeLow, LPCWSTR inlpName, DWORD innndPreferred)
-CreateFileMappingW(HANDLE inhFile, LPSECURITY_ATTRIBUTES inlpFileMappingAttributes, DWORD inflProtect, DWORD indwMaximumSizeHigh, DWORD indwMaximumSizeLow, LPCWSTR inlpName)
-CreateFileTransactedA(LPCSTR inlpFileName, DWORD indwDesiredAccess, DWORD indwShareMode, LPSECURITY_ATTRIBUTES inlpSecurityAttributes, DWORD indwCreationDisposition, DWORD indwFlagsAndAttributes, HANDLE inhTemplateFile, HANDLE inhTransaction, PUSHORT inpusMiniVersion, PVOID lpExtendedParameter)
-CreateFileTransactedW(LPCWSTR inlpFileName, DWORD indwDesiredAccess, DWORD indwShareMode, LPSECURITY_ATTRIBUTES inlpSecurityAttributes, DWORD indwCreationDisposition, DWORD indwFlagsAndAttributes, HANDLE inhTemplateFile, HANDLE inhTransaction, PUSHORT inpusMiniVersion, PVOID lpExtendedParameter)
-CreateFileW(LPCWSTR inlpFileName, DWORD indwDesiredAccess, DWORD indwShareMode, LPSECURITY_ATTRIBUTES inlpSecurityAttributes, DWORD indwCreationDisposition, DWORD indwFlagsAndAttributes, HANDLE inhTemplateFile)
-CreateHardLinkA(LPCSTR inlpFileName, LPCSTR inlpExistingFileName, LPSECURITY_ATTRIBUTES lpSecurityAttributes)
-CreateHardLinkTransactedA(LPCSTR inlpFileName, LPCSTR inlpExistingFileName, LPSECURITY_ATTRIBUTES lpSecurityAttributes, HANDLE inhTransaction)
-CreateHardLinkTransactedW(LPCWSTR inlpFileName, LPCWSTR inlpExistingFileName, LPSECURITY_ATTRIBUTES lpSecurityAttributes, HANDLE inhTransaction)
-CreateHardLinkW(LPCWSTR inlpFileName, LPCWSTR inlpExistingFileName, LPSECURITY_ATTRIBUTES lpSecurityAttributes)
-CreateIoCompletionPort(HANDLE inFileHandle, HANDLE inExistingCompletionPort, ULONG_PTR inCompletionKey, DWORD inNumberOfConcurrentThreads)
-CreateJobObjectA(LPSECURITY_ATTRIBUTES inlpJobAttributes, LPCSTR inlpName)
-CreateJobObjectW(LPSECURITY_ATTRIBUTES inlpJobAttributes, LPCWSTR inlpName)
-CreateJobSet(ULONG inNumJob, PJOB_SET_ARRAY UserJobSet, ULONG inFlags)
-CreateMailslotA(LPCSTR inlpName, DWORD innMaxMessageSize, DWORD inlReadTimeout, LPSECURITY_ATTRIBUTES inlpSecurityAttributes)
-CreateMailslotW(LPCWSTR inlpName, DWORD innMaxMessageSize, DWORD inlReadTimeout, LPSECURITY_ATTRIBUTES inlpSecurityAttributes)
-CreateMemoryResourceNotification(MEMORY_RESOURCE_NOTIFICATION_TYPE inNotificationType)
-CreateMutexA(LPSECURITY_ATTRIBUTES inlpMutexAttributes, BOOL inbInitialOwner, LPCSTR inlpName)
-CreateMutexExA(LPSECURITY_ATTRIBUTES inlpMutexAttributes, LPCSTR inlpName, DWORD indwFlags, DWORD indwDesiredAccess)
-CreateMutexExW(LPSECURITY_ATTRIBUTES inlpMutexAttributes, LPCWSTR inlpName, DWORD indwFlags, DWORD indwDesiredAccess)
-CreateMutexW(LPSECURITY_ATTRIBUTES inlpMutexAttributes, BOOL inbInitialOwner, LPCWSTR inlpName)
-CreateNamedPipeA(LPCSTR inlpName, DWORD indwOpenMode, DWORD indwPipeMode, DWORD innMaxInstances, DWORD innOutBufferSize, DWORD innInBufferSize, DWORD innDefaultTimeOut, LPSECURITY_ATTRIBUTES inlpSecurityAttributes)
-CreateNamedPipeW(LPCWSTR inlpName, DWORD indwOpenMode, DWORD indwPipeMode, DWORD innMaxInstances, DWORD innOutBufferSize, DWORD innInBufferSize, DWORD innDefaultTimeOut, LPSECURITY_ATTRIBUTES inlpSecurityAttributes)
-CreatePipe(PHANDLE hReadPipe, PHANDLE hWritePipe, LPSECURITY_ATTRIBUTES inlpPipeAttributes, DWORD innSize)
-CreatePrivateNamespaceA(LPSECURITY_ATTRIBUTES inlpPrivateNamespaceAttributes, LPVOID inlpBoundaryDescriptor, LPCSTR inlpAliasPrefix)
-CreatePrivateNamespaceW(LPSECURITY_ATTRIBUTES inlpPrivateNamespaceAttributes, LPVOID inlpBoundaryDescriptor, LPCWSTR inlpAliasPrefix)
-CreateProcessA(LPCSTR inlpApplicationName, LPSTR iolpCommandLine, LPSECURITY_ATTRIBUTES inlpProcessAttributes, LPSECURITY_ATTRIBUTES inlpThreadAttributes, BOOL inbInheritHandles, DWORD indwCreationFlags, LPVOID inlpEnvironment, LPCSTR inlpCurrentDirectory, LPSTARTUPINFOA inlpStartupInfo, LPPROCESS_INFORMATION outlpProcessInformation)
-CreateProcessW(LPCWSTR inlpApplicationName, LPWSTR iolpCommandLine, LPSECURITY_ATTRIBUTES inlpProcessAttributes, LPSECURITY_ATTRIBUTES inlpThreadAttributes, BOOL inbInheritHandles, DWORD indwCreationFlags, LPVOID inlpEnvironment, LPCWSTR inlpCurrentDirectory, LPSTARTUPINFOW inlpStartupInfo, LPPROCESS_INFORMATION outlpProcessInformation)
-CreateRemoteThread(HANDLE inhProcess, LPSECURITY_ATTRIBUTES inlpThreadAttributes, SIZE_T indwStackSize, LPTHREAD_START_ROUTINE inlpStartAddress, LPVOID inlpParameter, DWORD indwCreationFlags, LPDWORD outlpThreadId)
-CreateSemaphoreA(LPSECURITY_ATTRIBUTES inlpSemaphoreAttributes, LONG inlInitialCount, LONG inlMaximumCount, LPCSTR inlpName)
-CreateSemaphoreExA(LPSECURITY_ATTRIBUTES inlpSemaphoreAttributes, LONG inlInitialCount, LONG inlMaximumCount, LPCSTR inlpName, DWORD dwFlags, DWORD indwDesiredAccess)
-CreateSemaphoreExW(LPSECURITY_ATTRIBUTES inlpSemaphoreAttributes, LONG inlInitialCount, LONG inlMaximumCount, LPCWSTR inlpName, DWORD dwFlags, DWORD indwDesiredAccess)
-CreateSemaphoreW(LPSECURITY_ATTRIBUTES inlpSemaphoreAttributes, LONG inlInitialCount, LONG inlMaximumCount, LPCWSTR inlpName)
-CreateTapePartition(HANDLE inhDevice, DWORD indwPartitionMethod, DWORD indwCount, DWORD indwSize)
-CreateThread(LPSECURITY_ATTRIBUTES inlpThreadAttributes, SIZE_T indwStackSize, LPTHREAD_START_ROUTINE inlpStartAddress, LPVOID inlpParameter, DWORD indwCreationFlags, LPDWORD outlpThreadId)
-CreateThreadpool(PVOID reserved)
-CreateThreadpoolCleanupGroup(VOID)
-CreateThreadpoolIo(HANDLE infl, PTP_WIN32_IO_CALLBACK inpfnio, PVOID iopv, PTP_CALLBACK_ENVIRON inpcbe)
-CreateThreadpoolTimer(PTP_TIMER_CALLBACK inpfnti, PVOID iopv, PTP_CALLBACK_ENVIRON inpcbe)
-CreateThreadpoolWait(PTP_WAIT_CALLBACK inpfnwa, PVOID iopv, PTP_CALLBACK_ENVIRON inpcbe)
-CreateThreadpoolWork(PTP_WORK_CALLBACK inpfnwk, PVOID iopv, PTP_CALLBACK_ENVIRON inpcbe)
-CreateTimerQueue(VOID)
-CreateTimerQueueTimer(PHANDLE phNewTimer, HANDLE inTimerQueue, WAITORTIMERCALLBACK inCallback, PVOID inParameter, DWORD inDueTime, DWORD inPeriod, ULONG inFlags)
-CreateWaitableTimerA(LPSECURITY_ATTRIBUTES inlpTimerAttributes, BOOL inbManualReset, LPCSTR inlpTimerName)
-CreateWaitableTimerExA(LPSECURITY_ATTRIBUTES inlpTimerAttributes, LPCSTR inlpTimerName, DWORD indwFlags, DWORD indwDesiredAccess)
-CreateWaitableTimerExW(LPSECURITY_ATTRIBUTES inlpTimerAttributes, LPCWSTR inlpTimerName, DWORD indwFlags, DWORD indwDesiredAccess)
-CreateWaitableTimerW(LPSECURITY_ATTRIBUTES inlpTimerAttributes, BOOL inbManualReset, LPCWSTR inlpTimerName)
-DeactivateActCtx(DWORD indwFlags, ULONG_PTR inulCookie)
-DebugActiveProcess(DWORD indwProcessId)
-DebugActiveProcessStop(DWORD indwProcessId)
-DebugBreak(VOID)
-DebugBreakProcess(HANDLE inProcess)
-DebugSetProcessKillOnExit(BOOL inKillOnExit)
-DecodePointer(PVOID inPtr)
-DecodeSystemPointer(PVOID inPtr)
-DefineDosDeviceA(DWORD indwFlags, LPCSTR inlpDeviceName, LPCSTR inlpTargetPath)
-DefineDosDeviceW(DWORD indwFlags, LPCWSTR inlpDeviceName, LPCWSTR inlpTargetPath)
-DeleteAtom(ATOM innAtom)
-DeleteBoundaryDescriptor(HANDLE inBoundaryDescriptor)
-DeleteCriticalSection(LPCRITICAL_SECTION iolpCriticalSection)
-DeleteFiber(LPVOID inlpFiber)
-DeleteFileA(LPCSTR inlpFileName)
-DeleteFileTransactedA(LPCSTR inlpFileName, HANDLE inhTransaction)
-DeleteFileTransactedW(LPCWSTR inlpFileName, HANDLE inhTransaction)
-DeleteFileW(LPCWSTR inlpFileName)
-DeleteProcThreadAttributeList(LPPROC_THREAD_ATTRIBUTE_LIST iolpAttributeList)
-DeleteTimerQueue(HANDLE inTimerQueue)
-DeleteTimerQueueEx(HANDLE inTimerQueue, HANDLE inCompletionEvent)
-DeleteTimerQueueTimer(HANDLE inTimerQueue, HANDLE inTimer, HANDLE inCompletionEvent)
-DeleteVolumeMountPointA(LPCSTR inlpszVolumeMountPoint)
-DeleteVolumeMountPointW(LPCWSTR inlpszVolumeMountPoint)
-DeviceIoControl(HANDLE inhDevice, DWORD indwIoControlCode, LPVOID lpInBuffer, DWORD innInBufferSize, LPVOID lpOutBuffer, DWORD innOutBufferSize, LPDWORD outlpBytesReturned, LPOVERLAPPED iolpOverlapped)
-DisableThreadLibraryCalls(HMODULE inhLibModule)
-DisassociateCurrentThreadFromCallback(PTP_CALLBACK_INSTANCE iopci)
-DisconnectNamedPipe(HANDLE inhNamedPipe)
-DnsHostnameToComputerNameA(LPCSTR inHostname, LPSTR ComputerName, LPDWORD ionSize)
-DnsHostnameToComputerNameW(LPCWSTR inHostname, LPWSTR ComputerName, LPDWORD ionSize)
-DosDateTimeToFileTime(WORD inwFatDate, WORD inwFatTime, LPFILETIME outlpFileTime)
-DuplicateHandle(HANDLE inhSourceProcessHandle, HANDLE inhSourceHandle, HANDLE inhTargetProcessHandle, LPHANDLE lpTargetHandle, DWORD indwDesiredAccess, BOOL inbInheritHandle, DWORD indwOptions)
-EncodePointer(PVOID inPtr)
-EncodeSystemPointer(PVOID inPtr)
-EndUpdateResourceA(HANDLE inhUpdate, BOOL infDiscard)
-EndUpdateResourceW(HANDLE inhUpdate, BOOL infDiscard)
-EnterCriticalSection(LPCRITICAL_SECTION iolpCriticalSection)
-EnumResourceLanguagesA(HMODULE inhModule, LPCSTR inlpType, LPCSTR inlpName, ENUMRESLANGPROCA inlpEnumFunc, LONG_PTR inlParam)
-EnumResourceLanguagesExA(HMODULE inhModule, LPCSTR inlpType, LPCSTR inlpName, ENUMRESLANGPROCA inlpEnumFunc, LONG_PTR inlParam, DWORD dwFlags, LANGID LangId)
-EnumResourceLanguagesExW(HMODULE inhModule, LPCWSTR inlpType, LPCWSTR inlpName, ENUMRESLANGPROCW inlpEnumFunc, LONG_PTR inlParam, DWORD dwFlags, LANGID LangId)
-EnumResourceLanguagesW(HMODULE inhModule, LPCWSTR inlpType, LPCWSTR inlpName, ENUMRESLANGPROCW inlpEnumFunc, LONG_PTR inlParam)
-EnumResourceNamesA(HMODULE inhModule, LPCSTR inlpType, ENUMRESNAMEPROCA inlpEnumFunc, LONG_PTR inlParam)
-EnumResourceNamesExA(HMODULE inhModule, LPCSTR inlpType, ENUMRESNAMEPROCA inlpEnumFunc, LONG_PTR inlParam, DWORD dwFlags, LANGID LangId)
-EnumResourceNamesExW(HMODULE inhModule, LPCWSTR inlpType, ENUMRESNAMEPROCW inlpEnumFunc, LONG_PTR inlParam, DWORD dwFlags, LANGID LangId)
-EnumResourceNamesW(HMODULE inhModule, LPCWSTR inlpType, ENUMRESNAMEPROCW inlpEnumFunc, LONG_PTR inlParam)
-EnumResourceTypesA(HMODULE inhModule, ENUMRESTYPEPROCA inlpEnumFunc, LONG_PTR inlParam)
-EnumResourceTypesExA(HMODULE inhModule, ENUMRESTYPEPROCA inlpEnumFunc, LONG_PTR inlParam, DWORD dwFlags, LANGID LangId)
-EnumResourceTypesExW(HMODULE inhModule, ENUMRESTYPEPROCW inlpEnumFunc, LONG_PTR inlParam, DWORD dwFlags, LANGID LangId)
-EnumResourceTypesW(HMODULE inhModule, ENUMRESTYPEPROCW inlpEnumFunc, LONG_PTR inlParam)
-EnumSystemFirmwareTables(DWORD inFirmwareTableProviderSignature, PVOID pFirmwareTableEnumBuffer, DWORD inBufferSize)
-EraseTape(HANDLE inhDevice, DWORD indwEraseType, BOOL inbImmediate)
-EscapeCommFunction(HANDLE inhFile, DWORD indwFunc)
-ExitProcess(UINT inuExitCode)
-ExitThread(DWORD indwExitCode)
-ExpandEnvironmentStringsA(LPCSTR inlpSrc, LPSTR lpDst, DWORD innSize)
-ExpandEnvironmentStringsW(LPCWSTR inlpSrc, LPWSTR lpDst, DWORD innSize)
-FatalAppExitA(UINT inuAction, LPCSTR inlpMessageText)
-FatalAppExitW(UINT inuAction, LPCWSTR inlpMessageText)
-FatalExit(int inExitCode)
-FileTimeToDosDateTime(CONST inFILETIME *lpFileTime, LPWORD outlpFatDate, LPWORD outlpFatTime)
-FileTimeToLocalFileTime(CONST inFILETIME *lpFileTime, LPFILETIME outlpLocalFileTime)
-FileTimeToSystemTime(CONST inFILETIME *lpFileTime, LPSYSTEMTIME outlpSystemTime)
-FindActCtxSectionGuid(DWORD indwFlags, const GUID *lpExtensionGuid, ULONG inulSectionId, const inGUID *lpGuidToFind, PACTCTX_SECTION_KEYED_DATA outReturnedData)
-FindActCtxSectionStringA(DWORD indwFlags, const GUID *lpExtensionGuid, ULONG inulSectionId, LPCSTR inlpStringToFind, PACTCTX_SECTION_KEYED_DATA outReturnedData)
-FindActCtxSectionStringW(DWORD indwFlags, const GUID *lpExtensionGuid, ULONG inulSectionId, LPCWSTR inlpStringToFind, PACTCTX_SECTION_KEYED_DATA outReturnedData)
-FindAtomA(LPCSTR inlpString)
-FindAtomW(LPCWSTR inlpString)
-FindClose(HANDLE iohFindFile)
-FindCloseChangeNotification(HANDLE inhChangeHandle)
-FindFirstChangeNotificationA(LPCSTR inlpPathName, BOOL inbWatchSubtree, DWORD indwNotifyFilter)
-FindFirstChangeNotificationW(LPCWSTR inlpPathName, BOOL inbWatchSubtree, DWORD indwNotifyFilter)
-FindFirstFileA(LPCSTR inlpFileName, LPWIN32_FIND_DATAA outlpFindFileData)
-FindFirstFileExA(LPCSTR inlpFileName, FINDEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFindFileData, FINDEX_SEARCH_OPS infSearchOp, LPVOID lpSearchFilter, DWORD indwAdditionalFlags)
-FindFirstFileExW(LPCWSTR inlpFileName, FINDEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFindFileData, FINDEX_SEARCH_OPS infSearchOp, LPVOID lpSearchFilter, DWORD indwAdditionalFlags)
-FindFirstFileTransactedA(LPCSTR inlpFileName, FINDEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFindFileData, FINDEX_SEARCH_OPS infSearchOp, LPVOID lpSearchFilter, DWORD indwAdditionalFlags, HANDLE inhTransaction)
-FindFirstFileTransactedW(LPCWSTR inlpFileName, FINDEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFindFileData, FINDEX_SEARCH_OPS infSearchOp, LPVOID lpSearchFilter, DWORD indwAdditionalFlags, HANDLE inhTransaction)
-FindFirstFileW(LPCWSTR inlpFileName, LPWIN32_FIND_DATAW outlpFindFileData)
-FindFirstVolumeA(LPSTR lpszVolumeName, DWORD incchBufferLength)
-FindFirstVolumeMountPointA(LPCSTR inlpszRootPathName, LPSTR lpszVolumeMountPoint, DWORD incchBufferLength)
-FindFirstVolumeMountPointW(LPCWSTR inlpszRootPathName, LPWSTR lpszVolumeMountPoint, DWORD incchBufferLength)
-FindFirstVolumeW(LPWSTR lpszVolumeName, DWORD incchBufferLength)
-FindNextChangeNotification(HANDLE inhChangeHandle)
-FindNextFileA(HANDLE inhFindFile, LPWIN32_FIND_DATAA outlpFindFileData)
-FindNextFileW(HANDLE inhFindFile, LPWIN32_FIND_DATAW outlpFindFileData)
-FindNextVolumeA(HANDLE iohFindVolume, LPSTR lpszVolumeName, DWORD incchBufferLength)
-FindNextVolumeMountPointA(HANDLE inhFindVolumeMountPoint, LPSTR lpszVolumeMountPoint, DWORD incchBufferLength)
-FindNextVolumeMountPointW(HANDLE inhFindVolumeMountPoint, LPWSTR lpszVolumeMountPoint, DWORD incchBufferLength)
-FindNextVolumeW(HANDLE iohFindVolume, LPWSTR lpszVolumeName, DWORD incchBufferLength)
-FindResourceA(HMODULE inhModule, LPCSTR inlpName, LPCSTR inlpType)
-FindResourceExA(HMODULE inhModule, LPCSTR inlpType, LPCSTR inlpName, WORD inwLanguage)
-FindResourceExW(HMODULE inhModule, LPCWSTR inlpType, LPCWSTR inlpName, WORD inwLanguage)
-FindResourceW(HMODULE inhModule, LPCWSTR inlpName, LPCWSTR inlpType)
-FindVolumeClose(HANDLE inhFindVolume)
-FindVolumeMountPointClose(HANDLE inhFindVolumeMountPoint)
-FlsAlloc(PFLS_CALLBACK_FUNCTION inlpCallback)
-FlsFree(DWORD indwFlsIndex)
-FlsGetValue(DWORD indwFlsIndex)
-FlsSetValue(DWORD indwFlsIndex, PVOID inlpFlsData)
-FlushFileBuffers(HANDLE inhFile)
-FlushInstructionCache(HANDLE inhProcess, LPCVOID lpBaseAddress, SIZE_T indwSize)
-FlushProcessWriteBuffers(VOID)
-FlushViewOfFile(LPCVOID inlpBaseAddress, SIZE_T indwNumberOfBytesToFlush)
-FormatMessageA(DWORD indwFlags, LPCVOID inlpSource, DWORD indwMessageId, DWORD indwLanguageId, LPSTR outlpBuffer, DWORD innSize, inva_list *Arguments)
-FormatMessageW(DWORD indwFlags, LPCVOID inlpSource, DWORD indwMessageId, DWORD indwLanguageId, LPWSTR outlpBuffer, DWORD innSize, inva_list *Arguments)
-FreeEnvironmentStringsA(inLPCH)
-FreeEnvironmentStringsW(inLPWCH)
-FreeLibrary(HMODULE inhLibModule)
-FreeLibraryAndExitThread(HMODULE inhLibModule, DWORD indwExitCode)
-FreeLibraryWhenCallbackReturns(PTP_CALLBACK_INSTANCE iopci, HMODULE inmod)
-FreeResource(HGLOBAL inhResData)
-FreeUserPhysicalPages(HANDLE inhProcess, PULONG_PTR ioNumberOfPages, PULONG_PTR PageArray)
-GetApplicationRecoveryCallback(HANDLE inhProcess, outAPPLICATION_RECOVERY_CALLBACK* pRecoveryCallback, PVOID* ppvParameter, PDWORD outpdwPingInterval, PDWORD outpdwFlags)
-GetApplicationRestartSettings(HANDLE inhProcess, PWSTR pwzCommandline, PDWORD iopcchSize, PDWORD outpdwFlags)
-GetAtomNameA(ATOM innAtom, LPSTR lpBuffer, int innSize)
-GetAtomNameW(ATOM innAtom, LPWSTR lpBuffer, int innSize)
-GetBinaryTypeA(LPCSTR inlpApplicationName, LPDWORD outlpBinaryType)
-GetBinaryTypeW(LPCWSTR inlpApplicationName, LPDWORD outlpBinaryType)
-GetCommConfig(HANDLE inhCommDev, LPCOMMCONFIG lpCC, LPDWORD iolpdwSize)
-GetCommMask(HANDLE inhFile, LPDWORD outlpEvtMask)
-GetCommModemStatus(HANDLE inhFile, LPDWORD outlpModemStat)
-GetCommProperties(HANDLE inhFile, LPCOMMPROP iolpCommProp)
-GetCommState(HANDLE inhFile, LPDCB outlpDCB)
-GetCommTimeouts(HANDLE inhFile, LPCOMMTIMEOUTS outlpCommTimeouts)
-GetCommandLineA(VOID)
-GetCommandLineW(VOID)
-GetCompressedFileSizeA(LPCSTR inlpFileName, LPDWORD outlpFileSizeHigh)
-GetCompressedFileSizeTransactedA(LPCSTR inlpFileName, LPDWORD outlpFileSizeHigh, HANDLE inhTransaction)
-GetCompressedFileSizeTransactedW(LPCWSTR inlpFileName, LPDWORD outlpFileSizeHigh, HANDLE inhTransaction)
-GetCompressedFileSizeW(LPCWSTR inlpFileName, LPDWORD outlpFileSizeHigh)
-GetComputerNameA(LPSTR lpBuffer, LPDWORD ionSize)
-GetComputerNameExA(COMPUTER_NAME_FORMAT inNameType, LPSTR lpBuffer, LPDWORD ionSize)
-GetComputerNameExW(COMPUTER_NAME_FORMAT inNameType, LPWSTR lpBuffer, LPDWORD ionSize)
-GetComputerNameW(LPWSTR lpBuffer, LPDWORD ionSize)
-GetCurrentActCtx(HANDLE *lphActCtx)
-GetCurrentDirectoryA(DWORD innBufferLength, LPSTR lpBuffer)
-GetCurrentDirectoryW(DWORD innBufferLength, LPWSTR lpBuffer)
-GetCurrentProcess(VOID)
-GetCurrentProcessId(VOID)
-GetCurrentProcessorNumber(VOID)
-GetCurrentThread(VOID)
-GetCurrentThreadId(VOID)
-GetDefaultCommConfigA(LPCSTR inlpszName, LPCOMMCONFIG lpCC, LPDWORD iolpdwSize)
-GetDefaultCommConfigW(LPCWSTR inlpszName, LPCOMMCONFIG lpCC, LPDWORD iolpdwSize)
-GetDevicePowerState(HANDLE inhDevice, outBOOL *pfOn)
-GetDiskFreeSpaceA(LPCSTR inlpRootPathName, LPDWORD outlpSectorsPerCluster, LPDWORD outlpBytesPerSector, LPDWORD outlpNumberOfFreeClusters, LPDWORD outlpTotalNumberOfClusters)
-GetDiskFreeSpaceExA(LPCSTR inlpDirectoryName, PULARGE_INTEGER outlpFreeBytesAvailableToCaller, PULARGE_INTEGER outlpTotalNumberOfBytes, PULARGE_INTEGER outlpTotalNumberOfFreeBytes)
-GetDiskFreeSpaceExW(LPCWSTR inlpDirectoryName, PULARGE_INTEGER outlpFreeBytesAvailableToCaller, PULARGE_INTEGER outlpTotalNumberOfBytes, PULARGE_INTEGER outlpTotalNumberOfFreeBytes)
-GetDiskFreeSpaceW(LPCWSTR inlpRootPathName, LPDWORD outlpSectorsPerCluster, LPDWORD outlpBytesPerSector, LPDWORD outlpNumberOfFreeClusters, LPDWORD outlpTotalNumberOfClusters)
-GetDllDirectoryA(DWORD innBufferLength, LPSTR lpBuffer)
-GetDllDirectoryW(DWORD innBufferLength, LPWSTR lpBuffer)
-GetDriveTypeA(LPCSTR inlpRootPathName)
-GetDriveTypeW(LPCWSTR inlpRootPathName)
-GetDynamicTimeZoneInformation(PDYNAMIC_TIME_ZONE_INFORMATION outpTimeZoneInformation)
-GetEnvironmentStrings(VOID)
-GetEnvironmentStringsW(VOID)
-GetEnvironmentVariableA(LPCSTR inlpName, LPSTR lpBuffer, DWORD innSize)
-GetEnvironmentVariableW(LPCWSTR inlpName, LPWSTR lpBuffer, DWORD innSize)
-GetErrorMode(VOID)
-GetExitCodeProcess(HANDLE inhProcess, LPDWORD outlpExitCode)
-GetExitCodeThread(HANDLE inhThread, LPDWORD outlpExitCode)
-GetFileAttributesA(LPCSTR inlpFileName)
-GetFileAttributesExA(LPCSTR inlpFileName, GET_FILEEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFileInformation)
-GetFileAttributesExW(LPCWSTR inlpFileName, GET_FILEEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFileInformation)
-GetFileAttributesTransactedA(LPCSTR inlpFileName, GET_FILEEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFileInformation, HANDLE inhTransaction)
-GetFileAttributesTransactedW(LPCWSTR inlpFileName, GET_FILEEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFileInformation, HANDLE inhTransaction)
-GetFileAttributesW(LPCWSTR inlpFileName)
-GetFileBandwidthReservation(HANDLE inhFile, LPDWORD outlpPeriodMilliseconds, LPDWORD outlpBytesPerPeriod, LPBOOL outpDiscardable, LPDWORD outlpTransferSize, LPDWORD outlpNumOutstandingRequests)
-GetFileInformationByHandle(HANDLE inhFile, LPBY_HANDLE_FILE_INFORMATION outlpFileInformation)
-GetFileSize(HANDLE inhFile, LPDWORD outlpFileSizeHigh)
-GetFileSizeEx(HANDLE inhFile, PLARGE_INTEGER outlpFileSize)
-GetFileTime(HANDLE inhFile, LPFILETIME outlpCreationTime, LPFILETIME outlpLastAccessTime, LPFILETIME outlpLastWriteTime)
-GetFileType(HANDLE inhFile)
-GetFirmwareEnvironmentVariableA(LPCSTR inlpName, LPCSTR inlpGuid, PVOID pBuffer, DWORD innSize)
-GetFirmwareEnvironmentVariableW(LPCWSTR inlpName, LPCWSTR inlpGuid, PVOID pBuffer, DWORD innSize)
-GetFreeSpace(inUINT)
-GetFullPathNameA(LPCSTR inlpFileName, DWORD innBufferLength, LPSTR lpBuffer, LPSTR *lpFilePart)
-GetFullPathNameTransactedA(LPCSTR inlpFileName, DWORD innBufferLength, LPSTR lpBuffer, LPSTR *lpFilePart, HANDLE inhTransaction)
-GetFullPathNameTransactedW(LPCWSTR inlpFileName, DWORD innBufferLength, LPWSTR lpBuffer, LPWSTR *lpFilePart, HANDLE inhTransaction)
-GetFullPathNameW(LPCWSTR inlpFileName, DWORD innBufferLength, LPWSTR lpBuffer, LPWSTR *lpFilePart)
-GetHandleInformation(HANDLE inhObject, LPDWORD outlpdwFlags)
-GetLargePageMinimum(VOID)
-GetLastError(VOID)
-GetLocalTime(LPSYSTEMTIME outlpSystemTime)
-GetLogicalDriveStringsA(DWORD innBufferLength, LPSTR lpBuffer)
-GetLogicalDriveStringsW(DWORD innBufferLength, LPWSTR lpBuffer)
-GetLogicalDrives(VOID)
-GetLogicalProcessorInformation(PSYSTEM_LOGICAL_PROCESSOR_INFORMATION Buffer, PDWORD ioReturnedLength)
-GetLongPathNameA(LPCSTR inlpszShortPath, LPSTR lpszLongPath, DWORD incchBuffer)
-GetLongPathNameTransactedA(LPCSTR inlpszShortPath, LPSTR lpszLongPath, DWORD incchBuffer, HANDLE inhTransaction)
-GetLongPathNameTransactedW(LPCWSTR inlpszShortPath, LPWSTR lpszLongPath, DWORD incchBuffer, HANDLE inhTransaction)
-GetLongPathNameW(LPCWSTR inlpszShortPath, LPWSTR lpszLongPath, DWORD incchBuffer)
-GetMailslotInfo(HANDLE inhMailslot, LPDWORD outlpMaxMessageSize, LPDWORD outlpNextSize, LPDWORD outlpMessageCount, LPDWORD outlpReadTimeout)
-GetModuleFileNameA(HMODULE inhModule, LPCH lpFilename, DWORD innSize)
-GetModuleFileNameW(HMODULE inhModule, LPWCH lpFilename, DWORD innSize)
-GetModuleHandleA(LPCSTR inlpModuleName)
-GetModuleHandleExA(DWORD indwFlags, LPCSTR inlpModuleName, outHMODULE* phModule)
-GetModuleHandleExW(DWORD indwFlags, LPCWSTR inlpModuleName, outHMODULE* phModule)
-GetModuleHandleW(LPCWSTR inlpModuleName)
-GetNamedPipeAttribute(HANDLE inPipe, PIPE_ATTRIBUTE_TYPE inAttributeType, PSTR inAttributeName, PVOID AttributeValue, PSIZE_T ioAttributeValueLength)
-GetNamedPipeClientComputerNameA(HANDLE inPipe, LPSTR ClientComputerName, ULONG inClientComputerNameLength)
-GetNamedPipeClientComputerNameW(HANDLE inPipe, LPWSTR ClientComputerName, ULONG inClientComputerNameLength)
-GetNamedPipeClientProcessId(HANDLE inPipe, PULONG outClientProcessId)
-GetNamedPipeClientSessionId(HANDLE inPipe, PULONG outClientSessionId)
-GetNamedPipeHandleStateA(HANDLE inhNamedPipe, LPDWORD outlpState, LPDWORD outlpCurInstances, LPDWORD outlpMaxCollectionCount, LPDWORD outlpCollectDataTimeout, LPSTR lpUserName, DWORD innMaxUserNameSize)
-GetNamedPipeHandleStateW(HANDLE inhNamedPipe, LPDWORD outlpState, LPDWORD outlpCurInstances, LPDWORD outlpMaxCollectionCount, LPDWORD outlpCollectDataTimeout, LPWSTR lpUserName, DWORD innMaxUserNameSize)
-GetNamedPipeInfo(HANDLE inhNamedPipe, LPDWORD outlpFlags, LPDWORD outlpOutBufferSize, LPDWORD outlpInBufferSize, LPDWORD outlpMaxInstances)
-GetNamedPipeServerProcessId(HANDLE inPipe, PULONG outServerProcessId)
-GetNamedPipeServerSessionId(HANDLE inPipe, PULONG outServerSessionId)
-GetNativeSystemInfo(LPSYSTEM_INFO outlpSystemInfo)
-GetNumaAvailableMemoryNode(UCHAR inNode, PULONGLONG outAvailableBytes)
-GetNumaHighestNodeNumber(PULONG outHighestNodeNumber)
-GetNumaNodeProcessorMask(UCHAR inNode, PULONGLONG outProcessorMask)
-GetNumaProcessorNode(UCHAR inProcessor, PUCHAR outNodeNumber)
-GetNumaProximityNode(ULONG inProximityId, PUCHAR outNodeNumber)
-GetOverlappedResult(HANDLE inhFile, LPOVERLAPPED inlpOverlapped, LPDWORD outlpNumberOfBytesTransferred, BOOL inbWait)
-GetPhysicallyInstalledSystemMemory(PULONGLONG outTotalMemoryInKilobytes)
-GetPriorityClass(HANDLE inhProcess)
-GetPrivateProfileIntA(LPCSTR inlpAppName, LPCSTR inlpKeyName, INT innDefault, LPCSTR inlpFileName)
-GetPrivateProfileIntW(LPCWSTR inlpAppName, LPCWSTR inlpKeyName, INT innDefault, LPCWSTR inlpFileName)
-GetPrivateProfileSectionA(LPCSTR inlpAppName, LPSTR lpReturnedString, DWORD innSize, LPCSTR inlpFileName)
-GetPrivateProfileSectionNamesA(LPSTR lpszReturnBuffer, DWORD innSize, LPCSTR inlpFileName)
-GetPrivateProfileSectionNamesW(LPWSTR lpszReturnBuffer, DWORD innSize, LPCWSTR inlpFileName)
-GetPrivateProfileSectionW(LPCWSTR inlpAppName, LPWSTR lpReturnedString, DWORD innSize, LPCWSTR inlpFileName)
-GetPrivateProfileStringA(LPCSTR inlpAppName, LPCSTR inlpKeyName, LPCSTR inlpDefault, LPSTR lpReturnedString, DWORD innSize, LPCSTR inlpFileName)
-GetPrivateProfileStringW(LPCWSTR inlpAppName, LPCWSTR inlpKeyName, LPCWSTR inlpDefault, LPWSTR lpReturnedString, DWORD innSize, LPCWSTR inlpFileName)
-GetPrivateProfileStructA(LPCSTR inlpszSection, LPCSTR inlpszKey, LPVOID lpStruct, UINT inuSizeStruct, LPCSTR inszFile)
-GetPrivateProfileStructW(LPCWSTR inlpszSection, LPCWSTR inlpszKey, LPVOID lpStruct, UINT inuSizeStruct, LPCWSTR inszFile)
-GetProcAddress(HMODULE inhModule, LPCSTR inlpProcName)
-GetProcessAffinityMask(HANDLE inhProcess, PDWORD_PTR outlpProcessAffinityMask, PDWORD_PTR outlpSystemAffinityMask)
-GetProcessDEPPolicy(HANDLE inhProcess, LPDWORD outlpFlags, PBOOL outlpPermanent)
-GetProcessHandleCount(HANDLE inhProcess, PDWORD outpdwHandleCount)
-GetProcessHeap(VOID )
-GetProcessHeaps(DWORD inNumberOfHeaps, PHANDLE ProcessHeaps)
-GetProcessId(HANDLE inProcess)
-GetProcessIdOfThread(HANDLE inThread)
-GetProcessIoCounters(HANDLE inhProcess, PIO_COUNTERS outlpIoCounters)
-GetProcessPriorityBoost(HANDLE inhProcess, PBOOL outpDisablePriorityBoost)
-GetProcessShutdownParameters(LPDWORD outlpdwLevel, LPDWORD outlpdwFlags)
-GetProcessTimes(HANDLE inhProcess, LPFILETIME outlpCreationTime, LPFILETIME outlpExitTime, LPFILETIME outlpKernelTime, LPFILETIME outlpUserTime)
-GetProcessVersion(DWORD inProcessId)
-GetProcessWorkingSetSize(HANDLE inhProcess, PSIZE_T outlpMinimumWorkingSetSize, PSIZE_T outlpMaximumWorkingSetSize)
-GetProcessWorkingSetSizeEx(HANDLE inhProcess, PSIZE_T outlpMinimumWorkingSetSize, PSIZE_T outlpMaximumWorkingSetSize, PDWORD outFlags)
-GetProductInfo(DWORD indwOSMajorVersion, DWORD indwOSMinorVersion, DWORD indwSpMajorVersion, DWORD indwSpMinorVersion, PDWORD outpdwReturnedProductType)
-GetProfileIntA(LPCSTR inlpAppName, LPCSTR inlpKeyName, INT innDefault)
-GetProfileIntW(LPCWSTR inlpAppName, LPCWSTR inlpKeyName, INT innDefault)
-GetProfileSectionA(LPCSTR inlpAppName, LPSTR lpReturnedString, DWORD innSize)
-GetProfileSectionW(LPCWSTR inlpAppName, LPWSTR lpReturnedString, DWORD innSize)
-GetProfileStringA(LPCSTR inlpAppName, LPCSTR inlpKeyName, LPCSTR inlpDefault, LPSTR lpReturnedString, DWORD innSize)
-GetProfileStringW(LPCWSTR inlpAppName, LPCWSTR inlpKeyName, LPCWSTR inlpDefault, LPWSTR lpReturnedString, DWORD innSize)
-GetQueuedCompletionStatus(HANDLE inCompletionPort, LPDWORD outlpNumberOfBytesTransferred, PULONG_PTR outlpCompletionKey, outLPOVERLAPPED *lpOverlapped, DWORD indwMilliseconds)
-GetQueuedCompletionStatusEx(HANDLE inCompletionPort, LPOVERLAPPED_ENTRY lpCompletionPortEntries, ULONG inulCount, PULONG outulNumEntriesRemoved, DWORD indwMilliseconds, BOOL infAlertable)
-GetShortPathNameA(LPCSTR inlpszLongPath, LPSTR lpszShortPath, DWORD incchBuffer)
-GetShortPathNameW(LPCWSTR inlpszLongPath, LPWSTR lpszShortPath, DWORD incchBuffer)
-GetStartupInfoA(LPSTARTUPINFOA outlpStartupInfo)
-GetStartupInfoW(LPSTARTUPINFOW outlpStartupInfo)
-GetStdHandle(DWORD innStdHandle)
-GetSystemDEPPolicy(VOID)
-GetSystemDirectoryA(LPSTR lpBuffer, UINT inuSize)
-GetSystemDirectoryW(LPWSTR lpBuffer, UINT inuSize)
-GetSystemFileCacheSize(PSIZE_T outlpMinimumFileCacheSize, PSIZE_T outlpMaximumFileCacheSize, PDWORD outlpFlags)
-GetSystemFirmwareTable(DWORD inFirmwareTableProviderSignature, DWORD inFirmwareTableID, PVOID pFirmwareTableBuffer, DWORD inBufferSize)
-GetSystemInfo(LPSYSTEM_INFO outlpSystemInfo)
-GetSystemRegistryQuota(PDWORD outpdwQuotaAllowed, PDWORD outpdwQuotaUsed)
-GetSystemTime(LPSYSTEMTIME outlpSystemTime)
-GetSystemTimeAdjustment(PDWORD outlpTimeAdjustment, PDWORD outlpTimeIncrement, PBOOL outlpTimeAdjustmentDisabled)
-GetSystemTimeAsFileTime(LPFILETIME outlpSystemTimeAsFileTime)
-GetSystemWindowsDirectoryA(LPSTR lpBuffer, UINT inuSize)
-GetSystemWindowsDirectoryW(LPWSTR lpBuffer, UINT inuSize)
-GetSystemWow64DirectoryA(LPSTR lpBuffer, UINT inuSize)
-GetSystemWow64DirectoryW(LPWSTR lpBuffer, UINT inuSize)
-GetTapeParameters(HANDLE inhDevice, DWORD indwOperation, LPDWORD iolpdwSize, LPVOID lpTapeInformation)
-GetTapePosition(HANDLE inhDevice, DWORD indwPositionType, LPDWORD outlpdwPartition, LPDWORD outlpdwOffsetLow, LPDWORD outlpdwOffsetHigh)
-GetTapeStatus(HANDLE inhDevice)
-GetTempFileNameA(LPCSTR inlpPathName, LPCSTR inlpPrefixString, UINT inuUnique, LPSTR lpTempFileName)
-GetTempFileNameW(LPCWSTR inlpPathName, LPCWSTR inlpPrefixString, UINT inuUnique, LPWSTR lpTempFileName)
-GetTempPathA(DWORD innBufferLength, LPSTR lpBuffer)
-GetTempPathW(DWORD innBufferLength, LPWSTR lpBuffer)
-GetThreadContext(HANDLE inhThread, LPCONTEXT iolpContext)
-GetThreadIOPendingFlag(HANDLE inhThread, PBOOL outlpIOIsPending)
-GetThreadId(HANDLE inThread)
-GetThreadPriority(HANDLE inhThread)
-GetThreadPriorityBoost(HANDLE inhThread, PBOOL outpDisablePriorityBoost)
-GetThreadSelectorEntry(HANDLE inhThread, DWORD indwSelector, LPLDT_ENTRY outlpSelectorEntry)
-GetThreadTimes(HANDLE inhThread, LPFILETIME outlpCreationTime, LPFILETIME outlpExitTime, LPFILETIME outlpKernelTime, LPFILETIME outlpUserTime)
-GetTickCount(VOID)
-GetTickCount64(VOID)
-GetTimeZoneInformation(LPTIME_ZONE_INFORMATION outlpTimeZoneInformation)
-GetVersion(VOID)
-GetVersionExA(LPOSVERSIONINFOA iolpVersionInformation)
-GetVersionExW(LPOSVERSIONINFOW iolpVersionInformation)
-GetVolumeInformationA(LPCSTR inlpRootPathName, LPSTR lpVolumeNameBuffer, DWORD innVolumeNameSize, LPDWORD outlpVolumeSerialNumber, LPDWORD outlpMaximumComponentLength, LPDWORD outlpFileSystemFlags, LPSTR lpFileSystemNameBuffer, DWORD innFileSystemNameSize)
-GetVolumeInformationByHandleW(HANDLE inhFile, LPWSTR lpVolumeNameBuffer, DWORD innVolumeNameSize, LPDWORD outlpVolumeSerialNumber, LPDWORD outlpMaximumComponentLength, LPDWORD outlpFileSystemFlags, LPWSTR lpFileSystemNameBuffer, DWORD innFileSystemNameSize)
-GetVolumeInformationW(LPCWSTR inlpRootPathName, LPWSTR lpVolumeNameBuffer, DWORD innVolumeNameSize, LPDWORD outlpVolumeSerialNumber, LPDWORD outlpMaximumComponentLength, LPDWORD outlpFileSystemFlags, LPWSTR lpFileSystemNameBuffer, DWORD innFileSystemNameSize)
-GetVolumeNameForVolumeMountPointA(LPCSTR inlpszVolumeMountPoint, LPSTR lpszVolumeName, DWORD incchBufferLength)
-GetVolumeNameForVolumeMountPointW(LPCWSTR inlpszVolumeMountPoint, LPWSTR lpszVolumeName, DWORD incchBufferLength)
-GetVolumePathNameA(LPCSTR inlpszFileName, LPSTR lpszVolumePathName, DWORD incchBufferLength)
-GetVolumePathNameW(LPCWSTR inlpszFileName, LPWSTR lpszVolumePathName, DWORD incchBufferLength)
-GetVolumePathNamesForVolumeNameA(LPCSTR inlpszVolumeName, LPCH lpszVolumePathNames, DWORD incchBufferLength, PDWORD outlpcchReturnLength)
-GetVolumePathNamesForVolumeNameW(LPCWSTR inlpszVolumeName, LPWCH lpszVolumePathNames, DWORD incchBufferLength, PDWORD outlpcchReturnLength)
-GetWindowsDirectoryA(LPSTR lpBuffer, UINT inuSize)
-GetWindowsDirectoryW(LPWSTR lpBuffer, UINT inuSize)
-GetWriteWatch(DWORD indwFlags, PVOID inlpBaseAddress, SIZE_T indwRegionSize, PVOID *lpAddresses, ioULONG_PTR *lpdwCount, PULONG outlpdwGranularity)
-GlobalAddAtomA(LPCSTR inlpString)
-GlobalAddAtomW(LPCWSTR inlpString)
-GlobalAlloc(UINT inuFlags, SIZE_T indwBytes)
-GlobalCompact(DWORD indwMinFree)
-GlobalDeleteAtom(ATOM innAtom)
-GlobalFindAtomA(LPCSTR inlpString)
-GlobalFindAtomW(LPCWSTR inlpString)
-GlobalFix(HGLOBAL inhMem)
-GlobalFlags(HGLOBAL inhMem)
-GlobalFree(HGLOBAL hMem)
-GlobalGetAtomNameA(ATOM innAtom, LPSTR lpBuffer, int innSize)
-GlobalGetAtomNameW(ATOM innAtom, LPWSTR lpBuffer, int innSize)
-GlobalHandle(LPCVOID inpMem)
-GlobalLock(HGLOBAL inhMem)
-GlobalMemoryStatus(LPMEMORYSTATUS outlpBuffer)
-GlobalMemoryStatusEx(LPMEMORYSTATUSEX outlpBuffer)
-GlobalReAlloc(HGLOBAL inhMem, SIZE_T indwBytes, UINT inuFlags)
-GlobalSize(HGLOBAL inhMem)
-GlobalUnWire(HGLOBAL inhMem)
-GlobalUnfix(HGLOBAL inhMem)
-GlobalUnlock(HGLOBAL inhMem)
-GlobalWire(HGLOBAL inhMem)
+AcquireSRWLockExclusive(PSRWLOCK ioSRWLock) -> VOID
+AcquireSRWLockShared(PSRWLOCK ioSRWLock) -> VOID
+ActivateActCtx(HANDLE iohActCtx, ULONG_PTR out*lpCookie) -> BOOL
+AddAtomA(LPCSTR inlpString) -> ATOM
+AddAtomW(LPCWSTR inlpString) -> ATOM
+AddRefActCtx(HANDLE iohActCtx) -> VOID
+AddSIDToBoundaryDescriptor(ioHANDLE * BoundaryDescriptor, PSID inRequiredSid) -> BOOL
+AddSecureMemoryCacheCallback(PSECURE_MEMORY_CACHE_CALLBACK inpfnCallBack) -> BOOL
+AddVectoredContinueHandler(ULONG inFirst, PVECTORED_EXCEPTION_HANDLER inHandler) -> PVOID
+AddVectoredExceptionHandler(ULONG inFirst, PVECTORED_EXCEPTION_HANDLER inHandler) -> PVOID
+AllocateUserPhysicalPages(HANDLE inhProcess, PULONG_PTR ioNumberOfPages, PULONG_PTR PageArray) -> BOOL
+AllocateUserPhysicalPagesNuma(HANDLE inhProcess, PULONG_PTR ioNumberOfPages, PULONG_PTR PageArray, DWORD innndPreferred) -> BOOL
+ApplicationRecoveryFinished(BOOL inbSuccess) -> VOID
+ApplicationRecoveryInProgress(PBOOL outpbCancelled) -> HRESULT
+AreFileApisANSI(VOID ) -> BOOL
+AssignProcessToJobObject(HANDLE inhJob, HANDLE inhProcess) -> BOOL
+BackupRead(HANDLE inhFile, LPBYTE lpBuffer, DWORD innNumberOfBytesToRead, LPDWORD outlpNumberOfBytesRead, BOOL inbAbort, BOOL inbProcessSecurity, ioLPVOID *lpContext) -> BOOL
+BackupSeek(HANDLE inhFile, DWORD indwLowBytesToSeek, DWORD indwHighBytesToSeek, LPDWORD outlpdwLowByteSeeked, LPDWORD outlpdwHighByteSeeked, ioLPVOID *lpContext) -> BOOL
+BackupWrite(HANDLE inhFile, LPBYTE lpBuffer, DWORD innNumberOfBytesToWrite, LPDWORD outlpNumberOfBytesWritten, BOOL inbAbort, BOOL inbProcessSecurity, ioLPVOID *lpContext) -> BOOL
+Beep(DWORD indwFreq, DWORD indwDuration) -> BOOL
+BeginUpdateResourceA(LPCSTR inpFileName, BOOL inbDeleteExistingResources) -> HANDLE
+BeginUpdateResourceW(LPCWSTR inpFileName, BOOL inbDeleteExistingResources) -> HANDLE
+BindIoCompletionCallback(HANDLE inFileHandle, LPOVERLAPPED_COMPLETION_ROUTINE inFunction, ULONG inFlags) -> BOOL
+BuildCommDCBA(LPCSTR inlpDef, LPDCB outlpDCB) -> BOOL
+BuildCommDCBAndTimeoutsA(LPCSTR inlpDef, LPDCB outlpDCB, LPCOMMTIMEOUTS outlpCommTimeouts) -> BOOL
+BuildCommDCBAndTimeoutsW(LPCWSTR inlpDef, LPDCB outlpDCB, LPCOMMTIMEOUTS outlpCommTimeouts) -> BOOL
+BuildCommDCBW(LPCWSTR inlpDef, LPDCB outlpDCB) -> BOOL
+CallNamedPipeA(LPCSTR inlpNamedPipeName, LPVOID lpInBuffer, DWORD innInBufferSize, LPVOID lpOutBuffer, DWORD innOutBufferSize, LPDWORD outlpBytesRead, DWORD innTimeOut) -> BOOL
+CallNamedPipeW(LPCWSTR inlpNamedPipeName, LPVOID lpInBuffer, DWORD innInBufferSize, LPVOID lpOutBuffer, DWORD innOutBufferSize, LPDWORD outlpBytesRead, DWORD innTimeOut) -> BOOL
+CallbackMayRunLong(PTP_CALLBACK_INSTANCE iopci) -> BOOL
+CancelDeviceWakeupRequest(HANDLE inhDevice) -> BOOL
+CancelIo(HANDLE inhFile) -> BOOL
+CancelIoEx(HANDLE inhFile, LPOVERLAPPED inlpOverlapped) -> BOOL
+CancelSynchronousIo(HANDLE inhThread) -> BOOL
+CancelThreadpoolIo(PTP_IO iopio) -> VOID
+CancelTimerQueueTimer(HANDLE inTimerQueue, HANDLE inTimer) -> BOOL
+CancelWaitableTimer(HANDLE inhTimer) -> BOOL
+ChangeTimerQueueTimer(HANDLE inTimerQueue, HANDLE ioTimer, ULONG inDueTime, ULONG inPeriod) -> BOOL
+CheckNameLegalDOS8Dot3A(LPCSTR inlpName, LPSTR lpOemName, DWORD inOemNameSize, PBOOL outpbNameContainsSpaces OPTIONAL, PBOOL outpbNameLegal) -> BOOL
+CheckNameLegalDOS8Dot3W(LPCWSTR inlpName, LPSTR lpOemName, DWORD inOemNameSize, PBOOL outpbNameContainsSpaces OPTIONAL, PBOOL outpbNameLegal) -> BOOL
+CheckRemoteDebuggerPresent(HANDLE inhProcess, PBOOL outpbDebuggerPresent) -> BOOL
+ClearCommBreak(HANDLE inhFile) -> BOOL
+ClearCommError(HANDLE inhFile, LPDWORD outlpErrors, LPCOMSTAT outlpStat) -> BOOL
+CloseHandle(HANDLE inhObject) -> BOOL
+ClosePrivateNamespace(HANDLE inHandle, ULONG inFlags) -> BOOLEAN
+CloseThreadpool(PTP_POOL ioptpp) -> VOID
+CloseThreadpoolCleanupGroup(PTP_CLEANUP_GROUP ioptpcg) -> VOID
+CloseThreadpoolCleanupGroupMembers(PTP_CLEANUP_GROUP ioptpcg, BOOL infCancelPendingCallbacks, PVOID iopvCleanupContext) -> VOID
+CloseThreadpoolIo(PTP_IO iopio) -> VOID
+CloseThreadpoolTimer(PTP_TIMER iopti) -> VOID
+CloseThreadpoolWait(PTP_WAIT iopwa) -> VOID
+CloseThreadpoolWork(PTP_WORK iopwk) -> VOID
+CommConfigDialogA(LPCSTR inlpszName, HWND inhWnd, LPCOMMCONFIG iolpCC) -> BOOL
+CommConfigDialogW(LPCWSTR inlpszName, HWND inhWnd, LPCOMMCONFIG iolpCC) -> BOOL
+CompareFileTime(CONST inFILETIME *lpFileTime1, CONST inFILETIME *lpFileTime2) -> LONG
+ConnectNamedPipe(HANDLE inhNamedPipe, LPOVERLAPPED iolpOverlapped) -> BOOL
+ContinueDebugEvent(DWORD indwProcessId, DWORD indwThreadId, DWORD indwContinueStatus) -> BOOL
+ConvertFiberToThread(VOID) -> BOOL
+ConvertThreadToFiber(LPVOID inlpParameter) -> LPVOID
+ConvertThreadToFiberEx(LPVOID inlpParameter, DWORD indwFlags) -> LPVOID
+CopyFileA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName, BOOL inbFailIfExists) -> BOOL
+CopyFileExA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, LPBOOL inpbCancel, DWORD indwCopyFlags) -> BOOL
+CopyFileExW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, LPBOOL inpbCancel, DWORD indwCopyFlags) -> BOOL
+CopyFileTransactedA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, LPBOOL inpbCancel, DWORD indwCopyFlags, HANDLE inhTransaction) -> BOOL
+CopyFileTransactedW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, LPBOOL inpbCancel, DWORD indwCopyFlags, HANDLE inhTransaction) -> BOOL
+CopyFileW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName, BOOL inbFailIfExists) -> BOOL
+CreateActCtxA(PCACTCTXA inpActCtx) -> HANDLE
+CreateActCtxW(PCACTCTXW inpActCtx) -> HANDLE
+CreateDirectoryA(LPCSTR inlpPathName, LPSECURITY_ATTRIBUTES inlpSecurityAttributes) -> BOOL
+CreateDirectoryExA(LPCSTR inlpTemplateDirectory, LPCSTR inlpNewDirectory, LPSECURITY_ATTRIBUTES inlpSecurityAttributes) -> BOOL
+CreateDirectoryExW(LPCWSTR inlpTemplateDirectory, LPCWSTR inlpNewDirectory, LPSECURITY_ATTRIBUTES inlpSecurityAttributes) -> BOOL
+CreateDirectoryTransactedA(LPCSTR inlpTemplateDirectory, LPCSTR inlpNewDirectory, LPSECURITY_ATTRIBUTES inlpSecurityAttributes, HANDLE inhTransaction) -> BOOL
+CreateDirectoryTransactedW(LPCWSTR inlpTemplateDirectory, LPCWSTR inlpNewDirectory, LPSECURITY_ATTRIBUTES inlpSecurityAttributes, HANDLE inhTransaction) -> BOOL
+CreateDirectoryW(LPCWSTR inlpPathName, LPSECURITY_ATTRIBUTES inlpSecurityAttributes) -> BOOL
+CreateEventA(LPSECURITY_ATTRIBUTES inlpEventAttributes, BOOL inbManualReset, BOOL inbInitialState, LPCSTR inlpName) -> HANDLE
+CreateEventExA(LPSECURITY_ATTRIBUTES inlpEventAttributes, LPCSTR inlpName, DWORD indwFlags, DWORD indwDesiredAccess) -> HANDLE
+CreateEventExW(LPSECURITY_ATTRIBUTES inlpEventAttributes, LPCWSTR inlpName, DWORD indwFlags, DWORD indwDesiredAccess) -> HANDLE
+CreateEventW(LPSECURITY_ATTRIBUTES inlpEventAttributes, BOOL inbManualReset, BOOL inbInitialState, LPCWSTR inlpName) -> HANDLE
+CreateFiber(SIZE_T indwStackSize, LPFIBER_START_ROUTINE inlpStartAddress, LPVOID inlpParameter) -> LPVOID
+CreateFiberEx(SIZE_T indwStackCommitSize, SIZE_T indwStackReserveSize, DWORD indwFlags, LPFIBER_START_ROUTINE inlpStartAddress, LPVOID inlpParameter) -> LPVOID
+CreateFileA(LPCSTR inlpFileName, DWORD indwDesiredAccess, DWORD indwShareMode, LPSECURITY_ATTRIBUTES inlpSecurityAttributes, DWORD indwCreationDisposition, DWORD indwFlagsAndAttributes, HANDLE inhTemplateFile) -> HANDLE
+CreateFileMappingA(HANDLE inhFile, LPSECURITY_ATTRIBUTES inlpFileMappingAttributes, DWORD inflProtect, DWORD indwMaximumSizeHigh, DWORD indwMaximumSizeLow, LPCSTR inlpName) -> HANDLE
+CreateFileMappingNumaA(HANDLE inhFile, LPSECURITY_ATTRIBUTES inlpFileMappingAttributes, DWORD inflProtect, DWORD indwMaximumSizeHigh, DWORD indwMaximumSizeLow, LPCSTR inlpName, DWORD innndPreferred) -> HANDLE
+CreateFileMappingNumaW(HANDLE inhFile, LPSECURITY_ATTRIBUTES inlpFileMappingAttributes, DWORD inflProtect, DWORD indwMaximumSizeHigh, DWORD indwMaximumSizeLow, LPCWSTR inlpName, DWORD innndPreferred) -> HANDLE
+CreateFileMappingW(HANDLE inhFile, LPSECURITY_ATTRIBUTES inlpFileMappingAttributes, DWORD inflProtect, DWORD indwMaximumSizeHigh, DWORD indwMaximumSizeLow, LPCWSTR inlpName) -> HANDLE
+CreateFileTransactedA(LPCSTR inlpFileName, DWORD indwDesiredAccess, DWORD indwShareMode, LPSECURITY_ATTRIBUTES inlpSecurityAttributes, DWORD indwCreationDisposition, DWORD indwFlagsAndAttributes, HANDLE inhTemplateFile, HANDLE inhTransaction, PUSHORT inpusMiniVersion, PVOID lpExtendedParameter) -> HANDLE
+CreateFileTransactedW(LPCWSTR inlpFileName, DWORD indwDesiredAccess, DWORD indwShareMode, LPSECURITY_ATTRIBUTES inlpSecurityAttributes, DWORD indwCreationDisposition, DWORD indwFlagsAndAttributes, HANDLE inhTemplateFile, HANDLE inhTransaction, PUSHORT inpusMiniVersion, PVOID lpExtendedParameter) -> HANDLE
+CreateFileW(LPCWSTR inlpFileName, DWORD indwDesiredAccess, DWORD indwShareMode, LPSECURITY_ATTRIBUTES inlpSecurityAttributes, DWORD indwCreationDisposition, DWORD indwFlagsAndAttributes, HANDLE inhTemplateFile) -> HANDLE
+CreateHardLinkA(LPCSTR inlpFileName, LPCSTR inlpExistingFileName, LPSECURITY_ATTRIBUTES lpSecurityAttributes) -> BOOL
+CreateHardLinkTransactedA(LPCSTR inlpFileName, LPCSTR inlpExistingFileName, LPSECURITY_ATTRIBUTES lpSecurityAttributes, HANDLE inhTransaction) -> BOOL
+CreateHardLinkTransactedW(LPCWSTR inlpFileName, LPCWSTR inlpExistingFileName, LPSECURITY_ATTRIBUTES lpSecurityAttributes, HANDLE inhTransaction) -> BOOL
+CreateHardLinkW(LPCWSTR inlpFileName, LPCWSTR inlpExistingFileName, LPSECURITY_ATTRIBUTES lpSecurityAttributes) -> BOOL
+CreateIoCompletionPort(HANDLE inFileHandle, HANDLE inExistingCompletionPort, ULONG_PTR inCompletionKey, DWORD inNumberOfConcurrentThreads) -> HANDLE
+CreateJobObjectA(LPSECURITY_ATTRIBUTES inlpJobAttributes, LPCSTR inlpName) -> HANDLE
+CreateJobObjectW(LPSECURITY_ATTRIBUTES inlpJobAttributes, LPCWSTR inlpName) -> HANDLE
+CreateJobSet(ULONG inNumJob, PJOB_SET_ARRAY UserJobSet, ULONG inFlags) -> BOOL
+CreateMailslotA(LPCSTR inlpName, DWORD innMaxMessageSize, DWORD inlReadTimeout, LPSECURITY_ATTRIBUTES inlpSecurityAttributes) -> HANDLE
+CreateMailslotW(LPCWSTR inlpName, DWORD innMaxMessageSize, DWORD inlReadTimeout, LPSECURITY_ATTRIBUTES inlpSecurityAttributes) -> HANDLE
+CreateMemoryResourceNotification(MEMORY_RESOURCE_NOTIFICATION_TYPE inNotificationType) -> HANDLE
+CreateMutexA(LPSECURITY_ATTRIBUTES inlpMutexAttributes, BOOL inbInitialOwner, LPCSTR inlpName) -> HANDLE
+CreateMutexExA(LPSECURITY_ATTRIBUTES inlpMutexAttributes, LPCSTR inlpName, DWORD indwFlags, DWORD indwDesiredAccess) -> HANDLE
+CreateMutexExW(LPSECURITY_ATTRIBUTES inlpMutexAttributes, LPCWSTR inlpName, DWORD indwFlags, DWORD indwDesiredAccess) -> HANDLE
+CreateMutexW(LPSECURITY_ATTRIBUTES inlpMutexAttributes, BOOL inbInitialOwner, LPCWSTR inlpName) -> HANDLE
+CreateNamedPipeA(LPCSTR inlpName, DWORD indwOpenMode, DWORD indwPipeMode, DWORD innMaxInstances, DWORD innOutBufferSize, DWORD innInBufferSize, DWORD innDefaultTimeOut, LPSECURITY_ATTRIBUTES inlpSecurityAttributes) -> HANDLE
+CreateNamedPipeW(LPCWSTR inlpName, DWORD indwOpenMode, DWORD indwPipeMode, DWORD innMaxInstances, DWORD innOutBufferSize, DWORD innInBufferSize, DWORD innDefaultTimeOut, LPSECURITY_ATTRIBUTES inlpSecurityAttributes) -> HANDLE
+CreatePipe(PHANDLE hReadPipe, PHANDLE hWritePipe, LPSECURITY_ATTRIBUTES inlpPipeAttributes, DWORD innSize) -> BOOL
+CreatePrivateNamespaceA(LPSECURITY_ATTRIBUTES inlpPrivateNamespaceAttributes, LPVOID inlpBoundaryDescriptor, LPCSTR inlpAliasPrefix) -> HANDLE
+CreatePrivateNamespaceW(LPSECURITY_ATTRIBUTES inlpPrivateNamespaceAttributes, LPVOID inlpBoundaryDescriptor, LPCWSTR inlpAliasPrefix) -> HANDLE
+CreateProcessA(LPCSTR inlpApplicationName, LPSTR iolpCommandLine, LPSECURITY_ATTRIBUTES inlpProcessAttributes, LPSECURITY_ATTRIBUTES inlpThreadAttributes, BOOL inbInheritHandles, DWORD indwCreationFlags, LPVOID inlpEnvironment, LPCSTR inlpCurrentDirectory, LPSTARTUPINFOA inlpStartupInfo, LPPROCESS_INFORMATION outlpProcessInformation) -> BOOL
+CreateProcessW(LPCWSTR inlpApplicationName, LPWSTR iolpCommandLine, LPSECURITY_ATTRIBUTES inlpProcessAttributes, LPSECURITY_ATTRIBUTES inlpThreadAttributes, BOOL inbInheritHandles, DWORD indwCreationFlags, LPVOID inlpEnvironment, LPCWSTR inlpCurrentDirectory, LPSTARTUPINFOW inlpStartupInfo, LPPROCESS_INFORMATION outlpProcessInformation) -> BOOL
+CreateRemoteThread(HANDLE inhProcess, LPSECURITY_ATTRIBUTES inlpThreadAttributes, SIZE_T indwStackSize, LPTHREAD_START_ROUTINE inlpStartAddress, LPVOID inlpParameter, DWORD indwCreationFlags, LPDWORD outlpThreadId) -> HANDLE
+CreateSemaphoreA(LPSECURITY_ATTRIBUTES inlpSemaphoreAttributes, LONG inlInitialCount, LONG inlMaximumCount, LPCSTR inlpName) -> HANDLE
+CreateSemaphoreExA(LPSECURITY_ATTRIBUTES inlpSemaphoreAttributes, LONG inlInitialCount, LONG inlMaximumCount, LPCSTR inlpName, DWORD dwFlags, DWORD indwDesiredAccess) -> HANDLE
+CreateSemaphoreExW(LPSECURITY_ATTRIBUTES inlpSemaphoreAttributes, LONG inlInitialCount, LONG inlMaximumCount, LPCWSTR inlpName, DWORD dwFlags, DWORD indwDesiredAccess) -> HANDLE
+CreateSemaphoreW(LPSECURITY_ATTRIBUTES inlpSemaphoreAttributes, LONG inlInitialCount, LONG inlMaximumCount, LPCWSTR inlpName) -> HANDLE
+CreateTapePartition(HANDLE inhDevice, DWORD indwPartitionMethod, DWORD indwCount, DWORD indwSize) -> DWORD
+CreateThread(LPSECURITY_ATTRIBUTES inlpThreadAttributes, SIZE_T indwStackSize, LPTHREAD_START_ROUTINE inlpStartAddress, LPVOID inlpParameter, DWORD indwCreationFlags, LPDWORD outlpThreadId) -> PTP_POOL
+CreateThreadpool(PVOID reserved) -> PTP_POOL
+CreateThreadpoolCleanupGroup(VOID) -> PTP_CLEANUP_GROUP
+CreateThreadpoolIo(HANDLE infl, PTP_WIN32_IO_CALLBACK inpfnio, PVOID iopv, PTP_CALLBACK_ENVIRON inpcbe) -> PTP_IO
+CreateThreadpoolTimer(PTP_TIMER_CALLBACK inpfnti, PVOID iopv, PTP_CALLBACK_ENVIRON inpcbe) -> PTP_TIMER
+CreateThreadpoolWait(PTP_WAIT_CALLBACK inpfnwa, PVOID iopv, PTP_CALLBACK_ENVIRON inpcbe) -> PTP_WAIT
+CreateThreadpoolWork(PTP_WORK_CALLBACK inpfnwk, PVOID iopv, PTP_CALLBACK_ENVIRON inpcbe) -> PTP_WORK
+CreateTimerQueue(VOID) -> HANDLE
+CreateTimerQueueTimer(PHANDLE phNewTimer, HANDLE inTimerQueue, WAITORTIMERCALLBACK inCallback, PVOID inParameter, DWORD inDueTime, DWORD inPeriod, ULONG inFlags) -> BOOL
+CreateWaitableTimerA(LPSECURITY_ATTRIBUTES inlpTimerAttributes, BOOL inbManualReset, LPCSTR inlpTimerName) -> HANDLE
+CreateWaitableTimerExA(LPSECURITY_ATTRIBUTES inlpTimerAttributes, LPCSTR inlpTimerName, DWORD indwFlags, DWORD indwDesiredAccess) -> HANDLE
+CreateWaitableTimerExW(LPSECURITY_ATTRIBUTES inlpTimerAttributes, LPCWSTR inlpTimerName, DWORD indwFlags, DWORD indwDesiredAccess) -> HANDLE
+CreateWaitableTimerW(LPSECURITY_ATTRIBUTES inlpTimerAttributes, BOOL inbManualReset, LPCWSTR inlpTimerName) -> HANDLE
+DeactivateActCtx(DWORD indwFlags, ULONG_PTR inulCookie) -> BOOL
+DebugActiveProcess(DWORD indwProcessId) -> BOOL
+DebugActiveProcessStop(DWORD indwProcessId) -> BOOL
+DebugBreak(VOID) -> VOID
+DebugBreakProcess(HANDLE inProcess) -> BOOL
+DebugSetProcessKillOnExit(BOOL inKillOnExit) -> BOOL
+DecodePointer(PVOID inPtr) -> PVOID
+DecodeSystemPointer(PVOID inPtr) -> PVOID
+DefineDosDeviceA(DWORD indwFlags, LPCSTR inlpDeviceName, LPCSTR inlpTargetPath) -> BOOL
+DefineDosDeviceW(DWORD indwFlags, LPCWSTR inlpDeviceName, LPCWSTR inlpTargetPath) -> BOOL
+DeleteAtom(ATOM innAtom) -> ATOM
+DeleteBoundaryDescriptor(HANDLE inBoundaryDescriptor) -> VOID
+DeleteCriticalSection(LPCRITICAL_SECTION iolpCriticalSection) -> VOID
+DeleteFiber(LPVOID inlpFiber) -> VOID
+DeleteFileA(LPCSTR inlpFileName) -> BOOL
+DeleteFileTransactedA(LPCSTR inlpFileName, HANDLE inhTransaction) -> BOOL
+DeleteFileTransactedW(LPCWSTR inlpFileName, HANDLE inhTransaction) -> BOOL
+DeleteFileW(LPCWSTR inlpFileName) -> BOOL
+DeleteProcThreadAttributeList(LPPROC_THREAD_ATTRIBUTE_LIST iolpAttributeList) -> VOID
+DeleteTimerQueue(HANDLE inTimerQueue) -> BOOL
+DeleteTimerQueueEx(HANDLE inTimerQueue, HANDLE inCompletionEvent) -> BOOL
+DeleteTimerQueueTimer(HANDLE inTimerQueue, HANDLE inTimer, HANDLE inCompletionEvent) -> BOOL
+DeleteVolumeMountPointA(LPCSTR inlpszVolumeMountPoint) -> BOOL
+DeleteVolumeMountPointW(LPCWSTR inlpszVolumeMountPoint) -> BOOL
+DeviceIoControl(HANDLE inhDevice, DWORD indwIoControlCode, LPVOID lpInBuffer, DWORD innInBufferSize, LPVOID lpOutBuffer, DWORD innOutBufferSize, LPDWORD outlpBytesReturned, LPOVERLAPPED iolpOverlapped) -> BOOL
+DisableThreadLibraryCalls(HMODULE inhLibModule) -> BOOL
+DisassociateCurrentThreadFromCallback(PTP_CALLBACK_INSTANCE iopci) -> VOID
+DisconnectNamedPipe(HANDLE inhNamedPipe) -> BOOL
+DnsHostnameToComputerNameA(LPCSTR inHostname, LPSTR ComputerName, LPDWORD ionSize) -> BOOL
+DnsHostnameToComputerNameW(LPCWSTR inHostname, LPWSTR ComputerName, LPDWORD ionSize) -> BOOL
+DosDateTimeToFileTime(WORD inwFatDate, WORD inwFatTime, LPFILETIME outlpFileTime) -> BOOL
+DuplicateHandle(HANDLE inhSourceProcessHandle, HANDLE inhSourceHandle, HANDLE inhTargetProcessHandle, LPHANDLE lpTargetHandle, DWORD indwDesiredAccess, BOOL inbInheritHandle, DWORD indwOptions) -> BOOL
+EncodePointer(PVOID inPtr) -> PVOID
+EncodeSystemPointer(PVOID inPtr) -> PVOID
+EndUpdateResourceA(HANDLE inhUpdate, BOOL infDiscard) -> BOOL
+EndUpdateResourceW(HANDLE inhUpdate, BOOL infDiscard) -> BOOL
+EnterCriticalSection(LPCRITICAL_SECTION iolpCriticalSection) -> VOID
+EnumResourceLanguagesA(HMODULE inhModule, LPCSTR inlpType, LPCSTR inlpName, ENUMRESLANGPROCA inlpEnumFunc, LONG_PTR inlParam) -> BOOL
+EnumResourceLanguagesExA(HMODULE inhModule, LPCSTR inlpType, LPCSTR inlpName, ENUMRESLANGPROCA inlpEnumFunc, LONG_PTR inlParam, DWORD dwFlags, LANGID LangId) -> BOOL
+EnumResourceLanguagesExW(HMODULE inhModule, LPCWSTR inlpType, LPCWSTR inlpName, ENUMRESLANGPROCW inlpEnumFunc, LONG_PTR inlParam, DWORD dwFlags, LANGID LangId) -> BOOL
+EnumResourceLanguagesW(HMODULE inhModule, LPCWSTR inlpType, LPCWSTR inlpName, ENUMRESLANGPROCW inlpEnumFunc, LONG_PTR inlParam) -> BOOL
+EnumResourceNamesA(HMODULE inhModule, LPCSTR inlpType, ENUMRESNAMEPROCA inlpEnumFunc, LONG_PTR inlParam) -> BOOL
+EnumResourceNamesExA(HMODULE inhModule, LPCSTR inlpType, ENUMRESNAMEPROCA inlpEnumFunc, LONG_PTR inlParam, DWORD dwFlags, LANGID LangId) -> BOOL
+EnumResourceNamesExW(HMODULE inhModule, LPCWSTR inlpType, ENUMRESNAMEPROCW inlpEnumFunc, LONG_PTR inlParam, DWORD dwFlags, LANGID LangId) -> BOOL
+EnumResourceNamesW(HMODULE inhModule, LPCWSTR inlpType, ENUMRESNAMEPROCW inlpEnumFunc, LONG_PTR inlParam) -> BOOL
+EnumResourceTypesA(HMODULE inhModule, ENUMRESTYPEPROCA inlpEnumFunc, LONG_PTR inlParam) -> BOOL
+EnumResourceTypesExA(HMODULE inhModule, ENUMRESTYPEPROCA inlpEnumFunc, LONG_PTR inlParam, DWORD dwFlags, LANGID LangId) -> BOOL
+EnumResourceTypesExW(HMODULE inhModule, ENUMRESTYPEPROCW inlpEnumFunc, LONG_PTR inlParam, DWORD dwFlags, LANGID LangId) -> BOOL
+EnumResourceTypesW(HMODULE inhModule, ENUMRESTYPEPROCW inlpEnumFunc, LONG_PTR inlParam) -> BOOL
+EnumSystemFirmwareTables(DWORD inFirmwareTableProviderSignature, PVOID pFirmwareTableEnumBuffer, DWORD inBufferSize) -> UINT
+EraseTape(HANDLE inhDevice, DWORD indwEraseType, BOOL inbImmediate) -> DWORD
+EscapeCommFunction(HANDLE inhFile, DWORD indwFunc) -> BOOL
+ExitProcess(UINT inuExitCode) -> O CreateProcessInfo
+ExitThread(DWORD indwExitCode) -> O CreateThread
+ExpandEnvironmentStringsA(LPCSTR inlpSrc, LPSTR lpDst, DWORD innSize) -> DWORD
+ExpandEnvironmentStringsW(LPCWSTR inlpSrc, LPWSTR lpDst, DWORD innSize) -> DWORD
+FatalAppExitA(UINT inuAction, LPCSTR inlpMessageText) -> VOID
+FatalAppExitW(UINT inuAction, LPCWSTR inlpMessageText) -> VOID
+FatalExit(int inExitCode) -> VOID
+FileTimeToDosDateTime(CONST inFILETIME *lpFileTime, LPWORD outlpFatDate, LPWORD outlpFatTime) -> BOOL
+FileTimeToLocalFileTime(CONST inFILETIME *lpFileTime, LPFILETIME outlpLocalFileTime) -> BOOL
+FileTimeToSystemTime(CONST inFILETIME *lpFileTime, LPSYSTEMTIME outlpSystemTime) -> BOOL
+FindActCtxSectionGuid(DWORD indwFlags, const GUID *lpExtensionGuid, ULONG inulSectionId, const inGUID *lpGuidToFind, PACTCTX_SECTION_KEYED_DATA outReturnedData) -> BOOL
+FindActCtxSectionStringA(DWORD indwFlags, const GUID *lpExtensionGuid, ULONG inulSectionId, LPCSTR inlpStringToFind, PACTCTX_SECTION_KEYED_DATA outReturnedData) -> BOOL
+FindActCtxSectionStringW(DWORD indwFlags, const GUID *lpExtensionGuid, ULONG inulSectionId, LPCWSTR inlpStringToFind, PACTCTX_SECTION_KEYED_DATA outReturnedData) -> BOOL
+FindAtomA(LPCSTR inlpString) -> ATOM
+FindAtomW(LPCWSTR inlpString) -> ATOM
+FindClose(HANDLE iohFindFile) -> BOOL
+FindCloseChangeNotification(HANDLE inhChangeHandle) -> BOOL
+FindFirstChangeNotificationA(LPCSTR inlpPathName, BOOL inbWatchSubtree, DWORD indwNotifyFilter) -> HANDLE
+FindFirstChangeNotificationW(LPCWSTR inlpPathName, BOOL inbWatchSubtree, DWORD indwNotifyFilter) -> HANDLE
+FindFirstFileA(LPCSTR inlpFileName, LPWIN32_FIND_DATAA outlpFindFileData) -> HANDLE
+FindFirstFileExA(LPCSTR inlpFileName, FINDEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFindFileData, FINDEX_SEARCH_OPS infSearchOp, LPVOID lpSearchFilter, DWORD indwAdditionalFlags) -> HANDLE
+FindFirstFileExW(LPCWSTR inlpFileName, FINDEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFindFileData, FINDEX_SEARCH_OPS infSearchOp, LPVOID lpSearchFilter, DWORD indwAdditionalFlags) -> HANDLE
+FindFirstFileTransactedA(LPCSTR inlpFileName, FINDEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFindFileData, FINDEX_SEARCH_OPS infSearchOp, LPVOID lpSearchFilter, DWORD indwAdditionalFlags, HANDLE inhTransaction) -> HANDLE
+FindFirstFileTransactedW(LPCWSTR inlpFileName, FINDEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFindFileData, FINDEX_SEARCH_OPS infSearchOp, LPVOID lpSearchFilter, DWORD indwAdditionalFlags, HANDLE inhTransaction) -> HANDLE
+FindFirstFileW(LPCWSTR inlpFileName, LPWIN32_FIND_DATAW outlpFindFileData) -> HANDLE
+FindFirstVolumeA(LPSTR lpszVolumeName, DWORD incchBufferLength) -> HANDLE
+FindFirstVolumeMountPointA(LPCSTR inlpszRootPathName, LPSTR lpszVolumeMountPoint, DWORD incchBufferLength) -> HANDLE
+FindFirstVolumeMountPointW(LPCWSTR inlpszRootPathName, LPWSTR lpszVolumeMountPoint, DWORD incchBufferLength) -> HANDLE
+FindFirstVolumeW(LPWSTR lpszVolumeName, DWORD incchBufferLength) -> HANDLE
+FindNextChangeNotification(HANDLE inhChangeHandle) -> BOOL
+FindNextFileA(HANDLE inhFindFile, LPWIN32_FIND_DATAA outlpFindFileData) -> BOOL
+FindNextFileW(HANDLE inhFindFile, LPWIN32_FIND_DATAW outlpFindFileData) -> BOOL
+FindNextVolumeA(HANDLE iohFindVolume, LPSTR lpszVolumeName, DWORD incchBufferLength) -> BOOL
+FindNextVolumeMountPointA(HANDLE inhFindVolumeMountPoint, LPSTR lpszVolumeMountPoint, DWORD incchBufferLength) -> BOOL
+FindNextVolumeMountPointW(HANDLE inhFindVolumeMountPoint, LPWSTR lpszVolumeMountPoint, DWORD incchBufferLength) -> BOOL
+FindNextVolumeW(HANDLE iohFindVolume, LPWSTR lpszVolumeName, DWORD incchBufferLength) -> BOOL
+FindResourceA(HMODULE inhModule, LPCSTR inlpName, LPCSTR inlpType) -> HRSRC
+FindResourceExA(HMODULE inhModule, LPCSTR inlpType, LPCSTR inlpName, WORD inwLanguage) -> HRSRC
+FindResourceExW(HMODULE inhModule, LPCWSTR inlpType, LPCWSTR inlpName, WORD inwLanguage) -> HRSRC
+FindResourceW(HMODULE inhModule, LPCWSTR inlpName, LPCWSTR inlpType) -> HRSRC
+FindVolumeClose(HANDLE inhFindVolume) -> BOOL
+FindVolumeMountPointClose(HANDLE inhFindVolumeMountPoint) -> BOOL
+FlsAlloc(PFLS_CALLBACK_FUNCTION inlpCallback) -> DWORD
+FlsFree(DWORD indwFlsIndex) -> BOOL
+FlsGetValue(DWORD indwFlsIndex) -> PVOID
+FlsSetValue(DWORD indwFlsIndex, PVOID inlpFlsData) -> BOOL
+FlushFileBuffers(HANDLE inhFile) -> BOOL
+FlushInstructionCache(HANDLE inhProcess, LPCVOID lpBaseAddress, SIZE_T indwSize) -> BOOL
+FlushProcessWriteBuffers(VOID) -> VOID
+FlushViewOfFile(LPCVOID inlpBaseAddress, SIZE_T indwNumberOfBytesToFlush) -> BOOL
+FormatMessageA(DWORD indwFlags, LPCVOID inlpSource, DWORD indwMessageId, DWORD indwLanguageId, LPSTR outlpBuffer, DWORD innSize, inva_list *Arguments) -> DWORD
+FormatMessageW(DWORD indwFlags, LPCVOID inlpSource, DWORD indwMessageId, DWORD indwLanguageId, LPWSTR outlpBuffer, DWORD innSize, inva_list *Arguments) -> DWORD
+FreeEnvironmentStringsA(inLPCH) -> BOOL
+FreeEnvironmentStringsW(inLPWCH) -> BOOL
+FreeLibrary(HMODULE inhLibModule) -> BOOL
+FreeLibraryAndExitThread(HMODULE inhLibModule, DWORD indwExitCode) -> VOID
+FreeLibraryWhenCallbackReturns(PTP_CALLBACK_INSTANCE iopci, HMODULE inmod) -> VOID
+FreeResource(HGLOBAL inhResData) -> BOOL
+FreeUserPhysicalPages(HANDLE inhProcess, PULONG_PTR ioNumberOfPages, PULONG_PTR PageArray) -> BOOL
+GetApplicationRecoveryCallback(HANDLE inhProcess, outAPPLICATION_RECOVERY_CALLBACK* pRecoveryCallback, PVOID* ppvParameter, PDWORD outpdwPingInterval, PDWORD outpdwFlags) -> HRESULT
+GetApplicationRestartSettings(HANDLE inhProcess, PWSTR pwzCommandline, PDWORD iopcchSize, PDWORD outpdwFlags) -> HRESULT
+GetAtomNameA(ATOM innAtom, LPSTR lpBuffer, int innSize) -> UINT
+GetAtomNameW(ATOM innAtom, LPWSTR lpBuffer, int innSize) -> UINT
+GetBinaryTypeA(LPCSTR inlpApplicationName, LPDWORD outlpBinaryType) -> BOOL
+GetBinaryTypeW(LPCWSTR inlpApplicationName, LPDWORD outlpBinaryType) -> BOOL
+GetCommConfig(HANDLE inhCommDev, LPCOMMCONFIG lpCC, LPDWORD iolpdwSize) -> BOOL
+GetCommMask(HANDLE inhFile, LPDWORD outlpEvtMask) -> BOOL
+GetCommModemStatus(HANDLE inhFile, LPDWORD outlpModemStat) -> BOOL
+GetCommProperties(HANDLE inhFile, LPCOMMPROP iolpCommProp) -> BOOL
+GetCommState(HANDLE inhFile, LPDCB outlpDCB) -> BOOL
+GetCommTimeouts(HANDLE inhFile, LPCOMMTIMEOUTS outlpCommTimeouts) -> BOOL
+GetCommandLineA(VOID) -> LPSTR
+GetCommandLineW(VOID) -> LPWSTR
+GetCompressedFileSizeA(LPCSTR inlpFileName, LPDWORD outlpFileSizeHigh) -> DWORD
+GetCompressedFileSizeTransactedA(LPCSTR inlpFileName, LPDWORD outlpFileSizeHigh, HANDLE inhTransaction) -> DWORD
+GetCompressedFileSizeTransactedW(LPCWSTR inlpFileName, LPDWORD outlpFileSizeHigh, HANDLE inhTransaction) -> DWORD
+GetCompressedFileSizeW(LPCWSTR inlpFileName, LPDWORD outlpFileSizeHigh) -> DWORD
+GetComputerNameA(LPSTR lpBuffer, LPDWORD ionSize) -> BOOL
+GetComputerNameExA(COMPUTER_NAME_FORMAT inNameType, LPSTR lpBuffer, LPDWORD ionSize) -> BOOL
+GetComputerNameExW(COMPUTER_NAME_FORMAT inNameType, LPWSTR lpBuffer, LPDWORD ionSize) -> BOOL
+GetComputerNameW(LPWSTR lpBuffer, LPDWORD ionSize) -> BOOL
+GetCurrentActCtx(HANDLE *lphActCtx) -> BOOL
+GetCurrentDirectoryA(DWORD innBufferLength, LPSTR lpBuffer) -> DWORD
+GetCurrentDirectoryW(DWORD innBufferLength, LPWSTR lpBuffer) -> DWORD
+GetCurrentProcess(VOID) -> HANDLE
+GetCurrentProcessId(VOID) -> DWORD
+GetCurrentProcessorNumber(VOID) -> DWORD
+GetCurrentThread(VOID) -> HANDLE
+GetCurrentThreadId(VOID) -> DWORD
+GetDefaultCommConfigA(LPCSTR inlpszName, LPCOMMCONFIG lpCC, LPDWORD iolpdwSize) -> BOOL
+GetDefaultCommConfigW(LPCWSTR inlpszName, LPCOMMCONFIG lpCC, LPDWORD iolpdwSize) -> BOOL
+GetDevicePowerState(HANDLE inhDevice, outBOOL *pfOn) -> BOOL
+GetDiskFreeSpaceA(LPCSTR inlpRootPathName, LPDWORD outlpSectorsPerCluster, LPDWORD outlpBytesPerSector, LPDWORD outlpNumberOfFreeClusters, LPDWORD outlpTotalNumberOfClusters) -> BOOL
+GetDiskFreeSpaceExA(LPCSTR inlpDirectoryName, PULARGE_INTEGER outlpFreeBytesAvailableToCaller, PULARGE_INTEGER outlpTotalNumberOfBytes, PULARGE_INTEGER outlpTotalNumberOfFreeBytes) -> BOOL
+GetDiskFreeSpaceExW(LPCWSTR inlpDirectoryName, PULARGE_INTEGER outlpFreeBytesAvailableToCaller, PULARGE_INTEGER outlpTotalNumberOfBytes, PULARGE_INTEGER outlpTotalNumberOfFreeBytes) -> BOOL
+GetDiskFreeSpaceW(LPCWSTR inlpRootPathName, LPDWORD outlpSectorsPerCluster, LPDWORD outlpBytesPerSector, LPDWORD outlpNumberOfFreeClusters, LPDWORD outlpTotalNumberOfClusters) -> BOOL
+GetDllDirectoryA(DWORD innBufferLength, LPSTR lpBuffer) -> DWORD
+GetDllDirectoryW(DWORD innBufferLength, LPWSTR lpBuffer) -> DWORD
+GetDriveTypeA(LPCSTR inlpRootPathName) -> UINT
+GetDriveTypeW(LPCWSTR inlpRootPathName) -> UINT
+GetDynamicTimeZoneInformation(PDYNAMIC_TIME_ZONE_INFORMATION outpTimeZoneInformation) -> DWORD
+GetEnvironmentStrings(VOID) -> LPCH
+GetEnvironmentStringsW(VOID) -> LPWCH
+GetEnvironmentVariableA(LPCSTR inlpName, LPSTR lpBuffer, DWORD innSize) -> DWORD
+GetEnvironmentVariableW(LPCWSTR inlpName, LPWSTR lpBuffer, DWORD innSize) -> DWORD
+GetErrorMode(VOID) -> UINT
+GetExitCodeProcess(HANDLE inhProcess, LPDWORD outlpExitCode) -> BOOL
+GetExitCodeThread(HANDLE inhThread, LPDWORD outlpExitCode) -> BOOL
+GetFileAttributesA(LPCSTR inlpFileName) -> DWORD
+GetFileAttributesExA(LPCSTR inlpFileName, GET_FILEEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFileInformation) -> BOOL
+GetFileAttributesExW(LPCWSTR inlpFileName, GET_FILEEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFileInformation) -> BOOL
+GetFileAttributesTransactedA(LPCSTR inlpFileName, GET_FILEEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFileInformation, HANDLE inhTransaction) -> BOOL
+GetFileAttributesTransactedW(LPCWSTR inlpFileName, GET_FILEEX_INFO_LEVELS infInfoLevelId, LPVOID outlpFileInformation, HANDLE inhTransaction) -> BOOL
+GetFileAttributesW(LPCWSTR inlpFileName) -> DWORD
+GetFileBandwidthReservation(HANDLE inhFile, LPDWORD outlpPeriodMilliseconds, LPDWORD outlpBytesPerPeriod, LPBOOL outpDiscardable, LPDWORD outlpTransferSize, LPDWORD outlpNumOutstandingRequests) -> BOOL
+GetFileInformationByHandle(HANDLE inhFile, LPBY_HANDLE_FILE_INFORMATION outlpFileInformation) -> BOOL
+GetFileSize(HANDLE inhFile, LPDWORD outlpFileSizeHigh) -> DWORD
+GetFileSizeEx(HANDLE inhFile, PLARGE_INTEGER outlpFileSize) -> BOOL
+GetFileTime(HANDLE inhFile, LPFILETIME outlpCreationTime, LPFILETIME outlpLastAccessTime, LPFILETIME outlpLastWriteTime) -> BOOL
+GetFileType(HANDLE inhFile) -> DWORD
+GetFirmwareEnvironmentVariableA(LPCSTR inlpName, LPCSTR inlpGuid, PVOID pBuffer, DWORD innSize) -> DWORD
+GetFirmwareEnvironmentVariableW(LPCWSTR inlpName, LPCWSTR inlpGuid, PVOID pBuffer, DWORD innSize) -> DWORD
+GetFreeSpace(inUINT) -> DWORD
+GetFullPathNameA(LPCSTR inlpFileName, DWORD innBufferLength, LPSTR lpBuffer, LPSTR *lpFilePart) -> DWORD
+GetFullPathNameTransactedA(LPCSTR inlpFileName, DWORD innBufferLength, LPSTR lpBuffer, LPSTR *lpFilePart, HANDLE inhTransaction) -> DWORD
+GetFullPathNameTransactedW(LPCWSTR inlpFileName, DWORD innBufferLength, LPWSTR lpBuffer, LPWSTR *lpFilePart, HANDLE inhTransaction) -> DWORD
+GetFullPathNameW(LPCWSTR inlpFileName, DWORD innBufferLength, LPWSTR lpBuffer, LPWSTR *lpFilePart) -> DWORD
+GetHandleInformation(HANDLE inhObject, LPDWORD outlpdwFlags) -> BOOL
+GetLargePageMinimum(VOID) -> SIZE_T
+GetLastError(VOID) -> DWORD
+GetLocalTime(LPSYSTEMTIME outlpSystemTime) -> VOID
+GetLogicalDriveStringsA(DWORD innBufferLength, LPSTR lpBuffer) -> DWORD
+GetLogicalDriveStringsW(DWORD innBufferLength, LPWSTR lpBuffer) -> DWORD
+GetLogicalDrives(VOID) -> DWORD
+GetLogicalProcessorInformation(PSYSTEM_LOGICAL_PROCESSOR_INFORMATION Buffer, PDWORD ioReturnedLength) -> BOOL
+GetLongPathNameA(LPCSTR inlpszShortPath, LPSTR lpszLongPath, DWORD incchBuffer) -> DWORD
+GetLongPathNameTransactedA(LPCSTR inlpszShortPath, LPSTR lpszLongPath, DWORD incchBuffer, HANDLE inhTransaction) -> DWORD
+GetLongPathNameTransactedW(LPCWSTR inlpszShortPath, LPWSTR lpszLongPath, DWORD incchBuffer, HANDLE inhTransaction) -> DWORD
+GetLongPathNameW(LPCWSTR inlpszShortPath, LPWSTR lpszLongPath, DWORD incchBuffer) -> DWORD
+GetMailslotInfo(HANDLE inhMailslot, LPDWORD outlpMaxMessageSize, LPDWORD outlpNextSize, LPDWORD outlpMessageCount, LPDWORD outlpReadTimeout) -> BOOL
+GetModuleFileNameA(HMODULE inhModule, LPCH lpFilename, DWORD innSize) -> DWORD
+GetModuleFileNameW(HMODULE inhModule, LPWCH lpFilename, DWORD innSize) -> DWORD
+GetModuleHandleA(LPCSTR inlpModuleName) -> HMODULE
+GetModuleHandleExA(DWORD indwFlags, LPCSTR inlpModuleName, outHMODULE* phModule) -> BOOL
+GetModuleHandleExW(DWORD indwFlags, LPCWSTR inlpModuleName, outHMODULE* phModule) -> BOOL
+GetModuleHandleW(LPCWSTR inlpModuleName) -> HMODULE
+GetNamedPipeAttribute(HANDLE inPipe, PIPE_ATTRIBUTE_TYPE inAttributeType, PSTR inAttributeName, PVOID AttributeValue, PSIZE_T ioAttributeValueLength) -> BOOL
+GetNamedPipeClientComputerNameA(HANDLE inPipe, LPSTR ClientComputerName, ULONG inClientComputerNameLength) -> BOOL
+GetNamedPipeClientComputerNameW(HANDLE inPipe, LPWSTR ClientComputerName, ULONG inClientComputerNameLength) -> BOOL
+GetNamedPipeClientProcessId(HANDLE inPipe, PULONG outClientProcessId) -> BOOL
+GetNamedPipeClientSessionId(HANDLE inPipe, PULONG outClientSessionId) -> BOOL
+GetNamedPipeHandleStateA(HANDLE inhNamedPipe, LPDWORD outlpState, LPDWORD outlpCurInstances, LPDWORD outlpMaxCollectionCount, LPDWORD outlpCollectDataTimeout, LPSTR lpUserName, DWORD innMaxUserNameSize) -> BOOL
+GetNamedPipeHandleStateW(HANDLE inhNamedPipe, LPDWORD outlpState, LPDWORD outlpCurInstances, LPDWORD outlpMaxCollectionCount, LPDWORD outlpCollectDataTimeout, LPWSTR lpUserName, DWORD innMaxUserNameSize) -> BOOL
+GetNamedPipeInfo(HANDLE inhNamedPipe, LPDWORD outlpFlags, LPDWORD outlpOutBufferSize, LPDWORD outlpInBufferSize, LPDWORD outlpMaxInstances) -> BOOL
+GetNamedPipeServerProcessId(HANDLE inPipe, PULONG outServerProcessId) -> BOOL
+GetNamedPipeServerSessionId(HANDLE inPipe, PULONG outServerSessionId) -> BOOL
+GetNativeSystemInfo(LPSYSTEM_INFO outlpSystemInfo) -> VOID
+GetNumaAvailableMemoryNode(UCHAR inNode, PULONGLONG outAvailableBytes) -> BOOL
+GetNumaHighestNodeNumber(PULONG outHighestNodeNumber) -> BOOL
+GetNumaNodeProcessorMask(UCHAR inNode, PULONGLONG outProcessorMask) -> BOOL
+GetNumaProcessorNode(UCHAR inProcessor, PUCHAR outNodeNumber) -> BOOL
+GetNumaProximityNode(ULONG inProximityId, PUCHAR outNodeNumber) -> BOOL
+GetOverlappedResult(HANDLE inhFile, LPOVERLAPPED inlpOverlapped, LPDWORD outlpNumberOfBytesTransferred, BOOL inbWait) -> BOOL
+GetPhysicallyInstalledSystemMemory(PULONGLONG outTotalMemoryInKilobytes) -> BOOL
+GetPriorityClass(HANDLE inhProcess) -> DWORD
+GetPrivateProfileIntA(LPCSTR inlpAppName, LPCSTR inlpKeyName, INT innDefault, LPCSTR inlpFileName) -> UINT
+GetPrivateProfileIntW(LPCWSTR inlpAppName, LPCWSTR inlpKeyName, INT innDefault, LPCWSTR inlpFileName) -> UINT
+GetPrivateProfileSectionA(LPCSTR inlpAppName, LPSTR lpReturnedString, DWORD innSize, LPCSTR inlpFileName) -> DWORD
+GetPrivateProfileSectionNamesA(LPSTR lpszReturnBuffer, DWORD innSize, LPCSTR inlpFileName) -> DWORD
+GetPrivateProfileSectionNamesW(LPWSTR lpszReturnBuffer, DWORD innSize, LPCWSTR inlpFileName) -> DWORD
+GetPrivateProfileSectionW(LPCWSTR inlpAppName, LPWSTR lpReturnedString, DWORD innSize, LPCWSTR inlpFileName) -> DWORD
+GetPrivateProfileStringA(LPCSTR inlpAppName, LPCSTR inlpKeyName, LPCSTR inlpDefault, LPSTR lpReturnedString, DWORD innSize, LPCSTR inlpFileName) -> DWORD
+GetPrivateProfileStringW(LPCWSTR inlpAppName, LPCWSTR inlpKeyName, LPCWSTR inlpDefault, LPWSTR lpReturnedString, DWORD innSize, LPCWSTR inlpFileName) -> DWORD
+GetPrivateProfileStructA(LPCSTR inlpszSection, LPCSTR inlpszKey, LPVOID lpStruct, UINT inuSizeStruct, LPCSTR inszFile) -> BOOL
+GetPrivateProfileStructW(LPCWSTR inlpszSection, LPCWSTR inlpszKey, LPVOID lpStruct, UINT inuSizeStruct, LPCWSTR inszFile) -> BOOL
+GetProcAddress(HMODULE inhModule, LPCSTR inlpProcName) -> FARPROC
+GetProcessAffinityMask(HANDLE inhProcess, PDWORD_PTR outlpProcessAffinityMask, PDWORD_PTR outlpSystemAffinityMask) -> BOOL
+GetProcessDEPPolicy(HANDLE inhProcess, LPDWORD outlpFlags, PBOOL outlpPermanent) -> BOOL
+GetProcessHandleCount(HANDLE inhProcess, PDWORD outpdwHandleCount) -> BOOL
+GetProcessHeap(VOID ) -> HANDLE
+GetProcessHeaps(DWORD inNumberOfHeaps, PHANDLE ProcessHeaps) -> DWORD
+GetProcessId(HANDLE inProcess) -> DWORD
+GetProcessIdOfThread(HANDLE inThread) -> DWORD
+GetProcessIoCounters(HANDLE inhProcess, PIO_COUNTERS outlpIoCounters) -> BOOL
+GetProcessPriorityBoost(HANDLE inhProcess, PBOOL outpDisablePriorityBoost) -> BOOL
+GetProcessShutdownParameters(LPDWORD outlpdwLevel, LPDWORD outlpdwFlags) -> BOOL
+GetProcessTimes(HANDLE inhProcess, LPFILETIME outlpCreationTime, LPFILETIME outlpExitTime, LPFILETIME outlpKernelTime, LPFILETIME outlpUserTime) -> BOOL
+GetProcessVersion(DWORD inProcessId) -> DWORD
+GetProcessWorkingSetSize(HANDLE inhProcess, PSIZE_T outlpMinimumWorkingSetSize, PSIZE_T outlpMaximumWorkingSetSize) -> BOOL
+GetProcessWorkingSetSizeEx(HANDLE inhProcess, PSIZE_T outlpMinimumWorkingSetSize, PSIZE_T outlpMaximumWorkingSetSize, PDWORD outFlags) -> BOOL
+GetProductInfo(DWORD indwOSMajorVersion, DWORD indwOSMinorVersion, DWORD indwSpMajorVersion, DWORD indwSpMinorVersion, PDWORD outpdwReturnedProductType) -> BOOL
+GetProfileIntA(LPCSTR inlpAppName, LPCSTR inlpKeyName, INT innDefault) -> UINT
+GetProfileIntW(LPCWSTR inlpAppName, LPCWSTR inlpKeyName, INT innDefault) -> UINT
+GetProfileSectionA(LPCSTR inlpAppName, LPSTR lpReturnedString, DWORD innSize) -> DWORD
+GetProfileSectionW(LPCWSTR inlpAppName, LPWSTR lpReturnedString, DWORD innSize) -> DWORD
+GetProfileStringA(LPCSTR inlpAppName, LPCSTR inlpKeyName, LPCSTR inlpDefault, LPSTR lpReturnedString, DWORD innSize) -> DWORD
+GetProfileStringW(LPCWSTR inlpAppName, LPCWSTR inlpKeyName, LPCWSTR inlpDefault, LPWSTR lpReturnedString, DWORD innSize) -> DWORD
+GetQueuedCompletionStatus(HANDLE inCompletionPort, LPDWORD outlpNumberOfBytesTransferred, PULONG_PTR outlpCompletionKey, outLPOVERLAPPED *lpOverlapped, DWORD indwMilliseconds) -> BOOL
+GetQueuedCompletionStatusEx(HANDLE inCompletionPort, LPOVERLAPPED_ENTRY lpCompletionPortEntries, ULONG inulCount, PULONG outulNumEntriesRemoved, DWORD indwMilliseconds, BOOL infAlertable) -> BOOL
+GetShortPathNameA(LPCSTR inlpszLongPath, LPSTR lpszShortPath, DWORD incchBuffer) -> DWORD
+GetShortPathNameW(LPCWSTR inlpszLongPath, LPWSTR lpszShortPath, DWORD incchBuffer) -> DWORD
+GetStartupInfoA(LPSTARTUPINFOA outlpStartupInfo) -> VOID
+GetStartupInfoW(LPSTARTUPINFOW outlpStartupInfo) -> VOID
+GetStdHandle(DWORD innStdHandle) -> HANDLE
+GetSystemDEPPolicy(VOID) -> DEP_SYSTEM_POLICY_TYPE
+GetSystemDirectoryA(LPSTR lpBuffer, UINT inuSize) -> UINT
+GetSystemDirectoryW(LPWSTR lpBuffer, UINT inuSize) -> UINT
+GetSystemFileCacheSize(PSIZE_T outlpMinimumFileCacheSize, PSIZE_T outlpMaximumFileCacheSize, PDWORD outlpFlags) -> BOOL
+GetSystemFirmwareTable(DWORD inFirmwareTableProviderSignature, DWORD inFirmwareTableID, PVOID pFirmwareTableBuffer, DWORD inBufferSize) -> UINT
+GetSystemInfo(LPSYSTEM_INFO outlpSystemInfo) -> VOID
+GetSystemRegistryQuota(PDWORD outpdwQuotaAllowed, PDWORD outpdwQuotaUsed) -> BOOL
+GetSystemTime(LPSYSTEMTIME outlpSystemTime) -> VOID
+GetSystemTimeAdjustment(PDWORD outlpTimeAdjustment, PDWORD outlpTimeIncrement, PBOOL outlpTimeAdjustmentDisabled) -> BOOL
+GetSystemTimeAsFileTime(LPFILETIME outlpSystemTimeAsFileTime) -> VOID
+GetSystemWindowsDirectoryA(LPSTR lpBuffer, UINT inuSize) -> UINT
+GetSystemWindowsDirectoryW(LPWSTR lpBuffer, UINT inuSize) -> UINT
+GetSystemWow64DirectoryA(LPSTR lpBuffer, UINT inuSize) -> UINT
+GetSystemWow64DirectoryW(LPWSTR lpBuffer, UINT inuSize) -> UINT
+GetTapeParameters(HANDLE inhDevice, DWORD indwOperation, LPDWORD iolpdwSize, LPVOID lpTapeInformation) -> DWORD
+GetTapePosition(HANDLE inhDevice, DWORD indwPositionType, LPDWORD outlpdwPartition, LPDWORD outlpdwOffsetLow, LPDWORD outlpdwOffsetHigh) -> DWORD
+GetTapeStatus(HANDLE inhDevice) -> DWORD
+GetTempFileNameA(LPCSTR inlpPathName, LPCSTR inlpPrefixString, UINT inuUnique, LPSTR lpTempFileName) -> UINT
+GetTempFileNameW(LPCWSTR inlpPathName, LPCWSTR inlpPrefixString, UINT inuUnique, LPWSTR lpTempFileName) -> UINT
+GetTempPathA(DWORD innBufferLength, LPSTR lpBuffer) -> DWORD
+GetTempPathW(DWORD innBufferLength, LPWSTR lpBuffer) -> DWORD
+GetThreadContext(HANDLE inhThread, LPCONTEXT iolpContext) -> BOOL
+GetThreadIOPendingFlag(HANDLE inhThread, PBOOL outlpIOIsPending) -> BOOL
+GetThreadId(HANDLE inThread) -> DWORD
+GetThreadPriority(HANDLE inhThread) -> int
+GetThreadPriorityBoost(HANDLE inhThread, PBOOL outpDisablePriorityBoost) -> BOOL
+GetThreadSelectorEntry(HANDLE inhThread, DWORD indwSelector, LPLDT_ENTRY outlpSelectorEntry) -> BOOL
+GetThreadTimes(HANDLE inhThread, LPFILETIME outlpCreationTime, LPFILETIME outlpExitTime, LPFILETIME outlpKernelTime, LPFILETIME outlpUserTime) -> BOOL
+GetTickCount(VOID) -> DWORD
+GetTickCount64(VOID) -> ULONGLONG
+GetTimeZoneInformation(LPTIME_ZONE_INFORMATION outlpTimeZoneInformation) -> DWORD
+GetVersion(VOID) -> DWORD
+GetVersionExA(LPOSVERSIONINFOA iolpVersionInformation) -> BOOL
+GetVersionExW(LPOSVERSIONINFOW iolpVersionInformation) -> BOOL
+GetVolumeInformationA(LPCSTR inlpRootPathName, LPSTR lpVolumeNameBuffer, DWORD innVolumeNameSize, LPDWORD outlpVolumeSerialNumber, LPDWORD outlpMaximumComponentLength, LPDWORD outlpFileSystemFlags, LPSTR lpFileSystemNameBuffer, DWORD innFileSystemNameSize) -> BOOL
+GetVolumeInformationByHandleW(HANDLE inhFile, LPWSTR lpVolumeNameBuffer, DWORD innVolumeNameSize, LPDWORD outlpVolumeSerialNumber, LPDWORD outlpMaximumComponentLength, LPDWORD outlpFileSystemFlags, LPWSTR lpFileSystemNameBuffer, DWORD innFileSystemNameSize) -> BOOL
+GetVolumeInformationW(LPCWSTR inlpRootPathName, LPWSTR lpVolumeNameBuffer, DWORD innVolumeNameSize, LPDWORD outlpVolumeSerialNumber, LPDWORD outlpMaximumComponentLength, LPDWORD outlpFileSystemFlags, LPWSTR lpFileSystemNameBuffer, DWORD innFileSystemNameSize) -> BOOL
+GetVolumeNameForVolumeMountPointA(LPCSTR inlpszVolumeMountPoint, LPSTR lpszVolumeName, DWORD incchBufferLength) -> BOOL
+GetVolumeNameForVolumeMountPointW(LPCWSTR inlpszVolumeMountPoint, LPWSTR lpszVolumeName, DWORD incchBufferLength) -> BOOL
+GetVolumePathNameA(LPCSTR inlpszFileName, LPSTR lpszVolumePathName, DWORD incchBufferLength) -> BOOL
+GetVolumePathNameW(LPCWSTR inlpszFileName, LPWSTR lpszVolumePathName, DWORD incchBufferLength) -> BOOL
+GetVolumePathNamesForVolumeNameA(LPCSTR inlpszVolumeName, LPCH lpszVolumePathNames, DWORD incchBufferLength, PDWORD outlpcchReturnLength) -> BOOL
+GetVolumePathNamesForVolumeNameW(LPCWSTR inlpszVolumeName, LPWCH lpszVolumePathNames, DWORD incchBufferLength, PDWORD outlpcchReturnLength) -> BOOL
+GetWindowsDirectoryA(LPSTR lpBuffer, UINT inuSize) -> UINT
+GetWindowsDirectoryW(LPWSTR lpBuffer, UINT inuSize) -> UINT
+GetWriteWatch(DWORD indwFlags, PVOID inlpBaseAddress, SIZE_T indwRegionSize, PVOID *lpAddresses, ioULONG_PTR *lpdwCount, PULONG outlpdwGranularity) -> UINT
+GlobalAddAtomA(LPCSTR inlpString) -> ATOM
+GlobalAddAtomW(LPCWSTR inlpString) -> ATOM
+GlobalAlloc(UINT inuFlags, SIZE_T indwBytes) -> HGLOBAL
+GlobalCompact(DWORD indwMinFree) -> SIZE_T
+GlobalDeleteAtom(ATOM innAtom) -> ATOM
+GlobalFindAtomA(LPCSTR inlpString) -> ATOM
+GlobalFindAtomW(LPCWSTR inlpString) -> ATOM
+GlobalFix(HGLOBAL inhMem) -> VOID
+GlobalFlags(HGLOBAL inhMem) -> UINT
+GlobalFree(HGLOBAL hMem) -> HGLOBAL
+GlobalGetAtomNameA(ATOM innAtom, LPSTR lpBuffer, int innSize) -> UINT
+GlobalGetAtomNameW(ATOM innAtom, LPWSTR lpBuffer, int innSize) -> UINT
+GlobalHandle(LPCVOID inpMem) -> HGLOBAL
+GlobalLock(HGLOBAL inhMem) -> LPVOID
+GlobalMemoryStatus(LPMEMORYSTATUS outlpBuffer) -> VOID
+GlobalMemoryStatusEx(LPMEMORYSTATUSEX outlpBuffer) -> BOOL
+GlobalReAlloc(HGLOBAL inhMem, SIZE_T indwBytes, UINT inuFlags) -> HGLOBAL
+GlobalSize(HGLOBAL inhMem) -> SIZE_T
+GlobalUnWire(HGLOBAL inhMem) -> BOOL
+GlobalUnfix(HGLOBAL inhMem) -> VOID
+GlobalUnlock(HGLOBAL inhMem) -> BOOL
+GlobalWire(HGLOBAL inhMem) -> LPVOID
 HLOCAL WINAPI LocalAlloc(UINT inuFlags, SIZE_T inuBytes)
 HeapAlloc(HANDLE inhHeap, DWORD indwFlags, SIZE_T indwBytes)
 HeapCompact(HANDLE inhHeap, DWORD indwFlags)
@@ -513,298 +513,298 @@ LoadModule(LPCSTR inlpModuleName, LPVOID inlpParameterBlock)
 LoadResource(HMODULE inhModule, HRSRC inhResInfo)
 LocalCompact(UINT inuMinFree)
 LocalFileTimeToFileTime(CONST inFILETIME *lpLocalFileTime, LPFILETIME outlpFileTime)
-LocalFlags(HLOCAL inhMem)
-LocalFree(HLOCAL hMem)
-LocalHandle(LPCVOID inpMem)
-LocalLock(HLOCAL inhMem)
-LocalReAlloc(HLOCAL inhMem, SIZE_T inuBytes, UINT inuFlags)
-LocalShrink(HLOCAL inhMem, UINT incbNewSize)
-LocalSize(HLOCAL inhMem)
-LocalUnlock(HLOCAL inhMem)
-LockFile(HANDLE inhFile, DWORD indwFileOffsetLow, DWORD indwFileOffsetHigh, DWORD innNumberOfBytesToLockLow, DWORD innNumberOfBytesToLockHigh)
-LockFileEx(HANDLE inhFile, DWORD indwFlags, DWORD dwReserved, DWORD innNumberOfBytesToLockLow, DWORD innNumberOfBytesToLockHigh, LPOVERLAPPED iolpOverlapped)
-LockResource(HGLOBAL inhResData)
-MapUserPhysicalPages(PVOID inVirtualAddress, ULONG_PTR inNumberOfPages, PULONG_PTR PageArray)
-MapUserPhysicalPagesScatter(PVOID *VirtualAddresses, ULONG_PTR inNumberOfPages, PULONG_PTR PageArray)
-MoveFileA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName)
-MoveFileExA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName, DWORD indwFlags)
-MoveFileExW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName, DWORD indwFlags)
-MoveFileTransactedA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, DWORD indwFlags, HANDLE inhTransaction)
-MoveFileTransactedW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, DWORD indwFlags, HANDLE inhTransaction)
-MoveFileW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName)
-MoveFileWithProgressA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, DWORD indwFlags)
-MoveFileWithProgressW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, DWORD indwFlags)
-MulDiv(int innNumber, int innNumerator, int innDenominator)
-NeedCurrentDirectoryForExePathA(LPCSTR inExeName)
-NeedCurrentDirectoryForExePathW(LPCWSTR inExeName)
-OpenEventA(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCSTR inlpName)
-OpenEventW(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCWSTR inlpName)
-OpenFile(LPCSTR inlpFileName, LPOFSTRUCT iolpReOpenBuff, UINT inuStyle)
-OpenFileMappingA(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCSTR inlpName)
-OpenFileMappingW(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCWSTR inlpName)
-OpenJobObjectA(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCSTR inlpName)
-OpenJobObjectW(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCWSTR inlpName)
-OpenMutexA(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCSTR inlpName)
-OpenMutexW(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCWSTR inlpName)
-OpenPrivateNamespaceA(LPVOID inlpBoundaryDescriptor, LPCSTR inlpAliasPrefix)
-OpenPrivateNamespaceW(LPVOID inlpBoundaryDescriptor, LPCWSTR inlpAliasPrefix)
-OpenProcess(DWORD indwDesiredAccess, BOOL inbInheritHandle, DWORD indwProcessId)
-OpenSemaphoreA(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCSTR inlpName)
-OpenSemaphoreW(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCWSTR inlpName)
-OpenThread(DWORD indwDesiredAccess, BOOL inbInheritHandle, DWORD indwThreadId)
-OpenWaitableTimerA(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCSTR inlpTimerName)
-OpenWaitableTimerW(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCWSTR inlpTimerName)
-OutputDebugStringA(LPCSTR inlpOutputString)
-OutputDebugStringW(LPCWSTR inlpOutputString)
-PeekNamedPipe(HANDLE inhNamedPipe, LPVOID lpBuffer, DWORD innBufferSize, LPDWORD outlpBytesRead, LPDWORD outlpTotalBytesAvail, LPDWORD outlpBytesLeftThisMessage)
-PostQueuedCompletionStatus(HANDLE inCompletionPort, DWORD indwNumberOfBytesTransferred, ULONG_PTR indwCompletionKey, LPOVERLAPPED inlpOverlapped)
-PrepareTape(HANDLE inhDevice, DWORD indwOperation, BOOL inbImmediate)
-ProcessIdToSessionId(DWORD indwProcessId, outDWORD *pSessionId)
-PulseEvent(HANDLE inhEvent)
-PurgeComm(HANDLE inhFile, DWORD indwFlags)
-QueryActCtxSettingsW(DWORD indwFlags, HANDLE inhActCtx, PCWSTR insettingsNameSpace, PCWSTR insettingName, PWSTR pvBuffer, SIZE_T indwBuffer, outSIZE_T *pdwWrittenOrRequired)
-QueryActCtxW(DWORD indwFlags, HANDLE inhActCtx, PVOID inpvSubInstance, ULONG inulInfoClass, PVOID pvBuffer, SIZE_T incbBuffer, outSIZE_T *pcbWrittenOrRequired)
-QueryDepthSList(PSLIST_HEADER inListHead)
-QueryDosDeviceA(LPCSTR inlpDeviceName, LPSTR lpTargetPath, DWORD inucchMax)
-QueryDosDeviceW(LPCWSTR inlpDeviceName, LPWSTR lpTargetPath, DWORD inucchMax)
-QueryFullProcessImageNameA(HANDLE inhProcess, DWORD indwFlags, LPSTR lpExeName, PDWORD iolpdwSize)
-QueryFullProcessImageNameW(HANDLE inhProcess, DWORD indwFlags, LPWSTR lpExeName, PDWORD iolpdwSize)
-QueryIdleProcessorCycleTime(PULONG ioBufferLength, PULONG64 ProcessorIdleCycleTime)
-QueryInformationJobObject(HANDLE inhJob, JOBOBJECTINFOCLASS inJobObjectInformationClass, LPVOID lpJobObjectInformation, DWORD incbJobObjectInformationLength, LPDWORD outlpReturnLength)
-QueryMemoryResourceNotification(HANDLE inResourceNotificationHandle, PBOOL outResourceState)
-QueryPerformanceCounter(outLARGE_INTEGER *lpPerformanceCount)
-QueryPerformanceFrequency(outLARGE_INTEGER *lpFrequency)
-QueryProcessAffinityUpdateMode(HANDLE inhProcess, LPDWORD outlpdwFlags)
-QueryProcessCycleTime(HANDLE inProcessHandle, PULONG64 outCycleTime)
-QueryThreadCycleTime(HANDLE inThreadHandle, PULONG64 outCycleTime)
-QueueUserAPC(PAPCFUNC inpfnAPC, HANDLE inhThread, ULONG_PTR indwData)
-QueueUserWorkItem(LPTHREAD_START_ROUTINE inFunction, PVOID inContext, ULONG inFlags)
-RaiseException(DWORD indwExceptionCode, DWORD indwExceptionFlags, DWORD innNumberOfArguments, CONST ULONG_PTR *lpArguments)
-ReOpenFile(HANDLE inhOriginalFile, DWORD indwDesiredAccess, DWORD indwShareMode, DWORD indwFlagsAndAttributes)
-ReadDirectoryChangesW(HANDLE inhDirectory, LPVOID lpBuffer, DWORD innBufferLength, BOOL inbWatchSubtree, DWORD indwNotifyFilter, LPDWORD outlpBytesReturned, LPOVERLAPPED iolpOverlapped, LPOVERLAPPED_COMPLETION_ROUTINE inlpCompletionRoutine)
-ReadFile(HANDLE inhFile, LPVOID lpBuffer, DWORD innNumberOfBytesToRead, LPDWORD outlpNumberOfBytesRead, LPOVERLAPPED iolpOverlapped)
-ReadFileEx(HANDLE inhFile, LPVOID lpBuffer, DWORD innNumberOfBytesToRead, LPOVERLAPPED iolpOverlapped, LPOVERLAPPED_COMPLETION_ROUTINE inlpCompletionRoutine)
-ReadFileScatter(HANDLE inhFile, FILE_SEGMENT_ELEMENT inaSegmentArray[], DWORD innNumberOfBytesToRead, LPDWORD lpReserved, LPOVERLAPPED iolpOverlapped)
-ReadProcessMemory(HANDLE inhProcess, LPCVOID inlpBaseAddress, LPVOID lpBuffer, SIZE_T innSize, outSIZE_T * lpNumberOfBytesRead)
-RegisterApplicationRecoveryCallback(APPLICATION_RECOVERY_CALLBACK inpRecoveyCallback, PVOID inpvParameter, DWORD indwPingInterval, DWORD indwFlags)
-RegisterApplicationRestart(PCWSTR inpwzCommandline, DWORD indwFlags)
-RegisterWaitForSingleObject(PHANDLE phNewWaitObject, HANDLE inhObject, WAITORTIMERCALLBACK inCallback, PVOID inContext, ULONG indwMilliseconds, ULONG indwFlags)
-RegisterWaitForSingleObjectEx(HANDLE inhObject, WAITORTIMERCALLBACK inCallback, PVOID inContext, ULONG indwMilliseconds, ULONG indwFlags)
-ReleaseActCtx(HANDLE iohActCtx)
-ReleaseMutex(HANDLE inhMutex)
-ReleaseMutexWhenCallbackReturns(PTP_CALLBACK_INSTANCE iopci, HANDLE inmut)
-ReleaseSRWLockExclusive(PSRWLOCK ioSRWLock)
-ReleaseSRWLockShared(PSRWLOCK ioSRWLock)
-ReleaseSemaphore(HANDLE inhSemaphore, LONG inlReleaseCount, LPLONG outlpPreviousCount)
-ReleaseSemaphoreWhenCallbackReturns(PTP_CALLBACK_INSTANCE iopci, HANDLE insem, DWORD increl)
-RemoveDirectoryA(LPCSTR inlpPathName)
-RemoveDirectoryTransactedA(LPCSTR inlpPathName, HANDLE inhTransaction)
-RemoveDirectoryTransactedW(LPCWSTR inlpPathName, HANDLE inhTransaction)
-RemoveDirectoryW(LPCWSTR inlpPathName)
-RemoveSecureMemoryCacheCallback(PSECURE_MEMORY_CACHE_CALLBACK inpfnCallBack)
-RemoveVectoredContinueHandler(PVOID inHandle)
-RemoveVectoredExceptionHandler(PVOID inHandle)
-ReplaceFileA(LPCSTR inlpReplacedFileName, LPCSTR inlpReplacementFileName, LPCSTR inlpBackupFileName, DWORD indwReplaceFlags, LPVOID lpExclude, LPVOID lpReserved)
-ReplaceFileW(LPCWSTR inlpReplacedFileName, LPCWSTR inlpReplacementFileName, LPCWSTR inlpBackupFileName, DWORD indwReplaceFlags, LPVOID lpExclude, LPVOID lpReserved)
-ReplacePartitionUnit(PWSTR inTargetPartition, PWSTR inSparePartition, ULONG inFlags)
-RequestDeviceWakeup(HANDLE inhDevice)
-RequestWakeupLatency(LATENCY_TIME inlatency)
-ResetEvent(HANDLE inhEvent)
-ResetWriteWatch(LPVOID inlpBaseAddress, SIZE_T indwRegionSize)
-RestoreLastError(DWORD indwErrCode)
-ResumeThread(HANDLE inhThread)
-SearchPathA(LPCSTR inlpPath, LPCSTR inlpFileName, LPCSTR inlpExtension, DWORD innBufferLength, LPSTR lpBuffer, outLPSTR *lpFilePart)
-SearchPathW(LPCWSTR inlpPath, LPCWSTR inlpFileName, LPCWSTR inlpExtension, DWORD innBufferLength, LPWSTR lpBuffer, outLPWSTR *lpFilePart)
-SetCommBreak(HANDLE inhFile)
-SetCommConfig(HANDLE inhCommDev, LPCOMMCONFIG lpCC, DWORD indwSize)
-SetCommMask(HANDLE inhFile, DWORD indwEvtMask)
-SetCommState(HANDLE inhFile, LPDCB inlpDCB)
-SetCommTimeouts(HANDLE inhFile, LPCOMMTIMEOUTS inlpCommTimeouts)
-SetComputerNameA(LPCSTR inlpComputerName)
-SetComputerNameExA(COMPUTER_NAME_FORMAT inNameType, LPCSTR inlpBuffer)
-SetComputerNameExW(COMPUTER_NAME_FORMAT inNameType, LPCWSTR inlpBuffer)
-SetComputerNameW(LPCWSTR inlpComputerName)
-SetCriticalSectionSpinCount(LPCRITICAL_SECTION iolpCriticalSection, DWORD indwSpinCount)
-SetCurrentDirectoryA(LPCSTR inlpPathName)
-SetCurrentDirectoryW(LPCWSTR inlpPathName)
-SetDefaultCommConfigA(LPCSTR inlpszName, LPCOMMCONFIG lpCC, DWORD indwSize)
-SetDefaultCommConfigW(LPCWSTR inlpszName, LPCOMMCONFIG lpCC, DWORD indwSize)
-SetDllDirectoryA(LPCSTR inlpPathName)
-SetDllDirectoryW(LPCWSTR inlpPathName)
-SetDynamicTimeZoneInformation(CONST inDYNAMIC_TIME_ZONE_INFORMATION *lpTimeZoneInformation)
-SetEndOfFile(HANDLE inhFile)
-SetEnvironmentStringsA(LPCH inNewEnvironment)
-SetEnvironmentStringsW(LPWCH inNewEnvironment)
-SetEnvironmentVariableA(LPCSTR inlpName, LPCSTR inlpValue)
-SetEnvironmentVariableW(LPCWSTR inlpName, LPCWSTR inlpValue)
-SetErrorMode(UINT inuMode)
-SetEvent(HANDLE inhEvent)
-SetEventWhenCallbackReturns(PTP_CALLBACK_INSTANCE iopci, HANDLE inevt)
-SetFileApisToANSI(VOID )
-SetFileApisToOEM(VOID )
-SetFileAttributesA(LPCSTR inlpFileName, DWORD indwFileAttributes)
-SetFileAttributesTransactedA(LPCSTR inlpFileName, DWORD indwFileAttributes, HANDLE inhTransaction)
-SetFileAttributesTransactedW(LPCWSTR inlpFileName, DWORD indwFileAttributes, HANDLE inhTransaction)
-SetFileAttributesW(LPCWSTR inlpFileName, DWORD indwFileAttributes)
-SetFileBandwidthReservation(HANDLE inhFile, DWORD innPeriodMilliseconds, DWORD innBytesPerPeriod, BOOL inbDiscardable, LPDWORD outlpTransferSize, LPDWORD outlpNumOutstandingRequests)
-SetFileCompletionNotificationModes(HANDLE inFileHandle, UCHAR inFlags)
-SetFileIoOverlappedRange(HANDLE inFileHandle, PUCHAR inOverlappedRangeStart, ULONG inLength)
-SetFilePointer(HANDLE inhFile, LONG inlDistanceToMove, PLONG iolpDistanceToMoveHigh, DWORD indwMoveMethod)
-SetFilePointerEx(HANDLE inhFile, LARGE_INTEGER inliDistanceToMove, PLARGE_INTEGER outlpNewFilePointer, DWORD indwMoveMethod)
-SetFileShortNameA(HANDLE inhFile, LPCSTR inlpShortName)
-SetFileShortNameW(HANDLE inhFile, LPCWSTR inlpShortName)
-SetFileTime(HANDLE inhFile, CONST inFILETIME *lpCreationTime, CONST inFILETIME *lpLastAccessTime, CONST inFILETIME *lpLastWriteTime)
-SetFileValidData(HANDLE inhFile, LONGLONG inValidDataLength)
-SetFirmwareEnvironmentVariableA(LPCSTR inlpName, LPCSTR inlpGuid, PVOID pValue, DWORD innSize)
-SetFirmwareEnvironmentVariableW(LPCWSTR inlpName, LPCWSTR inlpGuid, PVOID pValue, DWORD innSize)
-SetHandleCount(UINT inuNumber)
-SetHandleInformation(HANDLE inhObject, DWORD indwMask, DWORD indwFlags)
-SetInformationJobObject(HANDLE inhJob, JOBOBJECTINFOCLASS inJobObjectInformationClass, LPVOID lpJobObjectInformation, DWORD incbJobObjectInformationLength)
-SetLastError(DWORD indwErrCode)
-SetLocalTime(CONST inSYSTEMTIME *lpSystemTime)
-SetMailslotInfo(HANDLE inhMailslot, DWORD inlReadTimeout)
-SetMessageWaitingIndicator(HANDLE inhMsgIndicator, ULONG inulMsgCount)
-SetNamedPipeAttribute(HANDLE inPipe, PIPE_ATTRIBUTE_TYPE inAttributeType, PSTR inAttributeName, PVOID inAttributeValue, SIZE_T inAttributeValueLength)
-SetNamedPipeHandleState(HANDLE inhNamedPipe, LPDWORD inlpMode, LPDWORD inlpMaxCollectionCount, LPDWORD inlpCollectDataTimeout)
-SetPriorityClass(HANDLE inhProcess, DWORD indwPriorityClass)
-SetProcessAffinityMask(HANDLE inhProcess, DWORD_PTR indwProcessAffinityMask)
-SetProcessAffinityUpdateMode(HANDLE inhProcess, DWORD indwFlags)
-SetProcessDEPPolicy(DWORD indwFlags)
-SetProcessPriorityBoost(HANDLE inhProcess, BOOL inbDisablePriorityBoost)
-SetProcessShutdownParameters(DWORD indwLevel, DWORD indwFlags)
-SetProcessWorkingSetSize(HANDLE inhProcess, SIZE_T indwMinimumWorkingSetSize, SIZE_T indwMaximumWorkingSetSize)
-SetProcessWorkingSetSizeEx(HANDLE inhProcess, SIZE_T indwMinimumWorkingSetSize, SIZE_T indwMaximumWorkingSetSize, DWORD inFlags)
-SetStdHandle(DWORD innStdHandle, HANDLE inhHandle)
-SetStdHandleEx(DWORD innStdHandle, HANDLE inhHandle, PHANDLE outphPrevValue)
-SetSystemFileCacheSize(SIZE_T inMinimumFileCacheSize, SIZE_T inMaximumFileCacheSize, DWORD inFlags)
-SetSystemTime(CONST inSYSTEMTIME *lpSystemTime)
-SetSystemTimeAdjustment(DWORD indwTimeAdjustment, BOOL inbTimeAdjustmentDisabled)
-SetTapeParameters(HANDLE inhDevice, DWORD indwOperation, LPVOID inlpTapeInformation)
-SetTapePosition(HANDLE inhDevice, DWORD indwPositionMethod, DWORD indwPartition, DWORD indwOffsetLow, DWORD indwOffsetHigh, BOOL inbImmediate)
-SetThreadAffinityMask(HANDLE inhThread, DWORD_PTR indwThreadAffinityMask)
-SetThreadContext(HANDLE inhThread, CONST inCONTEXT *lpContext)
-SetThreadExecutionState(EXECUTION_STATE inesFlags)
-SetThreadIdealProcessor(HANDLE inhThread, DWORD indwIdealProcessor)
-SetThreadPriority(HANDLE inhThread, int innPriority)
-SetThreadPriorityBoost(HANDLE inhThread, BOOL inbDisablePriorityBoost)
-SetThreadStackGuarantee(PULONG ioStackSizeInBytes)
-SetThreadpoolThreadMaximum(PTP_POOL ioptpp, DWORD incthrdMost)
-SetThreadpoolThreadMinimum(PTP_POOL ioptpp, DWORD incthrdMic)
-SetThreadpoolTimer(PTP_TIMER iopti, PFILETIME inpftDueTime, DWORD inmsPeriod, DWORD inmsWindowLength)
-SetThreadpoolWait(PTP_WAIT iopwa, inHANDLE h, PFILETIME inpftTimeout)
-SetTimeZoneInformation(CONST inTIME_ZONE_INFORMATION *lpTimeZoneInformation)
-SetTimerQueueTimer(HANDLE inTimerQueue, WAITORTIMERCALLBACK inCallback, PVOID inParameter, DWORD inDueTime, DWORD inPeriod, BOOL inPreferIo)
-SetUnhandledExceptionFilter(LPTOP_LEVEL_EXCEPTION_FILTER inlpTopLevelExceptionFilter)
-SetVolumeLabelA(LPCSTR inlpRootPathName, LPCSTR inlpVolumeName)
-SetVolumeLabelW(LPCWSTR inlpRootPathName, LPCWSTR inlpVolumeName)
-SetVolumeMountPointA(LPCSTR inlpszVolumeMountPoint, LPCSTR inlpszVolumeName)
-SetVolumeMountPointW(LPCWSTR inlpszVolumeMountPoint, LPCWSTR inlpszVolumeName)
-SetWaitableTimer(HANDLE inhTimer, const inLARGE_INTEGER *lpDueTime, LONG inlPeriod, PTIMERAPCROUTINE inpfnCompletionRoutine, LPVOID inlpArgToCompletionRoutine, BOOL infResume)
-SetupComm(HANDLE inhFile, DWORD indwInQueue, DWORD indwOutQueue)
-SignalObjectAndWait(HANDLE inhObjectToSignal, HANDLE inhObjectToWaitOn, DWORD indwMilliseconds, BOOL inbAlertable)
-SizeofResource(HMODULE inhModule, HRSRC inhResInfo)
-Sleep(DWORD indwMilliseconds)
-SleepConditionVariableCS(PCONDITION_VARIABLE ioConditionVariable, PCRITICAL_SECTION ioCriticalSection, DWORD indwMilliseconds)
-SleepConditionVariableSRW(PCONDITION_VARIABLE ioConditionVariable, PSRWLOCK ioSRWLock, DWORD indwMilliseconds, ULONG inFlags)
-SleepEx(DWORD indwMilliseconds, BOOL inbAlertable)
-StartThreadpoolIo(PTP_IO iopio)
-SubmitThreadpoolWork(PTP_WORK iopwk)
-SuspendThread(HANDLE inhThread)
-SwitchToFiber(LPVOID inlpFiber)
-SwitchToThread(VOID)
-SystemTimeToFileTime(CONST inSYSTEMTIME *lpSystemTime, LPFILETIME outlpFileTime)
-SystemTimeToTzSpecificLocalTime(CONST inTIME_ZONE_INFORMATION *lpTimeZoneInformation, CONST inSYSTEMTIME *lpUniversalTime, LPSYSTEMTIME outlpLocalTime)
-TerminateJobObject(HANDLE inhJob, UINT inuExitCode)
-TerminateProcess(HANDLE inhProcess, UINT inuExitCode)
-TerminateThread(HANDLE inhThread, DWORD indwExitCode)
-TlsAlloc(VOID)
-TlsFree(DWORD indwTlsIndex)
-TlsGetValue(DWORD indwTlsIndex)
-TlsSetValue(DWORD indwTlsIndex, LPVOID inlpTlsValue)
-TransactNamedPipe(HANDLE inhNamedPipe, LPVOID lpInBuffer, DWORD innInBufferSize, LPVOID lpOutBuffer, DWORD innOutBufferSize, LPDWORD outlpBytesRead, LPOVERLAPPED iolpOverlapped)
-TransmitCommChar(HANDLE inhFile, char incChar)
-TryEnterCriticalSection(LPCRITICAL_SECTION iolpCriticalSection)
-TrySubmitThreadpoolCallback(PTP_SIMPLE_CALLBACK inpfns, PVOID iopv, PTP_CALLBACK_ENVIRON inpcbe)
-TzSpecificLocalTimeToSystemTime(CONST inTIME_ZONE_INFORMATION *lpTimeZoneInformation, CONST inSYSTEMTIME *lpLocalTime, LPSYSTEMTIME outlpUniversalTime)
-UnhandledExceptionFilter(struct in_EXCEPTION_POINTERS *ExceptionInfo)
-UnlockFile(HANDLE inhFile, DWORD indwFileOffsetLow, DWORD indwFileOffsetHigh, DWORD innNumberOfBytesToUnlockLow, DWORD innNumberOfBytesToUnlockHigh)
-UnlockFileEx(HANDLE inhFile, DWORD dwReserved, DWORD innNumberOfBytesToUnlockLow, DWORD innNumberOfBytesToUnlockHigh, LPOVERLAPPED iolpOverlapped)
-UnmapViewOfFile(LPCVOID inlpBaseAddress)
-UnregisterApplicationRecoveryCallback(void)
-UnregisterApplicationRestart(void)
-UnregisterWait(HANDLE inWaitHandle)
-UnregisterWaitEx(HANDLE inWaitHandle, HANDLE inCompletionEvent)
-UpdateProcThreadAttribute(LPPROC_THREAD_ATTRIBUTE_LIST iolpAttributeList, DWORD indwFlags, DWORD_PTR inAttribute, PVOID lpValue, SIZE_T incbSize, PVOID lpPreviousValue, PSIZE_T inlpReturnSize)
-UpdateResourceA(HANDLE inhUpdate, LPCSTR inlpType, LPCSTR inlpName, WORD inwLanguage, LPVOID lpData, DWORD incb)
-UpdateResourceW(HANDLE inhUpdate, LPCWSTR inlpType, LPCWSTR inlpName, WORD inwLanguage, LPVOID lpData, DWORD incb)
-VerifyVersionInfoA(LPOSVERSIONINFOEXA iolpVersionInformation, DWORD indwTypeMask, DWORDLONG indwlConditionMask)
-VerifyVersionInfoW(LPOSVERSIONINFOEXW iolpVersionInformation, DWORD indwTypeMask, DWORDLONG indwlConditionMask)
-VirtualAlloc(LPVOID inlpAddress, SIZE_T indwSize, DWORD inflAllocationType, DWORD inflProtect)
-VirtualAllocEx(HANDLE inhProcess, LPVOID inlpAddress, SIZE_T indwSize, DWORD inflAllocationType, DWORD inflProtect)
-VirtualAllocExNuma(HANDLE inhProcess, LPVOID inlpAddress, SIZE_T indwSize, DWORD inflAllocationType, DWORD inflProtect, DWORD innndPreferred)
-VirtualFree(LPVOID inlpAddress, SIZE_T indwSize, DWORD indwFreeType)
-VirtualFreeEx(HANDLE inhProcess, LPVOID inlpAddress, SIZE_T indwSize, DWORD indwFreeType)
-VirtualLock(LPVOID inlpAddress, SIZE_T indwSize)
-VirtualProtect(LPVOID inlpAddress, SIZE_T indwSize, DWORD inflNewProtect, PDWORD outlpflOldProtect)
-VirtualProtectEx(HANDLE inhProcess, LPVOID inlpAddress, SIZE_T indwSize, DWORD inflNewProtect, PDWORD outlpflOldProtect)
-VirtualQuery(LPCVOID inlpAddress, PMEMORY_BASIC_INFORMATION lpBuffer, SIZE_T indwLength)
-VirtualQueryEx(HANDLE inhProcess, LPCVOID inlpAddress, PMEMORY_BASIC_INFORMATION lpBuffer, SIZE_T indwLength)
-VirtualUnlock(LPVOID inlpAddress, SIZE_T indwSize)
-WTSGetActiveConsoleSessionId(VOID)
-WaitCommEvent(HANDLE inhFile, LPDWORD iolpEvtMask, LPOVERLAPPED iolpOverlapped)
-WaitForDebugEvent(LPDEBUG_EVENT inlpDebugEvent, DWORD indwMilliseconds)
-WaitForMultipleObjects(DWORD innCount, CONST HANDLE *lpHandles, BOOL inbWaitAll, DWORD indwMilliseconds)
-WaitForMultipleObjectsEx(DWORD innCount, CONST HANDLE *lpHandles, BOOL inbWaitAll, DWORD indwMilliseconds, BOOL inbAlertable)
-WaitForSingleObject(HANDLE inhHandle, DWORD indwMilliseconds)
-WaitForSingleObjectEx(HANDLE inhHandle, DWORD indwMilliseconds, BOOL inbAlertable)
-WaitForThreadpoolIoCallbacks(PTP_IO iopio, BOOL infCancelPendingCallbacks)
-WaitForThreadpoolTimerCallbacks(PTP_TIMER iopti, BOOL infCancelPendingCallbacks)
-WaitForThreadpoolWaitCallbacks(PTP_WAIT iopwa, BOOL infCancelPendingCallbacks)
-WaitForThreadpoolWorkCallbacks(PTP_WORK iopwk, BOOL infCancelPendingCallbacks)
-WaitNamedPipeA(LPCSTR inlpNamedPipeName, DWORD innTimeOut)
-WaitNamedPipeW(LPCWSTR inlpNamedPipeName, DWORD innTimeOut)
-WakeAllConditionVariable(PCONDITION_VARIABLE ioConditionVariable)
-WakeConditionVariable(PCONDITION_VARIABLE ioConditionVariable)
-WinExec(LPCSTR inlpCmdLine, UINT inuCmdShow)
-Wow64DisableWow64FsRedirection(outPVOID *OldValue)
-Wow64EnableWow64FsRedirection(BOOLEAN inWow64FsEnableRedirection)
-Wow64GetThreadContext(HANDLE inhThread, PWOW64_CONTEXT iolpContext)
-Wow64RevertWow64FsRedirection(PVOID inOlValue)
-Wow64SetThreadContext(HANDLE inhThread, CONST inWOW64_CONTEXT *lpContext)
-Wow64SuspendThread(HANDLE inhThread)
-WriteFile(HANDLE inhFile, LPCVOID lpBuffer, DWORD innNumberOfBytesToWrite, LPDWORD outlpNumberOfBytesWritten, LPOVERLAPPED iolpOverlapped)
-WriteFileEx(HANDLE inhFile, LPCVOID lpBuffer, DWORD innNumberOfBytesToWrite, LPOVERLAPPED iolpOverlapped, LPOVERLAPPED_COMPLETION_ROUTINE inlpCompletionRoutine)
-WriteFileGather(HANDLE inhFile, FILE_SEGMENT_ELEMENT inaSegmentArray[], DWORD innNumberOfBytesToWrite, LPDWORD lpReserved, LPOVERLAPPED iolpOverlapped)
-WritePrivateProfileSectionA(LPCSTR inlpAppName, LPCSTR inlpString, LPCSTR inlpFileName)
-WritePrivateProfileSectionW(LPCWSTR inlpAppName, LPCWSTR inlpString, LPCWSTR inlpFileName)
-WritePrivateProfileStringA(LPCSTR inlpAppName, LPCSTR inlpKeyName, LPCSTR inlpString, LPCSTR inlpFileName)
-WritePrivateProfileStringW(LPCWSTR inlpAppName, LPCWSTR inlpKeyName, LPCWSTR inlpString, LPCWSTR inlpFileName)
-WritePrivateProfileStructA(LPCSTR inlpszSection, LPCSTR inlpszKey, LPVOID lpStruct, UINT inuSizeStruct, LPCSTR inszFile)
-WritePrivateProfileStructW(LPCWSTR inlpszSection, LPCWSTR inlpszKey, LPVOID lpStruct, UINT inuSizeStruct, LPCWSTR inszFile)
-WriteProcessMemory(HANDLE inhProcess, LPVOID inlpBaseAddress, LPCVOID lpBuffer, SIZE_T innSize, outSIZE_T * lpNumberOfBytesWritten)
-WriteProfileSectionA(LPCSTR inlpAppName, LPCSTR inlpString)
-WriteProfileSectionW(LPCWSTR inlpAppName, LPCWSTR inlpString)
-WriteProfileStringA(LPCSTR inlpAppName, LPCSTR inlpKeyName, LPCSTR inlpString)
-WriteProfileStringW(LPCWSTR inlpAppName, LPCWSTR inlpKeyName, LPCWSTR inlpString)
-WriteTapemark(HANDLE inhDevice, DWORD indwTapemarkType, DWORD indwTapemarkCount, BOOL inbImmediate)
-ZombifyActCtx(HANDLE iohActCtx)
-_hread(HFILE inhFile, LPVOID lpBuffer, long inlBytes)
-_hwrite(HFILE inhFile, LPCCH lpBuffer, long inlBytes)
-_lclose(HFILE inhFile)
-_lcreat(LPCSTR inlpPathName, int iniAttribute)
-_llseek(HFILE inhFile, LONG inlOffset, int iniOrigin)
-_lopen(LPCSTR inlpPathName, int iniReadWrite)
-_lread(HFILE inhFile, LPVOID lpBuffer, UINT inuBytes)
-_lwrite(HFILE inhFile, LPCCH lpBuffer, UINT inuBytes)
-lstrcatA(LPSTR iolpString1, LPCSTR inlpString2)
-lstrcatW(LPWSTR iolpString1, LPCWSTR inlpString2)
-lstrcmpA(LPCSTR inlpString1, LPCSTR inlpString2)
-lstrcmpW(LPCWSTR inlpString1, LPCWSTR inlpString2)
-lstrcmpiA(LPCSTR inlpString1, LPCSTR inlpString2)
-lstrcmpiW(LPCWSTR inlpString1, LPCWSTR inlpString2)
-lstrcpyA(LPSTR outlpString1, LPCSTR inlpString2)
-lstrcpyW(LPWSTR outlpString1, LPCWSTR inlpString2)
-lstrcpynA(LPSTR lpString1, LPCSTR inlpString2, int iniMaxLength)
-lstrcpynW(LPWSTR lpString1, LPCWSTR inlpString2, int iniMaxLength)
-lstrlenA(LPCSTR inlpString)
-lstrlenW(LPCWSTR inlpString)
+LocalFlags(HLOCAL inhMem) -> WINBASEAPI
+LocalFree(HLOCAL hMem) -> HLOCAL
+LocalHandle(LPCVOID inpMem) -> HLOCAL
+LocalLock(HLOCAL inhMem) -> LPVOID
+LocalReAlloc(HLOCAL inhMem, SIZE_T inuBytes, UINT inuFlags) -> HLOCAL
+LocalShrink(HLOCAL inhMem, UINT incbNewSize) -> SIZE_T
+LocalSize(HLOCAL inhMem) -> SIZE_T
+LocalUnlock(HLOCAL inhMem) -> BOOL
+LockFile(HANDLE inhFile, DWORD indwFileOffsetLow, DWORD indwFileOffsetHigh, DWORD innNumberOfBytesToLockLow, DWORD innNumberOfBytesToLockHigh) -> BOOL
+LockFileEx(HANDLE inhFile, DWORD indwFlags, DWORD dwReserved, DWORD innNumberOfBytesToLockLow, DWORD innNumberOfBytesToLockHigh, LPOVERLAPPED iolpOverlapped) -> BOOL
+LockResource(HGLOBAL inhResData) -> LPVOID
+MapUserPhysicalPages(PVOID inVirtualAddress, ULONG_PTR inNumberOfPages, PULONG_PTR PageArray) -> BOOL
+MapUserPhysicalPagesScatter(PVOID *VirtualAddresses, ULONG_PTR inNumberOfPages, PULONG_PTR PageArray) -> BOOL
+MoveFileA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName) -> BOOL
+MoveFileExA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName, DWORD indwFlags) -> BOOL
+MoveFileExW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName, DWORD indwFlags) -> BOOL
+MoveFileTransactedA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, DWORD indwFlags, HANDLE inhTransaction) -> BOOL
+MoveFileTransactedW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, DWORD indwFlags, HANDLE inhTransaction) -> BOOL
+MoveFileW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName) -> BOOL
+MoveFileWithProgressA(LPCSTR inlpExistingFileName, LPCSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, DWORD indwFlags) -> BOOL
+MoveFileWithProgressW(LPCWSTR inlpExistingFileName, LPCWSTR inlpNewFileName, LPPROGRESS_ROUTINE inlpProgressRoutine, LPVOID inlpData, DWORD indwFlags) -> BOOL
+MulDiv(int innNumber, int innNumerator, int innDenominator) -> int
+NeedCurrentDirectoryForExePathA(LPCSTR inExeName) -> BOOL
+NeedCurrentDirectoryForExePathW(LPCWSTR inExeName) -> BOOL
+OpenEventA(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCSTR inlpName) -> HANDLE
+OpenEventW(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCWSTR inlpName) -> HANDLE
+OpenFile(LPCSTR inlpFileName, LPOFSTRUCT iolpReOpenBuff, UINT inuStyle) -> HFILE
+OpenFileMappingA(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCSTR inlpName) -> HANDLE
+OpenFileMappingW(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCWSTR inlpName) -> HANDLE
+OpenJobObjectA(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCSTR inlpName) -> HANDLE
+OpenJobObjectW(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCWSTR inlpName) -> HANDLE
+OpenMutexA(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCSTR inlpName) -> HANDLE
+OpenMutexW(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCWSTR inlpName) -> HANDLE
+OpenPrivateNamespaceA(LPVOID inlpBoundaryDescriptor, LPCSTR inlpAliasPrefix) -> HANDLE
+OpenPrivateNamespaceW(LPVOID inlpBoundaryDescriptor, LPCWSTR inlpAliasPrefix) -> HANDLE
+OpenProcess(DWORD indwDesiredAccess, BOOL inbInheritHandle, DWORD indwProcessId) -> HANDLE
+OpenSemaphoreA(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCSTR inlpName) -> HANDLE
+OpenSemaphoreW(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCWSTR inlpName) -> HANDLE
+OpenThread(DWORD indwDesiredAccess, BOOL inbInheritHandle, DWORD indwThreadId) -> HANDLE
+OpenWaitableTimerA(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCSTR inlpTimerName) -> HANDLE
+OpenWaitableTimerW(DWORD indwDesiredAccess, BOOL inbInheritHandle, LPCWSTR inlpTimerName) -> HANDLE
+OutputDebugStringA(LPCSTR inlpOutputString) -> VOID
+OutputDebugStringW(LPCWSTR inlpOutputString) -> VOID
+PeekNamedPipe(HANDLE inhNamedPipe, LPVOID lpBuffer, DWORD innBufferSize, LPDWORD outlpBytesRead, LPDWORD outlpTotalBytesAvail, LPDWORD outlpBytesLeftThisMessage) -> BOOL
+PostQueuedCompletionStatus(HANDLE inCompletionPort, DWORD indwNumberOfBytesTransferred, ULONG_PTR indwCompletionKey, LPOVERLAPPED inlpOverlapped) -> BOOL
+PrepareTape(HANDLE inhDevice, DWORD indwOperation, BOOL inbImmediate) -> DWORD
+ProcessIdToSessionId(DWORD indwProcessId, outDWORD *pSessionId) -> BOOL
+PulseEvent(HANDLE inhEvent) -> BOOL
+PurgeComm(HANDLE inhFile, DWORD indwFlags) -> BOOL
+QueryActCtxSettingsW(DWORD indwFlags, HANDLE inhActCtx, PCWSTR insettingsNameSpace, PCWSTR insettingName, PWSTR pvBuffer, SIZE_T indwBuffer, outSIZE_T *pdwWrittenOrRequired) -> BOOL
+QueryActCtxW(DWORD indwFlags, HANDLE inhActCtx, PVOID inpvSubInstance, ULONG inulInfoClass, PVOID pvBuffer, SIZE_T incbBuffer, outSIZE_T *pcbWrittenOrRequired) -> BOOL
+QueryDepthSList(PSLIST_HEADER inListHead) -> USHORT
+QueryDosDeviceA(LPCSTR inlpDeviceName, LPSTR lpTargetPath, DWORD inucchMax) -> DWORD
+QueryDosDeviceW(LPCWSTR inlpDeviceName, LPWSTR lpTargetPath, DWORD inucchMax) -> DWORD
+QueryFullProcessImageNameA(HANDLE inhProcess, DWORD indwFlags, LPSTR lpExeName, PDWORD iolpdwSize) -> BOOL
+QueryFullProcessImageNameW(HANDLE inhProcess, DWORD indwFlags, LPWSTR lpExeName, PDWORD iolpdwSize) -> BOOL
+QueryIdleProcessorCycleTime(PULONG ioBufferLength, PULONG64 ProcessorIdleCycleTime) -> BOOL
+QueryInformationJobObject(HANDLE inhJob, JOBOBJECTINFOCLASS inJobObjectInformationClass, LPVOID lpJobObjectInformation, DWORD incbJobObjectInformationLength, LPDWORD outlpReturnLength) -> BOOL
+QueryMemoryResourceNotification(HANDLE inResourceNotificationHandle, PBOOL outResourceState) -> BOOL
+QueryPerformanceCounter(outLARGE_INTEGER *lpPerformanceCount) -> BOOL
+QueryPerformanceFrequency(outLARGE_INTEGER *lpFrequency) -> BOOL
+QueryProcessAffinityUpdateMode(HANDLE inhProcess, LPDWORD outlpdwFlags) -> BOOL
+QueryProcessCycleTime(HANDLE inProcessHandle, PULONG64 outCycleTime) -> BOOL
+QueryThreadCycleTime(HANDLE inThreadHandle, PULONG64 outCycleTime) -> BOOL
+QueueUserAPC(PAPCFUNC inpfnAPC, HANDLE inhThread, ULONG_PTR indwData) -> DWORD
+QueueUserWorkItem(LPTHREAD_START_ROUTINE inFunction, PVOID inContext, ULONG inFlags) -> BOOL
+RaiseException(DWORD indwExceptionCode, DWORD indwExceptionFlags, DWORD innNumberOfArguments, CONST ULONG_PTR *lpArguments) -> VOID
+ReOpenFile(HANDLE inhOriginalFile, DWORD indwDesiredAccess, DWORD indwShareMode, DWORD indwFlagsAndAttributes) -> HANDLE
+ReadDirectoryChangesW(HANDLE inhDirectory, LPVOID lpBuffer, DWORD innBufferLength, BOOL inbWatchSubtree, DWORD indwNotifyFilter, LPDWORD outlpBytesReturned, LPOVERLAPPED iolpOverlapped, LPOVERLAPPED_COMPLETION_ROUTINE inlpCompletionRoutine) -> BOOL
+ReadFile(HANDLE inhFile, LPVOID lpBuffer, DWORD innNumberOfBytesToRead, LPDWORD outlpNumberOfBytesRead, LPOVERLAPPED iolpOverlapped) -> BOOL
+ReadFileEx(HANDLE inhFile, LPVOID lpBuffer, DWORD innNumberOfBytesToRead, LPOVERLAPPED iolpOverlapped, LPOVERLAPPED_COMPLETION_ROUTINE inlpCompletionRoutine) -> BOOL
+ReadFileScatter(HANDLE inhFile, FILE_SEGMENT_ELEMENT inaSegmentArray[], DWORD innNumberOfBytesToRead, LPDWORD lpReserved, LPOVERLAPPED iolpOverlapped) -> BOOL
+ReadProcessMemory(HANDLE inhProcess, LPCVOID inlpBaseAddress, LPVOID lpBuffer, SIZE_T innSize, outSIZE_T * lpNumberOfBytesRead) -> BOOL
+RegisterApplicationRecoveryCallback(APPLICATION_RECOVERY_CALLBACK inpRecoveyCallback, PVOID inpvParameter, DWORD indwPingInterval, DWORD indwFlags) -> HRESULT
+RegisterApplicationRestart(PCWSTR inpwzCommandline, DWORD indwFlags) -> HRESULT
+RegisterWaitForSingleObject(PHANDLE phNewWaitObject, HANDLE inhObject, WAITORTIMERCALLBACK inCallback, PVOID inContext, ULONG indwMilliseconds, ULONG indwFlags) -> BOOL
+RegisterWaitForSingleObjectEx(HANDLE inhObject, WAITORTIMERCALLBACK inCallback, PVOID inContext, ULONG indwMilliseconds, ULONG indwFlags) -> HANDLE
+ReleaseActCtx(HANDLE iohActCtx) -> VOID
+ReleaseMutex(HANDLE inhMutex) -> BOOL
+ReleaseMutexWhenCallbackReturns(PTP_CALLBACK_INSTANCE iopci, HANDLE inmut) -> VOID
+ReleaseSRWLockExclusive(PSRWLOCK ioSRWLock) -> VOID
+ReleaseSRWLockShared(PSRWLOCK ioSRWLock) -> VOID
+ReleaseSemaphore(HANDLE inhSemaphore, LONG inlReleaseCount, LPLONG outlpPreviousCount) -> BOOL
+ReleaseSemaphoreWhenCallbackReturns(PTP_CALLBACK_INSTANCE iopci, HANDLE insem, DWORD increl) -> VOID
+RemoveDirectoryA(LPCSTR inlpPathName) -> BOOL
+RemoveDirectoryTransactedA(LPCSTR inlpPathName, HANDLE inhTransaction) -> BOOL
+RemoveDirectoryTransactedW(LPCWSTR inlpPathName, HANDLE inhTransaction) -> BOOL
+RemoveDirectoryW(LPCWSTR inlpPathName) -> BOOL
+RemoveSecureMemoryCacheCallback(PSECURE_MEMORY_CACHE_CALLBACK inpfnCallBack) -> BOOL
+RemoveVectoredContinueHandler(PVOID inHandle) -> ULONG
+RemoveVectoredExceptionHandler(PVOID inHandle) -> ULONG
+ReplaceFileA(LPCSTR inlpReplacedFileName, LPCSTR inlpReplacementFileName, LPCSTR inlpBackupFileName, DWORD indwReplaceFlags, LPVOID lpExclude, LPVOID lpReserved) -> BOOL
+ReplaceFileW(LPCWSTR inlpReplacedFileName, LPCWSTR inlpReplacementFileName, LPCWSTR inlpBackupFileName, DWORD indwReplaceFlags, LPVOID lpExclude, LPVOID lpReserved) -> BOOL
+ReplacePartitionUnit(PWSTR inTargetPartition, PWSTR inSparePartition, ULONG inFlags) -> BOOL
+RequestDeviceWakeup(HANDLE inhDevice) -> BOOL
+RequestWakeupLatency(LATENCY_TIME inlatency) -> BOOL
+ResetEvent(HANDLE inhEvent) -> BOOL
+ResetWriteWatch(LPVOID inlpBaseAddress, SIZE_T indwRegionSize) -> UINT
+RestoreLastError(DWORD indwErrCode) -> VOID
+ResumeThread(HANDLE inhThread) -> DWORD
+SearchPathA(LPCSTR inlpPath, LPCSTR inlpFileName, LPCSTR inlpExtension, DWORD innBufferLength, LPSTR lpBuffer, outLPSTR *lpFilePart) -> DWORD
+SearchPathW(LPCWSTR inlpPath, LPCWSTR inlpFileName, LPCWSTR inlpExtension, DWORD innBufferLength, LPWSTR lpBuffer, outLPWSTR *lpFilePart) -> DWORD
+SetCommBreak(HANDLE inhFile) -> BOOL
+SetCommConfig(HANDLE inhCommDev, LPCOMMCONFIG lpCC, DWORD indwSize) -> BOOL
+SetCommMask(HANDLE inhFile, DWORD indwEvtMask) -> BOOL
+SetCommState(HANDLE inhFile, LPDCB inlpDCB) -> BOOL
+SetCommTimeouts(HANDLE inhFile, LPCOMMTIMEOUTS inlpCommTimeouts) -> BOOL
+SetComputerNameA(LPCSTR inlpComputerName) -> BOOL
+SetComputerNameExA(COMPUTER_NAME_FORMAT inNameType, LPCSTR inlpBuffer) -> BOOL
+SetComputerNameExW(COMPUTER_NAME_FORMAT inNameType, LPCWSTR inlpBuffer) -> BOOL
+SetComputerNameW(LPCWSTR inlpComputerName) -> BOOL
+SetCriticalSectionSpinCount(LPCRITICAL_SECTION iolpCriticalSection, DWORD indwSpinCount) -> DWORD
+SetCurrentDirectoryA(LPCSTR inlpPathName) -> BOOL
+SetCurrentDirectoryW(LPCWSTR inlpPathName) -> BOOL
+SetDefaultCommConfigA(LPCSTR inlpszName, LPCOMMCONFIG lpCC, DWORD indwSize) -> BOOL
+SetDefaultCommConfigW(LPCWSTR inlpszName, LPCOMMCONFIG lpCC, DWORD indwSize) -> BOOL
+SetDllDirectoryA(LPCSTR inlpPathName) -> BOOL
+SetDllDirectoryW(LPCWSTR inlpPathName) -> BOOL
+SetDynamicTimeZoneInformation(CONST inDYNAMIC_TIME_ZONE_INFORMATION *lpTimeZoneInformation) -> BOOL
+SetEndOfFile(HANDLE inhFile) -> BOOL
+SetEnvironmentStringsA(LPCH inNewEnvironment) -> BOOL
+SetEnvironmentStringsW(LPWCH inNewEnvironment) -> BOOL
+SetEnvironmentVariableA(LPCSTR inlpName, LPCSTR inlpValue) -> BOOL
+SetEnvironmentVariableW(LPCWSTR inlpName, LPCWSTR inlpValue) -> BOOL
+SetErrorMode(UINT inuMode) -> UINT
+SetEvent(HANDLE inhEvent) -> BOOL
+SetEventWhenCallbackReturns(PTP_CALLBACK_INSTANCE iopci, HANDLE inevt) -> VOID
+SetFileApisToANSI(VOID ) -> VOID
+SetFileApisToOEM(VOID ) -> VOID
+SetFileAttributesA(LPCSTR inlpFileName, DWORD indwFileAttributes) -> BOOL
+SetFileAttributesTransactedA(LPCSTR inlpFileName, DWORD indwFileAttributes, HANDLE inhTransaction) -> BOOL
+SetFileAttributesTransactedW(LPCWSTR inlpFileName, DWORD indwFileAttributes, HANDLE inhTransaction) -> BOOL
+SetFileAttributesW(LPCWSTR inlpFileName, DWORD indwFileAttributes) -> BOOL
+SetFileBandwidthReservation(HANDLE inhFile, DWORD innPeriodMilliseconds, DWORD innBytesPerPeriod, BOOL inbDiscardable, LPDWORD outlpTransferSize, LPDWORD outlpNumOutstandingRequests) -> BOOL
+SetFileCompletionNotificationModes(HANDLE inFileHandle, UCHAR inFlags) -> BOOL
+SetFileIoOverlappedRange(HANDLE inFileHandle, PUCHAR inOverlappedRangeStart, ULONG inLength) -> BOOL
+SetFilePointer(HANDLE inhFile, LONG inlDistanceToMove, PLONG iolpDistanceToMoveHigh, DWORD indwMoveMethod) -> DWORD
+SetFilePointerEx(HANDLE inhFile, LARGE_INTEGER inliDistanceToMove, PLARGE_INTEGER outlpNewFilePointer, DWORD indwMoveMethod) -> BOOL
+SetFileShortNameA(HANDLE inhFile, LPCSTR inlpShortName) -> BOOL
+SetFileShortNameW(HANDLE inhFile, LPCWSTR inlpShortName) -> BOOL
+SetFileTime(HANDLE inhFile, CONST inFILETIME *lpCreationTime, CONST inFILETIME *lpLastAccessTime, CONST inFILETIME *lpLastWriteTime) -> BOOL
+SetFileValidData(HANDLE inhFile, LONGLONG inValidDataLength) -> BOOL
+SetFirmwareEnvironmentVariableA(LPCSTR inlpName, LPCSTR inlpGuid, PVOID pValue, DWORD innSize) -> BOOL
+SetFirmwareEnvironmentVariableW(LPCWSTR inlpName, LPCWSTR inlpGuid, PVOID pValue, DWORD innSize) -> BOOL
+SetHandleCount(UINT inuNumber) -> UINT
+SetHandleInformation(HANDLE inhObject, DWORD indwMask, DWORD indwFlags) -> BOOL
+SetInformationJobObject(HANDLE inhJob, JOBOBJECTINFOCLASS inJobObjectInformationClass, LPVOID lpJobObjectInformation, DWORD incbJobObjectInformationLength) -> BOOL
+SetLastError(DWORD indwErrCode) -> VOID
+SetLocalTime(CONST inSYSTEMTIME *lpSystemTime) -> BOOL
+SetMailslotInfo(HANDLE inhMailslot, DWORD inlReadTimeout) -> BOOL
+SetMessageWaitingIndicator(HANDLE inhMsgIndicator, ULONG inulMsgCount) -> BOOL
+SetNamedPipeAttribute(HANDLE inPipe, PIPE_ATTRIBUTE_TYPE inAttributeType, PSTR inAttributeName, PVOID inAttributeValue, SIZE_T inAttributeValueLength) -> BOOL
+SetNamedPipeHandleState(HANDLE inhNamedPipe, LPDWORD inlpMode, LPDWORD inlpMaxCollectionCount, LPDWORD inlpCollectDataTimeout) -> BOOL
+SetPriorityClass(HANDLE inhProcess, DWORD indwPriorityClass) -> BOOL
+SetProcessAffinityMask(HANDLE inhProcess, DWORD_PTR indwProcessAffinityMask) -> BOOL
+SetProcessAffinityUpdateMode(HANDLE inhProcess, DWORD indwFlags) -> BOOL
+SetProcessDEPPolicy(DWORD indwFlags) -> BOOL
+SetProcessPriorityBoost(HANDLE inhProcess, BOOL inbDisablePriorityBoost) -> BOOL
+SetProcessShutdownParameters(DWORD indwLevel, DWORD indwFlags) -> BOOL
+SetProcessWorkingSetSize(HANDLE inhProcess, SIZE_T indwMinimumWorkingSetSize, SIZE_T indwMaximumWorkingSetSize) -> BOOL
+SetProcessWorkingSetSizeEx(HANDLE inhProcess, SIZE_T indwMinimumWorkingSetSize, SIZE_T indwMaximumWorkingSetSize, DWORD inFlags) -> BOOL
+SetStdHandle(DWORD innStdHandle, HANDLE inhHandle) -> BOOL
+SetStdHandleEx(DWORD innStdHandle, HANDLE inhHandle, PHANDLE outphPrevValue) -> BOOL
+SetSystemFileCacheSize(SIZE_T inMinimumFileCacheSize, SIZE_T inMaximumFileCacheSize, DWORD inFlags) -> BOOL
+SetSystemTime(CONST inSYSTEMTIME *lpSystemTime) -> BOOL
+SetSystemTimeAdjustment(DWORD indwTimeAdjustment, BOOL inbTimeAdjustmentDisabled) -> BOOL
+SetTapeParameters(HANDLE inhDevice, DWORD indwOperation, LPVOID inlpTapeInformation) -> DWORD
+SetTapePosition(HANDLE inhDevice, DWORD indwPositionMethod, DWORD indwPartition, DWORD indwOffsetLow, DWORD indwOffsetHigh, BOOL inbImmediate) -> DWORD
+SetThreadAffinityMask(HANDLE inhThread, DWORD_PTR indwThreadAffinityMask) -> DWORD_PTR
+SetThreadContext(HANDLE inhThread, CONST inCONTEXT *lpContext) -> BOOL
+SetThreadExecutionState(EXECUTION_STATE inesFlags) -> EXECUTION_STATE
+SetThreadIdealProcessor(HANDLE inhThread, DWORD indwIdealProcessor) -> BOOL
+SetThreadPriority(HANDLE inhThread, int innPriority) -> BOOL
+SetThreadPriorityBoost(HANDLE inhThread, BOOL inbDisablePriorityBoost) -> BOOL
+SetThreadStackGuarantee(PULONG ioStackSizeInBytes) -> BOOL
+SetThreadpoolThreadMaximum(PTP_POOL ioptpp, DWORD incthrdMost) -> VOID
+SetThreadpoolThreadMinimum(PTP_POOL ioptpp, DWORD incthrdMic) -> BOOL
+SetThreadpoolTimer(PTP_TIMER iopti, PFILETIME inpftDueTime, DWORD inmsPeriod, DWORD inmsWindowLength) -> VOID
+SetThreadpoolWait(PTP_WAIT iopwa, inHANDLE h, PFILETIME inpftTimeout) -> VOID
+SetTimeZoneInformation(CONST inTIME_ZONE_INFORMATION *lpTimeZoneInformation) -> BOOL
+SetTimerQueueTimer(HANDLE inTimerQueue, WAITORTIMERCALLBACK inCallback, PVOID inParameter, DWORD inDueTime, DWORD inPeriod, BOOL inPreferIo) -> HANDLE
+SetUnhandledExceptionFilter(LPTOP_LEVEL_EXCEPTION_FILTER inlpTopLevelExceptionFilter) -> LPTOP_LEVEL_EXCEPTION_FILTER
+SetVolumeLabelA(LPCSTR inlpRootPathName, LPCSTR inlpVolumeName) -> BOOL
+SetVolumeLabelW(LPCWSTR inlpRootPathName, LPCWSTR inlpVolumeName) -> BOOL
+SetVolumeMountPointA(LPCSTR inlpszVolumeMountPoint, LPCSTR inlpszVolumeName) -> BOOL
+SetVolumeMountPointW(LPCWSTR inlpszVolumeMountPoint, LPCWSTR inlpszVolumeName) -> BOOL
+SetWaitableTimer(HANDLE inhTimer, const inLARGE_INTEGER *lpDueTime, LONG inlPeriod, PTIMERAPCROUTINE inpfnCompletionRoutine, LPVOID inlpArgToCompletionRoutine, BOOL infResume) -> BOOL
+SetupComm(HANDLE inhFile, DWORD indwInQueue, DWORD indwOutQueue) -> BOOL
+SignalObjectAndWait(HANDLE inhObjectToSignal, HANDLE inhObjectToWaitOn, DWORD indwMilliseconds, BOOL inbAlertable) -> DWORD
+SizeofResource(HMODULE inhModule, HRSRC inhResInfo) -> DWORD
+Sleep(DWORD indwMilliseconds) -> DWORD
+SleepConditionVariableCS(PCONDITION_VARIABLE ioConditionVariable, PCRITICAL_SECTION ioCriticalSection, DWORD indwMilliseconds) -> BOOL
+SleepConditionVariableSRW(PCONDITION_VARIABLE ioConditionVariable, PSRWLOCK ioSRWLock, DWORD indwMilliseconds, ULONG inFlags) -> BOOL
+SleepEx(DWORD indwMilliseconds, BOOL inbAlertable) -> DWORD
+StartThreadpoolIo(PTP_IO iopio) -> VOID
+SubmitThreadpoolWork(PTP_WORK iopwk) -> VOID
+SuspendThread(HANDLE inhThread) -> DWORD
+SwitchToFiber(LPVOID inlpFiber) -> VOID
+SwitchToThread(VOID) -> BOOL
+SystemTimeToFileTime(CONST inSYSTEMTIME *lpSystemTime, LPFILETIME outlpFileTime) -> BOOL
+SystemTimeToTzSpecificLocalTime(CONST inTIME_ZONE_INFORMATION *lpTimeZoneInformation, CONST inSYSTEMTIME *lpUniversalTime, LPSYSTEMTIME outlpLocalTime) -> BOOL
+TerminateJobObject(HANDLE inhJob, UINT inuExitCode) -> BOOL
+TerminateProcess(HANDLE inhProcess, UINT inuExitCode) -> BOOL
+TerminateThread(HANDLE inhThread, DWORD indwExitCode) -> BOOL
+TlsAlloc(VOID) -> DWORD
+TlsFree(DWORD indwTlsIndex) -> BOOL
+TlsGetValue(DWORD indwTlsIndex) -> LPVOID
+TlsSetValue(DWORD indwTlsIndex, LPVOID inlpTlsValue) -> BOOL
+TransactNamedPipe(HANDLE inhNamedPipe, LPVOID lpInBuffer, DWORD innInBufferSize, LPVOID lpOutBuffer, DWORD innOutBufferSize, LPDWORD outlpBytesRead, LPOVERLAPPED iolpOverlapped) -> BOOL
+TransmitCommChar(HANDLE inhFile, char incChar) -> BOOL
+TryEnterCriticalSection(LPCRITICAL_SECTION iolpCriticalSection) -> BOOL
+TrySubmitThreadpoolCallback(PTP_SIMPLE_CALLBACK inpfns, PVOID iopv, PTP_CALLBACK_ENVIRON inpcbe) -> BOOL
+TzSpecificLocalTimeToSystemTime(CONST inTIME_ZONE_INFORMATION *lpTimeZoneInformation, CONST inSYSTEMTIME *lpLocalTime, LPSYSTEMTIME outlpUniversalTime) -> BOOL
+UnhandledExceptionFilter(struct in_EXCEPTION_POINTERS *ExceptionInfo) -> LONG
+UnlockFile(HANDLE inhFile, DWORD indwFileOffsetLow, DWORD indwFileOffsetHigh, DWORD innNumberOfBytesToUnlockLow, DWORD innNumberOfBytesToUnlockHigh) -> BOOL
+UnlockFileEx(HANDLE inhFile, DWORD dwReserved, DWORD innNumberOfBytesToUnlockLow, DWORD innNumberOfBytesToUnlockHigh, LPOVERLAPPED iolpOverlapped) -> BOOL
+UnmapViewOfFile(LPCVOID inlpBaseAddress) -> BOOL
+UnregisterApplicationRecoveryCallback(void) -> HRESULT
+UnregisterApplicationRestart(void) -> HRESULT
+UnregisterWait(HANDLE inWaitHandle) -> BOOL
+UnregisterWaitEx(HANDLE inWaitHandle, HANDLE inCompletionEvent) -> BOOL
+UpdateProcThreadAttribute(LPPROC_THREAD_ATTRIBUTE_LIST iolpAttributeList, DWORD indwFlags, DWORD_PTR inAttribute, PVOID lpValue, SIZE_T incbSize, PVOID lpPreviousValue, PSIZE_T inlpReturnSize) -> BOOL
+UpdateResourceA(HANDLE inhUpdate, LPCSTR inlpType, LPCSTR inlpName, WORD inwLanguage, LPVOID lpData, DWORD incb) -> BOOL
+UpdateResourceW(HANDLE inhUpdate, LPCWSTR inlpType, LPCWSTR inlpName, WORD inwLanguage, LPVOID lpData, DWORD incb) -> BOOL
+VerifyVersionInfoA(LPOSVERSIONINFOEXA iolpVersionInformation, DWORD indwTypeMask, DWORDLONG indwlConditionMask) -> BOOL
+VerifyVersionInfoW(LPOSVERSIONINFOEXW iolpVersionInformation, DWORD indwTypeMask, DWORDLONG indwlConditionMask) -> BOOL
+VirtualAlloc(LPVOID inlpAddress, SIZE_T indwSize, DWORD inflAllocationType, DWORD inflProtect) -> LPVOID
+VirtualAllocEx(HANDLE inhProcess, LPVOID inlpAddress, SIZE_T indwSize, DWORD inflAllocationType, DWORD inflProtect) -> LPVOID
+VirtualAllocExNuma(HANDLE inhProcess, LPVOID inlpAddress, SIZE_T indwSize, DWORD inflAllocationType, DWORD inflProtect, DWORD innndPreferred) -> LPVOID
+VirtualFree(LPVOID inlpAddress, SIZE_T indwSize, DWORD indwFreeType) -> BOOL
+VirtualFreeEx(HANDLE inhProcess, LPVOID inlpAddress, SIZE_T indwSize, DWORD indwFreeType) -> BOOL
+VirtualLock(LPVOID inlpAddress, SIZE_T indwSize) -> BOOL
+VirtualProtect(LPVOID inlpAddress, SIZE_T indwSize, DWORD inflNewProtect, PDWORD outlpflOldProtect) -> BOOL
+VirtualProtectEx(HANDLE inhProcess, LPVOID inlpAddress, SIZE_T indwSize, DWORD inflNewProtect, PDWORD outlpflOldProtect) -> BOOL
+VirtualQuery(LPCVOID inlpAddress, PMEMORY_BASIC_INFORMATION lpBuffer, SIZE_T indwLength) -> SIZE_T
+VirtualQueryEx(HANDLE inhProcess, LPCVOID inlpAddress, PMEMORY_BASIC_INFORMATION lpBuffer, SIZE_T indwLength) -> SIZE_T
+VirtualUnlock(LPVOID inlpAddress, SIZE_T indwSize) -> BOOL
+WTSGetActiveConsoleSessionId(VOID) -> DWORD
+WaitCommEvent(HANDLE inhFile, LPDWORD iolpEvtMask, LPOVERLAPPED iolpOverlapped) -> BOOL
+WaitForDebugEvent(LPDEBUG_EVENT inlpDebugEvent, DWORD indwMilliseconds) -> BOOL
+WaitForMultipleObjects(DWORD innCount, CONST HANDLE *lpHandles, BOOL inbWaitAll, DWORD indwMilliseconds) -> DWORD
+WaitForMultipleObjectsEx(DWORD innCount, CONST HANDLE *lpHandles, BOOL inbWaitAll, DWORD indwMilliseconds, BOOL inbAlertable) -> DWORD
+WaitForSingleObject(HANDLE inhHandle, DWORD indwMilliseconds) -> DWORD
+WaitForSingleObjectEx(HANDLE inhHandle, DWORD indwMilliseconds, BOOL inbAlertable) -> DWORD
+WaitForThreadpoolIoCallbacks(PTP_IO iopio, BOOL infCancelPendingCallbacks) -> VOID
+WaitForThreadpoolTimerCallbacks(PTP_TIMER iopti, BOOL infCancelPendingCallbacks) -> VOID
+WaitForThreadpoolWaitCallbacks(PTP_WAIT iopwa, BOOL infCancelPendingCallbacks) -> VOID
+WaitForThreadpoolWorkCallbacks(PTP_WORK iopwk, BOOL infCancelPendingCallbacks) -> VOID
+WaitNamedPipeA(LPCSTR inlpNamedPipeName, DWORD innTimeOut) -> BOOL
+WaitNamedPipeW(LPCWSTR inlpNamedPipeName, DWORD innTimeOut) -> BOOL
+WakeAllConditionVariable(PCONDITION_VARIABLE ioConditionVariable) -> VOID
+WakeConditionVariable(PCONDITION_VARIABLE ioConditionVariable) -> VOID
+WinExec(LPCSTR inlpCmdLine, UINT inuCmdShow) -> UINT
+Wow64DisableWow64FsRedirection(outPVOID *OldValue) -> BOOL
+Wow64EnableWow64FsRedirection(BOOLEAN inWow64FsEnableRedirection) -> BOOLEAN
+Wow64GetThreadContext(HANDLE inhThread, PWOW64_CONTEXT iolpContext) -> BOOL
+Wow64RevertWow64FsRedirection(PVOID inOlValue) -> BOOL
+Wow64SetThreadContext(HANDLE inhThread, CONST inWOW64_CONTEXT *lpContext) -> BOOL
+Wow64SuspendThread(HANDLE inhThread) -> DWORD
+WriteFile(HANDLE inhFile, LPCVOID lpBuffer, DWORD innNumberOfBytesToWrite, LPDWORD outlpNumberOfBytesWritten, LPOVERLAPPED iolpOverlapped) -> BOOL
+WriteFileEx(HANDLE inhFile, LPCVOID lpBuffer, DWORD innNumberOfBytesToWrite, LPOVERLAPPED iolpOverlapped, LPOVERLAPPED_COMPLETION_ROUTINE inlpCompletionRoutine) -> BOOL
+WriteFileGather(HANDLE inhFile, FILE_SEGMENT_ELEMENT inaSegmentArray[], DWORD innNumberOfBytesToWrite, LPDWORD lpReserved, LPOVERLAPPED iolpOverlapped) -> BOOL
+WritePrivateProfileSectionA(LPCSTR inlpAppName, LPCSTR inlpString, LPCSTR inlpFileName) -> BOOL
+WritePrivateProfileSectionW(LPCWSTR inlpAppName, LPCWSTR inlpString, LPCWSTR inlpFileName) -> BOOL
+WritePrivateProfileStringA(LPCSTR inlpAppName, LPCSTR inlpKeyName, LPCSTR inlpString, LPCSTR inlpFileName) -> BOOL
+WritePrivateProfileStringW(LPCWSTR inlpAppName, LPCWSTR inlpKeyName, LPCWSTR inlpString, LPCWSTR inlpFileName) -> BOOL
+WritePrivateProfileStructA(LPCSTR inlpszSection, LPCSTR inlpszKey, LPVOID lpStruct, UINT inuSizeStruct, LPCSTR inszFile) -> BOOL
+WritePrivateProfileStructW(LPCWSTR inlpszSection, LPCWSTR inlpszKey, LPVOID lpStruct, UINT inuSizeStruct, LPCWSTR inszFile) -> BOOL
+WriteProcessMemory(HANDLE inhProcess, LPVOID inlpBaseAddress, LPCVOID lpBuffer, SIZE_T innSize, outSIZE_T * lpNumberOfBytesWritten) -> BOOL
+WriteProfileSectionA(LPCSTR inlpAppName, LPCSTR inlpString) -> BOOL
+WriteProfileSectionW(LPCWSTR inlpAppName, LPCWSTR inlpString) -> BOOL
+WriteProfileStringA(LPCSTR inlpAppName, LPCSTR inlpKeyName, LPCSTR inlpString) -> BOOL
+WriteProfileStringW(LPCWSTR inlpAppName, LPCWSTR inlpKeyName, LPCWSTR inlpString) -> BOOL
+WriteTapemark(HANDLE inhDevice, DWORD indwTapemarkType, DWORD indwTapemarkCount, BOOL inbImmediate) -> DWORD
+ZombifyActCtx(HANDLE iohActCtx) -> BOOL
+_hread(HFILE inhFile, LPVOID lpBuffer, long inlBytes) -> long
+_hwrite(HFILE inhFile, LPCCH lpBuffer, long inlBytes) -> long
+_lclose(HFILE inhFile) -> HFILE
+_lcreat(LPCSTR inlpPathName, int iniAttribute) -> HFILE
+_llseek(HFILE inhFile, LONG inlOffset, int iniOrigin) -> LONG
+_lopen(LPCSTR inlpPathName, int iniReadWrite) -> HFILE
+_lread(HFILE inhFile, LPVOID lpBuffer, UINT inuBytes) -> UINT
+_lwrite(HFILE inhFile, LPCCH lpBuffer, UINT inuBytes) -> UINT
+lstrcatA(LPSTR iolpString1, LPCSTR inlpString2) -> LPSTR
+lstrcatW(LPWSTR iolpString1, LPCWSTR inlpString2) -> LPWSTR
+lstrcmpA(LPCSTR inlpString1, LPCSTR inlpString2) -> int
+lstrcmpW(LPCWSTR inlpString1, LPCWSTR inlpString2) -> int
+lstrcmpiA(LPCSTR inlpString1, LPCSTR inlpString2) -> int
+lstrcmpiW(LPCWSTR inlpString1, LPCWSTR inlpString2) -> int
+lstrcpyA(LPSTR outlpString1, LPCSTR inlpString2) -> LPSTR
+lstrcpyW(LPWSTR outlpString1, LPCWSTR inlpString2) -> LPWSTR
+lstrcpynA(LPSTR lpString1, LPCSTR inlpString2, int iniMaxLength) -> LPSTR
+lstrcpynW(LPWSTR lpString1, LPCWSTR inlpString2, int iniMaxLength) -> LPWSTR
+lstrlenA(LPCSTR inlpString) -> int
+lstrlenW(LPCWSTR inlpString) -> int
