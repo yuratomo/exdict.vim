@@ -13,8 +13,15 @@ function! s:UpdateRef(last_feed_keys)
   endif
 
   let line = getline('.')
-  if stridx(line, '(') != -1
-    let keyword = substitute(substitute(line, '(.*$', '', ''), ".*\\W", '','') . '('
+  let fmd = stridx(line, '(')
+  if fmd != -1 && a:last_feed_keys != ''
+    let lmd = strridx(line, '(', col('.'))
+    if lmd == -1 && fmd == lmd
+      let keyword = substitute(substitute(line, '(.*$', '', ''), ".*\\W", '','') . '('
+    else
+      let lmd = strridx(line, '(', lmd-1) + 1
+      let keyword = substitute(substitute(line[ lmd : ], '(.*$', '', ''), ".*\\W", '','') . '('
+    endif
   else
     let keyword = '\<'.expand('<cword>')
   endif
@@ -31,68 +38,71 @@ function! s:UpdateRef(last_feed_keys)
 endfunction
 
 function! exdict#ShowRef(direct,last_feed_keys)
-  let direct = a:direct
-  let ret = s:UpdateRef(a:last_feed_keys)
-  if ret == -1
-    return
-  elseif ret == 1
-    let direct = 0
-  endif
-  if len(b:func_def_list) <= 0
-    echo 'no match item.'
-    return
-  endif
-
-  let updateSubItem = 0
-  if direct > 0 
-    if b:subIndex == b:subItemNum -1
-      let b:subIndex = 0
-      if b:index < len(b:func_def_list) - 1
-        let b:index = b:index + 1
-        let updateSubItem = 1
-      endif
-    else
-      let b:subIndex = b:subIndex + 1
+  while 1
+    let direct = a:direct
+    let ret = s:UpdateRef(a:last_feed_keys)
+    if ret == -1
+      break
+    elseif ret == 1
+      let direct = 0
     endif
-  elseif direct < 0
-    if b:subIndex == 0
-      "let b:subIndex = xxx " can not resolve here.
-      if b:index > 0
-        let b:index = b:index - 1
-        let updateSubItem = 1
-      endif
-    else
-      let b:subIndex = b:subIndex - 1
+    if len(b:func_def_list) <= 0
+      echo 'no match item.'
+      break
     endif
-  else
-    let b:index = 0
-    let updateSubItem = 1
-    let b:subIndex = 0
-  endif
-  if a:last_feed_keys != ''
-    call exdict#change_cmdheight()
-  endif
 
-  let max_ref_size = &columns + b:msg_adjust
-  if updateSubItem == 1
-    let parts = split(b:func_def_list[b:index], ':')
-    let b:subItem = parts[len(parts) - 1]
-    let b:subItemNum = strlen(b:subItem) / max_ref_size + 1
-    if direct < 0
+    let updateSubItem = 0
+    if direct > 0 
+      if b:subIndex == b:subItemNum -1
+        let b:subIndex = 0
+        if b:index < len(b:func_def_list) - 1
+          let b:index = b:index + 1
+          let updateSubItem = 1
+        endif
+      else
+        let b:subIndex = b:subIndex + 1
+      endif
+    elseif direct < 0
       if b:subIndex == 0
-        let b:subIndex = b:subItemNum - 1  " resolve here
+        "let b:subIndex = xxx " can not resolve here.
+        if b:index > 0
+          let b:index = b:index - 1
+          let updateSubItem = 1
+        endif
+      else
+        let b:subIndex = b:subIndex - 1
+      endif
+    else
+      let b:index = 0
+      let updateSubItem = 1
+      let b:subIndex = 0
+    endif
+    if a:last_feed_keys != ''
+      call exdict#change_cmdheight()
+    endif
+
+    let max_ref_size = &columns + b:msg_adjust
+    if updateSubItem == 1
+      let parts = split(b:func_def_list[b:index], ':')
+      let b:subItem = parts[len(parts) - 1]
+      let b:subItemNum = strlen(b:subItem) / max_ref_size + 1
+      if direct < 0
+        if b:subIndex == 0
+          let b:subIndex = b:subItemNum - 1  " resolve here
+        endif
       endif
     endif
-  endif
 
-  let idx = b:index+1
-  if b:subIndex >= b:subItemNum - 1
-    let ref = strpart(b:subItem, b:subIndex*max_ref_size)
-  else
-    let ref = strpart(b:subItem, b:subIndex*max_ref_size, max_ref_size) 
-  endif
-  echom '('.idx.'/'.len(b:func_def_list).') '.ref
-  redraw
+    let idx = b:index+1
+    if b:subIndex >= b:subItemNum - 1
+      let ref = strpart(b:subItem, b:subIndex*max_ref_size)
+    else
+      let ref = strpart(b:subItem, b:subIndex*max_ref_size, max_ref_size) 
+    endif
+    echom '('.idx.'/'.len(b:func_def_list).') '.ref
+    redraw
+    break
+  endwhile
 
   if a:last_feed_keys != ''
     call feedkeys(a:last_feed_keys, 'n')

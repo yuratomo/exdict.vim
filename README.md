@@ -34,20 +34,20 @@ Settings
 --------
 
 ###Specify Key :###
+    " sorry. it is not work now.
     let g:exdict#disable_default_keymap = 1
-    imap <buffer><c-k> <ESC><Plug>(exdict-prev-i)
-    imap <buffer><c-j> <ESC><Plug>(exdict-next-i)
-    nmap <buffer><c-k> <Plug>(exdict-prev-n)
-    nmap <buffer><c-j> <Plug>(exdict-next-n)
+    imap <buffer><c-UP>   <ESC><Plug>(exdict-prev-i)
+    imap <buffer><c-DOWN> <ESC><Plug>(exdict-next-i)
+    nmap <buffer><c-UP>   <Plug>(exdict-prev-n)
+    nmap <buffer><c-DOWN> <Plug>(exdict-next-n)
 
 
 Default Keymaps
 ---------------
-* imap <c-j>   Show Next Inline Api Reference (input mode)
-* imap <c-k>   Show Previous Inline Api Reference (input mode)
-* nmap <c-j>   Show Next Inline Api Reference (normal mode)
-* nmak <c-k>   Show Previous Inline Api Reference (normal mode)
-
+* imap <c-UP>     Show Next Inline Api Reference (input mode)
+* imap <c-DOWN>   Show Previous Inline Api Reference (input mode)
+* nmap <c-UP>     Show Next Inline Api Reference (normal mode)
+* nmap <c-DOWN>   Show Previous Inline Api Reference (normal mode)
 
 ScreenShots
 -----------
@@ -73,6 +73,10 @@ ex) Inline help of CreateEventA.
 
 HISTORY
 -------
+
+### v0.2.1 by yuratomo ###
+* Fix Extraction of the function name.
+* Change default keymap.
 
 ### v0.2.0 by yuratomo ###
 * support java
