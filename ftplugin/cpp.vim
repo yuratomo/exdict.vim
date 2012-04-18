@@ -13,6 +13,4 @@ if !exists('g:exdict#disable_default_keymap') || g:exdict#disable_default_keymap
   nmap <buffer><c-UP>    <Plug>(exdict-prev-n)
 endif
 
-command! -nargs=1 FindRef :call exdict#ShowRef(1,'',<f-args>)
-
 let b:loaded_exdict_ftplugin_cpp = 0

@@ -7,8 +7,7 @@ if exists('b:loaded_exdict_syntax_java')
 endif
 
 let b:dict_list = []
-let dict_list = [
-\  'dict/j2se6.0.dict' ]
+let dict_list = [ 'dict/j2se6.0.dict' ]
 
 for dict in dict_list
   for file in split(globpath(&runtimepath, dict), '\n')

@@ -42,6 +42,20 @@ Settings
     nmap <buffer><c-DOWN> <Plug>(exdict-prev-n)
 
 
+###Disable Specify Dictionary :###
+Disable win32 api dictionary.
+    let g:exdict#disable_win32_api = 1
+
+Disable win kernel api dictionary.
+    let g:exdict#disable_win_kernel_api = 1
+
+Disable win kmdf dictionary.
+    let g:exdict#disable_win_kmdf = 1
+
+Disable mfc dictionary.
+    let g:exdict#disable_mfc = 1
+
+
 Default Keymaps
 ---------------
 * imap <c-DOWN> Show Next Inline Api Reference (input mode)
@@ -73,6 +87,9 @@ ex) Inline help of CreateEventA.
 
 HISTORY
 -------
+### v0.4.0 by yuratomo ###
+* Add g:exdict#disable_xxx
+
 ### v0.3.0 by yuratomo ###
 * support mfc
 * app :FindRef

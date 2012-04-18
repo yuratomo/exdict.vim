@@ -1153,7 +1153,7 @@ Listen(int nConnectionBacklog) -> BOOL  // class CAsyncSocket
 ReceiveFrom(void* lpBuf, int nBufLen, SOCKADDR* lpSockAddr, int* lpSockAddrLen, int nFlags) -> int  // class CAsyncSocket
 ShutDown(int nHow) -> BOOL  // class CAsyncSocket
 SendTo(const void* lpBuf, int nBufLen, const SOCKADDR* lpSockAddr, int nSockAddrLen, int nFlags) -> int  // class CAsyncSocket
-Create(UINT nSocketPort, int nSocketType, __in_z_opt LPCTSTR lpszSocketAddress) -> BOOL  // class CSocket
+Create(UINT nSocketPort, int nSocketType, LPCTSTR inlpszSocketAddress) -> BOOL  // class CSocket
 IsBlocking() -> BOOL  // class CSocket
 FromHandle(SOCKET hSocket) -> CSocket*  // class CSocket
 Attach(SOCKET hSocket) -> BOOL  // class CSocket

@@ -7,27 +7,23 @@ function! exdict#LoadSyntaxFromDict(file, name)
   exe 'hi default link ' . a:name . ' Function'
 endfunction
 
-function! s:UpdateRef(last_feed_keys,keyword)
+function! s:UpdateRef(last_feed_keys)
   if !exists('b:dict_list')
     return -1
   endif
 
   let line = getline('.')
   let fmd = stridx(line, '(')
-  if a:keyword == ''
-    if fmd != -1 && a:last_feed_keys != ''
-      let lmd = strridx(line, '(', col('.'))
-      if lmd == -1 && fmd == lmd
-        let keyword = substitute(substitute(line, '(.*$', '', ''), ".*\\W", '','') " . '('
-      else
-        let lmd = strridx(line, '(', lmd-1) + 1
-        let keyword = substitute(substitute(line[ lmd : ], '(.*$', '', ''), ".*\\W", '','') " . '('
-      endif
+  if fmd != -1 && a:last_feed_keys != ''
+    let lmd = strridx(line, '(', col('.'))
+    if lmd == -1 && fmd == lmd
+      let keyword = substitute(substitute(line, '(.*$', '', ''), ".*\\W", '','') . '('
     else
-      let keyword = '\<'.expand('<cword>')
+      let lmd = strridx(line, '(', lmd-1) + 1
+      let keyword = substitute(substitute(line[ lmd : ], '(.*$', '', ''), ".*\\W", '','') . '('
     endif
   else
-    let keyword = a:keyword
+    let keyword = '\<'.expand('<cword>')
   endif
   if exists('b:last_keyword') && b:last_keyword == keyword
     return 0
@@ -41,10 +37,10 @@ function! s:UpdateRef(last_feed_keys,keyword)
   return 1
 endfunction
 
-function! exdict#ShowRef(direct,last_feed_keys,keyword)
+function! exdict#ShowRef(direct,last_feed_keys)
   while 1
     let direct = a:direct
-    let ret = s:UpdateRef(a:last_feed_keys, a:keyword)
+    let ret = s:UpdateRef(a:last_feed_keys)
     if ret == -1
       break
     elseif ret == 1
