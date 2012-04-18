@@ -89,6 +89,7 @@ HISTORY
 -------
 ### v0.4.0 by yuratomo ###
 * Add g:exdict#disable_xxx
+* Delete :FindRef
 
 ### v0.3.0 by yuratomo ###
 * support mfc
