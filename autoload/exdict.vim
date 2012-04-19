@@ -2,7 +2,27 @@
 " Last Modified: 2012.04.15
 " Author: yuratomo (twitter @yusetomo)
 
-function! exdict#LoadSyntaxFromDict(file, name)
+function! exdict#LoadExdict()
+  if !exists('b:dict_files')
+    return
+  endif
+  let b:dict_list = []
+  for dict in b:dict_files
+    for file in split(globpath(&runtimepath, dict), '\n')
+      let &l:dictionary = &l:dictionary . ',' . file
+      call add(b:dict_list, file)
+      call s:LoadSyntaxFromDict(file, 'exdict_c')
+    endfor
+  endfor
+  if !exists('g:exdict#disable_default_keymap') || g:exdict#disable_default_keymap == 0
+    imap <buffer><c-DOWN>  <ESC><Plug>(exdict-next-i)
+    imap <buffer><c-UP>    <ESC><Plug>(exdict-prev-i)
+    nmap <buffer><c-DOWN>  <Plug>(exdict-next-n)
+    nmap <buffer><c-UP>    <Plug>(exdict-prev-n)
+  endif
+endfunction
+
+function! s:LoadSyntaxFromDict(file, name)
   exe 'syn keyword ' . a:name . ' ' . join(map(readfile(a:file, ''), ' substitute(v:val, "(.*$", "", "") '), ' ')
   exe 'hi default link ' . a:name . ' Function'
 endfunction

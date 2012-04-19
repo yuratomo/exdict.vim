@@ -20,6 +20,11 @@ please set &grepprg.
 Usage
 -----
 
+    1) Open *.c , *.cpp or *.java
+
+    2) :LoadExdict
+
+
 ###Show Inline Api Reference:###
 
 ex) printf
@@ -87,6 +92,10 @@ ex) Inline help of CreateEventA.
 
 HISTORY
 -------
+### v0.5.0 by yuratomo ###
+* Stop auto load dictionary.
+* Add :LoadExdict
+
 ### v0.4.0 by yuratomo ###
 * Add g:exdict#disable_xxx
 * Delete :FindRef
