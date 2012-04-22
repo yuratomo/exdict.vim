@@ -1,0 +1,807 @@
+a64l(char *str64) -> long ... stdlib.h
+abort(void) -> void ... stdlib.h
+acos(double x) -> double ... math.h
+acosf(float x) -> float ... math.h
+acosl(long double x) -> long double ... math.h
+addmntent(FILE *fp, const struct mntent *mnt) -> int ... include <mntent.h>
+addseverity(int severity, const char *s) -> int ... fmtmsg.h
+adjtime(const struct timeval *delta, struct timeval *olddelta) -> int 
+aio_cancel(int fd, struct aiocb *aiocbp) -> int ... aio.h
+aio_error(const struct aiocb *aiocbp) -> int ... aio.h
+aio_fsync(int op, struct aiocb *aiocbp) -> int ... aio.h
+aio_read(struct aiocb *aiocbp) -> int ... aio.h
+aio_return(struct aiocb *aiocbp) -> ssize_t ... aio.h
+aio_write(struct aiocb *aiocbp) -> int ... aio.h
+alloca(size_t size) -> void  ... alloca.h
+argz_add(char **argz, size_t *argz_len, const char *str) -> error_t ... argz.h
+argz_count(const char *argz, size_t argz_len) -> size_t ... argz.h
+argz_create(char * const argv[], char **argz, size_t *argz_len) -> error_t ... argz.h
+argz_delete(char **argz, size_t *argz_len, char *entry) -> error_t ... argz.h
+argz_extract(char *argz, size_t argz_len, char **argv) -> void ... argz.h
+argz_next(char *argz, size_t argz_len, const char *entry) -> char * ... argz.h
+argz_stringify(char *argz, size_t len, int sep) -> void ... argz.h
+asin(double x) -> double ... math.h
+asinf(float x) -> float ... math.h
+asinl(long double x) -> long double ... math.h
+asprintf(char **strp, const char *fmt, ...) -> int ... stdio.h
+assert(scalar expression) -> void ... assert.h
+assert_perror(int errnum) -> void ... assert.h
+atan(double x) -> double ... math.h
+atan2l(long double y, long double x) ... math.h
+atanf(float x) -> float ... math.h
+atanl( long double x) -> long double ... math.h
+atexit(void (*function)(void)) -> int ... stdlib.h
+atof(const char *nptr) -> double ... stdlib.h
+atoq(const char *nptr) -> long long ... stdlib.h
+basename(char *path) -> char  ... libgen.h
+bcmp(const void *s1, const void *s2, int n) -> int ... string.h
+bcmp(const void *s1, const void *s2, size_t n) -> int ... strings.h
+bcopy(const void *src, void *dest, int n) -> void ... string.h
+bcopy(const void *src, void *dest, size_t n) -> void ... strings.h
+bindresvport(int sd, struct sockaddr_in **sin) -> int ... sys/types.h netinet/in.h
+bsd_signal(int signum, sighandler_t handler) -> sighandler_t ... signal.h
+btowc(int c) -> wint_t ... wchar.h
+bzero(void *s, int n) -> void ... string.h
+bzero(void *s, size_t n) -> void ... strings.h
+cacos(double complex z) -> double complex ... complex.h
+cacosf(float complex z) -> float complex ... complex.h
+cacosl(long double complex z) -> long double complex ... complex.h
+cacosl(long double complex z) -> long double complex ... complex.h
+canonicalize_file_name(const char *path) -> char  ... stdlib.h
+casin(double complex z) -> double complex ... complex.h
+casinf(float complex z) -> float complex ... complex.h
+casinl(long double complex z) -> long double complex ... complex.h
+casinl(long double complex z) -> long double complex ... complex.h
+catan(double complex z) -> double complex ... complex.h
+catanf(float complex z) -> float complex ... complex.h
+catanl(long double complex z) -> long double complex ... complex.h
+catanl(long double complex z) -> long double complex ... complex.h
+catclose(nl_catd catalog) -> int ... nl_types.h
+catopen(const char *name, int flag) -> nl_catd ... nl_types.h
+cbrt(double x) -> double ... math.h
+cbrtf(float x) -> float ... math.h
+cbrtl(long double x) -> long double ... math.h
+ccos(double complex z) -> double complex ... complex.h
+ccosf(float complex z) -> float complex ... complex.h
+ccosh(double complex z) -> double complex ... complex.h
+ccoshf(float complex z) -> float complex ... complex.h
+ccoshl(long double complex z) -> long double complex ... complex.h
+ccoshl(long double complex z) -> long double complex ... complex.h
+ccosl(long double complex z) -> long double complex ... complex.h
+ccosl(long double complex z) -> long double complex ... complex.h
+ceil(double x) -> double ... math.h
+ceilf(float x) -> float ... math.h
+ceill(long double x) -> long double ... math.h
+cerf(double complex z) -> double complex ... complex.h
+cerfc(double complex z) -> double complex ... complex.h
+cerfcf(float complex z) -> float complex ... complex.h
+cerfcl(long double complex z) -> long double complex ... complex.h
+cerfcl(long double complex z) -> long double complex ... complex.h
+cerff(float complex z) -> float complex ... complex.h
+cerfl(long double complex z) -> long double complex ... complex.h
+cerfl(long double complex z) -> long double complex ... complex.h
+cexp(double complex z) -> double complex ... complex.h
+cexp2(double complex z) -> double complex ... complex.h
+cexp2f(float complex z) -> float complex ... complex.h
+cexp2l(long double complex z) -> long double complex ... complex.h
+cexp2l(long double complex z) -> long double complex ... complex.h
+cexpf(float complex z) -> float complex ... complex.h
+cexpl(long double complex z) -> long double complex ... complex.h
+cexpl(long double complex z) -> long double complex ... complex.h
+cfgetispeed(const struct termios *termios_p) -> speed_t ... termios.h unistd.h
+cfgetospeed(const struct termios *termios_p) -> speed_t ... termios.h unistd.h
+cfmakeraw(struct termios *termios_p) -> void ... termios.h unistd.h
+cfsetispeed(struct termios *termios_p, speed_t speed) -> int ... termios.h unistd.h
+cfsetospeed(struct termios *termios_p, speed_t speed) -> int ... termios.h unistd.h
+clearenv(void) -> int ... stdlib.h
+clearerr(FILE *stream) -> void ... stdio.h
+clock(void) -> clock_t ... time.h
+clog(double complex z) -> double complex ... complex.h
+clog2(double complex z) -> double complex ... complex.h
+clog2f(float complex z) -> float complex ... complex.h
+clog2l(long double complex z) -> long double complex ... complex.h
+clog2l(long double complex z) -> long double complex ... complex.h
+clogf(float complex z) -> float complex ... complex.h
+clogl(long double complex z) -> long double complex ... complex.h
+clogl(long double complex z) -> long double complex ... complex.h
+closedir(DIR *dir) -> int ... dirent.h
+conj(double complex z) -> double complex ... complex.h
+conjf(float complex z) -> float complex ... complex.h
+conjl(long double complex z) -> long double complex ... complex.h
+conjl(long double complex z) -> long double complex ... complex.h
+copysignl(long double x, long double y) -> double ... math.h
+cos(double x) -> double ... math.h
+cosf(float x) -> float ... math.h
+cosh(double x) -> double ... math.h
+coshf(float x) -> float ... math.h
+coshl(long double x) -> long double ... math.h
+cosl(long double x) -> long double ... math.h
+cproj(double complex z) -> double complex ... complex.h
+cprojf(float complex z) -> float complex ... complex.h
+cprojl(long double complex z) -> long double complex ... complex.h
+cprojl(long double complex z) -> long double complex ... complex.h
+creall(long double complex z) ... complex.h
+crypt(const char *key, const char *salt) -> char  ... unistd.h
+csin(double complex z) -> double complex ... complex.h
+csinf(float complex z) -> float complex ... complex.h
+csinh(double complex z) -> double complex ... complex.h
+csinhf(float complex z) -> float complex ... complex.h
+csinhl(long double complex z) -> long double complex ... complex.h
+csinhl(long double complex z) -> long double complex ... complex.h
+csinl(long double complex z) -> long double complex ... complex.h
+csinl(long double complex z) -> long double complex ... complex.h
+csqrt(double complex z) -> double complex ... complex.h
+csqrtf(float complex z) -> float complex ... complex.h
+csqrtl(long double complex z) -> long double complex ... complex.h
+csqrtl(long double complex z) -> long double complex ... complex.h
+ctan(double complex z) -> double complex ... complex.h
+ctanf(float complex z) -> float complex ... complex.h
+ctanh(double complex z) -> double complex ... complex.h
+ctanhf(float complex z) -> float complex ... complex.h
+ctanhl(long double complex z) -> long double complex ... complex.h
+ctanhl(long double complex z) -> long double complex ... complex.h
+ctanl(long double complex z) -> long double complex ... complex.h
+ctanl(long double complex z) -> long double complex ... complex.h
+ctermid(char *s) -> char  ... stdio.h
+cuserid(char *string) -> char  ... unistd.h
+des_setparity(char *key) -> void ... rpc/des_crypt.h
+difftime(time_t time1, time_t time0) -> double ... time.h
+dirfd(DIR *dir) -> int ... sys/types.h dirent.h
+dirname(char *path) -> char  ... libgen.h
+dladdr(void *addr, Dl_info *info) -> int ... dlfcn.h
+dlclose(void *handle) -> int ... dlfcn.h
+dlerror(void) -> char  ... dlfcn.h
+dlopen(const char *filename, int flag) -> void  ... dlfcn.h
+dlsym(void *handle, const char *symbol) -> void  ... dlfcn.h
+dlvsym(void *handle, char *symbol, char *version) -> void  ... dlfcn.h
+double x) ... math.h
+dprintf(int fd, const char *format, ...) -> int ... stdio.h
+dprintf(int level, const char *format, ...) -> void ... stdio.h
+drand48(void) -> double ... stdlib.h
+drand48_r(struct drand48_data *buffer, double *result) -> int ... stdlib.h
+ds_shutdown(void) -> void ... ucd-snmp/ucd-snmp-config.h ucd-snmp/ucd-snmp-includes.h
+ecb_crypt(char *key, char *data, unsigned datalen, unsigned mode) -> int ... rpc/des_crypt.h
+ecvt(double number, int ndigits, int *decpt, int *sign) -> char  ... stdlib.h
+eml(long double x, long double y) -> long double  ... math.h
+encrypt(char block[64], int edflag) -> void ... unistd.h
+endfsent(void) -> void ... fstab.h
+endgrent(void) -> void ... sys/types.h grp.h
+endmntent(FILE *fp) -> int ... include <mntent.h>
+endnetent(void) -> void ... netdb.h
+endprotoent(void) -> void ... netdb.h
+endpwent(void) -> void ... sys/types.h pwd.h
+endservent(void) -> void ... netdb.h
+endttyent(void) -> int ... ttyent.h
+endusershell(void) -> void ... unistd.h
+endutent(void) -> void ... utmpx.h
+envz_entry(const char *envz, size_t *envz_len, const char *name) -> char * ... envz.h
+envz_get(const char *envz, size_t *envz_len, const char *name) -> char * ... envz.h
+envz_remove(char **envz, size_t *envz_len, const char *name) -> void ... envz.h
+envz_strip(char **envz, size_t *envz_len) -> void ... envz.h
+erand48(unsigned short xsubi[3]) -> double ... stdlib.h
+erf(double x) -> double ... math.h
+erfc(double x) -> double ... math.h
+erfcf(float x) -> float ... math.h
+erfcl(long double x) -> long double ... math.h
+erff(float x) -> float ... math.h
+erfl(long double x) -> long double ... math.h
+error(int status, int errnum, const char *format, ...) -> void ... error.h
+ether_aton(const char *asc) -> struct ether_addr  ... netinet/ether.h
+ether_aton_r(const char *asc, struct ether_addr *addr) -> struct ether_addr  ... netinet/ether.h
+ether_hostton(const char *hostname, struct ether_addr *addr) -> int ... netinet/ether.h
+ether_line(const char *line, struct ether_addr *addr, char *hostname) -> int ... netinet/ether.h
+ether_ntoa(const struct ether_addr *addr) -> char  ... netinet/ether.h
+ether_ntohost(char *hostname, const struct ether_addr *addr) -> int ... netinet/ether.h
+exit(EXIT_SUCCESS) -> } ... fmtmsg.h stdio.h
+exit(int status) -> void ... stdlib.h
+exp(double x) -> double ... math.h
+exp2(double x) -> double ... math.h
+exp2f(float x) -> float ... math.h
+exp2l(long double x) -> long double ... math.h
+expf(float x) -> float ... math.h
+expl(long double x) -> long double ... math.h
+fabs(double x) -> double ... math.h
+fabsf(float x) -> float ... math.h
+fabsl(long double x) -> long double ... math.h
+fclose(FILE *fp) -> int ... stdio.h
+fcloseall(void) -> int ... stdio.h
+fcvt(double number, int ndigits, int *decpt, int *sign) -> char  ... stdlib.h
+fdiml(long double x, long double y) ... math.h
+fegetexcept(void) ... fenv.h
+fegetround(void) -> int ... fenv.h
+feof(FILE *stream) -> int ... stdio.h
+ferror(FILE *stream) -> int ... stdio.h
+fesetround(int rounding_mode) -> int ... fenv.h
+fetestexcept(int excepts) -> int ... fenv.h
+feupdateenv(const fenv_t *envp) -> int ... fenv.h
+fexecve(int fd, char *const argv[], char *const envp[]) -> int ... sys/time.h
+fflush(FILE *stream) -> int ... stdio.h
+ffs(int i) -> int ... strings.h
+ffsl(long int i) -> int ... string.h
+ffsll(long long int i) -> int ... string.h
+fgetgrent(FILE *stream) -> struct group  ... stdio.h sys/types.h grp.h
+fgetpos(FILE *stream, fpos_t *pos) -> int ... stdio.h
+fgetpwent(FILE *stream) -> struct passwd  ... stdio.h sys/types.h pwd.h
+fgetwc(FILE *stream) -> wint_t ... stdio.h wchar.h
+fgetws(wchar_t *ws, int n, FILE *stream) -> wchar_t  ... wchar.h
+fileno(FILE *stream) -> int ... stdio.h
+fileno(FILE *stream) -> int ... stdio.h
+finite(double x) -> int ... math.h
+finitef(float x) -> int ... math.h
+finitel(long double x) -> int ... math.h
+fmaxl(long double x, long double y) ... math.h
+fmemopen(void *buf, size_t size, const char *mode) -> FILE  ... stdio.h
+fminl(long double x, long double y) ... math.h
+fmodl(long double x, long double y) ... math.h
+fnmatch(const char *pattern, const char *string, int flags) -> int ... fnmatch.h
+fpathconf(int filedes, int name) -> long ... unistd.h
+fpclassify(x) -> int ... math.h
+fputws(const wchar_t *ws, FILE *stream) -> int ... wchar.h
+fputws_unlocked(const wchar_t *ws, FILE *stream) ... stdio.h
+fread(void *ptr, size_t size, size_t nmemb ", FILE *" stream ) -> size_t ... stdio.h
+freeaddrinfo(struct addrinfo *res) -> void ... sys/types.h sys/socket.h netdb.h
+freehostent(struct hostent *ip) -> void ... sys/types.h sys/socket.h netdb.h
+freopen(const char *path, const char *mode, FILE *stream) -> FILE  ... stdio.h
+frexpl(long double x, int *exp) ... math.h
+fseek(FILE *stream, long offset, int whence) -> int ... stdio.h
+fseeko(FILE *stream, off_t offset, int whence) -> int ... stdio.h
+fsetpos (FILE *stream, fpos_t *pos) -> int ... stdio.h
+ftell(FILE *stream) -> long ... stdio.h
+ftello(FILE *stream) -> off_t ... stdio.h
+ftime(struct timeb *tp) -> int ... sys/timeb.h
+ftok(char *pathname, char proj_id) -> key_t ... sys/types.h sys/ipc.h
+ftok(const char *pathname, int proj_id) -> key_t ...  sys/types.h sys/ipc.h
+funlockfile(FILE *filehandle) ... stdio.h
+futimes(int fd, const struct timeval tv[2]) -> int ... sys/time.h
+fwide(FILE *stream, int mode) -> int ... wchar.h
+fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream) -> size_t ... stdio.h
+gai_strerror(int errcode) -> const char  ... sys/types.h sys/socket.h netdb.h
+gcvt(double number, size_t ndigit, char *buf) -> char  ... stdlib.h
+get_current_dir_name(void) -> char  ... unistd.h
+getdate(const char *string) -> struct tm  ... time.h
+getdate_r (const char *string, struct tm *res) -> int ... time.h
+getenv(const char *name) -> char  ... stdlib.h
+getfsent(void) -> struct fstab  ... fstab.h
+getfsfile(const char *mount_point) -> struct fstab  ... fstab.h
+getfsspec(const char *special_file) -> struct fstab  ... fstab.h
+getgrent(void) -> struct group  ... sys/types.h grp.h
+getgrent_r(struct group *grp, char *buf, int buflen) -> struct group * ... grp.h stdio.h 4096
+getgrent_r(struct group *grp, char *buf, int buflen, FILE **gr_fp) -> int ... grp.h stdio.h 4096
+getgrgid(gid_t gid) -> struct group  ... sys/types.h grp.h
+getgrnam(const char *name) -> struct group  ... sys/types.h grp.h
+getlogin(void) -> char  ... stdio.h
+getlogin_r(char *buf, size_t bufsize) -> int ... stdio.h
+getmntent(FILE *fp) -> struct mntent  ... include <mntent.h>
+getnetbyaddr(long net, int type) -> struct netent  ... netdb.h
+getnetbyname(const char *name) -> struct netent  ... netdb.h
+getnetent(void) -> struct netent  ... netdb.h
+getopt(int argc, char * const argv[], const char *optstring) -> int ... getopt.h
+getpass( const char * prompt ) -> char  ... unistd.h
+getprotobyname(const char *name) -> struct protoent  ... netdb.h
+getprotobynumber(int proto) -> struct protoent  ... netdb.h
+getprotoent(void) -> struct protoent  ... netdb.h
+getpw(uid_t uid, char *buf) -> int ... sys/types.h pwd.h
+getpwent(void) -> struct passwd  ... sys/types.h pwd.h
+getpwent_r(struct passwd *pwd, char *buf, int buflen) -> struct passwd * ... pwd.h stdio.h 4096
+getpwent_r(struct passwd *pwd, char *buf, int buflen, FILE **pw_fp) -> int ... pwd.h stdio.h 4096
+getpwnam(const char *name) -> struct passwd  ... sys/types.h pwd.h
+getpwuid(uid_t uid) -> struct passwd  ... sys/types.h pwd.h
+getservbyname(const char *name, const char *proto) -> struct servent  ... netdb.h
+getservbyport(int port, const char *proto) -> struct servent  ... netdb.h
+getservent(void) -> struct servent  ... netdb.h
+getsubopt(char **optionp, char *const *tokens, char valuep) -> int ... 500 stdlib.h assert.h #include
+getttyent(void) -> struct ttyent  ... ttyent.h
+getttynam(const char *name) -> struct ttyent  ... ttyent.h
+getumask(void) -> mode_t ... sys/types.h sys/stat.h
+getusershell(void) -> char  ... unistd.h
+getutent_r(struct utmp *ubuf, struct utmp **ubufp) -> int ... string.h stdlib.h pwd.h unistd.h #
+getutid_r(struct utmp *ut, struct utmp *ubuf, struct utmp **ubufp) -> int ... string.h stdlib.h pwd.h unistd.h #
+getutline(struct utmp *ut) ->  ... utmpx.h
+getutline_r(struct utmp *ut, struct utmp *ubuf, struct utmp **ubufp) -> int ... string.h stdlib.h pwd.h unistd.h #
+getw(FILE *stream) -> int ... stdio.h
+getwc(FILE *stream) -> wint_t ... stdio.h wchar.h
+getwchar(void) -> wint_t ... wchar.h
+getwd(char *buf) -> char  ... unistd.h
+globfree(glob_t *pglob) -> void ... glob.h
+grantpt(int fd) -> int ... stdlib.h
+gsignal(signum) -> int ... signal.h
+hasmntopt(const struct mntent *mnt, const char *opt) -> char  ... include <mntent.h>
+hcreate(size_t nel) -> int ... search.h
+hcreate_r(size_t nel, struct hsearch_data *tab) -> int ... stdio.h stdlib.h search.h
+hdestroy(void) -> void ... search.h
+hdestroy_r(struct hsearch_data *tab) -> void ... stdio.h stdlib.h search.h
+hsearch(ENTRY item, ACTION action) -> ENTRY  ... search.h
+htonl(uint32_t hostlong) -> uint32_t ... arpa/inet.h
+htons(uint16_t hostshort) -> uint16_t ... arpa/inet.h
+hypotl(long double x, long double y) ... math.h
+iconv_close(iconv_t cd) -> int ... iconv.h
+iconv_open(const char *tocode, const char *fromcode) -> iconv_t ... iconv.h
+ilogb(double x) -> int ... math.h
+ilogbf(float x) -> int ... math.h
+ilogbl(long double x) -> int ... math.h
+imaxabs(intmax_t j) -> intmax_t ... inttypes.h
+imaxdiv(intmax_t numerator, intmax_t denominator) -> imaxdiv_t ... inttypes.h
+index(const char *s, int c) -> char  ... string.h
+index(const char *s, int c) -> char  ... strings.h
+inet_addr(const char *cp) -> in_addr_t ... sys/socket.h netinet/in.h arpa/inet.h
+inet_aton(const char *cp, struct in_addr *inp) -> int ... sys/socket.h netinet/in.h arpa/inet.h
+inet_lnaof(struct in_addr in) -> in_addr_t ... sys/socket.h netinet/in.h arpa/inet.h
+inet_makeaddr(int net, int host) -> struct in_addr ... sys/socket.h netinet/in.h arpa/inet.h
+inet_netof(struct in_addr in) -> in_addr_t ... sys/socket.h netinet/in.h arpa/inet.h
+inet_network(const char *cp) -> in_addr_t ... sys/socket.h netinet/in.h arpa/inet.h
+inet_ntoa(struct in_addr in) -> char  ... sys/socket.h netinet/in.h arpa/inet.h
+inet_ntop(int af, const void *src, char *dst, socklen_t cnt) -> const char  ... sys/types.h sys/socket.h arpa/inet.h
+inet_pton(int af, const char *src, void *dst) -> int ... sys/types.h sys/socket.h arpa/inet.h
+infnan(int error) -> double ... math.h errno.h
+initgroups(const char *user, gid_t group) -> int ... sys/types.h grp.h
+insque(void *elem, void *prev) -> void ... search.h
+isalnum(int c) -> int ... ctype.h
+isalpha(int c) -> int ... ctype.h
+isascii(int c) -> int ... ctype.h
+isatty(int desc) -> int ... unistd.h
+isblank(int c) -> int ... ctype.h
+iscntrl(int c) -> int ... ctype.h
+iscntrl(int c) -> int ... ctype.h
+isdigit(int c) -> int ... ctype.h
+isdigit(int c) -> int ... ctype.h
+isfinite(x) -> int ... math.h
+isgraph(int c) -> int ... ctype.h
+isgraph(int c) -> int ... ctype.h
+isgreater(x,y) -> int ... math.h
+isgreaterequal(x,y) -> int ... math.h
+isinf(double x) -> int ... math.h
+isinf(x) -> int ... math.h
+isinff(float x) -> int ... math.h
+isinfl(long double x) -> int ... math.h
+isless(x,y) -> int ... math.h
+islessequal(x,y) -> int ... math.h
+islessgreater(x,y) -> int ... math.h
+islower(int c) -> int ... ctype.h
+islower(int c) -> int ... ctype.h
+isnan(double x) -> int ... math.h
+isnan(x) -> int ... math.h
+isnanf(float x) -> int ... math.h
+isnanl(long double x) -> int ... math.h
+isnormal(x) -> int ... math.h
+isprint(int c) -> int ... ctype.h
+isprint(int c) -> int ... ctype.h
+isprint(int c) -> int ... ctype.h
+ispunct(int c) -> int ... ctype.h
+ispunct(int c) -> int ... ctype.h
+ispunct(int c) -> int ... ctype.h
+isspace(int c) -> int ... ctype.h
+isspace(int c) -> int ... ctype.h
+isspace(int c) -> int ... ctype.h
+isunordered(x,y) -> int ... math.h
+isupper(int c) -> int ... ctype.h
+isupper(int c) -> int ... ctype.h
+isupper(int c) -> int ... ctype.h
+iswalnum(wint_t wc) -> int ... wctype.h
+iswalpha(wint_t wc) -> int ... wctype.h
+iswblank(wint_t wc) -> int ... wctype.h
+iswcntrl(wint_t wc) -> int ... wctype.h
+iswctype(wint_t wc, wctype_t desc) -> int ... wctype.h
+iswdigit(wint_t wc) -> int ... wctype.h
+iswgraph(wint_t wc) -> int ... wctype.h
+iswlower(wint_t wc) -> int ... wctype.h
+iswprint(wint_t wc) -> int ... wctype.h
+iswpunct(wint_t wc) -> int ... wctype.h
+iswspace(wint_t wc) -> int ... wctype.h
+iswupper(wint_t wc) -> int ... wctype.h
+iswxdigit(wint_t wc) -> int ... wctype.h
+isxdigit(int c) -> int ... ctype.h
+isxdigit(int c) -> int ... ctype.h
+isxdigit(int c) -> int ... ctype.h
+isxdigit(int c) -> int ... ctype.h
+jrand48(unsigned short xsubi[3]) -> long int ... stdlib.h
+key_decryptsession(const char *remotename, des_block *deskey) -> int ... rpc/rpc.h
+key_encryptsession(const char *remotename, des_block *deskey) -> int ... rpc/rpc.h
+key_gendes(des_block *deskey) -> int ... rpc/rpc.h
+key_secretkey_is_set(void) -> int ... rpc/rpc.h
+key_setsecret(const char *key) -> int ... rpc/rpc.h
+killpg(pid_t pgrp, int signal) -> int ... signal.h
+l64a(long value) -> char  ... stdlib.h
+lcong48(unsigned short param[7]) -> void ... stdlib.h
+lcong48_r(unsigned short int param[7], struct drand48_data *buffer) -> int ... stdlib.h
+ldexpl(long double x, int exp) ... math.h
+lgamma_r(double x, int *signp) -> double ... math.h
+lgammaf_r(float x, int *signp) -> float ... math.h
+lgammal_r(long double x, int *signp) -> long double ... math.h
+lgammal_r(long double x, int *signp) -> long double ... math.h
+lldiv(long long numerator, long long denominator) -> lldiv_t ... stdlib.h
+llrintl(long double x) ... math.h
+llseek(int fd, loff_t offset, int whence) -> loff_t ... sys/types.h unistd.h
+localeconv(void) -> struct lconv  ... locale.h
+lockf(int fd, int cmd, off_t len) -> int ... unistd.h
+log(double x) -> double ... math.h
+log2(double x) -> double ... math.h
+log2f(float x) -> float ... math.h
+log2l(long double x) -> long double ... math.h
+logb(double x) -> double ... math.h
+logbf(float x) -> float ... math.h
+logbl(long double x) -> long double ... math.h
+logf(float x) -> float ... math.h
+logl(long double x) -> long double ... math.h
+longjmp(jmp_buf env, int val) -> void ... setjmp.h
+lrand48(void) -> long int ... stdlib.h
+lrand48_r(struct drand48_data *buffer, long int *result) -> int ... stdlib.h
+lseek(int fd, off_t offset, int whence) -> off_t ... sys/types.h unistd.h
+lseek64(int fd, off64_t offset, int whence) -> off64_t ... sys/types.h unistd.h
+lseek64(int fd, off64_t offset, int whence) -> off64_t ... sys/types.h unistd.h
+mainderl(long double x, long double y) -> long double ... math.h
+mblen(const char *s, size_t n) -> int ... stdlib.h
+mbrlen(const char *s, size_t n, mbstate_t *ps) -> size_t ... wchar.h
+mbrtowc(wchar_t *pwc, const char *s, size_t n, mbstate_t *ps) -> size_t ... wchar.h
+mbsinit(const mbstate_t *ps) -> int ... wchar.h
+mbsrtowcs(wchar_t *dest, const char **src, size_t len, mbstate_t *ps) -> size_t ... wchar.h
+mbstowcs(wchar_t *dest, const char *src, size_t n) -> size_t ... stdlib.h
+mbtowc(wchar_t *pwc, const char *s, size_t n) -> int ... stdlib.h
+memalign(size_t boundary, size_t size) -> void  ... stdlib.h
+memccpy(void *dest, const void *src, int c, size_t n) -> void  ... string.h
+memccpy(void *dest, const void *src, int c, size_t n) -> void  ... string.h
+memchr(const void *s, int c, size_t n) -> void  ... string.h
+memchr(const void *s, int c, size_t n) -> void  ... string.h
+memcmp(const void *s1, const void *s2, size_t n) -> int ... string.h
+memcmp(const void *s1, const void *s2, size_t n) -> int ... string.h
+memcpy(void *dest, const void *src, size_t n) -> void  ... string.h
+memcpy(void *dest, const void *src, size_t n) -> void  ... string.h
+memfrob(void *s, size_t n) -> void  ... string.h
+memfrob(void *s, size_t n) -> void  ... string.h
+memmove(void *dest, const void *src, size_t n) -> void  ... string.h
+memmove(void *dest, const void *src, size_t n) -> void  ... string.h
+mempcpy(void *dest, const void *src, size_t n) -> void  ... wchar.h
+memrchr(const void *s, int c, size_t n) -> void  ... string.h
+memset(void *s, int c, size_t n) -> void  ... string.h
+memset(void *s, int c, size_t n) -> void  ... string.h
+mkdtemp(char *template) -> char  ... stdlib.h
+mkfifo(const char *pathname, mode_t mode) -> int ... sys/types.h sys/stat.h
+mkfifoat(int dirfd, const char *pathname, mode_t mode) -> int ... sys/stat.h
+mkstemp(char *template) -> int ... stdlib.h
+mktemp(char *template) -> char  ... stdlib.h
+mktime(struct tm *tm) -> time_t ... time.h
+mpool_close (MPOOL *mp) -> int ... db.h mpool.h
+mpool_get (MPOOL *mp, pgno_t pgno, u_int flags) -> void * ... db.h mpool.h
+mpool_new (MPOOL *mp, pgno_t *pgnoaddr) -> void * ... db.h mpool.h
+mpool_open (DBT *key, int fd, pgno_t pagesize, pgno_t maxcache) -> MPOOL * ... db.h mpool.h
+mpool_put (MPOOL *mp, void *pgaddr, u_int flags) -> int ... db.h mpool.h
+mpool_sync (MPOOL *mp) -> int ... db.h mpool.h
+mq_close(mqd_t mqdes) -> mqd_t ... mqueue.h
+mq_notify(mqd_t mqdes, const struct sigevent *notification) -> mqd_t ... pthread.h mqueue.h assert.h stdio.h
+mq_unlink(const char *name) -> mqd_t ... mqueue.h
+mrand48(void) -> long int ... stdlib.h
+mrand48_r(struct drand48_data *buffer,long int *result) -> int ... stdlib.h
+mtrace(void) -> void ... mcheck.h
+muntrace(void) -> void ... mcheck.h
+nextafterl(long double x, long double y) -> double ... math.h
+nl_langinfo(nl_item item) -> char  ... langinfo.h
+nrand48(unsigned short xsubi[3]) -> long int ... stdlib.h
+ntohl(uint32_t netlong) -> uint32_t ... arpa/inet.h
+ntohs(uint16_t netshort) -> uint16_t ... arpa/inet.h
+offsetof(type, member) -> size_t ... stddef.h stdio.h stdlib.h
+opendir(const char *name) -> DIR  ... sys/types.h dirent.h
+passwd2des(char *passwd, char *key) -> void ... rpc/des_crypt.h
+pathconf(char *path, int name) -> long ... unistd.h
+pclose(FILE *stream) -> int ... stdio.h
+perror(const char *s) -> void ... errno.h
+popen(const char *command, const char *type) -> FILE  ... stdio.h
+posix_fallocate(int fd, off_t offset, off_t len) -> int ... 600 stdlib.h
+posix_memalign(void **memptr, size_t alignment, size_t size) -> int ... malloc.h
+posix_openpt(int flags) -> int ... 600 stdlib.h fcntl.h
+profil(u_short *buf, size_t bufsiz, size_t offset, u_int scale) -> int ... unistd.h
+psignal(int sig, const char *s) -> void ... signal.h
+pthread_attr_destroy(pthread_attr_t *attr) -> int ... pthread.h
+pthread_attr_getdetachstate(const pthread_attr_t *attr, int *detachstate) -> int ... pthread.h
+pthread_attr_getguardsize(const pthread_attr_t *attr, size_t *guardsize) -> int ... pthread.h
+pthread_attr_getinheritsched(const pthread_attr_t *attr, int *inherit) -> int ... pthread.h
+pthread_attr_getschedpolicy(const pthread_attr_t *attr, int *policy) -> int ... pthread.h
+pthread_attr_getscope(const pthread_attr_t *attr, int *scope) -> int ... pthread.h
+pthread_attr_getstackaddr(const pthread_attr_t *attr, void **stackaddr) -> int ... pthread.h
+pthread_attr_getstacksize(const pthread_attr_t *attr, size_t *stacksize) -> int ... pthread.h
+pthread_attr_init(pthread_attr_t *attr) -> int ... pthread.h
+pthread_attr_setdetachstate(pthread_attr_t *attr, int detachstate) -> int ... pthread.h
+pthread_attr_setguardsize(pthread_attr_t *attr, size_t guardsize) -> int ... pthread.h
+pthread_attr_setinheritsched(pthread_attr_t *attr, int inherit) -> int ... pthread.h
+pthread_attr_setschedpolicy(pthread_attr_t *attr, int policy) -> int ... pthread.h
+pthread_attr_setscope(pthread_attr_t *attr, int scope) -> int ... pthread.h
+pthread_attr_setstackaddr(pthread_attr_t *attr, void *stackaddr) -> int ... pthread.h
+pthread_attr_setstacksize(pthread_attr_t *attr, size_t stacksize) -> int ... pthread.h
+pthread_cancel(pthread_t thread) -> int ... pthread.h
+pthread_cleanup_pop(int execute) -> void ... pthread.h
+pthread_cleanup_pop_restore_np(int execute) -> void ... pthread.h
+pthread_cleanup_push(void (*routine) (void *), void *arg) -> void ... pthread.h
+pthread_cleanup_push_defer_np(void (*routine) (void *), void *arg) -> void ... pthread.h
+pthread_cond_broadcast(pthread_cond_t *cond) -> int ... pthread.h
+pthread_cond_destroy(pthread_cond_t *cond) -> int ... pthread.h
+pthread_cond_init(pthread_cond_t *cond, pthread_condattr_t *cond_attr) -> int ... pthread.h
+pthread_cond_signal(pthread_cond_t *cond) -> int ... pthread.h
+pthread_cond_wait(pthread_cond_t *cond, pthread_mutex_t *mutex) -> int ... pthread.h
+pthread_condattr_destroy(pthread_condattr_t *attr) -> int ... pthread.h
+pthread_condattr_getpshared(const pthread_condattr_t *attr, int *pshared) -> int ... pthread.h
+pthread_condattr_init(pthread_condattr_t *attr) -> int ... pthread.h
+pthread_condattr_setpshared(pthread_condattr_t *attr, int pshared) -> int ... pthread.h
+pthread_detach(pthread_t th) -> int ... pthread.h
+pthread_equal(pthread_t thread1, pthread_t thread2) -> int ... pthread.h
+pthread_exit(void *retval) -> void ... pthread.h
+pthread_getspecific(pthread_key_t key) -> void * ... pthread.h
+pthread_join(pthread_t th, void **thread_return) -> int ... pthread.h
+pthread_key_create(pthread_key_t *key, void (*destr_function) (void *)) -> int ... pthread.h
+pthread_key_delete(pthread_key_t key) -> int ... pthread.h
+pthread_kill(pthread_t thread, int signo) -> int ... pthread.h signal.h
+pthread_kill_other_threads_np(void) -> void ... pthread.h
+pthread_mutex_destroy(pthread_mutex_t *mutex) -> int ... pthread.h
+pthread_mutex_lock(pthread_mutex_t *mutex) -> int ... pthread.h
+pthread_mutex_trylock(pthread_mutex_t *mutex) -> int ... pthread.h
+pthread_mutex_unlock(pthread_mutex_t *mutex) -> int ... pthread.h
+pthread_mutexattr_destroy(pthread_mutexattr_t *attr) -> int ... pthread.h
+pthread_mutexattr_gettype(const pthread_mutexattr_t *attr, int *kind) -> int ... pthread.h
+pthread_mutexattr_init(pthread_mutexattr_t *attr) -> int ... pthread.h
+pthread_mutexattr_setpshared(pthread_mutexattr_t *attr, int pshared) -> int ... pthread.h
+pthread_mutexattr_settype(pthread_mutexattr_t *attr, int kind) -> int ... pthread.h
+pthread_once(pthread_once_t *once_control, void (*init_routine) (void)) -> int ... pthread.h
+pthread_self(void) -> pthread_t ... pthread.h
+pthread_setcancelstate(int state, int *oldstate) -> int ... pthread.h
+pthread_setcanceltype(int type, int *oldtype) -> int ... pthread.h
+pthread_setspecific(pthread_key_t key, const void *pointer) -> int ... pthread.h
+pthread_sigmask(int how, const sigset_t *newmask, sigset_t *oldmask) -> int ... pthread.h signal.h
+pthread_testcancel(void) -> void ... pthread.h
+ptsname(int fd) -> char  ... stdlib.h
+ptsname_r(int fd, char *buf, size_t buflen) -> char  ... stdlib.h
+putc(int c, FILE *stream) ... stdio.h
+putchar(int c) -> int ... stdio.h
+putenv(char *string) -> int ... stdlib.h
+putgrent(const struct group *grp, FILE *fp) -> int ... grp.h
+putpwent(const struct passwd *p, FILE *stream) -> int ... stdio.h sys/types.h pwd.h
+puts(const char *s) -> int ... stdio.h
+pututline(struct utmp *ut) -> struct utmp  ... utmpx.h
+putw(int w, FILE *stream) -> int ... stdio.h
+putwchar(wchar_t wc) -> wint_t ... wchar.h
+pw_auth (char *command, char *user, int reason, char *input) -> int ... pwauth.h
+qecvt(long double number, int ndigits, int *decpt, int *sign) -> char  ... stdlib.h
+qfcvt(long double number, int ndigits, int *decpt, int *sign) -> char  ... stdlib.h
+qgcvt(long double number, int ndigit, char *buf) -> char  ... stdlib.h
+quol(long double x, long double y, int *quo) -> long double ... math.h
+raise(int sig) -> int ... signal.h
+rand(void) -> int ... stdlib.h
+rand_r(unsigned int *seedp) -> int ... stdlib.h
+re_comp(char *regex) -> char  ... sys/types.h regex.h
+re_exec(char *string) -> int ... sys/types.h regex.h
+readdir(DIR *dir) -> struct dirent  ... sys/types.h
+realpath(const char *path, char *resolved_path) -> char  ... limits.h stdlib.h
+regfree(regex_t *preg) -> void ... sys/types.h regex.h
+remove(const char *pathname) -> int ... stdio.h
+remque(void *elem) -> void ... search.h
+res_init(void) -> int ... netinet/in.h arpa/nameser.h resolv.h extern
+rewind(FILE *stream) -> void ... stdio.h
+rewinddir(DIR *dir) -> void ... sys/types.h
+rindex(const char *s, int c) -> char  ... string.h
+rindex(const char *s, int c) -> char  ... strings.h
+rint(double x) -> double ... math.h
+rintf(float x) -> float ... math.h
+rintl(long double x) -> long double ... math.h
+rpmatch(const char *response) -> int ... locale.h stdlib.h #include
+scalbl(long double x, double exp) -> double ... math.h
+scalbln(double x, long int exp) -> double ... math.h
+scalblnf(float x, long int exp) -> float ... math.h
+scalblnl(long double x, long int exp) -> long double ... math.h
+scalblnl(long double x, long int exp) -> long double ... math.h
+scalbnl(long double x, int exp) ... math.h
+seed48(unsigned short seed16v[3]) -> unsigned short  ... stdlib.h
+seed48_r(unsigned short int seed16v[3], struct drand48_data *buffer) -> int ... stdlib.h
+seekdir(DIR *dir, off_t offset) -> void ... dirent.h
+sem_close(sem_t *sem) -> int ... semaphore.h
+sem_destroy(sem_t *sem) -> int ... semaphore.h
+sem_getvalue(sem_t *sem, int *sval) -> int ... semaphore.h
+sem_init(sem_t *sem, int pshared, unsigned int value) -> int ... semaphore.h
+sem_post(sem_t *sem) -> int ... semaphore.h
+sem_timedwait(sem_t *sem, const struct timespec *abs_timeout) -> int ... unistd.h stdio.h stdlib.h #include
+sem_trywait(sem_t *sem) -> int ... semaphore.h
+sem_unlink(const char *name) -> int ... semaphore.h
+sem_wait(sem_t *sem) -> int ... 600 semaphore.h
+setenv(const char *name, const char *value, int overwrite) -> int ... stdlib.h
+setfsent(void) -> int ... fstab.h
+setgrent(void) -> void ... sys/types.h grp.h
+sethostent(int stayopen) -> void
+setjmp(jmp_buf env) -> int ... setjmp.h
+setkey(const char *key) -> void ... stdlib.h
+setlocale(int category, const char *locale) -> char  ... locale.h
+setlogmask(int mask) -> int ... syslog.h
+setmntent(const char *filename, const char *type) -> FILE  ... include <mntent.h>
+setnetent(int stayopen) -> void ... netdb.h
+setproctitle(NULL) ... .Fd stdlib.h void
+setprotoent(int stayopen) -> void ... netdb.h
+setpwent(void) -> void ... sys/types.h pwd.h
+setservent(int stayopen) -> void ... netdb.h
+setttyent(void) -> int ... ttyent.h
+setusershell(void) -> void ... unistd.h
+setutent(void) -> void ... utmpx.h
+sigaddset(sigset_t *set, int signum) -> int ... signal.h
+sigblock(int mask) -> int ... signal.h
+sigdelset(sigset_t *set, int signum) -> int ... signal.h
+sigemptyset(sigset_t *set) -> int ... signal.h
+sigfillset(sigset_t *set) -> int ... signal.h
+siggetmask(void) -> int ... signal.h
+sighandler_t sigset(int sig, sighandler_t disp) ... 500 signal.h
+sighold(int sig) -> int ... 500 signal.h
+sigignore(int sig) -> int ... 500 signal.h
+siginterrupt(int sig, int flag) -> int ... signal.h
+sigisemptyset(sigset_t *set) -> int ... signal.h
+sigismember(const sigset_t *set, int signum) -> int ... signal.h
+siglongjmp(sigjmp_buf env, int val) -> void ... setjmp.h
+sigmask(int signum) -> int ... signal.h
+signbit(X) -> int ... math.h
+significandl(long double x) ... math.h
+sigrelse(int sig) -> int ... 500 signal.h
+sigsetjmp(sigjmp_buf env, int savesigs) -> int ... setjmp.h
+sigsetmask(int mask) -> int ... signal.h
+sigvec(int sig, struct sigvec *vec, struct sigvec *ovec) -> int ... signal.h
+sigwait(const sigset_t *set, int *sig) -> int ... pthread.h signal.h
+sin(double x) -> double ... math.h
+sinf(float x) -> float ... math.h
+sinh(double x) -> double ... math.h
+sinhf(float x) -> float ... math.h
+sinhl(long double x) -> long double ... math.h
+sinl(long double x) -> long double ... math.h
+sleep(unsigned int seconds) -> unsigned int ... unistd.h
+sockatmark(int fd) -> int ... sys/socket.h
+sqrt(double x) -> double ... math.h
+sqrtf(float x) -> float ... math.h
+sqrtl(long double x) -> long double ... math.h
+srand(unsigned int seed) -> void ... stdlib.h
+srand48(long int seedval) -> void ... stdlib.h
+srand48_r(long int seedval, struct drand48_data *buffer) -> int ... stdlib.h
+ssignal(int signum, sighandler_t action) -> sighandler_t ... signal.h
+stpcpy(char *dest, const char *src) -> char  ... string.h
+stpncpy(char *dest, const char *src, size_t n) -> char  ... string.h
+strcasecmp(const char *s1, const char *s2) -> int ... string.h
+strcasecmp(const char *s1, const char *s2) -> int ... strings.h
+strcasestr(const char *haystack, const char *needle) -> char  ... string.h
+strcat(char *dest, const char *src) -> char  ... string.h
+strcat(char *dest, const char *src) -> char  ... strings.h
+strchr(const char *s, int c) -> char  ... string.h
+strchr(const char *s, int c) -> char  ... strings.h
+strchrnul(const char *s, int c) -> char  ... string.h
+strcmp(const char *s1, const char *s2) -> int ... string.h
+strcmp(const char *s1, const char *s2) -> int ... strings.h
+strcoll(const char *s1, const char *s2) -> int ... string.h
+strcoll(const char *s1, const char *s2) -> int ... strings.h
+strcpy(char *dest, const char *src) -> char  ... string.h
+strcpy(char *dest, const char *src) -> char  ... strings.h
+strcspn(const char *s, const char *reject) -> size_t ... string.h
+strcspn(const char *s, const char *reject) -> size_t ... strings.h
+strdup(const char *s) -> char  ... string.h
+strdup(const char *s) -> char  ... strings.h
+strerror(int errnum) -> char  ... 600 string.h
+strfmon(char *s, size_t max, const char *format, ...) -> ssize_t ... monetary.h
+strfry(char *string) -> char  ... string.h
+strfry(char *string) -> char  ... strings.h
+strftime(char *s, size_t max, const char *format, const struct tm *tm) -> size_t ... time.h stdio.h stdlib.h
+strlen(const char *s) -> size_t ... string.h
+strlen(const char *s) -> size_t ... strings.h
+strncasecmp(const char *s1, const char *s2, size_t n) -> int ... string.h
+strncasecmp(const char *s1, const char *s2, size_t n) -> int ... strings.h
+strncat(char *dest, const char *src, size_t n) -> char  ... string.h
+strncat(char *dest, const char *src, size_t n) -> char  ... strings.h
+strncmp(const char *s1, const char *s2, size_t n) -> int ... string.h
+strncmp(const char *s1, const char *s2, size_t n) -> int ... strings.h
+strncpy(char *dest, const char *src, size_t n) -> char  ... string.h
+strncpy(char *dest, const char *src, size_t n) -> char  ... strings.h
+strndupa(const char *s, size_t n) ->  ... string.h
+strnlen(const char *s, size_t maxlen) -> size_t ... string.h
+strpbrk(const char *s, const char *accept) -> char  ... string.h
+strpbrk(const char *s, const char *accept) -> char  ... strings.h
+strptime(const char *s, const char *format, struct tm *tm) -> char  ... stdio.h time.h
+strrchr(const char *s, int c) -> char  ... string.h
+strrchr(const char *s, int c) -> char  ... strings.h
+strsep(char **stringp, const char *delim) -> char  ... string.h
+strsep(char **stringp, const char *delim) -> char  ... strings.h
+strsignal(int sig) -> char  ... string.h
+strspn(const char *s, const char *accept) -> size_t ... string.h
+strspn(const char *s, const char *accept) -> size_t ... strings.h
+strstr(const char *haystack, const char *needle) -> char  ... string.h
+strstr(const char *haystack, const char *needle) -> char  ... strings.h
+strtod(nptr, (char **) NULL) ... stdlib.h
+strtok(char *s, const char *delim) -> char  ... strings.h
+strtok(char *str, const char *delim) -> char  ... stdio.h stdlib.h string.h
+strtok_r(char *str, const char *delim, char **saveptr) -> char  ... stdio.h stdlib.h string.h
+strtol(const char *nptr, char **endptr, int base) -> long int ... stdlib.h limits.h stdio.h errno.h
+strtoll(const char *nptr, char **endptr, int base) -> long long int ... stdlib.h limits.h stdio.h errno.h
+strtoq(const char *nptr, char **endptr, int base) -> quad_t ... stdlib.h limits.h stdio.h errno.h
+strtoul(const char *nptr, char **endptr, int base) -> unsigned long int ... stdlib.h
+strtoull(const char *nptr, char **endptr, int base) -> unsigned long long int ... stdlib.h
+strtoumax(const char *nptr, char **endptr, int base) ... inttypes.h
+strtouq(const char *nptr, char **endptr, int base) -> u_quad_t ... stdlib.h
+strverscmp(const char *s1, const char *s2) -> int ... string.h
+strxfrm(char *dest, const char *src, size_t n) -> size_t ... string.h
+strxfrm(char *dest, const char *src, size_t n) -> size_t ... strings.h
+swab(const void *from, void *to, ssize_t n) -> void ... unistd.h
+sysconf(int name) -> long ... unistd.h
+system(const char *command) -> int ... stdlib.h
+sysv_signal(int signum, sighandler_t handler) -> sighandler_t ... signal.h
+tan(double x) -> double ... math.h
+tanf(float x) -> float ... math.h
+tanh(double x) -> double ... math.h
+tanhf(float x) -> float ... math.h
+tanhl(long double x) -> long double ... math.h
+tanl(long double x) -> long double ... math.h
+tcdrain(int fd) -> int ... termios.h unistd.h
+tcflow(int fd, int action) -> int ... termios.h unistd.h
+tcflush(int fd, int queue_selector) -> int ... termios.h unistd.h
+tcgetattr(int fd, struct termios *termios_p) -> int ... termios.h unistd.h
+tcgetpgrp(int fd) -> pid_t ... unistd.h
+tcgetsid(int fd) -> pid_t ... termios.h
+tcsendbreak(int fd, int duration) -> int ... termios.h unistd.h
+tcsetattr(int fd, int optional_actions, const struct termios *termios_p) -> int ... termios.h unistd.h
+tcsetpgrp(int fd, pid_t pgrp) -> int ... unistd.h
+telldir(DIR *dir) -> off_t ... dirent.h
+tempnam(const char *dir, const char *pfx) -> char  ... stdio.h
+timegm(struct tm *tm) -> time_t ... time.h stdlib.h
+timelocal(struct tm *tm) -> time_t ... time.h stdlib.h
+tmpfile(void) -> FILE  ... stdio.h
+tmpnam(char *s) -> char  ... stdio.h
+toascii(int c) -> int ... ctype.h
+tolower(int c) -> int ... ctype.h
+toupper(int c) -> int ... ctype.h
+towctrans(wint_t wc, wctrans_t desc) -> wint_t ... wctype.h
+towlower(wint_t wc) -> wint_t ... wctype.h
+towupper(wint_t wc) -> wint_t ... wctype.h
+ttowardl(long double x, long double y) -> long double ... math.h
+ttyname(int fd) -> char  ... unistd.h
+ttyname_r(int fd, char *buf, size_t buflen) -> int ... unistd.h
+tzset (void) -> void ... time.h
+ulimit(int cmd, long newlimit) -> long ... ulimit.h
+ungetwc(wint_t wc, FILE *stream) -> wint_t ... wchar.h
+unlockpt(int fd) -> int ... stdlib.h
+unsetenv(const char *name) -> int ... stdlib.h
+usleep(useconds_t usec) -> int
+utmpname(const char *file) -> void ... utmpx.h
+uuid_copy(uuid_t dst, uuid_t src) -> void ... uuid/uuid.h
+uuid_generate_time(uuid_t out) ... uuid/uuid.h
+uuid_is_null(uuid_t uu) -> int ... uuid/uuid.h
+uuid_parse(char *in, uuid_t uu) -> int ... uuid/uuid.h
+valloc(size_t size) -> void  ... 600 stdlib.h
+vasprintf(char **strp, const char *fmt, va_list ap) -> int ... stdio.h
+vdprintf(int fd, const char *format, va_list ap) -> int ... stdio.h
+void (*sighandler_t) -> typedefint) ... signal.h
+vsyslog(int priority, const char *format, va_list ap) -> void ... syslog.h
+wcpcpy(wchar_t *dest, const wchar_t *src) -> wchar_t  ... wchar.h
+wcpncpy(wchar_t *dest, const wchar_t *src, size_t n) -> wchar_t  ... wchar.h
+wcrtomb(char *s, wchar_t wc, mbstate_t *ps) -> size_t ... wchar.h
+wcscasecmp(const wchar_t *s1, const wchar_t *s2) -> int ... wchar.h
+wcscat(wchar_t *dest, const wchar_t *src) -> wchar_t  ... wchar.h
+wcschr(const wchar_t *wcs, wchar_t wc) -> wchar_t  ... wchar.h
+wcscmp(const wchar_t *s1, const wchar_t *s2) -> int ... wchar.h
+wcscpy(wchar_t *dest, const wchar_t *src) -> wchar_t  ... wchar.h
+wcscspn(const wchar_t *wcs, const wchar_t *reject) -> size_t ... wchar.h
+wcsdup(const wchar_t *s) -> wchar_t  ... wchar.h
+wcslen(const wchar_t *s) -> size_t ... wchar.h
+wcsncasecmp(const wchar_t *s1, const wchar_t *s2, size_t n) -> int ... wchar.h
+wcsncat(wchar_t *dest, const wchar_t *src, size_t n) -> wchar_t  ... wchar.h
+wcsncmp(const wchar_t *s1, const wchar_t *s2, size_t n) -> int ... wchar.h
+wcsncpy(wchar_t *dest, const wchar_t *src, size_t n) -> wchar_t  ... wchar.h
+wcsnlen(const wchar_t *s, size_t maxlen) -> size_t ... wchar.h
+wcspbrk(const wchar_t *wcs, const wchar_t *accept) -> wchar_t  ... wchar.h
+wcsrchr(const wchar_t *wcs, wchar_t wc) -> wchar_t  ... wchar.h
+wcsrtombs(char *dest, const wchar_t **src, size_t len, mbstate_t *ps) -> size_t ... wchar.h
+wcsspn(const wchar_t *wcs, const wchar_t *accept) ... wchar.h
+wcsstr(const wchar_t *haystack, const wchar_t *needle) -> wchar_t  ... wchar.h
+wcstok(wchar_t *wcs, const wchar_t *delim, wchar_t **ptr) -> wchar_t  ... wchar.h
+wcstombs(char *dest, const wchar_t *src, size_t n) -> size_t ... stdlib.h
+wcstoumax(const wchar_t *nptr, wchar_t **endptr, int base) ... stddef.h inttypes.h
+wcswidth(const wchar_t *s, size_t n) -> int ... wchar.h
+wctob(wint_t c) -> int ... wchar.h
+wctomb(char *s, wchar_t wc) -> int ... stdlib.h
+wctrans(const char *name) -> wctrans_t ... wctype.h
+wctype(const char *name) -> wctype_t ... wctype.h
+wcwidth(wchar_t c) -> int ... wchar.h
+wcwidth(wint_t c) -> int ... wchar.h
+wmemchr(const wchar_t *s, wchar_t c, size_t n) -> wchar_t  ... wchar.h
+wmemcmp(const wchar_t *s1, const wchar_t *s2, size_t n) -> int ... wchar.h
+wmemcpy(wchar_t *dest, const wchar_t *src, size_t n) -> wchar_t  ... wchar.h
+wmemmove(wchar_t *dest, const wchar_t *src, size_t n) -> wchar_t  ... wchar.h
+wmempcpy(wchar_t *dest, const wchar_t *src, size_t n) -> wchar_t  ... string.h
+wmemset(wchar_t *wcs, wchar_t wc, size_t n) -> wchar_t  ... wchar.h
+wordexp(const char *s, wordexp_t *p, int flags) -> int ... stdio.h wordexp.h
+wordfree(wordexp_t *p) -> void ... stdio.h wordexp.h
+wsyncdown(WINDOW *win) ... curses.h
+xdecrypt(char *secret, char *passwd) -> int ... rpc/des_crypt.h
+xencrypt(char *secret, char *passwd) -> int ... rpc/des_crypt.h

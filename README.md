@@ -11,6 +11,9 @@ Support dictionary is as follows.
     - Windows Kernel Api
     - Windows WDF (Windows Driver Foundation)
     - java (j2se6.0)
+    - php
+    - wpf
+    - posix
 
 Requirements
 ------------
@@ -20,9 +23,7 @@ please set &grepprg.
 Usage
 -----
 
-    1) Open *.c , *.cpp or *.java
-
-    2) :LoadExdict
+    :LoadExdict [ms_c|win32_api|mfc|winddk|kmdf|j2se6|php|posix|wpf]{n}
 
 
 ###Show Inline Api Reference:###
@@ -92,6 +93,10 @@ ex) Inline help of CreateEventA.
 
 HISTORY
 -------
+### v0.6.0 by yuratomo ###
+* add wpf php posix dictionary.
+* stop auto load by filetype.
+
 ### v0.5.0 by yuratomo ###
 * Stop auto load dictionary.
 * Add :LoadExdict

@@ -1,17 +1,32 @@
 " File: autoload/exdict.vim
 " Last Modified: 2012.04.15
 " Author: yuratomo (twitter @yusetomo)
+"
+function! exdict#DictList(A, L, P)
+  let items = []
+  for item in g:exdict#list
+    if item.name =~ '^'.a:A
+      call add(items, item.name)
+    endif
+  endfor
+  return items
+endfunction
 
-function! exdict#LoadExdict()
-  if !exists('b:dict_files')
-    return
+function! exdict#LoadExdict(...)
+  if !exists('b:dict_list')
+    let b:dict_list = []
   endif
-  let b:dict_list = []
-  for dict in b:dict_files
-    for file in split(globpath(&runtimepath, dict), '\n')
-      let &l:dictionary = &l:dictionary . ',' . file
-      call add(b:dict_list, file)
-      call s:LoadSyntaxFromDict(file, 'exdict_c')
+
+  for dict in g:exdict#list
+    if index(a:000, dict.name) == -1
+      continue
+    endif
+    for file in split(globpath(&runtimepath, dict.file), '\n')
+      if index(b:dict_list, file) == -1
+        let &l:dictionary = &l:dictionary . ',' . file
+        call add(b:dict_list, file)
+        call s:LoadSyntaxFromDict(file, 'exdict')
+      endif
     endfor
   endfor
   if !exists('g:exdict#disable_default_keymap') || g:exdict#disable_default_keymap == 0
