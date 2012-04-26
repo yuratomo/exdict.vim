@@ -1,33 +1,33 @@
-_access(const char * inFilename, int inAccessMode) -> int  // io.h
-_access_s(const char * inFilename, int inAccessMode) -> errno_t  // io.h
-_atodbl(_CRT_DOUBLE * outResult, char * inStr) -> int  // stdlib.h
-_atodbl_l(_CRT_DOUBLE * outResult, char * inStr, _locale_t inLocale) -> int  // stdlib.h
-_atof_l(const char *inString, _locale_t inLocale) -> double  // math.h
-_atoflt(_CRT_FLOAT * outResult, char * inStr) -> int  // stdlib.h
-_atoflt_l(_CRT_FLOAT * outResult, char * inStr, _locale_t inLocale) -> int  // stdlib.h
-_atoi64(const char * inString) -> __int64  // stdlib.h
-_atoi64_l(const char * inString, _locale_t inLocale) -> __int64  // stdlib.h
-_atoi_l(const char *inStr, _locale_t inLocale) -> int  // stdlib.h
-_atol_l(const char *inStr, _locale_t inLocale) -> long  // stdlib.h
-_atoldbl(_LDOUBLE * outResult, char * inStr) -> int  // stdlib.h
-_atoldbl_l(_LDOUBLE * outResult, char * inStr, _locale_t inLocale) -> int  // stdlib.h
-_beep(unsigned inFrequency, unsigned inDuration) -> void  // stdlib.h
-_c_exit(void) -> void  // process.h
-_cabs(struct _complex inComplex_value) -> double  // math.h
-_cexit(void) -> void  // process.h
-_cgets_s(char * _Buffer, size_t _Size, size_t * outSizeRead) -> errno_t  // conio.h
-_cgetws_s(wchar_t * _Buffer, size_t _SizeInWords, size_t * outSizeRead) -> errno_t  // conio.h
-_chdir(const char * inPath) -> int  // direct.h
-_chdrive(int inDrive) -> int  // direct.h
-_chgsign (double inX) -> double  // float.h
-_chgsignf (float inX) -> float  // math.h
-_chmod(const char * inFilename, int inMode) -> int  // io.h
-_chsize(int inFileHandle, long inSize) -> int  // io.h
-_chsize_s(int inFileHandle,__int64 inSize) -> errno_t  // io.h
-_chvalidator(int inCh, int inMask) -> int  // ctype.h
-_chvalidator_l(inlocale_t, int inCh, int inMask) -> int  // ctype.h
-_clearfp(void) -> int  // float.h
-_close(int inFileHandle) -> int  // io.h
+_access(const char * inFilename, int inAccessMode) -> int #io.h
+_access_s(const char * inFilename, int inAccessMode) -> errno_t #io.h
+_atodbl(_CRT_DOUBLE * outResult, char * inStr) -> int #stdlib.h
+_atodbl_l(_CRT_DOUBLE * outResult, char * inStr, _locale_t inLocale) -> int #stdlib.h
+_atof_l(const char *inString, _locale_t inLocale) -> double #math.h
+_atoflt(_CRT_FLOAT * outResult, char * inStr) -> int #stdlib.h
+_atoflt_l(_CRT_FLOAT * outResult, char * inStr, _locale_t inLocale) -> int #stdlib.h
+_atoi64(const char * inString) -> __int64 #stdlib.h
+_atoi64_l(const char * inString, _locale_t inLocale) -> __int64 #stdlib.h
+_atoi_l(const char *inStr, _locale_t inLocale) -> int #stdlib.h
+_atol_l(const char *inStr, _locale_t inLocale) -> long #stdlib.h
+_atoldbl(_LDOUBLE * outResult, char * inStr) -> int #stdlib.h
+_atoldbl_l(_LDOUBLE * outResult, char * inStr, _locale_t inLocale) -> int #stdlib.h
+_beep(unsigned inFrequency, unsigned inDuration) -> void #stdlib.h
+_c_exit(void) -> void #process.h
+_cabs(struct _complex inComplex_value) -> double #math.h
+_cexit(void) -> void #process.h
+_cgets_s(char * _Buffer, size_t _Size, size_t * outSizeRead) -> errno_t #conio.h
+_cgetws_s(wchar_t * _Buffer, size_t _SizeInWords, size_t * outSizeRead) -> errno_t #conio.h
+_chdir(const char * inPath) -> int #direct.h
+_chdrive(int inDrive) -> int #direct.h
+_chgsign (double inX) -> double #float.h
+_chgsignf (float inX) -> float #math.h
+_chmod(const char * inFilename, int inMode) -> int #io.h
+_chsize(int inFileHandle, long inSize) -> int #io.h
+_chsize_s(int inFileHandle,__int64 inSize) -> errno_t #io.h
+_chvalidator(int inCh, int inMask) -> int #ctype.h
+_chvalidator_l(inlocale_t, int inCh, int inMask) -> int #ctype.h
+_clearfp(void) -> int #float.h
+_close(int inFileHandle) -> int #io.h
 _commit(int inFileHandle)
 _configthreadlocale(int inFlag)
 _control87(unsigned int inNewValue,unsigned int inMask)
@@ -182,1034 +182,1034 @@ _heapadd(void * inMemory, size_t inSize)
 _heapchk(void)
 _heapmin(void)
 _heapset(unsigned int inFill)
-_heapused(size_t * _Used, size_t * _Commit) -> int  // io.h
-_heapwalk(_HEAPINFO * ioEntryInfo) -> int  // malloc.h
-_hypot(double inX, double inY) -> double  // math.h
-_hypotf(float inX, float inY) -> float  // math.h
-_i64toa(__int64 inVal, char * _DstBuf, int inRadix) -> char  // stdlib.h
-_i64toa_s(__int64 inVal, char * _DstBuf, size_t inSize, int inRadix) -> _CRTIMP  // stdlib.h
-_i64tow(__int64 inVal, wchar_t * _DstBuf, int inRadix) -> wchar_t  // stdlib.h
-_i64tow_s(__int64 inVal, wchar_t * _DstBuf, size_t inSizeInWords, int inRadix) -> errno_t  // wchar.h
-_is_exception_typeof(const type_info &inType, struct _EXCEPTION_POINTERS * inExceptionPtr) -> int  // eh.h
-_isalnum_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_isalpha_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_isatty(int inFileHandle) -> int  // io.h
-_iscntrl_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_isctype(int inC, int inType) -> int  // ctype.h
-_isctype_l(int inC, int inType, _locale_t inLocale) -> int  // ctype.h
-_isdigit_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_isgraph_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_isleadbyte_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_islower_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_ismbbalnum(unsigned int inC ) -> int  // mbctype.h
-_ismbbalnum_l(unsigned int inC, _locale_t inLocale) -> int  // mbctype.h
-_ismbbalpha(unsigned int inC ) -> int  // mbctype.h
-_ismbbalpha_l(unsigned int inC, _locale_t inLocale) -> int  // mbctype.h
-_ismbbgraph(unsigned int inC ) -> int  // mbctype.h
-_ismbbgraph_l(unsigned int inC, _locale_t inLocale) -> int  // mbctype.h
-_ismbbkalnum(unsigned int inC ) -> int  // mbctype.h
-_ismbbkalnum_l(unsigned int inC, _locale_t inLocale) -> int  // mbctype.h
-_ismbbkana(unsigned int inC ) -> int  // mbctype.h
-_ismbbkana_l(unsigned int inC, _locale_t inLocale) -> int  // mbctype.h
-_ismbbkprint(unsigned int inC ) -> int  // mbctype.h
-_ismbbkprint_l(unsigned int inC, _locale_t inLocale) -> int  // mbctype.h
-_ismbbkpunct(unsigned int inC ) -> int  // mbctype.h
-_ismbbkpunct_l(unsigned int inC, _locale_t inLocale) -> int  // mbctype.h
+_heapused(size_t * _Used, size_t * _Commit) -> int #io.h
+_heapwalk(_HEAPINFO * ioEntryInfo) -> int #malloc.h
+_hypot(double inX, double inY) -> double #math.h
+_hypotf(float inX, float inY) -> float #math.h
+_i64toa(__int64 inVal, char * _DstBuf, int inRadix) -> char #stdlib.h
+_i64toa_s(__int64 inVal, char * _DstBuf, size_t inSize, int inRadix) -> _CRTIMP #stdlib.h
+_i64tow(__int64 inVal, wchar_t * _DstBuf, int inRadix) -> wchar_t #stdlib.h
+_i64tow_s(__int64 inVal, wchar_t * _DstBuf, size_t inSizeInWords, int inRadix) -> errno_t #wchar.h
+_is_exception_typeof(const type_info &inType, struct _EXCEPTION_POINTERS * inExceptionPtr) -> int #eh.h
+_isalnum_l(int inC, _locale_t inLocale) -> int #ctype.h
+_isalpha_l(int inC, _locale_t inLocale) -> int #ctype.h
+_isatty(int inFileHandle) -> int #io.h
+_iscntrl_l(int inC, _locale_t inLocale) -> int #ctype.h
+_isctype(int inC, int inType) -> int #ctype.h
+_isctype_l(int inC, int inType, _locale_t inLocale) -> int #ctype.h
+_isdigit_l(int inC, _locale_t inLocale) -> int #ctype.h
+_isgraph_l(int inC, _locale_t inLocale) -> int #ctype.h
+_isleadbyte_l(int inC, _locale_t inLocale) -> int #ctype.h
+_islower_l(int inC, _locale_t inLocale) -> int #ctype.h
+_ismbbalnum(unsigned int inC ) -> int #mbctype.h
+_ismbbalnum_l(unsigned int inC, _locale_t inLocale) -> int #mbctype.h
+_ismbbalpha(unsigned int inC ) -> int #mbctype.h
+_ismbbalpha_l(unsigned int inC, _locale_t inLocale) -> int #mbctype.h
+_ismbbgraph(unsigned int inC ) -> int #mbctype.h
+_ismbbgraph_l(unsigned int inC, _locale_t inLocale) -> int #mbctype.h
+_ismbbkalnum(unsigned int inC ) -> int #mbctype.h
+_ismbbkalnum_l(unsigned int inC, _locale_t inLocale) -> int #mbctype.h
+_ismbbkana(unsigned int inC ) -> int #mbctype.h
+_ismbbkana_l(unsigned int inC, _locale_t inLocale) -> int #mbctype.h
+_ismbbkprint(unsigned int inC ) -> int #mbctype.h
+_ismbbkprint_l(unsigned int inC, _locale_t inLocale) -> int #mbctype.h
+_ismbbkpunct(unsigned int inC ) -> int #mbctype.h
+_ismbbkpunct_l(unsigned int inC, _locale_t inLocale) -> int #mbctype.h
 _ismbblead(unsigned int inC)
-_ismbblead(unsigned int inCh) -> int  // mbctype.h
+_ismbblead(unsigned int inCh) -> int #mbctype.h
 _ismbblead_l(unsigned int inC, _locale_t inLocale )
-_ismbblead_l(unsigned int inCh, _locale_t inLocale) -> int  // mbctype.h
-_ismbbprint(unsigned int inC ) -> int  // mbctype.h
-_ismbbprint_l(unsigned int inC, _locale_t inLocale) -> int  // mbctype.h
-_ismbbpunct(unsigned int inC ) -> int  // mbctype.h
-_ismbbpunct_l(unsigned int inC, _locale_t inLocale) -> int  // mbctype.h
+_ismbblead_l(unsigned int inCh, _locale_t inLocale) -> int #mbctype.h
+_ismbbprint(unsigned int inC ) -> int #mbctype.h
+_ismbbprint_l(unsigned int inC, _locale_t inLocale) -> int #mbctype.h
+_ismbbpunct(unsigned int inC ) -> int #mbctype.h
+_ismbbpunct_l(unsigned int inC, _locale_t inLocale) -> int #mbctype.h
 _ismbbtrail(unsigned int inC)
-_ismbbtrail(unsigned int inCh) -> int  // mbctype.h
+_ismbbtrail(unsigned int inCh) -> int #mbctype.h
 _ismbbtrail_l(unsigned int inC, _locale_t inLocale )
-_ismbbtrail_l(unsigned int inCh, _locale_t inLocale) -> int  // mbctype.h
-_ismbcalnum(unsigned int inCh) -> int  // mbstring.h
-_ismbcalnum_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbcalpha(unsigned int inCh) -> int  // mbstring.h
-_ismbcalpha_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbcdigit(unsigned int inCh) -> int  // mbstring.h
-_ismbcdigit_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbcgraph(unsigned int inCh) -> int  // mbstring.h
-_ismbcgraph_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbchira(unsigned int inCh) -> int  // mbstring.h
-_ismbchira_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbckata(unsigned int inCh) -> int  // mbstring.h
-_ismbckata_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbcl0(unsigned int inCh) -> int  // mbstring.h
-_ismbcl0_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbcl1(unsigned int inCh) -> int  // mbstring.h
-_ismbcl1_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbcl2(unsigned int inCh) -> int  // mbstring.h
-_ismbcl2_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbclegal(unsigned int inCh) -> int  // mbstring.h
-_ismbclegal_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbclower(unsigned int inCh) -> int  // mbstring.h
-_ismbclower_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbcprint(unsigned int inCh) -> int  // mbstring.h
-_ismbcprint_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbcpunct(unsigned int inCh) -> int  // mbstring.h
-_ismbcpunct_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbcspace(unsigned int inCh) -> int  // mbstring.h
-_ismbcspace_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbcsymbol(unsigned int inCh) -> int  // mbstring.h
-_ismbcsymbol_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbcupper(unsigned int inCh) -> int  // mbstring.h
-_ismbcupper_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_ismbslead(const unsigned char * _Str, const unsigned char * inPos) -> int  // mbstring.h
-_ismbslead_l(const unsigned char * _Str, const unsigned char * inPos, _locale_t inLocale) -> int  // mbstring.h
-_ismbstrail(const unsigned char * _Str, const unsigned char * inPos) -> int  // mbstring.h
-_ismbstrail_l(const unsigned char * _Str, const unsigned char * inPos, _locale_t inLocale) -> int  // mbstring.h
-_isnan(double inX) -> int  // float.h
-_isnanf(float inX) -> int  // math.h
-_isprint_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_ispunct_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_isspace_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_isupper_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_iswalnum_l(wint_t inC, _locale_t inLocale) -> int  // ctype.h
-_iswalpha_l(wint_t inC, _locale_t inLocale) -> int  // wchar.h
-_iswcntrl_l(wint_t inC, _locale_t inLocale) -> int  // wchar.h
-_iswcsym_l(wint_t inC, _locale_t inLocale) -> int  // wchar.h
-_iswcsymf_l(wint_t inC, _locale_t inLocale) -> int  // ctype.h
-_iswctype_l(wint_t inC, wctype_t inType, _locale_t inLocale) -> int  // wchar.h
-_iswdigit_l(wint_t inC, _locale_t inLocale) -> int  // ctype.h
-_iswgraph_l(wint_t inC, _locale_t inLocale) -> int  // ctype.h
-_iswlower_l(wint_t inC, _locale_t inLocale) -> int  // wchar.h
-_iswprint_l(wint_t inC, _locale_t inLocale) -> int  // wchar.h
-_iswpunct_l(wint_t inC, _locale_t inLocale) -> int  // ctype.h
-_iswspace_l(wint_t inC, _locale_t inLocale) -> int  // wchar.h
-_iswupper_l(wint_t inC, _locale_t inLocale) -> int  // ctype.h
-_iswxdigit_l(wint_t inC, _locale_t inLocale) -> int  // ctype.h
-_isxdigit_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_itoa_s(int inValue, char * _DstBuf, size_t inSize, int inRadix) -> errno_t  // stdlib.h
-_itow_s (int inVal, wchar_t * _DstBuf, size_t inSizeInWords, int inRadix) -> errno_t  // stdlib.h
-_j0(double inX ) -> double  // math.h
-_j1(double inX ) -> double  // math.h
-_jn(int _X, double inY) -> double  // math.h
-_kbhit(void) -> int  // conio.h
-_localtime32(const __time32_t * inTime) -> tm  // time.h
-_localtime32_s(struct tm *outTm, const __time32_t * inTime) -> 41|  // time.h
-_localtime64(const __time64_t * inTime) -> tm  // time.h
-_localtime64_s(struct tm *outTm, const __time64_t *inTime) -> 41|  // time.h
-_lock_file(FILE * ioFile) -> void  // stdio.h
-_locking(int inFileHandle, int inLockMode, long inNumOfBytes) -> int  // io.h
-_logb(double inX) -> double  // float.h
-_logbf(float inX) -> float  // math.h
-_lseek(int inFileHandle, long inOffset, int inOrigin) -> long  // io.h
-_lseeki64(int inFileHandle, __int64 inOffset, int inOrigin) -> __int64  // io.h
-_ltoa_s(long inVal, char * _DstBuf, size_t inSize, int inRadix) -> errno_t  // stdlib.h
-_ltow_s (long inVal, wchar_t * _DstBuf, size_t inSizeInWords, int inRadix) -> errno_t  // stdlib.h
-_mbbtombc(unsigned int inCh) -> int  // mbstring.h
-_mbbtombc_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_mbbtype(unsigned char inCh, int inCType) -> int  // mbstring.h
-_mbbtype_l(unsigned char inCh, int inCType, _locale_t inLocale) -> int  // mbstring.h
-_mbccpy(unsigned char * _Dst, const unsigned char * inSrc) -> void  // mbstring.h
-_mbccpy_l(unsigned char *_Dst, const unsigned char *inSrc, _locale_t inLocale) -> void  // mbstring.h
-_mbccpy_s(unsigned char * _Dst, size_t inSizeInBytes, int * outPCopied, const unsigned char * inSrc) -> errno_t  // mbstring.h
-_mbccpy_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, int * outPCopied, const unsigned char * inSrc, _locale_t inLocale) -> errno_t  // mbstring.h
-_mbcjistojms(unsigned int inCh) -> int  // mbstring.h
-_mbcjistojms_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_mbcjmstojis(unsigned int inCh) -> int  // mbstring.h
-_mbcjmstojis_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_mbclen(const unsigned char *inStr) -> size_t  // mbstring.h
-_mbclen_l(const unsigned char * inStr, _locale_t inLocale) -> size_t  // mbstring.h
-_mbctohira(unsigned int inCh) -> int  // mbstring.h
-_mbctohira_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_mbctokata(unsigned int inCh) -> int  // mbstring.h
-_mbctokata_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_mbctolower(unsigned int inCh) -> int  // mbstring.h
-_mbctolower_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_mbctombb(unsigned int inCh) -> int  // mbstring.h
-_mbctombb_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_mbctoupper(unsigned int inCh) -> int  // mbstring.h
-_mbctoupper_l(unsigned int inCh, _locale_t inLocale) -> int  // mbstring.h
-_mblen_l(const char * inCh, size_t inMaxCount, _locale_t inLocale) -> int  // stdlib.h
-_mbsbtype(const unsigned char * _Str, size_t inPos) -> int  // mbstring.h
-_mbsbtype_l(const unsigned char * _Str, size_t inPos, _locale_t inLocale) -> int  // mbstring.h
-_mbscat_s(unsigned char * _Dst, size_t inSizeInBytes, const unsigned char * inSrc) -> _CRTIMP  // mbstring.h
-_mbscat_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, const unsigned char * inSrc, _locale_t inLocale) -> errno_t  // mbstring.h
-_mbschr(const unsigned char * inStr, unsigned int inCh) -> char  // mbstring.h
-_mbschr_l(const unsigned char * inStr, unsigned int inCh, _locale_t inLocale) -> char  // mbstring.h
-_mbscmp(const unsigned char * inStr1, const unsigned char * inStr2) -> int  // mbstring.h
-_mbscmp_l(const unsigned char * inStr1, const unsigned char * inStr2, _locale_t inLocale) -> int  // mbstring.h
-_mbscoll(const unsigned char * inStr1, const unsigned char * inStr2) -> int  // mbstring.h
-_mbscoll_l(const unsigned char * inStr1, const unsigned char * inStr2, _locale_t inLocale) -> int  // mbstring.h
-_mbscpy_s(unsigned char * _Dst, size_t inSizeInBytes, const unsigned char * inSrc) -> _CRTIMP  // mbstring.h
-_mbscpy_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, const unsigned char * inSrc, _locale_t inLocale) -> errno_t  // mbstring.h
-_mbscspn(const unsigned char * inStr, const unsigned char * inControl) -> size_t  // mbstring.h
-_mbscspn_l(const unsigned char * inStr, const unsigned char * inControl, _locale_t inLocale) -> size_t  // mbstring.h
-_mbsdec(const unsigned char * _Start, const unsigned char * inPos) -> char  // mbstring.h
-_mbsdec_l(const unsigned char * _Start, const unsigned char * inPos, _locale_t inLocale) -> char  // mbstring.h
-_mbsdup(const unsigned char * inStr) -> char  // mbstring.h
-_mbsicmp(const unsigned char * inStr1, const unsigned char * inStr2) -> int  // mbstring.h
-_mbsicmp_l(const unsigned char * inStr1, const unsigned char * inStr2, _locale_t inLocale) -> int  // mbstring.h
-_mbsicoll(const unsigned char * inStr1, const unsigned char * inStr2) -> int  // mbstring.h
-_mbsicoll_l(const unsigned char * inStr1, const unsigned char * inStr2, _locale_t inLocale) -> int  // mbstring.h
-_mbsinc(const unsigned char * inPtr) -> char  // mbstring.h
-_mbsinc_l(const unsigned char * inPtr, _locale_t inLocale) -> char  // mbstring.h
-_mbslen(const unsigned char * inStr) -> size_t  // mbstring.h
-_mbslen_l(const unsigned char * inStr, _locale_t inLocale) -> size_t  // mbstring.h
-_mbslwr_s(unsigned char *_Str, size_t inSizeInBytes) -> errno_t  // mbstring.h
-_mbslwr_s_l(unsigned char *_Str, size_t inSizeInBytes, _locale_t inLocale) -> errno_t  // mbstring.h
-_mbsnbcat_s(unsigned char * _Dst, size_t inSizeInBytes, const unsigned char * inSrc, size_t inMaxCount) -> _CRTIMP  // mbstring.h
-_mbsnbcat_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, const unsigned char * inSrc, size_t inMaxCount, _locale_t inLocale) -> errno_t  // mbstring.h
-_mbsnbcmp(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int  // mbstring.h
-_mbsnbcmp_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // mbstring.h
-_mbsnbcnt(const unsigned char * _Str, size_t inMaxCount) -> size_t  // mbstring.h
-_mbsnbcnt_l(const unsigned char * _Str, size_t inMaxCount, _locale_t inLocale) -> size_t  // mbstring.h
-_mbsnbcoll(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int  // mbstring.h
-_mbsnbcoll_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // mbstring.h
-_mbsnbcpy_s(unsigned char * _Dst, size_t inSizeInBytes, const unsigned char * inSrc, size_t inMaxCount) -> _CRTIMP  // mbstring.h
-_mbsnbcpy_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, const unsigned char * inSrc, size_t inMaxCount, _locale_t inLocale) -> errno_t  // mbstring.h
-_mbsnbicmp(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int  // mbstring.h
-_mbsnbicmp_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // mbstring.h
-_mbsnbicoll(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int  // mbstring.h
-_mbsnbicoll_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // mbstring.h
-_mbsnbset_s(unsigned char * _Dst, size_t inSizeInBytes, unsigned int inCh, size_t inMaxCount) -> _CRTIMP  // mbstring.h
-_mbsnbset_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, unsigned int inCh, size_t inMaxCount, _locale_t inLocale) -> _CRTIMP  // mbstring.h
-_mbsncat_s(unsigned char * _Dst, size_t inSizeInBytes, const unsigned char * inSrc, size_t inMaxCount) -> _CRTIMP  // mbstring.h
-_mbsncat_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, const unsigned char * inSrc, size_t inMaxCount, _locale_t inLocale) -> errno_t  // mbstring.h
-_mbsnccnt(const unsigned char * _Str, size_t inMaxCount) -> size_t  // mbstring.h
-_mbsnccnt_l(const unsigned char * _Str, size_t inMaxCount, _locale_t inLocale) -> size_t  // mbstring.h
-_mbsncmp(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int  // mbstring.h
-_mbsncmp_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // mbstring.h
-_mbsncoll(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int  // mbstring.h
-_mbsncoll_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // mbstring.h
-_mbsncpy_s(unsigned char * _Dst, size_t inSizeInBytes, const unsigned char * inSrc, size_t inMaxCount) -> _CRTIMP  // mbstring.h
-_mbsncpy_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, const unsigned char * inSrc, size_t inMaxCount, _locale_t inLocale) -> errno_t  // mbstring.h
-_mbsnextc (const unsigned char * inStr) -> int  // mbstring.h
-_mbsnextc_l(const unsigned char * inStr, _locale_t inLocale) -> int  // mbstring.h
-_mbsnicmp(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int  // mbstring.h
-_mbsnicmp_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // mbstring.h
-_mbsnicoll(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int  // mbstring.h
-_mbsnicoll_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // mbstring.h
-_mbsninc(const unsigned char * _Str, size_t inCount) -> char  // mbstring.h
-_mbsninc_l(const unsigned char * _Str, size_t inCount, _locale_t inLocale) -> char  // mbstring.h
-_mbsnlen(const unsigned char * inStr, size_t inMaxCount) -> size_t  // mbstring.h
-_mbsnlen_l(const unsigned char * inStr, size_t inMaxCount, _locale_t inLocale) -> size_t  // mbstring.h
-_mbsnset_s(unsigned char * _Dst, size_t inSizeInBytes, unsigned int inVal, size_t inMaxCount) -> _CRTIMP  // mbstring.h
-_mbsnset_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, unsigned int inVal, size_t inMaxCount, _locale_t inLocale) -> _CRTIMP  // mbstring.h
-_mbspbrk(const unsigned char * inStr, const unsigned char * inControl) -> char  // mbstring.h
-_mbspbrk_l(const unsigned char * inStr, const unsigned char * inControl, _locale_t inLocale) -> char  // mbstring.h
-_mbsrchr(const unsigned char * inStr, unsigned int inCh) -> char  // mbstring.h
-_mbsrchr_l(const unsigned char *inStr, unsigned int inCh, _locale_t inLocale) -> char  // mbstring.h
-_mbsrev(unsigned char * ioStr) -> char  // mbstring.h
-_mbsrev_l(unsigned char *ioStr, _locale_t inLocale) -> char  // mbstring.h
-_mbsset_s(unsigned char * _Dst, size_t inSizeInBytes, unsigned int inVal) -> _CRTIMP  // mbstring.h
-_mbsset_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, unsigned int inVal, _locale_t inLocale) -> _CRTIMP  // mbstring.h
-_mbsspn(const unsigned char *inStr, const unsigned char * inControl) -> size_t  // mbstring.h
-_mbsspn_l(const unsigned char * inStr, const unsigned char * inControl, _locale_t inLocale) -> size_t  // mbstring.h
-_mbsspnp(const unsigned char * inStr1, const unsigned char *inStr2) -> char  // mbstring.h
-_mbsspnp_l(const unsigned char *inStr1, const unsigned char *inStr2, _locale_t inLocale) -> char  // mbstring.h
-_mbsstr(const unsigned char * inStr, const unsigned char * inSubstr) -> char  // mbstring.h
-_mbsstr_l(const unsigned char * inStr, const unsigned char * inSubstr, _locale_t inLocale) -> char  // mbstring.h
-_mbstok(unsigned char * ioStr, const unsigned char * inDelim) -> char  // mbstring.h
-_mbstok_l(unsigned char *ioStr, const unsigned char * inDelim, _locale_t inLocale) -> char  // mbstring.h
-_mbstok_s(unsigned char *ioStr, const unsigned char * inDelim, unsigned char ** ioContext) -> char  // mbstring.h
-_mbstok_s_l(unsigned char * ioStr, const unsigned char * inDelim, unsigned char ** ioContext, _locale_t inLocale) -> char  // mbstring.h
-_mbstowcs_s_l(size_t * outPtNumOfCharConverted, wchar_t * _DstBuf, size_t inSizeInWords, const char * _SrcBuf, size_t inMaxCount, _locale_t inLocale) -> errno_t  // stdlib.h
-_mbstrlen(const char * inStr) -> size_t  // stdlib.h
-_mbstrlen_l(const char *inStr, _locale_t inLocale) -> size_t  // stdlib.h
-_mbstrnlen(const char *inStr, size_t inMaxCount) -> size_t  // stdlib.h
-_mbstrnlen_l(const char *inStr, size_t inMaxCount, _locale_t inLocale) -> size_t  // stdlib.h
-_mbsupr_s(unsigned char *_Str, size_t inSizeInBytes) -> errno_t  // mbstring.h
-_mbsupr_s_l(unsigned char *_Str, size_t inSizeInBytes, _locale_t inLocale) -> errno_t  // mbstring.h
-_mbtowc_l(wchar_t * _DstCh, const char * inSrcCh, size_t inSrcSizeInBytes, _locale_t inLocale) -> int  // stdlib.h
-_memccpy(void * _Dst, const void * inSrc, int inVal, size_t inMaxCount) -> void  // string.h
-_memicmp(const void * inBuf1, const void * inBuf2, size_t inSize) -> int  // string.h
-_memicmp_l(const void * inBuf1, const void * inBuf2, size_t inSize, _locale_t inLocale) -> int  // string.h
-_mkdir(const char * inPath) -> int  // direct.h
-_mkgmtime32(struct tm * ioTm) -> __time32_t  // time.h
-_mkgmtime64(struct tm * ioTm) -> __time64_t  // time.h
-_mktemp_s(char * _TemplateName, size_t inSize) -> errno_t  // io.h
-_mktime32(struct tm * ioTm) -> __time32_t  // time.h
-_mktime64(struct tm * ioTm) -> __time64_t  // time.h
-_msize(void * inMemory) -> size_t  // malloc.h
-_nextafter(double inX, double inY) -> double  // float.h
-_nextafterf(float inX, float inY) -> float  // math.h
-_open(const char * inFilename, int inOpenFlag, ...) -> int  // io.h
-_open_osfhandle(intptr_t inOSFileHandle, int inFlags) -> int  // io.h
-_pclose(FILE * ioFile) -> int  // stdio.h
-_pipe(int * _PtHandles, unsigned int inPipeSize, int inTextMode) -> int  // io.h
-_popen(const char * inCommand, const char * inMode) -> FILE  // stdio.h
-_printf_l(const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_printf_p(const char * inFormat, ...) -> int  // stdio.h
-_printf_p_l(const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_printf_s_l(const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_putch(int inCh) -> int  // conio.h
-_putch_nolock(int inCh) -> int  // conio.h
-_putenv(const char * inEnvString) -> int  // stdlib.h
-_putenv_s(const char * inName, const char * inValue) -> errno_t  // stdlib.h
-_putw(int inWord, FILE * ioFile) -> int  // stdio.h
-_putwch(wchar_t _WCh) -> wint_t  // wchar.h
-_putwch_nolock(wchar_t _WCh) -> wint_t  // conio.h
-_putws(const wchar_t * inStr) -> int  // stdio.h
-_query_new_handler(void ) -> _PNH  // new.h
-_query_new_mode(void ) -> int  // new.h
-_read(int inFileHandle, void * _DstBuf, unsigned int inMaxCharCount) -> int  // io.h
-_recalloc(void * inMemory, size_t inCount, size_t inSize) -> void  // malloc.h
+_ismbbtrail_l(unsigned int inCh, _locale_t inLocale) -> int #mbctype.h
+_ismbcalnum(unsigned int inCh) -> int #mbstring.h
+_ismbcalnum_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbcalpha(unsigned int inCh) -> int #mbstring.h
+_ismbcalpha_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbcdigit(unsigned int inCh) -> int #mbstring.h
+_ismbcdigit_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbcgraph(unsigned int inCh) -> int #mbstring.h
+_ismbcgraph_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbchira(unsigned int inCh) -> int #mbstring.h
+_ismbchira_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbckata(unsigned int inCh) -> int #mbstring.h
+_ismbckata_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbcl0(unsigned int inCh) -> int #mbstring.h
+_ismbcl0_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbcl1(unsigned int inCh) -> int #mbstring.h
+_ismbcl1_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbcl2(unsigned int inCh) -> int #mbstring.h
+_ismbcl2_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbclegal(unsigned int inCh) -> int #mbstring.h
+_ismbclegal_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbclower(unsigned int inCh) -> int #mbstring.h
+_ismbclower_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbcprint(unsigned int inCh) -> int #mbstring.h
+_ismbcprint_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbcpunct(unsigned int inCh) -> int #mbstring.h
+_ismbcpunct_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbcspace(unsigned int inCh) -> int #mbstring.h
+_ismbcspace_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbcsymbol(unsigned int inCh) -> int #mbstring.h
+_ismbcsymbol_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbcupper(unsigned int inCh) -> int #mbstring.h
+_ismbcupper_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_ismbslead(const unsigned char * _Str, const unsigned char * inPos) -> int #mbstring.h
+_ismbslead_l(const unsigned char * _Str, const unsigned char * inPos, _locale_t inLocale) -> int #mbstring.h
+_ismbstrail(const unsigned char * _Str, const unsigned char * inPos) -> int #mbstring.h
+_ismbstrail_l(const unsigned char * _Str, const unsigned char * inPos, _locale_t inLocale) -> int #mbstring.h
+_isnan(double inX) -> int #float.h
+_isnanf(float inX) -> int #math.h
+_isprint_l(int inC, _locale_t inLocale) -> int #ctype.h
+_ispunct_l(int inC, _locale_t inLocale) -> int #ctype.h
+_isspace_l(int inC, _locale_t inLocale) -> int #ctype.h
+_isupper_l(int inC, _locale_t inLocale) -> int #ctype.h
+_iswalnum_l(wint_t inC, _locale_t inLocale) -> int #ctype.h
+_iswalpha_l(wint_t inC, _locale_t inLocale) -> int #wchar.h
+_iswcntrl_l(wint_t inC, _locale_t inLocale) -> int #wchar.h
+_iswcsym_l(wint_t inC, _locale_t inLocale) -> int #wchar.h
+_iswcsymf_l(wint_t inC, _locale_t inLocale) -> int #ctype.h
+_iswctype_l(wint_t inC, wctype_t inType, _locale_t inLocale) -> int #wchar.h
+_iswdigit_l(wint_t inC, _locale_t inLocale) -> int #ctype.h
+_iswgraph_l(wint_t inC, _locale_t inLocale) -> int #ctype.h
+_iswlower_l(wint_t inC, _locale_t inLocale) -> int #wchar.h
+_iswprint_l(wint_t inC, _locale_t inLocale) -> int #wchar.h
+_iswpunct_l(wint_t inC, _locale_t inLocale) -> int #ctype.h
+_iswspace_l(wint_t inC, _locale_t inLocale) -> int #wchar.h
+_iswupper_l(wint_t inC, _locale_t inLocale) -> int #ctype.h
+_iswxdigit_l(wint_t inC, _locale_t inLocale) -> int #ctype.h
+_isxdigit_l(int inC, _locale_t inLocale) -> int #ctype.h
+_itoa_s(int inValue, char * _DstBuf, size_t inSize, int inRadix) -> errno_t #stdlib.h
+_itow_s (int inVal, wchar_t * _DstBuf, size_t inSizeInWords, int inRadix) -> errno_t #stdlib.h
+_j0(double inX ) -> double #math.h
+_j1(double inX ) -> double #math.h
+_jn(int _X, double inY) -> double #math.h
+_kbhit(void) -> int #conio.h
+_localtime32(const __time32_t * inTime) -> tm #time.h
+_localtime32_s(struct tm *outTm, const __time32_t * inTime) -> 41| #time.h
+_localtime64(const __time64_t * inTime) -> tm #time.h
+_localtime64_s(struct tm *outTm, const __time64_t *inTime) -> 41| #time.h
+_lock_file(FILE * ioFile) -> void #stdio.h
+_locking(int inFileHandle, int inLockMode, long inNumOfBytes) -> int #io.h
+_logb(double inX) -> double #float.h
+_logbf(float inX) -> float #math.h
+_lseek(int inFileHandle, long inOffset, int inOrigin) -> long #io.h
+_lseeki64(int inFileHandle, __int64 inOffset, int inOrigin) -> __int64 #io.h
+_ltoa_s(long inVal, char * _DstBuf, size_t inSize, int inRadix) -> errno_t #stdlib.h
+_ltow_s (long inVal, wchar_t * _DstBuf, size_t inSizeInWords, int inRadix) -> errno_t #stdlib.h
+_mbbtombc(unsigned int inCh) -> int #mbstring.h
+_mbbtombc_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_mbbtype(unsigned char inCh, int inCType) -> int #mbstring.h
+_mbbtype_l(unsigned char inCh, int inCType, _locale_t inLocale) -> int #mbstring.h
+_mbccpy(unsigned char * _Dst, const unsigned char * inSrc) -> void #mbstring.h
+_mbccpy_l(unsigned char *_Dst, const unsigned char *inSrc, _locale_t inLocale) -> void #mbstring.h
+_mbccpy_s(unsigned char * _Dst, size_t inSizeInBytes, int * outPCopied, const unsigned char * inSrc) -> errno_t #mbstring.h
+_mbccpy_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, int * outPCopied, const unsigned char * inSrc, _locale_t inLocale) -> errno_t #mbstring.h
+_mbcjistojms(unsigned int inCh) -> int #mbstring.h
+_mbcjistojms_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_mbcjmstojis(unsigned int inCh) -> int #mbstring.h
+_mbcjmstojis_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_mbclen(const unsigned char *inStr) -> size_t #mbstring.h
+_mbclen_l(const unsigned char * inStr, _locale_t inLocale) -> size_t #mbstring.h
+_mbctohira(unsigned int inCh) -> int #mbstring.h
+_mbctohira_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_mbctokata(unsigned int inCh) -> int #mbstring.h
+_mbctokata_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_mbctolower(unsigned int inCh) -> int #mbstring.h
+_mbctolower_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_mbctombb(unsigned int inCh) -> int #mbstring.h
+_mbctombb_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_mbctoupper(unsigned int inCh) -> int #mbstring.h
+_mbctoupper_l(unsigned int inCh, _locale_t inLocale) -> int #mbstring.h
+_mblen_l(const char * inCh, size_t inMaxCount, _locale_t inLocale) -> int #stdlib.h
+_mbsbtype(const unsigned char * _Str, size_t inPos) -> int #mbstring.h
+_mbsbtype_l(const unsigned char * _Str, size_t inPos, _locale_t inLocale) -> int #mbstring.h
+_mbscat_s(unsigned char * _Dst, size_t inSizeInBytes, const unsigned char * inSrc) -> _CRTIMP #mbstring.h
+_mbscat_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, const unsigned char * inSrc, _locale_t inLocale) -> errno_t #mbstring.h
+_mbschr(const unsigned char * inStr, unsigned int inCh) -> char #mbstring.h
+_mbschr_l(const unsigned char * inStr, unsigned int inCh, _locale_t inLocale) -> char #mbstring.h
+_mbscmp(const unsigned char * inStr1, const unsigned char * inStr2) -> int #mbstring.h
+_mbscmp_l(const unsigned char * inStr1, const unsigned char * inStr2, _locale_t inLocale) -> int #mbstring.h
+_mbscoll(const unsigned char * inStr1, const unsigned char * inStr2) -> int #mbstring.h
+_mbscoll_l(const unsigned char * inStr1, const unsigned char * inStr2, _locale_t inLocale) -> int #mbstring.h
+_mbscpy_s(unsigned char * _Dst, size_t inSizeInBytes, const unsigned char * inSrc) -> _CRTIMP #mbstring.h
+_mbscpy_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, const unsigned char * inSrc, _locale_t inLocale) -> errno_t #mbstring.h
+_mbscspn(const unsigned char * inStr, const unsigned char * inControl) -> size_t #mbstring.h
+_mbscspn_l(const unsigned char * inStr, const unsigned char * inControl, _locale_t inLocale) -> size_t #mbstring.h
+_mbsdec(const unsigned char * _Start, const unsigned char * inPos) -> char #mbstring.h
+_mbsdec_l(const unsigned char * _Start, const unsigned char * inPos, _locale_t inLocale) -> char #mbstring.h
+_mbsdup(const unsigned char * inStr) -> char #mbstring.h
+_mbsicmp(const unsigned char * inStr1, const unsigned char * inStr2) -> int #mbstring.h
+_mbsicmp_l(const unsigned char * inStr1, const unsigned char * inStr2, _locale_t inLocale) -> int #mbstring.h
+_mbsicoll(const unsigned char * inStr1, const unsigned char * inStr2) -> int #mbstring.h
+_mbsicoll_l(const unsigned char * inStr1, const unsigned char * inStr2, _locale_t inLocale) -> int #mbstring.h
+_mbsinc(const unsigned char * inPtr) -> char #mbstring.h
+_mbsinc_l(const unsigned char * inPtr, _locale_t inLocale) -> char #mbstring.h
+_mbslen(const unsigned char * inStr) -> size_t #mbstring.h
+_mbslen_l(const unsigned char * inStr, _locale_t inLocale) -> size_t #mbstring.h
+_mbslwr_s(unsigned char *_Str, size_t inSizeInBytes) -> errno_t #mbstring.h
+_mbslwr_s_l(unsigned char *_Str, size_t inSizeInBytes, _locale_t inLocale) -> errno_t #mbstring.h
+_mbsnbcat_s(unsigned char * _Dst, size_t inSizeInBytes, const unsigned char * inSrc, size_t inMaxCount) -> _CRTIMP #mbstring.h
+_mbsnbcat_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, const unsigned char * inSrc, size_t inMaxCount, _locale_t inLocale) -> errno_t #mbstring.h
+_mbsnbcmp(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int #mbstring.h
+_mbsnbcmp_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #mbstring.h
+_mbsnbcnt(const unsigned char * _Str, size_t inMaxCount) -> size_t #mbstring.h
+_mbsnbcnt_l(const unsigned char * _Str, size_t inMaxCount, _locale_t inLocale) -> size_t #mbstring.h
+_mbsnbcoll(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int #mbstring.h
+_mbsnbcoll_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #mbstring.h
+_mbsnbcpy_s(unsigned char * _Dst, size_t inSizeInBytes, const unsigned char * inSrc, size_t inMaxCount) -> _CRTIMP #mbstring.h
+_mbsnbcpy_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, const unsigned char * inSrc, size_t inMaxCount, _locale_t inLocale) -> errno_t #mbstring.h
+_mbsnbicmp(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int #mbstring.h
+_mbsnbicmp_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #mbstring.h
+_mbsnbicoll(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int #mbstring.h
+_mbsnbicoll_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #mbstring.h
+_mbsnbset_s(unsigned char * _Dst, size_t inSizeInBytes, unsigned int inCh, size_t inMaxCount) -> _CRTIMP #mbstring.h
+_mbsnbset_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, unsigned int inCh, size_t inMaxCount, _locale_t inLocale) -> _CRTIMP #mbstring.h
+_mbsncat_s(unsigned char * _Dst, size_t inSizeInBytes, const unsigned char * inSrc, size_t inMaxCount) -> _CRTIMP #mbstring.h
+_mbsncat_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, const unsigned char * inSrc, size_t inMaxCount, _locale_t inLocale) -> errno_t #mbstring.h
+_mbsnccnt(const unsigned char * _Str, size_t inMaxCount) -> size_t #mbstring.h
+_mbsnccnt_l(const unsigned char * _Str, size_t inMaxCount, _locale_t inLocale) -> size_t #mbstring.h
+_mbsncmp(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int #mbstring.h
+_mbsncmp_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #mbstring.h
+_mbsncoll(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int #mbstring.h
+_mbsncoll_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #mbstring.h
+_mbsncpy_s(unsigned char * _Dst, size_t inSizeInBytes, const unsigned char * inSrc, size_t inMaxCount) -> _CRTIMP #mbstring.h
+_mbsncpy_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, const unsigned char * inSrc, size_t inMaxCount, _locale_t inLocale) -> errno_t #mbstring.h
+_mbsnextc (const unsigned char * inStr) -> int #mbstring.h
+_mbsnextc_l(const unsigned char * inStr, _locale_t inLocale) -> int #mbstring.h
+_mbsnicmp(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int #mbstring.h
+_mbsnicmp_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #mbstring.h
+_mbsnicoll(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount) -> int #mbstring.h
+_mbsnicoll_l(const unsigned char * inStr1, const unsigned char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #mbstring.h
+_mbsninc(const unsigned char * _Str, size_t inCount) -> char #mbstring.h
+_mbsninc_l(const unsigned char * _Str, size_t inCount, _locale_t inLocale) -> char #mbstring.h
+_mbsnlen(const unsigned char * inStr, size_t inMaxCount) -> size_t #mbstring.h
+_mbsnlen_l(const unsigned char * inStr, size_t inMaxCount, _locale_t inLocale) -> size_t #mbstring.h
+_mbsnset_s(unsigned char * _Dst, size_t inSizeInBytes, unsigned int inVal, size_t inMaxCount) -> _CRTIMP #mbstring.h
+_mbsnset_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, unsigned int inVal, size_t inMaxCount, _locale_t inLocale) -> _CRTIMP #mbstring.h
+_mbspbrk(const unsigned char * inStr, const unsigned char * inControl) -> char #mbstring.h
+_mbspbrk_l(const unsigned char * inStr, const unsigned char * inControl, _locale_t inLocale) -> char #mbstring.h
+_mbsrchr(const unsigned char * inStr, unsigned int inCh) -> char #mbstring.h
+_mbsrchr_l(const unsigned char *inStr, unsigned int inCh, _locale_t inLocale) -> char #mbstring.h
+_mbsrev(unsigned char * ioStr) -> char #mbstring.h
+_mbsrev_l(unsigned char *ioStr, _locale_t inLocale) -> char #mbstring.h
+_mbsset_s(unsigned char * _Dst, size_t inSizeInBytes, unsigned int inVal) -> _CRTIMP #mbstring.h
+_mbsset_s_l(unsigned char * _Dst, size_t inDstSizeInBytes, unsigned int inVal, _locale_t inLocale) -> _CRTIMP #mbstring.h
+_mbsspn(const unsigned char *inStr, const unsigned char * inControl) -> size_t #mbstring.h
+_mbsspn_l(const unsigned char * inStr, const unsigned char * inControl, _locale_t inLocale) -> size_t #mbstring.h
+_mbsspnp(const unsigned char * inStr1, const unsigned char *inStr2) -> char #mbstring.h
+_mbsspnp_l(const unsigned char *inStr1, const unsigned char *inStr2, _locale_t inLocale) -> char #mbstring.h
+_mbsstr(const unsigned char * inStr, const unsigned char * inSubstr) -> char #mbstring.h
+_mbsstr_l(const unsigned char * inStr, const unsigned char * inSubstr, _locale_t inLocale) -> char #mbstring.h
+_mbstok(unsigned char * ioStr, const unsigned char * inDelim) -> char #mbstring.h
+_mbstok_l(unsigned char *ioStr, const unsigned char * inDelim, _locale_t inLocale) -> char #mbstring.h
+_mbstok_s(unsigned char *ioStr, const unsigned char * inDelim, unsigned char ** ioContext) -> char #mbstring.h
+_mbstok_s_l(unsigned char * ioStr, const unsigned char * inDelim, unsigned char ** ioContext, _locale_t inLocale) -> char #mbstring.h
+_mbstowcs_s_l(size_t * outPtNumOfCharConverted, wchar_t * _DstBuf, size_t inSizeInWords, const char * _SrcBuf, size_t inMaxCount, _locale_t inLocale) -> errno_t #stdlib.h
+_mbstrlen(const char * inStr) -> size_t #stdlib.h
+_mbstrlen_l(const char *inStr, _locale_t inLocale) -> size_t #stdlib.h
+_mbstrnlen(const char *inStr, size_t inMaxCount) -> size_t #stdlib.h
+_mbstrnlen_l(const char *inStr, size_t inMaxCount, _locale_t inLocale) -> size_t #stdlib.h
+_mbsupr_s(unsigned char *_Str, size_t inSizeInBytes) -> errno_t #mbstring.h
+_mbsupr_s_l(unsigned char *_Str, size_t inSizeInBytes, _locale_t inLocale) -> errno_t #mbstring.h
+_mbtowc_l(wchar_t * _DstCh, const char * inSrcCh, size_t inSrcSizeInBytes, _locale_t inLocale) -> int #stdlib.h
+_memccpy(void * _Dst, const void * inSrc, int inVal, size_t inMaxCount) -> void #string.h
+_memicmp(const void * inBuf1, const void * inBuf2, size_t inSize) -> int #string.h
+_memicmp_l(const void * inBuf1, const void * inBuf2, size_t inSize, _locale_t inLocale) -> int #string.h
+_mkdir(const char * inPath) -> int #direct.h
+_mkgmtime32(struct tm * ioTm) -> __time32_t #time.h
+_mkgmtime64(struct tm * ioTm) -> __time64_t #time.h
+_mktemp_s(char * _TemplateName, size_t inSize) -> errno_t #io.h
+_mktime32(struct tm * ioTm) -> __time32_t #time.h
+_mktime64(struct tm * ioTm) -> __time64_t #time.h
+_msize(void * inMemory) -> size_t #malloc.h
+_nextafter(double inX, double inY) -> double #float.h
+_nextafterf(float inX, float inY) -> float #math.h
+_open(const char * inFilename, int inOpenFlag, ...) -> int #io.h
+_open_osfhandle(intptr_t inOSFileHandle, int inFlags) -> int #io.h
+_pclose(FILE * ioFile) -> int #stdio.h
+_pipe(int * _PtHandles, unsigned int inPipeSize, int inTextMode) -> int #io.h
+_popen(const char * inCommand, const char * inMode) -> FILE #stdio.h
+_printf_l(const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_printf_p(const char * inFormat, ...) -> int #stdio.h
+_printf_p_l(const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_printf_s_l(const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_putch(int inCh) -> int #conio.h
+_putch_nolock(int inCh) -> int #conio.h
+_putenv(const char * inEnvString) -> int #stdlib.h
+_putenv_s(const char * inName, const char * inValue) -> errno_t #stdlib.h
+_putw(int inWord, FILE * ioFile) -> int #stdio.h
+_putwch(wchar_t _WCh) -> wint_t #wchar.h
+_putwch_nolock(wchar_t _WCh) -> wint_t #conio.h
+_putws(const wchar_t * inStr) -> int #stdio.h
+_query_new_handler(void ) -> _PNH #new.h
+_query_new_mode(void ) -> int #new.h
+_read(int inFileHandle, void * _DstBuf, unsigned int inMaxCharCount) -> int #io.h
+_recalloc(void * inMemory, size_t inCount, size_t inSize) -> void #malloc.h
 _resetstkoflw (void) -> int // malloc.h
-_rmdir(const char * inPath) -> int  // direct.h
-_rmtmp(void) -> int  // stdio.h
-_scalb(double inX, long inY) -> double  // float.h
-_scalbf(float inX, long inY) -> float  // float.h
-_scanf_l(const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_scanf_s_l(const char * inFormat, _locale_t inLocale, ...) -> 37|  // stdio.h
-_scprintf(const char * inFormat, ...) -> int  // stdio.h
-_scprintf_l(const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_scprintf_p(const char * inFormat, ...) -> int  // stdio.h
-_scprintf_p_l(const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_scwprintf(const wchar_t * inFormat, ...) -> int  // stdio.h
-_scwprintf_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_scwprintf_p(const wchar_t * inFormat, ...) -> int  // wchar.h
-_scwprintf_p_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // wchar.h
-_searchenv_s(const char * inFilename, const char * inEnvVar, char * _ResultPath, size_t inSizeInBytes) -> errno_t  // stdlib.h
-_set_SSE2_enable(int inFlag) -> int  // math.h
-_set_abort_behavior(unsigned int inFlags, unsigned int inMask) -> int  // stdlib.h
-_set_amblksiz(size_t inValue) -> errno_t  // malloc.h
-_set_controlfp(unsigned int inNewValue, unsigned int inMask) -> void  // float.h
-_set_error_mode(int inMode) -> int  // stdlib.h
-_set_fmode(int inMode) -> errno_t  // stdlib.h
-_set_invalid_parameter_handler(_invalid_parameter_handler inHandler) -> int  // malloc.h
-_set_malloc_crt_max_wait(unsigned long inNewValue) -> unsigned long  // malloc.h
+_rmdir(const char * inPath) -> int #direct.h
+_rmtmp(void) -> int #stdio.h
+_scalb(double inX, long inY) -> double #float.h
+_scalbf(float inX, long inY) -> float #float.h
+_scanf_l(const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_scanf_s_l(const char * inFormat, _locale_t inLocale, ...) -> 37| #stdio.h
+_scprintf(const char * inFormat, ...) -> int #stdio.h
+_scprintf_l(const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_scprintf_p(const char * inFormat, ...) -> int #stdio.h
+_scprintf_p_l(const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_scwprintf(const wchar_t * inFormat, ...) -> int #stdio.h
+_scwprintf_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_scwprintf_p(const wchar_t * inFormat, ...) -> int #wchar.h
+_scwprintf_p_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> int #wchar.h
+_searchenv_s(const char * inFilename, const char * inEnvVar, char * _ResultPath, size_t inSizeInBytes) -> errno_t #stdlib.h
+_set_SSE2_enable(int inFlag) -> int #math.h
+_set_abort_behavior(unsigned int inFlags, unsigned int inMask) -> int #stdlib.h
+_set_amblksiz(size_t inValue) -> errno_t #malloc.h
+_set_controlfp(unsigned int inNewValue, unsigned int inMask) -> void #float.h
+_set_error_mode(int inMode) -> int #stdlib.h
+_set_fmode(int inMode) -> errno_t #stdlib.h
+_set_invalid_parameter_handler(_invalid_parameter_handler inHandler) -> int #malloc.h
+_set_malloc_crt_max_wait(unsigned long inNewValue) -> unsigned long #malloc.h
 _set_new_handler(_PNH inNewHandler)
-_set_new_handler(int inNewHandler) -> _PNH  // new.h
-_set_new_mode(int inNewMode) -> int  // new.h
-_set_output_format(unsigned int inFormat) -> int  // stdio.h
-_set_printf_count_output(int inValue) -> int  // stdio.h
+_set_new_handler(int inNewHandler) -> _PNH #new.h
+_set_new_mode(int inNewMode) -> int #new.h
+_set_output_format(unsigned int inFormat) -> int #stdio.h
+_set_printf_count_output(int inValue) -> int #stdio.h
 _set_purecall_handler(_purecall_handler inHandler)
-_set_sbh_threshold(size_t inNewValue) -> int  // malloc.h
-_set_se_translator(_se_translator_function inNewPtFunc) -> _se_translator_function  // eh.h
-_seterrormode(int inMode) -> void  // stdlib.h
-_setheaphook(_HEAPHOOK inNewHook) -> _HEAPHOOK  // malloc.h
-_setmaxstdio(int inMax) -> int  // stdio.h
-_setmbcp(int inCodePage) -> int  // mbctype.h
-_setmode(int inFileHandle, int inMode) -> int  // io.h
-_sleep(unsigned long inDuration) -> void  // stdlib.h
-_snprintf_c(char * outDstBuf, size_t inMaxCount, const char * inFormat, ...) -> int  // stdio.h
-_snprintf_c_l(char * outDstBuf, size_t inMaxCount, const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_snprintf_l(char * outDstBuf, size_t inMaxCount, const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_snprintf_s(char * _DstBuf, size_t inSizeInBytes, size_t inMaxCount, const char * inFormat, ...) -> int  // stdio.h
-_snprintf_s_l(char * _DstBuf, size_t inDstSize, size_t inMaxCount, const char * inFormat, _locale_t inLocale, ...) -> 40|  // stdio.h
-_snscanf(const char * _Src, size_t inMaxCount, const char * inFormat, ...) -> int  // stdio.h
-_snscanf_l(const char * _Src, size_t inMaxCount, const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_snscanf_s(const char * _Src, size_t inMaxCount, const char * inFormat, ...) -> int  // stdio.h
-_snscanf_s_l(const char * _Src, size_t inMaxCount, const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_snwprintf_l(wchar_t * outDstBuf, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
+_set_sbh_threshold(size_t inNewValue) -> int #malloc.h
+_set_se_translator(_se_translator_function inNewPtFunc) -> _se_translator_function #eh.h
+_seterrormode(int inMode) -> void #stdlib.h
+_setheaphook(_HEAPHOOK inNewHook) -> _HEAPHOOK #malloc.h
+_setmaxstdio(int inMax) -> int #stdio.h
+_setmbcp(int inCodePage) -> int #mbctype.h
+_setmode(int inFileHandle, int inMode) -> int #io.h
+_sleep(unsigned long inDuration) -> void #stdlib.h
+_snprintf_c(char * outDstBuf, size_t inMaxCount, const char * inFormat, ...) -> int #stdio.h
+_snprintf_c_l(char * outDstBuf, size_t inMaxCount, const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_snprintf_l(char * outDstBuf, size_t inMaxCount, const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_snprintf_s(char * _DstBuf, size_t inSizeInBytes, size_t inMaxCount, const char * inFormat, ...) -> int #stdio.h
+_snprintf_s_l(char * _DstBuf, size_t inDstSize, size_t inMaxCount, const char * inFormat, _locale_t inLocale, ...) -> 40| #stdio.h
+_snscanf(const char * _Src, size_t inMaxCount, const char * inFormat, ...) -> int #stdio.h
+_snscanf_l(const char * _Src, size_t inMaxCount, const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_snscanf_s(const char * _Src, size_t inMaxCount, const char * inFormat, ...) -> int #stdio.h
+_snscanf_s_l(const char * _Src, size_t inMaxCount, const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_snwprintf_l(wchar_t * outDstBuf, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, ...) -> int #stdio.h
 _snwprintf_s(wchar_t * _DstBuf, size_t inDstSizeInWords, size_t inMaxCount, const wchar_t * inFormat, ...)
-_snwprintf_s(wchar_t * _DstBuf, size_t inSizeInWords, size_t inMaxCount, const wchar_t * inFormat, ...) -> int  // wchar.h
-_snwprintf_s_l(wchar_t * _DstBuf, size_t inDstSize, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, ...) -> _CRTIMP  // wchar.h
-_snwscanf(const wchar_t * _Src, size_t inMaxCount, const wchar_t * inFormat, ...) -> int  // wchar.h
-_snwscanf_l(const wchar_t * _Src, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // wchar.h
-_snwscanf_s(const wchar_t * _Src, size_t inMaxCount, const wchar_t * inFormat, ...) -> int  // wchar.h
-_snwscanf_s_l(const wchar_t * _Src, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // wchar.h
-_sopen(const char * inFilename, int inOpenFlag, int _ShareFlag, ...) -> int  // io.h
-_sopen_s(int * outFileHandle, const char * inFilename,int inOpenFlag, int inShareFlag, int inPermissionMode) -> 35|  // io.h
-_spawnl(int inMode, const char * inFilename, const char * inArgList, ...) -> intptr_t  // process.h
-_spawnle(int inMode, const char * inFilename, const char * inArgList, ...) -> intptr_t  // process.h
-_spawnlp(int inMode, const char * inFilename, const char * inArgList, ...) -> intptr_t  // process.h
-_spawnlpe(int inMode, const char * inFilename, const char * inArgList, ...) -> intptr_t  // process.h
-_spawnv(int inMode, const char * inFilename, const char * const * inArgList) -> intptr_t  // process.h
-_spawnve(int inMode, const char * inFilename, const char * const * inArgList, const char * const * inEnv) -> intptr_t  // process.h
-_spawnvp(int inMode, const char * inFilename, const char * const * inArgList) -> intptr_t  // process.h
-_spawnvpe(int inMode, const char * inFilename, const char * const * inArgList, const char * const * inEnv) -> intptr_t  // process.h
-_splitpath(const char * inFullPath, char * _Drive, char * _Dir, char * _Filename, char * _Ext) -> void  // stdlib.h
-_splitpath_s(const char * inFullPath, char * _Drive, size_t inDriveSize, char * _Dir, size_t inDirSize, char * _Filename, size_t inFilenameSize, char * _Ext, size_t inExtSize) -> 39|  // stdlib.h
-_sprintf_l(char * _DstBuf, const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_sprintf_p(char * _Dst, size_t inMaxCount, const char * inFormat, ...) -> int  // stdio.h
-_sprintf_p_l(char * _DstBuf, size_t inMaxCount, const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_sprintf_s_l(char * _DstBuf, size_t inDstSize, const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_sscanf_l(const char * inSrc, const char * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_sscanf_s_l(const char * inSrc, const char * inFormat, _locale_t inLocale, ...) -> 38|  // stdio.h
-_statusfp(void) -> int  // float.h
-_statusfp2(unsigned int *outX86_status, unsigned int *outSSE2_status) -> void  // float.h
-_strcmpi(const char * inStr1, const char * inStr2) -> int  // string.h
-_strcoll_l(const char * inStr1, const char * inStr2, _locale_t inLocale) -> int  // string.h
-_strdate_s(char *outBuf, size_t inSizeInBytes) -> errno_t  // time.h
-_strdup(const char * inSrc) -> char  // string.h
-_strerror(const char * inErrMsg) -> char  // string.h
-_strerror_s(char * _Buf, size_t inSizeInBytes, const char * inErrMsg) -> 38|  // string.h
-_strftime_l(char *_Buf, size_t inMax_size, const char * inFormat, const struct tm *inTm, _locale_t inLocale) -> size_t  // time.h
-_stricmp(const char * inStr1, const char * inStr2) -> int  // string.h
-_stricmp_l(const char * inStr1, const char * inStr2, _locale_t inLocale) -> int  // string.h
-_stricoll(const char * inStr1, const char * inStr2) -> int  // string.h
-_stricoll_l(const char * inStr1, const char * inStr2, _locale_t inLocale) -> int  // string.h
-_strlwr_s(char * _Str, size_t inSize) -> errno_t  // string.h
-_strlwr_s_l(char * _Str, size_t inSize, _locale_t inLocale) -> errno_t  // string.h
-_strncoll (const char * inStr1, const char * inStr2, size_t inMaxCount) -> int  // string.h
-_strncoll_l(const char * inStr1, const char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // string.h
-_strnicmp(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int  // string.h
-_strnicmp_l(const char * inStr1, const char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // string.h
-_strnicoll (const char * inStr1, const char * inStr2, size_t inMaxCount) -> int  // string.h
-_strnicoll_l(const char * inStr1, const char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // string.h
-_strnset_s(char * _Str, size_t inSizeInBytes, int inVal, size_t inMaxCount) -> 42|  // string.h
-_strrev(char * ioStr) -> char  // string.h
-_strset_s(char * _Dst, size_t inDstSize, int inValue) -> errno_t  // string.h
-_strtime_s(char *outBuf , size_t inSizeInBytes) -> errno_t  // time.h
-_strtod_l(const char * inStr, char ** outEndPtr, _locale_t inLocale) -> double  // stdlib.h
-_strtoi64(const char * inString, char ** outEndPtr, int inRadix) -> __int64  // stdlib.h
-_strtoi64_l(const char * inString, char ** outEndPtr, int inRadix, _locale_t inLocale) -> __int64  // stdlib.h
-_strtol_l(const char *inStr, char **outEndPtr, int inRadix, _locale_t inLocale) -> long  // stdlib.h
-_strtoui64(const char * inString, char ** outEndPtr, int inRadix) -> __int64  // stdlib.h
-_strtoui64_l(const char * inString, char ** outEndPtr, int inRadix, _locale_t inLocale) -> __int64  // stdlib.h
-_strtoul_l(const char * _Str, char **outEndPtr, int inRadix, _locale_t inLocale) -> long  // stdlib.h
-_strupr_s(char * _Str, size_t inSize) -> errno_t  // string.h
-_strupr_s_l(char * _Str, size_t inSize, _locale_t _Locale) -> errno_t  // string.h
-_strxfrm_l(char * _Dst, const char * inSrc, size_t inMaxCount, _locale_t inLocale) -> size_t  // string.h
-_swab(char * _Buf1, char * outBuf2, int _SizeInBytes) -> void  // stdlib.h
-_swprintf_c(wchar_t * _DstBuf, size_t inSizeInWords, const wchar_t * inFormat, ...) -> int  // wchar.h
-_swprintf_c_l(wchar_t * _DstBuf, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // wchar.h
-_swprintf_p(wchar_t * _DstBuf, size_t inMaxCount, const wchar_t * inFormat, ...) -> int  // stdio.h
-_swprintf_p_l(wchar_t * _DstBuf, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_swprintf_s_l(wchar_t * _DstBuf, size_t inDstSize, const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_swscanf_l(const wchar_t * inSrc, const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_swscanf_s_l(const wchar_t * inSrc, const wchar_t * inFormat, _locale_t inLocale, ...) -> 39|  // stdio.h
-_tccpy(char * _DstCh, const char * inSrcCh) -> void  // tchar.h
-_tccpy_l(char * _DstCh, const char * inSrcCh, _locale_t inLocale) -> void  // tchar.h
-_tccpy_s(char * _DstCh, size_t _SizeInBytes, int *outPCopied, const char * inSrcCh) -> errno_t  // tchar.h
-_tccpy_s_l(char * _DstCh, size_t _SizeInBytes, int *outPCopied, const char * inSrcCh, _locale_t inLocale) -> errno_t  // tchar.h
-_tclen(const char * inStr) -> size_t  // tchar.h
-_tcschr(const char * inStr, unsigned int inVal) -> char  // tchar.h
-_tcsclen(const char *inStr) -> size_t  // tchar.h
-_tcsclen_l(const char *inStr, _locale_t inLocale) -> size_t  // tchar.h
-_tcscmp(const char *inStr1, const char * inStr) -> int  // tchar.h
-_tcscnlen(const char *inStr, size_t inMaxCount) -> size_t  // tchar.h
-_tcscnlen_l(const char *inStr, size_t inMaxCount, _locale_t inLocale) -> size_t  // tchar.h
-_tcscoll(const char * inStr1, const char * inStr2) -> int  // tchar.h
-_tcscoll_l(const char *inStr1, const char *inStr2, _locale_t inLocale) -> int  // tchar.h
-_tcscspn(const char * inStr, const char * inControl) -> size_t  // tchar.h
-_tcsdec(const char * _Start, const char * inPos) -> char  // tchar.h
-_tcsicmp(const char *inStr1, const char *inStr2) -> int  // tchar.h
-_tcsicmp_l(const char *inStr1, const char *inStr2, _locale_t inLocale) -> int  // tchar.h
-_tcsicoll(const char * inStr1, const char * inStr2) -> int  // tchar.h
-_tcsicoll_l(const char *inStr1, const char *inStr2, _locale_t inLocale) -> int  // tchar.h
-_tcsinc(const char * inPtr) -> char  // tchar.h
-_tcslwr(char *ioStr) -> char  // tchar.h
-_tcslwr_l(char *ioStr, _locale_t inLocale) -> char  // tchar.h
-_tcslwr_s(char *_Str, size_t inSizeInChars) -> char  // tchar.h
-_tcslwr_s_l(char *_Str, size_t inSizeInChars, _locale_t inLocale) -> char  // tchar.h
-_tcsnbcnt(const char * _Str, size_t inMaxCount) -> size_t  // tchar.h
-_tcsncat(char *_Dst, const char *inSrc, size_t inMaxCount) -> char  // tchar.h
-_tcsncat_l(char *_Dst, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char  // tchar.h
-_tcsncat_s(char *_Dst, size_t inDstSizeInChars, const char *inSrc, size_t _MaxCount) -> char  // tchar.h
-_tcsncat_s_l(char *_Dst, size_t inDstSizeInChars, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char  // tchar.h
-_tcsnccat(char *ioDst, const char *inSrc, size_t inMaxCount) -> char  // tchar.h
-_tcsnccat_l(char *ioDst, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char  // tchar.h
-_tcsnccat_s(char *_Dst, size_t inDstSizeInChars, const char *inSrc, size_t inMaxCount) -> char  // tchar.h
-_tcsnccat_s_l(char *_Dst, size_t inDstSizeInChars, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char  // tchar.h
-_tcsnccmp(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int  // tchar.h
-_tcsnccnt(const char * _Str, size_t inMaxCount) -> size_t  // tchar.h
-_tcsnccoll(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int  // tchar.h
-_tcsnccoll_l(const char *inStr1, const char *inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // tchar.h
-_tcsnccpy(char *outDst, const char *inSrc, size_t inMaxCount) -> char  // tchar.h
-_tcsnccpy_l(char *outDst, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char  // tchar.h
-_tcsnccpy_s(char *outDst, size_t inDstSizeInChars, const char *inSrc, size_t inMaxCount) -> char  // tchar.h
-_tcsnccpy_s_l(char *outDst, size_t inDstSizeInChars, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char  // tchar.h
-_tcsncicmp(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int  // tchar.h
-_tcsncicmp_l(const char *inStr1, const char *inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // tchar.h
-_tcsncicoll(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int  // tchar.h
-_tcsncicoll_l(const char *inStr1, const char *inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // tchar.h
-_tcsncmp(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int  // tchar.h
-_tcsncoll(const char *inStr1, const char * inStr2, size_t inMaxCount) -> int  // tchar.h
-_tcsncoll_l(const char *inStr1, const char *inStr2, size_t _MaxCount, _locale_t inLocale) -> int  // tchar.h
-_tcsncpy(char *outDst, const char *inSrc, size_t _MaxCount) -> char  // tchar.h
-_tcsncpy_l(char *outDst, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char  // tchar.h
-_tcsncpy_s(char *outDst, size_t inDstSizeInChars, const char *inSrc, size_t _MaxCount) -> char  // tchar.h
-_tcsncpy_s_l(char *outDst, size_t inDstSizeInChars, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char  // tchar.h
-_tcsncset(char * _Str, unsigned int inVal, size_t inMaxCount) -> char  // tchar.h
-_tcsncset_l(char * _Str, unsigned int inVal, size_t inMaxCount, _locale_t inLocale) -> char*  // tchar.h
-_tcsncset_s(char * _Str, size_t inSizeInChars, unsigned int inVal, size_t inMaxCount) ->  errno_t  // tchar.h
-_tcsncset_s_l(char * _Str, size_t inSizeInChars, unsigned int inVal, size_t inMaxCount, _locale_t inLocale) -> errno_t  // tchar.h
-_tcsnextc (const char * inStr) -> int  // tchar.h
-_tcsnicmp(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int  // tchar.h
-_tcsnicmp_l(const char *inStr1, const char *inStr2, size_t _MaxCount, _locale_t inLocale) -> int  // tchar.h
-_tcsnicoll(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int  // tchar.h
-_tcsnicoll_l(const char *inStr1, const char *inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // tchar.h
-_tcsninc(const char * _Ptr, size_t inCount) -> char  // tchar.h
-_tcsnset(char * ioStr, unsigned int inVal, size_t inMaxCount) -> char  // tchar.h
-_tcsnset_l(char * ioStr, unsigned int inVal, size_t inMaxCount, _locale_t inLocale) -> char*  // tchar.h
-_tcsnset_s(char * _Str, size_t inSizeInChars, unsigned int inVal , size_t inMaxCount) -> errno_t  // tchar.h
-_tcsnset_s_l(char * _Str, size_t inSizeInChars, unsigned int inVal , size_t inMaxCount, _locale_t inLocale) -> errno_t  // tchar.h
-_tcspbrk(const char * inStr, const char * inControl) -> char  // tchar.h
-_tcsrchr(const char * inStr, unsigned int inCh) -> char  // tchar.h
-_tcsrev(char * ioStr) -> char  // tchar.h
-_tcsset(char * ioStr, unsigned int inVal) -> char  // tchar.h
-_tcsset_l(char * ioStr, unsigned int inVal, _locale_t inLocale) -> char  // tchar.h
-_tcsset_s(char * _Str, size_t inSizeInChars, unsigned int inVal) -> errno_t  // tchar.h
-_tcsset_s_l(char * _Str, size_t inSizeInChars, unsigned inint, _locale_t inLocale) -> errno_t  // tchar.h
-_tcsspn(const char * inStr, const char * inControl) -> size_t  // tchar.h
-_tcsspnp(const char * inStr1, const char * inStr2) -> char  // tchar.h
-_tcsstr(const char * inStr, const char * inSubstr) -> char  // tchar.h
-_tcstok(char *ioStr, const char *inDelim) -> char  // tchar.h
-_tcstok_l(char *ioStr, const char *inDelim, _locale_t inLocale) -> char  // tchar.h
-_tcstok_s(char *ioStr, const char *inDelim, char **ioContext) -> char  // tchar.h
-_tcstok_s_l(char *ioStr, const char *inDelim, char **ioContext, _locale_t inLocale) -> char  // tchar.h
-_tcsupr(char *ioStr) -> char  // tchar.h
-_tcsupr_l(char *ioStr, _locale_t inLocale) -> char  // tchar.h
-_tcsupr_s(char *_Str, size_t inSizeInChars) -> char  // tchar.h
-_tcsupr_s_l(char *_Str, size_t inSizeInChars, _locale_t inLocale) -> char  // tchar.h
-_tell(int inFileHandle) -> long  // io.h
-_telli64(int inFileHandle) -> __int64  // io.h
-_tempnam(const char * inDirName, const char * inFilePrefix) -> char  // stdio.h
-_time32(__time32_t * outTime) -> __time32_t  // time.h
-_time64(__time64_t * outTime) -> __time64_t  // time.h
-_tolower(int inC) -> int  // ctype.h
-_tolower_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_toupper(int inC) -> int  // ctype.h
-_toupper_l(int inC, _locale_t inLocale) -> int  // ctype.h
-_towlower_l(wint_t inC, _locale_t inLocale)  -> wint_t  // ctype.h
-_towupper_l(wint_t inC, _locale_t inLocale) -> wint_t  // wchar.h
-_tzset(void) -> void  // time.h
-_ui64toa(unsigned __int64 inVal, char * _DstBuf, int inRadix) -> char  // stdlib.h
-_ui64toa_s(unsigned __int64 inVal, char * _DstBuf, size_t inSize, int inRadix) -> _CRTIMP  // stdlib.h
-_ui64tow(unsigned __int64 inVal, wchar_t * _DstBuf, int inRadix) -> wchar_t  // stdlib.h
-_ui64tow_s(unsigned __int64 inVal, wchar_t * _DstBuf, size_t inSizeInWords, int inRadix) -> _CRTIMP  // stdlib.h
-_ultoa_s(unsigned long inVal, char * _DstBuf, size_t inSize, int inRadix) -> _ultoa)  // stdlib.h
-_ultow_s (unsigned long inVal, wchar_t * _DstBuf, size_t inSizeInWords, int inRadix) -> errno_t  // wchar.h
-_umask(int inMode) -> int  // io.h
-_umask_s(int inNewMode, int * outOldMode) -> 35|  // io.h
-_ungetc_nolock(int inCh, FILE * ioFile) -> int  // stdio.h
-_ungetch(int inCh) -> int  // conio.h
-_ungetch_nolock(int inCh) -> int  // conio.h
-_ungetwc_nolock(wint_t inCh, FILE * ioFile) -> wint_t  // wchar.h
-_ungetwch(wint_t _WCh) -> wint_t  // conio.h
-_ungetwch_nolock(wint_t _WCh) -> wint_t  // conio.h
-_unlink(const char * inFilename) -> int  // io.h
-_unlock_file(FILE * ioFile) -> void  // stdio.h
-_vcprintf(const char * inFormat, va_list _ArgList) -> int  // conio.h
-_vcprintf_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // conio.h
-_vcprintf_p(const char * inFormat, va_list _ArgList) -> int  // conio.h
-_vcprintf_p_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // conio.h
-_vcprintf_s(const char * inFormat, va_list _ArgList) -> int  // conio.h
-_vcprintf_s_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // conio.h
-_vcwprintf(const wchar_t *inFormat, va_list _ArgList) -> int  // conio.h
-_vcwprintf_l(const wchar_t *inFormat, _locale_t inLocale, va_list _ArgList) -> int  // conio.h
-_vcwprintf_p(const wchar_t* inFormat, va_list _ArgList) -> int  // wchar.h
-_vcwprintf_p_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // wchar.h
-_vcwprintf_s(const wchar_t *inFormat, va_list _ArgList) -> int  // conio.h
-_vcwprintf_s_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // conio.h
-_vfprintf_l(FILE * ioFile, const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vfprintf_p(FILE * ioFile, const char * inFormat, va_list _ArgList) -> int  // stdio.h
-_vfprintf_p_l(FILE * ioFile, const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vfprintf_s_l(FILE * ioFile, const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vfwprintf_l(FILE * ioFile, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vfwprintf_p(FILE * ioFile, const wchar_t * inFormat, va_list _ArgList) -> int  // wchar.h
-_vfwprintf_p_l(FILE * ioFile, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // wchar.h
-_vfwprintf_s_l(FILE * ioFile, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // wchar.h
-_vprintf_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vprintf_p(const char * inFormat, va_list _ArgList) -> int  // stdio.h
-_vprintf_p_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vprintf_s_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vscprintf(const char * inFormat, va_list _ArgList) -> int  // stdio.h
-_vscprintf_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vscprintf_p(const char * inFormat, va_list _ArgList) -> int  // stdio.h
-_vscprintf_p_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vscwprintf(const wchar_t * inFormat, va_list _ArgList) -> int  // stdio.h
-_vscwprintf_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vscwprintf_p(const wchar_t * inFormat, va_list _ArgList) -> int  // wchar.h
-_vscwprintf_p_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // wchar.h
-_vsnprintf_c(char *outDstBuf, size_t inMaxCount, const char * inFormat, va_list _ArgList) -> int  // stdio.h
-_vsnprintf_c_l(char * outDstBuf, size_t inMaxCount, const char *, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vsnprintf_l(char * outDstBuf, size_t inMaxCount, const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vsnprintf_s(char * _DstBuf, size_t inSizeInBytes, size_t inMaxCount, const char * inFormat, va_list _ArgList) -> int  // stdio.h
-_vsnprintf_s_l(char * _DstBuf, size_t inDstSize, size_t inMaxCount, const char* inFormat,_locale_t inLocale, va_list _ArgList) -> 41|  // stdio.h
-_vsnwprintf_l(wchar_t * outDstBuf, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
+_snwprintf_s(wchar_t * _DstBuf, size_t inSizeInWords, size_t inMaxCount, const wchar_t * inFormat, ...) -> int #wchar.h
+_snwprintf_s_l(wchar_t * _DstBuf, size_t inDstSize, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, ...) -> _CRTIMP #wchar.h
+_snwscanf(const wchar_t * _Src, size_t inMaxCount, const wchar_t * inFormat, ...) -> int #wchar.h
+_snwscanf_l(const wchar_t * _Src, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, ...) -> int #wchar.h
+_snwscanf_s(const wchar_t * _Src, size_t inMaxCount, const wchar_t * inFormat, ...) -> int #wchar.h
+_snwscanf_s_l(const wchar_t * _Src, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, ...) -> int #wchar.h
+_sopen(const char * inFilename, int inOpenFlag, int _ShareFlag, ...) -> int #io.h
+_sopen_s(int * outFileHandle, const char * inFilename,int inOpenFlag, int inShareFlag, int inPermissionMode) -> 35| #io.h
+_spawnl(int inMode, const char * inFilename, const char * inArgList, ...) -> intptr_t #process.h
+_spawnle(int inMode, const char * inFilename, const char * inArgList, ...) -> intptr_t #process.h
+_spawnlp(int inMode, const char * inFilename, const char * inArgList, ...) -> intptr_t #process.h
+_spawnlpe(int inMode, const char * inFilename, const char * inArgList, ...) -> intptr_t #process.h
+_spawnv(int inMode, const char * inFilename, const char * const * inArgList) -> intptr_t #process.h
+_spawnve(int inMode, const char * inFilename, const char * const * inArgList, const char * const * inEnv) -> intptr_t #process.h
+_spawnvp(int inMode, const char * inFilename, const char * const * inArgList) -> intptr_t #process.h
+_spawnvpe(int inMode, const char * inFilename, const char * const * inArgList, const char * const * inEnv) -> intptr_t #process.h
+_splitpath(const char * inFullPath, char * _Drive, char * _Dir, char * _Filename, char * _Ext) -> void #stdlib.h
+_splitpath_s(const char * inFullPath, char * _Drive, size_t inDriveSize, char * _Dir, size_t inDirSize, char * _Filename, size_t inFilenameSize, char * _Ext, size_t inExtSize) -> 39| #stdlib.h
+_sprintf_l(char * _DstBuf, const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_sprintf_p(char * _Dst, size_t inMaxCount, const char * inFormat, ...) -> int #stdio.h
+_sprintf_p_l(char * _DstBuf, size_t inMaxCount, const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_sprintf_s_l(char * _DstBuf, size_t inDstSize, const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_sscanf_l(const char * inSrc, const char * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_sscanf_s_l(const char * inSrc, const char * inFormat, _locale_t inLocale, ...) -> 38| #stdio.h
+_statusfp(void) -> int #float.h
+_statusfp2(unsigned int *outX86_status, unsigned int *outSSE2_status) -> void #float.h
+_strcmpi(const char * inStr1, const char * inStr2) -> int #string.h
+_strcoll_l(const char * inStr1, const char * inStr2, _locale_t inLocale) -> int #string.h
+_strdate_s(char *outBuf, size_t inSizeInBytes) -> errno_t #time.h
+_strdup(const char * inSrc) -> char #string.h
+_strerror(const char * inErrMsg) -> char #string.h
+_strerror_s(char * _Buf, size_t inSizeInBytes, const char * inErrMsg) -> 38| #string.h
+_strftime_l(char *_Buf, size_t inMax_size, const char * inFormat, const struct tm *inTm, _locale_t inLocale) -> size_t #time.h
+_stricmp(const char * inStr1, const char * inStr2) -> int #string.h
+_stricmp_l(const char * inStr1, const char * inStr2, _locale_t inLocale) -> int #string.h
+_stricoll(const char * inStr1, const char * inStr2) -> int #string.h
+_stricoll_l(const char * inStr1, const char * inStr2, _locale_t inLocale) -> int #string.h
+_strlwr_s(char * _Str, size_t inSize) -> errno_t #string.h
+_strlwr_s_l(char * _Str, size_t inSize, _locale_t inLocale) -> errno_t #string.h
+_strncoll (const char * inStr1, const char * inStr2, size_t inMaxCount) -> int #string.h
+_strncoll_l(const char * inStr1, const char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #string.h
+_strnicmp(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int #string.h
+_strnicmp_l(const char * inStr1, const char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #string.h
+_strnicoll (const char * inStr1, const char * inStr2, size_t inMaxCount) -> int #string.h
+_strnicoll_l(const char * inStr1, const char * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #string.h
+_strnset_s(char * _Str, size_t inSizeInBytes, int inVal, size_t inMaxCount) -> 42| #string.h
+_strrev(char * ioStr) -> char #string.h
+_strset_s(char * _Dst, size_t inDstSize, int inValue) -> errno_t #string.h
+_strtime_s(char *outBuf , size_t inSizeInBytes) -> errno_t #time.h
+_strtod_l(const char * inStr, char ** outEndPtr, _locale_t inLocale) -> double #stdlib.h
+_strtoi64(const char * inString, char ** outEndPtr, int inRadix) -> __int64 #stdlib.h
+_strtoi64_l(const char * inString, char ** outEndPtr, int inRadix, _locale_t inLocale) -> __int64 #stdlib.h
+_strtol_l(const char *inStr, char **outEndPtr, int inRadix, _locale_t inLocale) -> long #stdlib.h
+_strtoui64(const char * inString, char ** outEndPtr, int inRadix) -> __int64 #stdlib.h
+_strtoui64_l(const char * inString, char ** outEndPtr, int inRadix, _locale_t inLocale) -> __int64 #stdlib.h
+_strtoul_l(const char * _Str, char **outEndPtr, int inRadix, _locale_t inLocale) -> long #stdlib.h
+_strupr_s(char * _Str, size_t inSize) -> errno_t #string.h
+_strupr_s_l(char * _Str, size_t inSize, _locale_t _Locale) -> errno_t #string.h
+_strxfrm_l(char * _Dst, const char * inSrc, size_t inMaxCount, _locale_t inLocale) -> size_t #string.h
+_swab(char * _Buf1, char * outBuf2, int _SizeInBytes) -> void #stdlib.h
+_swprintf_c(wchar_t * _DstBuf, size_t inSizeInWords, const wchar_t * inFormat, ...) -> int #wchar.h
+_swprintf_c_l(wchar_t * _DstBuf, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, ...) -> int #wchar.h
+_swprintf_p(wchar_t * _DstBuf, size_t inMaxCount, const wchar_t * inFormat, ...) -> int #stdio.h
+_swprintf_p_l(wchar_t * _DstBuf, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_swprintf_s_l(wchar_t * _DstBuf, size_t inDstSize, const wchar_t * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_swscanf_l(const wchar_t * inSrc, const wchar_t * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_swscanf_s_l(const wchar_t * inSrc, const wchar_t * inFormat, _locale_t inLocale, ...) -> 39| #stdio.h
+_tccpy(char * _DstCh, const char * inSrcCh) -> void #tchar.h
+_tccpy_l(char * _DstCh, const char * inSrcCh, _locale_t inLocale) -> void #tchar.h
+_tccpy_s(char * _DstCh, size_t _SizeInBytes, int *outPCopied, const char * inSrcCh) -> errno_t #tchar.h
+_tccpy_s_l(char * _DstCh, size_t _SizeInBytes, int *outPCopied, const char * inSrcCh, _locale_t inLocale) -> errno_t #tchar.h
+_tclen(const char * inStr) -> size_t #tchar.h
+_tcschr(const char * inStr, unsigned int inVal) -> char #tchar.h
+_tcsclen(const char *inStr) -> size_t #tchar.h
+_tcsclen_l(const char *inStr, _locale_t inLocale) -> size_t #tchar.h
+_tcscmp(const char *inStr1, const char * inStr) -> int #tchar.h
+_tcscnlen(const char *inStr, size_t inMaxCount) -> size_t #tchar.h
+_tcscnlen_l(const char *inStr, size_t inMaxCount, _locale_t inLocale) -> size_t #tchar.h
+_tcscoll(const char * inStr1, const char * inStr2) -> int #tchar.h
+_tcscoll_l(const char *inStr1, const char *inStr2, _locale_t inLocale) -> int #tchar.h
+_tcscspn(const char * inStr, const char * inControl) -> size_t #tchar.h
+_tcsdec(const char * _Start, const char * inPos) -> char #tchar.h
+_tcsicmp(const char *inStr1, const char *inStr2) -> int #tchar.h
+_tcsicmp_l(const char *inStr1, const char *inStr2, _locale_t inLocale) -> int #tchar.h
+_tcsicoll(const char * inStr1, const char * inStr2) -> int #tchar.h
+_tcsicoll_l(const char *inStr1, const char *inStr2, _locale_t inLocale) -> int #tchar.h
+_tcsinc(const char * inPtr) -> char #tchar.h
+_tcslwr(char *ioStr) -> char #tchar.h
+_tcslwr_l(char *ioStr, _locale_t inLocale) -> char #tchar.h
+_tcslwr_s(char *_Str, size_t inSizeInChars) -> char #tchar.h
+_tcslwr_s_l(char *_Str, size_t inSizeInChars, _locale_t inLocale) -> char #tchar.h
+_tcsnbcnt(const char * _Str, size_t inMaxCount) -> size_t #tchar.h
+_tcsncat(char *_Dst, const char *inSrc, size_t inMaxCount) -> char #tchar.h
+_tcsncat_l(char *_Dst, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char #tchar.h
+_tcsncat_s(char *_Dst, size_t inDstSizeInChars, const char *inSrc, size_t _MaxCount) -> char #tchar.h
+_tcsncat_s_l(char *_Dst, size_t inDstSizeInChars, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char #tchar.h
+_tcsnccat(char *ioDst, const char *inSrc, size_t inMaxCount) -> char #tchar.h
+_tcsnccat_l(char *ioDst, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char #tchar.h
+_tcsnccat_s(char *_Dst, size_t inDstSizeInChars, const char *inSrc, size_t inMaxCount) -> char #tchar.h
+_tcsnccat_s_l(char *_Dst, size_t inDstSizeInChars, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char #tchar.h
+_tcsnccmp(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int #tchar.h
+_tcsnccnt(const char * _Str, size_t inMaxCount) -> size_t #tchar.h
+_tcsnccoll(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int #tchar.h
+_tcsnccoll_l(const char *inStr1, const char *inStr2, size_t inMaxCount, _locale_t inLocale) -> int #tchar.h
+_tcsnccpy(char *outDst, const char *inSrc, size_t inMaxCount) -> char #tchar.h
+_tcsnccpy_l(char *outDst, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char #tchar.h
+_tcsnccpy_s(char *outDst, size_t inDstSizeInChars, const char *inSrc, size_t inMaxCount) -> char #tchar.h
+_tcsnccpy_s_l(char *outDst, size_t inDstSizeInChars, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char #tchar.h
+_tcsncicmp(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int #tchar.h
+_tcsncicmp_l(const char *inStr1, const char *inStr2, size_t inMaxCount, _locale_t inLocale) -> int #tchar.h
+_tcsncicoll(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int #tchar.h
+_tcsncicoll_l(const char *inStr1, const char *inStr2, size_t inMaxCount, _locale_t inLocale) -> int #tchar.h
+_tcsncmp(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int #tchar.h
+_tcsncoll(const char *inStr1, const char * inStr2, size_t inMaxCount) -> int #tchar.h
+_tcsncoll_l(const char *inStr1, const char *inStr2, size_t _MaxCount, _locale_t inLocale) -> int #tchar.h
+_tcsncpy(char *outDst, const char *inSrc, size_t _MaxCount) -> char #tchar.h
+_tcsncpy_l(char *outDst, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char #tchar.h
+_tcsncpy_s(char *outDst, size_t inDstSizeInChars, const char *inSrc, size_t _MaxCount) -> char #tchar.h
+_tcsncpy_s_l(char *outDst, size_t inDstSizeInChars, const char *inSrc, size_t inMaxCount, _locale_t inLocale) -> char #tchar.h
+_tcsncset(char * _Str, unsigned int inVal, size_t inMaxCount) -> char #tchar.h
+_tcsncset_l(char * _Str, unsigned int inVal, size_t inMaxCount, _locale_t inLocale) -> char* #tchar.h
+_tcsncset_s(char * _Str, size_t inSizeInChars, unsigned int inVal, size_t inMaxCount) ->  errno_t #tchar.h
+_tcsncset_s_l(char * _Str, size_t inSizeInChars, unsigned int inVal, size_t inMaxCount, _locale_t inLocale) -> errno_t #tchar.h
+_tcsnextc (const char * inStr) -> int #tchar.h
+_tcsnicmp(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int #tchar.h
+_tcsnicmp_l(const char *inStr1, const char *inStr2, size_t _MaxCount, _locale_t inLocale) -> int #tchar.h
+_tcsnicoll(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int #tchar.h
+_tcsnicoll_l(const char *inStr1, const char *inStr2, size_t inMaxCount, _locale_t inLocale) -> int #tchar.h
+_tcsninc(const char * _Ptr, size_t inCount) -> char #tchar.h
+_tcsnset(char * ioStr, unsigned int inVal, size_t inMaxCount) -> char #tchar.h
+_tcsnset_l(char * ioStr, unsigned int inVal, size_t inMaxCount, _locale_t inLocale) -> char* #tchar.h
+_tcsnset_s(char * _Str, size_t inSizeInChars, unsigned int inVal , size_t inMaxCount) -> errno_t #tchar.h
+_tcsnset_s_l(char * _Str, size_t inSizeInChars, unsigned int inVal , size_t inMaxCount, _locale_t inLocale) -> errno_t #tchar.h
+_tcspbrk(const char * inStr, const char * inControl) -> char #tchar.h
+_tcsrchr(const char * inStr, unsigned int inCh) -> char #tchar.h
+_tcsrev(char * ioStr) -> char #tchar.h
+_tcsset(char * ioStr, unsigned int inVal) -> char #tchar.h
+_tcsset_l(char * ioStr, unsigned int inVal, _locale_t inLocale) -> char #tchar.h
+_tcsset_s(char * _Str, size_t inSizeInChars, unsigned int inVal) -> errno_t #tchar.h
+_tcsset_s_l(char * _Str, size_t inSizeInChars, unsigned inint, _locale_t inLocale) -> errno_t #tchar.h
+_tcsspn(const char * inStr, const char * inControl) -> size_t #tchar.h
+_tcsspnp(const char * inStr1, const char * inStr2) -> char #tchar.h
+_tcsstr(const char * inStr, const char * inSubstr) -> char #tchar.h
+_tcstok(char *ioStr, const char *inDelim) -> char #tchar.h
+_tcstok_l(char *ioStr, const char *inDelim, _locale_t inLocale) -> char #tchar.h
+_tcstok_s(char *ioStr, const char *inDelim, char **ioContext) -> char #tchar.h
+_tcstok_s_l(char *ioStr, const char *inDelim, char **ioContext, _locale_t inLocale) -> char #tchar.h
+_tcsupr(char *ioStr) -> char #tchar.h
+_tcsupr_l(char *ioStr, _locale_t inLocale) -> char #tchar.h
+_tcsupr_s(char *_Str, size_t inSizeInChars) -> char #tchar.h
+_tcsupr_s_l(char *_Str, size_t inSizeInChars, _locale_t inLocale) -> char #tchar.h
+_tell(int inFileHandle) -> long #io.h
+_telli64(int inFileHandle) -> __int64 #io.h
+_tempnam(const char * inDirName, const char * inFilePrefix) -> char #stdio.h
+_time32(__time32_t * outTime) -> __time32_t #time.h
+_time64(__time64_t * outTime) -> __time64_t #time.h
+_tolower(int inC) -> int #ctype.h
+_tolower_l(int inC, _locale_t inLocale) -> int #ctype.h
+_toupper(int inC) -> int #ctype.h
+_toupper_l(int inC, _locale_t inLocale) -> int #ctype.h
+_towlower_l(wint_t inC, _locale_t inLocale)  -> wint_t #ctype.h
+_towupper_l(wint_t inC, _locale_t inLocale) -> wint_t #wchar.h
+_tzset(void) -> void #time.h
+_ui64toa(unsigned __int64 inVal, char * _DstBuf, int inRadix) -> char #stdlib.h
+_ui64toa_s(unsigned __int64 inVal, char * _DstBuf, size_t inSize, int inRadix) -> _CRTIMP #stdlib.h
+_ui64tow(unsigned __int64 inVal, wchar_t * _DstBuf, int inRadix) -> wchar_t #stdlib.h
+_ui64tow_s(unsigned __int64 inVal, wchar_t * _DstBuf, size_t inSizeInWords, int inRadix) -> _CRTIMP #stdlib.h
+_ultoa_s(unsigned long inVal, char * _DstBuf, size_t inSize, int inRadix) -> _ultoa) #stdlib.h
+_ultow_s (unsigned long inVal, wchar_t * _DstBuf, size_t inSizeInWords, int inRadix) -> errno_t #wchar.h
+_umask(int inMode) -> int #io.h
+_umask_s(int inNewMode, int * outOldMode) -> 35| #io.h
+_ungetc_nolock(int inCh, FILE * ioFile) -> int #stdio.h
+_ungetch(int inCh) -> int #conio.h
+_ungetch_nolock(int inCh) -> int #conio.h
+_ungetwc_nolock(wint_t inCh, FILE * ioFile) -> wint_t #wchar.h
+_ungetwch(wint_t _WCh) -> wint_t #conio.h
+_ungetwch_nolock(wint_t _WCh) -> wint_t #conio.h
+_unlink(const char * inFilename) -> int #io.h
+_unlock_file(FILE * ioFile) -> void #stdio.h
+_vcprintf(const char * inFormat, va_list _ArgList) -> int #conio.h
+_vcprintf_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #conio.h
+_vcprintf_p(const char * inFormat, va_list _ArgList) -> int #conio.h
+_vcprintf_p_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #conio.h
+_vcprintf_s(const char * inFormat, va_list _ArgList) -> int #conio.h
+_vcprintf_s_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #conio.h
+_vcwprintf(const wchar_t *inFormat, va_list _ArgList) -> int #conio.h
+_vcwprintf_l(const wchar_t *inFormat, _locale_t inLocale, va_list _ArgList) -> int #conio.h
+_vcwprintf_p(const wchar_t* inFormat, va_list _ArgList) -> int #wchar.h
+_vcwprintf_p_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #wchar.h
+_vcwprintf_s(const wchar_t *inFormat, va_list _ArgList) -> int #conio.h
+_vcwprintf_s_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #conio.h
+_vfprintf_l(FILE * ioFile, const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vfprintf_p(FILE * ioFile, const char * inFormat, va_list _ArgList) -> int #stdio.h
+_vfprintf_p_l(FILE * ioFile, const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vfprintf_s_l(FILE * ioFile, const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vfwprintf_l(FILE * ioFile, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vfwprintf_p(FILE * ioFile, const wchar_t * inFormat, va_list _ArgList) -> int #wchar.h
+_vfwprintf_p_l(FILE * ioFile, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #wchar.h
+_vfwprintf_s_l(FILE * ioFile, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #wchar.h
+_vprintf_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vprintf_p(const char * inFormat, va_list _ArgList) -> int #stdio.h
+_vprintf_p_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vprintf_s_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vscprintf(const char * inFormat, va_list _ArgList) -> int #stdio.h
+_vscprintf_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vscprintf_p(const char * inFormat, va_list _ArgList) -> int #stdio.h
+_vscprintf_p_l(const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vscwprintf(const wchar_t * inFormat, va_list _ArgList) -> int #stdio.h
+_vscwprintf_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vscwprintf_p(const wchar_t * inFormat, va_list _ArgList) -> int #wchar.h
+_vscwprintf_p_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #wchar.h
+_vsnprintf_c(char *outDstBuf, size_t inMaxCount, const char * inFormat, va_list _ArgList) -> int #stdio.h
+_vsnprintf_c_l(char * outDstBuf, size_t inMaxCount, const char *, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vsnprintf_l(char * outDstBuf, size_t inMaxCount, const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vsnprintf_s(char * _DstBuf, size_t inSizeInBytes, size_t inMaxCount, const char * inFormat, va_list _ArgList) -> int #stdio.h
+_vsnprintf_s_l(char * _DstBuf, size_t inDstSize, size_t inMaxCount, const char* inFormat,_locale_t inLocale, va_list _ArgList) -> 41| #stdio.h
+_vsnwprintf_l(wchar_t * outDstBuf, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
 _vsnwprintf_s(wchar_t * _DstBuf, size_t inDstSizeInWords, size_t inMaxCount, const wchar_t * inFormat, va_list _ArgList)
-_vsnwprintf_s(wchar_t * _DstBuf, size_t inSizeInWords, size_t inMaxCount, const wchar_t * inFormat, va_list _ArgList) -> int  // wchar.h
-_vsnwprintf_s_l(wchar_t * _DstBuf, size_t inDstSize, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> _CRTIMP  // wchar.h
-_vsprintf_l(char * _DstBuf, const char * inFormat, inlocale_t, va_list _ArgList) -> int  // stdio.h
-_vsprintf_p(char * _Dst, size_t inMaxCount, const char * inFormat, va_list _ArgList) -> int  // stdio.h
-_vsprintf_p_l(char * _DstBuf, size_t inMaxCount, const char* inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vsprintf_s_l(char * _DstBuf, size_t inDstSize, const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vswprintf_c(wchar_t * _DstBuf, size_t inSizeInWords, const wchar_t * inFormat, va_list _ArgList) -> int  // stdio.h
-_vswprintf_c_l(wchar_t * _DstBuf, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vswprintf_p(wchar_t * _DstBuf, size_t inMaxCount, const wchar_t * inFormat, va_list _ArgList) -> int  // wchar.h
-_vswprintf_p_l(wchar_t * _DstBuf, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // wchar.h
-_vswprintf_s_l(wchar_t * _DstBuf, size_t inDstSize, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // wchar.h
-_vwprintf_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // stdio.h
-_vwprintf_p(const wchar_t * inFormat, va_list _ArgList) -> int  // wchar.h
-_vwprintf_p_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // wchar.h
-_vwprintf_s_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int  // wchar.h
-_waccess(const wchar_t * inFilename, int inAccessMode) -> int  // io.h
-_waccess_s(const wchar_t * inFilename, int inAccessMode) -> errno_t  // io.h
-_wasctime(const struct tm * inTm) -> wchar_t  // time.h
-_wasctime_s(wchar_t *outBuf, size_t inSizeInWords, const struct tm * inTm) -> 38|  // time.h
-_wassert(const wchar_t * inMessage, const wchar_t *inFile, unsigned inLine) -> void  // assert.h
-_wchdir(const wchar_t * inPath) -> int  // direct.h
-_wchmod(const wchar_t * inFilename, int inMode) -> int  // io.h
-_wcreat(const wchar_t * inFilename, int inPermissionMode) -> int  // io.h
-_wcscoll_l(const wchar_t * inStr1, const wchar_t * inStr2, _locale_t inLocale) -> int  // string.h
-_wcsdup(const wchar_t * inStr) -> 33|  // string.h
-_wcserror(int inErrNum) -> wchar_t  // wchar.h
-_wcserror_s(wchar_t * _Buf, size_t inSizeInWords, int inErrNum) -> 38|  // wchar.h
-_wcsftime_l(wchar_t * _Buf, size_t inSizeInWords, const wchar_t *inFormat, const struct tm *inTm, _locale_t inLocale) -> size_t  // wchar.h
-_wcsicmp(const wchar_t * inStr1, const wchar_t * inStr2) -> int  // string.h
-_wcsicmp_l(const wchar_t * inStr1, const wchar_t * inStr2, _locale_t inLocale) -> int  // string.h
-_wcsicoll(const wchar_t * inStr1, const wchar_t * inStr2) -> int  // string.h
-_wcsicoll_l(const wchar_t * inStr1, const wchar_t *inStr2, _locale_t inLocale) -> int  // string.h
-_wcslwr_s(wchar_t * _Str, size_t inSizeInWords) -> errno_t  // wchar.h
-_wcslwr_s_l(wchar_t * _Str, size_t inSizeInWords, _locale_t inLocale) -> errno_t  // wchar.h
-_wcsncoll(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount) -> int  // wchar.h
-_wcsncoll_l(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // wchar.h
-_wcsnicmp(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount) -> 35|  // wchar.h
-_wcsnicmp_l(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // string.h
-_wcsnicoll(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount) -> int  // string.h
-_wcsnicoll_l(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount, _locale_t inLocale) -> int  // string.h
+_vsnwprintf_s(wchar_t * _DstBuf, size_t inSizeInWords, size_t inMaxCount, const wchar_t * inFormat, va_list _ArgList) -> int #wchar.h
+_vsnwprintf_s_l(wchar_t * _DstBuf, size_t inDstSize, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> _CRTIMP #wchar.h
+_vsprintf_l(char * _DstBuf, const char * inFormat, inlocale_t, va_list _ArgList) -> int #stdio.h
+_vsprintf_p(char * _Dst, size_t inMaxCount, const char * inFormat, va_list _ArgList) -> int #stdio.h
+_vsprintf_p_l(char * _DstBuf, size_t inMaxCount, const char* inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vsprintf_s_l(char * _DstBuf, size_t inDstSize, const char * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vswprintf_c(wchar_t * _DstBuf, size_t inSizeInWords, const wchar_t * inFormat, va_list _ArgList) -> int #stdio.h
+_vswprintf_c_l(wchar_t * _DstBuf, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vswprintf_p(wchar_t * _DstBuf, size_t inMaxCount, const wchar_t * inFormat, va_list _ArgList) -> int #wchar.h
+_vswprintf_p_l(wchar_t * _DstBuf, size_t inMaxCount, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #wchar.h
+_vswprintf_s_l(wchar_t * _DstBuf, size_t inDstSize, const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #wchar.h
+_vwprintf_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #stdio.h
+_vwprintf_p(const wchar_t * inFormat, va_list _ArgList) -> int #wchar.h
+_vwprintf_p_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #wchar.h
+_vwprintf_s_l(const wchar_t * inFormat, _locale_t inLocale, va_list _ArgList) -> int #wchar.h
+_waccess(const wchar_t * inFilename, int inAccessMode) -> int #io.h
+_waccess_s(const wchar_t * inFilename, int inAccessMode) -> errno_t #io.h
+_wasctime(const struct tm * inTm) -> wchar_t #time.h
+_wasctime_s(wchar_t *outBuf, size_t inSizeInWords, const struct tm * inTm) -> 38| #time.h
+_wassert(const wchar_t * inMessage, const wchar_t *inFile, unsigned inLine) -> void #assert.h
+_wchdir(const wchar_t * inPath) -> int #direct.h
+_wchmod(const wchar_t * inFilename, int inMode) -> int #io.h
+_wcreat(const wchar_t * inFilename, int inPermissionMode) -> int #io.h
+_wcscoll_l(const wchar_t * inStr1, const wchar_t * inStr2, _locale_t inLocale) -> int #string.h
+_wcsdup(const wchar_t * inStr) -> 33| #string.h
+_wcserror(int inErrNum) -> wchar_t #wchar.h
+_wcserror_s(wchar_t * _Buf, size_t inSizeInWords, int inErrNum) -> 38| #wchar.h
+_wcsftime_l(wchar_t * _Buf, size_t inSizeInWords, const wchar_t *inFormat, const struct tm *inTm, _locale_t inLocale) -> size_t #wchar.h
+_wcsicmp(const wchar_t * inStr1, const wchar_t * inStr2) -> int #string.h
+_wcsicmp_l(const wchar_t * inStr1, const wchar_t * inStr2, _locale_t inLocale) -> int #string.h
+_wcsicoll(const wchar_t * inStr1, const wchar_t * inStr2) -> int #string.h
+_wcsicoll_l(const wchar_t * inStr1, const wchar_t *inStr2, _locale_t inLocale) -> int #string.h
+_wcslwr_s(wchar_t * _Str, size_t inSizeInWords) -> errno_t #wchar.h
+_wcslwr_s_l(wchar_t * _Str, size_t inSizeInWords, _locale_t inLocale) -> errno_t #wchar.h
+_wcsncoll(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount) -> int #wchar.h
+_wcsncoll_l(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #wchar.h
+_wcsnicmp(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount) -> 35| #wchar.h
+_wcsnicmp_l(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #string.h
+_wcsnicoll(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount) -> int #string.h
+_wcsnicoll_l(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount, _locale_t inLocale) -> int #string.h
 _wcsnset_s(wchar_t * _Dst, size_t inDstSizeInWords, wchar_t _Val, size_t inMaxCount)
-_wcsnset_s(wchar_t * _Dst, size_t inSizeInWords, wchar_t inVal, size_t inMaxCount) -> 42|  // wchar.h
-_wcsrev(wchar_t * ioStr) -> wchar_t  // wchar.h
+_wcsnset_s(wchar_t * _Dst, size_t inSizeInWords, wchar_t inVal, size_t inMaxCount) -> 42| #wchar.h
+_wcsrev(wchar_t * ioStr) -> wchar_t #wchar.h
 _wcsset_s(wchar_t * _Dst, size_t inSizeInWords, wchar_t inValue)
-_wcsset_s(wchar_t * _Str, size_t inSizeInWords, wchar_t _Val) -> 41|  // wchar.h
-_wcstod_l(const wchar_t *inStr, wchar_t ** outEndPtr, _locale_t inLocale) -> double  // stdlib.h
-_wcstoi64(const wchar_t * inStr, wchar_t ** outEndPtr, int inRadix) -> __int64  // stdlib.h
-_wcstoi64_l(const wchar_t * inStr, wchar_t ** outEndPtr, int inRadix, _locale_t inLocale) -> __int64  // stdlib.h
-_wcstol_l(const wchar_t *inStr, wchar_t **outEndPtr, int _Radix, _locale_t inLocale) -> long  // wchar.h
-_wcstombs_s_l(size_t * outPtNumOfCharConverted, char * _Dst, size_t inDstSizeInBytes, const wchar_t * inSrc, size_t inMaxCountInBytes, _locale_t inLocale) -> errno_t  // stdlib.h
-_wcstoui64(const wchar_t * inStr, wchar_t ** outEndPtr, int inRadix) -> __int64  // stdlib.h
-_wcstoui64_l(const wchar_t *inStr , wchar_t ** outEndPtr, int inRadix, _locale_t inLocale) -> __int64  // stdlib.h
-_wcstoul_l(const wchar_t *inStr, wchar_t **outEndPtr, int _Radix, _locale_t inLocale) -> long  // wchar.h
-_wcsupr_s(wchar_t * _Str, size_t inSize) -> errno_t  // wchar.h
-_wcsupr_s_l(wchar_t * _Str, size_t inSize, _locale_t inLocale) -> errno_t  // wchar.h
-_wcsxfrm_l(wchar_t * _Dst, const wchar_t *inSrc, size_t inMaxCount, _locale_t inLocale) -> size_t  // wchar.h
-_wctime32(const __time32_t *inTime) -> wchar_t  // wchar.h
-_wctime32_s(wchar_t* outBuf, size_t inSizeInWords, const __time32_t * inTime) -> _CRTIMP  // wchar.h
-_wctime64(const __time64_t * inTime) -> wchar_t  // wchar.h
-_wctime64_s(wchar_t* outBuf, size_t inSizeInWords, const __time64_t *inTime) -> _CRTIMP  // wchar.h
-_wctomb_l(char * _MbCh, wchar_t inWCh, _locale_t inLocale) -> int  // stdlib.h
-_wctomb_s_l(int * outSizeConverted, char * _MbCh, size_t inSizeInBytes, wchar_t inWCh, _locale_t inLocale) -> _CRTIMP  // stdlib.h
-_wdupenv_s(wchar_t **outBuffer, size_t *outBufferSizeInWords, const wchar_t *inVarName) -> _CRTIMP  // stdlib.h
-_wexecl(const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t  // wchar.h
-_wexecle(const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t  // wchar.h
-_wexeclp(const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t  // wchar.h
-_wexeclpe(const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t  // wchar.h
-_wexecv(const wchar_t * inFilename, const wchar_t * const * inArgList) -> intptr_t  // wchar.h
-_wexecve(const wchar_t * inFilename, const wchar_t * const * inArgList, const wchar_t * const * inEnv) -> intptr_t  // wchar.h
-_wexecvp(const wchar_t * inFilename, const wchar_t * const * inArgList) -> intptr_t  // wchar.h
-_wexecvpe(const wchar_t * inFilename, const wchar_t * const * inArgList, const wchar_t * const * inEnv) -> intptr_t  // wchar.h
-_wfdopen(int inFileHandle , const wchar_t * inMode) -> FILE  // wchar.h
-_wfindfirst32(const wchar_t * inFilename, struct _wfinddata32_t * outFindData) -> intptr_t  // io.h
-_wfindfirst32i64(const wchar_t * inFilename, struct _wfinddata32i64_t * outFindData) -> intptr_t  // io.h
-_wfindfirst64(const wchar_t * inFilename, struct _wfinddata64_t * outFindData) -> intptr_t  // io.h
-_wfindfirst64i32(const wchar_t * inFilename, struct _wfinddata64i32_t * outFindData) -> intptr_t  // wchar.h
-_wfindnext32(intptr_t inFindHandle, struct _wfinddata32_t * outFindData) -> int  // io.h
-_wfindnext32i64(intptr_t inFindHandle, struct _wfinddata32i64_t * outFindData) -> int  // io.h
-_wfindnext64(intptr_t inFindHandle, struct _wfinddata64_t * outFindData) -> int  // io.h
-_wfindnext64i32(intptr_t inFindHandle, struct _wfinddata64i32_t * outFindData) -> int  // wchar.h
-_wfopen(const wchar_t * inFilename, const wchar_t * inMode) -> FILE  // wchar.h
-_wfopen_s(FILE ** _outFile, const wchar_t * inFilename, const wchar_t * inMode) -> 36|  // wchar.h
-_wfreopen(const wchar_t * inFilename, const wchar_t * inMode, FILE * ioOldFile) -> FILE  // wchar.h
-_wfreopen_s(FILE ** _outFile, const wchar_t * inFilename, const wchar_t * inMode, FILE * ioOldFile) -> 38|  // wchar.h
+_wcsset_s(wchar_t * _Str, size_t inSizeInWords, wchar_t _Val) -> 41| #wchar.h
+_wcstod_l(const wchar_t *inStr, wchar_t ** outEndPtr, _locale_t inLocale) -> double #stdlib.h
+_wcstoi64(const wchar_t * inStr, wchar_t ** outEndPtr, int inRadix) -> __int64 #stdlib.h
+_wcstoi64_l(const wchar_t * inStr, wchar_t ** outEndPtr, int inRadix, _locale_t inLocale) -> __int64 #stdlib.h
+_wcstol_l(const wchar_t *inStr, wchar_t **outEndPtr, int _Radix, _locale_t inLocale) -> long #wchar.h
+_wcstombs_s_l(size_t * outPtNumOfCharConverted, char * _Dst, size_t inDstSizeInBytes, const wchar_t * inSrc, size_t inMaxCountInBytes, _locale_t inLocale) -> errno_t #stdlib.h
+_wcstoui64(const wchar_t * inStr, wchar_t ** outEndPtr, int inRadix) -> __int64 #stdlib.h
+_wcstoui64_l(const wchar_t *inStr , wchar_t ** outEndPtr, int inRadix, _locale_t inLocale) -> __int64 #stdlib.h
+_wcstoul_l(const wchar_t *inStr, wchar_t **outEndPtr, int _Radix, _locale_t inLocale) -> long #wchar.h
+_wcsupr_s(wchar_t * _Str, size_t inSize) -> errno_t #wchar.h
+_wcsupr_s_l(wchar_t * _Str, size_t inSize, _locale_t inLocale) -> errno_t #wchar.h
+_wcsxfrm_l(wchar_t * _Dst, const wchar_t *inSrc, size_t inMaxCount, _locale_t inLocale) -> size_t #wchar.h
+_wctime32(const __time32_t *inTime) -> wchar_t #wchar.h
+_wctime32_s(wchar_t* outBuf, size_t inSizeInWords, const __time32_t * inTime) -> _CRTIMP #wchar.h
+_wctime64(const __time64_t * inTime) -> wchar_t #wchar.h
+_wctime64_s(wchar_t* outBuf, size_t inSizeInWords, const __time64_t *inTime) -> _CRTIMP #wchar.h
+_wctomb_l(char * _MbCh, wchar_t inWCh, _locale_t inLocale) -> int #stdlib.h
+_wctomb_s_l(int * outSizeConverted, char * _MbCh, size_t inSizeInBytes, wchar_t inWCh, _locale_t inLocale) -> _CRTIMP #stdlib.h
+_wdupenv_s(wchar_t **outBuffer, size_t *outBufferSizeInWords, const wchar_t *inVarName) -> _CRTIMP #stdlib.h
+_wexecl(const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t #wchar.h
+_wexecle(const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t #wchar.h
+_wexeclp(const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t #wchar.h
+_wexeclpe(const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t #wchar.h
+_wexecv(const wchar_t * inFilename, const wchar_t * const * inArgList) -> intptr_t #wchar.h
+_wexecve(const wchar_t * inFilename, const wchar_t * const * inArgList, const wchar_t * const * inEnv) -> intptr_t #wchar.h
+_wexecvp(const wchar_t * inFilename, const wchar_t * const * inArgList) -> intptr_t #wchar.h
+_wexecvpe(const wchar_t * inFilename, const wchar_t * const * inArgList, const wchar_t * const * inEnv) -> intptr_t #wchar.h
+_wfdopen(int inFileHandle , const wchar_t * inMode) -> FILE #wchar.h
+_wfindfirst32(const wchar_t * inFilename, struct _wfinddata32_t * outFindData) -> intptr_t #io.h
+_wfindfirst32i64(const wchar_t * inFilename, struct _wfinddata32i64_t * outFindData) -> intptr_t #io.h
+_wfindfirst64(const wchar_t * inFilename, struct _wfinddata64_t * outFindData) -> intptr_t #io.h
+_wfindfirst64i32(const wchar_t * inFilename, struct _wfinddata64i32_t * outFindData) -> intptr_t #wchar.h
+_wfindnext32(intptr_t inFindHandle, struct _wfinddata32_t * outFindData) -> int #io.h
+_wfindnext32i64(intptr_t inFindHandle, struct _wfinddata32i64_t * outFindData) -> int #io.h
+_wfindnext64(intptr_t inFindHandle, struct _wfinddata64_t * outFindData) -> int #io.h
+_wfindnext64i32(intptr_t inFindHandle, struct _wfinddata64i32_t * outFindData) -> int #wchar.h
+_wfopen(const wchar_t * inFilename, const wchar_t * inMode) -> FILE #wchar.h
+_wfopen_s(FILE ** _outFile, const wchar_t * inFilename, const wchar_t * inMode) -> 36| #wchar.h
+_wfreopen(const wchar_t * inFilename, const wchar_t * inMode, FILE * ioOldFile) -> FILE #wchar.h
+_wfreopen_s(FILE ** _outFile, const wchar_t * inFilename, const wchar_t * inMode, FILE * ioOldFile) -> 38| #wchar.h
 _wfsopen(const wchar_t * inFilename, const wchar_t * inMode)
-_wfsopen(const wchar_t * inFilename, const wchar_t * inMode, int inShFlag) -> FILE  // stdio.h
-_wfullpath(wchar_t * _FullPath, const wchar_t * inPath, size_t inSizeInWords) -> wchar_t  // stdlib.h
-_wgetcwd(wchar_t * _DstBuf, int inSizeInWords) -> wchar_t  // wchar.h
-_wgetdcwd(int inDrive, wchar_t * _DstBuf, int inSizeInWords) -> wchar_t  // wchar.h
-_wgetenv(const wchar_t * inVarName) -> wchar_t  // wchar.h
-_wgetenv_s(size_t * outReturnSize, wchar_t * _DstBuf, size_t inDstSizeInWords, const wchar_t * inVarName) -> errno_t  // wchar.h
-_wmkdir(const wchar_t * inPath) -> int  // direct.h
-_wmktemp_s(wchar_t * _TemplateName, size_t inSizeInWords) -> errno_t  // io.h
-_wopen(const wchar_t * inFilename, int inOpenFlag, ...) -> int  // io.h
-_wperror(const wchar_t * inErrMsg) -> void  // stdio.h
-_wpopen(const wchar_t *inCommand, const wchar_t * inMode) -> FILE  // stdio.h
-_wprintf_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // wchar.h
-_wprintf_p(const wchar_t * inFormat, ...) -> int  // stdio.h
-_wprintf_p_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_wprintf_s_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // stdio.h
-_wputenv(const wchar_t * inEnvString) -> int  // stdlib.h
-_wputenv_s(const wchar_t * inName, const wchar_t * inValue) -> errno_t  // stdlib.h
-_wremove(const wchar_t * inFilename) -> int  // wchar.h
-_wrename(const wchar_t * inOldFilename, const wchar_t * inNewFilename) -> int  // io.h
-_write(int inFileHandle, const void * _Buf, unsigned int inMaxCharCount) -> 32|  // io.h
-_wrmdir(const wchar_t * inPath) -> int  // wchar.h
-_wscanf_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> int  // wchar.h
-_wscanf_s_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> _CRTIMP  // wchar.h
-_wsearchenv_s(const wchar_t * inFilename, const wchar_t * inEnvVar, wchar_t * _ResultPath, size_t inSizeInWords) -> errno_t  // wchar.h
-_wsetlocale(int inCategory, const wchar_t * inLocale) -> wchar_t  // locale.h
-_wsopen(const wchar_t * inFilename, int inOpenFlag, int _ShareFlag, ...) -> int  // wchar.h
-_wsopen_s(int * outFileHandle, const wchar_t * inFilename, int inOpenFlag, int inShareFlag, int inPermissionFlag) -> 36|  // io.h
-_wspawnl(int inMode, const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t  // process.h
-_wspawnle(int inMode, const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t  // process.h
-_wspawnlp(int inMode, const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t  // process.h
-_wspawnlpe(int inMode, const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t  // process.h
-_wspawnv(int inMode, const wchar_t * inFilename, const wchar_t * const * inArgList) -> intptr_t  // process.h
-_wspawnve(int inMode, const wchar_t * inFilename, const wchar_t * const * inArgList, const wchar_t * const * inEnv) -> intptr_t  // process.h
-_wspawnvp(int inMode, const wchar_t * inFilename, const wchar_t * const * inArgList) -> intptr_t  // process.h
-_wspawnvpe(int inMode, const wchar_t * inFilename, const wchar_t * const * inArgList, const wchar_t * const * inEnv) -> intptr_t  // process.h
-_wsplitpath(const wchar_t * inFullPath, wchar_t * _Drive, wchar_t * _Dir, wchar_t * _Filename, wchar_t * _Ext) -> void  // stdlib.h
-_wsplitpath_s(const wchar_t * inFullPath, wchar_t * _Drive, size_t inDriveSize, wchar_t * _Dir, size_t inDirSize, wchar_t * _Filename, size_t inFilenameSize, wchar_t * _Ext, size_t inExtSize) -> 40|  // stdlib.h
-_wstat32(const wchar_t * inName, struct _stat32 * outStat) -> int  // wchar.h
-_wstat32i64(const wchar_t * inName, struct _stat32i64 * outStat) -> int  // wchar.h
-_wstat64(const wchar_t * inName, struct _stat64 * outStat) -> int  // wchar.h
-_wstat64i32(const wchar_t * inName, struct _stat64i32 * outStat) -> int  // wchar.h
-_wstrdate_s(wchar_t * outBuf, size_t inSizeInWords) -> errno_t  // wchar.h
-_wstrtime_s(wchar_t * outBuf, size_t inSizeInWords) -> errno_t  // wchar.h
-_wsystem(const wchar_t * inCommand) -> int  // process.h
-_wtempnam(const wchar_t * inDirectory, const wchar_t * inFilePrefix) -> wchar_t  // stdio.h
-_wtmpnam_s(wchar_t * _DstBuf, size_t inSizeInWords) -> errno_t  // stdio.h
-_wtof(const wchar_t *inStr) -> double  // stdlib.h
-_wtof_l(const wchar_t *inStr, _locale_t inLocale) -> double  // stdlib.h
-_wtoi(const wchar_t *inStr) -> int  // stdlib.h
-_wtoi64(const wchar_t *inStr) -> __int64  // stdlib.h
-_wtoi64_l(const wchar_t *inStr, _locale_t inLocale) -> __int64  // stdlib.h
-_wtoi_l(const wchar_t *inStr, _locale_t inLocale) -> int  // wchar.h
-_wtol(const wchar_t *inStr) -> long  // wchar.h
-_wtol_l(const wchar_t *inStr, _locale_t inLocale) -> long  // wchar.h
-_wunlink(const wchar_t * inFilename) -> int  // io.h
-_y0(double inX) -> double  // math.h
-_y1(double inX) -> double  // math.h
-_yn(int inX, double inY) -> double  // math.h
-abort(void) -> void  // process.h
-access(const char * inFilename, int inAccessMode) -> int  // io.h
-acosf(float inX) -> float  // math.h
-asctime(const struct tm * inTm) -> char  // time.h
-asctime_s(char *outBuf, size_t inSizeInBytes, const struct tm * inTm) -> 36|  // time.h
-asinf(float inX) -> float  // math.h
+_wfsopen(const wchar_t * inFilename, const wchar_t * inMode, int inShFlag) -> FILE #stdio.h
+_wfullpath(wchar_t * _FullPath, const wchar_t * inPath, size_t inSizeInWords) -> wchar_t #stdlib.h
+_wgetcwd(wchar_t * _DstBuf, int inSizeInWords) -> wchar_t #wchar.h
+_wgetdcwd(int inDrive, wchar_t * _DstBuf, int inSizeInWords) -> wchar_t #wchar.h
+_wgetenv(const wchar_t * inVarName) -> wchar_t #wchar.h
+_wgetenv_s(size_t * outReturnSize, wchar_t * _DstBuf, size_t inDstSizeInWords, const wchar_t * inVarName) -> errno_t #wchar.h
+_wmkdir(const wchar_t * inPath) -> int #direct.h
+_wmktemp_s(wchar_t * _TemplateName, size_t inSizeInWords) -> errno_t #io.h
+_wopen(const wchar_t * inFilename, int inOpenFlag, ...) -> int #io.h
+_wperror(const wchar_t * inErrMsg) -> void #stdio.h
+_wpopen(const wchar_t *inCommand, const wchar_t * inMode) -> FILE #stdio.h
+_wprintf_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> int #wchar.h
+_wprintf_p(const wchar_t * inFormat, ...) -> int #stdio.h
+_wprintf_p_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_wprintf_s_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> int #stdio.h
+_wputenv(const wchar_t * inEnvString) -> int #stdlib.h
+_wputenv_s(const wchar_t * inName, const wchar_t * inValue) -> errno_t #stdlib.h
+_wremove(const wchar_t * inFilename) -> int #wchar.h
+_wrename(const wchar_t * inOldFilename, const wchar_t * inNewFilename) -> int #io.h
+_write(int inFileHandle, const void * _Buf, unsigned int inMaxCharCount) -> 32| #io.h
+_wrmdir(const wchar_t * inPath) -> int #wchar.h
+_wscanf_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> int #wchar.h
+_wscanf_s_l(const wchar_t * inFormat, _locale_t inLocale, ...) -> _CRTIMP #wchar.h
+_wsearchenv_s(const wchar_t * inFilename, const wchar_t * inEnvVar, wchar_t * _ResultPath, size_t inSizeInWords) -> errno_t #wchar.h
+_wsetlocale(int inCategory, const wchar_t * inLocale) -> wchar_t #locale.h
+_wsopen(const wchar_t * inFilename, int inOpenFlag, int _ShareFlag, ...) -> int #wchar.h
+_wsopen_s(int * outFileHandle, const wchar_t * inFilename, int inOpenFlag, int inShareFlag, int inPermissionFlag) -> 36| #io.h
+_wspawnl(int inMode, const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t #process.h
+_wspawnle(int inMode, const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t #process.h
+_wspawnlp(int inMode, const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t #process.h
+_wspawnlpe(int inMode, const wchar_t * inFilename, const wchar_t * inArgList, ...) -> intptr_t #process.h
+_wspawnv(int inMode, const wchar_t * inFilename, const wchar_t * const * inArgList) -> intptr_t #process.h
+_wspawnve(int inMode, const wchar_t * inFilename, const wchar_t * const * inArgList, const wchar_t * const * inEnv) -> intptr_t #process.h
+_wspawnvp(int inMode, const wchar_t * inFilename, const wchar_t * const * inArgList) -> intptr_t #process.h
+_wspawnvpe(int inMode, const wchar_t * inFilename, const wchar_t * const * inArgList, const wchar_t * const * inEnv) -> intptr_t #process.h
+_wsplitpath(const wchar_t * inFullPath, wchar_t * _Drive, wchar_t * _Dir, wchar_t * _Filename, wchar_t * _Ext) -> void #stdlib.h
+_wsplitpath_s(const wchar_t * inFullPath, wchar_t * _Drive, size_t inDriveSize, wchar_t * _Dir, size_t inDirSize, wchar_t * _Filename, size_t inFilenameSize, wchar_t * _Ext, size_t inExtSize) -> 40| #stdlib.h
+_wstat32(const wchar_t * inName, struct _stat32 * outStat) -> int #wchar.h
+_wstat32i64(const wchar_t * inName, struct _stat32i64 * outStat) -> int #wchar.h
+_wstat64(const wchar_t * inName, struct _stat64 * outStat) -> int #wchar.h
+_wstat64i32(const wchar_t * inName, struct _stat64i32 * outStat) -> int #wchar.h
+_wstrdate_s(wchar_t * outBuf, size_t inSizeInWords) -> errno_t #wchar.h
+_wstrtime_s(wchar_t * outBuf, size_t inSizeInWords) -> errno_t #wchar.h
+_wsystem(const wchar_t * inCommand) -> int #process.h
+_wtempnam(const wchar_t * inDirectory, const wchar_t * inFilePrefix) -> wchar_t #stdio.h
+_wtmpnam_s(wchar_t * _DstBuf, size_t inSizeInWords) -> errno_t #stdio.h
+_wtof(const wchar_t *inStr) -> double #stdlib.h
+_wtof_l(const wchar_t *inStr, _locale_t inLocale) -> double #stdlib.h
+_wtoi(const wchar_t *inStr) -> int #stdlib.h
+_wtoi64(const wchar_t *inStr) -> __int64 #stdlib.h
+_wtoi64_l(const wchar_t *inStr, _locale_t inLocale) -> __int64 #stdlib.h
+_wtoi_l(const wchar_t *inStr, _locale_t inLocale) -> int #wchar.h
+_wtol(const wchar_t *inStr) -> long #wchar.h
+_wtol_l(const wchar_t *inStr, _locale_t inLocale) -> long #wchar.h
+_wunlink(const wchar_t * inFilename) -> int #io.h
+_y0(double inX) -> double #math.h
+_y1(double inX) -> double #math.h
+_yn(int inX, double inY) -> double #math.h
+abort(void) -> void #process.h
+access(const char * inFilename, int inAccessMode) -> int #io.h
+acosf(float inX) -> float #math.h
+asctime(const struct tm * inTm) -> char #time.h
+asctime_s(char *outBuf, size_t inSizeInBytes, const struct tm * inTm) -> 36| #time.h
+asinf(float inX) -> float #math.h
 atan2f(float inY, float _X)
-atan2f(float inY, float inX) -> float  // math.h
-atanf(float inX) -> float  // math.h
-atof(const char *inString) -> double  // stdlib.h
-atoi(const char *inStr) -> int  // stdlib.h
-atol(const char *inStr) -> long  // stdlib.h
-btowc(int) -> wint_t  // wchar.h
-cabs(struct _complex inX) -> double  // math.h
+atan2f(float inY, float inX) -> float #math.h
+atanf(float inX) -> float #math.h
+atof(const char *inString) -> double #stdlib.h
+atoi(const char *inStr) -> int #stdlib.h
+atol(const char *inStr) -> long #stdlib.h
+btowc(int) -> wint_t #wchar.h
+cabs(struct _complex inX) -> double #math.h
 calloc(size_t inCount, size_t inSize)
-calloc(size_t inNumOfElements, size_t inSizeOfElements) -> void  // stdlib.h
-ceil(double inX) -> double  // math.h
-ceilf(float inX) -> float  // math.h
-cgets(char * _Buffer) -> char  // conio.h
-chdir(const char * inPath) -> int  // direct.h
-chmod(const char * inFilename, int _AccessMode) -> int  // io.h
-chsize(int inFileHandle, long inSize) -> int  // io.h
-clearerr(FILE * ioFile) -> void  // stdio.h
-clearerr_s(FILE * ioFile ) -> errno_t  // stdio.h
-clock(void) -> clock_t  // time.h
-close(int inFileHandle) -> int  // io.h
-cosf(float inX) -> float  // math.h
-coshf(float inX) -> float  // math.h
-cprintf(const char * inFormat, ...) -> int  // conio.h
-cputs(const char * inStr) -> int  // conio.h
-creat(const char * inFilename, int inPermissionMode) -> int  // io.h
-cscanf(const char * inFormat, ...) -> int  // conio.h
-cwait(int * outTermStat, intptr_t inProcHandle, int inAction) -> intptr_t  // process.h
-div(int inNumerator, int inDenominator) -> div_t  // stdlib.h
-dup(int inFileHandle) -> int  // io.h
-dup2(int inFileHandleSrc, int inFileHandleDst) -> int  // io.h
-ecvt(double inVal, int inNumOfDigits, int * outPtDec, int * outPtSign) -> char  // stdlib.h
-eof(int inFileHandle) -> int  // io.h
-execl(const char * inFilename, const char * inArgList, ...) -> intptr_t  // process.h
-execle(const char * inFilename, const char * inArgList, ...) -> intptr_t  // process.h
-execlp(const char * inFilename, const char * inArgList, ...) -> intptr_t  // process.h
-execlpe(const char * inFilename, const char * inArgList, ...) -> intptr_t  // process.h
-execv(const char * inFilename, const char * const * inArgList) -> intptr_t  // process.h
-execve(const char * inFilename, const char * const * inArgList, const char * const * inEnv) -> intptr_t  // process.h
-execvp(const char * inFilename, const char * const * inArgList) -> intptr_t  // process.h
-execvpe(const char * inFilename, const char * const * inArgList, const char * const * inEnv) -> intptr_t  // process.h
-exit(int inCode) -> void  // stdlib.h
-expf(float inX) -> float  // math.h
-fabsf(float inX) -> float  // math.h
-fclose(FILE * ioFile) -> int  // stdio.h
-fcloseall(void) -> int  // stdio.h
-fcvt(double inVal, int inNumOfDec, int * outPtDec, int * outPtSign) -> char  // stdlib.h
+calloc(size_t inNumOfElements, size_t inSizeOfElements) -> void #stdlib.h
+ceil(double inX) -> double #math.h
+ceilf(float inX) -> float #math.h
+cgets(char * _Buffer) -> char #conio.h
+chdir(const char * inPath) -> int #direct.h
+chmod(const char * inFilename, int _AccessMode) -> int #io.h
+chsize(int inFileHandle, long inSize) -> int #io.h
+clearerr(FILE * ioFile) -> void #stdio.h
+clearerr_s(FILE * ioFile ) -> errno_t #stdio.h
+clock(void) -> clock_t #time.h
+close(int inFileHandle) -> int #io.h
+cosf(float inX) -> float #math.h
+coshf(float inX) -> float #math.h
+cprintf(const char * inFormat, ...) -> int #conio.h
+cputs(const char * inStr) -> int #conio.h
+creat(const char * inFilename, int inPermissionMode) -> int #io.h
+cscanf(const char * inFormat, ...) -> int #conio.h
+cwait(int * outTermStat, intptr_t inProcHandle, int inAction) -> intptr_t #process.h
+div(int inNumerator, int inDenominator) -> div_t #stdlib.h
+dup(int inFileHandle) -> int #io.h
+dup2(int inFileHandleSrc, int inFileHandleDst) -> int #io.h
+ecvt(double inVal, int inNumOfDigits, int * outPtDec, int * outPtSign) -> char #stdlib.h
+eof(int inFileHandle) -> int #io.h
+execl(const char * inFilename, const char * inArgList, ...) -> intptr_t #process.h
+execle(const char * inFilename, const char * inArgList, ...) -> intptr_t #process.h
+execlp(const char * inFilename, const char * inArgList, ...) -> intptr_t #process.h
+execlpe(const char * inFilename, const char * inArgList, ...) -> intptr_t #process.h
+execv(const char * inFilename, const char * const * inArgList) -> intptr_t #process.h
+execve(const char * inFilename, const char * const * inArgList, const char * const * inEnv) -> intptr_t #process.h
+execvp(const char * inFilename, const char * const * inArgList) -> intptr_t #process.h
+execvpe(const char * inFilename, const char * const * inArgList, const char * const * inEnv) -> intptr_t #process.h
+exit(int inCode) -> void #stdlib.h
+expf(float inX) -> float #math.h
+fabsf(float inX) -> float #math.h
+fclose(FILE * ioFile) -> int #stdio.h
+fcloseall(void) -> int #stdio.h
+fcvt(double inVal, int inNumOfDec, int * outPtDec, int * outPtSign) -> char #stdlib.h
 fdopen(int inFileHandle, const char * inFormat)
-fdopen(int inFileHandle, const char * inMode) -> FILE  // stdio.h
-feof(FILE * inFile) -> int  // stdio.h
-ferror(FILE * inFile) -> int  // stdio.h
-fflush(FILE * ioFile) -> int  // stdio.h
-fgetc(FILE * ioFile) -> int  // stdio.h
-fgetchar(void) -> int  // stdio.h
-fgetpos(FILE * ioFile , fpos_t * outPos) -> int  // stdio.h
-fgets(char * _Buf, int inMaxCount, FILE * ioFile) -> char  // stdio.h
-fgetwc(FILE * ioFile) -> wint_t  // stdio.h
-fgetws(wchar_t * _Dst, int inSizeInWords, FILE * ioFile) -> wchar_t  // stdio.h
-filelength(int inFileHandle) -> long  // io.h
-fileno(FILE * inFile) -> int  // stdio.h
-floor(double inX) -> double  // math.h
-floorf(float inX) -> float  // math.h
-flushall(void) -> int  // stdio.h
-fmodf(float inX, float inY) -> float  // math.h
-fopen(const char * inFilename, const char * inMode) -> FILE  // stdio.h
-fopen_s(FILE ** _outFile, const char * inFilename, const char * inMode) -> 34|  // stdio.h
-fpreset(void) -> void  // float.h
-fprintf(FILE * ioFile, const char * inFormat, ...) -> int  // stdio.h
-fprintf_s(FILE * ioFile, const char * inFormat, ...) -> int  // stdio.h
-fputc(int inCh, FILE * ioFile) -> int  // stdio.h
-fputchar(int inCh) -> int  // stdio.h
-fputs(const char * inStr, FILE * ioFile) -> int  // stdio.h
-fputwc(wchar_t inCh, FILE * ioFile) -> wint_t  // stdio.h
-fputws(const wchar_t * inStr, FILE * ioFile) -> int  // stdio.h
-fread(void * _DstBuf, size_t inElementSize, size_t inCount, FILE * ioFile) -> size_t  // stdio.h
-fread_s(void * _DstBuf, size_t inDstSize, size_t inElementSize, size_t inCount, FILE * ioFile) -> size_t  // stdio.h
-free(void * ioMemory) -> void  // stdlib.h
-freopen(const char * inFilename, const char * inMode, FILE * ioFile) -> FILE  // stdio.h
-freopen_s(FILE ** _outFile, const char * inFilename, const char * inMode, FILE * ioOldFile) -> 36|  // stdio.h
-frexp(double inX, int * outY) -> double  // math.h
-fscanf(FILE * ioFile, const char * inFormat, ...) -> int  // stdio.h
-fscanf_s(FILE * ioFile, const char * inFormat, ...) -> 35|  // stdio.h
-fseek(FILE * ioFile, long inOffset, int inOrigin) -> int  // stdio.h
-fsetpos(FILE * ioFile, const fpos_t * inPos) -> int  // stdio.h
-ftell(FILE * ioFile) -> long  // stdio.h
-fwprintf(FILE * ioFile, const wchar_t * inFormat, ...) -> int  // stdio.h
-fwprintf_s(FILE * ioFile, const wchar_t * inFormat, ...) -> int  // stdio.h
-fwrite(const void * _Str, size_t inSize, size_t inCount, FILE * ioFile) -> size_t  // stdio.h
-fwscanf(FILE * ioFile, const wchar_t * inFormat, ...) -> int  // stdio.h
-fwscanf_s(FILE * ioFile, const wchar_t * inFormat, ...) -> 36|  // stdio.h
-gcvt(double inVal, int inNumOfDigits, char * _DstBuf) -> char  // stdlib.h
-getc(FILE * ioFile) -> int  // stdio.h
-getch(void) -> int  // conio.h
-getchar(void) -> int  // stdio.h
-getche(void) -> int  // conio.h
-getcwd(char * _DstBuf, int inSizeInBytes) -> char  // direct.h
-getenv(const char * inVarName) -> char  // stdlib.h
-getenv_s(size_t * outReturnSize, char * _DstBuf, rsize_t inDstSize, const char * inVarName) -> errno_t  // stdlib.h
-getpid(void) -> int  // process.h
+fdopen(int inFileHandle, const char * inMode) -> FILE #stdio.h
+feof(FILE * inFile) -> int #stdio.h
+ferror(FILE * inFile) -> int #stdio.h
+fflush(FILE * ioFile) -> int #stdio.h
+fgetc(FILE * ioFile) -> int #stdio.h
+fgetchar(void) -> int #stdio.h
+fgetpos(FILE * ioFile , fpos_t * outPos) -> int #stdio.h
+fgets(char * _Buf, int inMaxCount, FILE * ioFile) -> char #stdio.h
+fgetwc(FILE * ioFile) -> wint_t #stdio.h
+fgetws(wchar_t * _Dst, int inSizeInWords, FILE * ioFile) -> wchar_t #stdio.h
+filelength(int inFileHandle) -> long #io.h
+fileno(FILE * inFile) -> int #stdio.h
+floor(double inX) -> double #math.h
+floorf(float inX) -> float #math.h
+flushall(void) -> int #stdio.h
+fmodf(float inX, float inY) -> float #math.h
+fopen(const char * inFilename, const char * inMode) -> FILE #stdio.h
+fopen_s(FILE ** _outFile, const char * inFilename, const char * inMode) -> 34| #stdio.h
+fpreset(void) -> void #float.h
+fprintf(FILE * ioFile, const char * inFormat, ...) -> int #stdio.h
+fprintf_s(FILE * ioFile, const char * inFormat, ...) -> int #stdio.h
+fputc(int inCh, FILE * ioFile) -> int #stdio.h
+fputchar(int inCh) -> int #stdio.h
+fputs(const char * inStr, FILE * ioFile) -> int #stdio.h
+fputwc(wchar_t inCh, FILE * ioFile) -> wint_t #stdio.h
+fputws(const wchar_t * inStr, FILE * ioFile) -> int #stdio.h
+fread(void * _DstBuf, size_t inElementSize, size_t inCount, FILE * ioFile) -> size_t #stdio.h
+fread_s(void * _DstBuf, size_t inDstSize, size_t inElementSize, size_t inCount, FILE * ioFile) -> size_t #stdio.h
+free(void * ioMemory) -> void #stdlib.h
+freopen(const char * inFilename, const char * inMode, FILE * ioFile) -> FILE #stdio.h
+freopen_s(FILE ** _outFile, const char * inFilename, const char * inMode, FILE * ioOldFile) -> 36| #stdio.h
+frexp(double inX, int * outY) -> double #math.h
+fscanf(FILE * ioFile, const char * inFormat, ...) -> int #stdio.h
+fscanf_s(FILE * ioFile, const char * inFormat, ...) -> 35| #stdio.h
+fseek(FILE * ioFile, long inOffset, int inOrigin) -> int #stdio.h
+fsetpos(FILE * ioFile, const fpos_t * inPos) -> int #stdio.h
+ftell(FILE * ioFile) -> long #stdio.h
+fwprintf(FILE * ioFile, const wchar_t * inFormat, ...) -> int #stdio.h
+fwprintf_s(FILE * ioFile, const wchar_t * inFormat, ...) -> int #stdio.h
+fwrite(const void * _Str, size_t inSize, size_t inCount, FILE * ioFile) -> size_t #stdio.h
+fwscanf(FILE * ioFile, const wchar_t * inFormat, ...) -> int #stdio.h
+fwscanf_s(FILE * ioFile, const wchar_t * inFormat, ...) -> 36| #stdio.h
+gcvt(double inVal, int inNumOfDigits, char * _DstBuf) -> char #stdlib.h
+getc(FILE * ioFile) -> int #stdio.h
+getch(void) -> int #conio.h
+getchar(void) -> int #stdio.h
+getche(void) -> int #conio.h
+getcwd(char * _DstBuf, int inSizeInBytes) -> char #direct.h
+getenv(const char * inVarName) -> char #stdlib.h
+getenv_s(size_t * outReturnSize, char * _DstBuf, rsize_t inDstSize, const char * inVarName) -> errno_t #stdlib.h
+getpid(void) -> int #process.h
 gets_s(char * _Buf, rsize_t inSize)
-getw(FILE * ioFile) -> int  // stdio.h
-getwc(FILE * ioFile) -> wint_t  // wchar.h
-getwchar(void) -> wint_t  // wchar.h
-hypot(double inX, double inY) -> double  // math.h
+getw(FILE * ioFile) -> int #stdio.h
+getwc(FILE * ioFile) -> wint_t #wchar.h
+getwchar(void) -> wint_t #wchar.h
+hypot(double inX, double inY) -> double #math.h
 is_wctype(wint_t inC, wctype_t inType)
-is_wctype(wint_t, wctype_t) -> int  // wchar.h
-isalnum(int inC) -> int  // ctype.h
-isalpha(int inC) -> int  // ctype.h
-isascii(int inC) -> int  // ctype.h
-isatty(int inFileHandle) -> int  // io.h
-iscntrl(int inC) -> int  // ctype.h
-iscsym(int inC) -> int  // ctype.h
-iscsymf(int inC) -> int  // ctype.h
-isdigit(int inC) -> int  // ctype.h
-isgraph(int inC) -> int  // ctype.h
+is_wctype(wint_t, wctype_t) -> int #wchar.h
+isalnum(int inC) -> int #ctype.h
+isalpha(int inC) -> int #ctype.h
+isascii(int inC) -> int #ctype.h
+isatty(int inFileHandle) -> int #io.h
+iscntrl(int inC) -> int #ctype.h
+iscsym(int inC) -> int #ctype.h
+iscsymf(int inC) -> int #ctype.h
+isdigit(int inC) -> int #ctype.h
+isgraph(int inC) -> int #ctype.h
 isleadbyte(int inC)
-isleadbyte(int) -> int  // ctype.h
-islower(int inC) -> int  // ctype.h
-isprint(int inC) -> int  // ctype.h
-ispunct(int inC) -> int  // ctype.h
-isspace(int inC) -> int  // ctype.h
-isupper(int inC) -> int  // ctype.h
+isleadbyte(int) -> int #ctype.h
+islower(int inC) -> int #ctype.h
+isprint(int inC) -> int #ctype.h
+ispunct(int inC) -> int #ctype.h
+isspace(int inC) -> int #ctype.h
+isupper(int inC) -> int #ctype.h
 iswalnum(wint_t inC)
-iswalnum(wint_t) -> int  // ctype.h
+iswalnum(wint_t) -> int #ctype.h
 iswalpha(wint_t inC)
-iswalpha(wint_t) -> int  // wchar.h
+iswalpha(wint_t) -> int #wchar.h
 iswascii(wint_t inC)
-iswascii(wint_t) -> int  // wchar.h
+iswascii(wint_t) -> int #wchar.h
 iswcntrl(wint_t inC)
-iswcntrl(wint_t) -> int  // ctype.h
+iswcntrl(wint_t) -> int #ctype.h
 iswctype(wint_t inC, wctype_t inType)
-iswctype(wint_t, wctype_t) -> int  // ctype.h
+iswctype(wint_t, wctype_t) -> int #ctype.h
 iswdigit(wint_t inC)
-iswdigit(wint_t) -> int  // wchar.h
+iswdigit(wint_t) -> int #wchar.h
 iswgraph(wint_t inC)
-iswgraph(wint_t) -> int  // wchar.h
+iswgraph(wint_t) -> int #wchar.h
 iswlower(wint_t inC)
-iswlower(wint_t) -> int  // ctype.h
+iswlower(wint_t) -> int #ctype.h
 iswprint(wint_t inC)
-iswprint(wint_t) -> int  // ctype.h
+iswprint(wint_t) -> int #ctype.h
 iswpunct(wint_t inC)
-iswpunct(wint_t) -> int  // wchar.h
+iswpunct(wint_t) -> int #wchar.h
 iswspace(wint_t inC)
-iswspace(wint_t) -> int  // ctype.h
+iswspace(wint_t) -> int #ctype.h
 iswupper(wint_t inC)
-iswupper(wint_t) -> int  // wchar.h
+iswupper(wint_t) -> int #wchar.h
 iswxdigit(wint_t inC)
-iswxdigit(wint_t) -> int  // wchar.h
-isxdigit(int inC) -> int  // ctype.h
-itoa(int inVal, char * _DstBuf, int inRadix) -> char  // stdlib.h
-j0(double inX) -> double  // math.h
-j1(double inX) -> double  // math.h
-jn(int inX, double inY) -> double  // math.h
-kbhit(void) -> int  // conio.h
-ldexp(double inX, int inY) -> double  // math.h
-ldexpf(float inX, int inY) -> float  // math.h
-ldiv(long inNumerator, long inDenominator) -> ldiv_t  // stdlib.h
-localeconv(void) -> lconv  // locale.h
-locking(int inFileHandle, int inLockMode, long inNumOfBytes) -> int  // io.h
-log10f(float inX) -> float  // math.h
-logf(float inX) -> float  // math.h
-longjmp(jmp_buf inBuf, int inValue) -> void  // setjmp.h
-lseek(int inFileHandle, long inOffset, int inOrigin) -> long  // io.h
-ltoa(long inVal, char * _DstBuf, int inRadix) -> char  // stdlib.h
-malloc(size_t inSize) -> void*  // stdlib.h
-mblen(const char * inCh, size_t inMaxCount) -> int  // stdlib.h
-mbsrtowcs_s(size_t* outRetval, wchar_t * _Dst, size_t inSize, const char ** ioPSrc, size_t inN, mbstate_t * outState) -> errno_t  // wchar.h
-mbstowcs_s(size_t * outPtNumOfCharConverted, wchar_t * _DstBuf, size_t inSizeInWords, const char * _SrcBuf, size_t inMaxCount ) -> errno_t  // stdlib.h
-mbtowc(wchar_t * _DstCh, const char * inSrcCh, size_t inSrcSizeInBytes) -> int  // stdlib.h
-memccpy(void * _Dst, const void * inSrc, int inVal, size_t inSize) -> void  // string.h
-memchr(const void * inBuf , int inVal, size_t inMaxCount) -> void  // memory.h
-memcpy_s(void * _Dst, rsize_t inDstSize, const void * inSrc, rsize_t inMaxCount) -> errno_t  // memory.h
-memicmp(const void * inBuf1, const void * inBuf2, size_t inSize) -> int  // memory.h
-memmove(void * _Dst, const void * inSrc, size_t inSize) -> void  // string.h
-memmove_s(void * _Dst, rsize_t inDstSize, const void * inSrc, rsize_t inMaxCount) -> _CRTIMP  // string.h
-mkdir(const char * inPath) -> int  // direct.h
-mktemp(char * ioTemplateName) -> char  // io.h
-modf(double inX, double * outY) -> double  // math.h
+iswxdigit(wint_t) -> int #wchar.h
+isxdigit(int inC) -> int #ctype.h
+itoa(int inVal, char * _DstBuf, int inRadix) -> char #stdlib.h
+j0(double inX) -> double #math.h
+j1(double inX) -> double #math.h
+jn(int inX, double inY) -> double #math.h
+kbhit(void) -> int #conio.h
+ldexp(double inX, int inY) -> double #math.h
+ldexpf(float inX, int inY) -> float #math.h
+ldiv(long inNumerator, long inDenominator) -> ldiv_t #stdlib.h
+localeconv(void) -> lconv #locale.h
+locking(int inFileHandle, int inLockMode, long inNumOfBytes) -> int #io.h
+log10f(float inX) -> float #math.h
+logf(float inX) -> float #math.h
+longjmp(jmp_buf inBuf, int inValue) -> void #setjmp.h
+lseek(int inFileHandle, long inOffset, int inOrigin) -> long #io.h
+ltoa(long inVal, char * _DstBuf, int inRadix) -> char #stdlib.h
+malloc(size_t inSize) -> void* #stdlib.h
+mblen(const char * inCh, size_t inMaxCount) -> int #stdlib.h
+mbsrtowcs_s(size_t* outRetval, wchar_t * _Dst, size_t inSize, const char ** ioPSrc, size_t inN, mbstate_t * outState) -> errno_t #wchar.h
+mbstowcs_s(size_t * outPtNumOfCharConverted, wchar_t * _DstBuf, size_t inSizeInWords, const char * _SrcBuf, size_t inMaxCount ) -> errno_t #stdlib.h
+mbtowc(wchar_t * _DstCh, const char * inSrcCh, size_t inSrcSizeInBytes) -> int #stdlib.h
+memccpy(void * _Dst, const void * inSrc, int inVal, size_t inSize) -> void #string.h
+memchr(const void * inBuf , int inVal, size_t inMaxCount) -> void #memory.h
+memcpy_s(void * _Dst, rsize_t inDstSize, const void * inSrc, rsize_t inMaxCount) -> errno_t #memory.h
+memicmp(const void * inBuf1, const void * inBuf2, size_t inSize) -> int #memory.h
+memmove(void * _Dst, const void * inSrc, size_t inSize) -> void #string.h
+memmove_s(void * _Dst, rsize_t inDstSize, const void * inSrc, rsize_t inMaxCount) -> _CRTIMP #string.h
+mkdir(const char * inPath) -> int #direct.h
+mktemp(char * ioTemplateName) -> char #io.h
+modf(double inX, double * outY) -> double #math.h
 modff(float _X, float* outY)
-modff(float inX, float* outY) -> float  // math.h
-open(const char * inFilename, int inOpenFlag, ...) -> _fileinfo;  // stdlib.h
-perror(const char * inErrMsg) -> void  // stdlib.h
+modff(float inX, float* outY) -> float #math.h
+open(const char * inFilename, int inOpenFlag, ...) -> _fileinfo; #stdlib.h
+perror(const char * inErrMsg) -> void #stdlib.h
 powf(float inBase, float inExp)
-powf(float inX, float inY) -> float  // math.h
-printf(const char * inFormat, ...) -> int  // stdio.h
-printf_s(const char * inFormat, ...) -> int  // stdio.h
-putc(int inCh, FILE * ioFile) -> int  // stdio.h
-putch(int _Ch) -> int  // conio.h
-putchar(int inCh) -> int  // stdio.h
-putenv(const char * inEnvString) -> int  // stdlib.h
-puts(const char * inStr) -> int  // stdio.h
-putw(int inCh, FILE * ioFile) -> int  // stdio.h
-putwc(wchar_t inCh, FILE * ioFile) -> wint_t  // wchar.h
-putwchar(wchar_t inCh) -> wint_t  // wchar.h
-raise(int inSigNum) -> int  // signal.h
-rand(void) -> int  // stdlib.h
-rand_s (unsigned int *outRandomValue) -> errno_t  // stdlib.h
-read(int _FileHandle, void * _DstBuf, unsigned int inMaxCharCount) -> int  // io.h
-realloc(void * inMemory, size_t inNewSize) -> void  // malloc.h
-remove(const char * inFilename) -> int  // stdio.h
-rename(const char * inOldFilename, const char * inNewFilename) -> int  // stdio.h
-rewind(FILE * ioFile) -> void  // stdio.h
-rmdir(const char * inPath) -> int  // direct.h
-rmtmp(void) -> int  // stdio.h
-scanf(const char * inFormat, ...) -> int  // stdio.h
-scanf_s(const char * inFormat, ...) -> 39|  // stdio.h
+powf(float inX, float inY) -> float #math.h
+printf(const char * inFormat, ...) -> int #stdio.h
+printf_s(const char * inFormat, ...) -> int #stdio.h
+putc(int inCh, FILE * ioFile) -> int #stdio.h
+putch(int _Ch) -> int #conio.h
+putchar(int inCh) -> int #stdio.h
+putenv(const char * inEnvString) -> int #stdlib.h
+puts(const char * inStr) -> int #stdio.h
+putw(int inCh, FILE * ioFile) -> int #stdio.h
+putwc(wchar_t inCh, FILE * ioFile) -> wint_t #wchar.h
+putwchar(wchar_t inCh) -> wint_t #wchar.h
+raise(int inSigNum) -> int #signal.h
+rand(void) -> int #stdlib.h
+rand_s (unsigned int *outRandomValue) -> errno_t #stdlib.h
+read(int _FileHandle, void * _DstBuf, unsigned int inMaxCharCount) -> int #io.h
+realloc(void * inMemory, size_t inNewSize) -> void #malloc.h
+remove(const char * inFilename) -> int #stdio.h
+rename(const char * inOldFilename, const char * inNewFilename) -> int #stdio.h
+rewind(FILE * ioFile) -> void #stdio.h
+rmdir(const char * inPath) -> int #direct.h
+rmtmp(void) -> int #stdio.h
+scanf(const char * inFormat, ...) -> int #stdio.h
+scanf_s(const char * inFormat, ...) -> 39| #stdio.h
 set_terminate(int inZero)
-set_terminate(terminate_function inNewPtFunc) -> terminate_function  // eh.h
+set_terminate(terminate_function inNewPtFunc) -> terminate_function #eh.h
 set_unexpected(int inZero)
-set_unexpected(unexpected_function inNewPtFunc) -> unexpected_function  // eh.h
-setbuf(FILE * ioFile, char * _Buffer) -> void  // stdio.h
-setlocale(int inCategory, const char * inLocale) -> char  // locale.h
-setmode(int inFileHandle, int inMode) -> int  // io.h
-setvbuf(FILE * ioFile, char * _Buf, int inMode, size_t inSize) -> 34|  // stdio.h
-sinf(float inX) -> float  // math.h
-sinhf(float inX) -> float  // math.h
-sopen(const char * _Filename, int inOpenFlag, int inShareFlag, ...) -> int  // io.h
-spawnl(inint, const char * inFilename, const char * inArgList, ...) -> intptr_t  // process.h
-spawnle(inint, const char * inFilename, const char * inArgList, ...) -> intptr_t  // process.h
-spawnlp(inint, const char * inFilename, const char * inArgList, ...) -> intptr_t  // process.h
-spawnlpe(inint, const char * inFilename, const char * inArgList, ...) -> intptr_t  // process.h
-spawnv(inint, const char * inFilename, const char * const * inArgList) -> intptr_t  // process.h
-spawnvp(inint, const char * inFilename, const char * const * inArgList) -> intptr_t  // process.h
-sprintf_s(char * _DstBuf, size_t inSizeInBytes, const char * inFormat, ...) -> int  // stdio.h
-sqrtf(float inX) -> float  // math.h
-srand(unsigned int inSeed) -> void  // stdlib.h
-sscanf(const char * inSrc, const char * inFormat, ...) -> int  // stdio.h
-sscanf_s(const char * inSrc, const char * inFormat, ...) -> 40|  // stdio.h
-strcat_s(char * _Dst, rsize_t inSizeInBytes, const char * inSrc) -> errno_t  // string.h
-strchr(const char * inStr, int inVal) -> char  // string.h
-strcmpi(const char * inStr1, const char * inStr2) -> int  // string.h
-strcoll(const char * inStr1, const char * inStr2) -> int  // string.h
-strcpy_s(char * _Dst, rsize_t inSizeInBytes, const char * inSrc) -> errno_t  // string.h
-strcspn(const char * inStr, const char * inControl) -> size_t  // string.h
-strdup(const char * inSrc) -> char  // string.h
-strerror(inint) -> _CRTIMP  // stdlib.h
-strerror_s(char * _Buf, size_t inSizeInBytes, int inErrNum) -> 37|  // string.h
-strftime(char * _Buf, size_t inSizeInBytes, const char * inFormat, const struct tm * inTm) -> size_t  // time.h
-stricmp(const char * inStr1, const char * inStr2) -> int  // string.h
-strlwr(char * ioStr) -> char  // string.h
-strncat_s(char * _Dst, rsize_t inSizeInBytes, const char * inSrc, rsize_t inMaxCount) -> errno_t  // string.h
-strncmp(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int  // string.h
-strncpy_s(char * _Dst, rsize_t inSizeInBytes, const char * inSrc, rsize_t inMaxCount) -> errno_t  // string.h
-strnicmp(const char * inStr1, const char * inStr, size_t inMaxCount) -> int  // string.h
-strnlen(const char * inStr, size_t inMaxCount) -> size_t  // string.h
-strnset(char * _Str, int inVal, size_t inMaxCount) -> char  // string.h
-strpbrk(const char * inStr, const char * inControl) -> char  // string.h
-strrchr(const char * inStr, int inCh) -> char  // string.h
-strrev(char * ioStr) -> char  // string.h
-strspn(const char * inStr, const char * inControl) -> size_t  // string.h
-strstr(const char * inStr, const char * inSubStr) -> char  // string.h
-strtod(const char * inStr, char ** outEndPtr) -> double  // stdlib.h
-strtok(char * ioStr, const char * inDelim) -> char  // string.h
-strtok_s(char * ioStr, const char * inDelim, char ** ioContext) -> 40|  // string.h
-strtol(const char * inStr, char ** outEndPtr, int inRadix ) -> long  // stdlib.h
-strtoul(const char * inStr, char ** outEndPtr, int inRadix) -> long  // stdlib.h
-strupr(char * ioStr) -> char  // string.h
-strxfrm (char * _Dst, const char * inSrc, size_t inMaxCount) -> size_t  // string.h
-swab(char * _Buf1, char * _Buf2, int inSizeInBytes) -> void  // stdlib.h
-swprintf_s(wchar_t * _Dst, size_t inSizeInWords, const wchar_t * inFormat, ...) -> _CRTIMP  // wchar.h
-swscanf(const wchar_t * inSrc, const wchar_t * inFormat, ...) -> int  // wchar.h
-swscanf_s(const wchar_t *inSrc, const wchar_t * inFormat, ...) -> _CRTIMP  // wchar.h
-system(const char * inCommand) -> int  // process.h
-tanf(float inX) -> float  // math.h
-tanhf(float inX) -> float  // math.h
-tanl(long double inX) -> double  // math.h
-tell(int inFileHandle) -> long  // io.h
-tempnam(const char * inDirectory, const char * inFilePrefix) -> char  // stdio.h
-terminate(void) -> void  // eh.h
-throw(...) -> int  // setjmp.h
-tmpfile(void) -> FILE  // stdio.h
-tmpfile_s(_Deref_post_valid_ FILE ** outFile) -> 36|  // stdio.h
-tmpnam_s(char * _Buf, rsize_t inSize) -> errno_t  // stdio.h
-toascii(int inC) -> int  // ctype.h
-tolower(int inC) -> int  // ctype.h
-toupper(int inC) -> int  // ctype.h
+set_unexpected(unexpected_function inNewPtFunc) -> unexpected_function #eh.h
+setbuf(FILE * ioFile, char * _Buffer) -> void #stdio.h
+setlocale(int inCategory, const char * inLocale) -> char #locale.h
+setmode(int inFileHandle, int inMode) -> int #io.h
+setvbuf(FILE * ioFile, char * _Buf, int inMode, size_t inSize) -> 34| #stdio.h
+sinf(float inX) -> float #math.h
+sinhf(float inX) -> float #math.h
+sopen(const char * _Filename, int inOpenFlag, int inShareFlag, ...) -> int #io.h
+spawnl(inint, const char * inFilename, const char * inArgList, ...) -> intptr_t #process.h
+spawnle(inint, const char * inFilename, const char * inArgList, ...) -> intptr_t #process.h
+spawnlp(inint, const char * inFilename, const char * inArgList, ...) -> intptr_t #process.h
+spawnlpe(inint, const char * inFilename, const char * inArgList, ...) -> intptr_t #process.h
+spawnv(inint, const char * inFilename, const char * const * inArgList) -> intptr_t #process.h
+spawnvp(inint, const char * inFilename, const char * const * inArgList) -> intptr_t #process.h
+sprintf_s(char * _DstBuf, size_t inSizeInBytes, const char * inFormat, ...) -> int #stdio.h
+sqrtf(float inX) -> float #math.h
+srand(unsigned int inSeed) -> void #stdlib.h
+sscanf(const char * inSrc, const char * inFormat, ...) -> int #stdio.h
+sscanf_s(const char * inSrc, const char * inFormat, ...) -> 40| #stdio.h
+strcat_s(char * _Dst, rsize_t inSizeInBytes, const char * inSrc) -> errno_t #string.h
+strchr(const char * inStr, int inVal) -> char #string.h
+strcmpi(const char * inStr1, const char * inStr2) -> int #string.h
+strcoll(const char * inStr1, const char * inStr2) -> int #string.h
+strcpy_s(char * _Dst, rsize_t inSizeInBytes, const char * inSrc) -> errno_t #string.h
+strcspn(const char * inStr, const char * inControl) -> size_t #string.h
+strdup(const char * inSrc) -> char #string.h
+strerror(inint) -> _CRTIMP #stdlib.h
+strerror_s(char * _Buf, size_t inSizeInBytes, int inErrNum) -> 37| #string.h
+strftime(char * _Buf, size_t inSizeInBytes, const char * inFormat, const struct tm * inTm) -> size_t #time.h
+stricmp(const char * inStr1, const char * inStr2) -> int #string.h
+strlwr(char * ioStr) -> char #string.h
+strncat_s(char * _Dst, rsize_t inSizeInBytes, const char * inSrc, rsize_t inMaxCount) -> errno_t #string.h
+strncmp(const char * inStr1, const char * inStr2, size_t inMaxCount) -> int #string.h
+strncpy_s(char * _Dst, rsize_t inSizeInBytes, const char * inSrc, rsize_t inMaxCount) -> errno_t #string.h
+strnicmp(const char * inStr1, const char * inStr, size_t inMaxCount) -> int #string.h
+strnlen(const char * inStr, size_t inMaxCount) -> size_t #string.h
+strnset(char * _Str, int inVal, size_t inMaxCount) -> char #string.h
+strpbrk(const char * inStr, const char * inControl) -> char #string.h
+strrchr(const char * inStr, int inCh) -> char #string.h
+strrev(char * ioStr) -> char #string.h
+strspn(const char * inStr, const char * inControl) -> size_t #string.h
+strstr(const char * inStr, const char * inSubStr) -> char #string.h
+strtod(const char * inStr, char ** outEndPtr) -> double #stdlib.h
+strtok(char * ioStr, const char * inDelim) -> char #string.h
+strtok_s(char * ioStr, const char * inDelim, char ** ioContext) -> 40| #string.h
+strtol(const char * inStr, char ** outEndPtr, int inRadix ) -> long #stdlib.h
+strtoul(const char * inStr, char ** outEndPtr, int inRadix) -> long #stdlib.h
+strupr(char * ioStr) -> char #string.h
+strxfrm (char * _Dst, const char * inSrc, size_t inMaxCount) -> size_t #string.h
+swab(char * _Buf1, char * _Buf2, int inSizeInBytes) -> void #stdlib.h
+swprintf_s(wchar_t * _Dst, size_t inSizeInWords, const wchar_t * inFormat, ...) -> _CRTIMP #wchar.h
+swscanf(const wchar_t * inSrc, const wchar_t * inFormat, ...) -> int #wchar.h
+swscanf_s(const wchar_t *inSrc, const wchar_t * inFormat, ...) -> _CRTIMP #wchar.h
+system(const char * inCommand) -> int #process.h
+tanf(float inX) -> float #math.h
+tanhf(float inX) -> float #math.h
+tanl(long double inX) -> double #math.h
+tell(int inFileHandle) -> long #io.h
+tempnam(const char * inDirectory, const char * inFilePrefix) -> char #stdio.h
+terminate(void) -> void #eh.h
+throw(...) -> int #setjmp.h
+tmpfile(void) -> FILE #stdio.h
+tmpfile_s(_Deref_post_valid_ FILE ** outFile) -> 36| #stdio.h
+tmpnam_s(char * _Buf, rsize_t inSize) -> errno_t #stdio.h
+toascii(int inC) -> int #ctype.h
+tolower(int inC) -> int #ctype.h
+toupper(int inC) -> int #ctype.h
 towlower(wint_t inC)
-towlower(wint_t) -> wint_t  // ctype.h
+towlower(wint_t) -> wint_t #ctype.h
 towupper(wint_t inC)
-towupper(wint_t) -> wint_t  // wchar.h
-tzset(void) -> void  // time.h
-ultoa(unsigned long inVal, char * _Dstbuf, int inRadix) -> char  // stdlib.h
-umask(int inMode) -> int  // io.h
-unexpected(void) -> void  // eh.h
-ungetc(int inCh, FILE * ioFile) -> int  // stdio.h
-ungetch(int _Ch) -> int  // conio.h
-ungetwc(wint_t inCh, FILE * ioFile) -> wint_t  // stdio.h
-unlink(const char * inFilename) -> int  // io.h
-vfprintf(FILE * ioFile, const char * inFormat, va_list _ArgList) -> int  // stdio.h
-vfprintf_s(FILE * ioFile, const char * inFormat, va_list _ArgList) -> int  // stdio.h
-vfwprintf(FILE * ioFile, const wchar_t * inFormat, va_list _ArgList) -> int  // stdio.h
-vfwprintf_s(FILE * ioFile, const wchar_t * inFormat, va_list _ArgList) -> int  // stdio.h
-vprintf(const char * inFormat, va_list _ArgList) -> int  // stdio.h
-vprintf_s(const char * inFormat, va_list _ArgList) -> int  // stdio.h
-vsnprintf(char * outDstBuf, size_t inMaxCount, const char * inFormat, va_list _ArgList) -> int  // stdio.h
-vsnprintf_s(char * _DstBuf, size_t inDstSize, size_t inMaxCount, const char * inFormat, va_list _ArgList) -> 38|  // stdio.h
-vsprintf_s(char * _DstBuf, size_t inSizeInBytes, const char * inFormat, va_list _ArgList) -> int  // stdio.h
-vswprintf_s(wchar_t * _Dst, size_t inSizeInWords, const wchar_t * inFormat, va_list _ArgList) -> int  // stdio.h
-vwprintf(const wchar_t * inFormat, va_list _ArgList) -> int  // wchar.h
-vwprintf_s(const wchar_t * inFormat, va_list _ArgList) -> int  // wchar.h
+towupper(wint_t) -> wint_t #wchar.h
+tzset(void) -> void #time.h
+ultoa(unsigned long inVal, char * _Dstbuf, int inRadix) -> char #stdlib.h
+umask(int inMode) -> int #io.h
+unexpected(void) -> void #eh.h
+ungetc(int inCh, FILE * ioFile) -> int #stdio.h
+ungetch(int _Ch) -> int #conio.h
+ungetwc(wint_t inCh, FILE * ioFile) -> wint_t #stdio.h
+unlink(const char * inFilename) -> int #io.h
+vfprintf(FILE * ioFile, const char * inFormat, va_list _ArgList) -> int #stdio.h
+vfprintf_s(FILE * ioFile, const char * inFormat, va_list _ArgList) -> int #stdio.h
+vfwprintf(FILE * ioFile, const wchar_t * inFormat, va_list _ArgList) -> int #stdio.h
+vfwprintf_s(FILE * ioFile, const wchar_t * inFormat, va_list _ArgList) -> int #stdio.h
+vprintf(const char * inFormat, va_list _ArgList) -> int #stdio.h
+vprintf_s(const char * inFormat, va_list _ArgList) -> int #stdio.h
+vsnprintf(char * outDstBuf, size_t inMaxCount, const char * inFormat, va_list _ArgList) -> int #stdio.h
+vsnprintf_s(char * _DstBuf, size_t inDstSize, size_t inMaxCount, const char * inFormat, va_list _ArgList) -> 38| #stdio.h
+vsprintf_s(char * _DstBuf, size_t inSizeInBytes, const char * inFormat, va_list _ArgList) -> int #stdio.h
+vswprintf_s(wchar_t * _Dst, size_t inSizeInWords, const wchar_t * inFormat, va_list _ArgList) -> int #stdio.h
+vwprintf(const wchar_t * inFormat, va_list _ArgList) -> int #wchar.h
+vwprintf_s(const wchar_t * inFormat, va_list _ArgList) -> int #wchar.h
 wcscat_s(wchar_t * _Dst, rsize_t inDstSize, const wchar_t * _Src)
-wcscat_s(wchar_t * _Dst, rsize_t inSizeInWords, const wchar_t * inSrc) -> errno_t  // wchar.h
-wcschr(const wchar_t * inStr, wchar_t _Ch) -> wchar_t  // wchar.h
-wcscmp(const wchar_t * inStr1, const wchar_t * inStr2) -> int  // wchar.h
-wcscoll(const wchar_t * inStr1, const wchar_t * inStr2) -> int  // wchar.h
+wcscat_s(wchar_t * _Dst, rsize_t inSizeInWords, const wchar_t * inSrc) -> errno_t #wchar.h
+wcschr(const wchar_t * inStr, wchar_t _Ch) -> wchar_t #wchar.h
+wcscmp(const wchar_t * inStr1, const wchar_t * inStr2) -> int #wchar.h
+wcscoll(const wchar_t * inStr1, const wchar_t * inStr2) -> int #wchar.h
 wcscpy_s(wchar_t * _Dst, rsize_t inDstSize, const wchar_t * inSrc)
-wcscpy_s(wchar_t * _Dst, rsize_t inSizeInWords, const wchar_t * inSrc) -> errno_t  // string.h
-wcscspn(const wchar_t * inStr, const wchar_t * inControl) -> size_t  // string.h
-wcsdup(const wchar_t * inStr) -> wchar_t  // string.h
-wcsftime(wchar_t * _Buf, size_t inSizeInWords, const wchar_t * inFormat, const struct tm * inTm) -> size_t  // time.h
-wcsicmp(const wchar_t * inStr1, const wchar_t * inStr2) -> int  // wchar.h
-wcsicoll(const wchar_t * inStr1, const wchar_t * inStr2) -> int  // wchar.h
-wcslen(const wchar_t * inStr) -> size_t  // string.h
-wcslwr(wchar_t * ioStr) -> wchar_t  // string.h
+wcscpy_s(wchar_t * _Dst, rsize_t inSizeInWords, const wchar_t * inSrc) -> errno_t #string.h
+wcscspn(const wchar_t * inStr, const wchar_t * inControl) -> size_t #string.h
+wcsdup(const wchar_t * inStr) -> wchar_t #string.h
+wcsftime(wchar_t * _Buf, size_t inSizeInWords, const wchar_t * inFormat, const struct tm * inTm) -> size_t #time.h
+wcsicmp(const wchar_t * inStr1, const wchar_t * inStr2) -> int #wchar.h
+wcsicoll(const wchar_t * inStr1, const wchar_t * inStr2) -> int #wchar.h
+wcslen(const wchar_t * inStr) -> size_t #string.h
+wcslwr(wchar_t * ioStr) -> wchar_t #string.h
 wcsncat_s(wchar_t * _Dst, rsize_t inDstSize, const wchar_t * inSrc, rsize_t inMaxCount)
-wcsncat_s(wchar_t * _Dst, rsize_t inSizeInWords, const wchar_t * inSrc, rsize_t inMaxCount) -> errno_t  // wchar.h
-wcsncmp(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount) -> int  // wchar.h
+wcsncat_s(wchar_t * _Dst, rsize_t inSizeInWords, const wchar_t * inSrc, rsize_t inMaxCount) -> errno_t #wchar.h
+wcsncmp(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount) -> int #wchar.h
 wcsncpy_s(wchar_t * _Dst, rsize_t inDstSize, const wchar_t * inSrc, rsize_t inMaxCount)
-wcsncpy_s(wchar_t * _Dst, rsize_t inSizeInWords, const wchar_t * inSrc, rsize_t inMaxCount) -> errno_t  // wchar.h
-wcsnicmp(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount) -> int  // wchar.h
-wcsnlen(const wchar_t * inSrc, size_t inMaxCount) -> size_t  // string.h
-wcsnset(wchar_t * _Str, wchar_t inVal, size_t inMaxCount) -> wchar_t  // string.h
-wcspbrk(const wchar_t * inStr, const wchar_t * inControl) -> wchar_t  // wchar.h
-wcsrchr(const wchar_t * inStr, wchar_t inCh) -> wchar_t  // wchar.h
-wcsrev(wchar_t * ioStr) -> wchar_t  // wchar.h
-wcsset(wchar_t * ioStr, wchar_t _Val) -> wchar_t  // wchar.h
-wcsspn(const wchar_t * inStr, const wchar_t * inControl) -> size_t  // string.h
-wcsstr(const wchar_t * inStr, const wchar_t * inSubStr) -> wchar_t  // string.h
-wcstod(const wchar_t * inStr, wchar_t ** outEndPtr) -> double  // wchar.h
-wcstok(wchar_t * ioStr, const wchar_t * inDelim) -> wchar_t  // wchar.h
-wcstok_s(wchar_t * ioStr, const wchar_t * inDelim, wchar_t ** ioContext) -> wchar_t*  // wchar.h
-wcstol(const wchar_t *inStr, wchar_t ** outEndPtr, int _Radix) -> long  // stdlib.h
-wcstombs_s(size_t * outPtNumOfCharConverted, char * _Dst, size_t inDstSizeInBytes, const wchar_t * inSrc, size_t inMaxCountInBytes) -> errno_t  // stdlib.h
-wcstoul(const wchar_t *inStr, wchar_t ** outEndPtr, int _Radix) -> long  // stdlib.h
-wcsupr(wchar_t * ioStr) -> wchar_t  // string.h
-wcsxfrm(wchar_t * _Dst, const wchar_t * inSrc, size_t inMaxCount) -> size_t  // wchar.h
-wctob(wint_t inWCh) -> int  // wchar.h
-wctomb(char * _MbCh, wchar_t inWCh) -> int  // stdlib.h
-wctomb_s(int * outSizeConverted, char * _MbCh, rsize_t inSizeInBytes, wchar_t inWCh) -> _CRTIMP  // stdlib.h
-wprintf(const wchar_t * inFormat, ...) -> int  // wchar.h
-wprintf_s(const wchar_t * inFormat, ...) -> int  // wchar.h
-write(int inFilehandle, const void * _Buf, unsigned int inMaxCharCount) -> int  // io.h
-wscanf(const wchar_t * inFormat, ...) -> int  // stdio.h
-wscanf_s(const wchar_t * inFormat, ...) -> 40|  // stdio.h
-y0(double inX) -> double  // math.h
-y1(double inX) -> double  // math.h
-yn(int inX, double inY) -> double  // math.h
+wcsncpy_s(wchar_t * _Dst, rsize_t inSizeInWords, const wchar_t * inSrc, rsize_t inMaxCount) -> errno_t #wchar.h
+wcsnicmp(const wchar_t * inStr1, const wchar_t * inStr2, size_t inMaxCount) -> int #wchar.h
+wcsnlen(const wchar_t * inSrc, size_t inMaxCount) -> size_t #string.h
+wcsnset(wchar_t * _Str, wchar_t inVal, size_t inMaxCount) -> wchar_t #string.h
+wcspbrk(const wchar_t * inStr, const wchar_t * inControl) -> wchar_t #wchar.h
+wcsrchr(const wchar_t * inStr, wchar_t inCh) -> wchar_t #wchar.h
+wcsrev(wchar_t * ioStr) -> wchar_t #wchar.h
+wcsset(wchar_t * ioStr, wchar_t _Val) -> wchar_t #wchar.h
+wcsspn(const wchar_t * inStr, const wchar_t * inControl) -> size_t #string.h
+wcsstr(const wchar_t * inStr, const wchar_t * inSubStr) -> wchar_t #string.h
+wcstod(const wchar_t * inStr, wchar_t ** outEndPtr) -> double #wchar.h
+wcstok(wchar_t * ioStr, const wchar_t * inDelim) -> wchar_t #wchar.h
+wcstok_s(wchar_t * ioStr, const wchar_t * inDelim, wchar_t ** ioContext) -> wchar_t* #wchar.h
+wcstol(const wchar_t *inStr, wchar_t ** outEndPtr, int _Radix) -> long #stdlib.h
+wcstombs_s(size_t * outPtNumOfCharConverted, char * _Dst, size_t inDstSizeInBytes, const wchar_t * inSrc, size_t inMaxCountInBytes) -> errno_t #stdlib.h
+wcstoul(const wchar_t *inStr, wchar_t ** outEndPtr, int _Radix) -> long #stdlib.h
+wcsupr(wchar_t * ioStr) -> wchar_t #string.h
+wcsxfrm(wchar_t * _Dst, const wchar_t * inSrc, size_t inMaxCount) -> size_t #wchar.h
+wctob(wint_t inWCh) -> int #wchar.h
+wctomb(char * _MbCh, wchar_t inWCh) -> int #stdlib.h
+wctomb_s(int * outSizeConverted, char * _MbCh, rsize_t inSizeInBytes, wchar_t inWCh) -> _CRTIMP #stdlib.h
+wprintf(const wchar_t * inFormat, ...) -> int #wchar.h
+wprintf_s(const wchar_t * inFormat, ...) -> int #wchar.h
+write(int inFilehandle, const void * _Buf, unsigned int inMaxCharCount) -> int #io.h
+wscanf(const wchar_t * inFormat, ...) -> int #stdio.h
+wscanf_s(const wchar_t * inFormat, ...) -> 40| #stdio.h
+y0(double inX) -> double #math.h
+y1(double inX) -> double #math.h
+yn(int inX, double inY) -> double #math.h

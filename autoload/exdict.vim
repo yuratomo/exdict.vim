@@ -23,7 +23,7 @@ function! exdict#LoadExdict(...)
     endif
     for file in split(globpath(&runtimepath, dict.file), '\n')
       if index(b:dict_list, file) == -1
-        let &l:dictionary = &l:dictionary . ',' . file
+        "let &l:dictionary = &l:dictionary . ',' . file
         call add(b:dict_list, file)
         call s:LoadSyntaxFromDict(file, 'exdict')
       endif
@@ -34,6 +34,7 @@ function! exdict#LoadExdict(...)
     imap <buffer><c-UP>    <ESC><Plug>(exdict-prev-i)
     nmap <buffer><c-DOWN>  <Plug>(exdict-next-n)
     nmap <buffer><c-UP>    <Plug>(exdict-prev-n)
+    imap <buffer><c-j>     <Plug>(exdict-omni-complete)
   endif
 endfunction
 
@@ -165,5 +166,66 @@ function! exdict#restore_cmdheight()
     unlet b:updatetime_backup
     unlet b:cmdheight_backup
   endif
+endfunction
+
+function! exdict#CompleteFromDict(findstart, base)
+  if a:findstart
+    let line = getline('.')
+    let start = col('.') - 1
+    while start > 0 && line[start - 1] =~ '\a'
+      let start -= 1
+    endwhile
+    return start
+  else
+    let res = []
+    for dict in b:exdict_candidate
+      let parts = split(dict, ':')
+      let info = parts[len(parts) - 1]
+      let type = 'f'
+      if stridx(info, '(') == -1
+        let type = 'm'
+      endif
+      let funcname = substitute(info, "[( ].*$", "", "")
+      "let menu = substitute(info, "^.*#", "#", "")
+      let menu = substitute(info, "^.*(", "(", "")
+      if strlen(menu) > 40
+        let menu = menu[ : 40]
+      endif
+      if funcname =~ '^' . a:base
+        let item = { 
+        \ 'word' : funcname,
+        \ 'abbr' : '',
+        \ 'menu' : menu,
+        \ 'info' : info,
+        \ 'kind' : type,
+        \ 'icase': 0,
+        \ 'dup'  : '0',
+        \ 'empty': '0'}
+        call add(res, item)
+      endif
+    endfor
+    return res
+  endif
+endfunction
+
+function! exdict#OmniCompletion()
+  let first = 0
+  if !exists('b:exdict_tag')
+    let b:exdict_tag = ''
+    let first = 1
+  endif
+  let tag = input('input tag name:', b:exdict_tag)
+  if tag == ''
+    let tag = '*'
+  endif
+  if tag !=# b:exdict_tag || first == 1
+    let dict_files = join(b:dict_list, ' ')
+    let cmd = &grepprg . ' "' . tag . '" ' . dict_files
+    let b:exdict_candidate = split(system(cmd), "\n")
+    let b:exdict_tag = tag
+  endif
+  setl completefunc=exdict#CompleteFromDict
+  call feedkeys("\<c-x>\<c-u>", 'n')
+  return ''
 endfunction
 

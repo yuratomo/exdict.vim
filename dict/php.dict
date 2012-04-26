@@ -1,52 +1,52 @@
 abs( mixed $number ) -> number 
 acos( float $arg ) -> float 
 acosh( float $arg ) -> float 
-adaptiveBlurImage( float $radius , float $sigma [, int $channel = ... class Imagick
-adaptiveResizeImage( int $columns , int $rows [, bool $bestfit = false ] ) -> bool ... class Imagick
-adaptiveSharpenImage( float $radius , float $sigma [, int $channel = ... class Imagick
-adaptiveThresholdImage( int $width , int $height , int $offset ) -> bool ... class Imagick
-add( object $instance ) -> mixed ... class SWFMovie
-add( object $object ) -> void ... class SWFSprite
-add_namespace( string $uri , string $prefix ) -> bool ... class DOMNode
+adaptiveBlurImage( float $radius , float $sigma [, int $channel = #Imagick
+adaptiveResizeImage( int $columns , int $rows [, bool $bestfit = false ] ) -> bool #Imagick
+adaptiveSharpenImage( float $radius , float $sigma [, int $channel = #Imagick
+adaptiveThresholdImage( int $width , int $height , int $offset ) -> bool #Imagick
+add( object $instance ) -> mixed #SWFMovie
+add( object $object ) -> void #SWFSprite
+add_namespace( string $uri , string $prefix ) -> bool #DOMNode
 add_root( string $name ) -> domelement DomDocument->
-addAction( SWFAction $action , int $flags ) -> void ... class SWFButton
-addAction( SWFAction $action , int $flags ) -> void ... class SWFDisplayItem
-addASound( SWFSound $sound , int $flags ) -> SWFSoundInstance ... class SWFButton
-addChars( string $char ) -> void ... class SWFFontChar
-addChars( string $chars ) -> void ... class SWFTextField
-addColor( int $red , int $green , int $blue [, int $a ] ) -> void ... class SWFDisplayItem
-addCookies( array $cookies ) -> public bool ... class HttpRequest
+addAction( SWFAction $action , int $flags ) -> void #SWFButton
+addAction( SWFAction $action , int $flags ) -> void #SWFDisplayItem
+addASound( SWFSound $sound , int $flags ) -> SWFSoundInstance #SWFButton
+addChars( string $char ) -> void #SWFFontChar
+addChars( string $chars ) -> void #SWFTextField
+addColor( int $red , int $green , int $blue [, int $a ] ) -> void #SWFDisplayItem
+addCookies( array $cookies ) -> public bool #HttpRequest
 addcslashes( string $str , string $charlist ) -> string 
-addEmptyDir( string $dirname ) -> bool ... class ZipArchive
-addEntry( float $ratio , int $red , int $green , int $blue [, int $alpha = 255 ] ) -> void ... class SWFGradient
-addExport( SWFCharacter $char , string $name ) -> void ... class SWFMovie
-addFile( string $filename [, string $localname = NULL [, int $start = 0 [, int $length = 0 ]]] ) -> bool ... class ZipArchive
-addFill( int $red , int $green , int $blue [, int $alpha = 255 ] ) -> SWFFill ... class SWFShape
-addFont( SWFFont $font ) -> mixed ... class SWFMovie
-addFromString( string $localname , string $contents ) -> bool ... class ZipArchive
-addHeaders( array $headers ) -> public bool ... class HttpRequest
-addHeaders( array $headers [, bool $append = false ]) -> public void ... class HttpMessage
-addImage( Imagick $source ) -> bool ... class Imagick
-addNoiseImage( int $noise_type [, int $channel = ... class Imagick
-addPage( void ) -> object ... class HaruDoc
-addPageLabel( int $first_page , int $style , int $first_num [, string $prefix = "" ] ) -> bool ... class HaruDoc
-addPostFields( array $post_data ) -> public bool ... class HttpRequest
-addPostFile( string $name , string $file [, string $content_type = "application/x-octetstream" ] ) -> public bool ... class HttpRequest
-addPropertyToType( string $parent_type_namespace_uri , string $parent_type_name , string $property_name , string $type_namespace_uri , string $type_name [, array $options ] ) -> void ... class SDO_DAS_DataFactory
-addPutData( string $put_data ) -> public bool ... class HttpRequest
-addQueryData( array $query_params ) -> public bool ... class HttpRequest
-addRawPostData( string $raw_post_data ) -> public bool ... class HttpRequest
-addShape( SWFShape $shape , int $flags ) -> void ... class SWFButton
+addEmptyDir( string $dirname ) -> bool #ZipArchive
+addEntry( float $ratio , int $red , int $green , int $blue [, int $alpha = 255 ] ) -> void #SWFGradient
+addExport( SWFCharacter $char , string $name ) -> void #SWFMovie
+addFile( string $filename [, string $localname = NULL [, int $start = 0 [, int $length = 0 ]]] ) -> bool #ZipArchive
+addFill( int $red , int $green , int $blue [, int $alpha = 255 ] ) -> SWFFill #SWFShape
+addFont( SWFFont $font ) -> mixed #SWFMovie
+addFromString( string $localname , string $contents ) -> bool #ZipArchive
+addHeaders( array $headers ) -> public bool #HttpRequest
+addHeaders( array $headers [, bool $append = false ]) -> public void #HttpMessage
+addImage( Imagick $source ) -> bool #Imagick
+addNoiseImage( int $noise_type [, int $channel = #Imagick
+addPage( void ) -> object #HaruDoc
+addPageLabel( int $first_page , int $style , int $first_num [, string $prefix = "" ] ) -> bool #HaruDoc
+addPostFields( array $post_data ) -> public bool #HttpRequest
+addPostFile( string $name , string $file [, string $content_type = "application/x-octetstream" ] ) -> public bool #HttpRequest
+addPropertyToType( string $parent_type_namespace_uri , string $parent_type_name , string $property_name , string $type_namespace_uri , string $type_name [, array $options ] ) -> void #SDO_DAS_DataFactory
+addPutData( string $put_data ) -> public bool #HttpRequest
+addQueryData( array $query_params ) -> public bool #HttpRequest
+addRawPostData( string $raw_post_data ) -> public bool #HttpRequest
+addShape( SWFShape $shape , int $flags ) -> void #SWFButton
 addslashes( string $str ) -> string 
-addSslOptions( array $options ) -> public bool ... class HttpRequest
-addString( string $string ) -> void ... class SWFText
-addString( string $string ) -> void ... class SWFTextField
-addType( string $type_namespace_uri , string $type_name [, array $options ] ) -> void ... class SDO_DAS_DataFactory
-addTypes( string $xsd_file ) -> void ... class SDO_DAS_XML
-addUTF8Chars( string $char ) -> void ... class SWFFontChar
-addUTF8String( string $text ) -> void ... class SWFText
-affine( array $affine ) -> bool ... class ImagickDraw
-affineTransformImage( ImagickDraw $matrix ) -> bool ... class Imagick
+addSslOptions( array $options ) -> public bool #HttpRequest
+addString( string $string ) -> void #SWFText
+addString( string $string ) -> void #SWFTextField
+addType( string $type_namespace_uri , string $type_name [, array $options ] ) -> void #SDO_DAS_DataFactory
+addTypes( string $xsd_file ) -> void #SDO_DAS_XML
+addUTF8Chars( string $char ) -> void #SWFFontChar
+addUTF8String( string $text ) -> void #SWFText
+affine( array $affine ) -> bool #ImagickDraw
+affineTransformImage( ImagickDraw $matrix ) -> bool #Imagick
 aggregate( object $object , string $class_name ) -> void 
 aggregate_info( object $object ) -> array 
 aggregate_methods( object $object , string $class_name ) -> void 
@@ -55,10 +55,10 @@ aggregate_methods_by_regexp( object $object , string $class_name , string $regex
 aggregate_properties( object $object , string $class_name ) -> void 
 aggregate_properties_by_list( object $object , string $class_name , array $properties_list [, bool $exclude = false ] ) -> void 
 aggregate_properties_by_regexp( object $object , string $class_name , string $regexp [, bool $exclude = false ] ) -> void 
-align( int $alignement ) -> void ... class SWFTextField
-animateImages( string $x_server ) -> bool ... class Imagick
-annotateImage( ImagickDraw $draw_settings , float $x , float $y , float $angle , string $text ) -> bool ... class Imagick
-annotation( float $x , float $y , string $text ) -> bool ... class ImagickDraw
+align( int $alignement ) -> void #SWFTextField
+animateImages( string $x_server ) -> bool #Imagick
+annotateImage( ImagickDraw $draw_settings , float $x , float $y , float $angle , string $text ) -> bool #Imagick
+annotation( float $x , float $y , string $text ) -> bool #ImagickDraw
 apache_child_terminate( void ) -> bool 
 apache_get_modules( void ) -> array 
 apache_get_version( void ) -> string 
@@ -101,14 +101,14 @@ apd_set_pprof_trace([ string $dump_directory [, string $fragment = "pprof" ]] ) 
 apd_set_session( int $debug_level ) -> void 
 apd_set_session_trace( int $debug_level [, string $dump_directory ] ) -> void 
 apd_set_session_trace_socket( string $tcp_server , int $socket_type , int $port , int $debug_level ) -> bool 
-append( mixed $value ) -> bool OCI-... class Collection
-append( OCI-Lob $lob_from ) -> bool OCI-... class Lob
-append_child( DOMNode $newnode ) -> DOMNode ... class DOMNode
+append( mixed $value ) -> bool OCI-#Collection
+append( OCI-Lob $lob_from ) -> bool OCI-#Lob
+append_child( DOMNode $newnode ) -> DOMNode #DOMNode
 append_sibling( domelement $newnode ) -> domelement DomNode->
-appendImages( bool $stack = false ) -> Imagick ... class Imagick
-applyChanges( PDO $database_handle , SDODataObject $root_data_object ) -> void ... class SDO_DAS_Relational
-arc( float $sx , float $sy , float $ex , float $ey , float $sd , float $ed ) -> bool ... class ImagickDraw
-arc( float $x , float $y , float $ray , float $ang1 , float $ang2 ) -> bool ... class HaruPage
+appendImages( bool $stack = false ) -> Imagick #Imagick
+applyChanges( PDO $database_handle , SDODataObject $root_data_object ) -> void #SDO_DAS_Relational
+arc( float $sx , float $sy , float $ex , float $ey , float $sd , float $ed ) -> bool #ImagickDraw
+arc( float $x , float $y , float $ray , float $ang1 , float $ang2 ) -> bool #HaruPage
 array([ mixed $... ] ) -> array 
 array_change_key_case( array $input [, int $case = CASE_LOWER ] ) -> array 
 array_chunk( array $input , int $size [, bool $preserve_keys = false ] ) -> array 
@@ -165,16 +165,16 @@ asinh( float $arg ) -> float
 asort( array &$array [, int $sort_flags = SORT_REGULAR ] ) -> bool 
 assert( mixed $assertion ) -> bool 
 assert_options( int $what [, mixed $value ] ) -> mixed 
-assign( array $parameter ) -> bool ... class hw_api_object
-assign( OCI-Collection $from ) -> bool OCI-... class Collection
-assignElem( int $index , mixed $value ) -> bool OCI-... class Collection
+assign( array $parameter ) -> bool #hw_api_object
+assign( OCI-Collection $from ) -> bool OCI-#Collection
+assignElem( int $index , mixed $value ) -> bool OCI-#Collection
 atan( float $arg ) -> float 
 atan2( float $y , float $x ) -> float 
 atanh( float $arg ) -> float 
-attach( HttpRequest $request ) -> public bool ... class HttpRequestPool
-attreditable( array $parameter ) -> bool ... class hw_api_object
+attach( HttpRequest $request ) -> public bool #HttpRequestPool
+attreditable( array $parameter ) -> bool #hw_api_object
 attributes( void ) -> array DomNode->
-averageImages( void ) -> Imagick ... class Imagick
+averageImages( void ) -> Imagick #Imagick
 base_convert( string $number , int $frombase , int $tobase ) -> string 
 base64_decode( string $data [, bool $strict = false ] ) -> string 
 base64_encode( string $data ) -> string 
@@ -209,16 +209,16 @@ bcpowmod( string $left_operand , string $right_operand , string $modulus [, int 
 bcscale( int $scale ) -> bool 
 bcsqrt( string $operand [, int $scale ] ) -> string 
 bcsub( string $left_operand , string $right_operand [, int $scale ] ) -> string 
-beginLogging( void ) -> void ... class SDO_DAS_ChangeSummary
-beginText( void ) -> bool ... class HaruPage
-bezier( array $coordinates ) -> bool ... class ImagickDraw
+beginLogging( void ) -> void #SDO_DAS_ChangeSummary
+beginText( void ) -> bool #HaruPage
+bezier( array $coordinates ) -> bool #ImagickDraw
 bin2hex( string $str ) -> string 
 bind_textdomain_codeset( string $domain , string $codeset ) -> string 
 bindec( string $binary_string ) -> number 
 bindtextdomain( string $domain , string $directory ) -> string 
-blackThresholdImage( mixed $threshold ) -> bool ... class Imagick
-blurImage( float $radius , float $sigma [, int $channel ] ) -> bool ... class Imagick
-borderImage( mixed $bordercolor , int $width , int $height ) -> bool ... class Imagick
+blackThresholdImage( mixed $threshold ) -> bool #Imagick
+blurImage( float $radius , float $sigma [, int $channel ] ) -> bool #Imagick
+borderImage( mixed $bordercolor , int $width , int $height ) -> bool #Imagick
 bson_decode( string $bson ) -> array 
 bson_encode( mixed $anything ) -> string 
 bzclose( resource $bz ) -> int 
@@ -333,26 +333,26 @@ call_user_func( callback $function [, mixed $parameter [, mixed $... ]]) -> mixe
 call_user_func_array( callback $function , array $param_arr ) -> mixed 
 call_user_method( string $method_name , object &$obj [, mixed $parameter [, mixed $... ]] ) -> mixed 
 call_user_method_array( string $method_name , object &$obj , array $params ) -> mixed 
-capture( void ) -> static void ... class HttpResponse
+capture( void ) -> static void #HttpResponse
 ceil( float $value ) -> float 
-charcoalImage( float $radius , float $sigma ) -> bool ... class Imagick
+charcoalImage( float $radius , float $sigma ) -> bool #Imagick
 chdb_create( string $pathname , array $data ) -> bool 
 chdir( string $directory ) -> bool 
 checkdate( int $month , int $day , int $year ) -> bool 
 checkdnsrr( string $host [, string $type = "MX" ] ) -> bool 
-checkin( array $parameter ) -> bool ... class hw_api
-checkout( array $parameter ) -> bool ... class hw_api
+checkin( array $parameter ) -> bool #hw_api
+checkout( array $parameter ) -> bool #hw_api
 chgrp( string $filename , mixed $group ) -> bool 
 child_nodes( void ) -> array DomNode->
-children( array $parameter ) -> array ... class hw_api
+children( array $parameter ) -> array #hw_api
 chmod( string $filename , int $mode ) -> bool 
-chopImage( int $width , int $height , int $x , int $y ) -> bool ... class Imagick
+chopImage( int $width , int $height , int $x , int $y ) -> bool #Imagick
 chown( string $filename , mixed $user ) -> bool 
 chr( int $ascii ) -> string 
 chroot( string $directory ) -> bool 
 chunk_split( string $body [, int $chunklen = 76 [, string $end = "\r\n" ]] ) -> string 
-circle( float $ox , float $oy , float $px , float $py ) -> bool ... class ImagickDraw
-circle( float $x , float $y , float $ray ) -> bool ... class HaruPage
+circle( float $ox , float $oy , float $px , float $py ) -> bool #ImagickDraw
+circle( float $x , float $y , float $ray ) -> bool #HaruPage
 class_alias([ string $original [, string $alias ]] ) -> bool 
 class_exists( string $class_name [, bool $autoload = true ] ) -> bool 
 class_implements( mixed $class [, bool $autoload = true ] ) -> array 
@@ -363,28 +363,28 @@ classkit_method_copy( string $dClass , string $dMethod , string $sClass [, strin
 classkit_method_redefine( string $classname , string $methodname , string $args , string $code [, int $flags = CLASSKIT_ACC_PUBLIC ] ) -> bool 
 classkit_method_remove( string $classname , string $methodname ) -> bool 
 classkit_method_rename( string $classname , string $methodname , string $newname ) -> bool 
-clear( void ) -> bool ... class Imagick
-clear( void ) -> bool ... class ImagickDraw
-clear( void ) -> bool ... class ImagickPixel
-clear( void ) -> bool ... class ImagickPixelIterator
-clear( void ) -> void ... class SDO_DataObject
-clearHistory( void ) -> public void ... class HttpRequest
+clear( void ) -> bool #Imagick
+clear( void ) -> bool #ImagickDraw
+clear( void ) -> bool #ImagickPixel
+clear( void ) -> bool #ImagickPixelIterator
+clear( void ) -> void #SDO_DataObject
+clearHistory( void ) -> public void #HttpRequest
 clearstatcache([ bool $clear_realpath_cache = false [, string $filename ]] ) -> void 
-clipImage( void ) -> bool ... class Imagick
-clipPathImage( string $pathname , bool $inside ) -> bool ... class Imagick
-clone( void ) -> Imagick ... class Imagick
-clone( void ) -> ImagickDraw ... class ImagickDraw
+clipImage( void ) -> bool #Imagick
+clipPathImage( string $pathname , bool $inside ) -> bool #Imagick
+clone( void ) -> Imagick #Imagick
+clone( void ) -> ImagickDraw #ImagickDraw
 clone_node( void ) -> domelement DomNode->
-close( void ) -> bool ... class ZipArchive
-close( void ) -> bool OCI-... class Lob
+close( void ) -> bool #ZipArchive
+close( void ) -> bool OCI-#Lob
 closedir([ resource $dir_handle ] ) -> void 
 closelog( void ) -> bool 
-closePath( void ) -> bool ... class HaruPage
-clutImage( Imagick $lookup_table [, float $channel = ... class Imagick
-coalesceImages( void ) -> Imagick ... class Imagick
-color( float $x , float $y , int $paintMethod ) -> bool ... class ImagickDraw
-colorFloodfillImage( mixed $fill , float $fuzz , mixed $bordercolor , int $x , int $y ) -> bool ... class Imagick
-colorizeImage( mixed $colorize , mixed $opacity ) -> bool ... class Imagick
+closePath( void ) -> bool #HaruPage
+clutImage( Imagick $lookup_table [, float $channel = #Imagick
+coalesceImages( void ) -> Imagick #Imagick
+color( float $x , float $y , int $paintMethod ) -> bool #ImagickDraw
+colorFloodfillImage( mixed $fill , float $fuzz , mixed $bordercolor , int $x , int $y ) -> bool #Imagick
+colorizeImage( mixed $colorize , mixed $opacity ) -> bool #Imagick
 com_addref( void ) -> void 
 com_create_guid( void ) -> string 
 com_event_sink( variant $comobject , object $sinkobject [, mixed $sinkinterface ] ) -> bool 
@@ -395,41 +395,41 @@ com_load_typelib( string $typelib_name [, bool $case_insensitive = true ]) -> bo
 com_message_pump([ int $timeoutms = 0 ] ) -> bool 
 com_print_typeinfo( object $comobject [, string $dispinterface [, bool $wantsink = false ]] ) -> bool 
 com_release( void ) -> void 
-combineImages( int $channelType ) -> Imagick ... class Imagick
-comment( string $comment ) -> bool ... class ImagickDraw
-commentImage( string $comment ) -> bool ... class Imagick
-commit( void ) -> bool ... class SAMConnection
+combineImages( int $channelType ) -> Imagick #Imagick
+comment( string $comment ) -> bool #ImagickDraw
+commentImage( string $comment ) -> bool #Imagick
+commit( void ) -> bool #SAMConnection
 compact( mixed $varname [, mixed $... ] ) -> array 
-compareImageChannels( Imagick $image , int $channelType , int $metricType ) -> array ... class Imagick
-compareImageLayers( int $method ) -> Imagick ... class Imagick
-compareImages( Imagick $compare , int $metric ) -> array ... class Imagick
-composite( int $compose , float $x , float $y , float $width , float $height , Imagick $compositeWand ) -> bool ... class ImagickDraw
-compositeImage( Imagick $composite_object , int $composite , int $x , int $y [, int $channel = ... class Imagick
-concat( float $a , float $b , float $c , float $d , float $x , float $y ) -> bool ... class HaruPage
-connect( string $protocol [, array $properties ] ) -> bool ... class SAMConnection
+compareImageChannels( Imagick $image , int $channelType , int $metricType ) -> array #Imagick
+compareImageLayers( int $method ) -> Imagick #Imagick
+compareImages( Imagick $compare , int $metric ) -> array #Imagick
+composite( int $compose , float $x , float $y , float $width , float $height , Imagick $compositeWand ) -> bool #ImagickDraw
+compositeImage( Imagick $composite_object , int $composite , int $x , int $y [, int $channel = #Imagick
+concat( float $a , float $b , float $c , float $d , float $x , float $y ) -> bool #HaruPage
+connect( string $protocol [, array $properties ] ) -> bool #SAMConnection
 connection_aborted( void ) -> int 
 connection_status( void ) -> int 
 connection_timeout( void ) -> int 
 constant( string $name ) -> mixed 
-contrastImage( bool $sharpen ) -> bool ... class Imagick
-contrastStretchImage( float $black_point , float $white_point [, int $channel = ... class Imagick
+contrastImage( bool $sharpen ) -> bool #Imagick
+contrastStretchImage( float $black_point , float $white_point [, int $channel = #Imagick
 convert_cyr_string( string $str , string $from , string $to ) -> string 
 convert_uudecode( string $data ) -> string 
 convert_uuencode( string $data ) -> string 
-convolveImage( array $kernel [, int $channel = ... class Imagick
-copy( array $parameter ) -> hw_api_content ... class hw_api
+convolveImage( array $kernel [, int $channel = #Imagick
+copy( array $parameter ) -> hw_api_content #hw_api
 copy( string $source , string $dest [, resource $context ] ) -> bool 
 cos( float $arg ) -> float 
 cosh( float $arg ) -> float 
-count( array $parameter ) -> int ... class hw_api_object
+count( array $parameter ) -> int #hw_api_object
 count( mixed $var [, int $mode = COUNT_NORMAL ] ) -> int 
-count( void ) -> int ... class hw_api_error
+count( void ) -> int #hw_api_error
 count_chars( string $string [, int $mode = 0 ] ) -> mixed 
 crack_getlastmessage( void ) -> string 
 crack_opendict( string $dictionary ) -> resource 
 crc32( string $str ) -> int 
-create( string $type_namespace_uri , string $type_name ) -> void ... class SDO_DataFactory
-create([ mixed $xsd_file [, string $key ]] ) -> SDO_DAS_XML ... class SDO_DAS_XML
+create( string $type_namespace_uri , string $type_name ) -> void #SDO_DataFactory
+create([ mixed $xsd_file [, string $key ]] ) -> SDO_DAS_XML #SDO_DAS_XML
 create_attribute( string $name , string $value ) -> domattribute DomDocument->
 create_cdata_section( string $content ) -> domcdata DomDocument->
 create_comment( string $content ) -> domcomment DomDocument->
@@ -439,20 +439,20 @@ create_entity_reference( string $content ) -> domentityreference DomDocument->
 create_function( string $args , string $code ) -> string 
 create_processing_instruction( string $content ) -> domprocessinginstruction DomDocument->
 create_text_node( string $content ) -> domtext DomDocument->
-createDataObject( mixed $identifier ) -> SDO_DataObject ... class SDO_DataObject
-createDataObject( string $namespace_uri , string $type_name ) -> SDO_DataObject ... class SDO_DAS_XML
-createDataObject( string $type_namespace_uri , string $type_name ) -> SDO_DataObject ... class SCA
-createDataObject( string $type_namespace_uri , string $type_name ) -> SDO_DataObject ... class SCA_LocalProxy
-createDataObject( string $type_namespace_uri , string $type_name ) -> SDO_DataObject ... class SCA_SoapProxy
-createDestination( void ) -> object ... class HaruPage
-createDocument([ string $document_element_name ] ) -> SDO_DAS_XML_Document ... class SDO_DAS_XML
-createLinkAnnotation( array $rectangle , object $destination) -> object ... class HaruPage
-createOutline( string $title [, object $parent_outline [, object $encoder ]] ) -> object ... class HaruDoc
-createRootDataObject( void ) -> SDODataObject ... class SDO_DAS_Relational
-createTextAnnotation( array $rectangle , string $text [, object $encoder ] ) -> object ... class HaruPage
-createURLAnnotation( array $rectangle , string $url ) -> object ... class HaruPage
-cropImage( int $width , int $height , int $x , int $y ) -> bool ... class Imagick
-cropThumbnailImage( int $width , int $height ) -> bool ... class Imagick
+createDataObject( mixed $identifier ) -> SDO_DataObject #SDO_DataObject
+createDataObject( string $namespace_uri , string $type_name ) -> SDO_DataObject #SDO_DAS_XML
+createDataObject( string $type_namespace_uri , string $type_name ) -> SDO_DataObject #SCA
+createDataObject( string $type_namespace_uri , string $type_name ) -> SDO_DataObject #SCA_LocalProxy
+createDataObject( string $type_namespace_uri , string $type_name ) -> SDO_DataObject #SCA_SoapProxy
+createDestination( void ) -> object #HaruPage
+createDocument([ string $document_element_name ] ) -> SDO_DAS_XML_Document #SDO_DAS_XML
+createLinkAnnotation( array $rectangle , object $destination) -> object #HaruPage
+createOutline( string $title [, object $parent_outline [, object $encoder ]] ) -> object #HaruDoc
+createRootDataObject( void ) -> SDODataObject #SDO_DAS_Relational
+createTextAnnotation( array $rectangle , string $text [, object $encoder ] ) -> object #HaruPage
+createURLAnnotation( array $rectangle , string $url ) -> object #HaruPage
+cropImage( int $width , int $height , int $x , int $y ) -> bool #Imagick
+cropThumbnailImage( int $width , int $height ) -> bool #Imagick
 crypt( string $str [, string $salt ] ) -> string 
 ctype_alnum( string $text ) -> bool 
 ctype_alpha( string $text ) -> bool 
@@ -535,7 +535,7 @@ cubrid_real_escape_string( string $unescaped_string [, resource $conn_identifier
 cubrid_result( resource $result , int $row [, mixed $field = 0 ] ) -> string 
 cubrid_rollback( resource $conn_identifier ) -> bool 
 cubrid_save_to_glo( resource $conn_identifier , string $oid , string $file_name ) -> int 
-cubrid_schema( int $schema_type [, string $table_name [, string $col_name ]] ) -> array ... class PDO
+cubrid_schema( int $schema_type [, string $table_name [, string $col_name ]] ) -> array #PDO
 cubrid_schema( resource $conn_identifier , int $schema_type [, string $class_name [, string $attr_name ]] ) -> array 
 cubrid_send_glo( resource $conn_identifier , string $oid ) -> int 
 cubrid_seq_drop( resource $conn_identifier , string $oid , string $attr_name , int $index ) -> bool 
@@ -566,18 +566,18 @@ curl_setopt( resource $ch , int $option , mixed $value ) -> bool
 curl_setopt_array( resource $ch , array $options ) -> bool 
 curl_version([ int $age = CURLVERSION_NOW ] ) -> array 
 current( array &$array ) -> mixed 
-current( void ) -> Imagick ... class Imagick
-curveTo( float $x1 , float $y1 , float $x2 , float $y2 , float $x3 , float $y3 ) -> bool ... class HaruPage
-curveTo2( float $x2 , float $y2 , float $x3 , float $y3 ) -> bool ... class HaruPage
-curveTo3( float $x1 , float $y1 , float $x3 , float $y3 ) -> bool ... class HaruPage
-cycleColormapImage( int $displace ) -> bool ... class Imagick
+current( void ) -> Imagick #Imagick
+curveTo( float $x1 , float $y1 , float $x2 , float $y2 , float $x3 , float $y3 ) -> bool #HaruPage
+curveTo2( float $x2 , float $y2 , float $x3 , float $y3 ) -> bool #HaruPage
+curveTo3( float $x1 , float $y1 , float $x3 , float $y3 ) -> bool #HaruPage
+cycleColormapImage( int $displace ) -> bool #Imagick
 cyrus_authenticate( resource $connection [, string $mechlist [, string $service [, string $user [, int $minssf [, int $maxssf [, string $authname [, string $password ]]]]]]] ) -> void 
 cyrus_bind( resource $connection , array $callbacks ) -> bool 
 cyrus_close( resource $connection ) -> bool 
 cyrus_connect([ string $host [, string $port [, int $flags ]]] ) -> resource 
 cyrus_query( resource $connection , string $query ) -> array 
 cyrus_unbind( resource $connection , string $trigger_name ) -> bool 
-data( void ) -> string ... class DomProcessingInstruction
+data( void ) -> string #DomProcessingInstruction
 date( string $format [, int $timestamp = time() ] ) -> string 
 date_default_timezone_get( void ) -> string 
 date_default_timezone_set( string $timezone_identifier ) -> bool 
@@ -711,7 +711,7 @@ dbplus_unselect( resource $relation ) -> int
 dbplus_update( resource $relation , array $old , array $new ) -> int 
 dbplus_xlockrel( resource $relation ) -> int 
 dbplus_xunlockrel( resource $relation ) -> int 
-dbstat( array $parameter ) -> hw_api_object ... class hw_api
+dbstat( array $parameter ) -> hw_api_object #hw_api
 dbx_close( object $link_identifier ) -> int 
 dbx_compare( array $row_a , array $row_b , string $column_key [, int $flags = DBX_CMP_ASC | DBX_CMP_NATIVE ] ) -> int 
 dbx_connect( mixed $module , string $host , string $database , string $username , string $password [, int $persistent ] ) -> object 
@@ -722,32 +722,32 @@ dbx_query( object $link_identifier , string $sql_statement [, int $flags ] ) -> 
 dbx_sort( object $result , string $user_compare_function ) -> bool 
 dcgettext( string $domain , string $message , int $category ) -> string 
 dcngettext( string $domain , string $msgid1 , string $msgid2 , int $n , int $category ) -> string 
-dcstat( array $parameter ) -> hw_api_object ... class hw_api
+dcstat( array $parameter ) -> hw_api_object #hw_api
 deaggregate( object $object [, string $class_name ] ) -> void 
 debug_backtrace([ int $options = DEBUG_BACKTRACE_PROVIDE_OBJECT [, int $limit = 0 ]] ) -> array 
 debug_print_backtrace([ int $options = 0 [, int $limit = 0 ]] ) -> void 
 debug_zval_dump( mixed $variable ) -> void 
 decbin( int $number ) -> string 
 dechex( int $number ) -> string 
-decipherImage( string $passphrase ) -> bool ... class Imagick
+decipherImage( string $passphrase ) -> bool #Imagick
 decoct( int $number ) -> string 
-deconstructImages( void ) -> Imagick ... class Imagick
+deconstructImages( void ) -> Imagick #Imagick
 define( string $name , mixed $value [, bool $case_insensitive = false ] ) -> bool 
 define_syslog_variables( void ) -> void 
 defined( string $name ) -> bool 
 deg2rad( float $number ) -> float 
 delete( void ) -> void 
-deleteImageArtifact( string $artifact ) -> bool ... class Imagick
-deleteIndex( int $index ) -> bool ... class ZipArchive
-deleteName( string $name ) -> bool ... class ZipArchive
-description( void ) -> string ... class hw_api_reason
-despeckleImage( void ) -> bool ... class Imagick
-destroy( void ) -> bool ... class Imagick
-destroy( void ) -> bool ... class ImagickDraw
-destroy( void ) -> bool ... class ImagickPixel
-destroy( void ) -> bool ... class ImagickPixelIterator
-detach( HttpRequest $request ) -> bool ... class HttpRequestPool
-detach( void ) -> public HttpMessage ... class HttpMessage
+deleteImageArtifact( string $artifact ) -> bool #Imagick
+deleteIndex( int $index ) -> bool #ZipArchive
+deleteName( string $name ) -> bool #ZipArchive
+description( void ) -> string #hw_api_reason
+despeckleImage( void ) -> bool #Imagick
+destroy( void ) -> bool #Imagick
+destroy( void ) -> bool #ImagickDraw
+destroy( void ) -> bool #ImagickPixel
+destroy( void ) -> bool #ImagickPixelIterator
+detach( HttpRequest $request ) -> bool #HttpRequestPool
+detach( void ) -> public HttpMessage #HttpMessage
 dgettext( string $domain , string $message ) -> string 
 dio_close( resource $fd ) -> void 
 dio_fcntl( resource $fd , int $cmd [, mixed $args ] ) -> mixed 
@@ -759,12 +759,12 @@ dio_tcsetattr( resource $fd , array $options ) -> bool
 dio_truncate( resource $fd , int $offset ) -> bool 
 dio_write( resource $fd , string $data [, int $len = 0 ] ) -> int 
 dirname( string $path ) -> string 
-disconnect( void ) -> bool ... class SAMConnection
+disconnect( void ) -> bool #SAMConnection
 disk_free_space( string $directory ) -> float 
 disk_total_space( string $directory ) -> float 
-displayImage( string $servername ) -> bool ... class Imagick
-displayImages( string $servername ) -> bool ... class Imagick
-distortImage( int $method , array $arguments , bool $bestfit ) -> bool ... class Imagick
+displayImage( string $servername ) -> bool #Imagick
+displayImages( string $servername ) -> bool #Imagick
+distortImage( int $method , array $arguments , bool $bestfit ) -> bool #Imagick
 dl( string $library ) -> bool 
 dngettext( string $domain , string $msgid1 , string $msgid2 , int $n ) -> string 
 dns_get_record( string $hostname [, int $type = DNS_ANY [, array & $authns [, array &$addtl ]]] ) -> array 
@@ -781,19 +781,19 @@ domxml_xslt_stylesheet_doc( DomDocument $xsl_doc ) -> DomXsltStylesheet
 domxml_xslt_stylesheet_file( string $xsl_file ) -> DomXsltStylesheet 
 domxml_xslt_version( void ) -> int 
 dotnet_load( string $assembly_name [, string $datatype_name [, int $codepage ]] ) -> int 
-drawArc( float $r , float $startAngle , float $endAngle ) -> void ... class SWFShape
-drawCircle( float $r ) -> void ... class SWFShape
-drawCubic( float $bx , float $by , float $cx , float $cy , float $dx , float $dy ) -> int ... class SWFShape
-drawCubicTo( float $bx , float $by , float $cx , float $cy , float $dx , float $dy ) -> int ... class SWFShape
-drawCurve( float $controldx , float $controldy , float $anchordx , float $anchordy [, float $targetdx ], float $targetdy ) -> int ... class SWFShape
-drawCurveTo( float $controlx , float $controly , float $anchorx , float $anchory [, float $targetx ], float $targety ) -> int ... class SWFShape
-drawGlyph( SWFFont $font , string $character [, int $size ] ) -> void ... class SWFShape
-drawImage( ImagickDraw $draw ) -> bool ... class Imagick
-drawImage( object $image , float $x , float $y , float $width , float $height ) -> bool ... class HaruPage
-drawLine( float $dx , float $dy ) -> void ... class SWFShape
-drawLineTo( float $x , float $y ) -> void ... class SWFShape
-dstanchors( array $parameter ) -> array ... class hw_api
-dstofsrcanchor( array $parameter ) -> hw_api_object ... class hw_api
+drawArc( float $r , float $startAngle , float $endAngle ) -> void #SWFShape
+drawCircle( float $r ) -> void #SWFShape
+drawCubic( float $bx , float $by , float $cx , float $cy , float $dx , float $dy ) -> int #SWFShape
+drawCubicTo( float $bx , float $by , float $cx , float $cy , float $dx , float $dy ) -> int #SWFShape
+drawCurve( float $controldx , float $controldy , float $anchordx , float $anchordy [, float $targetdx ], float $targetdy ) -> int #SWFShape
+drawCurveTo( float $controlx , float $controly , float $anchorx , float $anchory [, float $targetx ], float $targety ) -> int #SWFShape
+drawGlyph( SWFFont $font , string $character [, int $size ] ) -> void #SWFShape
+drawImage( ImagickDraw $draw ) -> bool #Imagick
+drawImage( object $image , float $x , float $y , float $width , float $height ) -> bool #HaruPage
+drawLine( float $dx , float $dy ) -> void #SWFShape
+drawLineTo( float $x , float $y ) -> void #SWFShape
+dstanchors( array $parameter ) -> array #hw_api
+dstofsrcanchor( array $parameter ) -> hw_api_object #hw_api
 dump_file( string $filename [, bool $compressionmode [, bool $format ]] ) -> string DomDocument->
 dump_mem([ bool $format [, string $encoding ]] ) -> string DomDocument->
 dump_node( void ) -> string DomNode->
@@ -801,12 +801,12 @@ each( array &$array ) -> array
 easter_date([ int $year ] ) -> int 
 easter_days([ int $year [, int $method = CAL_EASTER_DEFAULT ]] ) -> int 
 echo( string $arg1 [, string $... ] ) -> void 
-edgeImage( float $radius ) -> bool ... class Imagick
-ellipse( float $ox , float $oy , float $rx , float $ry , float $start , float $end ) -> bool ... class ImagickDraw
-ellipse( float $x , float $y , float $xray , float $yray ) -> bool ... class HaruPage
-embossImage( float $radius , float $sigma ) -> bool ... class Imagick
+edgeImage( float $radius ) -> bool #Imagick
+ellipse( float $ox , float $oy , float $rx , float $ry , float $start , float $end ) -> bool #ImagickDraw
+ellipse( float $x , float $y , float $xray , float $yray ) -> bool #HaruPage
+embossImage( float $radius , float $sigma ) -> bool #Imagick
 empty( mixed $var ) -> bool 
-enableCookies( void ) -> public bool ... class HttpRequest
+enableCookies( void ) -> public bool #HttpRequest
 enchant_broker_describe( resource $broker ) -> array 
 enchant_broker_dict_exists( resource $broker , string $tag ) -> bool 
 enchant_broker_free( resource $broker ) -> bool 
@@ -826,19 +826,19 @@ enchant_dict_is_in_session( resource $dict , string $word ) -> bool
 enchant_dict_quick_check( resource $dict , string $word [, array & $suggestions ] ) -> bool 
 enchant_dict_store_replacement( resource $dict , string $mis , string $cor ) -> void 
 enchant_dict_suggest( resource $dict , string $word ) -> array 
-encipherImage( string $passphrase ) -> bool ... class Imagick
+encipherImage( string $passphrase ) -> bool #Imagick
 end( array &$array ) -> mixed 
-endLogging( void ) -> void ... class SDO_DAS_ChangeSummary
-endMask( void ) -> void ... class SWFDisplayItem
-endPath( void ) -> bool ... class HaruPage
-endText( void ) -> bool ... class HaruPage
-enhanceImage( void ) -> bool ... class Imagick
-entities( void ) -> array ... class DomDocumentType
-eof( void ) -> bool OCI-... class Lob
-eofill( void ) -> bool ... class HaruPage
-eoFillStroke([ bool $close_path = false ] ) -> bool ... class HaruPage
-equalizeImage( void ) -> bool ... class Imagick
-erase([ int $offset [, int $length ]] ) -> int OCI-... class Lob
+endLogging( void ) -> void #SDO_DAS_ChangeSummary
+endMask( void ) -> void #SWFDisplayItem
+endPath( void ) -> bool #HaruPage
+endText( void ) -> bool #HaruPage
+enhanceImage( void ) -> bool #Imagick
+entities( void ) -> array #DomDocumentType
+eof( void ) -> bool OCI-#Lob
+eofill( void ) -> bool #HaruPage
+eoFillStroke([ bool $close_path = false ] ) -> bool #HaruPage
+equalizeImage( void ) -> bool #Imagick
+erase([ int $offset [, int $length ]] ) -> int OCI-#Lob
 ereg( string $pattern , string $string [, array &$regs ] ) -> int 
 ereg_replace( string $pattern , string $replacement , string $string ) -> string 
 eregi( string $pattern , string $string [, array &$regs ] ) -> int 
@@ -849,7 +849,7 @@ error_reporting([ int $level ] ) -> int
 escapeshellarg( string $arg ) -> string 
 escapeshellcmd( string $command ) -> string 
 eval( string $code_str ) -> mixed 
-evaluateImage( int $op , float $constant [, int $channel = ... class Imagick
+evaluateImage( int $op , float $constant [, int $channel = #Imagick
 event_add( resource $event [, int $timeout = -1 ] ) -> bool 
 event_base_free( resource $event_base ) -> void 
 event_base_loop( resource $event_base [, int $flags = 0 ] ) -> int 
@@ -876,8 +876,8 @@ event_new( void ) -> resource
 event_set( resource $event , mixed $fd , int $events , mixed $callback [, mixed $arg ] ) -> bool 
 exec( string $command [, array &$output [, int &$return_var ]] ) -> string 
 execute([ string $query ] ) -> object SwishSearch->
-executePreparedQuery( PDO $database_handle , PDOStatement $prepared_statement , array $value_list [, array $column_specifier ] ) -> SDODataObject ... class SDO_DAS_Relational
-executeQuery( PDO $database_handle , string $SQL_statement [, array $column_specifier ] ) -> SDODataObject ... class SDO_DAS_Relational
+executePreparedQuery( PDO $database_handle , PDOStatement $prepared_statement , array $value_list [, array $column_specifier ] ) -> SDODataObject #SDO_DAS_Relational
+executeQuery( PDO $database_handle , string $SQL_statement [, array $column_specifier ] ) -> SDODataObject #SDO_DAS_Relational
 exif_imagetype( string $filename ) -> int 
 exif_read_data( string $filename [, string $sections = NULL [, bool $arrays = false [, bool $thumbnail = false ]]] ) -> array 
 exif_tagname( int $index ) -> string 
@@ -888,16 +888,16 @@ expect_expectl( resource $expect , array $cases [, array &$match ] ) -> int
 expect_popen( string $command ) -> resource 
 explode( string $delimiter , string $string [, int $limit ] ) -> array 
 expm1( float $arg ) -> float 
-export( SDO_Model_ReflectionDataObject $rdo [, bool $return ] ) -> mixed ... class SDO_Model_ReflectionDataObject
-export( string $filename [, int $start [, int $length ]] ) -> bool OCI-... class Lob
+export( SDO_Model_ReflectionDataObject $rdo [, bool $return ] ) -> mixed #SDO_Model_ReflectionDataObject
+export( string $filename [, int $start [, int $length ]] ) -> bool OCI-#Lob
 extension_loaded( string $name ) -> bool 
-extentImage( int $width , int $height , int $x , int $y ) -> bool ... class Imagick
+extentImage( int $width , int $height , int $x , int $y ) -> bool #Imagick
 extract( array &$var_array [, int $extract_type = EXTR_OVERWRITE [, string $prefix ]] ) -> int 
-extractTo( string $destination [, mixed $entries ] ) -> bool ... class ZipArchive
+extractTo( string $destination [, mixed $entries ] ) -> bool #ZipArchive
 ezmlm_hash( string $addr ) -> int 
-factory([ int $flags = 0 [, string $class_name = "HttpDeflateStream" ]] ) -> public HttpDeflateStream ... class HttpDeflateStream
-factory([ int $flags = 0 [, string $class_name = "HttpInflateStream" ]] ) -> public HttpInflateStream ... class HttpInflateStream
-factory([ string $raw_message [, string $class_name = "HttpMessage" ]] ) -> static public HttpMessage ... class HttpMessage
+factory([ int $flags = 0 [, string $class_name = "HttpDeflateStream" ]] ) -> public HttpDeflateStream #HttpDeflateStream
+factory([ int $flags = 0 [, string $class_name = "HttpInflateStream" ]] ) -> public HttpInflateStream #HttpInflateStream
+factory([ string $raw_message [, string $class_name = "HttpMessage" ]] ) -> static public HttpMessage #HttpMessage
 fam_cancel_monitor( resource $fam , resource $fam_monitor ) -> bool 
 fam_close( resource $fam ) -> void 
 fam_monitor_collection( resource $fam , string $dirname , int $depth , string $mask ) -> resource 
@@ -1028,8 +1028,8 @@ filepro_retrieve( int $row_number , int $field_number ) -> string
 filepro_rowcount( void ) -> int 
 filesize( string $filename ) -> int 
 filetype( string $filename ) -> string 
-fill( void ) -> bool ... class HaruPage
-fillStroke([ bool $close_path = false ] ) -> bool ... class HaruPage
+fill( void ) -> bool #HaruPage
+fillStroke([ bool $close_path = false ] ) -> bool #HaruPage
 filter_has_var( int $type , string $variable_name ) -> bool 
 filter_id( string $filtername ) -> int 
 filter_input( int $type , string $variable_name [, int $filter = FILTER_DEFAULT [, mixed $options ]] ) -> mixed 
@@ -1037,21 +1037,21 @@ filter_input_array( int $type [, mixed $definition ] ) -> mixed
 filter_list( void ) -> array 
 filter_var( mixed $variable [, int $filter = FILTER_DEFAULT [, mixed $options ]] ) -> mixed 
 filter_var_array( array $data [, mixed $definition ] ) -> mixed 
-find( array $parameter ) -> array ... class hw_api
-finish([ string $data ] ) -> public string ... class HttpDeflateStream
-finish([ string $data ] ) -> public string ... class HttpInflateStream
+find( array $parameter ) -> array #hw_api
+finish([ string $data ] ) -> public string #HttpDeflateStream
+finish([ string $data ] ) -> public string #HttpInflateStream
 first_child( void ) -> domelement DomNode->
-flattenImages( void ) -> Imagick ... class Imagick
-flipImage( void ) -> bool ... class Imagick
+flattenImages( void ) -> Imagick #Imagick
+flipImage( void ) -> bool #Imagick
 floatval( mixed $var ) -> float 
 flock( resource $handle , int $operation [, int &$wouldblock ] ) -> bool 
-floodFillPaintImage( mixed $fill , float $fuzz , mixed $target , int $x , int $y , bool $invert [, int $channel = ... class Imagick
+floodFillPaintImage( mixed $fill , float $fuzz , mixed $target , int $x , int $y , bool $invert [, int $channel = #Imagick
 floor( float $value ) -> float 
-flopImage( void ) -> bool ... class Imagick
+flopImage( void ) -> bool #Imagick
 flush( void ) -> void 
-flush([ int $flag ] ) -> bool OCI-... class Lob
-flush([ string $data ] ) -> public string ... class HttpDeflateStream
-flush([ string $data ] ) -> public string ... class HttpInflateStream
+flush([ int $flag ] ) -> bool OCI-#Lob
+flush([ string $data ] ) -> public string #HttpDeflateStream
+flush([ string $data ] ) -> public string #HttpInflateStream
 fmod( float $x , float $y ) -> float 
 fnmatch( string $pattern , string $string [, int $flags = 0 ] ) -> bool 
 fopen( string $filename , string $mode [, bool $use_include_path = false [, resource $context ]] ) -> resource 
@@ -1060,14 +1060,14 @@ forward_static_call_array( callback $function , array $parameters ) -> mixed
 fpassthru( resource $handle ) -> int 
 fprintf( resource $handle , string $format [, mixed $args [, mixed $... ]]) -> int 
 fputcsv( resource $handle , array $fields [, string $delimiter = ',' [, string $enclosure = '"' ]] ) -> int 
-frameImage( mixed $matte_color , int $width , int $height , int $inner_bevel , int $outer_bevel ) -> bool ... class Imagick
+frameImage( mixed $matte_color , int $width , int $height , int $inner_bevel , int $outer_bevel ) -> bool #Imagick
 fread( resource $handle , int $length ) -> string 
-free( void ) -> bool OCI-... class Collection
-free( void ) -> bool OCI-... class Lob
+free( void ) -> bool OCI-#Collection
+free( void ) -> bool OCI-#Lob
 frenchtojd( int $month , int $day , int $year ) -> int 
 fribidi_log2vis( string $str , string $direction , int $charset ) -> string 
-fromEnv( int $message_type [, string $class_name = "HttpMessage" ] ) -> static public HttpMessage ... class HttpMessage
-fromString([ string $raw_message [, string $class_name = "HttpMessage" ]] ) -> static public HttpMessage ... class HttpMessage
+fromEnv( int $message_type [, string $class_name = "HttpMessage" ] ) -> static public HttpMessage #HttpMessage
+fromString([ string $raw_message [, string $class_name = "HttpMessage" ]] ) -> static public HttpMessage #HttpMessage
 fscanf( resource $handle , string $format [, mixed &$... ] ) -> mixed 
 fseek( resource $handle , int $offset [, int $whence = SEEK_SET ] ) -> int 
 fsockopen( string $hostname [, int $port = -1 [, int &$errno [, string &$errstr [, float $timeout = ini_get("default_socket_timeout") ]]]] ) -> resource 
@@ -1108,15 +1108,15 @@ ftp_size( resource $ftp_stream , string $remote_file ) -> int
 ftp_ssl_connect( string $host [, int $port = 21 [, int $timeout = 90 ]] ) -> resource 
 ftp_systype( resource $ftp_stream ) -> string 
 ftruncate( resource $handle , int $size ) -> bool 
-ftstat( array $parameter ) -> hw_api_object ... class hw_api
+ftstat( array $parameter ) -> hw_api_object #hw_api
 func_get_arg( int $arg_num ) -> mixed 
 func_get_args( void ) -> array 
 func_num_args( void ) -> int 
 function_exists( string $function_name ) -> bool 
 fwrite( resource $handle , string $string [, int $length ] ) -> int 
-fxImage( string $expression [, int $channel = ... class Imagick
-gammaImage( float $gamma [, int $channel = ... class Imagick
-gaussianBlurImage( float $radius , float $sigma [, int $channel = ... class Imagick
+fxImage( string $expression [, int $channel = #Imagick
+gammaImage( float $gamma [, int $channel = #Imagick
+gaussianBlurImage( float $radius , float $sigma [, int $channel = #Imagick
 gc_collect_cycles( void ) -> int 
 gc_disable( void ) -> void 
 gc_enable( void ) -> void 
@@ -1137,9 +1137,9 @@ geoip_record_by_name( string $hostname ) -> array
 geoip_region_by_name( string $hostname ) -> array 
 geoip_region_name_by_code( string $country_code , string $region_code ) -> string 
 geoip_time_zone_by_country_and_region( string $country_code [, string $region_code ] ) -> string 
-get([ string $key [, mixed $type = 0 [, mixed $defval = NULL [, bool $delete = false ]]]] ) -> public mixed ... class HttpQueryString
-get_attribute( string $name ) -> string ... class DomElement
-get_attribute_node( string $name ) -> DomAttribute ... class DomElement
+get([ string $key [, mixed $type = 0 [, mixed $defval = NULL [, bool $delete = false ]]]] ) -> public mixed #HttpQueryString
+get_attribute( string $name ) -> string #DomElement
+get_attribute_node( string $name ) -> DomAttribute #DomElement
 get_browser([ string $user_agent [, bool $return_array = false ]] ) -> mixed 
 get_called_class( void ) -> string 
 get_cfg_var( string $option ) -> string 
@@ -1154,7 +1154,7 @@ get_defined_constants([ bool $categorize = false ] ) -> array
 get_defined_functions( void ) -> array 
 get_defined_vars( void ) -> array 
 get_element_by_id( string $id ) -> domelement DomDocument->
-get_elements_by_tagname( string $name ) -> array ... class DomElement
+get_elements_by_tagname( string $name ) -> array #DomElement
 get_elements_by_tagname( string $name ) -> array DomDocument->
 get_extension_funcs( string $module_name ) -> array 
 get_headers( string $url [, int $format = 0 ] ) -> array 
@@ -1169,335 +1169,335 @@ get_object_vars( object $object ) -> array
 get_parent_class([ mixed $object ] ) -> string 
 get_resource_type( resource $handle ) -> string 
 getallheaders( void ) -> array 
-getArchiveComment([ int $flags ] ) -> string ... class ZipArchive
-getAscent( void ) -> float ... class SWFFont
-getAscent( void ) -> float ... class SWFText
-getAscent( void ) -> int ... class HaruFont
-getAttachedRequests( void ) -> array ... class HttpRequestPool
-getBaseType( void ) -> SDO_Model_Type ... class SDO_Model_Type
-getBitsPerComponent( void ) -> int ... class HaruImage
-getBody( void ) -> public string ... class HttpMessage
-getBuffering( void ) -> bool OCI-... class Lob
-getBufferSize( void ) -> static int ... class HttpResponse
-getByteType( string $text , int $index ) -> int ... class HaruEncoder
-getCache( void ) -> static bool ... class HttpResponse
-getCacheControl( void ) -> static string ... class HttpResponse
-getCapHeight( void ) -> int ... class HaruFont
-getCause( void ) -> mixed ... class SDO_Exception
-getChangedDataObjects( void ) -> SDO_List ... class SDO_DAS_ChangeSummary
-getChangeSummary( void ) -> SDO_DAS_ChangeSummary ... class SDO_DAS_DataObject
-getChangeType( SDO_DataObject $dataObject ) -> int ... class SDO_DAS_ChangeSummary
-getCharSpace( void ) -> float ... class HaruPage
-getClipPath( void ) -> string ... class ImagickDraw
-getClipRule( void ) -> int ... class ImagickDraw
-getClipUnits( void ) -> int ... class ImagickDraw
-getCMYKFill( void ) -> array ... class HaruPage
-getCMYKStroke( void ) -> array ... class HaruPage
-getColor([ bool $normalized = false ] ) -> array ... class ImagickPixel
-getColorAsString( void ) -> string ... class ImagickPixel
-getColorCount( void ) -> int ... class ImagickPixel
-getColorspace( void ) -> int ... class Imagick
-getColorSpace( void ) -> string ... class HaruImage
-getColorValue( int $color ) -> float ... class ImagickPixel
-getCommentIndex( int $index [, int $flags ] ) -> string ... class ZipArchive
-getCommentName( string $name [, int $flags ] ) -> string ... class ZipArchive
-getCompression( void ) -> int ... class Imagick
-getCompressionQuality( void ) -> int ... class Imagick
-getCompressionQuality( void ) -> int ... class Imagick
-getContainer( void ) -> SDO_DataObject ... class SDO_DataObject
-getContainingType( void ) -> SDO_Model_Type ... class SDO_Model_Property
-getContainmentProperty( void ) -> SDO_Model_Property ... class SDO_Model_ReflectionDataObject
-getContentDisposition( void ) -> static string ... class HttpResponse
-getContentType( void ) -> public string ... class HttpRequest
-getContentType( void ) -> static string ... class HttpResponse
-getCookies( void ) -> public array ... class HttpRequest
-getCopyright( void ) -> string ... class Imagick
-getCurrentEncoder( void ) -> object ... class HaruDoc
-getCurrentFont( void ) -> object ... class HaruPage
-getCurrentFontSize( void ) -> float ... class HaruPage
-getCurrentIteratorRow( void ) -> array ... class ImagickPixelIterator
-getCurrentPage( void ) -> object ... class HaruDoc
-getCurrentPos( void ) -> array ... class HaruPage
-getCurrentTextPos( void ) -> array ... class HaruPage
+getArchiveComment([ int $flags ] ) -> string #ZipArchive
+getAscent( void ) -> float #SWFFont
+getAscent( void ) -> float #SWFText
+getAscent( void ) -> int #HaruFont
+getAttachedRequests( void ) -> array #HttpRequestPool
+getBaseType( void ) -> SDO_Model_Type #SDO_Model_Type
+getBitsPerComponent( void ) -> int #HaruImage
+getBody( void ) -> public string #HttpMessage
+getBuffering( void ) -> bool OCI-#Lob
+getBufferSize( void ) -> static int #HttpResponse
+getByteType( string $text , int $index ) -> int #HaruEncoder
+getCache( void ) -> static bool #HttpResponse
+getCacheControl( void ) -> static string #HttpResponse
+getCapHeight( void ) -> int #HaruFont
+getCause( void ) -> mixed #SDO_Exception
+getChangedDataObjects( void ) -> SDO_List #SDO_DAS_ChangeSummary
+getChangeSummary( void ) -> SDO_DAS_ChangeSummary #SDO_DAS_DataObject
+getChangeType( SDO_DataObject $dataObject ) -> int #SDO_DAS_ChangeSummary
+getCharSpace( void ) -> float #HaruPage
+getClipPath( void ) -> string #ImagickDraw
+getClipRule( void ) -> int #ImagickDraw
+getClipUnits( void ) -> int #ImagickDraw
+getCMYKFill( void ) -> array #HaruPage
+getCMYKStroke( void ) -> array #HaruPage
+getColor([ bool $normalized = false ] ) -> array #ImagickPixel
+getColorAsString( void ) -> string #ImagickPixel
+getColorCount( void ) -> int #ImagickPixel
+getColorspace( void ) -> int #Imagick
+getColorSpace( void ) -> string #HaruImage
+getColorValue( int $color ) -> float #ImagickPixel
+getCommentIndex( int $index [, int $flags ] ) -> string #ZipArchive
+getCommentName( string $name [, int $flags ] ) -> string #ZipArchive
+getCompression( void ) -> int #Imagick
+getCompressionQuality( void ) -> int #Imagick
+getCompressionQuality( void ) -> int #Imagick
+getContainer( void ) -> SDO_DataObject #SDO_DataObject
+getContainingType( void ) -> SDO_Model_Type #SDO_Model_Property
+getContainmentProperty( void ) -> SDO_Model_Property #SDO_Model_ReflectionDataObject
+getContentDisposition( void ) -> static string #HttpResponse
+getContentType( void ) -> public string #HttpRequest
+getContentType( void ) -> static string #HttpResponse
+getCookies( void ) -> public array #HttpRequest
+getCopyright( void ) -> string #Imagick
+getCurrentEncoder( void ) -> object #HaruDoc
+getCurrentFont( void ) -> object #HaruPage
+getCurrentFontSize( void ) -> float #HaruPage
+getCurrentIteratorRow( void ) -> array #ImagickPixelIterator
+getCurrentPage( void ) -> object #HaruDoc
+getCurrentPos( void ) -> array #HaruPage
+getCurrentTextPos( void ) -> array #HaruPage
 getcwd( void ) -> string 
-getDash( void ) -> array ... class HaruPage
-getData( void ) -> static string ... class HttpResponse
-getDataFactory( void ) -> SDO_DAS_DataFactory ... class SDO_DAS_DataFactory
+getDash( void ) -> array #HaruPage
+getData( void ) -> static string #HttpResponse
+getDataFactory( void ) -> SDO_DAS_DataFactory #SDO_DAS_DataFactory
 getdate([ int $timestamp = time() ] ) -> array 
-getDefault( void ) -> mixed ... class SDO_Model_Property
-getDescent( void ) -> float ... class SWFFont
-getDescent( void ) -> float ... class SWFText
-getDescent( void ) -> int ... class HaruFont
-getElem( int $index ) -> mixed OCI-... class Collection
-getEncoder( string $encoding ) -> object ... class HaruDoc
-getEncodingName( void ) -> string ... class HaruFont
+getDefault( void ) -> mixed #SDO_Model_Property
+getDescent( void ) -> float #SWFFont
+getDescent( void ) -> float #SWFText
+getDescent( void ) -> int #HaruFont
+getElem( int $index ) -> mixed OCI-#Collection
+getEncoder( string $encoding ) -> object #HaruDoc
+getEncodingName( void ) -> string #HaruFont
 getenv( string $varname ) -> string 
-getETag( void ) -> static string ... class HttpResponse
-getFile( void ) -> static string ... class HttpResponse
-getFilename( void ) -> string ... class Imagick
-getFillColor( void ) -> ImagickPixel ... class ImagickDraw
-getFillingColorSpace( void ) -> int ... class HaruPage
-getFillOpacity( void ) -> float ... class ImagickDraw
-getFillRule( void ) -> int ... class ImagickDraw
-getFinishedRequests( void ) -> array ... class HttpRequestPool
-getFlatness( void ) -> float ... class HaruPage
-getFont( string $fontname [, string $encoding ] ) -> object ... class HaruDoc
-getFont( void ) -> string ... class Imagick
-getFont( void ) -> string ... class ImagickDraw
-getFontFamily( void ) -> string ... class ImagickDraw
-getFontName( void ) -> string ... class HaruFont
-getFontSize( void ) -> float ... class ImagickDraw
-getFontStyle( void ) -> int ... class ImagickDraw
-getFontWeight( void ) -> int ... class ImagickDraw
-getFormat( void ) -> string ... class Imagick
-getFromIndex( int $index [, int $length = 0 [, int $flags ]]) -> mixed ... class ZipArchive
-getFromName( string $name [, int $length = 0 [, int $flags ]] ) -> mixed ... class ZipArchive
-getGMode( void ) -> int ... class HaruPage
-getGravity( void ) -> int ... class Imagick
-getGravity( void ) -> int ... class ImagickDraw
-getGrayFill( void ) -> float ... class HaruPage
-getGrayStroke( void ) -> float ... class HaruPage
-getGzip( void ) -> static bool ... class HttpResponse
-getHeader( string $header ) -> public string ... class HttpMessage
-getHeader([ string $name ] ) -> static mixed ... class HttpResponse
-getHeaders( void ) -> public array ... class HttpMessage
-getHeaders( void ) -> public array ... class HttpRequest
-getHeight( void ) -> float ... class HaruPage
-getHeight( void ) -> float ... class SWFBitmap
-getHeight( void ) -> int ... class HaruImage
-getHistory( void ) -> public HttpMessage ... class HttpRequest
-getHomeURL( void ) -> string ... class Imagick
-getHorizontalScaling( void ) -> float ... class HaruPage
+getETag( void ) -> static string #HttpResponse
+getFile( void ) -> static string #HttpResponse
+getFilename( void ) -> string #Imagick
+getFillColor( void ) -> ImagickPixel #ImagickDraw
+getFillingColorSpace( void ) -> int #HaruPage
+getFillOpacity( void ) -> float #ImagickDraw
+getFillRule( void ) -> int #ImagickDraw
+getFinishedRequests( void ) -> array #HttpRequestPool
+getFlatness( void ) -> float #HaruPage
+getFont( string $fontname [, string $encoding ] ) -> object #HaruDoc
+getFont( void ) -> string #Imagick
+getFont( void ) -> string #ImagickDraw
+getFontFamily( void ) -> string #ImagickDraw
+getFontName( void ) -> string #HaruFont
+getFontSize( void ) -> float #ImagickDraw
+getFontStyle( void ) -> int #ImagickDraw
+getFontWeight( void ) -> int #ImagickDraw
+getFormat( void ) -> string #Imagick
+getFromIndex( int $index [, int $length = 0 [, int $flags ]]) -> mixed #ZipArchive
+getFromName( string $name [, int $length = 0 [, int $flags ]] ) -> mixed #ZipArchive
+getGMode( void ) -> int #HaruPage
+getGravity( void ) -> int #Imagick
+getGravity( void ) -> int #ImagickDraw
+getGrayFill( void ) -> float #HaruPage
+getGrayStroke( void ) -> float #HaruPage
+getGzip( void ) -> static bool #HttpResponse
+getHeader( string $header ) -> public string #HttpMessage
+getHeader([ string $name ] ) -> static mixed #HttpResponse
+getHeaders( void ) -> public array #HttpMessage
+getHeaders( void ) -> public array #HttpRequest
+getHeight( void ) -> float #HaruPage
+getHeight( void ) -> float #SWFBitmap
+getHeight( void ) -> int #HaruImage
+getHistory( void ) -> public HttpMessage #HttpRequest
+getHomeURL( void ) -> string #Imagick
+getHorizontalScaling( void ) -> float #HaruPage
 gethostbyaddr( string $ip_address ) -> string 
 gethostbyname( string $hostname ) -> string 
 gethostbynamel( string $hostname ) -> array 
 gethostname( void ) -> string 
-getHSL( void ) -> array ... class ImagickPixel
-getHttpVersion( void ) -> public string ... class HttpMessage
-getImage( void ) -> Imagick ... class Imagick
-getImageAlphaChannel( void ) -> int ... class Imagick
-getImageArtifact( string $artifact ) -> string ... class Imagick
-getImageBackgroundColor( void ) -> ImagickPixel ... class Imagick
-getImageBlob( void ) -> string ... class Imagick
-getImageBluePrimary( void ) -> array ... class Imagick
-getImageBorderColor( void ) -> ImagickPixel ... class Imagick
-getImageChannelDepth( int $channel ) -> int ... class Imagick
-getImageChannelDistortion( Imagick $reference , int $channel , int $metric ) -> float ... class Imagick
-getImageChannelDistortions( Imagick $reference , int $metric [, int $channel = ... class Imagick
-getImageChannelExtrema( int $channel ) -> array ... class Imagick
-getImageChannelMean( int $channel ) -> array ... class Imagick
-getImageChannelRange( int $channel ) -> array ... class Imagick
-getImageChannelStatistics( void ) -> array ... class Imagick
-getImageClipMask( void ) -> Imagick ... class Imagick
-getImageColormapColor( int $index ) -> ImagickPixel ... class Imagick
-getImageColors( void ) -> int ... class Imagick
-getImageColorspace( void ) -> int ... class Imagick
-getImageCompose( void ) -> int ... class Imagick
-getImageCompression( void ) -> int ... class Imagick
-getImageDelay( void ) -> int ... class Imagick
-getImageDepth( void ) -> int ... class Imagick
-getImageDispose( void ) -> int ... class Imagick
-getImageDistortion( MagickWand $reference , int $metric ) -> float ... class Imagick
-getImageExtrema( void ) -> array ... class Imagick
-getImageFilename( void ) -> string ... class Imagick
-getImageFormat( void ) -> string ... class Imagick
-getImageGamma( void ) -> float ... class Imagick
-getImageGeometry( void ) -> array ... class Imagick
-getImageGravity( void ) -> int ... class Imagick
-getImageGreenPrimary( void ) -> array ... class Imagick
-getImageHeight( void ) -> int ... class Imagick
-getImageHistogram( void ) -> array ... class Imagick
-getImageIndex( void ) -> int ... class Imagick
-getImageInterlaceScheme( void ) -> int ... class Imagick
-getImageInterpolateMethod( void ) -> int ... class Imagick
-getImageIterations( void ) -> int ... class Imagick
-getImageLength( void ) -> int ... class Imagick
-getImageMagickLicense( void ) -> string ... class Imagick
-getImageMatte( void ) -> bool ... class Imagick
-getImageMatteColor( void ) -> ImagickPixel ... class Imagick
-getImageOrientation( void ) -> int ... class Imagick
-getImagePage( void ) -> array ... class Imagick
-getImagePixelColor( int $x , int $y ) -> ImagickPixel ... class Imagick
-getImageProfile( string $name ) -> string ... class Imagick
-getImageProfiles([ string $pattern = "*" [, bool $only_names = true ]] ) -> array ... class Imagick
-getImageProperties([ string $pattern = "*" [, bool $only_names = true ]] ) -> array ... class Imagick
-getImageProperty( string $name ) -> string ... class Imagick
-getImageRedPrimary( void ) -> array ... class Imagick
-getImageRegion( int $width , int $height , int $x , int $y ) -> Imagick ... class Imagick
-getImageRenderingIntent( void ) -> int ... class Imagick
-getImageResolution( void ) -> array ... class Imagick
-getImagesBlob( void ) -> string ... class Imagick
-getImageScene( void ) -> int ... class Imagick
-getImageSignature( void ) -> string ... class Imagick
+getHSL( void ) -> array #ImagickPixel
+getHttpVersion( void ) -> public string #HttpMessage
+getImage( void ) -> Imagick #Imagick
+getImageAlphaChannel( void ) -> int #Imagick
+getImageArtifact( string $artifact ) -> string #Imagick
+getImageBackgroundColor( void ) -> ImagickPixel #Imagick
+getImageBlob( void ) -> string #Imagick
+getImageBluePrimary( void ) -> array #Imagick
+getImageBorderColor( void ) -> ImagickPixel #Imagick
+getImageChannelDepth( int $channel ) -> int #Imagick
+getImageChannelDistortion( Imagick $reference , int $channel , int $metric ) -> float #Imagick
+getImageChannelDistortions( Imagick $reference , int $metric [, int $channel = #Imagick
+getImageChannelExtrema( int $channel ) -> array #Imagick
+getImageChannelMean( int $channel ) -> array #Imagick
+getImageChannelRange( int $channel ) -> array #Imagick
+getImageChannelStatistics( void ) -> array #Imagick
+getImageClipMask( void ) -> Imagick #Imagick
+getImageColormapColor( int $index ) -> ImagickPixel #Imagick
+getImageColors( void ) -> int #Imagick
+getImageColorspace( void ) -> int #Imagick
+getImageCompose( void ) -> int #Imagick
+getImageCompression( void ) -> int #Imagick
+getImageDelay( void ) -> int #Imagick
+getImageDepth( void ) -> int #Imagick
+getImageDispose( void ) -> int #Imagick
+getImageDistortion( MagickWand $reference , int $metric ) -> float #Imagick
+getImageExtrema( void ) -> array #Imagick
+getImageFilename( void ) -> string #Imagick
+getImageFormat( void ) -> string #Imagick
+getImageGamma( void ) -> float #Imagick
+getImageGeometry( void ) -> array #Imagick
+getImageGravity( void ) -> int #Imagick
+getImageGreenPrimary( void ) -> array #Imagick
+getImageHeight( void ) -> int #Imagick
+getImageHistogram( void ) -> array #Imagick
+getImageIndex( void ) -> int #Imagick
+getImageInterlaceScheme( void ) -> int #Imagick
+getImageInterpolateMethod( void ) -> int #Imagick
+getImageIterations( void ) -> int #Imagick
+getImageLength( void ) -> int #Imagick
+getImageMagickLicense( void ) -> string #Imagick
+getImageMatte( void ) -> bool #Imagick
+getImageMatteColor( void ) -> ImagickPixel #Imagick
+getImageOrientation( void ) -> int #Imagick
+getImagePage( void ) -> array #Imagick
+getImagePixelColor( int $x , int $y ) -> ImagickPixel #Imagick
+getImageProfile( string $name ) -> string #Imagick
+getImageProfiles([ string $pattern = "*" [, bool $only_names = true ]] ) -> array #Imagick
+getImageProperties([ string $pattern = "*" [, bool $only_names = true ]] ) -> array #Imagick
+getImageProperty( string $name ) -> string #Imagick
+getImageRedPrimary( void ) -> array #Imagick
+getImageRegion( int $width , int $height , int $x , int $y ) -> Imagick #Imagick
+getImageRenderingIntent( void ) -> int #Imagick
+getImageResolution( void ) -> array #Imagick
+getImagesBlob( void ) -> string #Imagick
+getImageScene( void ) -> int #Imagick
+getImageSignature( void ) -> string #Imagick
 getimagesize( string $filename [, array &$imageinfo ] ) -> array 
-getImageSize( void ) -> int ... class Imagick
-getImageTicksPerSecond( void ) -> int ... class Imagick
-getImageTotalInkDensity( void ) -> float ... class Imagick
-getImageType( void ) -> int ... class Imagick
-getImageUnits( void ) -> int ... class Imagick
-getImageVirtualPixelMethod( void ) -> int ... class Imagick
-getImageWhitePoint( void ) -> array ... class Imagick
-getImageWidth( void ) -> int ... class Imagick
-getInfoAttr( int $type ) -> string ... class HaruDoc
-getInstanceProperties( void ) -> array ... class SDO_Model_ReflectionDataObject
-getInterlaceScheme( void ) -> int ... class Imagick
-getIteratorIndex( void ) -> int ... class Imagick
-getIteratorRow( void ) -> int ... class ImagickPixelIterator
+getImageSize( void ) -> int #Imagick
+getImageTicksPerSecond( void ) -> int #Imagick
+getImageTotalInkDensity( void ) -> float #Imagick
+getImageType( void ) -> int #Imagick
+getImageUnits( void ) -> int #Imagick
+getImageVirtualPixelMethod( void ) -> int #Imagick
+getImageWhitePoint( void ) -> array #Imagick
+getImageWidth( void ) -> int #Imagick
+getInfoAttr( int $type ) -> string #HaruDoc
+getInstanceProperties( void ) -> array #SDO_Model_ReflectionDataObject
+getInterlaceScheme( void ) -> int #Imagick
+getIteratorIndex( void ) -> int #Imagick
+getIteratorRow( void ) -> int #ImagickPixelIterator
 getlastmod( void ) -> int 
-getLastModified( void ) -> static int ... class HttpResponse
-getLeading( void ) -> float ... class SWFFont
-getLeading( void ) -> float ... class SWFText
-getLineCap( void ) -> int ... class HaruPage
-getLineJoin( void ) -> int ... class HaruPage
-getLineWidth( void ) -> float ... class HaruPage
-getListIndex( void ) -> int ... class SDO_DAS_Setting
+getLastModified( void ) -> static int #HttpResponse
+getLeading( void ) -> float #SWFFont
+getLeading( void ) -> float #SWFText
+getLineCap( void ) -> int #HaruPage
+getLineJoin( void ) -> int #HaruPage
+getLineWidth( void ) -> float #HaruPage
+getListIndex( void ) -> int #SDO_DAS_Setting
 getMetaList( string $index_name ) -> array Swish->
 getMetaList( void ) -> array SwishResult->
-getMethod( void ) -> public int ... class HttpRequest
-getMiterLimit( void ) -> float ... class HaruPage
+getMethod( void ) -> public int #HttpRequest
+getMiterLimit( void ) -> float #HaruPage
 getmxrr( string $hostname , array &$mxhosts [, array &$weight ] ) -> bool 
 getmygid( void ) -> int 
 getmyinode( void ) -> int 
 getmypid( void ) -> int 
 getmyuid( void ) -> int 
-getName( void ) -> string ... class SDO_Model_Property
-getName( void ) -> string ... class SDO_Model_Type
-getNameIndex( int $index [, int $flags ] ) -> string ... class ZipArchive
-getNamespaceURI( void ) -> string ... class SDO_Model_Type
-getNextIteratorRow( void ) -> array ... class ImagickPixelIterator
-getNumberImages( void ) -> int ... class Imagick
-getNumFrames( void ) -> int ... class SWFVideoStream
-getOldContainer( SDO_DataObject $data_object ) -> SDO_DataObject ... class SDO_DAS_ChangeSummary
-getOldValues( SDO_DataObject $data_object ) -> SDO_List ... class SDO_DAS_ChangeSummary
+getName( void ) -> string #SDO_Model_Property
+getName( void ) -> string #SDO_Model_Type
+getNameIndex( int $index [, int $flags ] ) -> string #ZipArchive
+getNamespaceURI( void ) -> string #SDO_Model_Type
+getNextIteratorRow( void ) -> array #ImagickPixelIterator
+getNumberImages( void ) -> int #Imagick
+getNumFrames( void ) -> int #SWFVideoStream
+getOldContainer( SDO_DataObject $data_object ) -> SDO_DataObject #SDO_DAS_ChangeSummary
+getOldValues( SDO_DataObject $data_object ) -> SDO_List #SDO_DAS_ChangeSummary
 getopt( string $options [, array $longopts ] ) -> array 
-getOption( string $key ) -> string ... class Imagick
-getOptions( void ) -> public array ... class HttpRequest
-getPackageName( void ) -> string ... class Imagick
-getPage( void ) -> array ... class Imagick
-getPageLayout( void ) -> int ... class HaruDoc
-getPageMode( void ) -> int ... class HaruDoc
-getParentMessage( void ) -> public HttpMessage ... class HttpMessage
+getOption( string $key ) -> string #Imagick
+getOptions( void ) -> public array #HttpRequest
+getPackageName( void ) -> string #Imagick
+getPage( void ) -> array #Imagick
+getPageLayout( void ) -> int #HaruDoc
+getPageMode( void ) -> int #HaruDoc
+getParentMessage( void ) -> public HttpMessage #HttpMessage
 getParsedWords( string $index_name ) -> array SwishResults->
-getPixelIterator( void ) -> ImagickPixelIterator ... class Imagick
-getPixelRegionIterator( int $x , int $y , int $columns , int $rows ) -> ImagickPixelIterator ... class Imagick
-getPointSize( void ) -> float ... class Imagick
-getPostFields( void ) -> public array ... class HttpRequest
-getPostFiles( void ) -> public array ... class HttpRequest
-getPreviousIteratorRow( void ) -> array ... class ImagickPixelIterator
-getProperties( void ) -> array ... class SDO_Model_Type
-getProperty( int $sequence_index ) -> SDO_Model_Property ... class SDO_Sequence
-getProperty( mixed $identifier ) -> SDO_Model_Property ... class SDO_Model_Type
-getPropertyIndex( void ) -> int ... class SDO_DAS_Setting
+getPixelIterator( void ) -> ImagickPixelIterator #Imagick
+getPixelRegionIterator( int $x , int $y , int $columns , int $rows ) -> ImagickPixelIterator #Imagick
+getPointSize( void ) -> float #Imagick
+getPostFields( void ) -> public array #HttpRequest
+getPostFiles( void ) -> public array #HttpRequest
+getPreviousIteratorRow( void ) -> array #ImagickPixelIterator
+getProperties( void ) -> array #SDO_Model_Type
+getProperty( int $sequence_index ) -> SDO_Model_Property #SDO_Sequence
+getProperty( mixed $identifier ) -> SDO_Model_Property #SDO_Model_Type
+getPropertyIndex( void ) -> int #SDO_DAS_Setting
 getPropertyList( string $index_name ) -> array Swish->
-getPropertyName( void ) -> string ... class SDO_DAS_Setting
+getPropertyName( void ) -> string #SDO_DAS_Setting
 getprotobyname( string $name ) -> int 
 getprotobynumber( int $number ) -> string 
-getPutData( void ) -> public string ... class HttpRequest
-getPutFile( void ) -> public string ... class HttpRequest
-getQuantumDepth( void ) -> array ... class Imagick
-getQuantumRange( void ) -> array ... class Imagick
-getQueryData( void ) -> public string ... class HttpRequest
+getPutData( void ) -> public string #HttpRequest
+getPutFile( void ) -> public string #HttpRequest
+getQuantumDepth( void ) -> array #Imagick
+getQuantumRange( void ) -> array #Imagick
+getQueryData( void ) -> public string #HttpRequest
 getrandmax( void ) -> int 
-getRawPostData( void ) -> public string ... class HttpRequest
-getRawRequestMessage( void ) -> public string ... class HttpRequest
-getRawResponseMessage( void ) -> public string ... class HttpRequest
-getReleaseDate( void ) -> string ... class Imagick
+getRawPostData( void ) -> public string #HttpRequest
+getRawRequestMessage( void ) -> public string #HttpRequest
+getRawResponseMessage( void ) -> public string #HttpRequest
+getReleaseDate( void ) -> string #Imagick
 getRemovedStopwords( string $index_name ) -> array SwishResults->
-getRequestBody( void ) -> static string ... class HttpResponse
-getRequestBodyStream( void ) -> static resource ... class HttpResponse
-getRequestHeaders( void ) -> static array ... class HttpResponse
-getRequestMessage( void ) -> public HttpMessage ... class HttpRequest
-getRequestMethod( void ) -> public string ... class HttpMessage
-getRequestUrl( void ) -> public string ... class HttpMessage
-getResource( int $type ) -> int ... class Imagick
-getResourceLimit( int $type ) -> int ... class Imagick
-getResponseBody( void ) -> public string ... class HttpRequest
-getResponseCode( void ) -> public int ... class HttpMessage
-getResponseCode( void ) -> public int ... class HttpRequest
-getResponseCookies([ int $flags = 0 [, array $allowed_extras ]] ) -> public array ... class HttpRequest
-getResponseData( void ) -> public array ... class HttpRequest
-getResponseHeader([ string $name ] ) -> public mixed ... class HttpRequest
-getResponseInfo([ string $name ] ) -> public mixed ... class HttpRequest
-getResponseMessage( void ) -> public HttpMessage ... class HttpRequest
-getResponseStatus( void ) -> public string ... class HttpMessage
-getResponseStatus( void ) -> public string ... class HttpRequest
-getRGBFill( void ) -> array ... class HaruPage
-getRGBStroke( void ) -> array ... class HaruPage
-getRootDataObject( void ) -> SDO_DataObject ... class SDO_DAS_XML_Document
-getRootElementName( void ) -> string ... class SDO_DAS_XML_Document
-getRootElementURI( void ) -> string ... class SDO_DAS_XML_Document
-getRot( void ) -> float ... class SWFDisplayItem
+getRequestBody( void ) -> static string #HttpResponse
+getRequestBodyStream( void ) -> static resource #HttpResponse
+getRequestHeaders( void ) -> static array #HttpResponse
+getRequestMessage( void ) -> public HttpMessage #HttpRequest
+getRequestMethod( void ) -> public string #HttpMessage
+getRequestUrl( void ) -> public string #HttpMessage
+getResource( int $type ) -> int #Imagick
+getResourceLimit( int $type ) -> int #Imagick
+getResponseBody( void ) -> public string #HttpRequest
+getResponseCode( void ) -> public int #HttpMessage
+getResponseCode( void ) -> public int #HttpRequest
+getResponseCookies([ int $flags = 0 [, array $allowed_extras ]] ) -> public array #HttpRequest
+getResponseData( void ) -> public array #HttpRequest
+getResponseHeader([ string $name ] ) -> public mixed #HttpRequest
+getResponseInfo([ string $name ] ) -> public mixed #HttpRequest
+getResponseMessage( void ) -> public HttpMessage #HttpRequest
+getResponseStatus( void ) -> public string #HttpMessage
+getResponseStatus( void ) -> public string #HttpRequest
+getRGBFill( void ) -> array #HaruPage
+getRGBStroke( void ) -> array #HaruPage
+getRootDataObject( void ) -> SDO_DataObject #SDO_DAS_XML_Document
+getRootElementName( void ) -> string #SDO_DAS_XML_Document
+getRootElementURI( void ) -> string #SDO_DAS_XML_Document
+getRot( void ) -> float #SWFDisplayItem
 getrusage([ int $who = 0 ] ) -> array 
-getSamplingFactors( void ) -> array ... class Imagick
-getSequence( void ) -> SDO_Sequence ... class SDO_DataObject
+getSamplingFactors( void ) -> array #Imagick
+getSequence( void ) -> SDO_Sequence #SDO_DataObject
 getservbyname( string $service , string $protocol ) -> int 
 getservbyport( int $port , string $protocol ) -> string 
-getService( string $target [, string $binding [, array $config ]] ) -> mixed ... class SCA
-getShape( int $code ) -> string ... class SWFFont
-getShape1( void ) -> SWFShape ... class SWFMorph
-getShape2( void ) -> SWFShape ... class SWFMorph
-getSize( void ) -> array ... class HaruImage
-getSize( void ) -> array ... class Imagick
-getSizeOffset( void ) -> int ... class Imagick
-getSslOptions( void ) -> public array ... class HttpRequest
-getStatusString( void ) -> string ... class ZipArchive
-getStream( string $name ) -> resource ... class ZipArchive
-getStream( void ) -> static resource ... class HttpResponse
-getStreamSize( void ) -> int ... class HaruDoc
-getStrokeAntialias( void ) -> bool ... class ImagickDraw
-getStrokeColor( void ) -> ImagickPixel ... class ImagickDraw
-getStrokeDashArray( void ) -> array ... class ImagickDraw
-getStrokeDashOffset( void ) -> float ... class ImagickDraw
-getStrokeLineCap( void ) -> int ... class ImagickDraw
-getStrokeLineJoin( void ) -> int ... class ImagickDraw
-getStrokeMiterLimit( void ) -> int ... class ImagickDraw
-getStrokeOpacity( void ) -> float ... class ImagickDraw
-getStrokeWidth( void ) -> float ... class ImagickDraw
-getStrokingColorSpace( void ) -> int ... class HaruPage
+getService( string $target [, string $binding [, array $config ]] ) -> mixed #SCA
+getShape( int $code ) -> string #SWFFont
+getShape1( void ) -> SWFShape #SWFMorph
+getShape2( void ) -> SWFShape #SWFMorph
+getSize( void ) -> array #HaruImage
+getSize( void ) -> array #Imagick
+getSizeOffset( void ) -> int #Imagick
+getSslOptions( void ) -> public array #HttpRequest
+getStatusString( void ) -> string #ZipArchive
+getStream( string $name ) -> resource #ZipArchive
+getStream( void ) -> static resource #HttpResponse
+getStreamSize( void ) -> int #HaruDoc
+getStrokeAntialias( void ) -> bool #ImagickDraw
+getStrokeColor( void ) -> ImagickPixel #ImagickDraw
+getStrokeDashArray( void ) -> array #ImagickDraw
+getStrokeDashOffset( void ) -> float #ImagickDraw
+getStrokeLineCap( void ) -> int #ImagickDraw
+getStrokeLineJoin( void ) -> int #ImagickDraw
+getStrokeMiterLimit( void ) -> int #ImagickDraw
+getStrokeOpacity( void ) -> float #ImagickDraw
+getStrokeWidth( void ) -> float #ImagickDraw
+getStrokingColorSpace( void ) -> int #HaruPage
 gettext( string $message ) -> string 
-getTextAlignment( void ) -> int ... class ImagickDraw
-getTextAntialias( void ) -> bool ... class ImagickDraw
-getTextDecoration( void ) -> int ... class ImagickDraw
-getTextEncoding( void ) -> string ... class ImagickDraw
-getTextLeading( void ) -> float ... class HaruPage
-getTextMatrix( void ) -> array ... class HaruPage
-getTextRenderingMode( void ) -> int ... class HaruPage
-getTextRise( void ) -> float ... class HaruPage
-getTextUnderColor( void ) -> ImagickPixel ... class ImagickDraw
-getTextWidth( string $text ) -> array ... class HaruFont
-getTextWidth( string $text ) -> float ... class HaruPage
-getThrottleDelay( void ) -> static double ... class HttpResponse
+getTextAlignment( void ) -> int #ImagickDraw
+getTextAntialias( void ) -> bool #ImagickDraw
+getTextDecoration( void ) -> int #ImagickDraw
+getTextEncoding( void ) -> string #ImagickDraw
+getTextLeading( void ) -> float #HaruPage
+getTextMatrix( void ) -> array #HaruPage
+getTextRenderingMode( void ) -> int #HaruPage
+getTextRise( void ) -> float #HaruPage
+getTextUnderColor( void ) -> ImagickPixel #ImagickDraw
+getTextWidth( string $text ) -> array #HaruFont
+getTextWidth( string $text ) -> float #HaruPage
+getThrottleDelay( void ) -> static double #HttpResponse
 gettimeofday([ bool $return_float = false ] ) -> mixed 
-getTransMatrix( void ) -> array ... class HaruPage
+getTransMatrix( void ) -> array #HaruPage
 gettype( mixed $var ) -> string 
-getType( void ) -> int ... class HaruEncoder
-getType( void ) -> public int ... class HttpMessage
-getType( void ) -> SDO_Model_Type ... class SDO_Model_Property
-getType( void ) -> SDO_Model_Type ... class SDO_Model_ReflectionDataObject
-getTypeName( void ) -> string ... class SDO_DataObject
-getTypeNamespaceURI( void ) -> string ... class SDO_DataObject
-getUnicode( int $character ) -> int ... class HaruEncoder
-getUnicodeWidth( int $character ) -> int ... class HaruFont
-getUrl( void ) -> public string ... class HttpRequest
-getUTF8Width( string $string ) -> float ... class SWFFont
-getUTF8Width( string $string ) -> float ... class SWFText
-getValue( void ) -> mixed ... class SDO_DAS_Setting
-getVectorGraphics( void ) -> string ... class ImagickDraw
-getVersion( void ) -> array ... class Imagick
-getWidth( string $string ) -> float ... class SWFFont
-getWidth( string $string ) -> float ... class SWFText
-getWidth( void ) -> float ... class HaruPage
-getWidth( void ) -> float ... class SWFBitmap
-getWidth( void ) -> int ... class HaruImage
-getWordSpace( void ) -> float ... class HaruPage
-getWritingMode( void ) -> int ... class HaruEncoder
-getX( void ) -> float ... class SWFDisplayItem
-getXHeight( void ) -> int ... class HaruFont
-getXScale( void ) -> float ... class SWFDisplayItem
-getXSkew( void ) -> float ... class SWFDisplayItem
-getY( void ) -> float ... class SWFDisplayItem
-getYScale( void ) -> float ... class SWFDisplayItem
-getYSkew( void ) -> float ... class SWFDisplayItem
+getType( void ) -> int #HaruEncoder
+getType( void ) -> public int #HttpMessage
+getType( void ) -> SDO_Model_Type #SDO_Model_Property
+getType( void ) -> SDO_Model_Type #SDO_Model_ReflectionDataObject
+getTypeName( void ) -> string #SDO_DataObject
+getTypeNamespaceURI( void ) -> string #SDO_DataObject
+getUnicode( int $character ) -> int #HaruEncoder
+getUnicodeWidth( int $character ) -> int #HaruFont
+getUrl( void ) -> public string #HttpRequest
+getUTF8Width( string $string ) -> float #SWFFont
+getUTF8Width( string $string ) -> float #SWFText
+getValue( void ) -> mixed #SDO_DAS_Setting
+getVectorGraphics( void ) -> string #ImagickDraw
+getVersion( void ) -> array #Imagick
+getWidth( string $string ) -> float #SWFFont
+getWidth( string $string ) -> float #SWFText
+getWidth( void ) -> float #HaruPage
+getWidth( void ) -> float #SWFBitmap
+getWidth( void ) -> int #HaruImage
+getWordSpace( void ) -> float #HaruPage
+getWritingMode( void ) -> int #HaruEncoder
+getX( void ) -> float #SWFDisplayItem
+getXHeight( void ) -> int #HaruFont
+getXScale( void ) -> float #SWFDisplayItem
+getXSkew( void ) -> float #SWFDisplayItem
+getY( void ) -> float #SWFDisplayItem
+getYScale( void ) -> float #SWFDisplayItem
+getYSkew( void ) -> float #SWFDisplayItem
 glob( string $pattern [, int $flags = 0 ] ) -> array 
 gmdate( string $format [, int $timestamp = time() ] ) -> string 
 gmmktime([ int $hour = gmdate("H") [, int $minute = gmdate("i") [, int $second = gmdate("s") [, int $month = gmdate("n") [, int $day = gmdate("j") [, int $year = gmdate("Y") [, int $is_dst = -1 ]]]]]]] ) -> int 
@@ -1565,8 +1565,8 @@ gnupg_sign( resource $identifier , string $plaintext ) -> string
 gnupg_verify( resource $identifier , string $signed_text , string $signature [, string &$plaintext ] ) -> array 
 gopher_parsedir( string $dirent ) -> array 
 gregoriantojd( int $month , int $day , int $year ) -> int 
-guessContentType( string $magic_file [, int $magic_mode = MAGIC_MIME ] ) -> public string ... class HttpMessage
-guessContentType( string $magic_file [, int $magic_mode = MAGIC_MIME ] ) -> static string ... class HttpResponse
+guessContentType( string $magic_file [, int $magic_mode = MAGIC_MIME ] ) -> public string #HttpMessage
+guessContentType( string $magic_file [, int $magic_mode = MAGIC_MIME ] ) -> static string #HttpResponse
 gupnp_context_get_host_ip( resource $context ) -> string 
 gupnp_context_get_port( resource $context ) -> int 
 gupnp_context_get_subscription_timeout( resource $context ) -> int 
@@ -1624,7 +1624,7 @@ gzseek( resource $zp , int $offset [, int $whence = SEEK_SET ] ) -> int
 gztell( resource $zp ) -> int 
 gzuncompress( string $data [, int $length = 0 ] ) -> string 
 gzwrite( resource $zp , string $string [, int $length ] ) -> int 
-has_attribute( string $name ) -> bool ... class DomElement
+has_attribute( string $name ) -> bool #DomElement
 has_attributes( void ) -> bool DomNode->
 has_child_nodes( void ) -> bool DomNode->
 hash( string $algo , string $data [, bool $raw_output = false ] ) -> string 
@@ -1638,8 +1638,8 @@ hash_init( string $algo [, int $options = 0 [, string $key = NULL ]]) -> resourc
 hash_update( resource $context , string $data ) -> bool 
 hash_update_file( resource $context , string $filename [, resource $context = NULL ] ) -> bool 
 hash_update_stream( resource $context , resource $handle [, int $length = -1 ] ) -> int 
-hasNextImage( void ) -> bool ... class Imagick
-hasPreviousImage( void ) -> bool ... class Imagick
+hasNextImage( void ) -> bool #Imagick
+hasPreviousImage( void ) -> bool #Imagick
 header( string $string [, bool $replace = true [, int $http_response_code ]] ) -> void 
 header_remove([ string $name ] ) -> void 
 headers_list( void ) -> array 
@@ -1768,7 +1768,7 @@ hw_stat( int $link ) -> string
 hw_unlock( int $connection , int $objectID ) -> bool 
 hw_who( int $connection ) -> array 
 hwapi_hgcsp( string $hostname [, int $port ] ) -> HW_API 
-hwstat( array $parameter ) -> hw_api_object ... class hw_api
+hwstat( array $parameter ) -> hw_api_object #hw_api
 hypot( float $x , float $y ) -> float 
 ibase_add_user( resource $service_handle , string $user_name , string $password [, string $first_name [, string $middle_name [, string $last_name ]]]) -> bool 
 ibase_affected_rows([ resource $link_identifier ] ) -> int 
@@ -1839,8 +1839,8 @@ id3_get_version( string $filename ) -> int
 id3_remove_tag( string $filename [, int $version = ID3_V1_0 ] ) -> bool 
 id3_set_tag( string $filename , array $tag [, int $version = ID3_V1_0 ] ) -> bool 
 idate( string $format [, int $timestamp = time() ] ) -> int 
-identify( array $parameter ) -> bool ... class hw_api
-identifyImage([ bool $appendRawOutput = false ] ) -> array ... class Imagick
+identify( array $parameter ) -> bool #hw_api
+identifyImage([ bool $appendRawOutput = false ] ) -> array #Imagick
 ifx_affected_rows( resource $result_id ) -> int 
 ifx_blobinfile_mode( int $mode ) -> bool 
 ifx_byteasvarchar( int $mode ) -> bool 
@@ -2058,16 +2058,16 @@ imap_utf7_decode( string $text ) -> string
 imap_utf7_encode( string $data ) -> string 
 imap_utf8( string $mime_encoded_text ) -> string 
 implode( string $glue , array $pieces ) -> string 
-implodeImage( float $radius ) -> bool ... class Imagick
-import( string $filename ) -> bool OCI-... class Lob
+implodeImage( float $radius ) -> bool #Imagick
+import( string $filename ) -> bool OCI-#Lob
 import_request_variables( string $types [, string $prefix ] ) -> bool 
-importChar( string $libswf , string $name ) -> SWFSprite ... class SWFMovie
-importFont( string $libswf , string $name ) -> SWFFontChar ... class SWFMovie
+importChar( string $libswf , string $name ) -> SWFSprite #SWFMovie
+importFont( string $libswf , string $name ) -> SWFFontChar #SWFMovie
 in_array( mixed $needle , array $haystack [, bool $strict = FALSE ] ) -> bool 
 inclued_get_data( void ) -> array 
 inet_ntop( string $in_addr ) -> string 
 inet_pton( string $address ) -> string 
-info( array $parameter ) -> array ... class hw_api
+info( array $parameter ) -> array #hw_api
 ingres_autocommit( resource $link ) -> bool 
 ingres_autocommit_state( resource $link ) -> bool 
 ingres_charset( resource $link ) -> string 
@@ -2111,17 +2111,17 @@ inotify_init( void ) -> resource
 inotify_queue_len( resource $inotify_instance ) -> int 
 inotify_read( resource $inotify_instance ) -> array 
 inotify_rm_watch( resource $inotify_instance , int $watch_descriptor ) -> bool 
-insert( array $parameter ) -> hw_api_object ... class hw_api
-insert( HW_API_Attribute $attribute ) -> bool ... class hw_api_object
-insert( mixed $value [, int $index ] ) -> void ... class SDO_List
-insert( mixed $value [, int $sequenceIndex [, mixed $propertyIdentifier ]] ) -> void ... class SDO_Sequence
+insert( array $parameter ) -> hw_api_object #hw_api
+insert( HW_API_Attribute $attribute ) -> bool #hw_api_object
+insert( mixed $value [, int $index ] ) -> void #SDO_List
+insert( mixed $value [, int $sequenceIndex [, mixed $propertyIdentifier ]] ) -> void #SDO_Sequence
 insert_before( domelement $newnode , domelement $refnode ) -> domelement DomNode->
-insertanchor( array $parameter ) -> hw_api_object ... class hw_api
-insertcollection( array $parameter ) -> hw_api_object ... class hw_api
-insertdocument( array $parameter ) -> hw_api_object ... class hw_api
-insertPage( object $page ) -> object ... class HaruDoc
+insertanchor( array $parameter ) -> hw_api_object #hw_api
+insertcollection( array $parameter ) -> hw_api_object #hw_api
+insertdocument( array $parameter ) -> hw_api_object #hw_api
+insertPage( object $page ) -> object #HaruDoc
 interface_exists( string $interface_name [, bool $autoload = true ] ) -> bool 
-internal_subset( void ) -> bool ... class DomDocumentType
+internal_subset( void ) -> bool #DomDocumentType
 intl_error_name( int $error_code ) -> string 
 intl_get_error_code( void ) -> int 
 intl_get_error_message( void ) -> string 
@@ -2155,17 +2155,17 @@ is_string( mixed $var ) -> bool
 is_subclass_of( mixed $object , string $class_name ) -> bool 
 is_uploaded_file( string $filename ) -> bool 
 is_writable( string $filename ) -> bool 
-isAbstractType( void ) -> bool ... class SDO_Model_Type
-isConnected( void ) -> bool ... class SAMConnection
-isContainment( void ) -> bool ... class SDO_Model_Property
-isDataType( void ) -> bool ... class SDO_Model_Type
-isInstance( SDO_DataObject $data_object ) -> bool ... class SDO_Model_Type
-isLogging( void ) -> bool ... class SDO_DAS_ChangeSummary
-isMany( void ) -> bool ... class SDO_Model_Property
-isOpenType( void ) -> bool ... class SDO_Model_Type
-isSequencedType( void ) -> bool ... class SDO_Model_Type
+isAbstractType( void ) -> bool #SDO_Model_Type
+isConnected( void ) -> bool #SAMConnection
+isContainment( void ) -> bool #SDO_Model_Property
+isDataType( void ) -> bool #SDO_Model_Type
+isInstance( SDO_DataObject $data_object ) -> bool #SDO_Model_Type
+isLogging( void ) -> bool #SDO_DAS_ChangeSummary
+isMany( void ) -> bool #SDO_Model_Property
+isOpenType( void ) -> bool #SDO_Model_Type
+isSequencedType( void ) -> bool #SDO_Model_Type
 isset( mixed $var [, mixed $... ] ) -> bool 
-isSet( void ) -> bool ... class SDO_DAS_Setting
+isSet( void ) -> bool #SDO_DAS_Setting
 isSimilar( ImagickPixel $color , float $fuzz ) -> bool 
 iterator_apply( Traversable $iterator , callback $function [, array $args ] ) -> int 
 iterator_count( Traversable $iterator ) -> int 
@@ -2198,13 +2198,13 @@ kadm5_get_principals( resource $handle ) -> array
 kadm5_init_with_password( string $admin_server , string $realm , string $principal , string $password ) -> resource 
 kadm5_modify_principal( resource $handle , string $principal , array $options ) -> bool 
 key( array &$array ) -> mixed 
-key( void ) -> string ... class hw_api_attribute
+key( void ) -> string #hw_api_attribute
 krsort( array &$array [, int $sort_flags = SORT_REGULAR ] ) -> bool 
 ksort( array &$array [, int $sort_flags = SORT_REGULAR ] ) -> bool 
-labelFrame( string $label ) -> void ... class SWFMovie
-labelFrame( string $label ) -> void ... class SWFSprite
-labelImage( string $label ) -> bool ... class Imagick
-langdepvalue( string $language ) -> string ... class hw_api_attribute
+labelFrame( string $label ) -> void #SWFMovie
+labelFrame( string $label ) -> void #SWFSprite
+labelImage( string $label ) -> bool #Imagick
+langdepvalue( string $language ) -> string #hw_api_attribute
 last_child( void ) -> domelement DomNode->
 lcfirst( string $str ) -> string 
 lcg_value( void ) -> float 
@@ -2252,7 +2252,7 @@ ldap_sort( resource $link , resource $result , string $sortfilter ) -> bool
 ldap_start_tls( resource $link ) -> bool 
 ldap_t61_to_8859( string $value ) -> string 
 ldap_unbind( resource $link_identifier ) -> bool 
-levelImage( float $blackPoint , float $gamma , float $whitePoint [, int $channel = ... class Imagick
+levelImage( float $blackPoint , float $gamma , float $whitePoint [, int $channel = #Imagick
 levenshtein( string $str1 , string $str2 ) -> int 
 libxml_clear_errors( void ) -> void 
 libxml_disable_entity_loader([ bool $disable = true ] ) -> bool 
@@ -2260,34 +2260,34 @@ libxml_get_errors( void ) -> array
 libxml_get_last_error( void ) -> LibXMLError 
 libxml_set_streams_context( resource $streams_context ) -> void 
 libxml_use_internal_errors([ bool $use_errors = false ] ) -> bool 
-line( float $sx , float $sy , float $ex , float $ey ) -> bool ... class ImagickDraw
-linearStretchImage( float $blackPoint , float $whitePoint ) -> bool ... class Imagick
-lineTo( float $x , float $y ) -> bool ... class HaruPage
-link( array $parameter ) -> bool ... class hw_api
+line( float $sx , float $sy , float $ex , float $ey ) -> bool #ImagickDraw
+linearStretchImage( float $blackPoint , float $whitePoint ) -> bool #Imagick
+lineTo( float $x , float $y ) -> bool #HaruPage
+link( array $parameter ) -> bool #hw_api
 link( string $target , string $link ) -> bool 
 linkinfo( string $path ) -> int 
-liquidRescaleImage( int $width , int $height , float $delta_x , float $rigidity ) -> bool ... class Imagick
+liquidRescaleImage( int $width , int $height , float $delta_x , float $rigidity ) -> bool #Imagick
 list( mixed $varname [, mixed $... ] ) -> array 
-load( void ) -> string OCI-... class Lob
-loadFile( string $xml_file ) -> SDO_XMLDocument ... class SDO_DAS_XML
-loadJPEG( string $filename ) -> object ... class HaruDoc
-loadPNG( string $filename [, bool $deferred = false ] ) -> object ... class HaruDoc
-loadRaw( string $filename , int $width , int $height , int $color_space ) -> object ... class HaruDoc
-loadString( string $xml_string ) -> SDO_DAS_XML_Document ... class SDO_DAS_XML
-loadTTC( string $fontfile , int $index [, bool $embed = false ] ) -> string ... class HaruDoc
-loadTTF( string $fontfile [, bool $embed = false ] ) -> string ... class HaruDoc
-loadType1( string $afmfile [, string $pfmfile ] ) -> string ... class HaruDoc
+load( void ) -> string OCI-#Lob
+loadFile( string $xml_file ) -> SDO_XMLDocument #SDO_DAS_XML
+loadJPEG( string $filename ) -> object #HaruDoc
+loadPNG( string $filename [, bool $deferred = false ] ) -> object #HaruDoc
+loadRaw( string $filename , int $width , int $height , int $color_space ) -> object #HaruDoc
+loadString( string $xml_string ) -> SDO_DAS_XML_Document #SDO_DAS_XML
+loadTTC( string $fontfile , int $index [, bool $embed = false ] ) -> string #HaruDoc
+loadTTF( string $fontfile [, bool $embed = false ] ) -> string #HaruDoc
+loadType1( string $afmfile [, string $pfmfile ] ) -> string #HaruDoc
 localeconv( void ) -> array 
 localtime([ int $timestamp = time() [, bool $is_associative = false ]] ) -> array 
-locateName( string $name [, int $flags ] ) -> mixed ... class ZipArchive
-lock( array $parameter ) -> bool ... class hw_api
+locateName( string $name [, int $flags ] ) -> mixed #ZipArchive
+lock( array $parameter ) -> bool #hw_api
 log( float $arg [, float $base = M_E ] ) -> float 
 log10( float $arg ) -> float 
 log1p( float $number ) -> float 
 long2ip( string $proper_address ) -> string 
-loopCount( int $point ) -> void ... class SWFSoundInstance
-loopInPoint( int $point ) -> void ... class SWFSoundInstance
-loopOutPoint( int $point ) -> void ... class SWFSoundInstance
+loopCount( int $point ) -> void #SWFSoundInstance
+loopInPoint( int $point ) -> void #SWFSoundInstance
+loopOutPoint( int $point ) -> void #SWFSoundInstance
 lstat( string $filename ) -> array 
 ltrim( string $str [, string $charlist ] ) -> string 
 lzf_compress( string $data ) -> string 
@@ -2332,7 +2332,7 @@ m_uwait( int $microsecs ) -> int
 m_validateidentifier( resource $conn , int $tf ) -> int 
 m_verifyconnection( resource $conn , int $tf ) -> bool 
 m_verifysslcert( resource $conn , int $tf ) -> bool 
-magnifyImage( void ) -> bool ... class Imagick
+magnifyImage( void ) -> bool #Imagick
 mail( string $to , string $subject , string $message [, string $additional_headers [, string $additional_parameters ]] ) -> bool 
 mailparse_determine_best_xfer_encoding( resource $fp ) -> string 
 mailparse_msg_create( void ) -> resource 
@@ -2348,11 +2348,11 @@ mailparse_msg_parse_file( string $filename ) -> resource
 mailparse_rfc822_parse_addresses( string $addresses ) -> array 
 mailparse_stream_encode( resource $sourcefp , resource $destfp , string $encoding ) -> bool 
 mailparse_uudecode_all( resource $fp ) -> array 
-mapImage( Imagick $map , bool $dither ) -> bool ... class Imagick
-matte( float $x , float $y , int $paintMethod ) -> bool ... class ImagickDraw
-matteFloodfillImage( float $alpha , float $fuzz , mixed $bordercolor , int $x , int $y ) -> bool ... class Imagick
+mapImage( Imagick $map , bool $dither ) -> bool #Imagick
+matte( float $x , float $y , int $paintMethod ) -> bool #ImagickDraw
+matteFloodfillImage( float $alpha , float $fuzz , mixed $bordercolor , int $x , int $y ) -> bool #Imagick
 max( array $values ) -> mixed 
-max( void ) -> int OCI-... class Collection
+max( void ) -> int OCI-#Collection
 maxdb_connect_errno( void ) -> int 
 maxdb_connect_error( void ) -> string 
 maxdb_debug( string $debug ) -> void 
@@ -2468,13 +2468,13 @@ mcrypt_ofb( int $cipher , string $key , string $data , int $mode , string $iv ) 
 md5( string $str [, bool $raw_output = false ] ) -> string 
 md5_file( string $filename [, bool $raw_output = false ] ) -> string 
 mdecrypt_generic( resource $td , string $data ) -> string 
-measureText( string $text , float $width , float $font_size , float $char_space , float $word_space [, bool $word_wrap = false ] ) -> int ... class HaruFont
-measureText( string $text , float $width [, bool $wordwrap = false ] ) -> int ... class HaruPage
-medianFilterImage( float $radius ) -> bool ... class Imagick
+measureText( string $text , float $width , float $font_size , float $char_space , float $word_space [, bool $word_wrap = false ] ) -> int #HaruFont
+measureText( string $text , float $width [, bool $wordwrap = false ] ) -> int #HaruPage
+medianFilterImage( float $radius ) -> bool #Imagick
 memcache_debug( bool $on_off ) -> bool 
 memory_get_peak_usage([ bool $real_usage = false ] ) -> int 
 memory_get_usage([ bool $real_usage = false ] ) -> int 
-mergeImageLayers( int $layer_method ) -> bool ... class Imagick
+mergeImageLayers( int $layer_method ) -> bool #Imagick
 metaphone( string $str [, int $phonemes = 0 ] ) -> string 
 method_exists( mixed $object , string $method_name ) -> bool 
 mhash( int $hash , string $data [, string $key ] ) -> string 
@@ -2484,7 +2484,7 @@ mhash_get_hash_name( int $hash ) -> string
 mhash_keygen_s2k( int $hash , string $password , string $salt , int $bytes ) -> string 
 microtime([ bool $get_as_float = false ] ) -> mixed 
 mime_content_type( string $filename ) -> string 
-mimetype( void ) -> string ... class hw_api_content
+mimetype( void ) -> string #hw_api_content
 min( array $values ) -> mixed 
 ming_keypress( string $char ) -> int 
 ming_setcubicthreshold( int $threshold ) -> void 
@@ -2492,28 +2492,28 @@ ming_setscale( float $scale ) -> void
 ming_setswfcompression( int $level ) -> void 
 ming_useconstants( int $use ) -> void 
 ming_useswfversion( int $version ) -> void 
-minifyImage( void ) -> bool ... class Imagick
+minifyImage( void ) -> bool #Imagick
 mkdir( string $pathname [, int $mode = 0777 [, bool $recursive = false [, resource $context ]]] ) -> bool 
 mktime([ int $hour = date("H") [, int $minute = date("i") [, int $second = date("s") [, int $month = date("n") [, int $day = date("j") [, int $year = date ("Y") [, int $is_dst = -1 ]]]]]]] ) -> int 
-mod( mixed $params ) -> public HttpQueryString ... class HttpQueryString
-modulateImage( float $brightness , float $saturation , float $hue ) -> bool ... class Imagick
+mod( mixed $params ) -> public HttpQueryString #HttpQueryString
+modulateImage( float $brightness , float $saturation , float $hue ) -> bool #Imagick
 money_format( string $format , float $number ) -> string 
-montageImage( ImagickDraw $draw , string $tile_geometry , string $thumbnail_geometry , int $mode , string $frame ) -> Imagick ... class Imagick
-morphImages( int $number_frames ) -> Imagick ... class Imagick
-mosaicImages( void ) -> Imagick ... class Imagick
-motionBlurImage( float $radius , float $sigma , float $angle [, int $channel = ... class Imagick
-move( array $parameter ) -> bool ... class hw_api
-move( float $dx , float $dy ) -> void ... class SWFDisplayItem
-move( int $toIndex, int $fromIndex ) -> void ... class SDO_Sequence
+montageImage( ImagickDraw $draw , string $tile_geometry , string $thumbnail_geometry , int $mode , string $frame ) -> Imagick #Imagick
+morphImages( int $number_frames ) -> Imagick #Imagick
+mosaicImages( void ) -> Imagick #Imagick
+motionBlurImage( float $radius , float $sigma , float $angle [, int $channel = #Imagick
+move( array $parameter ) -> bool #hw_api
+move( float $dx , float $dy ) -> void #SWFDisplayItem
+move( int $toIndex, int $fromIndex ) -> void #SDO_Sequence
 move_uploaded_file( string $filename , string $destination ) -> bool 
-movePen( float $dx , float $dy ) -> void ... class SWFShape
-movePenTo( float $x , float $y ) -> void ... class SWFShape
-moveTextPos( float $x , float $y [, bool $set_leading = false ]) -> bool ... class HaruPage
-moveTo( float $x , float $y ) -> bool ... class HaruPage
-moveTo( float $x , float $y ) -> void ... class SWFDisplayItem
-moveTo( float $x , float $y ) -> void ... class SWFFill
-moveTo( float $x , float $y ) -> void ... class SWFText
-moveToNextLine( void ) -> bool ... class HaruPage
+movePen( float $dx , float $dy ) -> void #SWFShape
+movePenTo( float $x , float $y ) -> void #SWFShape
+moveTextPos( float $x , float $y [, bool $set_leading = false ]) -> bool #HaruPage
+moveTo( float $x , float $y ) -> bool #HaruPage
+moveTo( float $x , float $y ) -> void #SWFDisplayItem
+moveTo( float $x , float $y ) -> void #SWFFill
+moveTo( float $x , float $y ) -> void #SWFText
+moveToNextLine( void ) -> bool #HaruPage
 mqseries_back( resource $hconn , resource &$compCode , resource &$reason) -> void 
 mqseries_begin( resource $hconn , array $beginOptions , resource & $compCode , resource &$reason ) -> void 
 mqseries_close( resource $hconn , resource $hobj , int $options , resource &$compCode , resource &$reason ) -> void 
@@ -2617,7 +2617,7 @@ mssql_select_db( string $database_name [, resource $link_identifier ] ) -> bool
 mt_getrandmax( void ) -> int 
 mt_rand( void ) -> int 
 mt_srand([ int $seed ] ) -> void 
-multColor( float $red , float $green , float $blue [, float $a ] ) -> void ... class SWFDisplayItem
+multColor( float $red , float $green , float $blue [, float $a ] ) -> void #SWFDisplayItem
 mysql_affected_rows([ resource $link_identifier ] ) -> int 
 mysql_client_encoding([ resource $link_identifier ] ) -> string 
 mysql_close([ resource $link_identifier ] ) -> bool 
@@ -2684,8 +2684,8 @@ mysqlnd_qc_get_core_stats( void ) -> array
 mysqlnd_qc_get_handler( void ) -> array 
 mysqlnd_qc_get_query_trace_log( void ) -> array 
 mysqlnd_qc_set_user_handlers( string $get_hash , string $find_query_in_cache , string $return_to_cache , string $add_query_to_cache_if_not_exists , string $query_is_select , string $update_query_run_time_stats , string $get_stats , string $clear_cache ) -> bool 
-name( void ) -> string ... class DomAttribute
-name( void ) -> string ... class DomDocumentType
+name( void ) -> string #DomAttribute
+name( void ) -> string #DomDocumentType
 natcasesort( array &$array ) -> bool 
 natsort( array &$array ) -> bool 
 ncurses_addch( int $ch ) -> int 
@@ -2848,11 +2848,11 @@ ncurses_wrefresh( resource $window ) -> int
 ncurses_wstandend( resource $window ) -> int 
 ncurses_wstandout( resource $window ) -> int 
 ncurses_wvline( resource $window , int $charattr , int $n ) -> int 
-negateImage( bool $gray [, int $channel = ... class Imagick
-newImage( int $cols , int $rows , mixed $background [, string $format ] ) -> bool ... class Imagick
-newPixelIterator( Imagick $wand ) -> bool ... class ImagickPixelIterator
-newPixelRegionIterator( Imagick $wand , int $x , int $y , int $columns , int $rows ) -> bool ... class ImagickPixelIterator
-newPseudoImage( int $columns , int $rows , string $pseudoString) -> bool ... class Imagick
+negateImage( bool $gray [, int $channel = #Imagick
+newImage( int $cols , int $rows , mixed $background [, string $format ] ) -> bool #Imagick
+newPixelIterator( Imagick $wand ) -> bool #ImagickPixelIterator
+newPixelRegionIterator( Imagick $wand , int $x , int $y , int $columns , int $rows ) -> bool #ImagickPixelIterator
+newPseudoImage( int $columns , int $rows , string $pseudoString) -> bool #Imagick
 newt_bell( void ) -> void 
 newt_button( int $left , int $top , string $text ) -> resource 
 newt_button_bar( array &$buttons ) -> resource 
@@ -2971,9 +2971,9 @@ newt_win_messagev( string $title , string $button_text , string $format , array 
 newt_win_ternary( string $title , string $button1_text , string $button2_text , string $button3_text , string $format [, mixed $args [, mixed $... ]] ) -> int 
 next( array &$array ) -> mixed 
 next_sibling( void ) -> domelement DomNode->
-nextFrame( void ) -> void ... class SWFMovie
-nextFrame( void ) -> void ... class SWFSprite
-nextImage( void ) -> bool ... class Imagick
+nextFrame( void ) -> void #SWFMovie
+nextFrame( void ) -> void #SWFSprite
+nextImage( void ) -> bool #Imagick
 nextResult( void ) -> object SwishResults->
 ngettext( string $msgid1 , string $msgid2 , int $n ) -> string 
 nl_langinfo( int $item ) -> string 
@@ -2981,9 +2981,9 @@ nl2br( string $string [, bool $is_xhtml = true ] ) -> string
 node_name( void ) -> string DomNode->
 node_type( void ) -> int DomNode->
 node_value( void ) -> string DomNode->
-noMultiple( void ) -> void ... class SWFSoundInstance
-normalizeImage([ int $channel = ... class Imagick
-notations( void ) -> array ... class DomDocumentType
+noMultiple( void ) -> void #SWFSoundInstance
+normalizeImage([ int $channel = #Imagick
+notations( void ) -> array #DomDocumentType
 notes_body( string $server , string $mailbox , int $msg_number ) -> array 
 notes_copy_db( string $from_database_name , string $to_database_name ) -> bool 
 notes_create_db( string $database_name ) -> bool 
@@ -3025,8 +3025,8 @@ ob_inflatehandler( string $data , int $mode ) -> string
 ob_list_handlers( void ) -> array 
 ob_start([ callback $output_callback [, int $chunk_size = 0 [, bool $erase = true ]]] ) -> bool 
 ob_tidyhandler( string $input [, int $mode ] ) -> string 
-object( array $parameter ) -> hw_api_object ... class hw_api
-objectbyanchor( array $parameter ) -> hw_api_object ... class hw_api
+object( array $parameter ) -> hw_api_object #hw_api
+objectbyanchor( array $parameter ) -> hw_api_object #hw_api
 oci_bind_array_by_name( resource $statement , string $name , array & $var_array , int $max_table_length [, int $max_item_length = -1 [, int $type = SQLT_AFC ]] ) -> bool 
 oci_bind_by_name( resource $statement , string $bv_name , mixed & $variable [, int $maxlength = -1 [, int $type = SQLT_CHR ]] ) -> bool 
 oci_cancel( resource $statement ) -> bool 
@@ -3117,9 +3117,9 @@ odbc_specialcolumns( resource $connection_id , int $type , string $qualifier , s
 odbc_statistics( resource $connection_id , string $qualifier , string $owner , string $table_name , int $unique , int $accuracy ) -> resource 
 odbc_tableprivileges( resource $connection_id , string $qualifier , string $owner , string $name ) -> resource 
 odbc_tables( resource $connection_id [, string $qualifier [, string $owner [, string $name [, string $types ]]]] ) -> resource 
-oilPaintImage( float $radius ) -> bool ... class Imagick
-opaquePaintImage( mixed $target , mixed $fill , float $fuzz , bool $invert [, int $channel = ... class Imagick
-open( string $filename [, int $flags ] ) -> mixed ... class ZipArchive
+oilPaintImage( float $radius ) -> bool #Imagick
+opaquePaintImage( mixed $target , mixed $fill , float $fuzz , bool $invert [, int $channel = #Imagick
+open( string $filename [, int $flags ] ) -> mixed #ZipArchive
 openal_buffer_create( void ) -> resource 
 openal_buffer_data( resource $buffer , int $format , string $data , int $freq ) -> bool 
 openal_buffer_destroy( resource $buffer ) -> bool 
@@ -3190,11 +3190,11 @@ openssl_x509_export_to_file( mixed $x509 , string $outfilename [, bool $notext =
 openssl_x509_free( resource $x509cert ) -> void 
 openssl_x509_parse( mixed $x509cert [, bool $shortnames = true ] ) -> array 
 openssl_x509_read( mixed $x509certdata ) -> resource 
-optimizeImageLayers( void ) -> bool ... class Imagick
+optimizeImageLayers( void ) -> bool #Imagick
 ord( string $string ) -> int 
-orderedPosterizeImage( string $threshold_map [, int $channel = ... class Imagick
-output( void ) -> bool ... class HaruDoc
-output([ int $compression ] ) -> int ... class SWFMovie
+orderedPosterizeImage( string $threshold_map [, int $channel = #Imagick
+output( void ) -> bool #HaruDoc
+output([ int $compression ] ) -> int #SWFMovie
 output_add_rewrite_var( string $name , string $value ) -> bool 
 output_reset_rewrite_vars( void ) -> bool 
 overload( string $class_name ) -> void 
@@ -3221,11 +3221,11 @@ ovrimos_result_all( int $result_id [, string $format ] ) -> int
 ovrimos_rollback( int $connection_id ) -> bool 
 owner_document( void ) -> domdocument DomNode->
 pack( string $format [, mixed $args [, mixed $... ]] ) -> string 
-paintFloodfillImage( mixed $fill , float $fuzz , mixed $bordercolor , int $x , int $y [, int $channel = ... class Imagick
-paintOpaqueImage( mixed $target , mixed $fill , float $fuzz [, int $channel = ... class Imagick
-paintTransparentImage( mixed $target , float $alpha , float $fuzz ) -> bool ... class Imagick
+paintFloodfillImage( mixed $fill , float $fuzz , mixed $bordercolor , int $x , int $y [, int $channel = #Imagick
+paintOpaqueImage( mixed $target , mixed $fill , float $fuzz [, int $channel = #Imagick
+paintTransparentImage( mixed $target , float $alpha , float $fuzz ) -> bool #Imagick
 parent_node( void ) -> domnode DomNode->
-parents( array $parameter ) -> array ... class hw_api
+parents( array $parameter ) -> array #hw_api
 parse_ini_file( string $filename [, bool $process_sections = false [, int $scanner_mode = INI_SCANNER_NORMAL ]] ) -> array 
 parse_ini_string( string $ini [, bool $process_sections = false [, int $scanner_mode = INI_SCANNER_NORMAL ]] ) -> array 
 parse_str( string $str [, array &$arr ] ) -> void 
@@ -3234,28 +3234,28 @@ parsekit_compile_file( string $filename [, array &$errors [, int $options = PARS
 parsekit_compile_string( string $phpcode [, array &$errors [, int $options = PARSEKIT_QUIET ]] ) -> array 
 parsekit_func_arginfo( mixed $function ) -> array 
 passthru( string $command [, int &$return_var ] ) -> void 
-pathClose( void ) -> bool ... class ImagickDraw
-pathCurveToAbsolute( float $x1 , float $y1 , float $x2 , float $y2 , float $x , float $y ) -> bool ... class ImagickDraw
-pathCurveToQuadraticBezierAbsolute( float $x1 , float $y1 , float $x , float $y ) -> bool ... class ImagickDraw
-pathCurveToQuadraticBezierRelative( float $x1 , float $y1 , float $x , float $y ) -> bool ... class ImagickDraw
-pathCurveToQuadraticBezierSmoothAbsolute( float $x , float $y ) -> bool ... class ImagickDraw
-pathCurveToQuadraticBezierSmoothRelative( float $x , float $y ) -> bool ... class ImagickDraw
-pathCurveToRelative( float $x1 , float $y1 , float $x2 , float $y2 , float $x , float $y ) -> bool ... class ImagickDraw
-pathCurveToSmoothAbsolute( float $x2 , float $y2 , float $x , float $y ) -> bool ... class ImagickDraw
-pathCurveToSmoothRelative( float $x2 , float $y2 , float $x , float $y ) -> bool ... class ImagickDraw
-pathEllipticArcAbsolute( float $rx , float $ry , float $x_axis_rotation , bool $large_arc_flag , bool $sweep_flag , float $x , float $y ) -> bool ... class ImagickDraw
-pathEllipticArcRelative( float $rx , float $ry , float $x_axis_rotation , bool $large_arc_flag , bool $sweep_flag , float $x , float $y ) -> bool ... class ImagickDraw
-pathFinish( void ) -> bool ... class ImagickDraw
+pathClose( void ) -> bool #ImagickDraw
+pathCurveToAbsolute( float $x1 , float $y1 , float $x2 , float $y2 , float $x , float $y ) -> bool #ImagickDraw
+pathCurveToQuadraticBezierAbsolute( float $x1 , float $y1 , float $x , float $y ) -> bool #ImagickDraw
+pathCurveToQuadraticBezierRelative( float $x1 , float $y1 , float $x , float $y ) -> bool #ImagickDraw
+pathCurveToQuadraticBezierSmoothAbsolute( float $x , float $y ) -> bool #ImagickDraw
+pathCurveToQuadraticBezierSmoothRelative( float $x , float $y ) -> bool #ImagickDraw
+pathCurveToRelative( float $x1 , float $y1 , float $x2 , float $y2 , float $x , float $y ) -> bool #ImagickDraw
+pathCurveToSmoothAbsolute( float $x2 , float $y2 , float $x , float $y ) -> bool #ImagickDraw
+pathCurveToSmoothRelative( float $x2 , float $y2 , float $x , float $y ) -> bool #ImagickDraw
+pathEllipticArcAbsolute( float $rx , float $ry , float $x_axis_rotation , bool $large_arc_flag , bool $sweep_flag , float $x , float $y ) -> bool #ImagickDraw
+pathEllipticArcRelative( float $rx , float $ry , float $x_axis_rotation , bool $large_arc_flag , bool $sweep_flag , float $x , float $y ) -> bool #ImagickDraw
+pathFinish( void ) -> bool #ImagickDraw
 pathinfo( string $path [, int $options = PATHINFO_DIRNAME | PATHINFO_BASENAME | PATHINFO_EXTENSION | PATHINFO_FILENAME ] ) -> mixed 
-pathLineToAbsolute( float $x , float $y ) -> bool ... class ImagickDraw
-pathLineToHorizontalAbsolute( float $x ) -> bool ... class ImagickDraw
-pathLineToHorizontalRelative( float $x ) -> bool ... class ImagickDraw
-pathLineToRelative( float $x , float $y ) -> bool ... class ImagickDraw
-pathLineToVerticalAbsolute( float $y ) -> bool ... class ImagickDraw
-pathLineToVerticalRelative( float $y ) -> bool ... class ImagickDraw
-pathMoveToAbsolute( float $x , float $y ) -> bool ... class ImagickDraw
-pathMoveToRelative( float $x , float $y ) -> bool ... class ImagickDraw
-pathStart( void ) -> bool ... class ImagickDraw
+pathLineToAbsolute( float $x , float $y ) -> bool #ImagickDraw
+pathLineToHorizontalAbsolute( float $x ) -> bool #ImagickDraw
+pathLineToHorizontalRelative( float $x ) -> bool #ImagickDraw
+pathLineToRelative( float $x , float $y ) -> bool #ImagickDraw
+pathLineToVerticalAbsolute( float $y ) -> bool #ImagickDraw
+pathLineToVerticalRelative( float $y ) -> bool #ImagickDraw
+pathMoveToAbsolute( float $x , float $y ) -> bool #ImagickDraw
+pathMoveToRelative( float $x , float $y ) -> bool #ImagickDraw
+pathStart( void ) -> bool #ImagickDraw
 pclose( resource $handle ) -> int 
 pcntl_alarm( int $seconds ) -> int 
 pcntl_exec( string $path [, array $args [, array $envs ]] ) -> void 
@@ -3428,8 +3428,8 @@ PDF_translate( resource $p , float $tx , float $ty ) -> bool
 PDF_utf16_to_utf8( resource $pdfdoc , string $utf16string ) -> string 
 PDF_utf32_to_utf16( resource $pdfdoc , string $utf32string , string $ordering ) -> string 
 PDF_utf8_to_utf16( resource $pdfdoc , string $utf8string , string $ordering ) -> string 
-peek( string $target [, array $properties ] ) -> SAMMessage ... class SAMConnection
-peekAll( string $target [, array $properties ] ) -> array ... class SAMConnection
+peek( string $target [, array $properties ] ) -> SAMMessage #SAMConnection
+peekAll( string $target [, array $properties ] ) -> array #SAMConnection
 pfsockopen( string $hostname [, int $port = -1 [, int &$errno [, string &$errstr [, float $timeout = ini_get("default_socket_timeout") ]]]] ) -> resource 
 pg_affected_rows( resource $result ) -> int 
 pg_cancel_query( resource $connection ) -> bool 
@@ -3513,9 +3513,9 @@ pg_unescape_bytea( string $data ) -> string
 pg_untrace([ resource $connection ] ) -> bool 
 pg_update( resource $connection , string $table_name , array $data , array $condition [, int $options = PGSQL_DML_EXEC ] ) -> mixed 
 pg_version([ resource $connection ] ) -> array 
-pgsqlLOBCreate( void ) -> string ... class PDO
-pgsqlLOBOpen( string $oid [, string $mode = "rb" ] ) -> resource ... class PDO
-pgsqlLOBUnlink( string $oid ) -> bool ... class PDO
+pgsqlLOBCreate( void ) -> string #PDO
+pgsqlLOBOpen( string $oid [, string $mode = "rb" ] ) -> resource #PDO
+pgsqlLOBUnlink( string $oid ) -> bool #PDO
 php_check_syntax( string $filename [, string &$error_message ] ) -> bool 
 php_ini_loaded_file( void ) -> string 
 php_ini_scanned_files( void ) -> string 
@@ -3527,19 +3527,19 @@ phpcredits([ int $flag = CREDITS_ALL ] ) -> bool
 phpinfo([ int $what = INFO_ALL ] ) -> bool 
 phpversion([ string $extension ] ) -> string 
 pi( void ) -> float 
-pingImage( string $filename ) -> bool ... class Imagick
-pingImageBlob( string $image ) -> bool ... class Imagick
-pingImageFile( resource $filehandle [, string $fileName ] ) -> bool ... class Imagick
+pingImage( string $filename ) -> bool #Imagick
+pingImageBlob( string $image ) -> bool #Imagick
+pingImageFile( resource $filehandle [, string $fileName ] ) -> bool #Imagick
 png2wbmp( string $pngname , string $wbmpname , int $dest_height , int $dest_width , int $threshold ) -> bool 
-point( float $x , float $y ) -> bool ... class ImagickDraw
-polaroidImage( ImagickDraw $properties , float $angle ) -> bool ... class Imagick
-polygon( array $coordinates ) -> bool ... class ImagickDraw
-polyline( array $coordinates ) -> bool ... class ImagickDraw
-pop( void ) -> bool ... class ImagickDraw
-popClipPath( void ) -> bool ... class ImagickDraw
-popDefs( void ) -> bool ... class ImagickDraw
+point( float $x , float $y ) -> bool #ImagickDraw
+polaroidImage( ImagickDraw $properties , float $angle ) -> bool #Imagick
+polygon( array $coordinates ) -> bool #ImagickDraw
+polyline( array $coordinates ) -> bool #ImagickDraw
+pop( void ) -> bool #ImagickDraw
+popClipPath( void ) -> bool #ImagickDraw
+popDefs( void ) -> bool #ImagickDraw
 popen( string $command , string $mode ) -> resource 
-popPattern( void ) -> bool ... class ImagickDraw
+popPattern( void ) -> bool #ImagickDraw
 posix_access( string $file [, int $mode = POSIX_F_OK ] ) -> bool 
 posix_ctermid( void ) -> string 
 posix_get_last_error( void ) -> int 
@@ -3575,7 +3575,7 @@ posix_strerror( int $errno ) -> string
 posix_times( void ) -> array 
 posix_ttyname( int $fd ) -> string 
 posix_uname( void ) -> array 
-posterizeImage( int $levels , bool $dither ) -> bool ... class Imagick
+posterizeImage( int $levels , bool $dither ) -> bool #Imagick
 pow( number $base , number $exp ) -> number 
 prefix( void ) -> string DomNode->
 preg_filter( mixed $pattern , mixed $replacement , mixed $subject [, int $limit = -1 [, int &$count ]] ) -> mixed 
@@ -3588,11 +3588,11 @@ preg_replace( mixed $pattern , mixed $replacement , mixed $subject [, int $limit
 preg_replace_callback( mixed $pattern , callback $callback , mixed $subject [, int $limit = -1 [, int &$count ]] ) -> mixed 
 preg_split( string $pattern , string $subject [, int $limit = -1 [, int $flags = 0 ]] ) -> array 
 prepare([ string $query ] ) -> object Swish->
-prepend( HttpMessage $message [, bool $top = true ] ) -> public void ... class HttpMessage
+prepend( HttpMessage $message [, bool $top = true ] ) -> public void #HttpMessage
 prev( array &$array ) -> mixed 
-previewImages( int $preview ) -> bool ... class Imagick
+previewImages( int $preview ) -> bool #Imagick
 previous_sibling( void ) -> domelement DomNode->
-previousImage( void ) -> bool ... class Imagick
+previousImage( void ) -> bool #Imagick
 print( string $arg ) -> int 
 print_r( mixed $expression [, bool $return = false ] ) -> mixed 
 printer_abort( resource $printer_handle ) -> void 
@@ -3632,8 +3632,8 @@ proc_get_status( resource $process ) -> array
 proc_nice( int $increment ) -> bool 
 proc_open( string $cmd , array $descriptorspec , array &$pipes [, string $cwd [, array $env [, array $other_options ]]] ) -> resource 
 proc_terminate( resource $process [, int $signal = 15 ] ) -> bool 
-process( DomDocument $xml_doc [, array $xslt_params [, bool $is_xpath_param [, string $profile_filename ]]] ) -> DomDocument ... class DomXsltStylesheet
-profileImage( string $name , string $profile ) -> bool ... class Imagick
+process( DomDocument $xml_doc [, array $xslt_params [, bool $is_xpath_param [, string $profile_filename ]]] ) -> DomDocument #DomXsltStylesheet
+profileImage( string $name , string $profile ) -> bool #Imagick
 property_exists( mixed $class , string $property ) -> bool 
 ps_add_bookmark( resource $psdoc , string $text [, int $parent = 0 [, int $open = 0 ]] ) -> int 
 ps_add_launchlink( resource $psdoc , float $llx , float $lly , float $urx , float $ury , string $filename ) -> bool 
@@ -3732,11 +3732,11 @@ pspell_new_personal( string $personal , string $language [, string $spelling [, 
 pspell_save_wordlist( int $dictionary_link ) -> bool 
 pspell_store_replacement( int $dictionary_link , string $misspelled , string $correct ) -> bool 
 pspell_suggest( int $dictionary_link , string $word ) -> array 
-PUBLIC_id( void ) -> string ... class DomDocumentType
-push( void ) -> bool ... class ImagickDraw
-pushClipPath( string $clip_mask_id ) -> bool ... class ImagickDraw
-pushDefs( void ) -> bool ... class ImagickDraw
-pushPattern( string $pattern_id , float $x , float $y , float $width , float $height ) -> bool ... class ImagickDraw
+PUBLIC_id( void ) -> string #DomDocumentType
+push( void ) -> bool #ImagickDraw
+pushClipPath( string $clip_mask_id ) -> bool #ImagickDraw
+pushDefs( void ) -> bool #ImagickDraw
+pushPattern( string $pattern_id , float $x , float $y , float $width , float $height ) -> bool #ImagickDraw
 putenv( string $setting ) -> bool 
 px_close( resource $pxdoc ) -> bool 
 px_create_fp( resource $pxdoc , resource $file , array $fielddesc ) -> bool 
@@ -3765,17 +3765,17 @@ px_timestamp2string( resource $pxdoc , float $value , string $format ) -> string
 px_update_record( resource $pxdoc , array $data , int $num ) -> bool 
 qdom_error( void ) -> string 
 qdom_tree( string $doc ) -> QDomDocument 
-quantizeImage( int $numberColors , int $colorspace , int $treedepth , bool $dither , bool $measureError ) -> bool ... class Imagick
-quantizeImages( int $numberColors , int $colorspace , int $treedepth , bool $dither , bool $measureError ) -> bool ... class Imagick
+quantizeImage( int $numberColors , int $colorspace , int $treedepth , bool $dither , bool $measureError ) -> bool #Imagick
+quantizeImages( int $numberColors , int $colorspace , int $treedepth , bool $dither , bool $measureError ) -> bool #Imagick
 query( string $query ) -> object Swish->
-queryFontMetrics( ImagickDraw $properties , string $text [, bool $multiline ] ) -> array ... class Imagick
-queryFonts([ string $pattern = "*" ] ) -> array ... class Imagick
-queryFormats([ string $pattern = "*" ] ) -> array ... class Imagick
+queryFontMetrics( ImagickDraw $properties , string $text [, bool $multiline ] ) -> array #Imagick
+queryFonts([ string $pattern = "*" ] ) -> array #Imagick
+queryFormats([ string $pattern = "*" ] ) -> array #Imagick
 quoted_printable_decode( string $str ) -> string 
 quoted_printable_encode( string $str ) -> string 
 quotemeta( string $str ) -> string 
 rad2deg( float $number ) -> float 
-radialBlurImage( float $angle [, int $channel = ... class Imagick
+radialBlurImage( float $angle [, int $channel = #Imagick
 radius_acct_open( void ) -> resource 
 radius_add_server( resource $radius_handle , string $hostname , int $port , string $secret , int $timeout , int $max_tries ) -> bool 
 radius_auth_open( void ) -> resource 
@@ -3801,22 +3801,22 @@ radius_request_authenticator( resource $radius_handle ) -> string
 radius_send_request( resource $radius_handle ) -> int 
 radius_server_secret( resource $radius_handle ) -> string 
 radius_strerror( resource $radius_handle ) -> string 
-raiseImage( int $width , int $height , int $x , int $y , bool $raise ) -> bool ... class Imagick
+raiseImage( int $width , int $height , int $x , int $y , bool $raise ) -> bool #Imagick
 rand( void ) -> int 
-randomThresholdImage( float $low , float $high [, int $channel = ... class Imagick
+randomThresholdImage( float $low , float $high [, int $channel = #Imagick
 range( mixed $start , mixed $limit [, number $step = 1 ] ) -> array 
 rar_wrapper_cache_stats( void ) -> string 
 rawurldecode( string $str ) -> string 
 rawurlencode( string $str ) -> string 
-read( int $length ) -> string OCI-... class Lob
-read( string $buffer , int $len ) -> string ... class hw_api_content
+read( int $length ) -> string OCI-#Lob
+read( string $buffer , int $len ) -> string #hw_api_content
 readdir([ resource $dir_handle ] ) -> string 
 readfile( string $filename [, bool $use_include_path = false [, resource $context ]] ) -> int 
-readFromStream( int $bytes ) -> string ... class HaruDoc
+readFromStream( int $bytes ) -> string #HaruDoc
 readgzfile( string $filename [, int $use_include_path = 0 ] ) -> int 
-readImage( string $filename ) -> bool ... class Imagick
-readImageBlob( string $image [, string $filename ] ) -> bool ... class Imagick
-readImageFile( resource $filehandle [, string $fileName = null ]) -> bool ... class Imagick
+readImage( string $filename ) -> bool #Imagick
+readImageBlob( string $image [, string $filename ] ) -> bool #Imagick
+readImageFile( resource $filehandle [, string $fileName = null ]) -> bool #Imagick
 readline([ string $prompt ] ) -> string 
 readline_add_history( string $line ) -> bool 
 readline_callback_handler_install( string $prompt , callback $callback ) -> bool 
@@ -3834,66 +3834,66 @@ readlink( string $path ) -> string
 realpath( string $path ) -> string 
 realpath_cache_get( void ) -> array 
 realpath_cache_size( void ) -> int 
-reason( void ) -> HW_API_Reason ... class hw_api_error
-receive( string $target [, array $properties ] ) -> SAMMessage ... class SAMConnection
+reason( void ) -> HW_API_Reason #hw_api_error
+receive( string $target [, array $properties ] ) -> SAMMessage #SAMConnection
 recode_file( string $request , resource $input , resource $output ) -> bool 
 recode_string( string $request , string $string ) -> string 
-recolorImage( array $matrix ) -> bool ... class Imagick
-rectangle( float $x , float $y , float $width , float $height ) -> bool ... class HaruPage
-rectangle( float $x1 , float $y1 , float $x2 , float $y2 ) -> bool ... class ImagickDraw
-redirect([ string $url [, array $params [, bool $session = false [, int $status ]]]] ) -> static void ... class HttpResponse
-reduceNoiseImage( float $radius ) -> bool ... class Imagick
+recolorImage( array $matrix ) -> bool #Imagick
+rectangle( float $x , float $y , float $width , float $height ) -> bool #HaruPage
+rectangle( float $x1 , float $y1 , float $x2 , float $y2 ) -> bool #ImagickDraw
+redirect([ string $url [, array $params [, bool $session = false [, int $status ]]]] ) -> static void #HttpResponse
+reduceNoiseImage( float $radius ) -> bool #Imagick
 register_shutdown_function( callback $function [, mixed $parameter [, mixed $... ]] ) -> void 
 register_tick_function( callback $function [, mixed $arg [, mixed $... ]]) -> bool 
-remove( array $parameter ) -> bool ... class hw_api
-remove( object $instance ) -> void ... class SWFMovie
-remove( object $object ) -> void ... class SWFSprite
-remove( string $name ) -> bool ... class hw_api_object
-remove( string $target [, array $properties ] ) -> SAMMessage ... class SAMConnection
-remove( void ) -> void ... class SWFDisplayItem
-remove_attribute( string $name ) -> bool ... class DomElement
+remove( array $parameter ) -> bool #hw_api
+remove( object $instance ) -> void #SWFMovie
+remove( object $object ) -> void #SWFSprite
+remove( string $name ) -> bool #hw_api_object
+remove( string $target [, array $properties ] ) -> SAMMessage #SAMConnection
+remove( void ) -> void #SWFDisplayItem
+remove_attribute( string $name ) -> bool #DomElement
 remove_child( domtext $oldchild ) -> domtext DomNode->
-removeImage( void ) -> bool ... class Imagick
-removeImageProfile( string $name ) -> string ... class Imagick
+removeImage( void ) -> bool #Imagick
+removeImageProfile( string $name ) -> string #Imagick
 rename( string $oldname , string $newname [, resource $context ] ) -> bool 
 rename_function( string $original_name , string $new_name ) -> bool 
-renameIndex( int $index , string $newname ) -> bool ... class ZipArchive
-renameName( string $name , string $newname ) -> bool ... class ZipArchive
-render( void ) -> bool ... class Imagick
-render( void ) -> bool ... class ImagickDraw
-replace( array $parameter ) -> hw_api_object ... class hw_api
+renameIndex( int $index , string $newname ) -> bool #ZipArchive
+renameName( string $name , string $newname ) -> bool #ZipArchive
+render( void ) -> bool #Imagick
+render( void ) -> bool #ImagickDraw
+replace( array $parameter ) -> hw_api_object #hw_api
 replace_child( domelement $newnode , domelement $oldnode ) -> domelement DomNode->
 replace_node( domelement $newnode ) -> domelement DomNode->
-resampleImage( float $x_resolution , float $y_resolution , int $filter , float $blur ) -> bool ... class Imagick
+resampleImage( float $x_resolution , float $y_resolution , int $filter , float $blur ) -> bool #Imagick
 reset( array &$array ) -> mixed 
-reset( void ) -> void ... class HttpRequestPool
-resetCookies([ bool $session_only = false ] ) -> public bool ... class HttpRequest
-resetError( void ) -> bool ... class HaruDoc
-resetImagePage( string $page ) -> bool ... class Imagick
-resetIterator( void ) -> bool ... class ImagickPixelIterator
+reset( void ) -> void #HttpRequestPool
+resetCookies([ bool $session_only = false ] ) -> public bool #HttpRequest
+resetError( void ) -> bool #HaruDoc
+resetImagePage( string $page ) -> bool #Imagick
+resetIterator( void ) -> bool #ImagickPixelIterator
 resetLimit( void ) -> void SwishSearch->
-resetStream( void ) -> bool ... class HaruDoc
-resizeImage( int $columns , int $rows , int $filter , float $blur [, bool $bestfit = false ] ) -> bool ... class Imagick
+resetStream( void ) -> bool #HaruDoc
+resizeImage( int $columns , int $rows , int $filter , float $blur [, bool $bestfit = false ] ) -> bool #Imagick
 restore_error_handler( void ) -> bool 
 restore_exception_handler( void ) -> bool 
 restore_include_path( void ) -> void 
-result_dump_file( DomDocument $xmldoc , string $filename ) -> string ... class DomXsltStylesheet
-result_dump_mem( DomDocument $xmldoc ) -> string ... class DomXsltStylesheet
-reverse( void ) -> public HttpMessage ... class HttpMessage
+result_dump_file( DomDocument $xmldoc , string $filename ) -> string #DomXsltStylesheet
+result_dump_mem( DomDocument $xmldoc ) -> string #DomXsltStylesheet
+reverse( void ) -> public HttpMessage #HttpMessage
 rewind( resource $handle ) -> bool 
-rewind( void ) -> bool OCI-... class Lob
+rewind( void ) -> bool OCI-#Lob
 rewinddir([ resource $dir_handle ] ) -> void 
 rmdir( string $dirname [, resource $context ] ) -> bool 
-rollback( void ) -> bool ... class SAMConnection
-rollImage( int $x , int $y ) -> bool ... class Imagick
-rotate( float $angle ) -> void ... class SWFDisplayItem
-rotate( float $degrees ) -> bool ... class ImagickDraw
-rotateImage( mixed $background , float $degrees ) -> bool ... class Imagick
-rotateTo( float $angle ) -> void ... class SWFDisplayItem
-rotateTo( float $angle ) -> void ... class SWFFill
+rollback( void ) -> bool #SAMConnection
+rollImage( int $x , int $y ) -> bool #Imagick
+rotate( float $angle ) -> void #SWFDisplayItem
+rotate( float $degrees ) -> bool #ImagickDraw
+rotateImage( mixed $background , float $degrees ) -> bool #Imagick
+rotateTo( float $angle ) -> void #SWFDisplayItem
+rotateTo( float $angle ) -> void #SWFFill
 round( float $val [, int $precision = 0 [, int $mode = PHP_ROUND_HALF_UP ]] ) -> float 
-roundCorners( float $x_rounding , float $y_rounding [, float $stroke_width = 10 [, float $displace = 5 [, float $size_correction = -6 ]]] ) -> bool ... class Imagick
-roundRectangle( float $x1 , float $y1 , float $x2 , float $y2 , float $rx , float $ry ) -> bool ... class ImagickDraw
+roundCorners( float $x_rounding , float $y_rounding [, float $stroke_width = 10 [, float $displace = 5 [, float $size_correction = -6 ]]] ) -> bool #Imagick
+roundRectangle( float $x1 , float $y1 , float $x2 , float $y2 , float $rx , float $ry ) -> bool #ImagickDraw
 rpm_close( resource $rpmr ) -> bool 
 rpm_get_tag( resource $rpmr , int $tagnum ) -> mixed 
 rpm_is_valid( string $filename ) -> bool 
@@ -3934,33 +3934,33 @@ runkit_method_rename( string $classname , string $methodname , string $newname )
 runkit_return_value_used( void ) -> bool 
 runkit_sandbox_output_handler( object $sandbox [, mixed $callback ] ) -> mixed 
 runkit_superglobals( void ) -> array 
-sampleImage( int $columns , int $rows ) -> bool ... class Imagick
-save( string $data [, int $offset ] ) -> bool OCI-... class Lob
-save( string $file ) -> bool ... class HaruDoc
-save( string $filename [, int $compression = -1 ] ) -> int ... class SWFMovie
-saveFile( SDO_XMLDocument $xdoc , string $xml_file [, int $indent ] ) -> void ... class SDO_DAS_XML
-saveString( SDO_XMLDocument $xdoc [, int $indent ] ) -> string ... class SDO_DAS_XML
-saveToFile( resource $x [, int $compression = -1 ] ) -> int ... class SWFMovie
-saveToStream( void ) -> bool ... class HaruDoc
-scale( float $dx , float $dy ) -> void ... class SWFDisplayItem
-scale( float $x , float $y ) -> bool ... class ImagickDraw
-scaleImage( int $cols , int $rows [, bool $bestfit = false ] ) -> bool ... class Imagick
-scaleTo( float $x [, float $y ] ) -> void ... class SWFDisplayItem
-scaleTo( float $x [, float $y ] ) -> void ... class SWFFill
+sampleImage( int $columns , int $rows ) -> bool #Imagick
+save( string $data [, int $offset ] ) -> bool OCI-#Lob
+save( string $file ) -> bool #HaruDoc
+save( string $filename [, int $compression = -1 ] ) -> int #SWFMovie
+saveFile( SDO_XMLDocument $xdoc , string $xml_file [, int $indent ] ) -> void #SDO_DAS_XML
+saveString( SDO_XMLDocument $xdoc [, int $indent ] ) -> string #SDO_DAS_XML
+saveToFile( resource $x [, int $compression = -1 ] ) -> int #SWFMovie
+saveToStream( void ) -> bool #HaruDoc
+scale( float $dx , float $dy ) -> void #SWFDisplayItem
+scale( float $x , float $y ) -> bool #ImagickDraw
+scaleImage( int $cols , int $rows [, bool $bestfit = false ] ) -> bool #Imagick
+scaleTo( float $x [, float $y ] ) -> void #SWFDisplayItem
+scaleTo( float $x [, float $y ] ) -> void #SWFFill
 scandir( string $directory [, int $sorting_order = SCANDIR_SORT_ASCENDING [, resource $context ]] ) -> array 
-seek( int $offset [, int $whence = OCI_SEEK_SET ] ) -> bool OCI-... class Lob
+seek( int $offset [, int $whence = OCI_SEEK_SET ] ) -> bool OCI-#Lob
 seekResult( int $position ) -> int SwishResults->
 sem_acquire( resource $sem_identifier ) -> bool 
 sem_get( int $key [, int $max_acquire = 1 [, int $perm = 0666 [, int $auto_release = 1 ]]] ) -> resource 
 sem_release( resource $sem_identifier ) -> bool 
 sem_remove( resource $sem_identifier ) -> bool 
-send( string $target , SAMMessage $msg [, array $properties ] ) -> string ... class SAMConnection
-send( void ) -> bool ... class HttpRequestPool
-send( void ) -> public bool ... class HttpMessage
-send( void ) -> public HttpMessage ... class HttpRequest
-send([ bool $clean_ob = true ] ) -> static bool ... class HttpResponse
-separateImageChannel( int $channel ) -> bool ... class Imagick
-sepiaToneImage( float $threshold ) -> bool ... class Imagick
+send( string $target , SAMMessage $msg [, array $properties ] ) -> string #SAMConnection
+send( void ) -> bool #HttpRequestPool
+send( void ) -> public bool #HttpMessage
+send( void ) -> public HttpMessage #HttpRequest
+send([ bool $clean_ob = true ] ) -> static bool #HttpResponse
+separateImageChannel( int $channel ) -> bool #Imagick
+sepiaToneImage( float $threshold ) -> bool #Imagick
 serialize( mixed $value ) -> string 
 session_cache_expire([ string $new_cache_expire ] ) -> int 
 session_cache_limiter([ string $cache_limiter ] ) -> string 
@@ -3987,9 +3987,9 @@ session_start( void ) -> bool
 session_unregister( string $name ) -> bool 
 session_unset( void ) -> void 
 session_write_close( void ) -> void 
-set( mixed $params ) -> public string ... class HttpQueryString
-set_attribute( string $name , string $value ) -> DomAttribute ... class DomElement
-set_attribute_node( DomNode $attr ) -> DomNode ... class DomElement
+set( mixed $params ) -> public string #HttpQueryString
+set_attribute( string $name , string $value ) -> DomAttribute #DomElement
+set_attribute_node( DomNode $attr ) -> DomNode #DomElement
 set_content( string $content ) -> bool DomNode->
 set_error_handler( callback $error_handler [, int $error_types = E_ALL | E_STRICT ] ) -> mixed 
 set_exception_handler( callback $exception_handler ) -> callback 
@@ -3998,256 +3998,256 @@ set_magic_quotes_runtime( bool $new_setting ) -> bool
 set_name( void ) -> bool DomNode->
 set_namespace( string $uri [, string $prefix ] ) -> void DomNode->
 set_time_limit( int $seconds ) -> void 
-set_value( string $content ) -> bool ... class DomAttribute
-setAction( SWFAction $action ) -> void ... class SWFButton
-setArchiveComment( string $comment ) -> mixed ... class ZipArchive
-setbackground( int $red , int $green , int $blue ) -> void ... class SWFMovie
-setBackgroundColor( mixed $background ) -> bool ... class Imagick
-setBody( string $body ) -> public void ... class HttpMessage
-setBorderStyle( float $width , int $dash_on , int $dash_off ) -> bool ... class HaruAnnotation
-setBounds( float $width , float $height ) -> void ... class SWFTextField
-setBuffering( bool $on_off ) -> bool OCI-... class Lob
-setBufferSize( int $bytes ) -> static bool ... class HttpResponse
-setCache( bool $cache ) -> static bool ... class HttpResponse
-setCacheControl( string $control [, int $max_age = 0 [, bool $must_revalidate = true ]] ) -> static bool ... class HttpResponse
-setCharSpace( float $char_space ) -> bool ... class HaruPage
-setClipPath( string $clip_mask ) -> bool ... class ImagickDraw
-setClipRule( int $fill_rule ) -> bool ... class ImagickDraw
-setClipUnits( int $clip_units ) -> bool ... class ImagickDraw
-setCMYKFill( float $c , float $m , float $y , float $k ) -> bool ... class HaruPage
-setCMYKStroke( float $c , float $m , float $y , float $k ) -> bool ... class HaruPage
-setColor( int $red , int $green , int $blue [, int $a = 255 ] ) -> void ... class SWFText
-setColor( int $red , int $green , int $blue [, int $a = 255 ] ) -> void ... class SWFTextField
-setColor( string $color ) -> bool ... class ImagickPixel
-setColorMask( int $rmin , int $rmax , int $gmin , int $gmax , int $bmin , int $bmax ) -> bool ... class HaruImage
-setColorspace( int $COLORSPACE ) -> bool ... class Imagick
-setColorValue( int $color , float $value ) -> bool ... class ImagickPixel
-setCommentIndex( int $index , string $comment ) -> mixed ... class ZipArchive
-setCommentName( string $name , string $comment ) -> mixed ... class ZipArchive
-setcommittedversion( array $parameter ) -> hw_api_object ... class hw_api
-setCompression( int $compression ) -> bool ... class Imagick
-setCompressionMode( int $mode ) -> bool ... class HaruDoc
-setCompressionQuality( int $quality ) -> bool ... class Imagick
-setContentDisposition( string $filename [, bool $inline = false ] ) -> static bool ... class HttpResponse
-setContentType( string $content_type ) -> public bool ... class HttpRequest
-setContentType( string $content_type ) -> static bool ... class HttpResponse
+set_value( string $content ) -> bool #DomAttribute
+setAction( SWFAction $action ) -> void #SWFButton
+setArchiveComment( string $comment ) -> mixed #ZipArchive
+setbackground( int $red , int $green , int $blue ) -> void #SWFMovie
+setBackgroundColor( mixed $background ) -> bool #Imagick
+setBody( string $body ) -> public void #HttpMessage
+setBorderStyle( float $width , int $dash_on , int $dash_off ) -> bool #HaruAnnotation
+setBounds( float $width , float $height ) -> void #SWFTextField
+setBuffering( bool $on_off ) -> bool OCI-#Lob
+setBufferSize( int $bytes ) -> static bool #HttpResponse
+setCache( bool $cache ) -> static bool #HttpResponse
+setCacheControl( string $control [, int $max_age = 0 [, bool $must_revalidate = true ]] ) -> static bool #HttpResponse
+setCharSpace( float $char_space ) -> bool #HaruPage
+setClipPath( string $clip_mask ) -> bool #ImagickDraw
+setClipRule( int $fill_rule ) -> bool #ImagickDraw
+setClipUnits( int $clip_units ) -> bool #ImagickDraw
+setCMYKFill( float $c , float $m , float $y , float $k ) -> bool #HaruPage
+setCMYKStroke( float $c , float $m , float $y , float $k ) -> bool #HaruPage
+setColor( int $red , int $green , int $blue [, int $a = 255 ] ) -> void #SWFText
+setColor( int $red , int $green , int $blue [, int $a = 255 ] ) -> void #SWFTextField
+setColor( string $color ) -> bool #ImagickPixel
+setColorMask( int $rmin , int $rmax , int $gmin , int $gmax , int $bmin , int $bmax ) -> bool #HaruImage
+setColorspace( int $COLORSPACE ) -> bool #Imagick
+setColorValue( int $color , float $value ) -> bool #ImagickPixel
+setCommentIndex( int $index , string $comment ) -> mixed #ZipArchive
+setCommentName( string $name , string $comment ) -> mixed #ZipArchive
+setcommittedversion( array $parameter ) -> hw_api_object #hw_api
+setCompression( int $compression ) -> bool #Imagick
+setCompressionMode( int $mode ) -> bool #HaruDoc
+setCompressionQuality( int $quality ) -> bool #Imagick
+setContentDisposition( string $filename [, bool $inline = false ] ) -> static bool #HttpResponse
+setContentType( string $content_type ) -> public bool #HttpRequest
+setContentType( string $content_type ) -> static bool #HttpResponse
 setcookie( string $name [, string $value [, int $expire = 0 [, string $path [, string $domain [, bool $secure = false [, bool $httponly = false ]]]]]] ) -> bool 
-setCookies([ array $cookies ] ) -> public bool ... class HttpRequest
-setCurrentEncoder( string $encoding ) -> bool ... class HaruDoc
-setDash( array $pattern , int $phase ) -> bool ... class HaruPage
-setData( mixed $data ) -> static bool ... class HttpResponse
-setDepth( int $depth ) -> void ... class SWFDisplayItem
-setDestination( object $destination ) -> bool ... class HaruOutline
-setDimension( float $width , float $height ) -> void ... class SWFMovie
-setDimension( int $x , int $y ) -> void ... class SWFVideoStream
-setDown( SWFShape $shape ) -> void ... class SWFButton
-setEncoding( string $encoding ) -> void ... class SDO_DAS_XML_Document
-setEncryptionMode( int $mode [, int $key_len = 5 ] ) -> bool ... class HaruDoc
-setETag( string $etag ) -> static bool ... class HttpResponse
-setFile( string $file ) -> static bool ... class HttpResponse
-setFilename( string $filename ) -> bool ... class Imagick
-setFillAlpha( float $opacity ) -> bool ... class ImagickDraw
-setFillColor( ImagickPixel $fill_pixel ) -> bool ... class ImagickDraw
-setFillOpacity( float $fillOpacity ) -> bool ... class ImagickDraw
-setFillPatternURL( string $fill_url ) -> bool ... class ImagickDraw
-setFillRule( int $fill_rule ) -> bool ... class ImagickDraw
-setFirstIterator( void ) -> bool ... class Imagick
-setFit( void ) -> bool ... class HaruDestination
-setFitB( void ) -> bool ... class HaruDestination
-setFitBH( float $top ) -> bool ... class HaruDestination
-setFitBV( float $left ) -> bool ... class HaruDestination
-setFitH( float $top ) -> bool ... class HaruDestination
-setFitR( float $left , float $bottom , float $right , float $top ) -> bool ... class HaruDestination
-setFitV( float $left ) -> bool ... class HaruDestination
-setFlatness( float $flatness ) -> bool ... class HaruPage
-setFont( string $font ) -> bool ... class Imagick
-setFont( string $font_name ) -> bool ... class ImagickDraw
-setFont( SWFFont $font ) -> void ... class SWFText
-setFont( SWFFont $font ) -> void ... class SWFTextField
-setFontAndSize( object $font , float $size ) -> bool ... class HaruPage
-setFontFamily( string $font_family ) -> bool ... class ImagickDraw
-setFontSize( float $pointsize ) -> bool ... class ImagickDraw
-setFontStretch( int $fontStretch ) -> bool ... class ImagickDraw
-setFontStyle( int $style ) -> bool ... class ImagickDraw
-setFontWeight( int $font_weight ) -> bool ... class ImagickDraw
-setFormat( string $format ) -> bool ... class Imagick
-setFrames( int $number ) -> void ... class SWFMovie
-setFrames( int $number ) -> void ... class SWFSprite
-setGravity( int $gravity ) -> bool ... class Imagick
-setGravity( int $gravity ) -> bool ... class ImagickDraw
-setGrayFill( float $value ) -> bool ... class HaruPage
-setGrayStroke( float $value ) -> bool ... class HaruPage
-setGzip( bool $gzip ) -> static bool ... class HttpResponse
-setHeader( string $name [, mixed $value [, bool $replace = true ]] ) -> static bool ... class HttpResponse
-setHeaders( array $headers ) -> public void ... class HttpMessage
-setHeaders([ array $headers ] ) -> public bool ... class HttpRequest
-setHeight( float $height ) -> bool ... class HaruPage
-setHeight( float $height ) -> void ... class SWFText
-setHeight( float $height ) -> void ... class SWFTextField
-setHighlightMode( int $mode ) -> bool ... class HaruAnnotation
-setHit( SWFShape $shape ) -> void ... class SWFButton
-setHorizontalScaling( float $scaling ) -> bool ... class HaruPage
-setHSL( float $hue , float $saturation , float $luminosity) -> bool ... class ImagickPixel
-setHttpVersion( string $version ) -> public bool ... class HttpMessage
-setIcon( int $icon ) -> bool ... class HaruAnnotation
-setImage( Imagick $replace ) -> bool ... class Imagick
-setImageAlphaChannel( int $mode ) -> bool ... class Imagick
-setImageArtifact( string $artifact , string $value ) -> bool ... class Imagick
-setImageBackgroundColor( mixed $background ) -> bool ... class Imagick
-setImageBias( float $bias ) -> bool ... class Imagick
-setImageBluePrimary( float $x , float $y ) -> bool ... class Imagick
-setImageBorderColor( mixed $border ) -> bool ... class Imagick
-setImageChannelDepth( int $channel , int $depth ) -> bool ... class Imagick
-setImageClipMask( Imagick $clip_mask ) -> bool ... class Imagick
-setImageColormapColor( int $index , ImagickPixel $color ) -> bool ... class Imagick
-setImageColorspace( int $colorspace ) -> bool ... class Imagick
-setImageCompose( int $compose ) -> bool ... class Imagick
-setImageCompression( int $compression ) -> bool ... class Imagick
-setImageCompressionQuality( int $quality ) -> bool ... class Imagick
-setImageDelay( int $delay ) -> bool ... class Imagick
-setImageDepth( int $depth ) -> bool ... class Imagick
-setImageDispose( int $dispose ) -> bool ... class Imagick
-setImageExtent( int $columns , int $rows ) -> bool ... class Imagick
-setImageFilename( string $filename ) -> bool ... class Imagick
-setImageFormat( string $format ) -> bool ... class Imagick
-setImageGamma( float $gamma ) -> bool ... class Imagick
-setImageGravity( int $gravity ) -> bool ... class Imagick
-setImageGreenPrimary( float $x , float $y ) -> bool ... class Imagick
-setImageIndex( int $index ) -> bool ... class Imagick
-setImageInterlaceScheme( int $interlace_scheme ) -> bool ... class Imagick
-setImageInterpolateMethod( int $method ) -> bool ... class Imagick
-setImageIterations( int $iterations ) -> bool ... class Imagick
-setImageMatte( bool $matte ) -> bool ... class Imagick
-setImageMatteColor( mixed $matte ) -> bool ... class Imagick
-setImageOpacity( float $opacity ) -> bool ... class Imagick
-setImageOrientation( int $orientation ) -> bool ... class Imagick
-setImagePage( int $width , int $height , int $x , int $y ) -> bool ... class Imagick
-setImageProfile( string $name , string $profile ) -> bool ... class Imagick
-setImageProperty( string $name , string $value ) -> bool ... class Imagick
-setImageRedPrimary( float $x , float $y ) -> bool ... class Imagick
-setImageRenderingIntent( int $rendering_intent ) -> bool ... class Imagick
-setImageResolution( float $x_resolution , float $y_resolution ) -> bool ... class Imagick
-setImageScene( int $scene ) -> bool ... class Imagick
-setImageTicksPerSecond( int $ticks_per-second ) -> bool ... class Imagick
-setImageType( int $image_type ) -> bool ... class Imagick
-setImageUnits( int $units ) -> bool ... class Imagick
-setImageVirtualPixelMethod( int $method ) -> bool ... class Imagick
-setImageWhitePoint( float $x , float $y ) -> bool ... class Imagick
-setIndentation( float $width ) -> void ... class SWFTextField
-setInfoAttr( int $type , string $info ) -> bool ... class HaruDoc
-setInfoDateAttr( int $type , int $year , int $month , int $day , int $hour , int $min , int $sec , string $ind , int $off_hour , int $off_min ) -> bool ... class HaruDoc
-setInterlaceScheme( int $interlace_scheme ) -> bool ... class Imagick
-setIteratorFirstRow( void ) -> bool ... class ImagickPixelIterator
-setIteratorIndex( int $index ) -> bool ... class Imagick
-setIteratorLastRow( void ) -> bool ... class ImagickPixelIterator
-setIteratorRow( int $row ) -> bool ... class ImagickPixelIterator
-setLastIterator( void ) -> bool ... class Imagick
-setLastModified( int $timestamp ) -> static bool ... class HttpResponse
-setLeftFill( SWFGradient $fill ) -> void ... class SWFShape
-setLeftMargin( float $width ) -> void ... class SWFTextField
+setCookies([ array $cookies ] ) -> public bool #HttpRequest
+setCurrentEncoder( string $encoding ) -> bool #HaruDoc
+setDash( array $pattern , int $phase ) -> bool #HaruPage
+setData( mixed $data ) -> static bool #HttpResponse
+setDepth( int $depth ) -> void #SWFDisplayItem
+setDestination( object $destination ) -> bool #HaruOutline
+setDimension( float $width , float $height ) -> void #SWFMovie
+setDimension( int $x , int $y ) -> void #SWFVideoStream
+setDown( SWFShape $shape ) -> void #SWFButton
+setEncoding( string $encoding ) -> void #SDO_DAS_XML_Document
+setEncryptionMode( int $mode [, int $key_len = 5 ] ) -> bool #HaruDoc
+setETag( string $etag ) -> static bool #HttpResponse
+setFile( string $file ) -> static bool #HttpResponse
+setFilename( string $filename ) -> bool #Imagick
+setFillAlpha( float $opacity ) -> bool #ImagickDraw
+setFillColor( ImagickPixel $fill_pixel ) -> bool #ImagickDraw
+setFillOpacity( float $fillOpacity ) -> bool #ImagickDraw
+setFillPatternURL( string $fill_url ) -> bool #ImagickDraw
+setFillRule( int $fill_rule ) -> bool #ImagickDraw
+setFirstIterator( void ) -> bool #Imagick
+setFit( void ) -> bool #HaruDestination
+setFitB( void ) -> bool #HaruDestination
+setFitBH( float $top ) -> bool #HaruDestination
+setFitBV( float $left ) -> bool #HaruDestination
+setFitH( float $top ) -> bool #HaruDestination
+setFitR( float $left , float $bottom , float $right , float $top ) -> bool #HaruDestination
+setFitV( float $left ) -> bool #HaruDestination
+setFlatness( float $flatness ) -> bool #HaruPage
+setFont( string $font ) -> bool #Imagick
+setFont( string $font_name ) -> bool #ImagickDraw
+setFont( SWFFont $font ) -> void #SWFText
+setFont( SWFFont $font ) -> void #SWFTextField
+setFontAndSize( object $font , float $size ) -> bool #HaruPage
+setFontFamily( string $font_family ) -> bool #ImagickDraw
+setFontSize( float $pointsize ) -> bool #ImagickDraw
+setFontStretch( int $fontStretch ) -> bool #ImagickDraw
+setFontStyle( int $style ) -> bool #ImagickDraw
+setFontWeight( int $font_weight ) -> bool #ImagickDraw
+setFormat( string $format ) -> bool #Imagick
+setFrames( int $number ) -> void #SWFMovie
+setFrames( int $number ) -> void #SWFSprite
+setGravity( int $gravity ) -> bool #Imagick
+setGravity( int $gravity ) -> bool #ImagickDraw
+setGrayFill( float $value ) -> bool #HaruPage
+setGrayStroke( float $value ) -> bool #HaruPage
+setGzip( bool $gzip ) -> static bool #HttpResponse
+setHeader( string $name [, mixed $value [, bool $replace = true ]] ) -> static bool #HttpResponse
+setHeaders( array $headers ) -> public void #HttpMessage
+setHeaders([ array $headers ] ) -> public bool #HttpRequest
+setHeight( float $height ) -> bool #HaruPage
+setHeight( float $height ) -> void #SWFText
+setHeight( float $height ) -> void #SWFTextField
+setHighlightMode( int $mode ) -> bool #HaruAnnotation
+setHit( SWFShape $shape ) -> void #SWFButton
+setHorizontalScaling( float $scaling ) -> bool #HaruPage
+setHSL( float $hue , float $saturation , float $luminosity) -> bool #ImagickPixel
+setHttpVersion( string $version ) -> public bool #HttpMessage
+setIcon( int $icon ) -> bool #HaruAnnotation
+setImage( Imagick $replace ) -> bool #Imagick
+setImageAlphaChannel( int $mode ) -> bool #Imagick
+setImageArtifact( string $artifact , string $value ) -> bool #Imagick
+setImageBackgroundColor( mixed $background ) -> bool #Imagick
+setImageBias( float $bias ) -> bool #Imagick
+setImageBluePrimary( float $x , float $y ) -> bool #Imagick
+setImageBorderColor( mixed $border ) -> bool #Imagick
+setImageChannelDepth( int $channel , int $depth ) -> bool #Imagick
+setImageClipMask( Imagick $clip_mask ) -> bool #Imagick
+setImageColormapColor( int $index , ImagickPixel $color ) -> bool #Imagick
+setImageColorspace( int $colorspace ) -> bool #Imagick
+setImageCompose( int $compose ) -> bool #Imagick
+setImageCompression( int $compression ) -> bool #Imagick
+setImageCompressionQuality( int $quality ) -> bool #Imagick
+setImageDelay( int $delay ) -> bool #Imagick
+setImageDepth( int $depth ) -> bool #Imagick
+setImageDispose( int $dispose ) -> bool #Imagick
+setImageExtent( int $columns , int $rows ) -> bool #Imagick
+setImageFilename( string $filename ) -> bool #Imagick
+setImageFormat( string $format ) -> bool #Imagick
+setImageGamma( float $gamma ) -> bool #Imagick
+setImageGravity( int $gravity ) -> bool #Imagick
+setImageGreenPrimary( float $x , float $y ) -> bool #Imagick
+setImageIndex( int $index ) -> bool #Imagick
+setImageInterlaceScheme( int $interlace_scheme ) -> bool #Imagick
+setImageInterpolateMethod( int $method ) -> bool #Imagick
+setImageIterations( int $iterations ) -> bool #Imagick
+setImageMatte( bool $matte ) -> bool #Imagick
+setImageMatteColor( mixed $matte ) -> bool #Imagick
+setImageOpacity( float $opacity ) -> bool #Imagick
+setImageOrientation( int $orientation ) -> bool #Imagick
+setImagePage( int $width , int $height , int $x , int $y ) -> bool #Imagick
+setImageProfile( string $name , string $profile ) -> bool #Imagick
+setImageProperty( string $name , string $value ) -> bool #Imagick
+setImageRedPrimary( float $x , float $y ) -> bool #Imagick
+setImageRenderingIntent( int $rendering_intent ) -> bool #Imagick
+setImageResolution( float $x_resolution , float $y_resolution ) -> bool #Imagick
+setImageScene( int $scene ) -> bool #Imagick
+setImageTicksPerSecond( int $ticks_per-second ) -> bool #Imagick
+setImageType( int $image_type ) -> bool #Imagick
+setImageUnits( int $units ) -> bool #Imagick
+setImageVirtualPixelMethod( int $method ) -> bool #Imagick
+setImageWhitePoint( float $x , float $y ) -> bool #Imagick
+setIndentation( float $width ) -> void #SWFTextField
+setInfoAttr( int $type , string $info ) -> bool #HaruDoc
+setInfoDateAttr( int $type , int $year , int $month , int $day , int $hour , int $min , int $sec , string $ind , int $off_hour , int $off_min ) -> bool #HaruDoc
+setInterlaceScheme( int $interlace_scheme ) -> bool #Imagick
+setIteratorFirstRow( void ) -> bool #ImagickPixelIterator
+setIteratorIndex( int $index ) -> bool #Imagick
+setIteratorLastRow( void ) -> bool #ImagickPixelIterator
+setIteratorRow( int $row ) -> bool #ImagickPixelIterator
+setLastIterator( void ) -> bool #Imagick
+setLastModified( int $timestamp ) -> static bool #HttpResponse
+setLeftFill( SWFGradient $fill ) -> void #SWFShape
+setLeftMargin( float $width ) -> void #SWFTextField
 setLimit( string $property , string $low , string $high ) -> void SwishSearch->
-setLine( SWFShape $shape ) -> void ... class SWFShape
-setLineCap( int $cap ) -> bool ... class HaruPage
-setLineJoin( int $join ) -> bool ... class HaruPage
-setLineSpacing( float $height ) -> void ... class SWFTextField
-setLineWidth( float $width ) -> bool ... class HaruPage
+setLine( SWFShape $shape ) -> void #SWFShape
+setLineCap( int $cap ) -> bool #HaruPage
+setLineJoin( int $join ) -> bool #HaruPage
+setLineSpacing( float $height ) -> void #SWFTextField
+setLineWidth( float $width ) -> bool #HaruPage
 setlocale( int $category , string $locale [, string $... ] ) -> string 
-setMargins( float $left , float $right ) -> void ... class SWFTextField
-setMaskImage( object $mask_image ) -> bool ... class HaruImage
-setMaskLevel( int $level ) -> void ... class SWFDisplayItem
-setMatrix( float $a , float $b , float $c , float $d , float $x , float $y ) -> void ... class SWFDisplayItem
-setMenu( int $flag ) -> void ... class SWFButton
-setMethod( int $request_method ) -> public bool ... class HttpRequest
-setMiterLimit( float $limit ) -> bool ... class HaruPage
-setName( string $name ) -> void ... class SWFDisplayItem
-setName( string $name ) -> void ... class SWFTextField
-setOpenAction( object $destination ) -> bool ... class HaruDoc
-setOpened( bool $opened ) -> bool ... class HaruAnnotation
-setOpened( bool $opened ) -> bool ... class HaruOutline
-setOption( string $key , string $value ) -> bool ... class Imagick
-setOptions([ array $options ] ) -> public bool ... class HttpRequest
-setOver( SWFShape $shape ) -> void ... class SWFButton
-setPadding( float $padding ) -> void ... class SWFTextField
-setPage( int $width , int $height , int $x , int $y ) -> bool ... class Imagick
-setPageLayout( int $layout ) -> bool ... class HaruDoc
-setPageMode( int $mode ) -> bool ... class HaruDoc
-setPagesConfiguration( int $page_per_pages ) -> bool ... class HaruDoc
-setPassword( string $owner_password , string $user_password ) -> bool ... class HaruDoc
-setPermission( int $permission ) -> bool ... class HaruDoc
+setMargins( float $left , float $right ) -> void #SWFTextField
+setMaskImage( object $mask_image ) -> bool #HaruImage
+setMaskLevel( int $level ) -> void #SWFDisplayItem
+setMatrix( float $a , float $b , float $c , float $d , float $x , float $y ) -> void #SWFDisplayItem
+setMenu( int $flag ) -> void #SWFButton
+setMethod( int $request_method ) -> public bool #HttpRequest
+setMiterLimit( float $limit ) -> bool #HaruPage
+setName( string $name ) -> void #SWFDisplayItem
+setName( string $name ) -> void #SWFTextField
+setOpenAction( object $destination ) -> bool #HaruDoc
+setOpened( bool $opened ) -> bool #HaruAnnotation
+setOpened( bool $opened ) -> bool #HaruOutline
+setOption( string $key , string $value ) -> bool #Imagick
+setOptions([ array $options ] ) -> public bool #HttpRequest
+setOver( SWFShape $shape ) -> void #SWFButton
+setPadding( float $padding ) -> void #SWFTextField
+setPage( int $width , int $height , int $x , int $y ) -> bool #Imagick
+setPageLayout( int $layout ) -> bool #HaruDoc
+setPageMode( int $mode ) -> bool #HaruDoc
+setPagesConfiguration( int $page_per_pages ) -> bool #HaruDoc
+setPassword( string $owner_password , string $user_password ) -> bool #HaruDoc
+setPermission( int $permission ) -> bool #HaruDoc
 setPhraseDelimiter( string $delimiter ) -> void SwishSearch->
-setPointSize( float $point_size ) -> bool ... class Imagick
-setPostFields( array $post_data ) -> public bool ... class HttpRequest
-setPostFiles( array $post_files ) -> public bool ... class HttpRequest
+setPointSize( float $point_size ) -> bool #Imagick
+setPostFields( array $post_data ) -> public bool #HttpRequest
+setPostFiles( array $post_files ) -> public bool #HttpRequest
 setproctitle( string $title ) -> void 
-setPutData([ string $put_data ] ) -> public bool ... class HttpRequest
-setPutFile([ string $file = "" ] ) -> public bool ... class HttpRequest
-setQueryData( mixed $query_data ) -> public bool ... class HttpRequest
-setRate( float $rate ) -> void ... class SWFMovie
-setRatio( float $ratio ) -> void ... class SWFDisplayItem
+setPutData([ string $put_data ] ) -> public bool #HttpRequest
+setPutFile([ string $file = "" ] ) -> public bool #HttpRequest
+setQueryData( mixed $query_data ) -> public bool #HttpRequest
+setRate( float $rate ) -> void #SWFMovie
+setRatio( float $ratio ) -> void #SWFDisplayItem
 setrawcookie( string $name [, string $value [, int $expire = 0 [, string $path [, string $domain [, bool $secure = false [, bool $httponly = false ]]]]]] ) -> bool 
-setRawPostData([ string $raw_post_data ] ) -> public bool ... class HttpRequest
-setRequestMethod( string $method ) -> public bool ... class HttpMessage
-setRequestUrl( string $url ) -> public bool ... class HttpMessage
-setResolution( float $x_resolution , float $y_resolution ) -> bool ... class Imagick
-setResourceLimit( int $type , int $limit ) -> bool ... class Imagick
-setResponseCode( int $code ) -> public bool ... class HttpMessage
-setResponseStatus( string $status ) -> public bool ... class HttpMessage
-setRGBFill( float $r , float $g , float $b ) -> bool ... class HaruPage
-setRGBStroke( float $r , float $g , float $b ) -> bool ... class HaruPage
-setRightFill( SWFGradient $fill ) -> void ... class SWFShape
-setRightMargin( float $width ) -> void ... class SWFTextField
-setRotate( int $angle ) -> bool ... class HaruPage
-setSamplingFactors( array $factors ) -> bool ... class Imagick
-setSize( int $columns , int $rows ) -> bool ... class Imagick
-setSize( int $size , int $direction ) -> bool ... class HaruPage
-setSizeOffset( int $columns , int $rows , int $offset ) -> bool ... class Imagick
-setSlideShow( int $type , float $disp_time , float $trans_time) -> bool ... class HaruPage
+setRawPostData([ string $raw_post_data ] ) -> public bool #HttpRequest
+setRequestMethod( string $method ) -> public bool #HttpMessage
+setRequestUrl( string $url ) -> public bool #HttpMessage
+setResolution( float $x_resolution , float $y_resolution ) -> bool #Imagick
+setResourceLimit( int $type , int $limit ) -> bool #Imagick
+setResponseCode( int $code ) -> public bool #HttpMessage
+setResponseStatus( string $status ) -> public bool #HttpMessage
+setRGBFill( float $r , float $g , float $b ) -> bool #HaruPage
+setRGBStroke( float $r , float $g , float $b ) -> bool #HaruPage
+setRightFill( SWFGradient $fill ) -> void #SWFShape
+setRightMargin( float $width ) -> void #SWFTextField
+setRotate( int $angle ) -> bool #HaruPage
+setSamplingFactors( array $factors ) -> bool #Imagick
+setSize( int $columns , int $rows ) -> bool #Imagick
+setSize( int $size , int $direction ) -> bool #HaruPage
+setSizeOffset( int $columns , int $rows , int $offset ) -> bool #Imagick
+setSlideShow( int $type , float $disp_time , float $trans_time) -> bool #HaruPage
 setSort( string $sort ) -> void SwishSearch->
-setSpacing( float $spacing ) -> void ... class SWFText
-setSslOptions([ array $options ] ) -> public bool ... class HttpRequest
-setStream( resource $stream ) -> static bool ... class HttpResponse
-setStrokeAlpha( float $opacity ) -> bool ... class ImagickDraw
-setStrokeAntialias( bool $stroke_antialias ) -> bool ... class ImagickDraw
-setStrokeColor( ImagickPixel $stroke_pixel ) -> bool ... class ImagickDraw
-setStrokeDashArray( array $dashArray ) -> bool ... class ImagickDraw
-setStrokeDashOffset( float $dash_offset ) -> bool ... class ImagickDraw
-setStrokeLineCap( int $linecap ) -> bool ... class ImagickDraw
-setStrokeLineJoin( int $linejoin ) -> bool ... class ImagickDraw
-setStrokeMiterLimit( int $miterlimit ) -> bool ... class ImagickDraw
-setStrokeOpacity( float $stroke_opacity ) -> bool ... class ImagickDraw
-setStrokePatternURL( string $stroke_url ) -> bool ... class ImagickDraw
-setStrokeWidth( float $stroke_width ) -> bool ... class ImagickDraw
+setSpacing( float $spacing ) -> void #SWFText
+setSslOptions([ array $options ] ) -> public bool #HttpRequest
+setStream( resource $stream ) -> static bool #HttpResponse
+setStrokeAlpha( float $opacity ) -> bool #ImagickDraw
+setStrokeAntialias( bool $stroke_antialias ) -> bool #ImagickDraw
+setStrokeColor( ImagickPixel $stroke_pixel ) -> bool #ImagickDraw
+setStrokeDashArray( array $dashArray ) -> bool #ImagickDraw
+setStrokeDashOffset( float $dash_offset ) -> bool #ImagickDraw
+setStrokeLineCap( int $linecap ) -> bool #ImagickDraw
+setStrokeLineJoin( int $linejoin ) -> bool #ImagickDraw
+setStrokeMiterLimit( int $miterlimit ) -> bool #ImagickDraw
+setStrokeOpacity( float $stroke_opacity ) -> bool #ImagickDraw
+setStrokePatternURL( string $stroke_url ) -> bool #ImagickDraw
+setStrokeWidth( float $stroke_width ) -> bool #ImagickDraw
 setStructure( int $structure ) -> void SwishSearch->
-setTextAlignment( int $alignment ) -> bool ... class ImagickDraw
-setTextAntialias( bool $antiAlias ) -> bool ... class ImagickDraw
-setTextDecoration( int $decoration ) -> bool ... class ImagickDraw
-setTextEncoding( string $encoding ) -> bool ... class ImagickDraw
-setTextLeading( float $text_leading ) -> bool ... class HaruPage
-setTextMatrix( float $a , float $b , float $c , float $d , float $x , float $y ) -> bool ... class HaruPage
-setTextRenderingMode( int $mode ) -> bool ... class HaruPage
-setTextRise( float $rise ) -> bool ... class HaruPage
-setTextUnderColor( ImagickPixel $under_color ) -> bool ... class ImagickDraw
+setTextAlignment( int $alignment ) -> bool #ImagickDraw
+setTextAntialias( bool $antiAlias ) -> bool #ImagickDraw
+setTextDecoration( int $decoration ) -> bool #ImagickDraw
+setTextEncoding( string $encoding ) -> bool #ImagickDraw
+setTextLeading( float $text_leading ) -> bool #HaruPage
+setTextMatrix( float $a , float $b , float $c , float $d , float $x , float $y ) -> bool #HaruPage
+setTextRenderingMode( int $mode ) -> bool #HaruPage
+setTextRise( float $rise ) -> bool #HaruPage
+setTextUnderColor( ImagickPixel $under_color ) -> bool #ImagickDraw
 setthreadtitle( string $title ) -> bool 
-setThrottleDelay( float $seconds ) -> static bool ... class HttpResponse
-setType( int $image_type ) -> bool ... class Imagick
-setType( int $type ) -> public void ... class HttpMessage
+setThrottleDelay( float $seconds ) -> static bool #HttpResponse
+setType( int $image_type ) -> bool #Imagick
+setType( int $type ) -> public void #HttpMessage
 settype( mixed &$var , string $type ) -> bool 
-setUp( SWFShape $shape ) -> void ... class SWFButton
-setUrl( string $url ) -> public bool ... class HttpRequest
-setVectorGraphics( string $xml ) -> bool ... class ImagickDraw
-setViewbox( int $x1 , int $y1 , int $x2 , int $y2 ) -> bool ... class ImagickDraw
-setWidth( float $width ) -> bool ... class HaruPage
-setWordSpace( float $word_space ) -> bool ... class HaruPage
-setXMLDeclaration( bool $xmlDeclatation ) -> void ... class SDO_DAS_XML_Document
-setXMLVersion( string $xmlVersion ) -> void ... class SDO_DAS_XML_Document
-setXYZ( float $left , float $top , float $zoom ) -> bool ... class HaruDestination
+setUp( SWFShape $shape ) -> void #SWFButton
+setUrl( string $url ) -> public bool #HttpRequest
+setVectorGraphics( string $xml ) -> bool #ImagickDraw
+setViewbox( int $x1 , int $y1 , int $x2 , int $y2 ) -> bool #ImagickDraw
+setWidth( float $width ) -> bool #HaruPage
+setWordSpace( float $word_space ) -> bool #HaruPage
+setXMLDeclaration( bool $xmlDeclatation ) -> void #SDO_DAS_XML_Document
+setXMLVersion( string $xmlVersion ) -> void #SDO_DAS_XML_Document
+setXYZ( float $left , float $top , float $zoom ) -> bool #HaruDestination
 sha1( string $str [, bool $raw_output = false ] ) -> string 
 sha1_file( string $filename [, bool $raw_output = false ] ) -> string 
-shadeImage( bool $gray , float $azimuth , float $elevation ) -> bool ... class Imagick
-shadowImage( float $opacity , float $sigma , int $x , int $y ) -> bool ... class Imagick
-sharpenImage( float $radius , float $sigma [, int $channel = ... class Imagick
-shaveImage( int $columns , int $rows ) -> bool ... class Imagick
-shearImage( mixed $background , float $x_shear , float $y_shear) -> bool ... class Imagick
+shadeImage( bool $gray , float $azimuth , float $elevation ) -> bool #Imagick
+shadowImage( float $opacity , float $sigma , int $x , int $y ) -> bool #Imagick
+sharpenImage( float $radius , float $sigma [, int $channel = #Imagick
+shaveImage( int $columns , int $rows ) -> bool #Imagick
+shearImage( mixed $background , float $x_shear , float $y_shear) -> bool #Imagick
 shell_exec( string $cmd ) -> string 
 shm_attach( int $key [, int $memsize [, int $perm = 0666 ]] ) -> resource 
 shm_detach( resource $shm_identifier ) -> bool 
@@ -4262,28 +4262,28 @@ shmop_open( int $key , string $flags , int $mode , int $size ) -> int
 shmop_read( int $shmid , int $start , int $count ) -> string 
 shmop_size( int $shmid ) -> int 
 shmop_write( int $shmid , string $data , int $offset ) -> int 
-showText( string $text ) -> bool ... class HaruPage
-showTextNextLine( string $text [, float $word_space = 0 [, float $char_space = 0 ]] ) -> bool ... class HaruPage
+showText( string $text ) -> bool #HaruPage
+showTextNextLine( string $text [, float $word_space = 0 [, float $char_space = 0 ]] ) -> bool #HaruPage
 shuffle( array &$array ) -> bool 
-sigmoidalContrastImage( bool $sharpen , float $alpha , float $beta [, int $channel = ... class Imagick
+sigmoidalContrastImage( bool $sharpen , float $alpha , float $beta [, int $channel = #Imagick
 similar_text( string $first , string $second [, float &$percent ] ) -> int 
 simplexml_import_dom( DOMNode $node [, string $class_name = "SimpleXMLElement" ] ) -> SimpleXMLElement 
 simplexml_load_file( string $filename [, string $class_name = "SimpleXMLElement" [, int $options = 0 [, string $ns [, bool $is_prefix = false ]]]] ) -> object 
 simplexml_load_string( string $data [, string $class_name = "SimpleXMLElement" [, int $options = 0 [, string $ns [, bool $is_prefix = false ]]]] ) -> object 
 sin( float $arg ) -> float 
-singleton([ bool $global = true ] ) -> static public HttpQueryString ... class HttpQueryString
+singleton([ bool $global = true ] ) -> static public HttpQueryString #HttpQueryString
 sinh( float $arg ) -> float 
-size( void ) -> int OCI-... class Collection
-size( void ) -> int OCI-... class Lob
-sketchImage( float $radius , float $sigma , float $angle ) -> bool ... class Imagick
-skewX( float $ddegrees ) -> void ... class SWFDisplayItem
-skewX( float $degrees ) -> bool ... class ImagickDraw
-skewXTo( float $degrees ) -> void ... class SWFDisplayItem
-skewXTo( float $x ) -> void ... class SWFFill
-skewY( float $ddegrees ) -> void ... class SWFDisplayItem
-skewY( float $degrees ) -> bool ... class ImagickDraw
-skewYTo( float $degrees ) -> void ... class SWFDisplayItem
-skewYTo( float $y ) -> void ... class SWFFill
+size( void ) -> int OCI-#Collection
+size( void ) -> int OCI-#Lob
+sketchImage( float $radius , float $sigma , float $angle ) -> bool #Imagick
+skewX( float $ddegrees ) -> void #SWFDisplayItem
+skewX( float $degrees ) -> bool #ImagickDraw
+skewXTo( float $degrees ) -> void #SWFDisplayItem
+skewXTo( float $x ) -> void #SWFFill
+skewY( float $ddegrees ) -> void #SWFDisplayItem
+skewY( float $degrees ) -> bool #ImagickDraw
+skewYTo( float $degrees ) -> void #SWFDisplayItem
+skewYTo( float $y ) -> void #SWFFill
 sleep( int $seconds ) -> int 
 snmp_get_quick_print( void ) -> bool 
 snmp_get_valueretrieval( void ) -> int 
@@ -4334,13 +4334,13 @@ socket_set_option( resource $socket , int $level , int $optname , mixed $optval 
 socket_shutdown( resource $socket [, int $how = 2 ] ) -> bool 
 socket_strerror( int $errno ) -> string 
 socket_write( resource $socket , string $buffer [, int $length = 0 ] ) -> int 
-socketPerform( void ) -> protected bool ... class HttpRequestPool
-socketSelect([ float $timeout = 0 ] ) -> protected bool ... class HttpRequestPool
-solarizeImage( int $threshold ) -> bool ... class Imagick
+socketPerform( void ) -> protected bool #HttpRequestPool
+socketSelect([ float $timeout = 0 ] ) -> protected bool #HttpRequestPool
+solarizeImage( int $threshold ) -> bool #Imagick
 solr_get_version( void ) -> string 
 sort( array &$array [, int $sort_flags = SORT_REGULAR ] ) -> bool 
 soundex( string $str ) -> string 
-specified( void ) -> bool ... class DomAttribute
+specified( void ) -> bool #DomAttribute
 spl_autoload( string $class_name [, string $file_extensions = spl_autoload_extensions() ] ) -> void 
 spl_autoload_call( string $class_name ) -> void 
 spl_autoload_extensions([ string $file_extensions ] ) -> string 
@@ -4348,10 +4348,10 @@ spl_autoload_functions( void ) -> array
 spl_autoload_register([ callback $autoload_function [, bool $throw = true [, bool $prepend = false ]]] ) -> bool 
 spl_autoload_unregister( mixed $autoload_function ) -> bool 
 spl_object_hash( object $obj ) -> string 
-spliceImage( int $width , int $height , int $x , int $y ) -> bool ... class Imagick
+spliceImage( int $width , int $height , int $x , int $y ) -> bool #Imagick
 split( string $pattern , string $string [, int $limit = -1 ] ) -> array 
 spliti( string $pattern , string $string [, int $limit = -1 ] ) -> array 
-spreadImage( float $radius ) -> bool ... class Imagick
+spreadImage( float $radius ) -> bool #Imagick
 sprintf( string $format [, mixed $args [, mixed $... ]] ) -> string 
 sql_regcase( string $string ) -> string 
 sqlite_array_query( resource $dbhandle , string $query [, int $result_type = SQLITE_BOTH [, bool $decode_binary = true ]] ) -> array 
@@ -4393,12 +4393,12 @@ sqlite_udf_decode_binary( string $data ) -> string
 sqlite_udf_encode_binary( string $data ) -> string 
 sqlite_unbuffered_query( resource $dbhandle , string $query [, int $result_type = SQLITE_BOTH [, string &$error_msg ]] ) -> resource 
 sqlite_valid( resource $result ) -> bool 
-sqliteCreateAggregate( string $function_name , callback $step_func , callback $finalize_func [, int $num_args ] ) -> bool ... class PDO
-sqliteCreateFunction( string $function_name , callback $callback [, int $num_args ] ) -> bool ... class PDO
+sqliteCreateAggregate( string $function_name , callback $step_func , callback $finalize_func [, int $num_args ] ) -> bool #PDO
+sqliteCreateFunction( string $function_name , callback $callback [, int $num_args ] ) -> bool #PDO
 sqrt( float $arg ) -> float 
 srand([ int $seed ] ) -> void 
-srcanchors( array $parameter ) -> array ... class hw_api
-srcsofdst( array $parameter ) -> array ... class hw_api
+srcanchors( array $parameter ) -> array #hw_api
+srcsofdst( array $parameter ) -> array #hw_api
 sscanf( string $str , string $format [, mixed &$... ] ) -> mixed 
 ssdeep_fuzzy_compare( string $signature1 , string $signature2 ) -> int 
 ssdeep_fuzzy_hash( string $to_hash ) -> string 
@@ -4430,11 +4430,11 @@ ssh2_sftp_symlink( resource $sftp , string $target , string $link ) -> bool
 ssh2_sftp_unlink( resource $sftp , string $filename ) -> bool 
 ssh2_shell( resource $session [, string $term_type = "vanilla" [, array $env [, int $width = 80 [, int $height = 25 [, int $width_height_type = SSH2_TERM_UNIT_CHARS ]]]]] ) -> resource 
 ssh2_tunnel( resource $session , string $host , int $port ) -> resource 
-startSound( SWFSound $sound ) -> SWFSoundInstance ... class SWFMovie
-startSound( SWFSound $sount ) -> SWFSoundInstance ... class SWFSprite
+startSound( SWFSound $sound ) -> SWFSoundInstance #SWFMovie
+startSound( SWFSound $sount ) -> SWFSoundInstance #SWFSprite
 stat( string $filename ) -> array 
-statIndex( int $index [, int $flags ] ) -> mixed ... class ZipArchive
-statName( name $name [, int $flags ] ) -> mixed ... class ZipArchive
+statIndex( int $index [, int $flags ] ) -> mixed #ZipArchive
+statName( name $name [, int $flags ] ) -> mixed #ZipArchive
 stats_absolute_deviation( array $a ) -> float 
 stats_cdf_beta( float $par1 , float $par2 , float $par3 , int $which ) -> float 
 stats_cdf_binomial( float $par1 , float $par2 , float $par3 , int $which) -> float 
@@ -4503,14 +4503,14 @@ stats_stat_paired_t( array $arr1 , array $arr2 ) -> float
 stats_stat_percentile( float $df , float $xnonc ) -> float 
 stats_stat_powersum( array $arr , float $power ) -> float 
 stats_variance( array $a [, bool $sample = false ] ) -> float 
-status( int $status ) -> static bool ... class HttpResponse
-steganoImage( Imagick $watermark_wand , int $offset ) -> Imagick ... class Imagick
+status( int $status ) -> static bool #HttpResponse
+steganoImage( Imagick $watermark_wand , int $offset ) -> Imagick #Imagick
 stem( string $word ) -> array SwishResult->
-stereoImage( Imagick $offset_wand ) -> bool ... class Imagick
+stereoImage( Imagick $offset_wand ) -> bool #Imagick
 stomp_connect_error( void ) -> string 
 stomp_version( void ) -> string 
-stopSound( SWFSound $sound ) -> void ... class SWFMovie
-stopSound( SWFSound $sount ) -> void ... class SWFSprite
+stopSound( SWFSound $sound ) -> void #SWFMovie
+stopSound( SWFSound $sount ) -> void #SWFSprite
 str_getcsv( string $input [, string $delimiter = ',' [, string $enclosure = '"' [, string $escape = '\\' ]]] ) -> array 
 str_ireplace( mixed $search , mixed $replace , mixed $subject [, int & $count ] ) -> mixed 
 str_pad( string $input , int $pad_length [, string $pad_string = " " [, int $pad_type = STR_PAD_RIGHT ]] ) -> string 
@@ -4568,11 +4568,11 @@ stream_supports_lock( resource $stream ) -> bool
 stream_wrapper_register( string $protocol , string $classname [, int $flags = 0 ] ) -> bool 
 stream_wrapper_restore( string $protocol ) -> bool 
 stream_wrapper_unregister( string $protocol ) -> bool 
-streamMP3( mixed $mp3file [, float $skip = 0 ] ) -> int ... class SWFMovie
+streamMP3( mixed $mp3file [, float $skip = 0 ] ) -> int #SWFMovie
 strftime( string $format [, int $timestamp = time() ] ) -> string 
 strip_tags( string $str [, string $allowable_tags ] ) -> string 
 stripcslashes( string $str ) -> string 
-stripImage( void ) -> bool ... class Imagick
+stripImage( void ) -> bool #Imagick
 stripos( string $haystack , string $needle [, int $offset = 0 ] ) -> int 
 stripslashes( string $str ) -> string 
 stristr( string $haystack , mixed $needle [, bool $before_needle = false ] ) -> string 
@@ -4581,7 +4581,7 @@ strnatcasecmp( string $str1 , string $str2 ) -> int
 strnatcmp( string $str1 , string $str2 ) -> int 
 strncasecmp( string $str1 , string $str2 , int $len ) -> int 
 strncmp( string $str1 , string $str2 , int $len ) -> int 
-stroke([ bool $close_path = false ] ) -> bool ... class HaruPage
+stroke([ bool $close_path = false ] ) -> bool #HaruPage
 strpbrk( string $haystack , string $char_list ) -> string 
 strpos( string $haystack , mixed $needle [, int $offset = 0 ] ) -> int 
 strptime( string $date , string $format ) -> array 
@@ -4597,7 +4597,7 @@ strtotime( string $time [, int $now ] ) -> int
 strtoupper( string $string ) -> string 
 strtr( string $str , string $from , string $to ) -> string 
 strval( mixed $var ) -> string 
-subscribe( string $targetTopic ) -> string ... class SAMConnection
+subscribe( string $targetTopic ) -> string #SAMConnection
 substr( string $string , int $start [, int $length ] ) -> string 
 substr_compare( string $main_str , string $str , int $offset [, int $length [, bool $case_insensitivity = false ]] ) -> int 
 substr_count( string $haystack , string $needle [, int $offset = 0 [, int $length ]] ) -> int 
@@ -4717,7 +4717,7 @@ swf_startsymbol( int $objid ) -> void
 swf_textwidth( string $str ) -> float 
 swf_translate( float $x , float $y , float $z ) -> void 
 swf_viewport( float $xmin , float $xmax , float $ymin , float $ymax ) -> void 
-swirlImage( float $degrees ) -> bool ... class Imagick
+swirlImage( float $degrees ) -> bool #Imagick
 sybase_affected_rows([ resource $link_identifier ] ) -> int 
 sybase_close([ resource $link_identifier ] ) -> bool 
 sybase_connect([ string $servername [, string $username [, string $password [, string $charset [, string $appname [, bool $new = false ]]]]]] ) -> resource 
@@ -4744,25 +4744,25 @@ sybase_select_db( string $database_name [, resource $link_identifier ] ) -> bool
 sybase_set_message_handler( callback $handler [, resource $link_identifier ] ) -> bool 
 sybase_unbuffered_query( string $query , resource $link_identifier [, bool $store_result ] ) -> resource 
 symlink( string $target , string $link ) -> bool 
-syncIterator( void ) -> bool ... class ImagickPixelIterator
+syncIterator( void ) -> bool #ImagickPixelIterator
 sys_get_temp_dir( void ) -> string 
 sys_getloadavg( void ) -> array 
 syslog( int $priority , string $message ) -> bool 
 system( string $command [, int &$return_var ] ) -> string 
-system_id( void ) -> string ... class DomDocumentType
-tagname( void ) -> string ... class DomElement
+system_id( void ) -> string #DomDocumentType
+tagname( void ) -> string #DomElement
 tan( float $arg ) -> float 
 tanh( float $arg ) -> float 
-target( void ) -> string ... class DomProcessingInstruction
+target( void ) -> string #DomProcessingInstruction
 tcpwrap_check( string $daemon , string $address [, string $user [, bool $nodns = false ]] ) -> bool 
-tell( void ) -> int OCI-... class Lob
+tell( void ) -> int OCI-#Lob
 tempnam( string $dir , string $prefix ) -> string 
 textdomain( string $text_domain ) -> string 
-textOut( float $x , float $y , string $text ) -> bool ... class HaruPage
-textRect( float $left , float $top , float $right , float $bottom , string $text [, int $align = ... class HaruPage
-textureImage( Imagick $texture_wand ) -> bool ... class Imagick
-thresholdImage( float $threshold [, int $channel = ... class Imagick
-thumbnailImage( int $columns , int $rows [, bool $bestfit = false [, bool $fill = false ]] ) -> bool ... class Imagick
+textOut( float $x , float $y , string $text ) -> bool #HaruPage
+textRect( float $left , float $top , float $right , float $bottom , string $text [, int $align = #HaruPage
+textureImage( Imagick $texture_wand ) -> bool #Imagick
+thresholdImage( float $threshold [, int $channel = #Imagick
+thumbnailImage( int $columns , int $rows [, bool $bestfit = false [, bool $fill = false ]] ) -> bool #Imagick
 tidy_access_count( tidy $object ) -> int 
 tidy_config_count( tidy $object ) -> int 
 tidy_error_count( tidy $object ) -> int 
@@ -4778,27 +4778,27 @@ time_nanosleep( int $seconds , int $nanoseconds ) -> mixed
 time_sleep_until( float $timestamp ) -> bool 
 timezone_name_from_abbr( string $abbr [, int $gmtOffset = -1 [, int $isdst = -1 ]] ) -> string 
 timezone_version_get( void ) -> string 
-tintImage( mixed $tint , mixed $opacity ) -> bool ... class Imagick
-title( array $parameter ) -> string ... class hw_api_object
+tintImage( mixed $tint , mixed $opacity ) -> bool #Imagick
+title( array $parameter ) -> string #hw_api_object
 tmpfile( void ) -> resource 
-toArray( void ) -> public array ... class HttpQueryString
+toArray( void ) -> public array #HttpQueryString
 token_get_all( string $source ) -> array 
 token_name( int $token ) -> string 
-toMessageTypeObject( void ) -> public HttpRequest|HttpResponse ... class HttpMessage
-toString( void ) -> public string ... class HttpQueryString
-toString([ bool $include_parent = false ] ) -> public string ... class HttpMessage
+toMessageTypeObject( void ) -> public HttpRequest|HttpResponse #HttpMessage
+toString( void ) -> public string #HttpQueryString
+toString([ bool $include_parent = false ] ) -> public string #HttpMessage
 touch( string $filename [, int $time = time() [, int $atime ]] ) -> bool 
-transformImage( string $crop , string $geometry ) -> Imagick ... class Imagick
-translate( float $x , float $y ) -> bool ... class ImagickDraw
-transparentPaintImage( mixed $target , float $alpha , float $fuzz , bool $invert ) -> bool ... class Imagick
-transposeImage( void ) -> bool ... class Imagick
-transverseImage( void ) -> bool ... class Imagick
+transformImage( string $crop , string $geometry ) -> Imagick #Imagick
+translate( float $x , float $y ) -> bool #ImagickDraw
+transparentPaintImage( mixed $target , float $alpha , float $fuzz , bool $invert ) -> bool #Imagick
+transposeImage( void ) -> bool #Imagick
+transverseImage( void ) -> bool #Imagick
 trigger_error( string $error_msg [, int $error_type = E_USER_NOTICE ] ) -> bool 
-trim( int $num ) -> bool OCI-... class Collection
+trim( int $num ) -> bool OCI-#Collection
 trim( string $str [, string $charlist ] ) -> string 
-trimImage( float $fuzz ) -> bool ... class Imagick
-truncate([ int $length = 0 ] ) -> bool OCI-... class Lob
-type( void ) -> HW_API_Reason ... class hw_api_reason
+trimImage( float $fuzz ) -> bool #Imagick
+truncate([ int $length = 0 ] ) -> bool OCI-#Lob
+type( void ) -> HW_API_Reason #hw_api_reason
 uasort( array &$array , callback $cmp_function ) -> bool 
 ucfirst( string $str ) -> string 
 ucwords( string $str ) -> string 
@@ -4828,46 +4828,46 @@ udm_open_stored( resource $agent , string $storedaddr ) -> int
 udm_set_agent_param( resource $agent , int $var , string $val ) -> bool 
 uksort( array &$array , callback $cmp_function ) -> bool 
 umask([ int $mask ] ) -> int 
-unchangeAll( void ) -> mixed ... class ZipArchive
-unchangeArchive( void ) -> mixed ... class ZipArchive
-unchangeIndex( int $index ) -> mixed ... class ZipArchive
-unchangeName( string $name ) -> mixed ... class ZipArchive
+unchangeAll( void ) -> mixed #ZipArchive
+unchangeArchive( void ) -> mixed #ZipArchive
+unchangeIndex( int $index ) -> mixed #ZipArchive
+unchangeName( string $name ) -> mixed #ZipArchive
 uniqid([ string $prefix = "" [, bool $more_entropy = false ]] ) -> string 
-uniqueImageColors( void ) -> bool ... class Imagick
+uniqueImageColors( void ) -> bool #Imagick
 unixtojd([ int $timestamp = time() ] ) -> int 
 unlink( string $filename [, resource $context ] ) -> bool 
 unlink_node( void ) -> void DomNode->
-unlock( array $parameter ) -> bool ... class hw_api
+unlock( array $parameter ) -> bool #hw_api
 unpack( string $format , string $data ) -> array 
 unregister_tick_function( string $function_name ) -> void 
 unserialize( string $str ) -> mixed 
 unset( mixed $var [, mixed $... ] ) -> void 
-unsharpMaskImage( float $radius , float $sigma , float $amount , float $threshold [, int $channel = ... class Imagick
-unsubscribe( string $subscriptionId [, string $targetTopic ] ) -> bool ... class SAMConnection
-update( string $data ) -> public string ... class HttpDeflateStream
-update( string $data ) -> public string ... class HttpInflateStream
+unsharpMaskImage( float $radius , float $sigma , float $amount , float $threshold [, int $channel = #Imagick
+unsubscribe( string $subscriptionId [, string $targetTopic ] ) -> bool #SAMConnection
+update( string $data ) -> public string #HttpDeflateStream
+update( string $data ) -> public string #HttpInflateStream
 urldecode( string $str ) -> string 
 urlencode( string $str ) -> string 
 use_soap_error_handler([ bool $handler = true ] ) -> bool 
-useCNSEncodings( void ) -> bool ... class HaruDoc
-useCNSFonts( void ) -> bool ... class HaruDoc
-useCNTEncodings( void ) -> bool ... class HaruDoc
-useCNTFonts( void ) -> bool ... class HaruDoc
-useJPEncodings( void ) -> bool ... class HaruDoc
-useJPFonts( void ) -> bool ... class HaruDoc
-useKREncodings( void ) -> bool ... class HaruDoc
-useKRFonts( void ) -> bool ... class HaruDoc
-user( array $parameter ) -> hw_api_object ... class hw_api
-userlist( array $parameter ) -> array ... class hw_api
+useCNSEncodings( void ) -> bool #HaruDoc
+useCNSFonts( void ) -> bool #HaruDoc
+useCNTEncodings( void ) -> bool #HaruDoc
+useCNTFonts( void ) -> bool #HaruDoc
+useJPEncodings( void ) -> bool #HaruDoc
+useJPFonts( void ) -> bool #HaruDoc
+useKREncodings( void ) -> bool #HaruDoc
+useKRFonts( void ) -> bool #HaruDoc
+user( array $parameter ) -> hw_api_object #hw_api
+userlist( array $parameter ) -> array #hw_api
 usleep( int $micro_seconds ) -> void 
 usort( array &$array , callback $cmp_function ) -> bool 
 utf8_decode( string $data ) -> string 
 utf8_encode( string $data ) -> string 
-valid( void ) -> bool ... class Imagick
-value( string $name ) -> string ... class hw_api_object
-value( void ) -> string ... class DomAttribute
-value( void ) -> string ... class hw_api_attribute
-values( void ) -> array ... class hw_api_attribute
+valid( void ) -> bool #Imagick
+value( string $name ) -> string #hw_api_object
+value( void ) -> string #DomAttribute
+value( void ) -> string #hw_api_attribute
+values( void ) -> array #hw_api_attribute
 var_dump( mixed $expression [, mixed $... ] ) -> void 
 var_export( mixed $expression [, bool $return = false ] ) -> mixed 
 variant_abs( mixed $val ) -> mixed 
@@ -4898,7 +4898,7 @@ variant_sub( mixed $left , mixed $right ) -> mixed
 variant_xor( mixed $left , mixed $right ) -> mixed 
 version_compare( string $version1 , string $version2 [, string $operator ] ) -> mixed 
 vfprintf( resource $handle , string $format , array $args ) -> int 
-vignetteImage( float $blackPoint , float $whitePoint , int $x , int $y ) -> bool ... class Imagick
+vignetteImage( float $blackPoint , float $whitePoint , int $x , int $y ) -> bool #Imagick
 virtual( string $filename ) -> bool 
 vpopmail_add_alias_domain( string $domain , string $aliasdomain ) -> bool 
 vpopmail_add_alias_domain_ex( string $olddomain , string $newdomain ) -> bool 
@@ -4924,14 +4924,14 @@ w32api_init_dtype( string $typename , mixed $value [, mixed $... ] ) -> resource
 w32api_invoke_function( string $funcname , mixed $argument [, mixed $...  ] ) -> mixed 
 w32api_register_function( string $library , string $function_name , string $return_type ) -> bool 
 w32api_set_call_method( int $method ) -> void 
-waveImage( float $amplitude , float $length ) -> bool ... class Imagick
+waveImage( float $amplitude , float $length ) -> bool #Imagick
 wddx_add_vars( resource $packet_id , mixed $var_name [, mixed $... ] ) -> bool 
 wddx_deserialize( string $packet ) -> mixed 
 wddx_packet_end( resource $packet_id ) -> string 
 wddx_packet_start([ string $comment ] ) -> resource 
 wddx_serialize_value( mixed $var [, string $comment ] ) -> string 
 wddx_serialize_vars( mixed $var_name [, mixed $... ] ) -> string 
-whiteThresholdImage( mixed $threshold ) -> bool ... class Imagick
+whiteThresholdImage( mixed $threshold ) -> bool #Imagick
 win32_continue_service( string $servicename [, string $machine ] ) -> int 
 win32_create_service( array $details [, string $machine ] ) -> mixed 
 win32_delete_service( string $servicename [, string $machine ] ) -> mixed 
@@ -4968,13 +4968,13 @@ wincache_ucache_meminfo( void ) -> array
 wincache_ucache_set( mixed $key , mixed $value [, int $ttl = 0 ] ) -> bool 
 wincache_unlock( string $key ) -> bool 
 wordwrap( string $str [, int $width = 75 [, string $break = "\n" [, bool $cut = false ]]] ) -> string 
-write( string $data [, int $length ] ) -> int OCI-... class Lob
-writeExports( void ) -> void ... class SWFMovie
-writeImage([ string $filename ] ) -> bool ... class Imagick
-writeImageFile( resource $filehandle ) -> bool ... class Imagick
-writeImages( string $filename , bool $adjoin ) -> bool ... class Imagick
-writeImagesFile( resource $filehandle ) -> bool ... class Imagick
-writeTemporary( string $data [, int $lob_type = OCI_TEMP_CLOB ]) -> bool OCI-... class Lob
+write( string $data [, int $length ] ) -> int OCI-#Lob
+writeExports( void ) -> void #SWFMovie
+writeImage([ string $filename ] ) -> bool #Imagick
+writeImageFile( resource $filehandle ) -> bool #Imagick
+writeImages( string $filename , bool $adjoin ) -> bool #Imagick
+writeImagesFile( resource $filehandle ) -> bool #Imagick
+writeTemporary( string $data [, int $lob_type = OCI_TEMP_CLOB ]) -> bool OCI-#Lob
 xattr_get( string $filename , string $name [, int $flags = 0 ] ) -> string 
 xattr_list( string $filename [, int $flags = 0 ] ) -> array 
 xattr_remove( string $filename , string $name [, int $flags = 0 ] ) -> bool 
@@ -5002,7 +5002,7 @@ xhprof_enable([ int $flags = 0 [, array $options ]] ) -> void
 xhprof_sample_disable( void ) -> NULL 
 xhprof_sample_enable( void ) -> void 
 xinclude( void ) -> int DomDocument->
-xlate( string $ie , string $oe ) -> public bool ... class HttpQueryString
+xlate( string $ie , string $oe ) -> public bool #HttpQueryString
 xml_error_string( int $code ) -> string 
 xml_get_current_byte_index( resource $parser ) -> int 
 xml_get_current_column_number( resource $parser ) -> int 
@@ -5039,12 +5039,12 @@ xmlrpc_server_destroy( resource $server ) -> int
 xmlrpc_server_register_introspection_callback( resource $server , string $function ) -> bool 
 xmlrpc_server_register_method( resource $server , string $method_name , string $function ) -> bool 
 xmlrpc_set_type( string &$value , string $type ) -> bool 
-xpath_eval( string $xpath_expression [, domnode $contextnode ] ) -> XPathObject ... class XPathContext
-xpath_eval_expression( string $expression [, domnode $contextnode ] ) -> XPathObject ... class XPathContext
+xpath_eval( string $xpath_expression [, domnode $contextnode ] ) -> XPathObject #XPathContext
+xpath_eval_expression( string $expression [, domnode $contextnode ] ) -> XPathObject #XPathContext
 xpath_new_context( domdocument $dom_document ) -> XPathContext 
 xpath_register_ns( XPathContext $xpath_context , string $prefix , string $uri ) -> bool 
 xpath_register_ns_auto( XPathContext $xpath_context [, object $context_node ] ) -> bool 
-xptr_eval( string $eval_str [, domnode $contextnode ] ) -> int ... class XPathContext
+xptr_eval( string $eval_str [, domnode $contextnode ] ) -> int #XPathContext
 xptr_new_context( void ) -> XPathContext 
 xslt_backend_info( void ) -> string 
 xslt_backend_name( void ) -> string 
