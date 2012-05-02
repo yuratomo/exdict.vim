@@ -1,7 +1,7 @@
 " file: plugin/exdict.vim
 " AUTHOR:  yuratomo
-" Last Modified: 2012.04.15
-" Version: 0.5.0
+" Last Modified: 2012.05.02
+" Version: 0.6.1
 
 if exists('g:loaded_exdict') && g:loaded_exdict == 1
   finish
@@ -25,6 +25,6 @@ nnoremap <Plug>(exdict-prev-n) :<C-u>call exdict#ShowRef(-1,'')<CR>
 nnoremap <Plug>(exdict-next-n) :<C-u>call exdict#ShowRef(1,'')<CR>
 inoremap <expr> <Plug>(exdict-omni-complete) exdict#OmniCompletion()
 
-command! -nargs=* -complete=customlist,exdict#DictList LoadExdict :call exdict#LoadExdict(<f-args>)
+command! -nargs=* -complete=customlist,exdict#DictList Exdict :call exdict#LoadExdict(<f-args>)
 
 let g:loaded_exdict = 1

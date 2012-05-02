@@ -93,6 +93,9 @@ ex) Inline help of CreateEventA.
 
 HISTORY
 -------
+### v0.6.1 by yuratomo ###
+* modify command name. (LoadExdict -> Exdict)
+
 ### v0.6.0 by yuratomo ###
 * add wpf php posix dictionary.
 * stop auto load by filetype.

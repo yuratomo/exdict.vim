@@ -1,5 +1,5 @@
 " File: autoload/exdict.vim
-" Last Modified: 2012.04.15
+" Last Modified: 2012.05.02
 " Author: yuratomo (twitter @yusetomo)
 "
 function! exdict#DictList(A, L, P)
@@ -17,10 +17,12 @@ function! exdict#LoadExdict(...)
     let b:dict_list = []
   endif
 
+  let exist_dict = 0
   for dict in g:exdict#list
     if index(a:000, dict.name) == -1
       continue
     endif
+    let exist_dict = 1
     for file in split(globpath(&runtimepath, dict.file), '\n')
       if index(b:dict_list, file) == -1
         "let &l:dictionary = &l:dictionary . ',' . file
@@ -29,6 +31,10 @@ function! exdict#LoadExdict(...)
       endif
     endfor
   endfor
+  if exist_dict == 0
+    echoerr 'no dictionary...'
+    return
+  endif
   if !exists('g:exdict#disable_default_keymap') || g:exdict#disable_default_keymap == 0
     imap <buffer><c-DOWN>  <ESC><Plug>(exdict-next-i)
     imap <buffer><c-UP>    <ESC><Plug>(exdict-prev-i)
@@ -222,10 +228,12 @@ function! exdict#OmniCompletion()
     let dict_files = join(b:dict_list, ' ')
     let cmd = &grepprg . ' "' . tag . '" ' . dict_files
     let b:exdict_candidate = split(system(cmd), "\n")
-    let b:exdict_tag = tag
+    if tag == '*'
+      let b:exdict_tag = ''
+    endif
   endif
   setl completefunc=exdict#CompleteFromDict
-  call feedkeys("\<c-x>\<c-u>", 'n')
+  call feedkeys("\<c-x>\<c-u>\<c-p>", 'n')
   return ''
 endfunction
 
