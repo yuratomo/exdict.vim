@@ -3,17 +3,19 @@ exdict.vim
 
 Description
 -----------
-exdict.vim is a plugin on vim for syntax highlight and vim's dictionary and inline api reference by special dictionary.
+exdict.vim is a plugin on vim for syntax highlight and competion by dictionary and show inline api reference by special dictionary.
 Support dictionary is as follows.
 
-    - c runtime library
-    - Windows Api
+    - c library
+    - win32api
+    - stl
+    - mfc
+    - posix
     - Windows Kernel Api
-    - Windows WDF (Windows Driver Foundation)
+    - KMDF (Windows Driver Foundation)
     - java (j2se6.0)
     - php
     - wpf
-    - posix
 
 Requirements
 ------------
@@ -25,6 +27,20 @@ Usage
 
     :LoadExdict [ms_c|win32_api|mfc|winddk|kmdf|j2se6|php|posix|wpf]{n}
 
+###exdict completion###
+
+1. Load exdict (for example mfc)
+
+    :Exdict mfc
+
+2. Press <c-j> in input mode.
+
+3. Input keyword for narrow down. (for example input CString)
+
+    input keyword:CString
+
+4. Select api from completion menu.
+
 
 ###Show Inline Api Reference:###
 
@@ -34,7 +50,7 @@ ex) printf
            ~~~~~~~~~~~~~~
                  A
                  |
-                 +-- input <c-j> at input mode or normal mode.
+                 +-- input <c-down> at input mode or normal mode.
 
 Settings
 --------
@@ -42,24 +58,11 @@ Settings
 ###Specify Key :###
     " sorry. it is not work now.
     let g:exdict#disable_default_keymap = 1
-    imap <buffer><c-UP>   <ESC><Plug>(exdict-next-i)
-    imap <buffer><c-DOWN> <ESC><Plug>(exdict-prev-i)
-    nmap <buffer><c-UP>   <Plug>(exdict-next-n)
-    nmap <buffer><c-DOWN> <Plug>(exdict-prev-n)
-
-
-###Disable Specify Dictionary :###
-Disable win32 api dictionary.
-    let g:exdict#disable_win32_api = 1
-
-Disable win kernel api dictionary.
-    let g:exdict#disable_win_kernel_api = 1
-
-Disable win kmdf dictionary.
-    let g:exdict#disable_win_kmdf = 1
-
-Disable mfc dictionary.
-    let g:exdict#disable_mfc = 1
+    imap <c-UP>   <ESC><Plug>(exdict-next-i)
+    imap <c-DOWN> <ESC><Plug>(exdict-prev-i)
+    nmap <c-UP>   <Plug>(exdict-next-n)
+    nmap <c-DOWN> <Plug>(exdict-prev-n)
+    imap <c-j>    <Plug>(exdict-omni-complete)
 
 
 Default Keymaps
@@ -68,13 +71,14 @@ Default Keymaps
 * imap <c-UP>   Show Previous Inline Api Reference (input mode)
 * nmap <c-DOWN> Show Next Inline Api Reference (normal mode)
 * nmap <c-UP>   Show Previous Inline Api Reference (normal mode)
+* imap <c-j>    Api Completion
 
 ScreenShots
 -----------
 
 ###Dictionary###
 
-ex) Input "Create" + &lt;c-x&gt;&lt;c-k&gt;
+ex) Input "Create" + &lt;c-j&gt;
 
 ![sample1](http://yuratomo.up.seesaa.net/image/exdictvim_v0.1.0.001.png "sample1")
 
@@ -93,6 +97,9 @@ ex) Inline help of CreateEventA.
 
 HISTORY
 -------
+### v1.0.0 by yuratomo ###
+* release version
+
 ### v0.6.1 by yuratomo ###
 * modify command name. (LoadExdict -> Exdict)
 

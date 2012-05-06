@@ -220,7 +220,7 @@ function! exdict#OmniCompletion()
     let b:exdict_tag = ''
     let first = 1
   endif
-  let tag = input('input tag name:', b:exdict_tag)
+  let tag = input('input keyword:', b:exdict_tag)
   if tag == ''
     let tag = '*'
   endif

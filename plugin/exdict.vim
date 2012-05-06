@@ -8,8 +8,8 @@ if exists('g:loaded_exdict') && g:loaded_exdict == 1
 endif
 
 let g:exdict#list = []
-call add(g:exdict#list, {'name':'ms_c',      'file':'dict/ms_c.dict'})
-call add(g:exdict#list, {'name':'win32_api', 'file':'dict/win32_api.dict'})
+call add(g:exdict#list, {'name':'c',         'file':'dict/ms_c.dict'})
+call add(g:exdict#list, {'name':'win32api',  'file':'dict/win32_api.dict'})
 call add(g:exdict#list, {'name':'mfc',       'file':'dict/mfc.dict'})
 call add(g:exdict#list, {'name':'winddk',    'file':'dict/win_kernel_api.dict'})
 call add(g:exdict#list, {'name':'kmdf',      'file':'dict/win_kmdf.dict'})
