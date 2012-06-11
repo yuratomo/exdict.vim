@@ -226,7 +226,7 @@ function! exdict#OmniCompletion()
   endif
   if tag !=# b:exdict_tag || first == 1
     let dict_files = join(b:dict_list, ' ')
-    let cmd = &grepprg . ' "' . tag . '" ' . dict_files
+    let cmd = &grepprg . ' "' . tag . '" "' . dict_files . '"'
     let b:exdict_candidate = split(system(cmd), "\n")
     if tag == '*'
       let b:exdict_tag = ''
